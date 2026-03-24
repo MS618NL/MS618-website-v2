@@ -220,16 +220,16 @@ const schemaGraph = [
           <div class="client-logo"><img src="/images/clients/kis-group.png" alt="KIS Group" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/fugro.png" alt="Fugro" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/christmas-brothers.svg" alt="Christmas Brothers" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/step2.svg" alt="STEP2" loading="lazy" /></div>
+          <div class="client-logo client-logo--bright"><img src="/images/clients/step2.svg" alt="STEP2" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/swoop.png" alt="Swoop" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/moovs.png" alt="Moovs" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/bedrijfskleding-online.webp" alt="Bedrijfskleding Online" loading="lazy" /></div>
+          <div class="client-logo client-logo--bright"><img src="/images/clients/bedrijfskleding-online.webp" alt="Bedrijfskleding Online" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/zonklaar.svg" alt="ZONklaar" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/hoekstra-partners.png" alt="Hoekstra & Partners" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/friesland-boating.jpg" alt="Friesland Boating" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/holtara.svg" alt="Holtara" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/houtmethistorie.svg" alt="Hout Met Historie" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/dvm.svg" alt="DVM" loading="lazy" /></div>
+          <div class="client-logo client-logo--bright"><img src="/images/clients/dvm.svg" alt="DVM" loading="lazy" /></div>
         </div>
       </div>
     </section>
@@ -595,6 +595,16 @@ const schemaGraph = [
   .client-logo:hover img {
     filter: grayscale(100%) invert(1) brightness(0.9);
     opacity: 0.9;
+  }
+
+  .client-logo--bright img {
+    filter: grayscale(100%) invert(1) brightness(1);
+    opacity: 0.75;
+  }
+
+  .client-logo--bright:hover img {
+    filter: grayscale(100%) invert(1) brightness(1);
+    opacity: 0.95;
   }
 
   @media (max-width: 1024px) {
