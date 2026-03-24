@@ -91,18 +91,54 @@ const schemaGraph = [
     <div class="ai-tools-bar">
       <div class="container">
         <p class="ai-tools-label">De AI-technologie achter onze aanpak</p>
-        <div class="ai-tools-grid">
+      </div>
+      <div class="ai-tools-marquee">
+        <div class="ai-tools-track">
           <span class="ai-tool">ChatGPT</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Claude</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Gemini</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Grok</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Llama</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Mistral</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Perplexity</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Midjourney</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">DeepSeek</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Clawdbot</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Antigravity</span>
+          <span class="ai-tool-dot"></span>
+          <!-- Duplicate for seamless loop -->
+          <span class="ai-tool">ChatGPT</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Claude</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Gemini</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Grok</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Llama</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Mistral</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Perplexity</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Midjourney</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">DeepSeek</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Clawdbot</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Antigravity</span>
+          <span class="ai-tool-dot"></span>
         </div>
       </div>
     </div>
@@ -422,60 +458,67 @@ const schemaGraph = [
     border-top: 1px solid #1a1a1a;
     border-bottom: 1px solid #1a1a1a;
     background: #0a0a0a;
-    padding: 5rem 0;
+    padding: 4rem 0 5rem;
     position: relative;
     overflow: hidden;
     text-align: center;
   }
 
-  .ai-tools-bar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #333, transparent);
-  }
-
   .ai-tools-label {
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     font-weight: 600;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: #555;
-    margin-bottom: 2.5rem;
+    color: #444;
+    margin-bottom: 3rem;
   }
 
-  .ai-tools-grid {
+  .ai-tools-marquee {
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  }
+
+  .ai-tools-track {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    gap: 0;
+    width: max-content;
+    animation: scroll-ai-tools 35s linear infinite;
+  }
+
+  .ai-tools-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-ai-tools {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
 
   .ai-tool {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 500;
-    color: #e0e0e0;
-    letter-spacing: 0.01em;
+    color: #666;
+    letter-spacing: -0.02em;
     white-space: nowrap;
-    border: 1px solid #333;
-    padding: 0.875rem 1.75rem;
-    background: #151515;
-    border-radius: 9999px;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 1rem;
+    transition: color 0.3s ease;
     cursor: default;
   }
 
   .ai-tool:hover {
     color: #fff;
-    border-color: #444;
-    background: #1a1a1a;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .ai-tool-dot {
+    width: 6px;
+    height: 6px;
+    background: #333;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin: 0 1.5rem;
   }
 
   /* ── Raptor ── */
