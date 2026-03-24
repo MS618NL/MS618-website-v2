@@ -6,7 +6,7 @@ publishDate: 2026-01-15
 updatedDate: 2026-01-15
 author: "Jorrit Miedema"
 category: "Content Marketing"
-relatedPosts: ["ai-and-seo-2026", "search-intent"]
+relatedPosts: ["ai-en-seo-2026", "zoekintentie-begrijpen"]
 ---
 
 ## Why most B2B content strategies fail

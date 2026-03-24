@@ -7,7 +7,7 @@ updatedDate: 2026-03-24
 author: "Jorrit Miedema"
 category: "News"
 ogImage: "/images/Google-Ads-impact-Awards-nominee-ms618.png"
-relatedPosts: ["ai-and-seo-2026", "b2b-content-strategy"]
+relatedPosts: ["ai-en-seo-2026", "content-strategie-b2b"]
 ---
 
 Google has nominated us for the Google Ads Impact Awards 2026. These awards are presented to marketers who use AI with precision and creativity to achieve exceptional campaign results.

@@ -62,6 +62,7 @@ const categories = [...new Set(posts.map((p) => p.data.category))];
             publishDate={post.data.publishDate}
             category={post.data.category}
             author={post.data.author}
+            basePath="/en/blog"
           />
         ))}
       </div>

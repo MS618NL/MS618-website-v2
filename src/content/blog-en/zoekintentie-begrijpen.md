@@ -6,7 +6,7 @@ publishDate: 2026-02-20
 updatedDate: 2026-02-20
 author: "Jorrit Miedema"
 category: "SEO"
-relatedPosts: ["ai-and-seo-2026", "b2b-content-strategy"]
+relatedPosts: ["ai-en-seo-2026", "content-strategie-b2b"]
 ---
 
 ## Why keywords alone aren't enough

@@ -6,7 +6,7 @@ publishDate: 2026-03-10
 updatedDate: 2026-03-10
 author: "Jorrit Miedema"
 category: "SEO"
-relatedPosts: ["search-intent", "b2b-content-strategy"]
+relatedPosts: ["zoekintentie-begrijpen", "content-strategie-b2b"]
 ---
 
 ## The panic is understandable — but misplaced
