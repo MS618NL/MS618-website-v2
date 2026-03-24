@@ -22,9 +22,12 @@ const breadcrumbs = [
         <div class="check-icon" aria-hidden="true">✓</div>
         <h1>Bericht ontvangen</h1>
         <p class="lead">Bedankt voor je bericht. We nemen binnen <strong>1 werkdag</strong> contact met je op.</p>
-        <p class="sub">In de tussentijd kun je alvast onze cases bekijken of meer lezen over onze aanpak.</p>
+        <p class="sub">Wil je liever direct iemand spreken? Bel ons gerust.</p>
         <div class="bedankt-actions">
-          <a href="/cases/" class="btn-primary">Bekijk onze cases →</a>
+          <a href="/cases/" class="btn-primary">Bekijk onze cases</a>
+          <a class="btn-secondary btn-call" data-p1="tel:+31" data-p2="633" data-p3="106702" role="button">
+            Bel ons
+          </a>
           <a href="/" class="btn-secondary">Terug naar home</a>
         </div>
       </div>
@@ -45,10 +48,17 @@ const breadcrumbs = [
   }
 
   .check-icon {
-    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid oklch(0.72 0.18 145);
+    border-radius: 50%;
+    font-size: 1.5rem;
     color: oklch(0.72 0.18 145);
-    margin-bottom: 1.5rem;
-    font-weight: 300;
+    margin-bottom: 2rem;
+    font-weight: 600;
   }
 
   h1 {
@@ -63,7 +73,7 @@ const breadcrumbs = [
     font-size: 1.125rem;
     color: oklch(0.55 0 0);
     line-height: 1.7;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .lead strong {
@@ -82,5 +92,22 @@ const breadcrumbs = [
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .btn-call {
+    cursor: pointer;
   }
 </style>
+
+<script>
+  const callBtn = document.querySelector('.btn-call') as HTMLAnchorElement;
+  if (callBtn) {
+    callBtn.addEventListener('click', () => {
+      const p1 = callBtn.dataset.p1;
+      const p2 = callBtn.dataset.p2;
+      const p3 = callBtn.dataset.p3;
+      window.location.href = p1 + p2 + p3;
+    });
+  }
+</script>
