@@ -569,7 +569,7 @@ const schemaGraph = [
   .clients-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 2rem 3rem;
+    gap: 2.5rem 4rem;
     margin-top: 2rem;
     align-items: center;
   }
@@ -578,51 +578,52 @@ const schemaGraph = [
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 28px;
   }
 
   .client-logo img {
-    max-width: 100%;
-    max-height: 40px;
+    max-width: 120px;
+    max-height: 28px;
     width: auto;
     height: auto;
     object-fit: contain;
-    filter: grayscale(100%) brightness(0.6);
-    opacity: 0.7;
+    filter: grayscale(100%) invert(1) brightness(0.5);
+    opacity: 0.5;
     transition: filter 0.3s ease, opacity 0.3s ease;
   }
 
   .client-logo:hover img {
-    filter: grayscale(100%) brightness(0.8);
-    opacity: 1;
+    filter: grayscale(100%) invert(1) brightness(0.7);
+    opacity: 0.8;
   }
 
   @media (max-width: 1024px) {
     .clients-grid {
       grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem 2rem;
+      gap: 2rem 3rem;
     }
   }
 
   @media (max-width: 768px) {
     .clients-grid {
       grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
+      gap: 1.5rem 2rem;
     }
     
     .client-logo {
-      height: 32px;
+      height: 24px;
     }
 
     .client-logo img {
-      max-height: 32px;
+      max-height: 24px;
+      max-width: 100px;
     }
   }
 
   @media (max-width: 480px) {
     .clients-grid {
       grid-template-columns: repeat(2, 1fr);
-      gap: 1.25rem;
+      gap: 1.5rem;
     }
   }
 
