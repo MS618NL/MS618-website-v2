@@ -6,9 +6,10 @@ interface Props {
   client: string;
   service: string;
   result: string;
+  basePath?: string;
 }
 
-const { title, description, slug, client, service, result } = Astro.props;
+const { title, description, slug, client, service, result, basePath = '/cases' } = Astro.props;
 ---
 
 <article class="case-card">
@@ -16,13 +17,15 @@ const { title, description, slug, client, service, result } = Astro.props;
     <span class="tag">{service}</span>
     <span class="card-client">{client}</span>
   </div>
-  <h3 class="card-title">{title}</h3>
+  <h3 class="card-title">
+    <a href={`${basePath}/${slug}/`}>{title}</a>
+  </h3>
   <p class="card-desc">{description}</p>
   <div class="card-result">
     <span class="result-label">Resultaat</span>
     <span class="result-value">{result}</span>
   </div>
-  <span class="card-link card-link--soon">Case volgt binnenkort</span>
+  <a href={`${basePath}/${slug}/`} class="card-link">Lees case →</a>
 </article>
 
 <style>
@@ -88,10 +91,16 @@ const { title, description, slug, client, service, result } = Astro.props;
     color: oklch(0.72 0.18 145);
   }
 
-  .card-link--soon {
-    font-size: 0.8125rem;
-    color: oklch(0.35 0 0);
-    font-style: italic;
-    cursor: default;
+  .card-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: oklch(0.55 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    margin-top: auto;
+  }
+
+  .card-link:hover {
+    color: oklch(0.98 0 0);
   }
 </style>

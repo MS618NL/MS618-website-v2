@@ -1,0 +1,86 @@
+---
+import Page from '@/layouts/Page.astro';
+import site from '@/data/site.json';
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url },
+  { name: 'Contact', item: site.url + '/contact/' },
+  { name: 'Bedankt' },
+];
+---
+
+<Page
+  title="Bedankt voor je bericht"
+  seoTitle="Bedankt — MS618"
+  description="Wij hebben je bericht ontvangen en nemen binnen 1 werkdag contact met je op."
+  breadcrumbs={breadcrumbs}
+  noindex={true}
+>
+  <div class="bedankt-page">
+    <div class="container">
+      <div class="bedankt-inner">
+        <div class="check-icon" aria-hidden="true">✓</div>
+        <h1>Bericht ontvangen</h1>
+        <p class="lead">Bedankt voor je bericht. We nemen binnen <strong>1 werkdag</strong> contact met je op.</p>
+        <p class="sub">In de tussentijd kun je alvast onze cases bekijken of meer lezen over onze aanpak.</p>
+        <div class="bedankt-actions">
+          <a href="/cases/" class="btn-primary">Bekijk onze cases →</a>
+          <a href="/" class="btn-secondary">Terug naar home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Page>
+
+<style>
+  .bedankt-page {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+
+  .bedankt-inner {
+    max-width: 560px;
+    padding: 4rem 0 2rem;
+    border-top: 1px solid oklch(0.15 0 0);
+  }
+
+  .check-icon {
+    font-size: 2.5rem;
+    color: oklch(0.72 0.18 145);
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 1rem;
+  }
+
+  .lead {
+    font-size: 1.125rem;
+    color: oklch(0.55 0 0);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+
+  .lead strong {
+    color: oklch(0.75 0 0);
+    font-weight: 600;
+  }
+
+  .sub {
+    font-size: 0.9375rem;
+    color: oklch(0.4 0 0);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+
+  .bedankt-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+</style>

@@ -11,6 +11,7 @@ const t = useTranslations(lang);
 const altLang = lang === 'nl' ? 'en' : 'nl';
 const altPath = getAlternatePath(url, altLang);
 const prefix = lang === 'en' ? '/en' : '';
+const homeHref = lang === 'en' ? '/en/' : '/';
 
 const navItems = [
   { label: t('nav.services'), href: `${prefix}/services/` },
@@ -23,7 +24,7 @@ const contactHref = `${prefix}/contact/`;
 
 <header class="site-header" id="site-header">
   <div class="container header-inner">
-    <a href={prefix || '/'} class="logo" aria-label="MS618 — Home">
+    <a href={homeHref} class="logo" aria-label="MS618 — Home">
       <span class="logo-text">MS618</span>
     </a>
 

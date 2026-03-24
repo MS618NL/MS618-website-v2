@@ -1,0 +1,391 @@
+---
+import Page from '@/layouts/Page.astro';
+import { buildContactPiece } from '@/utils/schema';
+import site from '@/data/site.json';
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url },
+  { name: 'Contact' },
+];
+
+const extraSchema = [buildContactPiece()];
+---
+
+<Page
+  title="Contact"
+  seoTitle="Plan een Strategiegesprek — MS618 | 45 Minuten, Geen Verplichtingen"
+  description="45 minuten. Geen verkoopgesprek. Eerlijk inzicht in waar je staat en wat je nodig hebt om te groeien. Boek een intakegesprek met MS618."
+  breadcrumbs={breadcrumbs}
+  extraSchema={extraSchema}
+>
+  <div class="contact-page">
+    <div class="container">
+      <header class="page-header">
+        <h1>Plan een gesprek</h1>
+        <p class="lead">Een open gesprek over jouw uitdagingen. Wij luisteren, denken mee en vertellen eerlijk hoe wij kunnen helpen. Vrijblijvend.</p>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-form-col">
+          <form class="contact-form" method="POST" action="https://formspree.io/f/xzdkpdwk">
+            <input type="hidden" name="_next" value="https://www.ms618.nl/contact/bedankt/" />
+
+            <div class="form-group">
+              <label for="name">Naam <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Bedrijf <span aria-hidden="true">*</span></label>
+              <input type="text" id="company" name="company" required autocomplete="organization" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mailadres <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="challenge">Wat is jouw voornaamste uitdaging? <span aria-hidden="true">*</span></label>
+              <textarea id="challenge" name="challenge" rows="5" required placeholder="Vertel ons kort over je situatie en wat je wil bereiken..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Maandelijks marketingbudget</label>
+              <select id="budget" name="budget">
+                <option value="">— Selecteer een range</option>
+                <option value="0-500">€0 – €500 / maand</option>
+                <option value="500-1000">€500 – €1.000 / maand</option>
+                <option value="1000-2500">€1.000 – €2.500 / maand</option>
+                <option value="2500-5000">€2.500 – €5.000 / maand</option>
+                <option value="5000-10000">€5.000 – €10.000 / maand</option>
+                <option value="10000+">€10.000+ / maand</option>
+                <option value="unknown">Nog onbekend / te bespreken</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-primary form-submit">
+              Verstuur bericht →
+            </button>
+
+            <p class="form-note">Wij reageren binnen 1 werkdag. Geen spam, geen automatische verkoopsequenties.</p>
+          </form>
+        </div>
+
+        <aside class="contact-info-col">
+          <div class="contact-info-block office-info-block">
+            <h2>MS618 B.V.</h2>
+            <address>
+              Slachtedyk 4a<br />
+              8501 XC Joure<br />
+              Nederland
+            </address>
+            <div class="office-links">
+              <a href={`mailto:${site.organization.email}`} class="office-email">{site.organization.email}</a>
+              {site.social.linkedin && (
+                <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer" class="office-linkedin">LinkedIn</a>
+              )}
+            </div>
+            <a href="https://maps.google.com/?q=Slachtedyk+4a+Joure" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              Plan route →
+            </a>
+          </div>
+
+          <div class="contact-info-block">
+            <h2>Wat verwacht je?</h2>
+            <ul class="expect-list">
+              <li>
+                <span class="expect-icon">✓</span>
+                <span>Reactie binnen 1 werkdag</span>
+              </li>
+              <li>
+                <span class="expect-icon">✓</span>
+                <span>Kennismakingsgesprek van ~45 minuten</span>
+              </li>
+              <li>
+                <span class="expect-icon">✓</span>
+                <span>Eerlijk advies — ook als wij niet de juiste match zijn</span>
+              </li>
+              <li>
+                <span class="expect-icon">✓</span>
+                <span>Geen verplichtingen na het eerste gesprek</span>
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+      </div>
+
+      <!-- Kantoor foto full width -->
+      <section class="office-section">
+        <div class="office-image-full">
+          <img src="/images/pand.jpg" alt="MS618 kantoor FJ08 aan de haven van Joure" loading="lazy" />
+        </div>
+      </section>
+    </div>
+  </div>
+</Page>
+
+<style>
+  .contact-page {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+  }
+
+  .page-header {
+    padding: 3rem 0 4rem;
+    max-width: 640px;
+    border-bottom: 1px solid oklch(0.15 0 0);
+    margin-bottom: 4rem;
+  }
+
+  .page-header h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 1rem;
+  }
+
+  .lead {
+    font-size: 1.125rem;
+    color: oklch(0.55 0 0);
+    line-height: 1.7;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: oklch(0.65 0 0);
+  }
+
+  label span {
+    color: oklch(0.5 0 0);
+  }
+
+  input, textarea, select {
+    background: oklch(0.12 0 0);
+    border: 1px solid oklch(0.22 0 0);
+    color: oklch(0.98 0 0);
+    padding: 0.75rem 1rem;
+    font-size: 0.9375rem;
+    font-family: inherit;
+    width: 100%;
+    transition: border-color 0.2s ease;
+    appearance: none;
+  }
+
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: oklch(0.4 0 0);
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: oklch(0.35 0 0);
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 8rem;
+  }
+
+  select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+  }
+
+  select option {
+    background: oklch(0.12 0 0);
+  }
+
+  .form-submit {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .form-note {
+    font-size: 0.8125rem;
+    color: oklch(0.4 0 0);
+    line-height: 1.5;
+  }
+
+  .contact-info-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-info-block {
+    border: 1px solid oklch(0.18 0 0);
+    padding: 1.75rem;
+    background: oklch(0.11 0 0);
+  }
+
+  .contact-info-block h2 {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: oklch(0.98 0 0);
+    margin-bottom: 1.25rem;
+  }
+
+  .contact-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-detail:last-child {
+    margin-bottom: 0;
+  }
+
+  .cd-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: oklch(0.4 0 0);
+  }
+
+  .contact-detail a,
+  .contact-detail span:not(.cd-label) {
+    font-size: 0.9375rem;
+    color: oklch(0.65 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .contact-detail a:hover {
+    color: oklch(0.98 0 0);
+  }
+
+  .expect-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .expect-list li {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: oklch(0.55 0 0);
+  }
+
+  .expect-icon {
+    color: oklch(0.72 0.18 145);
+    flex-shrink: 0;
+  }
+
+  /* Office section full width */
+  .office-section {
+    margin-top: 5rem;
+    border-top: 1px solid oklch(0.15 0 0);
+    padding-top: 4rem;
+  }
+
+  .office-image-full {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .office-image-full img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0.95);
+  }
+
+  .office-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 280px;
+  }
+
+  .office-info h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: oklch(0.98 0 0);
+    margin-bottom: 0.25rem;
+  }
+
+  .office-info address {
+    font-style: normal;
+    font-size: 0.9375rem;
+    color: oklch(0.5 0 0);
+    line-height: 1.6;
+  }
+
+  /* Office info in sidebar */
+  .office-info-block h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: oklch(0.98 0 0);
+    margin-bottom: 0.5rem;
+  }
+
+  .office-info-block address {
+    font-style: normal;
+    font-size: 0.875rem;
+    color: oklch(0.5 0 0);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+  .office-links {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .office-email,
+  .office-linkedin {
+    font-size: 0.875rem;
+    color: oklch(0.5 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .office-email:hover,
+  .office-linkedin:hover {
+    color: oklch(0.98 0 0);
+  }
+
+  .office-info-block .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  @media (max-width: 1024px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+</style>

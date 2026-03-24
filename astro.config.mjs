@@ -45,5 +45,14 @@ export default defineConfig({
   ],
   vite: {
     plugins: [tailwindcss()],
+    build: {
+      cssMinify: true,
+      minify: 'esbuild',
+      rollupOptions: {
+        output: {
+          manualChunks: undefined,
+        },
+      },
+    },
   },
 });
