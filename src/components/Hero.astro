@@ -271,39 +271,47 @@ const {
   const rotatingText = document.getElementById('rotating-text');
   if (rotatingText) {
     const words = ['marketing', 'jouw bedrijf', 'de wereld'];
-    let currentIndex = 0;
-    let currentText = words[0];
-    let isDeleting = false;
-    let charIndex = currentText.length;
+    let wordIndex = 0;
+    let charIndex = words[0].length;
+    let isDeleting = true;
+    let isPaused = false;
 
-    function typeEffect() {
-      const currentWord = words[currentIndex];
+    function tick() {
+      const currentWord = words[wordIndex];
       
+      if (isPaused) {
+        isPaused = false;
+        setTimeout(tick, isDeleting ? 50 : 100);
+        return;
+      }
+
       if (isDeleting) {
         charIndex--;
         rotatingText.textContent = currentWord.substring(0, charIndex);
         
         if (charIndex === 0) {
           isDeleting = false;
-          currentIndex = (currentIndex + 1) % words.length;
-          setTimeout(typeEffect, 500);
+          wordIndex = (wordIndex + 1) % words.length;
+          isPaused = true;
+          setTimeout(tick, 400);
           return;
         }
-        setTimeout(typeEffect, 50);
+        setTimeout(tick, 40);
       } else {
         charIndex++;
-        rotatingText.textContent = currentWord.substring(0, charIndex);
+        rotatingText.textContent = words[wordIndex].substring(0, charIndex);
         
-        if (charIndex === currentWord.length) {
+        if (charIndex === words[wordIndex].length) {
           isDeleting = true;
-          setTimeout(typeEffect, 2500);
+          setTimeout(tick, 2000);
           return;
         }
-        setTimeout(typeEffect, 100);
+        setTimeout(tick, 80);
       }
     }
 
-    setTimeout(typeEffect, 2500);
+    // Start na 2 seconden
+    setTimeout(tick, 2000);
   }
 
   // Canvas particles
