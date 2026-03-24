@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://ms618.nl',
   output: 'static',
+  trailingSlash: 'always',
   i18n: {
     defaultLocale: 'nl',
     locales: ['nl', 'en'],

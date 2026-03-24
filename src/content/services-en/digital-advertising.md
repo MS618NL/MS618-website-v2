@@ -8,36 +8,36 @@ category: "visibility"
 updatedDate: 2026-03-01
 ---
 
-## Paid traffic that converts
+## Paid traffic that actually converts
 
-Paid media has a bad reputation in B2B. Too expensive, too little control, leads of too low quality. That reputation is earned — but it's not inherent to the channel. It's the result of poor execution.
+Paid media gets a bad rap in B2B. Too expensive, too little control, leads that go nowhere. That reputation is earned — but it's not the channel's fault. It's the execution.
 
-We run campaigns built on a solid strategy: the right offer, for the right audience, at the right moment. With reporting that shows what it truly delivers.
+We run campaigns built on solid strategy: the right offer, to the right audience, at the right moment. With reporting that tells you what it's actually delivering.
 
-## Our specialities
+## What we do
 
 ### Google Ads for B2B
 
-Search campaigns targeting keywords with clear purchase intent. We build campaign structures that convert and continuously optimise based on data.
+Search campaigns built around keywords with real purchase intent. We build structures that convert — and keep optimising based on what the data tells us.
 
 - Search & Shopping campaigns
 - Performance Max with a B2B focus
 - Remarketing for warm leads
-- Conversion tracking at lead and sales level
+- Conversion tracking at lead and revenue level
 
 ### LinkedIn Ads
 
-The most effective paid B2B channel for account-based marketing. We target by job function, company size, industry and seniority level.
+The sharpest paid B2B channel for account-based marketing. We target by job function, seniority, company size and industry — so your budget reaches the people who actually make buying decisions.
 
 - Thought leadership ads
 - Lead gen forms
 - Account-based targeting
-- Retargeting of website visitors
+- Website visitor retargeting
 
 ### Performance reporting
 
-Transparent reporting on what matters: cost per lead, lead quality score, pipeline contribution, ROAS. No vanity metrics.
+We report on what matters: cost per lead, lead quality, pipeline contribution, ROAS. No vanity metrics, no fluff.
 
 ---
 
-*Ready for campaigns that truly convert? Schedule a conversation about your advertising strategy.*
+*Want campaigns that stop burning budget and start building pipeline? Let's talk.*

@@ -8,17 +8,17 @@ category: "conversion"
 updatedDate: 2026-03-01
 ---
 
-## Data without insight is noise
+## More data doesn't mean better decisions
 
-Many organisations have access to more data than ever. GA4, CRM data, ad platform data, social media statistics. And yet they don't know what works.
+Most organisations are drowning in data. GA4, CRM exports, ad platform dashboards, social stats. And most of them still can't tell you what's actually working.
 
-The problem isn't a lack of data — it's a lack of structure, interpretation and connection to business reality.
+The problem isn't too little data. It's no structure, no interpretation and no connection to what the business actually cares about.
 
 ## What we build
 
-### Marketing analytics foundation
+### A solid analytics foundation
 
-We start with the foundation: correct tracking, reliable data, a single source of truth. Because making decisions based on incorrect data is worse than making no decisions at all.
+Everything starts here: clean tracking, reliable data, one version of the truth. Decisions made on bad data are worse than no decisions at all — so we fix the plumbing first.
 
 - GA4 implementation and configuration
 - Conversion tracking via Google Tag Manager
@@ -27,16 +27,16 @@ We start with the foundation: correct tracking, reliable data, a single source o
 
 ### Attribution and ROI measurement
 
-Which channel contributes to your pipeline? Which content generates the most valuable leads? We build attribution models that approximate reality.
+Which channels are actually contributing to pipeline? Which content generates your most valuable leads? We build attribution models that reflect reality — not just last-click credit.
 
-### Management dashboards
+### Dashboards that get used
 
-Clear, visual, actionable. We build dashboards in Looker Studio or BI tools that give CMOs and leadership teams immediate insight into marketing performance.
+Clear, visual, actionable. We build dashboards in Looker Studio or your BI tool of choice that give CMOs and leadership teams a genuine read on marketing performance — at a glance.
 
-### Periodic analysis and recommendations
+### Monthly analysis and recommendations
 
-Data only has value when you act on it. We analyse your performance monthly and translate that into concrete recommendations for the next period.
+Data only matters when someone acts on it. Every month, we analyse your performance and translate it into concrete priorities for the period ahead.
 
 ---
 
-*Ready to turn data into better decisions? Schedule an analytics conversation.*
+*Ready to actually understand what your marketing is doing? Let's build the foundation.*

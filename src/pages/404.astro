@@ -1,0 +1,111 @@
+---
+import Base from '@/layouts/Base.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+---
+
+<Base
+  title="Pagina niet gevonden — MS618"
+  seoTitle="Pagina niet gevonden — MS618"
+  description="De pagina die je zoekt bestaat niet of is verplaatst."
+  noindex={true}
+>
+  <Header />
+  <main id="main-content">
+    <section class="not-found-section">
+      <div class="container">
+        <div class="not-found-inner">
+          <div class="not-found-code">404</div>
+          <h1>Pagina niet gevonden</h1>
+          <p>De pagina die je zoekt bestaat niet of is verplaatst. Misschien helpt één van deze links je verder.</p>
+          <div class="not-found-links">
+            <a href="/" class="btn-primary">Terug naar home</a>
+            <a href="/diensten/" class="btn-secondary">Onze diensten</a>
+            <a href="/contact/" class="btn-secondary">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Base>
+
+<style>
+  .not-found-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background: #0a0a0a;
+    border-top: 1px solid #1a1a1a;
+  }
+
+  .not-found-inner {
+    max-width: 480px;
+    padding: 6rem 0;
+  }
+
+  .not-found-code {
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: #1e1e1e;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    font-family: Georgia, serif;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    color: #fafafa;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 0.9375rem;
+    color: #666;
+    line-height: 1.65;
+    margin-bottom: 2rem;
+  }
+
+  .not-found-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
+    background: #fafafa;
+    color: #0a0a0a;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+
+  .btn-primary:hover {
+    background: #e0e0e0;
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
+    border: 1px solid #2a2a2a;
+    color: #888;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .btn-secondary:hover {
+    border-color: #444;
+    color: #ccc;
+  }
+</style>

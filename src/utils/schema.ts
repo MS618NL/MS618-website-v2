@@ -76,7 +76,7 @@ export function buildWebpagePiece(
     description,
     isPartOf: { '@id': `${site.url}/#website` },
     breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
-    inLanguage: 'nl-NL',
+    inLanguage: pageUrl.includes('/en/') ? 'en' : 'nl-NL',
     ...(datePublished && { datePublished }),
     ...(dateModified && { dateModified }),
   };
@@ -123,7 +123,7 @@ export function buildArticlePiece(
     publisher: { '@id': `${site.url}/#organization` },
     mainEntityOfPage: { '@id': `${pageUrl}#webpage` },
     isPartOf: { '@id': `${site.url}/#website` },
-    inLanguage: 'nl-NL',
+    inLanguage: pageUrl.includes('/en/') ? 'en' : 'nl-NL',
     ...(image && {
       image: {
         '@type': 'ImageObject',

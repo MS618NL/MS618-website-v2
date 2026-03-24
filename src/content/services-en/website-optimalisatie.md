@@ -8,21 +8,21 @@ category: "conversion"
 updatedDate: 2026-03-01
 ---
 
-## Your website: your best salesperson or your weakest link
+## Your website is either your best salesperson or your biggest liability
 
-A website that doesn't convert is a leaking bucket. You pour budget into it through SEO and advertising, but it drains out the bottom. We stop that leakage.
+A website that doesn't convert is a leaking bucket. You pour money in through SEO and ads — and it drains straight out the bottom. We fix the leak.
 
-Website optimisation at MS618 is a combination of user experience (UX), conversion rate optimisation (CRO) and technical performance. Three disciplines that together determine whether your website drives growth or holds it back.
+Website optimisation at MS618 combines UX, conversion rate optimisation (CRO) and technical performance. Three disciplines that together determine whether your site drives growth or quietly kills it.
 
 ## Our approach
 
 ### UX analysis and user research
 
-We first understand how visitors experience your site. Through heatmaps, session recordings, user testing and analytics, we analyse where visitors drop off and why.
+We start by understanding how visitors actually experience your site. Through heatmaps, session recordings, user testing and analytics, we find exactly where people drop off — and why.
 
 ### Conversion optimisation
 
-Based on data, we build hypotheses and test systematically. Which call-to-action works? Which page layout leads to more enquiries? Which message resonates with your target audience?
+We turn those findings into hypotheses and test them systematically. Which CTA gets clicked? Which layout drives more enquiries? Which message lands with your audience?
 
 - Landing page optimisation
 - A/B and multivariate testing
@@ -31,13 +31,13 @@ Based on data, we build hypotheses and test systematically. Which call-to-action
 
 ### Core Web Vitals and technical performance
 
-Google ranks fast, user-friendly websites higher. And visitors abandon slow sites more quickly. We ensure:
+Google rewards fast, user-friendly sites. Visitors abandon slow ones. We make sure your site earns both:
 
 - LCP < 2.5 seconds
 - CLS < 0.1 (no layout shifts)
-- INP < 200ms (fast interaction)
+- INP < 200ms (snappy interactions)
 - Mobile-first optimisation
 
 ---
 
-*Ready to get more from your existing traffic? Get in touch for a conversion audit.*
+*Getting traffic but not enough conversions? Let's run a conversion audit and find out why.*
