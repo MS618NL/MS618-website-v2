@@ -168,13 +168,15 @@ const breadcrumbs = [
 
       <!-- Locatie -->
       <section class="about-section location-section">
-        <div class="location-content">
-          <div class="section-label-inline">Locatie</div>
-          <h2 class="section-h2">Het kantoor van de toekomst staat in Joure</h2>
-          <p>MS618 werkt vanuit FJ08: het achtste fabriekspand van Douwe Egberts, aan de haven van Joure. Gerestaureerd met eiken, noten en rauw staal. Een plek waar wordt gewerkt, gekookt, muziek gemaakt en samengewerkt. Dit is hoe werken eruitziet als AI het routinewerk overneemt. Wat overblijft is denken, maken en samenkomen. Geen kantoorflat. Het kantoor van de toekomst.</p>
-        </div>
-        <div class="location-image-full">
-          <img src="/images/pand.jpg" alt="MS618 kantoor FJ08 in Joure" loading="lazy" />
+        <div class="location-grid">
+          <div class="location-content">
+            <div class="section-label-inline">Locatie</div>
+            <h2 class="section-h2">Het kantoor van de toekomst staat in Joure</h2>
+            <p>MS618 werkt vanuit FJ08: het achtste fabriekspand van Douwe Egberts, aan de haven van Joure. Gerestaureerd met eiken, noten en rauw staal. Een plek waar wordt gewerkt, gekookt, muziek gemaakt en samengewerkt. Dit is hoe werken eruitziet als AI het routinewerk overneemt. Wat overblijft is denken, maken en samenkomen. Geen kantoorflat. Het kantoor van de toekomst.</p>
+          </div>
+          <div class="location-image">
+            <img src="/images/pand.jpg" alt="MS618 kantoor FJ08 in Joure" loading="lazy" />
+          </div>
         </div>
       </section>
 
@@ -435,9 +437,11 @@ const breadcrumbs = [
   }
 
   /* Locatie */
-  .location-content {
-    max-width: 720px;
-    margin-bottom: 2.5rem;
+  .location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    align-items: center;
   }
 
   .location-content p {
@@ -445,24 +449,27 @@ const breadcrumbs = [
     line-height: 1.75;
   }
 
-  .location-image-full {
+  .location-image {
     width: 100%;
   }
 
-  .location-image-full img {
+  .location-image img {
     width: 100%;
     height: auto;
-    aspect-ratio: 21 / 9;
-    object-fit: cover;
+    object-fit: contain;
     filter: brightness(0.95);
   }
 
   /* Responsive */
   @media (max-width: 1024px) {
-    .about-grid,
-    .location-grid {
+    .about-grid {
       grid-template-columns: 1fr;
       gap: 2.5rem;
+    }
+
+    .location-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
     }
 
     .values-grid {

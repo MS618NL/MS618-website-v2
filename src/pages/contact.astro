@@ -119,17 +119,13 @@ const extraSchema = [buildContactPiece()];
           <img src="/images/pand.jpg" alt="MS618 kantoor FJ08 aan de haven van Joure" loading="lazy" />
         </div>
         <div class="office-info">
-          <div class="office-details">
-            <h2>MS618 B.V.</h2>
-            <address>
-              Slachtedyk 4a<br />
-              8501 XC Joure<br />
-              Nederland
-            </address>
-            <div class="office-contact-details">
-              <a href={`mailto:${site.organization.email}`}>{site.organization.email}</a>
-            </div>
-          </div>
+          <h2>MS618 B.V.</h2>
+          <address>
+            Slachtedyk 4a<br />
+            8501 XC Joure<br />
+            Nederland
+          </address>
+          <a href={`mailto:${site.organization.email}`} class="office-email">{site.organization.email}</a>
           <a href="https://maps.google.com/?q=Slachtedyk+4a+Joure" target="_blank" rel="noopener noreferrer" class="btn-secondary">
             Plan route →
           </a>
@@ -330,53 +326,52 @@ const extraSchema = [buildContactPiece()];
   .office-image-full img {
     width: 100%;
     height: auto;
-    aspect-ratio: 21 / 9;
-    object-fit: cover;
+    object-fit: contain;
     filter: brightness(0.95);
   }
 
   .office-info {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 280px;
   }
 
-  .office-details h2 {
+  .office-info h2 {
     font-size: 1.125rem;
     font-weight: 600;
     color: oklch(0.98 0 0);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
   }
 
-  .office-details address {
+  .office-info address {
     font-style: normal;
     font-size: 0.9375rem;
     color: oklch(0.5 0 0);
     line-height: 1.6;
-    margin-bottom: 0.75rem;
   }
 
-  .office-contact-details a {
+  .office-email {
     font-size: 0.9375rem;
     color: oklch(0.5 0 0);
     text-decoration: none;
     transition: color 0.2s ease;
+    margin-bottom: 0.5rem;
   }
 
-  .office-contact-details a:hover {
+  .office-email:hover {
     color: oklch(0.98 0 0);
+  }
+
+  .office-info .btn-secondary {
+    margin-top: 0.75rem;
+    width: fit-content;
   }
 
   @media (max-width: 1024px) {
     .contact-grid {
       grid-template-columns: 1fr;
       gap: 3rem;
-    }
-
-    .office-info {
-      flex-direction: column;
-      gap: 1.5rem;
     }
   }
 </style>
