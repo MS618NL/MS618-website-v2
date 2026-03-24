@@ -1,7 +1,7 @@
 ---
 title: "Digital Advertising"
-seoTitle: "Digital Advertising voor B2B — MS618"
-description: "Performance campagnes op Google en LinkedIn die B2B-leads genereren. Geen budget verspillen aan verkeerd publiek — alleen doelgerichte groei."
+seoTitle: "B2B Digital Advertising — Google & LinkedIn Ads die Converteren | MS618"
+description: "Paid campagnes die pijplijn vullen, niet alleen klikken genereren. MS618 runt Google- en LinkedIn-ads voor B2B met focus op kosten per lead en ROI."
 order: 3
 icon: "◈"
 category: "zichtbaarheid"

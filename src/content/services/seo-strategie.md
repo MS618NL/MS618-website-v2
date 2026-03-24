@@ -1,7 +1,7 @@
 ---
 title: "SEO Strategie"
-seoTitle: "SEO Strategie voor B2B — MS618"
-description: "Structurele organische groei via technische SEO, contentstrategie en strategische linkbuilding. Geen shortcuts, wel duurzame resultaten."
+seoTitle: "SEO Strategie voor B2B — Van Onzichtbaar naar de Top | MS618"
+description: "Geen trucjes, geen shortcuts. MS618 bouwt SEO-strategieën op termen die er écht toe doen — voor B2B-bedrijven die serieus willen groeien."
 order: 1
 icon: "↗"
 category: "zichtbaarheid"

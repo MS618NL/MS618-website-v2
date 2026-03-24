@@ -1,7 +1,7 @@
 ---
 title: "Website Optimisation"
-seoTitle: "Website Optimisation & CRO — MS618"
-description: "Get more from your existing traffic through UX, CRO and technical performance. We optimise your website so visitors become customers."
+seoTitle: "Website Optimisation & CRO — More Leads from Existing Traffic | MS618"
+description: "Your website already has visitors. The question is: why aren’t they converting? MS618 optimises UX, conversion and technical performance for real results."
 order: 4
 icon: "⬡"
 category: "conversion"

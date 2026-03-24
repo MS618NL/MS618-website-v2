@@ -1,7 +1,7 @@
 ---
 title: "Analytics & Reporting"
-seoTitle: "Marketing Analytics & Reporting — MS618"
-description: "From raw data to actionable insights. We build dashboards and attribution models that help you make better marketing decisions."
+seoTitle: "Marketing Analytics & Dashboards — Insight That Drives Action | MS618"
+description: "Finally know what works. MS618 builds marketing analytics, attribution models and dashboards that give leadership direct grip on marketing performance."
 order: 5
 icon: "≡"
 category: "conversion"

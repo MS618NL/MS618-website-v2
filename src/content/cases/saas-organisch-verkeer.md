@@ -1,7 +1,7 @@
 ---
 title: "Van 8.000 naar 42.000 organische bezoekers in 14 maanden"
 seoTitle: "Case: SaaS Scale-up — 425% Organische Groei in 14 Maanden | MS618"
-description: "Hoe een SaaS scale-up hun organisch verkeer met 425% liet groeien en hun afhankelijkheid van paid ads drastisch verminderde via een doordachte SEO-strategie."
+description: "Van 8.000 naar 42.000 organische bezoekers in 14 maanden. Hoe een SaaS scale-up met een SEO-strategie hun afhankelijkheid van betaald verkeer doorbrak."
 publishDate: 2026-02-01
 client: "SaaS Scale-up (anoniem)"
 service: "SEO Strategie"

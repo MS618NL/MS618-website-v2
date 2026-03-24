@@ -1,7 +1,7 @@
 ---
 title: "Content Marketing"
-seoTitle: "Content Marketing for B2B — MS618"
-description: "From content strategy to thought leadership: we build content that establishes authority, generates organic traffic and converts leads."
+seoTitle: "B2B Content Marketing — Authority That Closes Deals | MS618"
+description: "Content that doesn’t just get read — it sells. MS618 builds a content engine that delivers qualified leads, organic traffic and lasting authority."
 order: 2
 icon: "✦"
 category: "visibility"

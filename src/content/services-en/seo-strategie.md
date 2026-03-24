@@ -1,7 +1,7 @@
 ---
 title: "SEO Strategy"
-seoTitle: "SEO Strategy for B2B — MS618"
-description: "Structural organic growth through technical SEO, content strategy and strategic link building. No shortcuts, just sustainable results."
+seoTitle: "B2B SEO Strategy — From Invisible to the Top | MS618"
+description: "No shortcuts. MS618 builds SEO strategies that deliver organic growth on terms that actually matter — for B2B companies ready to invest in the long game."
 order: 1
 icon: "↗"
 category: "visibility"

@@ -1,7 +1,7 @@
 ---
 title: "Conversieratio van 1,2% naar 3,8% voor e-commerce retailer"
 seoTitle: "Case: E-commerce CRO — Conversieratio 3× verhoogd | MS618"
-description: "Hoe een e-commerce retailer zijn conversieratio meer dan verdrievoudigde via systematische CRO, UX-optimalisatie en data-gedreven A/B testing."
+description: "Van 1,2% naar 3,8% conversieratio — een verdrievoudiging. Hoe systematische CRO en UX-verbeteringen meer omzet haalden uit hetzelfde verkeer."
 publishDate: 2026-01-10
 client: "E-commerce Retailer (anoniem)"
 service: "Website Optimalisatie"

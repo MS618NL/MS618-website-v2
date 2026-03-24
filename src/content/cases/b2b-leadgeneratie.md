@@ -1,7 +1,7 @@
 ---
 title: "180% meer gekwalificeerde B2B-leads via LinkedIn en SEO"
 seoTitle: "Case: B2B Leadgeneratie — 180% Meer Leads via LinkedIn & SEO | MS618"
-description: "Hoe een technisch adviesbureau hun gekwalificeerde B2B-leads met 180% liet groeien via een gecombineerde LinkedIn en SEO strategie."
+description: "180% meer gekwalificeerde leads in 12 maanden. Hoe een technisch adviesbureau stopte met koude acquisitie en begon te groeien via SEO en LinkedIn."
 publishDate: 2025-12-01
 client: "Technisch adviesbureau (anoniem)"
 service: "Content Marketing & SEO"

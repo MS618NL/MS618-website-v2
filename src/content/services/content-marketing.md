@@ -1,7 +1,7 @@
 ---
 title: "Content Marketing"
-seoTitle: "Content Marketing voor B2B — MS618"
-description: "Van contentstrategie tot thought leadership: wij bouwen content die autoriteit vestigt, organisch verkeer genereert en leads converteert."
+seoTitle: "Content Marketing voor B2B — Autoriteit die Deals Sluit | MS618"
+description: "Content die niet alleen gelezen wordt, maar ook verkoopt. MS618 bouwt een contentmachine die autoriteit, organisch verkeer en gekwalificeerde leads oplevert."
 order: 2
 icon: "✦"
 category: "zichtbaarheid"

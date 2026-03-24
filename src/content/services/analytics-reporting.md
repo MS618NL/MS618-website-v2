@@ -1,7 +1,7 @@
 ---
 title: "Analytics & Reporting"
-seoTitle: "Marketing Analytics & Reporting — MS618"
-description: "Van ruwe data naar actionable inzichten. Wij bouwen dashboards en attribution-modellen die je helpen betere marketingbeslissingen te nemen."
+seoTitle: "Marketing Analytics & Dashboards — Inzicht dat Leidt tot Actie | MS618"
+description: "Weet eindelijk wat werkt. MS618 bouwt marketing analytics, attribution-modellen en dashboards die directie en CMO’s directe grip geven op performance."
 order: 5
 icon: "≡"
 category: "conversie"

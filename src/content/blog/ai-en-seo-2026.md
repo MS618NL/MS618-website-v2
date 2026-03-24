@@ -1,7 +1,7 @@
 ---
 title: "AI en SEO in 2026: wat verandert er echt?"
 seoTitle: "AI en SEO in 2026 — Wat verandert er écht? | MS618"
-description: "AI verandert zoekgedrag fundamenteel. Maar paniek is niet nodig — wie begrijpt wat er verandert, heeft een enorm voordeel. Onze analyse."
+description: "SGE, AI Overviews, AEO — de termen vliegen je om de oren. Maar wat betekent het voor jouw rankings? Onze analyse van wat er écht verandert in 2026."
 publishDate: 2026-03-10
 updatedDate: 2026-03-10
 author: "Jorrit Miedema"

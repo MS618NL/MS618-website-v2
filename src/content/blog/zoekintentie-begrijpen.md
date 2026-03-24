@@ -1,7 +1,7 @@
 ---
 title: "Zoekintentie begrijpen: de sleutel tot SEO die werkt"
 seoTitle: "Zoekintentie Begrijpen — De Basis van Effectieve SEO | MS618"
-description: "Zoekintentie is het fundament van elke succesvolle SEO-strategie. Wie de intentie achter een zoekopdracht begrijpt, schrijft content die rankt én converteert."
+description: "Waarom rankt je content niet, ook al is het goed geschreven? Negen van de tien keer ligt het aan zoekintentie. Leer hoe je het analyseert én benut."
 publishDate: 2026-02-20
 updatedDate: 2026-02-20
 author: "Jorrit Miedema"
