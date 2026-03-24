@@ -5,7 +5,7 @@ import CTA from '@/components/CTA.astro';
 import { getCollection } from 'astro:content';
 import site from '@/data/site.json';
 
-const cases = (await getCollection('cases'))
+const cases = (await getCollection('cases-en'))
   .filter((c) => !c.data.noindex)
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 

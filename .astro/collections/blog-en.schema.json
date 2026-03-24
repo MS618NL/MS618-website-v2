@@ -1,0 +1,89 @@
+{
+  "$ref": "#/definitions/blog-en",
+  "definitions": {
+    "blog-en": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "seoTitle": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 160
+        },
+        "ogImage": {
+          "type": "string"
+        },
+        "ogType": {
+          "type": "string",
+          "const": "article",
+          "default": "article"
+        },
+        "noindex": {
+          "type": "boolean",
+          "default": false
+        },
+        "publishDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "updatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "author": {
+          "type": "string",
+          "default": "MS618"
+        },
+        "category": {
+          "type": "string"
+        },
+        "relatedPosts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "publishDate",
+        "category"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

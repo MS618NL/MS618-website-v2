@@ -14,11 +14,11 @@ import Footer from '@/components/Footer.astro';
   <main id="main-content">
     <section class="not-found-section">
       <div class="container">
-        <div class="not-found-inner">
+        <div class="not-found-inner" id="not-found-content">
           <div class="not-found-code">404</div>
-          <h1>Pagina niet gevonden</h1>
-          <p>De pagina die je zoekt bestaat niet of is verplaatst. Misschien helpt één van deze links je verder.</p>
-          <div class="not-found-links">
+          <h1 id="nf-title">Pagina niet gevonden</h1>
+          <p id="nf-text">De pagina die je zoekt bestaat niet of is verplaatst. Misschien helpt één van deze links je verder.</p>
+          <div class="not-found-links" id="nf-links">
             <a href="/" class="btn-primary">Terug naar home</a>
             <a href="/diensten/" class="btn-secondary">Onze diensten</a>
             <a href="/contact/" class="btn-secondary">Contact</a>
@@ -109,3 +109,20 @@ import Footer from '@/components/Footer.astro';
     color: #ccc;
   }
 </style>
+
+<script>
+  if (window.location.pathname.startsWith('/en/') || window.location.pathname === '/en') {
+    const title = document.getElementById('nf-title');
+    const text = document.getElementById('nf-text');
+    const links = document.getElementById('nf-links');
+    if (title) title.textContent = 'Page not found';
+    if (text) text.textContent = 'The page you are looking for does not exist or has been moved. Perhaps one of these links can help.';
+    if (links) {
+      links.innerHTML = `
+        <a href="/en/" class="btn-primary">Back to home</a>
+        <a href="/en/services/" class="btn-secondary">Our services</a>
+        <a href="/en/contact/" class="btn-secondary">Contact</a>
+      `;
+    }
+  }
+</script>

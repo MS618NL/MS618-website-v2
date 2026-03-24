@@ -1,0 +1,113 @@
+---
+import Page from '@/layouts/Page.astro';
+import site from '@/data/site.json';
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url + '/en/' },
+  { name: 'Contact', item: site.url + '/en/contact/' },
+  { name: 'Thank you' },
+];
+---
+
+<Page
+  title="Thank you for your message"
+  seoTitle="Thank You — MS618"
+  description="We have received your message and will get back to you within 1 business day."
+  breadcrumbs={breadcrumbs}
+  noindex={true}
+>
+  <div class="thankyou-page">
+    <div class="container">
+      <div class="thankyou-inner">
+        <div class="check-icon" aria-hidden="true">✓</div>
+        <h1>Message received</h1>
+        <p class="lead">Thank you for your message. We will get back to you within <strong>1 business day</strong>.</p>
+        <p class="sub">Prefer to speak to someone directly? Feel free to call us.</p>
+        <div class="thankyou-actions">
+          <a href="/en/cases/" class="btn-primary">View our cases</a>
+          <a class="btn-secondary btn-call" data-p1="tel:+31" data-p2="633" data-p3="106702" role="button">
+            Call us
+          </a>
+          <a href="/en/" class="btn-secondary">Back to home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Page>
+
+<style>
+  .thankyou-page {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+
+  .thankyou-inner {
+    max-width: 560px;
+    padding: 4rem 0 2rem;
+    border-top: 1px solid oklch(0.15 0 0);
+  }
+
+  .check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid oklch(0.72 0.18 145);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: oklch(0.72 0.18 145);
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 1rem;
+  }
+
+  .lead {
+    font-size: 1.125rem;
+    color: oklch(0.55 0 0);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+  }
+
+  .lead strong {
+    color: oklch(0.75 0 0);
+    font-weight: 600;
+  }
+
+  .sub {
+    font-size: 0.9375rem;
+    color: oklch(0.4 0 0);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+
+  .thankyou-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .btn-call {
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  const callBtn = document.querySelector('.btn-call') as HTMLAnchorElement;
+  if (callBtn) {
+    callBtn.addEventListener('click', () => {
+      const p1 = callBtn.dataset.p1;
+      const p2 = callBtn.dataset.p2;
+      const p3 = callBtn.dataset.p3;
+      window.location.href = p1 + p2 + p3;
+    });
+  }
+</script>

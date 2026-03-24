@@ -22,10 +22,10 @@ const { title, description, slug, client, service, result, basePath = '/cases' }
   </h3>
   <p class="card-desc">{description}</p>
   <div class="card-result">
-    <span class="result-label">Resultaat</span>
+    <span class="result-label">{basePath.startsWith('/en') ? 'Result' : 'Resultaat'}</span>
     <span class="result-value">{result}</span>
   </div>
-  <a href={`${basePath}/${slug}/`} class="card-link">Lees case →</a>
+  <a href={`${basePath}/${slug}/`} class="card-link">{basePath.startsWith('/en') ? 'Read case →' : 'Lees case →'}</a>
 </article>
 
 <style>

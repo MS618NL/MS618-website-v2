@@ -47,7 +47,7 @@ export function buildOrganizationPiece(): SchemaGraphPiece {
   };
 }
 
-export function buildWebsitePiece(): SchemaGraphPiece {
+export function buildWebsitePiece(lang: 'nl' | 'en' = 'nl'): SchemaGraphPiece {
   return {
     '@type': 'WebSite',
     '@id': `${site.url}/#website`,
@@ -55,7 +55,7 @@ export function buildWebsitePiece(): SchemaGraphPiece {
     name: site.name,
     description: site.description,
     publisher: { '@id': `${site.url}/#organization` },
-    inLanguage: 'nl-NL',
+    inLanguage: lang === 'en' ? 'en' : 'nl-NL',
   };
 }
 

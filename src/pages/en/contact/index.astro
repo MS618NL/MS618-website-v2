@@ -1,0 +1,212 @@
+---
+import Page from '@/layouts/Page.astro';
+import { buildContactPiece } from '@/utils/schema';
+import site from '@/data/site.json';
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url + '/en/' },
+  { name: 'Contact' },
+];
+
+const extraSchema = [buildContactPiece()];
+---
+
+<Page
+  title="Contact"
+  seoTitle="Book a Strategy Call — MS618 | 45 Minutes, No Sales Pitch"
+  description="45 minutes. No sales pitch. Honest clarity on where you stand and what it takes to grow. Book a strategic intake with MS618 — no obligations."
+  breadcrumbs={breadcrumbs}
+  extraSchema={extraSchema}
+>
+  <div class="contact-page">
+    <div class="container">
+      <header class="page-header">
+        <h1>Schedule a call</h1>
+        <p class="lead">An open conversation about your challenges. We listen, think along and honestly tell you how we can help. No obligation.</p>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-form-col">
+          <form class="contact-form" id="contact-form">
+
+            <div class="form-group">
+              <label for="name">Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company <span aria-hidden="true">*</span></label>
+              <input type="text" id="company" name="company" required autocomplete="organization" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="challenge">What is your main challenge? <span aria-hidden="true">*</span></label>
+              <textarea id="challenge" name="challenge" rows="5" required placeholder="Tell us briefly about your situation and what you want to achieve..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Monthly marketing budget</label>
+              <select id="budget" name="budget">
+                <option value="">— Select a range</option>
+                <option value="0-500">€0 – €500 / month</option>
+                <option value="500-1000">€500 – €1,000 / month</option>
+                <option value="1000-2500">€1,000 – €2,500 / month</option>
+                <option value="2500-5000">€2,500 – €5,000 / month</option>
+                <option value="5000-10000">€5,000 – €10,000 / month</option>
+                <option value="10000+">€10,000+ / month</option>
+                <option value="unknown">Not yet known / to be discussed</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-primary form-submit">
+              Send message →
+            </button>
+
+            <p class="form-note">We respond within 1 business day. No spam, no automated sales sequences.</p>
+          </form>
+        </div>
+
+        <aside class="contact-info-col">
+          <div class="contact-info-block office-info-block">
+            <h2>MS618 B.V.</h2>
+            <address>
+              Slachtedyk 4a<br />
+              8501 XC Joure<br />
+              The Netherlands
+            </address>
+            <div class="office-links">
+              <a href={`mailto:${site.organization.email}`} class="office-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+                {site.organization.email}
+              </a>
+              <a class="office-link phone-link" data-p1="tel:+31" data-p2="633" data-p3="106702" role="button">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Call us
+              </a>
+              {site.social.linkedin && (
+                <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer" class="office-link">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  LinkedIn
+                </a>
+              )}
+            </div>
+            <a href="https://maps.google.com/?q=Slachtedyk+4a+Joure" target="_blank" rel="noopener noreferrer" class="btn-secondary office-btn">
+              Get directions →
+            </a>
+          </div>
+
+          <div class="contact-info-block">
+            <h2>What to expect</h2>
+            <ul class="expect-list">
+              <li>
+                <span class="expect-icon">✓</span>
+                <span>Response within 1 business day</span>
+              </li>
+              <li>
+                <span class="expect-icon">✓</span>
+                <span>Introductory call of ~45 minutes</span>
+              </li>
+              <li>
+                <span class="expect-icon">✓</span>
+                <span>Honest advice — even if we're not the right match</span>
+              </li>
+              <li>
+                <span class="expect-icon">✓</span>
+                <span>No obligations after the first call</span>
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+      </div>
+
+      <!-- Office photo full width -->
+      <section class="office-section">
+        <div class="office-image-full">
+          <img src="/images/pand.jpg" alt="MS618 office FJ08 at the harbour of Joure" loading="lazy" />
+        </div>
+      </section>
+    </div>
+  </div>
+</Page>
+
+<style>
+  .contact-page { padding-top: 4rem; padding-bottom: 6rem; }
+  .page-header { padding: 3rem 0 4rem; max-width: 640px; border-bottom: 1px solid oklch(0.15 0 0); margin-bottom: 4rem; }
+  .page-header h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.03em; color: oklch(0.98 0 0); margin-bottom: 1rem; }
+  .lead { font-size: 1.125rem; color: oklch(0.55 0 0); line-height: 1.7; }
+  .contact-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 5rem; align-items: start; }
+  .contact-form { display: flex; flex-direction: column; gap: 1.5rem; }
+  .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+  label { font-size: 0.875rem; font-weight: 500; color: oklch(0.65 0 0); }
+  label span { color: oklch(0.5 0 0); }
+  input, textarea, select { background: oklch(0.12 0 0); border: 1px solid oklch(0.22 0 0); color: oklch(0.98 0 0); padding: 0.75rem 1rem; font-size: 0.9375rem; font-family: inherit; width: 100%; transition: border-color 0.2s ease; appearance: none; }
+  input:focus, textarea:focus, select:focus { outline: none; border-color: oklch(0.4 0 0); }
+  input::placeholder, textarea::placeholder { color: oklch(0.35 0 0); }
+  textarea { resize: vertical; min-height: 8rem; }
+  select { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; }
+  select option { background: oklch(0.12 0 0); }
+  .form-submit { align-self: flex-start; margin-top: 0.5rem; }
+  .form-note { font-size: 0.8125rem; color: oklch(0.4 0 0); line-height: 1.5; }
+  .contact-info-col { display: flex; flex-direction: column; gap: 2rem; }
+  .contact-info-block { border: 1px solid oklch(0.18 0 0); padding: 1.75rem; background: oklch(0.11 0 0); }
+  .contact-info-block h2 { font-size: 0.9375rem; font-weight: 600; color: oklch(0.98 0 0); margin-bottom: 1.25rem; }
+  .expect-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; }
+  .expect-list li { display: flex; gap: 0.75rem; font-size: 0.9rem; color: oklch(0.55 0 0); }
+  .expect-icon { color: oklch(0.72 0.18 145); flex-shrink: 0; }
+  .office-section { margin-top: 5rem; border-top: 1px solid oklch(0.15 0 0); padding-top: 4rem; }
+  .office-image-full { width: 100%; margin-bottom: 2rem; }
+  .office-image-full img { width: 100%; height: auto; object-fit: contain; filter: brightness(0.95); }
+  .office-info-block h2 { font-size: 1rem; font-weight: 600; color: oklch(0.98 0 0); margin-bottom: 0.75rem; padding-bottom: 0.75rem; border-bottom: 1px solid oklch(0.18 0 0); }
+  .office-info-block address { font-style: normal; font-size: 0.875rem; color: oklch(0.5 0 0); line-height: 1.7; margin-bottom: 1.25rem; }
+  .office-links { display: flex; flex-direction: column; gap: 0.625rem; margin-bottom: 1.25rem; }
+  .office-link { display: flex; align-items: center; gap: 0.6rem; font-size: 0.875rem; color: oklch(0.55 0 0); text-decoration: none; transition: color 0.2s ease; }
+  .office-link:hover { color: oklch(0.98 0 0); }
+  .phone-link { cursor: pointer; }
+  .office-btn { width: 100%; text-align: center; }
+  @media (max-width: 1024px) { .contact-grid { grid-template-columns: 1fr; gap: 3rem; } }
+</style>
+
+<script>
+  const phoneLink = document.querySelector('.phone-link') as HTMLAnchorElement;
+  if (phoneLink) {
+    phoneLink.addEventListener('click', () => {
+      const p1 = phoneLink.dataset.p1;
+      const p2 = phoneLink.dataset.p2;
+      const p3 = phoneLink.dataset.p3;
+      window.location.href = p1 + p2 + p3;
+    });
+  }
+
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    const originalText = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    try {
+      const response = await fetch('https://formspree.io/f/xzdkpdwk', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' },
+      });
+      if (response.ok) {
+        window.location.href = '/en/contact/thank-you/';
+      } else {
+        btn.textContent = 'Something went wrong — try again';
+        btn.disabled = false;
+        setTimeout(() => { btn.textContent = originalText; }, 3000);
+      }
+    } catch {
+      btn.textContent = 'Network error — try again';
+      btn.disabled = false;
+      setTimeout(() => { btn.textContent = originalText; }, 3000);
+    }
+  });
+</script>

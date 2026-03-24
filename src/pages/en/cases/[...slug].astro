@@ -6,7 +6,7 @@ import { formatDate } from '@/utils/seo';
 import site from '@/data/site.json';
 
 export async function getStaticPaths() {
-  const cases = await getCollection('cases');
+  const cases = await getCollection('cases-en');
   return cases.map((c) => ({
     params: { slug: c.id },
     props: { case: c },

@@ -42,6 +42,7 @@ const {
 } = Astro.props;
 
 const pageUrl = canonicalUrl(Astro.url.pathname);
+const lang = Astro.url.pathname.startsWith('/en/') ? 'en' : 'nl';
 
 // Build schema graph
 const defaultBreadcrumbs: BreadcrumbItem[] = breadcrumbs.length > 0
@@ -50,7 +51,7 @@ const defaultBreadcrumbs: BreadcrumbItem[] = breadcrumbs.length > 0
 
 const schemaGraph = [
   buildOrganizationPiece(),
-  buildWebsitePiece(),
+  buildWebsitePiece(lang),
   buildWebpagePiece(pageUrl, title, description, defaultBreadcrumbs),
   buildBreadcrumbPiece(pageUrl, defaultBreadcrumbs),
   ...extraSchema,

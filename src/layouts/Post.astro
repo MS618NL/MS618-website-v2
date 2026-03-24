@@ -44,12 +44,13 @@ const {
 } = Astro.props;
 
 const pageUrl = canonicalUrl(Astro.url.pathname);
+const lang = Astro.url.pathname.startsWith('/en/') ? 'en' : 'nl';
 const publishISO = formatDateISO(publishDate);
 const modifiedISO = formatDateISO(updatedDate ?? publishDate);
 
 const schemaGraph = [
   buildOrganizationPiece(),
-  buildWebsitePiece(),
+  buildWebsitePiece(lang),
   buildWebpagePiece(pageUrl, title, description, breadcrumbs, publishISO, modifiedISO),
   buildBreadcrumbPiece(pageUrl, breadcrumbs),
   buildArticlePiece(pageUrl, title, description, author, publishISO, modifiedISO, ogImage),

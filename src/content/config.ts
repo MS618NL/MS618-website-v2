@@ -65,6 +65,23 @@ const servicesEn = defineCollection({
   }),
 });
 
+const casesEn = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/cases-en' }),
+  schema: z.object({
+    title: z.string(),
+    seoTitle: z.string().optional(),
+    description: z.string().max(160),
+    ogImage: z.string().optional(),
+    noindex: z.boolean().default(false),
+    publishDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    client: z.string(),
+    service: z.string(),
+    result: z.string(),
+    category: z.string().default('case-study'),
+  }),
+});
+
 const blogEn = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog-en' }),
   schema: z.object({
@@ -82,4 +99,4 @@ const blogEn = defineCollection({
   }),
 });
 
-export const collections = { blog, cases, services, 'services-en': servicesEn, 'blog-en': blogEn };
+export const collections = { blog, cases, services, 'services-en': servicesEn, 'blog-en': blogEn, 'cases-en': casesEn };
