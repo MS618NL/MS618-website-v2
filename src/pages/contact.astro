@@ -116,6 +116,11 @@ const extraSchema = [buildContactPiece()];
             </blockquote>
             <cite>— Mark S., Oprichter MS618</cite>
           </div>
+
+          <div class="contact-office">
+            <img src="/images/pand.jpg" alt="MS618 kantoor in Leeuwarden" loading="lazy" />
+            <span class="office-label">Ons kantoor aan het water in Leeuwarden</span>
+          </div>
         </aside>
       </div>
     </div>
@@ -310,6 +315,25 @@ const extraSchema = [buildContactPiece()];
     font-size: 0.8125rem;
     color: oklch(0.4 0 0);
     font-style: normal;
+  }
+
+  .contact-office {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .contact-office img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    filter: brightness(0.9);
+  }
+
+  .office-label {
+    font-size: 0.75rem;
+    color: oklch(0.4 0 0);
   }
 
   @media (max-width: 1024px) {

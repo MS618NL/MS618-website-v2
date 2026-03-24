@@ -71,10 +71,17 @@ const schemaGraph = [
 >
   <Header />
   <main id="main-content">
-    <div class="container" style="padding-top: 1.5rem;">
+    <div class="container breadcrumb-bar">
       <Breadcrumbs items={breadcrumbs} />
     </div>
     <slot />
   </main>
   <Footer />
 </Base>
+
+<style>
+  .breadcrumb-bar {
+    padding-top: calc(4.5rem + 1.5rem);
+    padding-bottom: 0;
+  }
+</style>
