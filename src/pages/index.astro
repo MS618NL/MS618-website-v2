@@ -196,12 +196,16 @@ const schemaGraph = [
       <div class="container">
         <div class="section-label">Waarom MS618</div>
         <h2 class="section-title">Internationale expertise. Lokale impact.</h2>
-        <div class="why-content">
-          <p>MS618 is geen gewoon bureau. Ons team opereert aan beide kanten van de oceaan. In de VS werken we met startups, scale-ups en private equity. In Silicon Valley, waar de technologie ontstaat die morgen jouw markt verandert.</p>
-          <p>In Nederland zetten we diezelfde kennis, tooling en snelheid in voor MKB-ondernemers. Bedrijven die willen groeien maar geen marketingafdeling hebben. Die weten dat er iets moet veranderen maar niet precies wat.</p>
-          <p class="why-highlight">Dat is waar wij in geloven: de beste technologie en strategie ter wereld hoort niet exclusief bij bedrijven met miljoenenbudgetten. De MKB-ondernemer die met ons werkt, krijgt toegang tot hetzelfde niveau. Dezelfde modellen. Dezelfde aanpak. Dezelfde ambitie.</p>
-          <p>Er zijn 12 plekken per jaar. Niet omdat we exclusief willen doen, maar omdat we betrokken willen zijn. Elke klant krijgt direct toegang tot senior specialisten die meedenken op directieniveau.</p>
-          <p class="why-tagline">Geen leverancier. Een partner.</p>
+        <div class="why-grid">
+          <div class="why-content">
+            <p>MS618 is geen gewoon bureau. Ons team opereert aan beide kanten van de oceaan. In de VS werken we met startups, scale-ups en private equity. In Silicon Valley, waar de technologie ontstaat die morgen jouw markt verandert.</p>
+            <p>In Nederland zetten we diezelfde kennis, tooling en snelheid in voor MKB-ondernemers. Bedrijven die willen groeien maar geen marketingafdeling hebben. Die weten dat er iets moet veranderen maar niet precies wat.</p>
+            <p class="why-tagline">Geen leverancier. Een partner.</p>
+          </div>
+          <aside class="why-quote">
+            <p>Dat is waar wij in geloven: de beste technologie en strategie ter wereld hoort niet exclusief bij bedrijven met miljoenenbudgetten.</p>
+            <p>De MKB-ondernemer die met ons werkt, krijgt toegang tot hetzelfde niveau. Dezelfde modellen. Dezelfde aanpak. Dezelfde ambitie.</p>
+          </aside>
         </div>
       </div>
     </section>
@@ -489,9 +493,12 @@ const schemaGraph = [
     padding: 6rem 0;
   }
 
-  .why-content {
-    max-width: 640px;
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
     margin-top: 2rem;
+    align-items: start;
   }
 
   .why-content p {
@@ -501,18 +508,31 @@ const schemaGraph = [
     margin-bottom: 1.25rem;
   }
 
-  .why-highlight {
-    color: #888 !important;
-    border-left: 2px solid #333;
-    padding-left: 1rem;
-    margin: 1.5rem 0;
-  }
-
   .why-tagline {
     color: #fafafa !important;
     font-weight: 500;
     font-size: 1rem !important;
     margin-top: 1.5rem;
+  }
+
+  .why-quote {
+    border-left: 2px solid #333;
+    padding-left: 1.5rem;
+  }
+
+  .why-quote p {
+    font-size: 0.9375rem;
+    color: #777;
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .why-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
   }
 
   /* ── AI Tools Bar ── */
