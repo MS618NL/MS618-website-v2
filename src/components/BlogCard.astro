@@ -25,7 +25,7 @@ const { title, description, slug, publishDate, category, author = 'MS618', baseP
     <a href={`${basePath}/${slug}/`}>{title}</a>
   </h3>
   <p class="card-desc">{description}</p>
-  <a href={`${basePath}/${slug}/`} class="card-link">{basePath.startsWith('/en') ? 'Read more →' : 'Lees meer →'}</a>
+  <a href={`${basePath}/${slug}/`} class="card-link">{basePath.startsWith('/en') ? `Read: ${title} →` : `Lees: ${title} →`}</a>
 </article>
 
 <style>
@@ -85,6 +85,9 @@ const { title, description, slug, publishDate, category, author = 'MS618', baseP
     text-decoration: none;
     transition: color 0.2s ease;
     margin-top: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .card-link:hover {

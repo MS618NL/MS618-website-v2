@@ -5,12 +5,13 @@ import { getLangFromUrl, useTranslations } from '@/i18n';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const p = lang === 'en' ? '/en' : '';
+const homeHref = lang === 'en' ? '/en/' : '/';
 ---
 
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <a href={p || '/'} class="footer-logo">MS618</a>
+      <a href={homeHref} class="footer-logo">MS618</a>
       <p class="footer-tagline">{lang === 'en' ? 'Direction in acceleration' : site.tagline}</p>
       <p class="footer-desc">{t('footer.desc')}</p>
       {site.social.linkedin && (
