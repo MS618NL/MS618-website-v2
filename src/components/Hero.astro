@@ -162,8 +162,8 @@ const {
 
   .rotating-text-wrapper {
     position: relative;
-    display: inline-flex;
-    align-items: baseline;
+    display: inline-block;
+    min-width: 5ch;
   }
 
   .rotating-text {
@@ -172,7 +172,7 @@ const {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: gradient-shift 4s ease infinite;
+    animation: gradient-shift 6s ease infinite;
   }
 
   @keyframes gradient-shift {
@@ -183,16 +183,16 @@ const {
   .cursor {
     display: inline-block;
     width: 3px;
-    height: 1em;
+    height: 0.85em;
     background: #60a5fa;
-    margin-left: 0.1em;
-    animation: blink 1s steps(1) infinite;
-    vertical-align: text-bottom;
+    margin-left: 2px;
+    animation: blink 1s ease-in-out infinite;
+    vertical-align: baseline;
   }
 
   @keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
   }
 
   /* Sub */
@@ -281,7 +281,7 @@ const {
       
       if (isPaused) {
         isPaused = false;
-        setTimeout(tick, isDeleting ? 50 : 100);
+        setTimeout(tick, isDeleting ? 80 : 120);
         return;
       }
 
@@ -293,25 +293,25 @@ const {
           isDeleting = false;
           wordIndex = (wordIndex + 1) % words.length;
           isPaused = true;
-          setTimeout(tick, 400);
+          setTimeout(tick, 600);
           return;
         }
-        setTimeout(tick, 40);
+        setTimeout(tick, 60);
       } else {
         charIndex++;
         rotatingText.textContent = words[wordIndex].substring(0, charIndex);
         
         if (charIndex === words[wordIndex].length) {
           isDeleting = true;
-          setTimeout(tick, 2000);
+          setTimeout(tick, 3000);
           return;
         }
-        setTimeout(tick, 80);
+        setTimeout(tick, 120);
       }
     }
 
-    // Start na 2 seconden
-    setTimeout(tick, 2000);
+    // Start na 3 seconden
+    setTimeout(tick, 3000);
   }
 
   // Canvas particles
