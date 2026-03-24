@@ -36,7 +36,7 @@ const breadcrumbs = [
           <div class="name-col">
             <div class="section-label-inline">De naam</div>
             <p class="name-number">.618</p>
-            <p>MS618 komt van .618 — het gulden getal. De verhouding die in de natuur, architectuur en wiskunde steeds terugkeert als de balans tussen complexiteit en eenvoud. Fibonacci, de golden ratio. Het is hoe wij denken over marketing: niet meer, niet minder, maar precies in verhouding.</p>
+            <p>MS618 komt van .618, de gulden snede. Een wiskundig principe, ontdekt door Fibonacci, dat overal in de natuur terugkomt: de perfecte verhouding tussen meer en minder. Het is hoe wij denken over marketing. Niet alles doen, maar precies het juiste.</p>
           </div>
         </div>
       </section>
@@ -168,18 +168,13 @@ const breadcrumbs = [
 
       <!-- Locatie -->
       <section class="about-section location-section">
-        <div class="location-grid">
-          <div class="location-text">
-            <div class="section-label-inline">Locatie</div>
-            <h2 class="section-h2">Gebouwd met focus in Joure.</h2>
-            <p>Ons kantoor ligt aan de haven van Joure — een plek waar rust en focus samenkomen. Geen hippe co-working space, maar een eigen pand waar we ongestoord kunnen denken, bouwen en sparren.</p>
-            <p class="location-address">MS618 B.V. · Slachtedyk 4a · Joure</p>
-          </div>
-          <div class="location-image">
-            <div class="location-placeholder">
-              <span>Foto pand — binnenkort</span>
-            </div>
-          </div>
+        <div class="location-content">
+          <div class="section-label-inline">Locatie</div>
+          <h2 class="section-h2">Het kantoor van de toekomst staat in Joure</h2>
+          <p>MS618 werkt vanuit FJ08: het achtste fabriekspand van Douwe Egberts, aan de haven van Joure. Gerestaureerd met eiken, noten en rauw staal. Een plek waar wordt gewerkt, gekookt, muziek gemaakt en samengewerkt. Dit is hoe werken eruitziet als AI het routinewerk overneemt. Wat overblijft is denken, maken en samenkomen. Geen kantoorflat. Het kantoor van de toekomst.</p>
+        </div>
+        <div class="location-image-full">
+          <img src="/images/pand.jpg" alt="MS618 kantoor FJ08 in Joure" loading="lazy" />
         </div>
       </section>
 
@@ -440,39 +435,26 @@ const breadcrumbs = [
   }
 
   /* Locatie */
-  .location-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+  .location-content {
+    max-width: 720px;
+    margin-bottom: 2.5rem;
   }
 
-  .location-text p {
+  .location-content p {
     color: oklch(0.5 0 0);
     line-height: 1.75;
   }
 
-  .location-address {
-    margin-top: 1.25rem;
-    font-size: 0.875rem;
-    color: oklch(0.38 0 0) !important;
-    letter-spacing: 0.03em;
-  }
-
-  .location-placeholder {
+  .location-image-full {
     width: 100%;
-    aspect-ratio: 4/3;
-    border: 1px solid oklch(0.18 0 0);
-    background: oklch(0.11 0 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
-  .location-placeholder span {
-    font-size: 0.8125rem;
-    color: oklch(0.3 0 0);
-    letter-spacing: 0.04em;
+  .location-image-full img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+    filter: brightness(0.95);
   }
 
   /* Responsive */

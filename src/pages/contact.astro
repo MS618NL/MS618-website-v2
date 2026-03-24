@@ -110,19 +110,31 @@ const extraSchema = [buildContactPiece()];
             </ul>
           </div>
 
-          <div class="contact-info-block contact-quote">
-            <blockquote>
-              "Wij geloven dat het eerste gesprek altijd tweerichtingsverkeer moet zijn. Net zozeer als jij ons beoordeelt, beoordelen wij of we de juiste match zijn voor jouw groeidoelstellingen."
-            </blockquote>
-            <cite>— Mark S., Oprichter MS618</cite>
-          </div>
-
-          <div class="contact-office">
-            <img src="/images/pand.jpg" alt="MS618 kantoor in Leeuwarden" loading="lazy" />
-            <span class="office-label">Ons kantoor aan het water in Leeuwarden</span>
-          </div>
         </aside>
       </div>
+
+      <!-- Kantoor foto full width -->
+      <section class="office-section">
+        <div class="office-image-full">
+          <img src="/images/pand.jpg" alt="MS618 kantoor FJ08 aan de haven van Joure" loading="lazy" />
+        </div>
+        <div class="office-info">
+          <div class="office-details">
+            <h2>MS618 B.V.</h2>
+            <address>
+              Slachtedyk 4a<br />
+              8501 XC Joure<br />
+              Nederland
+            </address>
+            <div class="office-contact-details">
+              <a href={`mailto:${site.organization.email}`}>{site.organization.email}</a>
+            </div>
+          </div>
+          <a href="https://maps.google.com/?q=Slachtedyk+4a+Joure" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            Plan route →
+          </a>
+        </div>
+      </section>
     </div>
   </div>
 </Page>
@@ -303,43 +315,68 @@ const extraSchema = [buildContactPiece()];
     flex-shrink: 0;
   }
 
-  .contact-quote blockquote {
-    font-size: 0.9rem;
-    color: oklch(0.5 0 0);
-    font-style: italic;
-    line-height: 1.7;
-    margin: 0 0 0.75rem;
+  /* Office section full width */
+  .office-section {
+    margin-top: 5rem;
+    border-top: 1px solid oklch(0.15 0 0);
+    padding-top: 4rem;
   }
 
-  .contact-quote cite {
-    font-size: 0.8125rem;
-    color: oklch(0.4 0 0);
-    font-style: normal;
+  .office-image-full {
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
-  .contact-office {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .contact-office img {
+  .office-image-full img {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 21 / 9;
     object-fit: cover;
-    filter: brightness(0.9);
+    filter: brightness(0.95);
   }
 
-  .office-label {
-    font-size: 0.75rem;
-    color: oklch(0.4 0 0);
+  .office-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .office-details h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: oklch(0.98 0 0);
+    margin-bottom: 0.75rem;
+  }
+
+  .office-details address {
+    font-style: normal;
+    font-size: 0.9375rem;
+    color: oklch(0.5 0 0);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+  .office-contact-details a {
+    font-size: 0.9375rem;
+    color: oklch(0.5 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .office-contact-details a:hover {
+    color: oklch(0.98 0 0);
   }
 
   @media (max-width: 1024px) {
     .contact-grid {
       grid-template-columns: 1fr;
       gap: 3rem;
+    }
+
+    .office-info {
+      flex-direction: column;
+      gap: 1.5rem;
     }
   }
 </style>
