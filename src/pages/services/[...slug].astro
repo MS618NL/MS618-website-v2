@@ -1,0 +1,159 @@
+---
+import Post from '@/layouts/Post.astro';
+import CTA from '@/components/CTA.astro';
+import CaseCard from '@/components/CaseCard.astro';
+import { getCollection, render } from 'astro:content';
+import { buildServicePiece } from '@/utils/schema';
+import { canonicalUrl } from '@/utils/seo';
+import site from '@/data/site.json';
+
+export async function getStaticPaths() {
+  const services = await getCollection('services');
+  return services.map((service) => ({
+    params: { slug: service.id },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+const { Content } = await render(service);
+
+// Get related cases for this service
+const allCases = await getCollection('cases');
+const relatedCases = allCases
+  .filter((c) => c.data.service.toLowerCase().includes(service.data.title.toLowerCase().split(' ')[0]))
+  .slice(0, 3);
+
+const pageUrl = canonicalUrl(`/services/${service.id}/`);
+const breadcrumbs = [
+  { name: 'Home', item: site.url },
+  { name: 'Services', item: `${site.url}/services/` },
+  { name: service.data.title },
+];
+
+const extraSchema = [buildServicePiece(pageUrl, service.data.title, service.data.description)];
+---
+
+<Post
+  title={service.data.title}
+  seoTitle={service.data.seoTitle}
+  description={service.data.description}
+  ogImage={service.data.ogImage}
+  noindex={service.data.noindex}
+  publishDate={service.data.updatedDate ?? new Date()}
+  updatedDate={service.data.updatedDate}
+  breadcrumbs={breadcrumbs}
+  extraSchema={extraSchema}
+>
+  <article class="service-page">
+    <div class="container">
+      <header class="service-header">
+        <div class="service-meta">
+          <span class="service-icon" aria-hidden="true">{service.data.icon}</span>
+          <span class="tag">{service.data.category}</span>
+        </div>
+        <h1>{service.data.title}</h1>
+        <p class="service-description">{service.data.description}</p>
+        <a href="/contact/" class="btn-primary">Plan een gesprek →</a>
+      </header>
+
+      <div class="service-body">
+        <div class="prose">
+          <Content />
+        </div>
+      </div>
+
+      {relatedCases.length > 0 && (
+        <aside class="related-cases">
+          <h2>Relevante cases</h2>
+          <div class="cases-grid">
+            {relatedCases.map((c) => (
+              <CaseCard
+                title={c.data.title}
+                description={c.data.description}
+                slug={c.id}
+                client={c.data.client}
+                service={c.data.service}
+                result={c.data.result}
+              />
+            ))}
+          </div>
+        </aside>
+      )}
+    </div>
+
+    <CTA
+      headline={`Klaar om te starten met ${service.data.title}?`}
+      body="Plan een vrijblijvend kennismakingsgesprek. Wij bespreken jouw situatie en vertellen eerlijk wat ${service.data.title} voor jou kan betekenen."
+    />
+  </article>
+</Post>
+
+<style>
+  .service-page {
+    padding-top: 2rem;
+  }
+
+  .service-header {
+    padding: 3rem 0;
+    border-bottom: 1px solid oklch(0.15 0 0);
+    margin-bottom: 3rem;
+    max-width: 760px;
+  }
+
+  .service-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .service-icon {
+    font-size: 1.5rem;
+    color: oklch(0.65 0.2 250);
+  }
+
+  .service-header h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 1rem;
+  }
+
+  .service-description {
+    font-size: 1.125rem;
+    color: oklch(0.55 0 0);
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+    max-width: 620px;
+  }
+
+  .service-body {
+    padding-bottom: 4rem;
+    border-bottom: 1px solid oklch(0.15 0 0);
+  }
+
+  .related-cases {
+    padding: 4rem 0;
+  }
+
+  .related-cases h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: oklch(0.98 0 0);
+    margin-bottom: 1.5rem;
+  }
+
+  .cases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .cases-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

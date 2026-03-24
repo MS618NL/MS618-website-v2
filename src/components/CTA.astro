@@ -1,0 +1,109 @@
+---
+import { getLangFromUrl } from '@/i18n';
+
+interface Props {
+  headline?: string;
+  headlineAccent?: string;
+  body?: string;
+  cta?: { label: string; href: string };
+  note?: string;
+}
+
+const lang = getLangFromUrl(Astro.url);
+const p = lang === 'en' ? '/en' : '';
+const isEn = lang === 'en';
+
+const {
+  headline = isEn ? 'Ready for clarity' : 'Klaar voor helderheid',
+  headlineAccent = isEn ? 'in a time of acceleration?' : 'in een tijd van versnelling?',
+  body = isEn
+    ? 'End the noise. MS618 helps you make the right choices — with experienced specialists who understand what really works for your brand.'
+    : 'Maak een einde aan de ruis. MS618 helpt je de juiste keuzes te maken — met ervaren specialisten die begrijpen wat voor jouw merk écht werkt.',
+  cta = { label: isEn ? 'Plan a conversation' : 'Plan een gesprek', href: `${p}/contact/` },
+  note = isEn ? 'No obligation. First conversation is free.' : 'Vrijblijvend. Eerste gesprek is gratis.',
+} = Astro.props;
+---
+
+<section class="cta-section" id="contact">
+  <div class="container cta-inner">
+    <h2 class="cta-headline">
+      {headline}<br />
+      <span class="cta-accent">{headlineAccent}</span>
+    </h2>
+
+    <p class="cta-body">{body}</p>
+
+    <a href={cta.href} class="cta-btn">
+      {cta.label}
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+
+    <p class="cta-note">{note}</p>
+  </div>
+</section>
+
+<style>
+  .cta-section {
+    padding: 8rem 0 12rem;
+    border-top: 1px solid #222;
+    background: #0a0a0a;
+  }
+
+  .cta-inner {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .cta-headline {
+    font-size: clamp(2.25rem, 6vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    margin-bottom: 2rem;
+  }
+
+  .cta-accent {
+    color: #666;
+  }
+
+  .cta-body {
+    font-size: 1.25rem;
+    color: #888;
+    line-height: 1.7;
+    max-width: 38rem;
+    margin: 0 auto 3rem;
+  }
+
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    background: #fafafa;
+    color: #0a0a0a;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .cta-btn:hover {
+    opacity: 0.9;
+  }
+
+  .cta-btn svg {
+    transition: transform 0.2s ease;
+  }
+
+  .cta-btn:hover svg {
+    transform: translateX(4px);
+  }
+
+  .cta-note {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #666;
+  }
+</style>

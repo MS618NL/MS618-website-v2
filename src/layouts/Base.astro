@@ -1,0 +1,135 @@
+---
+import SEO from '@/components/seo/SEO.astro';
+import Schema from '@/components/seo/Schema.astro';
+import '@/styles/global.css';
+import { getLangFromUrl } from '@/i18n';
+
+interface Props {
+  title: string;
+  seoTitle?: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  noindex?: boolean;
+  rss?: boolean;
+  publishDate?: string;
+  updatedDate?: string;
+  author?: string;
+  schemaGraph?: object[];
+}
+
+const {
+  title,
+  seoTitle,
+  description,
+  canonical,
+  ogImage,
+  ogType,
+  noindex,
+  rss,
+  publishDate,
+  updatedDate,
+  author,
+  schemaGraph = [],
+} = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <SEO
+      title={title}
+      seoTitle={seoTitle}
+      description={description}
+      canonical={canonical}
+      ogImage={ogImage}
+      ogType={ogType}
+      noindex={noindex}
+      rss={rss}
+      publishDate={publishDate}
+      updatedDate={updatedDate}
+      author={author}
+    />
+    {schemaGraph.length > 0 && <Schema graph={schemaGraph} />}
+  </head>
+  <body>
+    <div id="stars-parallax" aria-hidden="true">
+      <div class="star-layer" id="stars-sm"></div>
+      <div class="star-layer" id="stars-md"></div>
+      <div class="star-layer" id="stars-lg"></div>
+    </div>
+    <slot />
+  </body>
+</html>
+
+<style>
+  #stars-parallax {
+    position: fixed;
+    inset: -100px;
+    z-index: 0;
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  body > :not(#stars-parallax) {
+    position: relative;
+    z-index: 1;
+  }
+
+  .star-layer {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+  }
+
+  #stars-sm { width: 1px; height: 1px; }
+  #stars-md { width: 2px; height: 2px; }
+  #stars-lg { width: 3px; height: 3px; }
+</style>
+
+<script>
+  function randomStars(count: number, spread: number): string {
+    const shadows: string[] = [];
+    for (let i = 0; i < count; i++) {
+      const x = Math.floor((Math.random() - 0.5) * spread * 2);
+      const y = Math.floor((Math.random() - 0.5) * spread * 2);
+      const alpha = (Math.random() * 0.55 + 0.3).toFixed(2);
+      shadows.push(`${x}px ${y}px 0 rgba(255,255,255,${alpha})`);
+    }
+    return shadows.join(',');
+  }
+
+  const SPREAD = 2200;
+  const sm = document.getElementById('stars-sm') as HTMLElement;
+  const md = document.getElementById('stars-md') as HTMLElement;
+  const lg = document.getElementById('stars-lg') as HTMLElement;
+  const parallax = document.getElementById('stars-parallax') as HTMLElement;
+
+  sm.style.boxShadow = randomStars(700, SPREAD);
+  md.style.boxShadow = randomStars(200, SPREAD);
+  lg.style.boxShadow = randomStars(60, SPREAD);
+
+  let targetX = 0;
+  let targetY = 0;
+  let currentX = 0;
+  let currentY = 0;
+
+  window.addEventListener('mousemove', (e) => {
+    const cx = window.innerWidth / 2;
+    const cy = window.innerHeight / 2;
+    targetX = (e.clientX - cx) * -0.035;
+    targetY = (e.clientY - cy) * -0.035;
+  }, { passive: true });
+
+  function animate() {
+    currentX += (targetX - currentX) * 0.06;
+    currentY += (targetY - currentY) * 0.06;
+    parallax.style.transform = `translate(${currentX.toFixed(2)}px, ${currentY.toFixed(2)}px)`;
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>

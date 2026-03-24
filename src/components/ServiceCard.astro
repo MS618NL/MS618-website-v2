@@ -1,0 +1,78 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  icon?: string;
+}
+
+const { title, description, slug, icon = '→' } = Astro.props;
+---
+
+<article class="service-card">
+  <div class="card-icon" aria-hidden="true">{icon}</div>
+  <h3 class="card-title">
+    <a href={`/services/${slug}/`}>{title}</a>
+  </h3>
+  <p class="card-desc">{description}</p>
+  <a href={`/services/${slug}/`} class="card-link">Meer over {title} →</a>
+</article>
+
+<style>
+  .service-card {
+    border: 1px solid oklch(0.22 0 0);
+    padding: 2rem;
+    background: oklch(0.11 0 0);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: border-color 0.2s ease;
+  }
+
+  .service-card:hover {
+    border-color: oklch(0.3 0 0);
+  }
+
+  .card-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+    color: oklch(0.65 0.2 250);
+  }
+
+  .card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .card-title a {
+    color: oklch(0.98 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .card-title a:hover {
+    color: oklch(0.75 0 0);
+  }
+
+  .card-desc {
+    font-size: 0.9rem;
+    color: oklch(0.5 0 0);
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .card-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: oklch(0.45 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    margin-top: 0.5rem;
+  }
+
+  .card-link:hover {
+    color: oklch(0.98 0 0);
+  }
+</style>

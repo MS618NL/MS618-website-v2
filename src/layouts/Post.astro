@@ -1,0 +1,80 @@
+---
+import Base from './Base.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import {
+  buildOrganizationPiece,
+  buildWebsitePiece,
+  buildWebpagePiece,
+  buildBreadcrumbPiece,
+  buildArticlePiece,
+} from '@/utils/schema';
+import { canonicalUrl, formatDateISO } from '@/utils/seo';
+
+interface BreadcrumbItem {
+  name: string;
+  item?: string;
+}
+
+interface Props {
+  title: string;
+  seoTitle?: string;
+  description: string;
+  ogImage?: string;
+  noindex?: boolean;
+  publishDate: Date;
+  updatedDate?: Date;
+  author?: string;
+  breadcrumbs: BreadcrumbItem[];
+  extraSchema?: object[];
+}
+
+const {
+  title,
+  seoTitle,
+  description,
+  ogImage,
+  noindex = false,
+  publishDate,
+  updatedDate,
+  author = 'MS618',
+  breadcrumbs,
+  extraSchema = [],
+} = Astro.props;
+
+const pageUrl = canonicalUrl(Astro.url.pathname);
+const publishISO = formatDateISO(publishDate);
+const modifiedISO = formatDateISO(updatedDate ?? publishDate);
+
+const schemaGraph = [
+  buildOrganizationPiece(),
+  buildWebsitePiece(),
+  buildWebpagePiece(pageUrl, title, description, breadcrumbs, publishISO, modifiedISO),
+  buildBreadcrumbPiece(pageUrl, breadcrumbs),
+  buildArticlePiece(pageUrl, title, description, author, publishISO, modifiedISO, ogImage),
+  ...extraSchema,
+];
+---
+
+<Base
+  title={title}
+  seoTitle={seoTitle}
+  description={description}
+  ogImage={ogImage}
+  ogType="article"
+  noindex={noindex}
+  publishDate={publishISO}
+  updatedDate={modifiedISO}
+  author={author}
+  schemaGraph={schemaGraph}
+>
+  <Header />
+  <main id="main-content">
+    <div class="container" style="padding-top: 1.5rem;">
+      <Breadcrumbs items={breadcrumbs} />
+    </div>
+    <slot />
+  </main>
+  <Footer />
+</Base>

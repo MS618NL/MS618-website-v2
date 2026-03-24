@@ -1,0 +1,128 @@
+---
+import Page from '@/layouts/Page.astro';
+import CaseCard from '@/components/CaseCard.astro';
+import CTA from '@/components/CTA.astro';
+import { getCollection } from 'astro:content';
+import site from '@/data/site.json';
+
+const cases = (await getCollection('cases'))
+  .filter((c) => !c.data.noindex)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url },
+  { name: 'Cases' },
+];
+---
+
+<Page
+  title="Cases"
+  seoTitle="Cases — Bewezen Resultaten voor B2B Organisaties | MS618"
+  description="Concrete cases van MS618: hoe wij B2B-bedrijven helpen groeien via SEO, content marketing en digitale performance. Meetbare resultaten, eerlijke verhalen."
+  breadcrumbs={breadcrumbs}
+>
+  <div class="cases-listing">
+    <div class="container">
+      <header class="page-header">
+        <h1>Cases</h1>
+        <p class="lead">Concrete resultaten voor concrete uitdagingen. Wij laten ons werk spreken — eerlijk, zonder opsmuk, met de echte cijfers.</p>
+      </header>
+
+      <section class="cases-intro">
+        <p>Alle cases zijn geanonimiseerd op verzoek van onze klanten. Tijdens een kennismakingsgesprek kunnen wij gedetailleerder ingaan op specifieke projecten die relevant zijn voor jouw situatie.</p>
+      </section>
+
+      <div class="cases-grid">
+        {cases.map((c) => (
+          <CaseCard
+            title={c.data.title}
+            description={c.data.description}
+            slug={c.id}
+            client={c.data.client}
+            service={c.data.service}
+            result={c.data.result}
+          />
+        ))}
+      </div>
+
+      <div class="cases-disclaimer">
+        <p>Resultaten variëren per situatie, markt en startpunt. Bovenstaande cases zijn representatief voor wat wij realiseren voor klanten die structureel investeren in digitale groei.</p>
+      </div>
+    </div>
+
+    <CTA
+      headline="Herken je de uitdaging?"
+      body="Plan een gesprek. Wij bespreken jouw specifieke situatie en vertellen hoe een vergelijkbare aanpak voor jou zou kunnen werken."
+    />
+  </div>
+</Page>
+
+<style>
+  .cases-listing {
+    padding-top: 4rem;
+  }
+
+  .page-header {
+    padding: 3rem 0 3rem;
+    border-bottom: 1px solid oklch(0.15 0 0);
+    margin-bottom: 2.5rem;
+  }
+
+  .page-header h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 0.75rem;
+  }
+
+  .lead {
+    font-size: 1.125rem;
+    color: oklch(0.55 0 0);
+    line-height: 1.7;
+    max-width: 640px;
+  }
+
+  .cases-intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .cases-intro p {
+    font-size: 0.9375rem;
+    color: oklch(0.45 0 0);
+    line-height: 1.7;
+    padding: 1rem 1.25rem;
+    border: 1px solid oklch(0.18 0 0);
+    background: oklch(0.11 0 0);
+    max-width: 640px;
+  }
+
+  .cases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .cases-disclaimer {
+    margin-bottom: 5rem;
+  }
+
+  .cases-disclaimer p {
+    font-size: 0.8125rem;
+    color: oklch(0.38 0 0);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 1024px) {
+    .cases-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .cases-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

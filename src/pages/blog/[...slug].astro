@@ -1,0 +1,197 @@
+---
+import Post from '@/layouts/Post.astro';
+import CTA from '@/components/CTA.astro';
+import BlogCard from '@/components/BlogCard.astro';
+import { getCollection, render } from 'astro:content';
+import { formatDate } from '@/utils/seo';
+import site from '@/data/site.json';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const allPosts = await getCollection('blog');
+const relatedPosts = allPosts
+  .filter(
+    (p) =>
+      p.id !== post.id &&
+      !p.data.noindex &&
+      (post.data.relatedPosts.includes(p.id) || p.data.category === post.data.category)
+  )
+  .slice(0, 3);
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url },
+  { name: 'Blog', item: `${site.url}/blog/` },
+  { name: post.data.title },
+];
+---
+
+<Post
+  title={post.data.title}
+  seoTitle={post.data.seoTitle}
+  description={post.data.description}
+  ogImage={post.data.ogImage}
+  noindex={post.data.noindex}
+  publishDate={post.data.publishDate}
+  updatedDate={post.data.updatedDate}
+  author={post.data.author}
+  breadcrumbs={breadcrumbs}
+>
+  <article class="blog-post">
+    <div class="container">
+      <header class="post-header">
+        <div class="post-meta">
+          <span class="tag">{post.data.category}</span>
+          <time datetime={post.data.publishDate.toISOString()}>
+            {formatDate(post.data.publishDate)}
+          </time>
+          {post.data.updatedDate && post.data.updatedDate.getTime() !== post.data.publishDate.getTime() && (
+            <span class="updated">
+              Bijgewerkt {formatDate(post.data.updatedDate)}
+            </span>
+          )}
+        </div>
+        <h1>{post.data.title}</h1>
+        <p class="post-description">{post.data.description}</p>
+        <div class="post-author">
+          <div class="author-avatar">{post.data.author.split(' ').map((n: string) => n[0]).join('')}</div>
+          <span>{post.data.author}</span>
+        </div>
+      </header>
+
+      <div class="post-body">
+        <div class="prose">
+          <Content />
+        </div>
+      </div>
+
+      {relatedPosts.length > 0 && (
+        <aside class="related-posts">
+          <h2>Gerelateerde artikelen</h2>
+          <div class="related-grid">
+            {relatedPosts.map((p) => (
+              <BlogCard
+                title={p.data.title}
+                description={p.data.description}
+                slug={p.id}
+                publishDate={p.data.publishDate}
+                category={p.data.category}
+                author={p.data.author}
+              />
+            ))}
+          </div>
+        </aside>
+      )}
+    </div>
+
+    <CTA
+      headline="Hulp nodig bij jouw strategie?"
+      body="Wij zetten de theorie om in praktijk. Plan een vrijblijvend gesprek met ons team."
+    />
+  </article>
+</Post>
+
+<style>
+  .blog-post {
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+
+  .post-header {
+    padding: 3rem 0;
+    border-bottom: 1px solid oklch(0.15 0 0);
+    margin-bottom: 3rem;
+    max-width: 720px;
+  }
+
+  .post-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  time, .updated {
+    font-size: 0.8125rem;
+    color: oklch(0.4 0 0);
+  }
+
+  .updated {
+    color: oklch(0.38 0 0);
+  }
+
+  .post-header h1 {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 1rem;
+    line-height: 1.15;
+  }
+
+  .post-description {
+    font-size: 1.125rem;
+    color: oklch(0.55 0 0);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .post-author {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 0.875rem;
+    color: oklch(0.55 0 0);
+  }
+
+  .author-avatar {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid oklch(0.25 0 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    color: oklch(0.55 0 0);
+  }
+
+  .post-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid oklch(0.15 0 0);
+  }
+
+  .related-posts {
+    padding: 4rem 0;
+  }
+
+  .related-posts h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: oklch(0.98 0 0);
+    margin-bottom: 1.5rem;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

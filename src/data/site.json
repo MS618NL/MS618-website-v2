@@ -1,0 +1,34 @@
+{
+  "name": "MS618",
+  "tagline": "Richting in versnelling",
+  "description": "MS618 is een digitaal bureau dat bedrijven helpt groeien met strategische SEO, content marketing en digitale performance — zonder ruis, met focus.",
+  "url": "https://ms618.nl",
+  "locale": "nl_NL",
+  "language": "nl",
+  "defaultOgImage": "/og/default.png",
+  "logo": "/logo.svg",
+  "organization": {
+    "name": "MS618",
+    "legalName": "MS618 B.V.",
+    "address": {
+      "streetAddress": "Slachtedyk 4a",
+      "postalCode": "",
+      "addressLocality": "Joure",
+      "addressCountry": "NL"
+    },
+    "email": "info@ms618.nl",
+    "phone": "",
+    "kvk": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/ms618",
+    "twitter": ""
+  },
+  "nav": [
+    { "label": "Services", "href": "/services/" },
+    { "label": "Cases", "href": "/cases/" },
+    { "label": "Blog", "href": "/blog/" },
+    { "label": "Over ons", "href": "/about/" },
+    { "label": "Contact", "href": "/contact/" }
+  ]
+}

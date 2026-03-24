@@ -1,0 +1,766 @@
+---
+import Base from '@/layouts/Base.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import Hero from '@/components/Hero.astro';
+import CTA from '@/components/CTA.astro';
+import BlogCard from '@/components/BlogCard.astro';
+import LogoSlider from '@/components/LogoSlider.astro';
+import { getCollection } from 'astro:content';
+import {
+  buildOrganizationPiece,
+  buildWebsitePiece,
+  buildWebpagePiece,
+  buildBreadcrumbPiece,
+} from '@/utils/schema';
+import site from '@/data/site.json';
+
+const recentPosts = (await getCollection('blog'))
+  .filter((p) => !p.data.noindex)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 3);
+
+const pageUrl = site.url + '/';
+const breadcrumbs = [{ name: 'Home' }];
+
+const schemaGraph = [
+  buildOrganizationPiece(),
+  buildWebsitePiece(),
+  buildWebpagePiece(pageUrl, 'MS618 — Richting in versnelling', site.description, breadcrumbs),
+  buildBreadcrumbPiece(pageUrl, breadcrumbs),
+];
+---
+
+<Base
+  title="Richting in versnelling"
+  seoTitle="MS618 — Richting in versnelling"
+  description={site.description}
+  ogType="website"
+  rss={true}
+  schemaGraph={schemaGraph}
+>
+  <Header />
+  <main id="main-content">
+
+    <!-- Hero -->
+    <Hero />
+
+    <!-- Google Award Badge -->
+    <div class="award-bar">
+      <div class="container">
+        <div class="award-inner">
+          <img src="/images/google-logo.svg" alt="Google" class="award-google-logo" width="60" height="20" />
+          <span class="award-divider"></span>
+          <span class="award-text">Google AI Innovation Award 2025</span>
+          <span class="award-dot">·</span>
+          <span class="award-sub">Erkend als meest innovatieve AI Ads partner</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Problem -->
+    <section class="problem-section" id="aanpak">
+      <div class="container">
+        <div class="section-label">Het probleem</div>
+        <div class="problem-grid">
+          <div class="problem-col">
+            <h2>Je weet dat je iets moet.<br>Maar wat?</h2>
+            <p>AI is overal. Je concurrent maakt er al websites mee, advertenties, content. Ondertussen vraag je je af: moet ik een nieuwe website? Wat kan ik eigenlijk met ChatGPT? En waarom levert mijn marketing geen klanten meer op?</p>
+            <p>Het probleem is niet dat je te weinig doet. Het probleem is dat niemand je vertelt wat je wél moet doen — en wat je gerust kunt laten.</p>
+            <p class="problem-manifesto">Je zoekt klanten. Niet meer tools.<br>Je zoekt groei. Niet meer kanalen.<br>Je zoekt iemand die het regelt. Niet iemand die een rapport stuurt.<br><br>Dat is precies wat wij doen.</p>
+          </div>
+          <div class="problem-col problem-col-right">
+            <div class="problem-stat">
+              <div class="pstat-number">9 van de 10</div>
+              <div class="pstat-text">MKB-bedrijven weten dat ze iets moeten met AI en online. Maar niet wat.</div>
+            </div>
+            <div class="problem-stat">
+              <div class="pstat-number">0 FTE</div>
+              <div class="pstat-text">Zoveel marketingmensen heb je nodig. Wij combineren strategie met AI zodat jij geen team hoeft te bouwen.</div>
+            </div>
+            <div class="problem-stat">
+              <div class="pstat-number">1 partner</div>
+              <div class="pstat-text">Die AI begrijpt, jouw markt kent, en het gewoon regelt. Meer heb je niet nodig.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Tools -->
+    <div class="ai-tools-bar">
+      <div class="container">
+        <p class="ai-tools-label">De AI-technologie achter onze aanpak</p>
+        <div class="ai-tools-grid">
+          <span class="ai-tool">ChatGPT</span>
+          <span class="ai-tool">Claude</span>
+          <span class="ai-tool">Gemini</span>
+          <span class="ai-tool">Grok</span>
+          <span class="ai-tool">Llama</span>
+          <span class="ai-tool">Mistral</span>
+          <span class="ai-tool">Perplexity</span>
+          <span class="ai-tool">Midjourney</span>
+          <span class="ai-tool">DeepSeek</span>
+          <span class="ai-tool">Clawdbot</span>
+          <span class="ai-tool">Antigravity</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Raptor -->
+    <section class="raptor-section">
+      <div class="raptor-image-wrap">
+        <img
+          src="/images/raptor3evolution.jpg"
+          alt="SpaceX Raptor motor evolutie — drie generaties, steeds minder onderdelen"
+          loading="lazy"
+        />
+        <div class="raptor-overlay"></div>
+      </div>
+      <div class="container raptor-content">
+        <blockquote class="raptor-quote">
+          <div class="raptor-quote-mark">"</div>
+          <p>"The best part is no part. The best process is no process."</p>
+          <footer>— Elon Musk over de Raptor-motor</footer>
+        </blockquote>
+        <p class="raptor-context">
+          Drie generaties Raptor. Elke iteratie: minder onderdelen, meer kracht. Dat is ook onze aanpak: simplificatie door iteratie.
+        </p>
+      </div>
+    </section>
+
+    <!-- Zo werken wij -->
+    <section class="how-section">
+      <div class="container">
+        <div class="section-label">Hoe wij werken</div>
+        <h2 class="section-title">Eén systeem. Geen ruis.</h2>
+        <div class="how-grid">
+          <div class="how-card">
+            <div class="how-number">01</div>
+            <h3>Richting</h3>
+            <p>We bepalen waar zichtbaarheid waarde heeft — en waar je moet stoppen met energie verspillen.</p>
+          </div>
+          <div class="how-card">
+            <div class="how-number">02</div>
+            <h3>Uitvoering</h3>
+            <p>Van SEO tot AI-vindbaarheid: we bouwen wat werkt en strippen wat niet werkt. Geen bloat, geen bijvulling.</p>
+          </div>
+          <div class="how-card">
+            <div class="how-number">03</div>
+            <h3>Groei</h3>
+            <p>Eén systeem dat schaalbaar is, zonder dat je een marketingafdeling nodig hebt.</p>
+          </div>
+        </div>
+        <div class="how-cta">
+          <a href="/services/" class="btn-secondary">Bekijk onze aanpak →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team-section" id="team">
+      <div class="container">
+        <div class="section-label">Het team</div>
+        <h2 class="section-title">Alleen senior specialisten</h2>
+        <p class="section-sub">Geen juniors, geen stagiaires, geen bulk. Elk project wordt uitgevoerd door specialisten met minimaal 8 jaar relevante ervaring.</p>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="member-avatar">J</div>
+            <div class="member-info">
+              <h3>Jorrit Miedema</h3>
+              <span class="member-role">Strategie, SEO & AI</span>
+              <span class="member-edu">BSc, Information Technology</span>
+              <p>12+ jaar groei-ervaring. Ex full-service agency eigenaar. AI-first sinds vóór ChatGPT.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">J</div>
+            <div class="member-info">
+              <h3>Jurjan Groothuis</h3>
+              <span class="member-role">Ads-expert</span>
+              <span class="member-edu">MSc, International Management</span>
+              <p>12+ jaar ervaring in performance advertising. Werkte bij Google HQ Dublin.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">P</div>
+            <div class="member-info">
+              <h3>Peter Ydel</h3>
+              <span class="member-role">Lead designer</span>
+              <span class="member-edu">BSc, UX & Design</span>
+              <p>Ontwikkelde campagnes en visuele concepten voor internationale merken.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">R</div>
+            <div class="member-info">
+              <h3>Ramin Schultz</h3>
+              <span class="member-role">Growth hacker (Los Angeles)</span>
+              <span class="member-edu">BSc, Information Management</span>
+              <p>Silicon Valley-ervaring. Werkte voor Nike, Uber en diverse startups en scale-ups.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">W</div>
+            <div class="member-info">
+              <h3>Wouter van Haaften</h3>
+              <span class="member-role">AI-strategie</span>
+              <span class="member-edu">MSc, Information Management</span>
+              <p>Vertaalt complexe AI-technologie naar heldere, toepasbare oplossingen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logo Slider -->
+    <LogoSlider cta={{ label: 'Bekijk alle klanten →', href: '/cases/' }} />
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-label">Wat klanten zeggen</div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">
+            <p>"MS618 bracht structuur in onze wildgroei aan marketinginitiatieven. Binnen 6 maanden verdrievoudigden we ons organisch verkeer — en meer dan dat: we wisten eindelijk waaróm het werkte."</p>
+            <footer>
+              <strong>Thomas W.</strong>
+              <span>CMO, SaaS Scale-up</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Wij zijn een nichebedrijf in technische oplossingen. MS618 begreep onze markt meteen en positioneerde ons als de autoriteit in ons segment. LinkedIn-leads stegen met 180% in het eerste jaar."</p>
+            <footer>
+              <strong>Anke M.</strong>
+              <span>Directeur, Technisch adviesbureau</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Geen bullshit, geen vage rapporten. MS618 koppelt elke actie aan een meetbaar resultaat. Dat is precies wat wij als data-gedreven organisatie nodig hebben."</p>
+            <footer>
+              <strong>Peter L.</strong>
+              <span>CEO, E-commerce Scale-up</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Blog Posts -->
+    {recentPosts.length > 0 && (
+      <section class="blog-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-label">Kennis & inzichten</div>
+              <h2 class="section-title">Laatste artikelen</h2>
+            </div>
+            <a href="/blog/" class="btn-secondary">Alle artikelen →</a>
+          </div>
+          <div class="blog-grid">
+            {recentPosts.map((post) => (
+              <BlogCard
+                title={post.data.title}
+                description={post.data.description}
+                slug={post.id}
+                publishDate={post.data.publishDate}
+                category={post.data.category}
+                author={post.data.author}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- CTA -->
+    <CTA />
+
+  </main>
+  <Footer />
+</Base>
+
+<style>
+  /* ── Section labels ── */
+  .section-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: #fafafa;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-sub {
+    font-size: 1.125rem;
+    color: #888;
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+
+  /* ── Award bar ── */
+  .award-bar {
+    border-bottom: 1px solid #222;
+    background: #111;
+    padding: 0.875rem 0;
+  }
+
+  .award-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .award-google-logo {
+    height: 18px;
+    width: auto;
+    opacity: 0.85;
+  }
+
+  .award-divider {
+    display: block;
+    width: 1px;
+    height: 1.25rem;
+    background: #333;
+  }
+
+  .award-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #ccc;
+    letter-spacing: 0.01em;
+  }
+
+  .award-dot {
+    color: #444;
+    font-size: 1rem;
+  }
+
+  .award-sub {
+    font-size: 0.8125rem;
+    color: #666;
+  }
+
+  /* ── Problem ── */
+  .problem-section {
+    background: #0a0a0a;
+    border-top: 1px solid #222;
+    padding: 8rem 0 12rem;
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+
+  .problem-col h2 {
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: #fafafa;
+    margin-bottom: 1.5rem;
+  }
+
+  .problem-col p {
+    color: #888;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    font-size: 1.0625rem;
+  }
+
+  .problem-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: #222;
+  }
+
+  .problem-stat {
+    padding: 1.5rem 2rem;
+    background: #0a0a0a;
+  }
+
+  .pstat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: #fafafa;
+    margin-bottom: 0.4rem;
+  }
+
+  .pstat-text {
+    font-size: 0.9rem;
+    color: #888;
+    line-height: 1.5;
+  }
+
+  .problem-manifesto {
+    color: #ccc !important;
+    font-size: 1.0625rem !important;
+    line-height: 1.9 !important;
+    border-left: 2px solid #333;
+    padding-left: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  /* ── AI Tools Bar ── */
+  .ai-tools-bar {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    background: #0d0d0d;
+    padding: 2rem 0;
+  }
+
+  .ai-tools-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #444;
+    margin-bottom: 1.25rem;
+  }
+
+  .ai-tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .ai-tool {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    border: 1px solid #222;
+    padding: 0.5rem 1rem;
+    background: #111;
+  }
+
+  .ai-tool:hover {
+    color: #888;
+    border-color: #333;
+  }
+
+  /* ── Raptor ── */
+  .raptor-section {
+    position: relative;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    overflow: hidden;
+    background: #111;
+  }
+
+  .raptor-image-wrap {
+    position: relative;
+    width: 100%;
+    height: 480px;
+  }
+
+  .raptor-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .raptor-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(5,5,8,0.2) 0%, rgba(5,5,8,0.9) 100%);
+  }
+
+  .raptor-content {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    max-width: 800px;
+  }
+
+  .raptor-quote {
+    margin: 0 0 1.5rem;
+    font-style: normal;
+  }
+
+  .raptor-quote-mark {
+    font-size: 5rem;
+    line-height: 0.6;
+    color: #333;
+    font-family: Georgia, serif;
+    margin-bottom: 1.25rem;
+  }
+
+  .raptor-quote p {
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 600;
+    font-family: Georgia, serif;
+    color: #ebebeb;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+
+  .raptor-quote footer {
+    font-size: 0.875rem;
+    color: #666;
+    letter-spacing: 0.03em;
+  }
+
+  .raptor-context {
+    font-size: 1rem;
+    color: #888;
+    line-height: 1.7;
+    max-width: 560px;
+  }
+
+  /* ── How we work ── */
+  .how-section {
+    background: #111;
+    border-top: 1px solid #222;
+    padding: 8rem 0 12rem;
+  }
+
+  .how-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #222;
+    margin-top: 3rem;
+  }
+
+  .how-card {
+    background: #0a0a0a;
+    padding: 2.5rem;
+  }
+
+  .how-number {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #444;
+    margin-bottom: 1.25rem;
+  }
+
+  .how-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fafafa;
+    margin-bottom: 0.75rem;
+  }
+
+  .how-card p {
+    font-size: 0.9375rem;
+    color: #888;
+    line-height: 1.65;
+  }
+
+  .how-cta {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    border-top: 1px solid #222;
+  }
+
+  /* ── Team ── */
+  .team-section {
+    background: #0a0a0a;
+    border-top: 1px solid #222;
+    padding: 8rem 0 12rem;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #222;
+    margin-top: 2.5rem;
+  }
+
+  .team-member {
+    padding: 2rem;
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .member-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #151515;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #888;
+  }
+
+  .member-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fafafa;
+    margin-bottom: 0.2rem;
+  }
+
+  .member-role {
+    font-size: 0.8125rem;
+    color: #888;
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+
+  .member-edu {
+    display: block;
+    font-size: 0.75rem;
+    color: #555;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.02em;
+  }
+
+  .member-info p {
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  /* ── Testimonials ── */
+  .testimonials-section {
+    background: #111;
+    border-top: 1px solid #222;
+    padding: 8rem 0 12rem;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #222;
+    margin-top: 2.5rem;
+  }
+
+  .testimonial {
+    padding: 2.5rem;
+    background: #0a0a0a;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .testimonial p {
+    font-size: 1.25rem;
+    color: #fafafa;
+    line-height: 1.7;
+    flex: 1;
+  }
+
+  .testimonial footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .testimonial strong {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #fafafa;
+  }
+
+  .testimonial span {
+    font-size: 0.875rem;
+    color: #666;
+  }
+
+  /* ── Blog ── */
+  .blog-section {
+    background: #0a0a0a;
+    border-top: 1px solid #222;
+    padding: 8rem 0 12rem;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 1rem;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #222;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .problem-section,
+    .how-section,
+    .team-section,
+    .testimonials-section,
+    .blog-section {
+      padding: 5rem 0 7rem;
+    }
+
+    .problem-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .problem-col-right {
+      background: transparent;
+      gap: 1rem;
+    }
+
+    .problem-stat {
+      border: 1px solid #222;
+    }
+
+    .how-grid,
+    .testimonials-grid,
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .raptor-image-wrap {
+      height: 280px;
+    }
+
+    .award-dot,
+    .award-sub {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

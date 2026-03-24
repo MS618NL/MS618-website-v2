@@ -1,0 +1,198 @@
+---
+import site from '@/data/site.json';
+import { getLangFromUrl, useTranslations } from '@/i18n';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const p = lang === 'en' ? '/en' : '';
+---
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href={p || '/'} class="footer-logo">MS618</a>
+      <p class="footer-tagline">{lang === 'en' ? 'Direction in acceleration' : site.tagline}</p>
+      <p class="footer-desc">{t('footer.desc')}</p>
+      {site.social.linkedin && (
+        <a href={site.social.linkedin} class="footer-social" target="_blank" rel="noopener noreferrer">
+          LinkedIn →
+        </a>
+      )}
+    </div>
+
+    <div class="footer-col">
+      <h3 class="footer-heading">{t('footer.services')}</h3>
+      <ul>
+        <li><a href={`${p}/services/seo-strategie/`}>SEO {lang === 'en' ? 'Strategy' : 'Strategie'}</a></li>
+        <li><a href={`${p}/services/digital-advertising/`}>Google Ads</a></li>
+        <li><a href={`${p}/services/seo-strategie/`}>AI {lang === 'en' ? 'Visibility' : 'Vindbaarheid'}</a></li>
+        <li><a href={`${p}/services/website-optimalisatie/`}>{lang === 'en' ? 'Websites & Design' : 'Websites & Design'}</a></li>
+        <li><a href={`${p}/services/digital-advertising/`}>LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3 class="footer-heading">{t('footer.nav')}</h3>
+      <ul>
+        <li><a href={`${p}/services/`}>{lang === 'en' ? 'Approach' : 'Aanpak'}</a></li>
+        <li><a href={`${p}/about/`}>{t('nav.about')}</a></li>
+        <li><a href={`${p}/blog/`}>{lang === 'en' ? 'News' : 'Nieuws'}</a></li>
+        <li><a href={`${p}/contact/`}>{t('nav.contact')}</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3 class="footer-heading">{t('footer.contact')}</h3>
+      <ul>
+        <li><a href="mailto:info@ms618.nl">info@ms618.nl</a></li>
+        <li>MS618 B.V.</li>
+        <li>Slachtedyk 4a, Joure</li>
+        <li>{lang === 'en' ? 'Netherlands' : 'Nederland'}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© {new Date().getFullYear()} {site.organization.legalName}. {t('footer.rights')}</span>
+      <nav aria-label="Legal navigation">
+        <a href={`${p}/privacy/`}>{t('footer.privacy')}</a>
+        <a href="/rss.xml">RSS</a>
+        <a href="/sitemap-index.xml">{t('footer.sitemap')}</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid oklch(0.22 0 0);
+    margin-top: 6rem;
+    padding-top: 4rem;
+    background: oklch(0.09 0 0);
+  }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer-logo {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    text-decoration: none;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: oklch(0.98 0 0);
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-desc {
+    font-size: 0.875rem;
+    color: oklch(0.5 0 0);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    max-width: 280px;
+  }
+
+  .footer-social {
+    font-size: 0.875rem;
+    color: oklch(0.65 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .footer-social:hover {
+    color: oklch(0.98 0 0);
+  }
+
+  .footer-heading {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: oklch(0.45 0 0);
+    margin-bottom: 1rem;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-col a,
+  .footer-col li {
+    font-size: 0.875rem;
+    color: oklch(0.55 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .footer-col a:hover {
+    color: oklch(0.98 0 0);
+  }
+
+  .footer-bottom {
+    border-top: 1px solid oklch(0.15 0 0);
+    padding: 1.25rem 0;
+  }
+
+  .footer-bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.8125rem;
+    color: oklch(0.4 0 0);
+  }
+
+  .footer-bottom-inner nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer-bottom-inner a {
+    color: oklch(0.4 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .footer-bottom-inner a:hover {
+    color: oklch(0.65 0 0);
+  }
+
+  @media (max-width: 768px) {
+    .footer-inner {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer-brand {
+      grid-column: 1 / -1;
+    }
+
+    .footer-bottom-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

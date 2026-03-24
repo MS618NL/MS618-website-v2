@@ -1,0 +1,275 @@
+---
+interface Props {
+  headline?: string;
+  subheadline?: string;
+  cta?: { label: string; href: string };
+  ctaSecondary?: { label: string; href: string };
+}
+
+const {
+  headline = 'AI verandert marketing<br><span style="color:#555">elke dag.</span>',
+  subheadline = 'Terwijl iedereen meer produceert, verliezen merken hun richting. MS618 brengt focus: de juiste keuzes, de juiste kanalen, de juiste boodschap.',
+  cta = { label: 'Plan een gesprek', href: '/contact/' },
+} = Astro.props;
+---
+
+<section class="hero" aria-label="Hero">
+  <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+  <!-- Ambient glow -->
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <!-- Bottom fade -->
+  <div class="hero-fade" aria-hidden="true"></div>
+
+  <div class="container hero-content">
+    <!-- Badge -->
+    <div class="hero-badge">
+      <span class="badge-dot-wrap">
+        <span class="badge-dot-ping"></span>
+        <span class="badge-dot"></span>
+      </span>
+      <span class="badge-text">Richting in versnelling</span>
+    </div>
+
+    <h1 class="hero-headline" set:html={headline} />
+
+    <p class="hero-sub">{subheadline}</p>
+
+    <a href={cta.href} class="hero-cta">
+      {cta.label}
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="scroll-line-h"></span>
+      <span class="scroll-text">Scroll</span>
+      <span class="scroll-line-h"></span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #050508;
+  }
+
+  .hero-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .hero-glow {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse 50% 40% at 50% 45%, rgba(100, 150, 255, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse 80% 60% at 50% 55%, rgba(60, 100, 180, 0.05) 0%, transparent 70%);
+  }
+
+  .hero-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 33%;
+    z-index: 2;
+    background: linear-gradient(to top, #050508, transparent);
+    pointer-events: none;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding-top: 5rem;
+    max-width: 1152px;
+  }
+
+  /* Badge */
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem 1.25rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid #333;
+    background: rgba(255,255,255,0.03);
+  }
+
+  .badge-dot-wrap {
+    position: relative;
+    display: inline-flex;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  .badge-dot-ping {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: #22c55e;
+    opacity: 0.75;
+    animation: ping 1.5s ease infinite;
+  }
+
+  .badge-dot {
+    position: relative;
+    display: inline-flex;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: #22c55e;
+  }
+
+  @keyframes ping {
+    0% { transform: scale(1); opacity: 0.75; }
+    75%, 100% { transform: scale(2); opacity: 0; }
+  }
+
+  .badge-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #ccc;
+  }
+
+  /* Headline */
+  .hero-headline {
+    font-size: clamp(2.75rem, 9vw, 7.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    margin-bottom: 2rem;
+  }
+
+  /* Sub */
+  .hero-sub {
+    font-size: 1.125rem;
+    color: #888;
+    line-height: 1.7;
+    max-width: 42rem;
+    margin: 0 auto 3rem;
+  }
+
+  /* CTA */
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    background: #fafafa;
+    color: #0a0a0a;
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .hero-cta:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+
+  .hero-cta svg {
+    transition: transform 0.2s ease;
+  }
+
+  .hero-cta:hover svg {
+    transform: translateX(4px);
+  }
+
+  /* Scroll indicator */
+  .hero-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 8rem;
+    font-size: 0.875rem;
+    color: #555;
+  }
+
+  .scroll-line-h {
+    display: block;
+    width: 1.5rem;
+    height: 1px;
+    background: #333;
+  }
+
+  .scroll-text {
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 768px) {
+    .hero-headline {
+      font-size: clamp(2.25rem, 10vw, 4rem);
+    }
+
+    .hero-scroll {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  const canvas = document.getElementById('hero-canvas') as HTMLCanvasElement;
+  if (canvas) {
+    const ctx = canvas.getContext('2d')!;
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    resize();
+    window.addEventListener('resize', resize, { passive: true });
+
+    const particles: { x: number; y: number; vx: number; vy: number; size: number; opacity: number }[] = [];
+    const COUNT = 50;
+
+    for (let i = 0; i < COUNT; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.2,
+        vy: (Math.random() - 0.5) * 0.2,
+        size: Math.random() * 1.5 + 0.5,
+        opacity: Math.random() * 0.3 + 0.1,
+      });
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (const p of particles) {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 255, 255, ${p.opacity})`;
+        ctx.fill();
+
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+      }
+
+      requestAnimationFrame(draw);
+    }
+
+    draw();
+  }
+</script>

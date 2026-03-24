@@ -1,0 +1,87 @@
+---
+import Base from './Base.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import {
+  buildOrganizationPiece,
+  buildWebsitePiece,
+  buildWebpagePiece,
+  buildBreadcrumbPiece,
+} from '@/utils/schema';
+import { canonicalUrl } from '@/utils/seo';
+import site from '@/data/site.json';
+
+interface BreadcrumbItem {
+  name: string;
+  item?: string;
+}
+
+interface Props {
+  title: string;
+  seoTitle?: string;
+  description: string;
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  noindex?: boolean;
+  rss?: boolean;
+  breadcrumbs?: BreadcrumbItem[];
+  extraSchema?: object[];
+}
+
+const {
+  title,
+  seoTitle,
+  description,
+  ogImage,
+  ogType = 'website',
+  noindex = false,
+  rss = false,
+  breadcrumbs = [],
+  extraSchema = [],
+} = Astro.props;
+
+const pageUrl = canonicalUrl(Astro.url.pathname);
+
+// Build schema graph
+const defaultBreadcrumbs: BreadcrumbItem[] = breadcrumbs.length > 0
+  ? breadcrumbs
+  : [{ name: 'Home', item: site.url }];
+
+const schemaGraph = [
+  buildOrganizationPiece(),
+  buildWebsitePiece(),
+  buildWebpagePiece(pageUrl, title, description, defaultBreadcrumbs),
+  buildBreadcrumbPiece(pageUrl, defaultBreadcrumbs),
+  ...extraSchema,
+];
+---
+
+<Base
+  title={title}
+  seoTitle={seoTitle}
+  description={description}
+  ogImage={ogImage}
+  ogType={ogType}
+  noindex={noindex}
+  rss={rss}
+  schemaGraph={schemaGraph}
+>
+  <Header />
+  <main id="main-content">
+    {breadcrumbs.length > 0 && (
+      <div class="container breadcrumb-bar">
+        <Breadcrumbs items={breadcrumbs} />
+      </div>
+    )}
+    <slot />
+  </main>
+  <Footer />
+</Base>
+
+<style>
+  .breadcrumb-bar {
+    padding-top: calc(4.5rem + 1rem);
+    padding-bottom: 0;
+  }
+</style>

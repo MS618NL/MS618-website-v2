@@ -1,0 +1,96 @@
+---
+interface Props {
+  label?: string;
+  cta?: { label: string; href: string };
+  logos?: string[];
+}
+
+const {
+  label = 'Vertrouwd door toonaangevende B2B-bedrijven',
+  cta,
+  logos = ['Acme Corp', 'TechVision', 'Industrial Co', 'Global B2B', 'Dutch Makers', 'Nexus Group', 'Altera Labs', 'BuildRight'],
+} = Astro.props;
+
+// Duplicate for seamless loop
+const doubled = [...logos, ...logos];
+---
+
+<div class="logo-slider-wrap">
+  <p class="slider-label">{label}</p>
+  <div class="slider-track-outer">
+    <div class="slider-track">
+      {doubled.map((name) => (
+        <span class="logo-item">{name}</span>
+      ))}
+    </div>
+  </div>
+  {cta && <a href={cta.href} class="slider-cta">{cta.label}</a>}
+</div>
+
+<style>
+  .logo-slider-wrap {
+    padding: 4rem 0;
+    border-top: 1px solid oklch(0.15 0 0);
+    border-bottom: 1px solid oklch(0.15 0 0);
+    text-align: center;
+  }
+
+  .slider-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: oklch(0.38 0 0);
+    margin-bottom: 2rem;
+  }
+
+  .slider-track-outer {
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    margin-bottom: 1.5rem;
+  }
+
+  .slider-track {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    width: max-content;
+    animation: scroll-logos 36s linear infinite;
+  }
+
+  .slider-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-logos {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .logo-item {
+    flex-shrink: 0;
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: oklch(0.48 0 0);
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+  }
+
+  .logo-item:hover {
+    color: oklch(0.7 0 0);
+  }
+
+  .slider-cta {
+    font-size: 0.8125rem;
+    color: oklch(0.5 0 0);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease;
+  }
+
+  .slider-cta:hover {
+    color: oklch(0.88 0 0);
+  }
+</style>
