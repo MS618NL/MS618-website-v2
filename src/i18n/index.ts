@@ -20,7 +20,8 @@ export function getAlternatePath(url: URL, targetLang: Lang): string {
   const path = url.pathname;
 
   if (targetLang === 'en') {
-    // NL → EN: add /en prefix
+    // NL → EN: add /en prefix (skip if already on EN page)
+    if (path.startsWith('/en')) return path;
     if (path === '/') return '/en/';
     return `/en${path}`;
   } else {
