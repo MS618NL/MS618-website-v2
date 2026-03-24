@@ -67,7 +67,8 @@ const schemaGraph = [
             <h2>Je weet dat je iets moet.<br>Maar wat?</h2>
             <p>AI is overal. Je concurrent maakt er al websites mee, advertenties, content. Ondertussen vraag je je af: moet ik een nieuwe website? Wat kan ik eigenlijk met ChatGPT? En waarom levert mijn marketing geen klanten meer op?</p>
             <p>Het probleem is niet dat je te weinig doet. Het probleem is dat niemand je vertelt wat je wél moet doen — en wat je gerust kunt laten.</p>
-            <p class="problem-manifesto">Je zoekt klanten. Niet meer tools.<br>Je zoekt groei. Niet meer kanalen.<br>Je zoekt iemand die het regelt. Niet iemand die een rapport stuurt.<br><br>Dat is precies wat wij doen.</p>
+            <p class="problem-manifesto">Je zoekt klanten. Niet meer tools.<br>Je zoekt groei. Niet meer kanalen.<br>Je zoekt iemand die het regelt. Niet iemand die een rapport stuurt.</p>
+            <p class="problem-conclusion">Dat is precies wat wij doen.</p>
           </div>
           <div class="problem-col problem-col-right">
             <div class="problem-stat">
@@ -91,7 +92,7 @@ const schemaGraph = [
     <div class="ai-tools-bar">
       <div class="container">
         <p class="ai-tools-label">De AI-modellen die wij inzetten voor jouw bedrijf</p>
-        <p class="ai-tools-subtitle">Van tekst tot beeld, van analyse tot automatisering</p>
+        <p class="ai-tools-subtitle">Wij selecteren, combineren en implementeren de beste AI voor jouw situatie. Jij krijgt het resultaat, wij regelen de techniek.</p>
       </div>
       <div class="ai-tools-marquee">
         <div class="ai-tools-track">
@@ -186,6 +187,21 @@ const schemaGraph = [
         </div>
         <div class="how-cta">
           <a href="/services/" class="btn-secondary">Bekijk onze aanpak →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waarom MS618 -->
+    <section class="why-section">
+      <div class="container">
+        <div class="section-label">Waarom MS618</div>
+        <h2 class="section-title">Internationale expertise. Lokale impact.</h2>
+        <div class="why-content">
+          <p>MS618 is geen gewoon bureau. Ons team opereert aan beide kanten van de oceaan. In de VS werken we met startups, scale-ups en private equity. In Silicon Valley, waar de technologie ontstaat die morgen jouw markt verandert.</p>
+          <p>In Nederland zetten we diezelfde kennis, tooling en snelheid in voor MKB-ondernemers. Bedrijven die willen groeien maar geen marketingafdeling hebben. Die weten dat er iets moet veranderen maar niet precies wat.</p>
+          <p class="why-highlight">Dat is waar wij in geloven: de beste technologie en strategie ter wereld hoort niet exclusief bij bedrijven met miljoenenbudgetten. De MKB-ondernemer die met ons werkt, krijgt toegang tot hetzelfde niveau. Dezelfde modellen. Dezelfde aanpak. Dezelfde ambitie.</p>
+          <p>Er zijn 12 plekken per jaar. Niet omdat we exclusief willen doen, maar omdat we betrokken willen zijn. Elke klant krijgt direct toegang tot senior specialisten die meedenken op directieniveau.</p>
+          <p class="why-tagline">Geen leverancier. Een partner.</p>
         </div>
       </div>
     </section>
@@ -459,6 +475,46 @@ const schemaGraph = [
     margin-top: 1.5rem;
   }
 
+  .problem-conclusion {
+    color: #fafafa !important;
+    font-size: 1rem !important;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+
+  /* ── Why MS618 ── */
+  .why-section {
+    background: #0d0d0d;
+    border-top: 1px solid #1a1a1a;
+    padding: 6rem 0;
+  }
+
+  .why-content {
+    max-width: 640px;
+    margin-top: 2rem;
+  }
+
+  .why-content p {
+    font-size: 0.9375rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+
+  .why-highlight {
+    color: #888 !important;
+    border-left: 2px solid #333;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .why-tagline {
+    color: #fafafa !important;
+    font-weight: 500;
+    font-size: 1rem !important;
+    margin-top: 1.5rem;
+  }
+
   /* ── AI Tools Bar ── */
   .ai-tools-bar {
     border-top: 1px solid #1a1a1a;
@@ -479,17 +535,23 @@ const schemaGraph = [
   }
 
   .ai-tools-subtitle {
-    font-size: 0.75rem;
-    color: #444;
-    letter-spacing: 0.02em;
-    margin-bottom: 2rem;
+    font-size: 0.8125rem;
+    color: #555;
+    max-width: 480px;
+    margin: 0 auto 2rem;
+    line-height: 1.5;
   }
 
   .ai-tools-marquee {
-    width: 100%;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     overflow: hidden;
-    mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
   }
 
   .ai-tools-track {
@@ -497,7 +559,7 @@ const schemaGraph = [
     align-items: center;
     gap: 0;
     width: max-content;
-    animation: scroll-ai-tools 90s linear infinite;
+    animation: scroll-ai-tools 120s linear infinite;
   }
 
   .ai-tools-track:hover {
