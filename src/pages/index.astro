@@ -150,23 +150,23 @@ const schemaGraph = [
 
     <!-- Raptor -->
     <section class="raptor-section">
-      <div class="raptor-image-wrap">
-        <img
-          src="/images/raptor3evolution.jpg"
-          alt="SpaceX Raptor motor evolutie — drie generaties, steeds minder onderdelen"
-          loading="lazy"
-        />
-        <div class="raptor-overlay"></div>
-      </div>
-      <div class="container raptor-content">
-        <blockquote class="raptor-quote">
-          <div class="raptor-quote-mark">"</div>
-          <p>"The best part is no part. The best process is no process."</p>
-          <footer>— Elon Musk over de Raptor-motor</footer>
-        </blockquote>
-        <p class="raptor-context">
-          Drie generaties Raptor. Elke iteratie: minder onderdelen, meer kracht. Dat is ook onze aanpak: simplificatie door iteratie.
-        </p>
+      <div class="container">
+        <div class="raptor-image-wrap">
+          <img
+            src="/images/raptor3evolution.jpg"
+            alt="SpaceX Raptor motor evolutie — drie generaties, steeds minder onderdelen"
+            loading="lazy"
+          />
+        </div>
+        <div class="raptor-content">
+          <blockquote class="raptor-quote">
+            <p>"The best part is no part. The best process is no process."</p>
+            <footer>— Elon Musk</footer>
+          </blockquote>
+          <p class="raptor-context">
+            Drie generaties Raptor. Elke iteratie: minder onderdelen, meer kracht. Dat is ook onze aanpak.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -469,25 +469,25 @@ const schemaGraph = [
   }
 
   .ai-tools-label {
-    font-size: 0.6875rem;
+    font-size: 0.8125rem;
     font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #555;
-    margin-bottom: 0.375rem;
+    letter-spacing: -0.01em;
+    color: #666;
+    margin-bottom: 0.25rem;
   }
 
   .ai-tools-subtitle {
-    font-size: 0.875rem;
-    color: #555;
-    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    color: #444;
+    letter-spacing: 0.02em;
+    margin-bottom: 2rem;
   }
 
   .ai-tools-marquee {
     width: 100%;
     overflow: hidden;
-    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
   }
 
   .ai-tools-track {
@@ -495,7 +495,7 @@ const schemaGraph = [
     align-items: center;
     gap: 0;
     width: max-content;
-    animation: scroll-ai-tools 35s linear infinite;
+    animation: scroll-ai-tools 90s linear infinite;
   }
 
   .ai-tools-track:hover {
@@ -508,97 +508,94 @@ const schemaGraph = [
   }
 
   .ai-tool {
-    font-size: 1.375rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
     color: #444;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
     white-space: nowrap;
-    padding: 0 0.5rem;
+    padding: 0 0.25rem;
     transition: color 0.3s ease;
     cursor: default;
   }
 
   .ai-tool:hover {
-    color: #888;
+    color: #666;
   }
 
   .ai-tool-dot {
-    width: 4px;
-    height: 4px;
+    width: 3px;
+    height: 3px;
     background: #333;
     border-radius: 50%;
     flex-shrink: 0;
-    margin: 0 1rem;
+    margin: 0 1.25rem;
   }
 
   /* ── Raptor ── */
   .raptor-section {
     position: relative;
-    border-top: 1px solid #222;
-    border-bottom: 1px solid #222;
-    overflow: hidden;
+    border-top: 1px solid #1a1a1a;
     background: #0a0a0a;
+    padding: 4rem 0;
   }
 
   .raptor-image-wrap {
     position: relative;
-    width: 100%;
-    height: 480px;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    border: 1px solid #1a1a1a;
+    overflow: hidden;
   }
 
   .raptor-image-wrap img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 35%;
+    height: auto;
     display: block;
   }
 
   .raptor-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, rgba(5,5,8,0.1) 0%, rgba(5,5,8,0.5) 50%, rgba(5,5,8,0.85) 100%);
+    display: none;
   }
 
   .raptor-content {
-    padding-top: 2.5rem;
-    padding-bottom: 4rem;
-    max-width: 640px;
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .raptor-quote {
-    margin: 0 0 1rem;
+    margin: 0 0 1.5rem;
     font-style: normal;
+    padding: 0 1.5rem;
   }
 
   .raptor-quote-mark {
-    font-size: 2.5rem;
-    line-height: 0.6;
-    color: #333;
-    font-family: Georgia, serif;
-    margin-bottom: 0.75rem;
+    display: none;
   }
 
   .raptor-quote p {
-    font-size: clamp(1rem, 1.8vw, 1.25rem);
-    font-weight: 400;
-    font-family: Georgia, serif;
-    color: #aaa;
-    line-height: 1.55;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #fafafa;
+    line-height: 1.5;
     letter-spacing: -0.01em;
     margin-bottom: 0.75rem;
   }
 
   .raptor-quote footer {
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     color: #555;
+    letter-spacing: 0.02em;
   }
 
   .raptor-context {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     color: #555;
-    line-height: 1.65;
-    max-width: 480px;
+    line-height: 1.6;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   /* ── How we work ── */
@@ -833,16 +830,24 @@ const schemaGraph = [
       align-items: flex-start;
     }
 
+    .raptor-section {
+      padding: 3rem 0;
+    }
+
     .raptor-image-wrap {
-      height: 280px;
+      margin-bottom: 2rem;
+    }
+
+    .raptor-quote p {
+      font-size: 1rem;
     }
 
     .ai-tools-bar {
-      padding: 2rem 0;
+      padding: 1.5rem 0 2rem;
     }
 
     .ai-tool {
-      font-size: 1.125rem;
+      font-size: 0.875rem;
     }
 
     .award-dot,
