@@ -1,13 +1,11 @@
 ---
 interface Props {
-  headline?: string;
   subheadline?: string;
   cta?: { label: string; href: string };
   ctaSecondary?: { label: string; href: string };
 }
 
 const {
-  headline = 'AI verandert marketing<br><span style="color:#555">elke dag.</span>',
   subheadline = 'Terwijl iedereen meer produceert, verliezen merken hun richting. MS618 brengt focus: de juiste keuzes, de juiste kanalen, de juiste boodschap.',
   cta = { label: 'Plan een gesprek', href: '/contact/' },
 } = Astro.props;
@@ -32,7 +30,10 @@ const {
       <span class="badge-text">Richting in versnelling</span>
     </div>
 
-    <h1 class="hero-headline" set:html={headline} />
+    <h1 class="hero-headline">
+      AI verandert <span class="rotating-text-wrapper"><span id="rotating-text" class="rotating-text">marketing</span><span class="cursor"></span></span><br>
+      <span class="headline-muted">elke dag.</span>
+    </h1>
 
     <p class="hero-sub">{subheadline}</p>
 
@@ -155,6 +156,45 @@ const {
     margin-bottom: 1.5rem;
   }
 
+  .headline-muted {
+    color: #555;
+  }
+
+  .rotating-text-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: baseline;
+  }
+
+  .rotating-text {
+    background: linear-gradient(90deg, #a78bfa, #60a5fa, #34d399);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background: #60a5fa;
+    margin-left: 0.1em;
+    animation: blink 1s steps(1) infinite;
+    vertical-align: text-bottom;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
   /* Sub */
   .hero-sub {
     font-size: 1rem;
@@ -227,6 +267,46 @@ const {
 </style>
 
 <script>
+  // Rotating text effect
+  const rotatingText = document.getElementById('rotating-text');
+  if (rotatingText) {
+    const words = ['marketing', 'jouw bedrijf', 'de wereld'];
+    let currentIndex = 0;
+    let currentText = words[0];
+    let isDeleting = false;
+    let charIndex = currentText.length;
+
+    function typeEffect() {
+      const currentWord = words[currentIndex];
+      
+      if (isDeleting) {
+        charIndex--;
+        rotatingText.textContent = currentWord.substring(0, charIndex);
+        
+        if (charIndex === 0) {
+          isDeleting = false;
+          currentIndex = (currentIndex + 1) % words.length;
+          setTimeout(typeEffect, 500);
+          return;
+        }
+        setTimeout(typeEffect, 50);
+      } else {
+        charIndex++;
+        rotatingText.textContent = currentWord.substring(0, charIndex);
+        
+        if (charIndex === currentWord.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 2500);
+          return;
+        }
+        setTimeout(typeEffect, 100);
+      }
+    }
+
+    setTimeout(typeEffect, 2500);
+  }
+
+  // Canvas particles
   const canvas = document.getElementById('hero-canvas') as HTMLCanvasElement;
   if (canvas) {
     const ctx = canvas.getContext('2d')!;
