@@ -4,7 +4,7 @@ seoTitle: "Content Strategie voor B2B — Van Ruis naar Resultaat | MS618"
 description: "Hoe bouw je een B2B-contentstrategie die organisch verkeer genereert, autoriteit opbouwt en leads converteert? Ons complete raamwerk."
 publishDate: 2026-01-15
 updatedDate: 2026-01-15
-author: "Joris V."
+author: "Jorrit Miedema"
 category: "Content Marketing"
 relatedPosts: ["ai-en-seo-2026", "zoekintentie-begrijpen"]
 ---

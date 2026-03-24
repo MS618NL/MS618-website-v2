@@ -4,7 +4,7 @@ seoTitle: "AI en SEO in 2026 — Wat verandert er écht? | MS618"
 description: "AI verandert zoekgedrag fundamenteel. Maar paniek is niet nodig — wie begrijpt wat er verandert, heeft een enorm voordeel. Onze analyse."
 publishDate: 2026-03-10
 updatedDate: 2026-03-10
-author: "Mark S."
+author: "Jorrit Miedema"
 category: "SEO"
 relatedPosts: ["zoekintentie-begrijpen", "content-strategie-b2b"]
 ---

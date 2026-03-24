@@ -4,7 +4,7 @@ seoTitle: "MS618 genomineerd voor Google Ads Impact Awards 2026 | MS618"
 description: "Google heeft MS618 genomineerd voor de Ads Impact Awards 2026. Een erkenning voor hoe wij AI inzetten om campagnes scherper, slimmer en winstgevender te maken."
 publishDate: 2026-03-24
 updatedDate: 2026-03-24
-author: "Mark S."
+author: "Jorrit Miedema"
 category: "Nieuws"
 ogImage: "/images/Google-Ads-impact-Awards-nominee-ms618.png"
 relatedPosts: ["ai-en-seo-2026", "content-strategie-b2b"]

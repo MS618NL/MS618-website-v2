@@ -4,7 +4,7 @@ seoTitle: "Zoekintentie Begrijpen — De Basis van Effectieve SEO | MS618"
 description: "Zoekintentie is het fundament van elke succesvolle SEO-strategie. Wie de intentie achter een zoekopdracht begrijpt, schrijft content die rankt én converteert."
 publishDate: 2026-02-20
 updatedDate: 2026-02-20
-author: "Mark S."
+author: "Jorrit Miedema"
 category: "SEO"
 relatedPosts: ["ai-en-seo-2026", "content-strategie-b2b"]
 ---
