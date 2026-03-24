@@ -215,22 +215,21 @@ const schemaGraph = [
       <div class="container">
         <div class="section-label">Vertrouwd door</div>
         <div class="clients-grid">
-          <span class="client-logo">Inspecto Visio</span>
-          <span class="client-logo">NDO-Nederland</span>
-          <span class="client-logo">KIS Group</span>
-          <span class="client-logo">Fugro</span>
-          <span class="client-logo">Christmas Brothers</span>
-          <span class="client-logo">STEP2</span>
-          <span class="client-logo">Swoop</span>
-          <span class="client-logo">Moovs</span>
-          <span class="client-logo">Bedrijfskleding Online</span>
-          <span class="client-logo">ZONklaar</span>
-          <span class="client-logo">Hoekstra & Partners</span>
-          <span class="client-logo">Friesland Boating</span>
-          <span class="client-logo">Holtara</span>
-          <span class="client-logo">Hout Met Historie</span>
-          <span class="client-logo">DVM</span>
-          <span class="client-logo">Waimakers</span>
+          <div class="client-logo"><img src="/images/clients/inspecto-visio.png" alt="Inspecto Visio" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/ndo-nederland.png" alt="NDO Nederland" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/kis-group.png" alt="KIS Group" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/fugro.png" alt="Fugro" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/christmas-brothers.svg" alt="Christmas Brothers" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/step2.svg" alt="STEP2" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/swoop.png" alt="Swoop" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/moovs.png" alt="Moovs" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/bedrijfskleding-online.webp" alt="Bedrijfskleding Online" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/zonklaar.svg" alt="ZONklaar" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/hoekstra-partners.png" alt="Hoekstra & Partners" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/friesland-boating.jpg" alt="Friesland Boating" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/holtara.svg" alt="Holtara" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/houtmethistorie.svg" alt="Hout Met Historie" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/dvm.svg" alt="DVM" loading="lazy" /></div>
         </div>
       </div>
     </section>
@@ -569,37 +568,61 @@ const schemaGraph = [
 
   .clients-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem 2rem;
-    margin-top: 1.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem 3rem;
+    margin-top: 2rem;
+    align-items: center;
   }
 
   .client-logo {
-    font-size: 0.9375rem;
-    font-weight: 500;
-    color: #444;
-    letter-spacing: -0.01em;
-    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
   }
 
-  .client-logo:hover {
-    color: #666;
+  .client-logo img {
+    max-width: 100%;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(0.6);
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+  }
+
+  .client-logo:hover img {
+    filter: grayscale(100%) brightness(0.8);
+    opacity: 1;
   }
 
   @media (max-width: 1024px) {
     .clients-grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem 2rem;
     }
   }
 
   @media (max-width: 768px) {
     .clients-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem 1.5rem;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
     }
     
     .client-logo {
-      font-size: 0.875rem;
+      height: 32px;
+    }
+
+    .client-logo img {
+      max-height: 32px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .clients-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
     }
   }
 
