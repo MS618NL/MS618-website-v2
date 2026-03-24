@@ -70,6 +70,24 @@ const extraSchema = [buildContactPiece()];
         </div>
 
         <aside class="contact-info-col">
+          <div class="contact-info-block office-info-block">
+            <h2>MS618 B.V.</h2>
+            <address>
+              Slachtedyk 4a<br />
+              8501 XC Joure<br />
+              Nederland
+            </address>
+            <div class="office-links">
+              <a href={`mailto:${site.organization.email}`} class="office-email">{site.organization.email}</a>
+              {site.social.linkedin && (
+                <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer" class="office-linkedin">LinkedIn</a>
+              )}
+            </div>
+            <a href="https://maps.google.com/?q=Slachtedyk+4a+Joure" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              Plan route →
+            </a>
+          </div>
+
           <div class="contact-info-block">
             <h2>Wat verwacht je?</h2>
             <ul class="expect-list">
@@ -99,23 +117,6 @@ const extraSchema = [buildContactPiece()];
       <section class="office-section">
         <div class="office-image-full">
           <img src="/images/pand.jpg" alt="MS618 kantoor FJ08 aan de haven van Joure" loading="lazy" />
-        </div>
-        <div class="office-info">
-          <h2>MS618 B.V.</h2>
-          <address>
-            Slachtedyk 4a<br />
-            8501 XC Joure<br />
-            Nederland
-          </address>
-          <div class="office-links">
-            <a href={`mailto:${site.organization.email}`} class="office-email">{site.organization.email}</a>
-            {site.social.linkedin && (
-              <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer" class="office-linkedin">LinkedIn</a>
-            )}
-          </div>
-          <a href="https://maps.google.com/?q=Slachtedyk+4a+Joure" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-            Plan route →
-          </a>
         </div>
       </section>
     </div>
@@ -338,15 +339,31 @@ const extraSchema = [buildContactPiece()];
     line-height: 1.6;
   }
 
+  /* Office info in sidebar */
+  .office-info-block h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: oklch(0.98 0 0);
+    margin-bottom: 0.5rem;
+  }
+
+  .office-info-block address {
+    font-style: normal;
+    font-size: 0.875rem;
+    color: oklch(0.5 0 0);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
   .office-links {
     display: flex;
-    gap: 1.5rem;
-    margin: 0.25rem 0 0.75rem;
+    gap: 1.25rem;
+    margin-bottom: 1rem;
   }
 
   .office-email,
   .office-linkedin {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     color: oklch(0.5 0 0);
     text-decoration: none;
     transition: color 0.2s ease;
@@ -357,9 +374,9 @@ const extraSchema = [buildContactPiece()];
     color: oklch(0.98 0 0);
   }
 
-  .office-info .btn-secondary {
-    margin-top: 0.5rem;
-    width: fit-content;
+  .office-info-block .btn-secondary {
+    width: 100%;
+    text-align: center;
   }
 
   @media (max-width: 1024px) {
