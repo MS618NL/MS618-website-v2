@@ -1,14 +1,25 @@
 ---
 interface Props {
+  badgeText?: string;
+  headlinePrefix?: string;
+  headlineAccent?: string;
+  rotatingWords?: string[];
   subheadline?: string;
   cta?: { label: string; href: string };
   ctaSecondary?: { label: string; href: string };
 }
 
 const {
-  subheadline = 'Terwijl iedereen meer produceert, weten de meeste bedrijven niet meer wat werkt. MS618 brengt focus: de juiste strategie, de juiste tools, en een systeem dat werkt. Ook zonder marketingafdeling of AI-kennis.',
+  badgeText = 'Richting in versnelling',
+  headlinePrefix = 'AI verandert ',
+  headlineAccent = 'elke dag.',
+  rotatingWords = ['marketing', 'jouw bedrijf', 'de wereld'],
+  subheadline = 'Terwijl iedereen meer produceert, weten de meeste bedrijven niet meer wat werkt. MS618 brengt richting: De juiste strategie, de juiste tools, en een systeem dat werkt. Ook zonder marketingafdeling of AI-kennis.',
   cta = { label: 'Plan een gesprek', href: '/contact/' },
 } = Astro.props;
+
+const rotatingWordsJson = JSON.stringify(rotatingWords);
+const firstWord = rotatingWords[0];
 ---
 
 <section class="hero" aria-label="Hero">
@@ -27,12 +38,12 @@ const {
         <span class="badge-dot-ping"></span>
         <span class="badge-dot"></span>
       </span>
-      <span class="badge-text">Richting in versnelling</span>
+      <span class="badge-text">{badgeText}</span>
     </div>
 
     <h1 class="hero-headline">
-      AI verandert <span class="rotating-text-wrapper"><span id="rotating-text" class="rotating-text">marketing</span><span class="cursor"></span></span><br>
-      <span class="headline-accent">elke dag.</span>
+      {headlinePrefix}<span class="rotating-text-wrapper"><span id="rotating-text" class="rotating-text" data-words={rotatingWordsJson}>{firstWord}</span><span class="cursor"></span></span><br>
+      <span class="headline-accent">{headlineAccent}</span>
     </h1>
 
     <p class="hero-sub">{subheadline}</p>
@@ -148,7 +159,7 @@ const {
 
   /* Headline */
   .hero-headline {
-    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-size: clamp(2.5rem, 7vw, 6.25rem);
     font-weight: 600;
     line-height: 1.05;
     letter-spacing: -0.04em;
@@ -270,7 +281,7 @@ const {
   // Rotating text effect
   const rotatingText = document.getElementById('rotating-text');
   if (rotatingText) {
-    const words = ['marketing', 'jouw bedrijf', 'de wereld'];
+    const words = JSON.parse(rotatingText.dataset.words || '["marketing"]');
     let wordIndex = 0;
     let charIndex = words[0].length;
     let isDeleting = true;

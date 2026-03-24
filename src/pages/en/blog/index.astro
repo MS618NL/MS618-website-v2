@@ -1,0 +1,170 @@
+---
+import Page from '@/layouts/Page.astro';
+import BlogCard from '@/components/BlogCard.astro';
+import CTA from '@/components/CTA.astro';
+import { getCollection } from 'astro:content';
+import site from '@/data/site.json';
+
+const posts = (await getCollection('blog'))
+  .filter((p) => !p.data.noindex)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url + '/en/' },
+  { name: 'Blog' },
+];
+
+// Get unique categories
+const categories = [...new Set(posts.map((p) => p.data.category))];
+---
+
+<Page
+  title="Blog"
+  seoTitle="Blog — Knowledge & Insights on SEO and Digital Marketing | MS618"
+  description="In-depth articles on SEO, content marketing, digital advertising and analytics from the senior specialists at MS618."
+  breadcrumbs={breadcrumbs}
+  rss={true}
+>
+  <div class="blog-listing">
+    <div class="container">
+      <header class="page-header">
+        <h1>Blog & Knowledge</h1>
+        <p class="lead">In-depth insights on SEO, content marketing and digital strategy — written by senior specialists with hands-on practical experience.</p>
+        <div class="header-meta">
+          <span>{posts.length} articles</span>
+          <a href="/rss.xml" class="rss-link">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="2.5" cy="11.5" r="1.5" fill="currentColor"/>
+              <path d="M1 6.5C4.59 6.5 7.5 9.41 7.5 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+              <path d="M1 2C7.075 2 12 6.925 12 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+            </svg>
+            RSS Feed
+          </a>
+        </div>
+      </header>
+
+      {categories.length > 1 && (
+        <nav class="category-nav" aria-label="Filter options">
+          <span>Filter:</span>
+          <a href="/en/blog/" class="cat-link cat-link-active">All articles</a>
+          {categories.map((cat) => (
+            <a href={`/en/blog/#${cat.toLowerCase().replace(/\s+/g, '-')}`} class="cat-link">{cat}</a>
+          ))}
+        </nav>
+      )}
+
+      <div class="posts-grid">
+        {posts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.id}
+            publishDate={post.data.publishDate}
+            category={post.data.category}
+            author={post.data.author}
+          />
+        ))}
+      </div>
+    </div>
+
+    <CTA
+      headline="Want to know more about your situation?"
+      body="Theory is useful. But what works for your specific market and target audience, we'd love to discuss that personally."
+      cta={{ label: 'Schedule a call', href: '/en/contact/' }}
+      ctaSecondary={{ label: 'View our services', href: '/en/services/' }}
+    />
+  </div>
+</Page>
+
+<style>
+  .blog-listing {
+    padding-top: 4rem;
+  }
+
+  .page-header {
+    padding: 3rem 0 3rem;
+    border-bottom: 1px solid oklch(0.15 0 0);
+    margin-bottom: 2.5rem;
+  }
+
+  .page-header h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 0.75rem;
+  }
+
+  .lead {
+    font-size: 1.125rem;
+    color: oklch(0.55 0 0);
+    line-height: 1.7;
+    max-width: 640px;
+    margin-bottom: 1.25rem;
+  }
+
+  .header-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+    color: oklch(0.4 0 0);
+  }
+
+  .rss-link {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: oklch(0.45 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .rss-link:hover {
+    color: oklch(0.7 0 0);
+  }
+
+  .category-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+    color: oklch(0.4 0 0);
+    margin-bottom: 2.5rem;
+  }
+
+  .cat-link {
+    padding: 0.3rem 0.75rem;
+    border: 1px solid oklch(0.2 0 0);
+    color: oklch(0.5 0 0);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    transition: all 0.2s ease;
+  }
+
+  .cat-link:hover,
+  .cat-link-active {
+    border-color: oklch(0.35 0 0);
+    color: oklch(0.82 0 0);
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 6rem;
+  }
+
+  @media (max-width: 1024px) {
+    .posts-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .posts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

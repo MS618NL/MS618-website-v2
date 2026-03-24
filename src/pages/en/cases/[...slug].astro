@@ -1,0 +1,142 @@
+---
+import Post from '@/layouts/Post.astro';
+import CTA from '@/components/CTA.astro';
+import { getCollection, render } from 'astro:content';
+import { formatDate } from '@/utils/seo';
+import site from '@/data/site.json';
+
+export async function getStaticPaths() {
+  const cases = await getCollection('cases');
+  return cases.map((c) => ({
+    params: { slug: c.id },
+    props: { case: c },
+  }));
+}
+
+const { case: caseStudy } = Astro.props;
+const { Content } = await render(caseStudy);
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url + '/en/' },
+  { name: 'Cases', item: `${site.url}/en/cases/` },
+  { name: caseStudy.data.title },
+];
+---
+
+<Post
+  title={caseStudy.data.title}
+  seoTitle={caseStudy.data.seoTitle}
+  description={caseStudy.data.description}
+  ogImage={caseStudy.data.ogImage}
+  noindex={caseStudy.data.noindex}
+  publishDate={caseStudy.data.publishDate}
+  updatedDate={caseStudy.data.updatedDate}
+  author="MS618"
+  breadcrumbs={breadcrumbs}
+>
+  <article class="case-page">
+    <div class="container">
+      <header class="case-header">
+        <div class="case-meta">
+          <span class="tag">{caseStudy.data.service}</span>
+          <span class="case-client">{caseStudy.data.client}</span>
+          <time datetime={caseStudy.data.publishDate.toISOString()}>
+            {formatDate(caseStudy.data.publishDate)}
+          </time>
+        </div>
+        <h1>{caseStudy.data.title}</h1>
+        <p class="case-description">{caseStudy.data.description}</p>
+        <div class="case-result-hero">
+          <span class="result-label">Result</span>
+          <span class="result-value">{caseStudy.data.result}</span>
+        </div>
+      </header>
+
+      <div class="case-body">
+        <div class="prose">
+          <Content />
+        </div>
+      </div>
+    </div>
+
+    <CTA
+      headline="Recognise this challenge?"
+      body="Schedule a call. We'll discuss how a similar approach could work for your organisation."
+      cta={{ label: 'Schedule a call', href: '/en/contact/' }}
+    />
+  </article>
+</Post>
+
+<style>
+  .case-page {
+    padding-top: 2rem;
+  }
+
+  .case-header {
+    padding: 3rem 0;
+    border-bottom: 1px solid oklch(0.15 0 0);
+    margin-bottom: 3rem;
+    max-width: 760px;
+  }
+
+  .case-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .case-client {
+    font-size: 0.8125rem;
+    color: oklch(0.4 0 0);
+  }
+
+  time {
+    font-size: 0.8125rem;
+    color: oklch(0.35 0 0);
+  }
+
+  .case-header h1 {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 1rem;
+    line-height: 1.15;
+  }
+
+  .case-description {
+    font-size: 1.125rem;
+    color: oklch(0.55 0 0);
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+  }
+
+  .case-result-hero {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1rem 1.5rem;
+    background: oklch(0.11 0 0);
+    border: 1px solid oklch(0.2 0 0);
+    border-left: 3px solid oklch(0.72 0.18 145);
+  }
+
+  .result-label {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: oklch(0.4 0 0);
+  }
+
+  .result-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: oklch(0.72 0.18 145);
+  }
+
+  .case-body {
+    padding-bottom: 4rem;
+  }
+</style>

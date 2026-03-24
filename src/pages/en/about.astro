@@ -1,7 +1,5 @@
 ---
-import Base from '@/layouts/Base.astro';
-import Header from '@/components/Header.astro';
-import Footer from '@/components/Footer.astro';
+import Page from '@/layouts/Page.astro';
 import CTA from '@/components/CTA.astro';
 import site from '@/data/site.json';
 
@@ -11,241 +9,190 @@ const breadcrumbs = [
 ];
 ---
 
-<Base
+<Page
   title="About MS618"
   seoTitle="About MS618 — Direction in acceleration"
   description="MS618 is a compact agency of senior specialists. No juniors, no noise — only people who have mastered their craft and understand its future."
+  breadcrumbs={breadcrumbs}
 >
-  <Header />
-  <main id="main-content">
-    <div class="container breadcrumb-bar">
-      <nav class="breadcrumbs" aria-label="Breadcrumbs">
-        <ol>
-          <li><a href="/en/">Home</a><span class="sep" aria-hidden="true">/</span></li>
-          <li><span aria-current="page">About us</span></li>
-        </ol>
-      </nav>
+  <article class="about-page">
+    <div class="container">
+
+      <!-- Hero -->
+      <header class="page-header">
+        <h1>Providing direction in a world that accelerates.</h1>
+        <p class="lead">MS618 is a compact agency of senior specialists. No juniors, no noise — only people who have mastered their craft and understand its future.</p>
+      </header>
+
+      <!-- Story -->
+      <section class="about-section story-section">
+        <div class="about-grid">
+          <div class="story-col">
+            <div class="section-label-inline">Why MS618 exists</div>
+            <p>MS618 was born out of frustration. About agencies that make big promises with junior teams. About reports full of metrics that don't matter. About an industry that grows on noise instead of results.</p>
+            <p>We believe there is a better way. An agency that operates as a strategic partner, not a supplier. That thinks along at board level. That honestly says what works and what doesn't.</p>
+            <p>In an age where AI makes everything possible, it's easy to get lost in tools, channels and trends. We provide direction. Not by doing more, but by choosing better.</p>
+          </div>
+          <div class="name-col">
+            <div class="section-label-inline">The name</div>
+            <p class="name-number">.618</p>
+            <p>MS618 comes from .618 — the golden ratio. A mathematical principle, discovered by Fibonacci, that appears throughout nature: the perfect balance between more and less. It's how we think about marketing. Not everything, but exactly the right things.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why us -->
+      <section class="about-section">
+        <div class="section-label-inline">Why us</div>
+        <h2 class="section-h2">Proven, not promised.</h2>
+        <div class="values-grid">
+          <div class="value-item">
+            <span class="value-icon">01</span>
+            <div>
+              <h3>Proven, not promised</h3>
+              <p>Every project is done by specialists with more than 10 years of experience. No training programmes on your budget.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">02</span>
+            <div>
+              <h3>Strategy as foundation</h3>
+              <p>Every campaign, every piece of content, every euro flows from a clear strategy. No loose actions, no FOMO-driven experiments.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">03</span>
+            <div>
+              <h3>Radical honesty</h3>
+              <p>If something doesn't work, we say so. We report on business impact, not vanity metrics.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">04</span>
+            <div>
+              <h3>Built for the long term</h3>
+              <p>We build structural growth, not quick hypes. What we set up will still be standing in five years.</p>
+            </div>
+          </div>
+          <div class="value-item value-award">
+            <div class="award-badge">
+              <img src="/images/google-logo.svg" alt="Google" class="award-logo" width="52" height="18" />
+              <div class="award-badge-text">
+                <strong>Google Ads Impact Awards 2026</strong>
+                <span>Nominated for AI innovation in advertising</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section class="about-section team-section">
+        <div class="section-label-inline">The team</div>
+        <h2 class="section-h2">Five specialists. No juniors. No noise.</h2>
+        <p class="team-intro">We get involved when marketing becomes fragmented, tooling takes over, or visibility no longer generates growth. Experience counts when acceleration demands it.</p>
+        <div class="team-grid">
+
+          <div class="team-member">
+            <div class="member-avatar">J</div>
+            <div class="member-info">
+              <h3>Jorrit Miedema</h3>
+              <span class="member-role">Strategy, SEO & AI</span>
+              <span class="member-edu">BSc, Information Technology</span>
+              <p>12+ years of growth experience. Former full-service agency owner. AI-first since before ChatGPT. Combines systems thinking with rapid execution.</p>
+              <a href="https://linkedin.com/in/jorrit-miedema" class="member-linkedin" target="_blank" rel="noopener noreferrer">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="member-avatar">J</div>
+            <div class="member-info">
+              <h3>Jurjan Groothuis</h3>
+              <span class="member-role">Ads specialist</span>
+              <span class="member-edu">MSc, International Management</span>
+              <p>12+ years in performance advertising and growth strategy. Worked at Google HQ Dublin and led marketing and sales growth for multiple startups and scale-ups.</p>
+              <a href="https://linkedin.com/in/jurjan-groothuis" class="member-linkedin" target="_blank" rel="noopener noreferrer">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="member-avatar">P</div>
+            <div class="member-info">
+              <h3>Peter Ydel</h3>
+              <span class="member-role">Lead designer</span>
+              <span class="member-edu">BSc, UX & Design</span>
+              <p>Developed campaigns and visual concepts for international brands. Translates strategy into design that builds trust.</p>
+              <a href="https://linkedin.com/in/peter-ydel" class="member-linkedin" target="_blank" rel="noopener noreferrer">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="member-avatar">R</div>
+            <div class="member-info">
+              <h3>Ramin Schultz</h3>
+              <span class="member-role">Growth hacker (Los Angeles)</span>
+              <span class="member-edu">BSc, Information Management</span>
+              <p>Silicon Valley experience. Worked for Nike, Uber and various startups and scale-ups. Brings international perspective and growth methodology.</p>
+              <a href="https://linkedin.com/in/ramin-schultz" class="member-linkedin" target="_blank" rel="noopener noreferrer">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="member-avatar">W</div>
+            <div class="member-info">
+              <h3>Wouter van Haaften</h3>
+              <span class="member-role">AI strategy</span>
+              <span class="member-edu">MSc, Information Management</span>
+              <p>Translates complex AI technology into clear, actionable solutions. The bridge between technology and strategy.</p>
+              <a href="https://linkedin.com/in/wouter-van-haaften" class="member-linkedin" target="_blank" rel="noopener noreferrer">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Location -->
+      <section class="about-section location-section">
+        <div class="location-grid">
+          <div class="location-content">
+            <div class="section-label-inline">Location</div>
+            <h2 class="section-h2">The office of the future is in Joure</h2>
+            <p>MS618 works from FJ08: the eighth factory building of Douwe Egberts, on the harbour of Joure. Restored with oak, walnut and raw steel. A place where people work, cook, make music and collaborate. This is what work looks like when AI takes over the routine. What remains is thinking, making and coming together. Not an office block. The office of the future.</p>
+          </div>
+          <div class="location-image">
+            <img src="/images/pand.jpg" alt="MS618 office FJ08 in Joure" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
     </div>
 
-    <article class="about-page">
-      <div class="container">
-
-        <header class="page-header">
-          <h1>Providing direction in a world that accelerates.</h1>
-          <p class="lead">MS618 is a compact agency of senior specialists. No juniors, no noise — only people who have mastered their craft and understand its future.</p>
-        </header>
-
-        <!-- Story -->
-        <section class="about-section story-section">
-          <div class="about-grid">
-            <div class="story-col">
-              <div class="section-label-inline">Why MS618 exists</div>
-              <p>MS618 was born out of frustration. About agencies that make big promises with junior teams. About reports full of metrics that don't matter. About an industry that grows on noise instead of results.</p>
-              <p>We believe there is a better way. An agency that operates as a strategic partner, not a supplier. That thinks along at board level. That honestly says what works and what doesn't.</p>
-              <p>In an age where AI makes everything possible, it's easy to get lost in tools, channels and trends. We provide direction. Not by doing more, but by choosing better.</p>
-            </div>
-            <div class="name-col">
-              <div class="section-label-inline">The name</div>
-              <p class="name-number">.618</p>
-              <p>MS618 comes from .618 — the golden number. The ratio that keeps recurring in nature, architecture and mathematics as the balance between complexity and simplicity. Fibonacci, the golden ratio. It's how we think about marketing: not more, not less, but exactly in proportion.</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Why us -->
-        <section class="about-section">
-          <div class="section-label-inline">Why us</div>
-          <h2 class="section-h2">Proven, not promised.</h2>
-          <div class="values-grid">
-            <div class="value-item">
-              <span class="value-icon">01</span>
-              <div>
-                <h3>Proven, not promised</h3>
-                <p>Every project is done by specialists with more than 10 years of experience. No training programmes on your budget.</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <span class="value-icon">02</span>
-              <div>
-                <h3>Strategy as foundation</h3>
-                <p>Every campaign, every piece of content, every euro flows from a clear strategy. No loose actions, no FOMO-driven experiments.</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <span class="value-icon">03</span>
-              <div>
-                <h3>Radical honesty</h3>
-                <p>If something doesn't work, we say so. We report on business impact, not vanity metrics.</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <span class="value-icon">04</span>
-              <div>
-                <h3>Built for the long term</h3>
-                <p>We build structural growth, not quick hypes. What we set up will still be standing in five years.</p>
-              </div>
-            </div>
-            <div class="value-item value-award">
-              <div class="award-badge">
-                <img src="/images/google-logo.svg" alt="Google" class="award-logo" width="52" height="18" />
-                <div class="award-badge-text">
-                  <strong>Google AI Innovation Award 2025</strong>
-                  <span>Recognised as most innovative AI Ads partner</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Team -->
-        <section class="about-section team-section">
-          <div class="section-label-inline">The team</div>
-          <h2 class="section-h2">Five specialists. No juniors. No noise.</h2>
-          <p class="team-intro">We get involved when marketing becomes fragmented, tooling takes over, or visibility no longer generates growth. Experience counts when acceleration demands it.</p>
-          <div class="team-grid">
-
-            <div class="team-member">
-              <div class="member-avatar">J</div>
-              <div class="member-info">
-                <h3>Jorrit Miedema</h3>
-                <span class="member-role">Strategy, SEO & AI</span>
-                <span class="member-edu">BSc, Information Technology</span>
-                <p>12+ years of growth experience. Former full-service agency owner. AI-first since before ChatGPT.</p>
-                <a href="https://linkedin.com/in/jorrit-miedema" class="member-linkedin" target="_blank" rel="noopener noreferrer">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-                  LinkedIn
-                </a>
-              </div>
-            </div>
-
-            <div class="team-member">
-              <div class="member-avatar">J</div>
-              <div class="member-info">
-                <h3>Jurjan Groothuis</h3>
-                <span class="member-role">Ads specialist</span>
-                <span class="member-edu">MSc, International Management</span>
-                <p>12+ years in performance advertising and growth strategy. Worked at Google HQ Dublin.</p>
-                <a href="https://linkedin.com/in/jurjan-groothuis" class="member-linkedin" target="_blank" rel="noopener noreferrer">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-                  LinkedIn
-                </a>
-              </div>
-            </div>
-
-            <div class="team-member">
-              <div class="member-avatar">P</div>
-              <div class="member-info">
-                <h3>Peter Ydel</h3>
-                <span class="member-role">Lead designer</span>
-                <span class="member-edu">BSc, UX & Design</span>
-                <p>Developed campaigns and visual concepts for international brands.</p>
-                <a href="https://linkedin.com/in/peter-ydel" class="member-linkedin" target="_blank" rel="noopener noreferrer">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-                  LinkedIn
-                </a>
-              </div>
-            </div>
-
-            <div class="team-member">
-              <div class="member-avatar">R</div>
-              <div class="member-info">
-                <h3>Ramin Schultz</h3>
-                <span class="member-role">Growth hacker (Los Angeles)</span>
-                <span class="member-edu">BSc, Information Management</span>
-                <p>Silicon Valley experience. Worked for Nike, Uber and various startups and scale-ups.</p>
-                <a href="https://linkedin.com/in/ramin-schultz" class="member-linkedin" target="_blank" rel="noopener noreferrer">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-                  LinkedIn
-                </a>
-              </div>
-            </div>
-
-            <div class="team-member">
-              <div class="member-avatar">W</div>
-              <div class="member-info">
-                <h3>Wouter van Haaften</h3>
-                <span class="member-role">AI strategy</span>
-                <span class="member-edu">MSc, Information Management</span>
-                <p>Translates complex AI technology into clear, actionable solutions.</p>
-                <a href="https://linkedin.com/in/wouter-van-haaften" class="member-linkedin" target="_blank" rel="noopener noreferrer">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-                  LinkedIn
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- Location -->
-        <section class="about-section location-section">
-          <div class="location-grid">
-            <div class="location-text">
-              <div class="section-label-inline">Location</div>
-              <h2 class="section-h2">Built with focus in Joure.</h2>
-              <p>Our office is located at the harbour of Joure — a place where calm and focus come together. No trendy co-working space, but our own building where we can think, build and discuss undisturbed.</p>
-              <p class="location-address">MS618 B.V. · Slachtedyk 4a · Joure</p>
-            </div>
-            <div class="location-image">
-              <div class="location-placeholder">
-                <span>Photo of premises — coming soon</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-      </div>
-
-      <CTA />
-    </article>
-  </main>
-  <Footer />
-</Base>
+    <CTA
+      headline="Ready for direction?"
+      body="Schedule a strategic intake. 45 minutes, no obligations. Just clarity on where you stand and where you can go."
+    />
+  </article>
+</Page>
 
 <style>
-  .breadcrumb-bar {
-    padding-top: calc(4.5rem + 1rem);
-    padding-bottom: 0;
+  .about-page {
+    padding-top: 1.5rem;
   }
-
-  .breadcrumbs { padding: 0.75rem 0; }
-
-  .breadcrumbs ol {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .breadcrumbs li {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-  }
-
-  .breadcrumbs a {
-    font-size: 0.8125rem;
-    color: oklch(0.45 0 0);
-    text-decoration: none;
-  }
-
-  .breadcrumbs a:hover { color: oklch(0.65 0 0); }
-
-  .breadcrumbs span[aria-current="page"] {
-    font-size: 0.8125rem;
-    color: oklch(0.55 0 0);
-  }
-
-  .sep {
-    font-size: 0.75rem;
-    color: oklch(0.3 0 0);
-    margin: 0 0.1rem;
-  }
-
-  .about-page { padding-top: 1.5rem; }
 
   .page-header {
     padding: 3rem 0 4rem;
@@ -302,13 +249,15 @@ const breadcrumbs = [
     margin-bottom: 2rem;
   }
 
+  /* Story */
   .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
   }
 
-  .story-col p, .name-col p {
+  .story-col p,
+  .name-col p {
     color: oklch(0.5 0 0);
     line-height: 1.75;
     margin-bottom: 1rem;
@@ -324,6 +273,7 @@ const breadcrumbs = [
     font-family: Georgia, serif;
   }
 
+  /* Values */
   .values-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -398,6 +348,7 @@ const breadcrumbs = [
     color: oklch(0.45 0 0);
   }
 
+  /* Team */
   .team-intro {
     color: oklch(0.5 0 0);
     max-width: 640px;
@@ -467,8 +418,8 @@ const breadcrumbs = [
   .member-info p {
     font-size: 0.875rem;
     color: oklch(0.45 0 0);
-    margin-bottom: 0.75rem;
     line-height: 1.6;
+    margin-bottom: 0.75rem;
   }
 
   .member-linkedin {
@@ -485,47 +436,50 @@ const breadcrumbs = [
     color: oklch(0.65 0.18 200);
   }
 
+  /* Location */
   .location-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
     align-items: center;
   }
 
-  .location-text p {
+  .location-content p {
     color: oklch(0.5 0 0);
     line-height: 1.75;
   }
 
-  .location-address {
-    margin-top: 1.25rem;
-    font-size: 0.875rem;
-    color: oklch(0.38 0 0) !important;
-    letter-spacing: 0.03em;
-  }
-
-  .location-placeholder {
+  .location-image {
     width: 100%;
-    aspect-ratio: 4/3;
-    border: 1px solid oklch(0.18 0 0);
-    background: oklch(0.11 0 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
-  .location-placeholder span {
-    font-size: 0.8125rem;
-    color: oklch(0.3 0 0);
-    letter-spacing: 0.04em;
+  .location-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0.95);
   }
 
+  /* Responsive */
   @media (max-width: 1024px) {
-    .about-grid, .location-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-    .values-grid { grid-template-columns: 1fr; }
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .location-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .values-grid {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media (max-width: 768px) {
-    .team-grid { grid-template-columns: 1fr; }
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

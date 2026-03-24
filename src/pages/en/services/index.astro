@@ -1,0 +1,215 @@
+---
+import Page from '@/layouts/Page.astro';
+import ServiceCard from '@/components/ServiceCard.astro';
+import CTA from '@/components/CTA.astro';
+import { getCollection } from 'astro:content';
+import site from '@/data/site.json';
+
+const services = (await getCollection('services-en'))
+  .sort((a, b) => a.data.order - b.data.order);
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url + '/en/' },
+  { name: 'Services' },
+];
+---
+
+<Page
+  title="Services"
+  seoTitle="Digital Marketing Services for B2B — MS618"
+  description="Strategy, technology and execution. Everything you need to grow, nothing you don't."
+  breadcrumbs={breadcrumbs}
+>
+  <div class="services-listing">
+    <div class="container">
+      <header class="page-header">
+        <h1>Services</h1>
+        <p class="lead">Strategy, technology and execution. Everything you need to grow, nothing you don't.</p>
+      </header>
+
+      <section class="services-intro">
+        <div class="intro-content">
+          <h2>Our approach</h2>
+          <p class="intro-lead">Every project starts with one question: what does your business need to grow? From there we build a system that fits your situation. No standard package. No unnecessary layers.</p>
+
+          <div class="approach-grid">
+            <div class="approach-item">
+              <span class="approach-number">01</span>
+              <div>
+                <strong>Strategy & AI implementation</strong>
+                <p>We analyse your market, your competitors and your opportunities. Determine where AI makes your business stronger and implement it. From marketing to work processes, from content to customer communication.</p>
+              </div>
+            </div>
+            <div class="approach-item">
+              <span class="approach-number">02</span>
+              <div>
+                <strong>Visibility & findability</strong>
+                <p>Being found where it matters. SEO, Google Ads, AI visibility, LinkedIn. Not everywhere, but in the right places.</p>
+              </div>
+            </div>
+            <div class="approach-item">
+              <span class="approach-number">03</span>
+              <div>
+                <strong>Websites, design & brand experience</strong>
+                <p>Clear websites that build trust. Visual identity that makes sense. Consistent offline and online, from business card to campaign.</p>
+              </div>
+            </div>
+            <div class="approach-item">
+              <span class="approach-number">04</span>
+              <div>
+                <strong>Content & communication</strong>
+                <p>Texts, visuals and campaigns that showcase your expertise. Not volume, but content that works. Written by people, amplified by AI.</p>
+              </div>
+            </div>
+            <div class="approach-item">
+              <span class="approach-number">05</span>
+              <div>
+                <strong>Growth & optimisation</strong>
+                <p>Bringing in leads, retaining clients, continuously improving based on data. What doesn't work, we stop. What works, we double down on.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-grid-section">
+        <h2>All services</h2>
+        <div class="services-grid">
+          {services.map((service) => (
+            <ServiceCard
+              title={service.data.title}
+              description={service.data.description}
+              slug={service.id}
+              icon={service.data.icon}
+              prefix="/en"
+              moreLabel="More about"
+            />
+          ))}
+        </div>
+      </section>
+    </div>
+
+    <CTA
+      headline="Not sure which service fits?"
+      body="Schedule an introductory call. We listen to your challenge and advise which approach is most effective for your situation."
+      cta={{ label: 'Schedule a call', href: '/en/contact/' }}
+    />
+  </div>
+</Page>
+
+<style>
+  .services-listing {
+    padding-top: 4rem;
+  }
+
+  .page-header {
+    padding: 3rem 0 3rem;
+    border-bottom: 1px solid oklch(0.15 0 0);
+    margin-bottom: 4rem;
+  }
+
+  .page-header h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 0.75rem;
+  }
+
+  .lead {
+    font-size: 1.125rem;
+    color: oklch(0.55 0 0);
+    line-height: 1.7;
+    max-width: 640px;
+  }
+
+  .services-intro {
+    margin-bottom: 5rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid oklch(0.15 0 0);
+  }
+
+  .intro-content h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 1rem;
+  }
+
+  .intro-lead {
+    font-size: 1.0625rem;
+    color: oklch(0.55 0 0);
+    line-height: 1.75;
+    max-width: 720px;
+    margin-bottom: 2rem;
+  }
+
+  .approach-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 2.5rem;
+  }
+
+  .approach-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .approach-number {
+    flex-shrink: 0;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: oklch(0.65 0.15 250);
+    padding-top: 0.1rem;
+  }
+
+  .approach-item strong {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: oklch(0.92 0 0);
+    margin-bottom: 0.25rem;
+  }
+
+  .approach-item p {
+    font-size: 0.875rem;
+    color: oklch(0.5 0 0);
+    line-height: 1.6;
+  }
+
+  .services-grid-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 1.5rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 6rem;
+  }
+
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .approach-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

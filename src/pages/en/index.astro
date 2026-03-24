@@ -1,16 +1,25 @@
 ---
+// MS618 Website - English Homepage
 import Base from '@/layouts/Base.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
+import Hero from '@/components/Hero.astro';
 import CTA from '@/components/CTA.astro';
-import LogoSlider from '@/components/LogoSlider.astro';
-import site from '@/data/site.json';
+import BlogCard from '@/components/BlogCard.astro';
+
+import { getCollection } from 'astro:content';
 import {
   buildOrganizationPiece,
   buildWebsitePiece,
   buildWebpagePiece,
   buildBreadcrumbPiece,
 } from '@/utils/schema';
+import site from '@/data/site.json';
+
+const recentPosts = (await getCollection('blog'))
+  .filter((p) => !p.data.noindex)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 3);
 
 const pageUrl = site.url + '/en/';
 const breadcrumbs = [{ name: 'Home' }];
@@ -18,7 +27,7 @@ const breadcrumbs = [{ name: 'Home' }];
 const schemaGraph = [
   buildOrganizationPiece(),
   buildWebsitePiece(),
-  buildWebpagePiece(pageUrl, 'MS618 — Direction in acceleration', 'MS618 is a digital agency helping businesses grow with strategic SEO, content marketing and digital performance — without noise, with focus.', breadcrumbs),
+  buildWebpagePiece(pageUrl, 'MS618 — Direction in acceleration', 'MS618 helps businesses grow with strategic AI-driven marketing — the right strategy, the right tools, and a system that works.', breadcrumbs),
   buildBreadcrumbPiece(pageUrl, breadcrumbs),
 ];
 ---
@@ -26,54 +35,23 @@ const schemaGraph = [
 <Base
   title="Direction in acceleration"
   seoTitle="MS618 — Direction in acceleration"
-  description="MS618 is a digital agency helping businesses grow with strategic SEO, content marketing and digital performance — without noise, with focus."
+  description="MS618 helps businesses grow with strategic AI-driven marketing — the right strategy, the right tools, and a system that works."
   ogType="website"
+  rss={true}
   schemaGraph={schemaGraph}
 >
   <Header />
   <main id="main-content">
 
     <!-- Hero -->
-    <section class="hero" aria-label="Hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <div class="hero-label">
-          <span class="label-dot"></span>
-          Direction in acceleration
-        </div>
-
-        <h1 class="hero-headline">AI makes marketing infinite,<br>and therefore meaningless.</h1>
-
-        <p class="hero-sub">While everyone produces more, brands lose their direction. MS618 brings focus: the right choices, the right channels, the right message.</p>
-
-        <div class="hero-actions">
-          <a href="/en/contact/" class="btn-primary">Schedule a call →</a>
-          <a href="/en/services/" class="btn-secondary">See our approach</a>
-        </div>
-
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-value">10+</span>
-            <span class="stat-label">Years experience</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-value">50+</span>
-            <span class="stat-label">Clients served</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-value">100%</span>
-            <span class="stat-label">Senior specialists</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-scroll" aria-hidden="true">
-        <span>Scroll</span>
-        <div class="scroll-line"></div>
-      </div>
-    </section>
+    <Hero
+      badgeText="Direction in acceleration"
+      headlinePrefix="AI changes "
+      headlineAccent="every day."
+      rotatingWords={['marketing', 'your business', 'the world']}
+      subheadline="While everyone produces more, most businesses no longer know what works. MS618 brings direction: The right strategy, the right tools, and a system that works. Even without a marketing department or AI knowledge."
+      cta={{ label: 'Schedule a call', href: '/en/contact/' }}
+    />
 
     <!-- Google Award Badge -->
     <div class="award-bar">
@@ -89,7 +67,7 @@ const schemaGraph = [
     </div>
 
     <!-- Problem -->
-    <section class="section problem-section">
+    <section class="problem-section" id="approach">
       <div class="container">
         <div class="section-label">The problem</div>
         <div class="problem-grid">
@@ -97,12 +75,13 @@ const schemaGraph = [
             <h2>You know you need to do something.<br>But what?</h2>
             <p>AI is everywhere. Your competitor is already using it to build websites, run ads, produce content. Meanwhile you're wondering: do I need a new website? What can I actually do with ChatGPT? And why isn't my marketing bringing in clients anymore?</p>
             <p>The problem isn't that you're doing too little. The problem is that nobody tells you what you should do — and what you can safely ignore.</p>
-            <p class="problem-manifesto">You're looking for clients. Not more tools.<br>You're looking for growth. Not more channels.<br>You're looking for someone who handles it. Not someone who sends a report.<br><br>That's exactly what we do.</p>
+            <p class="problem-manifesto">You're looking for clients. Not more tools.<br>You're looking for growth. Not more channels.<br>You're looking for someone who handles it. Not someone who sends a report.</p>
+            <p class="problem-conclusion">That's exactly what we do.</p>
           </div>
           <div class="problem-col problem-col-right">
             <div class="problem-stat">
               <div class="pstat-number">9 in 10</div>
-              <div class="pstat-text">SME owners know they need to do something with AI and online. But not what.</div>
+              <div class="pstat-text">SME businesses know they need to do something with AI and online. But not what.</div>
             </div>
             <div class="problem-stat">
               <div class="pstat-number">0 FTE</div>
@@ -120,47 +99,122 @@ const schemaGraph = [
     <!-- AI Tools -->
     <div class="ai-tools-bar">
       <div class="container">
-        <p class="ai-tools-label">The AI technology behind our approach</p>
-        <div class="ai-tools-grid">
+        <p class="ai-tools-label">The AI models we deploy for your business</p>
+        <p class="ai-tools-subtitle">We select, combine and implement the best AI for your situation. You get the results, we handle the technology.</p>
+      </div>
+      <div class="ai-tools-marquee">
+        <div class="ai-tools-track">
           <span class="ai-tool">ChatGPT</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Claude</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Gemini</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Grok</span>
-          <span class="ai-tool">Llama</span>
-          <span class="ai-tool">Mistral</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Perplexity</span>
-          <span class="ai-tool">Midjourney</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">DeepSeek</span>
-          <span class="ai-tool">Clawdbot</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Midjourney</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Nano Banana</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Seedance</span>
+          <span class="ai-tool-dot"></span>
           <span class="ai-tool">Antigravity</span>
+          <span class="ai-tool-dot"></span>
+          <!-- Duplicate 2 -->
+          <span class="ai-tool">ChatGPT</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Claude</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Gemini</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Grok</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Perplexity</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">DeepSeek</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Midjourney</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Nano Banana</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Seedance</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Antigravity</span>
+          <span class="ai-tool-dot"></span>
+          <!-- Duplicate 3 -->
+          <span class="ai-tool">ChatGPT</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Claude</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Gemini</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Grok</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Perplexity</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">DeepSeek</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Midjourney</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Nano Banana</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Seedance</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Antigravity</span>
+          <span class="ai-tool-dot"></span>
+          <!-- Duplicate 4 -->
+          <span class="ai-tool">ChatGPT</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Claude</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Gemini</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Grok</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Perplexity</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">DeepSeek</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Midjourney</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Nano Banana</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Seedance</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Antigravity</span>
+          <span class="ai-tool-dot"></span>
         </div>
       </div>
     </div>
 
     <!-- Raptor -->
     <section class="raptor-section">
-      <div class="raptor-image-wrap">
-        <img
-          src="/images/raptor3evolution.jpg"
-          alt="SpaceX Raptor engine evolution — three generations, fewer parts each time"
-          loading="lazy"
-        />
-        <div class="raptor-overlay"></div>
-      </div>
-      <div class="container raptor-content">
-        <blockquote class="raptor-quote">
-          <div class="raptor-quote-mark">"</div>
-          <p>"The best part is no part. The best process is no process."</p>
-          <footer>— Elon Musk on the Raptor engine</footer>
-        </blockquote>
-        <p class="raptor-context">
-          Three generations of Raptor. Each iteration: fewer parts, more power. That is also our approach: simplification through iteration.
-        </p>
+      <div class="container">
+        <div class="raptor-image-wrap">
+          <img
+            src="/images/raptor3evolution.jpg"
+            alt="SpaceX Raptor engine evolution — three generations, fewer parts each time"
+            loading="lazy"
+          />
+        </div>
+        <div class="raptor-content">
+          <blockquote class="raptor-quote">
+            <p>"The best part is no part. The best process is no process."</p>
+            <footer>— Elon Musk</footer>
+          </blockquote>
+          <p class="raptor-context">
+            Three generations of Raptor. Each iteration: fewer parts, more power. That is also our approach.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- How we work -->
-    <section class="section how-section">
+    <section class="how-section">
       <div class="container">
         <div class="section-label">How we work</div>
         <h2 class="section-title">One system. No noise.</h2>
@@ -182,17 +236,60 @@ const schemaGraph = [
           </div>
         </div>
         <div class="how-cta">
-          <a href="/en/services/" class="btn-secondary">See our approach →</a>
+          <a href="/en/services/" class="btn-secondary">View our approach →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why MS618 -->
+    <section class="why-section">
+      <div class="container">
+        <div class="section-label">Why MS618</div>
+        <h2 class="section-title">International expertise. Local impact.</h2>
+        <div class="why-grid">
+          <div class="why-content">
+            <p>MS618 is not a typical agency. Our team operates on both sides of the ocean. In the US we work with startups, scale-ups and private equity. In Silicon Valley, where the technology is born that will change your market tomorrow.</p>
+            <p>In the Netherlands we apply that same knowledge, tooling and speed for SME entrepreneurs. Businesses that want to grow but don't have a marketing department. That know something needs to change but aren't sure what.</p>
+            <p class="why-tagline">Not a supplier. A partner.</p>
+          </div>
+          <aside class="why-quote">
+            <p>That is what we believe in: the best technology and strategy in the world should not be exclusive to companies with million-euro budgets.</p>
+            <p>The SME entrepreneur who works with us gets access to the same level. The same models. The same approach. The same ambition.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Logos -->
+    <section class="clients-section">
+      <div class="container">
+        <div class="section-label">Trusted by</div>
+        <div class="clients-grid">
+          <div class="client-logo"><img src="/images/clients/inspecto-visio.png" alt="Inspecto Visio" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/ndo-nederland.png" alt="NDO Nederland" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/kis-group.png" alt="KIS Group" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/fugro.png" alt="Fugro" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/christmas-brothers.svg" alt="Christmas Brothers" loading="lazy" /></div>
+          <div class="client-logo client-logo--bright"><img src="/images/clients/step2.svg" alt="STEP2" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/swoop.png" alt="Swoop" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/moovs.png" alt="Moovs" loading="lazy" /></div>
+          <div class="client-logo client-logo--bright"><img src="/images/clients/bedrijfskleding-online.webp" alt="Bedrijfskleding Online" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/zonklaar.svg" alt="ZONklaar" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/hoekstra-partners.png" alt="Hoekstra & Partners" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/friesland-boating.jpg" alt="Friesland Boating" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/holtara.svg" alt="Holtara" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/houtmethistorie.svg" alt="Hout Met Historie" loading="lazy" /></div>
+          <div class="client-logo client-logo--bright"><img src="/images/clients/dvm.svg" alt="DVM" loading="lazy" /></div>
         </div>
       </div>
     </section>
 
     <!-- Team -->
-    <section class="section team-section" id="team">
+    <section class="team-section" id="team">
       <div class="container">
         <div class="section-label">The team</div>
-        <h2 class="section-title">Senior specialists only</h2>
-        <p class="section-sub">No juniors, no interns, no bulk. Every project is executed by specialists with at least 8 years of relevant experience.</p>
+        <h2 class="section-title">Five specialists. No juniors. No noise.</h2>
+        <p class="section-sub">We get involved when marketing becomes fragmented, tooling takes over, or visibility no longer generates growth. Experience counts when acceleration demands it.</p>
         <div class="team-grid">
           <div class="team-member">
             <div class="member-avatar">J</div>
@@ -243,41 +340,64 @@ const schemaGraph = [
       </div>
     </section>
 
-    <!-- Logo Slider -->
-    <LogoSlider
-      label="Trusted by leading B2B companies"
-      cta={{ label: 'View all clients →', href: '/en/cases/' }}
-    />
+
 
     <!-- Testimonials -->
-    <section class="section testimonials-section">
+    <section class="testimonials-section">
       <div class="container">
         <div class="section-label">What clients say</div>
         <div class="testimonials-grid">
           <blockquote class="testimonial">
-            <p>"MS618 brought structure to our sprawling marketing initiatives. Within 6 months we tripled our organic traffic — and more importantly: we finally understood why it worked."</p>
+            <p>"Jorrit and the MS618 team helped us tremendously with a strong digital marketing strategy, including implementing the latest AI insights. We became visible in ChatGPT and other LLMs very quickly. Jorrit thinks and acts fast, is creative and commercially sharp. Highly recommended for anyone who wants to give their business a boost."</p>
             <footer>
-              <strong>Thomas W.</strong>
-              <span>CMO, SaaS Scale-up</span>
+              <strong>Suzanne Legtenberg</strong>
+              <span>Marketing Manager, Waimakers / Fugro</span>
             </footer>
           </blockquote>
           <blockquote class="testimonial">
-            <p>"We're a niche company in technical solutions. MS618 understood our market immediately and positioned us as the authority in our segment. LinkedIn leads increased 180% in the first year."</p>
+            <p>"We've been working with Jorrit and the MS618 team consistently for over three years. Their SEO expertise has been instrumental in helping Swoop significantly improve our search rankings. They are proactive, responsive, and truly understand our business goals. Highly recommend MS618."</p>
             <footer>
-              <strong>Anke M.</strong>
-              <span>Director, Technical advisory firm</span>
+              <strong>Peter Evenson</strong>
+              <span>CEO, Swoop</span>
             </footer>
           </blockquote>
           <blockquote class="testimonial">
-            <p>"No bullshit, no vague reports. MS618 links every action to a measurable result. That is exactly what we as a data-driven organisation need."</p>
+            <p>"Jorrit is an indispensable sparring partner for me in the rapidly changing world of AI. He connects strategy, innovation and practical applicability. Thanks to that combination, we consistently make concrete progress. Thanks Jorrit!"</p>
             <footer>
-              <strong>Peter L.</strong>
-              <span>CEO, E-commerce Scale-up</span>
+              <strong>Olaf Keur</strong>
+              <span>CEO, KIS Group</span>
             </footer>
           </blockquote>
         </div>
       </div>
     </section>
+
+    <!-- Latest Blog Posts -->
+    {recentPosts.length > 0 && (
+      <section class="blog-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-label">Knowledge & insights</div>
+              <h2 class="section-title">Latest articles</h2>
+            </div>
+            <a href="/en/blog/" class="btn-secondary">All articles →</a>
+          </div>
+          <div class="blog-grid">
+            {recentPosts.map((post) => (
+              <BlogCard
+                title={post.data.title}
+                description={post.data.description}
+                slug={post.id}
+                publishDate={post.data.publishDate}
+                category={post.data.category}
+                author={post.data.author}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
 
     <!-- CTA -->
     <CTA />
@@ -287,141 +407,43 @@ const schemaGraph = [
 </Base>
 
 <style>
-  /* Hero */
-  .hero {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    background: transparent;
-  }
-
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 50% 40%, transparent 0%, oklch(0.07 0 0) 70%);
-    pointer-events: none;
-  }
-
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    padding-top: 7rem;
-    padding-bottom: 5rem;
-    max-width: 900px;
-  }
-
-  .hero-label {
+  /* ── Section labels ── */
+  .section-label {
     display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.8125rem;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: oklch(0.5 0 0);
-    margin-bottom: 2rem;
-  }
-
-  .label-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: oklch(0.65 0.2 250);
-    animation: pulse 2s ease infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
-  }
-
-  .hero-headline {
-    font-size: clamp(2.25rem, 5vw, 4rem);
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
-    color: oklch(0.98 0 0);
-    margin-bottom: 1.75rem;
-  }
-
-  .hero-sub {
-    font-size: 1.125rem;
-    color: oklch(0.55 0 0);
-    line-height: 1.7;
-    max-width: 600px;
-    margin-bottom: 2.5rem;
-  }
-
-  .hero-actions {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 4rem;
-  }
-
-  .hero-stats {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .stat {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-
-  .stat-value {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: oklch(0.98 0 0);
-  }
-
-  .stat-label {
-    font-size: 0.75rem;
-    color: oklch(0.45 0 0);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-  }
-
-  .stat-divider {
-    width: 1px;
-    height: 2.5rem;
-    background: oklch(0.2 0 0);
-  }
-
-  .hero-scroll {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 0.75rem;
     font-size: 0.6875rem;
-    letter-spacing: 0.1em;
+    font-weight: 500;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: oklch(0.35 0 0);
+    color: #555;
+    margin-bottom: 0.75rem;
   }
 
-  .scroll-line {
-    width: 1px;
-    height: 3rem;
-    background: linear-gradient(to bottom, oklch(0.35 0 0), transparent);
-    animation: scroll-fade 1.5s ease infinite;
+  .section-label::before {
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background: #444;
   }
 
-  @keyframes scroll-fade {
-    0%, 100% { opacity: 0; }
-    50% { opacity: 1; }
+  .section-title {
+    font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    color: #fafafa;
   }
 
-  /* Award bar */
+  .section-sub {
+    font-size: 0.9375rem;
+    color: #666;
+    max-width: 480px;
+    line-height: 1.6;
+    margin-top: 0.75rem;
+  }
+
+  /* ── Award bar ── */
   .award-bar {
     border-bottom: 1px solid #1a1a1a;
     background: #0d0d0d;
@@ -443,6 +465,7 @@ const schemaGraph = [
   }
 
   .award-divider {
+    display: block;
     width: 1px;
     height: 1rem;
     background: #333;
@@ -465,49 +488,12 @@ const schemaGraph = [
     color: #555;
   }
 
-  /* Sections */
-  .section {
-    padding: var(--spacing-section, 8rem) 0;
+  /* ── Problem ── */
+  .problem-section {
+    background: #0a0a0a;
+    border-top: 1px solid #1a1a1a;
+    padding: 6rem 0;
   }
-
-  .section-label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: oklch(0.45 0 0);
-    margin-bottom: 1.25rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .section-label::before {
-    content: '';
-    display: block;
-    width: 1.5rem;
-    height: 1px;
-    background: oklch(0.35 0 0);
-  }
-
-  .section-title {
-    font-size: clamp(1.5rem, 3vw, 2.25rem);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    color: oklch(0.98 0 0);
-    margin-bottom: 0.75rem;
-  }
-
-  .section-sub {
-    font-size: 1rem;
-    color: oklch(0.5 0 0);
-    max-width: 600px;
-    line-height: 1.7;
-    margin-bottom: 3rem;
-  }
-
-  /* Problem */
-  .problem-section { border-top: 1px solid oklch(0.15 0 0); }
 
   .problem-grid {
     display: grid;
@@ -517,370 +503,595 @@ const schemaGraph = [
   }
 
   .problem-col h2 {
-    font-size: clamp(1.5rem, 3vw, 2.25rem);
-    font-weight: 700;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 500;
     letter-spacing: -0.03em;
-    color: oklch(0.98 0 0);
-    margin-bottom: 1.25rem;
     line-height: 1.15;
+    color: #fafafa;
+    margin-bottom: 1.25rem;
   }
 
   .problem-col p {
-    color: oklch(0.5 0 0);
-    line-height: 1.75;
-    margin-bottom: 1rem;
+    color: #666;
+    line-height: 1.65;
+    margin-bottom: 0.875rem;
+    font-size: 0.9375rem;
   }
 
   .problem-col-right {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    padding-top: 0.5rem;
+    gap: 1rem;
   }
 
   .problem-stat {
     padding: 1.25rem 1.5rem;
-    border: 1px solid oklch(0.18 0 0);
-    background: oklch(0.11 0 0);
+    background: #0f0f0f;
+    border: 1px solid #1a1a1a;
   }
 
   .pstat-number {
     font-size: 1.75rem;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: -0.03em;
-    color: oklch(0.98 0 0);
-    margin-bottom: 0.4rem;
+    color: #fafafa;
+    margin-bottom: 0.375rem;
   }
 
   .pstat-text {
-    font-size: 0.875rem;
-    color: oklch(0.5 0 0);
+    font-size: 0.8125rem;
+    color: #666;
     line-height: 1.5;
   }
 
   .problem-manifesto {
-    color: oklch(0.75 0 0) !important;
-    font-size: 1rem !important;
-    line-height: 1.9 !important;
-    border-left: 2px solid oklch(0.22 0 0);
-    padding-left: 1.25rem;
+    color: #888 !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.7 !important;
+    border-left: 2px solid #2a2a2a;
+    padding-left: 1rem;
     margin-top: 1.5rem;
   }
 
-  /* AI Tools Bar */
+  .problem-conclusion {
+    color: #fafafa !important;
+    font-size: 1rem !important;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+
+  /* ── Why MS618 ── */
+  .why-section {
+    background: #0d0d0d;
+    border-top: 1px solid #1a1a1a;
+    padding: 6rem 0;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 2rem;
+    align-items: start;
+  }
+
+  .why-content p {
+    font-size: 0.9375rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+
+  .why-tagline {
+    color: #fafafa !important;
+    font-weight: 500;
+    font-size: 1rem !important;
+    margin-top: 1.5rem;
+  }
+
+  .why-quote {
+    border-left: 2px solid #333;
+    padding-left: 1.5rem;
+  }
+
+  .why-quote p {
+    font-size: 0.9375rem;
+    color: #777;
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .why-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  /* ── Clients ── */
+  .clients-section {
+    background: #0a0a0a;
+    border-top: 1px solid #1a1a1a;
+    padding: 4rem 0;
+  }
+
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5rem 4rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .client-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+  }
+
+  .client-logo img {
+    max-width: 130px;
+    max-height: 32px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%) invert(1) brightness(0.7);
+    opacity: 0.6;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+  }
+
+  .client-logo:hover img {
+    filter: grayscale(100%) invert(1) brightness(0.9);
+    opacity: 0.9;
+  }
+
+  .client-logo--bright img {
+    filter: grayscale(100%) invert(1) brightness(1);
+    opacity: 0.75;
+  }
+
+  .client-logo--bright:hover img {
+    filter: grayscale(100%) invert(1) brightness(1);
+    opacity: 0.95;
+  }
+
+  @media (max-width: 1024px) {
+    .clients-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem 3rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .clients-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem 2rem;
+    }
+
+    .client-logo {
+      height: 26px;
+    }
+
+    .client-logo img {
+      max-height: 26px;
+      max-width: 110px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .clients-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  /* ── AI Tools Bar ── */
   .ai-tools-bar {
     border-top: 1px solid #1a1a1a;
     border-bottom: 1px solid #1a1a1a;
-    background: linear-gradient(180deg, #0a0a0a 0%, #0d0d0d 100%);
-    padding: 3rem 0;
+    background: #0d0d0d;
+    padding: 2.5rem 0 3rem;
     position: relative;
     overflow: hidden;
-  }
-
-  .ai-tools-bar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #333, transparent);
+    text-align: center;
   }
 
   .ai-tools-label {
-    font-size: 0.6875rem;
+    font-size: 0.8125rem;
     font-weight: 500;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #4a4a4a;
-    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+    color: #666;
+    margin-bottom: 0.25rem;
   }
 
-  .ai-tools-grid {
+  .ai-tools-subtitle {
+    font-size: 0.8125rem;
+    color: #555;
+    max-width: 480px;
+    margin: 0 auto 2rem;
+    line-height: 1.5;
+  }
+
+  .ai-tools-marquee {
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  }
+
+  .ai-tools-track {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 0.625rem;
+    gap: 0;
+    width: max-content;
+    animation: scroll-ai-tools 120s linear infinite;
+  }
+
+  .ai-tools-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-ai-tools {
+    from { transform: translateX(0); }
+    to { transform: translateX(-25%); }
   }
 
   .ai-tool {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #6a6a6a;
-    letter-spacing: 0.01em;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #444;
+    letter-spacing: 0;
     white-space: nowrap;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    padding: 0.625rem 1.125rem;
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 6px;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 0.25rem;
+    transition: color 0.3s ease;
     cursor: default;
-    position: relative;
-    backdrop-filter: blur(4px);
-  }
-
-  .ai-tool::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 6px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 50%);
-    opacity: 0;
-    transition: opacity 0.25s ease;
   }
 
   .ai-tool:hover {
-    color: #a0a0a0;
-    border-color: rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.04);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: #666;
   }
 
-  .ai-tool:hover::before {
-    opacity: 1;
+  .ai-tool-dot {
+    width: 3px;
+    height: 3px;
+    background: #333;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin: 0 1.25rem;
   }
 
-  /* Raptor */
+  /* ── Raptor ── */
   .raptor-section {
     position: relative;
-    border-top: 1px solid oklch(0.15 0 0);
+    border-top: 1px solid #1a1a1a;
+    background: #0a0a0a;
+    padding: 4rem 0;
   }
 
   .raptor-image-wrap {
     position: relative;
-    width: 100%;
-    max-height: 520px;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    border: 1px solid #1a1a1a;
     overflow: hidden;
   }
 
   .raptor-image-wrap img {
     width: 100%;
-    height: 520px;
-    object-fit: cover;
-    object-position: center 30%;
+    height: auto;
     display: block;
   }
 
   .raptor-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, oklch(0.09 0 0 / 0.2) 0%, oklch(0.09 0 0 / 0.85) 100%);
+    display: none;
   }
 
   .raptor-content {
-    padding: 3rem 0 4rem;
-    border-bottom: 1px solid oklch(0.15 0 0);
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .raptor-quote {
     margin: 0 0 1.5rem;
-    padding: 0;
-    border: none;
-    position: relative;
+    font-style: normal;
+    padding: 0 1.5rem;
   }
 
   .raptor-quote-mark {
-    font-family: Georgia, serif;
-    font-size: 5rem;
-    line-height: 0.6;
-    color: oklch(0.25 0 0);
-    margin-bottom: 0.5rem;
-    display: block;
+    display: none;
   }
 
   .raptor-quote p {
-    font-family: Georgia, serif;
-    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-size: 1.125rem;
+    font-weight: 500;
     font-style: italic;
-    color: oklch(0.88 0 0);
-    line-height: 1.4;
+    color: #fafafa;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
     margin-bottom: 0.75rem;
   }
 
   .raptor-quote footer {
-    font-size: 0.875rem;
-    color: oklch(0.45 0 0);
+    font-size: 0.75rem;
+    color: #555;
     letter-spacing: 0.02em;
   }
 
   .raptor-context {
-    font-size: 1rem;
-    color: oklch(0.5 0 0);
-    max-width: 560px;
-    line-height: 1.7;
+    font-size: 0.875rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
-  /* How */
+  /* ── How we work ── */
+  .how-section {
+    background: #0a0a0a;
+    border-top: 1px solid #1a1a1a;
+    padding: 6rem 0;
+  }
+
   .how-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 2.5rem;
+    gap: 1rem;
+    margin-top: 2rem;
   }
 
   .how-card {
-    border: 1px solid rgba(255, 255, 255, 0.07);
-    background: oklch(0.11 0 0);
+    background: #0f0f0f;
+    border: 1px solid #1a1a1a;
     padding: 2rem;
-    backdrop-filter: blur(4px);
+    transition: border-color 0.2s ease;
+  }
+
+  .how-card:hover {
+    border-color: #2a2a2a;
   }
 
   .how-number {
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    color: oklch(0.35 0 0);
-    margin-bottom: 1.25rem;
+    font-size: 0.625rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #555;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
   }
 
   .how-card h3 {
     font-size: 1.125rem;
-    font-weight: 600;
-    color: oklch(0.98 0 0);
-    margin-bottom: 0.75rem;
+    font-weight: 500;
+    color: #fafafa;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
   }
 
   .how-card p {
-    font-size: 0.9375rem;
-    color: oklch(0.5 0 0);
-    line-height: 1.65;
+    font-size: 0.875rem;
+    color: #555;
+    line-height: 1.6;
   }
 
-  .how-cta { margin-top: 0.5rem; }
+  .how-cta {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
 
-  /* Team */
+  /* ── Team ── */
+  .team-section {
+    background: #0d0d0d;
+    border-top: 1px solid #1a1a1a;
+    padding: 6rem 0;
+  }
+
   .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
+    margin-top: 2rem;
   }
 
   .team-member {
-    border: 1px solid oklch(0.18 0 0);
-    padding: 1.75rem;
-    background: oklch(0.11 0 0);
+    padding: 1.5rem;
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    gap: 0.75rem;
+    transition: border-color 0.2s ease;
   }
 
   .team-member:hover {
-    border-color: oklch(0.3 0 0);
-    box-shadow: 0 0 20px oklch(0.12 0 0);
+    border-color: #2a2a2a;
   }
 
   .member-avatar {
-    width: 3rem;
-    height: 3rem;
+    width: 2.25rem;
+    height: 2.25rem;
     border-radius: 50%;
-    background: oklch(0.15 0 0);
-    border: 1px solid oklch(0.28 0 0);
+    background: #151515;
+    border: 1px solid #222;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
-    font-weight: 700;
-    color: oklch(0.75 0 0);
-    letter-spacing: 0;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #555;
   }
 
   .member-info h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: oklch(0.98 0 0);
-    margin-bottom: 0.2rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #fafafa;
+    margin-bottom: 0.125rem;
   }
 
   .member-role {
-    display: block;
     font-size: 0.8125rem;
-    color: oklch(0.5 0 0);
-    margin-bottom: 0.15rem;
+    color: #666;
+    display: block;
+    margin-bottom: 0.125rem;
   }
 
   .member-edu {
     display: block;
-    font-size: 0.75rem;
-    color: oklch(0.38 0 0);
-    margin-bottom: 0.75rem;
-    letter-spacing: 0.02em;
+    font-size: 0.6875rem;
+    color: #555;
+    margin-bottom: 0.5rem;
   }
 
   .member-info p {
-    font-size: 0.875rem;
-    color: oklch(0.45 0 0);
-    line-height: 1.6;
+    font-size: 0.8125rem;
+    color: #555;
+    line-height: 1.55;
   }
 
-  /* Testimonials */
+  /* ── Testimonials ── */
   .testimonials-section {
-    background: oklch(0.11 0 0);
-    border-top: 1px solid oklch(0.15 0 0);
-    border-bottom: 1px solid oklch(0.15 0 0);
+    background: #0a0a0a;
+    border-top: 1px solid #1a1a1a;
+    padding: 6rem 0;
   }
 
   .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 2rem;
   }
 
   .testimonial {
-    border: 1px solid oklch(0.2 0 0);
     padding: 1.75rem;
-    background: oklch(0.09 0 0);
+    background: #0f0f0f;
+    border: 1px solid #1a1a1a;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    gap: 1.5rem;
+    transition: border-color 0.2s ease;
   }
 
   .testimonial:hover {
-    border-color: oklch(0.3 0 0);
-    box-shadow: 0 0 20px oklch(0.12 0 0);
+    border-color: #2a2a2a;
   }
 
   .testimonial p {
     font-size: 0.9375rem;
-    color: oklch(0.65 0 0);
-    line-height: 1.7;
-    font-style: italic;
+    color: #bbb;
+    line-height: 1.75;
     flex: 1;
   }
 
   .testimonial footer {
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.125rem;
+    border-top: 1px solid #1e1e1e;
+    padding-top: 1rem;
   }
 
-  .testimonial footer strong {
+  .testimonial strong {
     font-size: 0.875rem;
     font-weight: 600;
-    color: oklch(0.88 0 0);
+    color: #e0e0e0;
   }
 
-  .testimonial footer span {
+  .testimonial span {
     font-size: 0.8125rem;
-    color: oklch(0.45 0 0);
+    color: #666;
   }
 
-  /* Mobile */
-  @media (max-width: 1024px) {
-    .problem-grid, .how-grid, .testimonials-grid {
+  /* ── Blog ── */
+  .blog-section {
+    background: #0d0d0d;
+    border-top: 1px solid #1a1a1a;
+    padding: 6rem 0;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .problem-section,
+    .how-section,
+    .team-section,
+    .testimonials-section,
+    .blog-section {
+      padding: 4rem 0;
+    }
+
+    .problem-grid {
       grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .problem-col-right {
+      gap: 0.75rem;
+    }
+
+    .how-grid,
+    .testimonials-grid,
+    .blog-grid {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .raptor-section {
+      padding: 3rem 0;
+    }
+
+    .raptor-image-wrap {
+      margin-bottom: 2rem;
+    }
+
+    .raptor-quote p {
+      font-size: 1rem;
+    }
+
+    .ai-tools-bar {
+      padding: 1.5rem 0 2rem;
+    }
+
+    .ai-tool {
+      font-size: 0.875rem;
+    }
+
+    .award-dot,
+    .award-sub {
+      display: none;
     }
   }
 
-  @media (max-width: 768px) {
-    .team-grid { grid-template-columns: 1fr; }
-    .hero-stats { gap: 1rem; }
-    .stat-value { font-size: 1.25rem; }
-    .hero-scroll { display: none; }
+  @media (max-width: 480px) {
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

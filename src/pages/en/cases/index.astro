@@ -1,0 +1,129 @@
+---
+import Page from '@/layouts/Page.astro';
+import CaseCard from '@/components/CaseCard.astro';
+import CTA from '@/components/CTA.astro';
+import { getCollection } from 'astro:content';
+import site from '@/data/site.json';
+
+const cases = (await getCollection('cases'))
+  .filter((c) => !c.data.noindex)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url + '/en/' },
+  { name: 'Cases' },
+];
+---
+
+<Page
+  title="Cases"
+  seoTitle="Cases — Proven Results for B2B Organisations | MS618"
+  description="Concrete cases from MS618: how we help B2B businesses grow through SEO, content marketing and digital performance. Measurable results, honest stories."
+  breadcrumbs={breadcrumbs}
+>
+  <div class="cases-listing">
+    <div class="container">
+      <header class="page-header">
+        <h1>Cases</h1>
+        <p class="lead">Concrete results for concrete challenges. We let our work speak — honestly, without embellishment, with the real numbers.</p>
+      </header>
+
+      <section class="cases-intro">
+        <p>All cases are anonymised at the request of our clients. During an introductory call we can go into more detail about specific projects that are relevant to your situation.</p>
+      </section>
+
+      <div class="cases-grid">
+        {cases.map((c) => (
+          <CaseCard
+            title={c.data.title}
+            description={c.data.description}
+            slug={c.id}
+            client={c.data.client}
+            service={c.data.service}
+            result={c.data.result}
+          />
+        ))}
+      </div>
+
+      <div class="cases-disclaimer">
+        <p>These are example cases based on actual results. Full cases with background and approach coming soon. Results vary by situation, market and starting point.</p>
+      </div>
+    </div>
+
+    <CTA
+      headline="Recognise the challenge?"
+      body="Schedule a call. We'll discuss your specific situation and explain how a similar approach could work for you."
+      cta={{ label: 'Schedule a call', href: '/en/contact/' }}
+    />
+  </div>
+</Page>
+
+<style>
+  .cases-listing {
+    padding-top: 4rem;
+  }
+
+  .page-header {
+    padding: 3rem 0 3rem;
+    border-bottom: 1px solid oklch(0.15 0 0);
+    margin-bottom: 2.5rem;
+  }
+
+  .page-header h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 0.75rem;
+  }
+
+  .lead {
+    font-size: 1.125rem;
+    color: oklch(0.55 0 0);
+    line-height: 1.7;
+    max-width: 640px;
+  }
+
+  .cases-intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .cases-intro p {
+    font-size: 0.9375rem;
+    color: oklch(0.45 0 0);
+    line-height: 1.7;
+    padding: 1rem 1.25rem;
+    border: 1px solid oklch(0.18 0 0);
+    background: oklch(0.11 0 0);
+    max-width: 640px;
+  }
+
+  .cases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .cases-disclaimer {
+    margin-bottom: 5rem;
+  }
+
+  .cases-disclaimer p {
+    font-size: 0.8125rem;
+    color: oklch(0.38 0 0);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 1024px) {
+    .cases-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .cases-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

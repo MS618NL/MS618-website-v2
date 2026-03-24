@@ -50,4 +50,19 @@ const services = defineCollection({
   }),
 });
 
-export const collections = { blog, cases, services };
+const servicesEn = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/services-en' }),
+  schema: z.object({
+    title: z.string(),
+    seoTitle: z.string().optional(),
+    description: z.string().max(160),
+    ogImage: z.string().optional(),
+    noindex: z.boolean().default(false),
+    order: z.number().default(99),
+    icon: z.string().default('→'),
+    category: z.string().default('service'),
+    updatedDate: z.coerce.date().optional(),
+  }),
+});
+
+export const collections = { blog, cases, services, 'services-en': servicesEn };

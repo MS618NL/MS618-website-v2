@@ -117,7 +117,49 @@ const schemaGraph = [
           <span class="ai-tool-dot"></span>
           <span class="ai-tool">Antigravity</span>
           <span class="ai-tool-dot"></span>
-          <!-- Duplicate for seamless loop -->
+          <!-- Duplicate 2 -->
+          <span class="ai-tool">ChatGPT</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Claude</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Gemini</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Grok</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Perplexity</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">DeepSeek</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Midjourney</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Nano Banana</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Seedance</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Antigravity</span>
+          <span class="ai-tool-dot"></span>
+          <!-- Duplicate 3 -->
+          <span class="ai-tool">ChatGPT</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Claude</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Gemini</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Grok</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Perplexity</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">DeepSeek</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Midjourney</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Nano Banana</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Seedance</span>
+          <span class="ai-tool-dot"></span>
+          <span class="ai-tool">Antigravity</span>
+          <span class="ai-tool-dot"></span>
+          <!-- Duplicate 4 -->
           <span class="ai-tool">ChatGPT</span>
           <span class="ai-tool-dot"></span>
           <span class="ai-tool">Claude</span>
@@ -299,24 +341,24 @@ const schemaGraph = [
         <div class="section-label">Wat klanten zeggen</div>
         <div class="testimonials-grid">
           <blockquote class="testimonial">
-            <p>"MS618 bracht structuur in onze wildgroei aan marketinginitiatieven. Binnen 6 maanden verdrievoudigden we ons organisch verkeer — en meer dan dat: we wisten eindelijk waaróm het werkte."</p>
+            <p>"Jorrit en het team van MS618 hebben ons geweldig geholpen met een sterke digitale marketingstrategie, waarbij ze ook de laatste AI-inzichten hebben geïmplementeerd. We waren heel snel zichtbaar in ChatGPT en andere LLMs. Jorrit denkt en handelt snel, is creatief en commercieel. Een aanrader voor iedereen die zijn bedrijf een boost wil geven."</p>
             <footer>
-              <strong>Thomas W.</strong>
-              <span>CMO, SaaS Scale-up</span>
+              <strong>Suzanne Legtenberg</strong>
+              <span>Marketing Manager, Waimakers / Fugro</span>
             </footer>
           </blockquote>
           <blockquote class="testimonial">
-            <p>"Wij zijn een nichebedrijf in technische oplossingen. MS618 begreep onze markt meteen en positioneerde ons als de autoriteit in ons segment. LinkedIn-leads stegen met 180% in het eerste jaar."</p>
+            <p>"We've been working with Jorrit and the MS618 team consistently for over three years. Their SEO expertise has been instrumental in helping Swoop significantly improve our search rankings. They are proactive, responsive, and truly understand our business goals. Highly recommend MS618."</p>
             <footer>
-              <strong>Anke M.</strong>
-              <span>Directeur, Technisch adviesbureau</span>
+              <strong>Peter Evenson</strong>
+              <span>CEO, Swoop</span>
             </footer>
           </blockquote>
           <blockquote class="testimonial">
-            <p>"Geen bullshit, geen vage rapporten. MS618 koppelt elke actie aan een meetbaar resultaat. Dat is precies wat wij als data-gedreven organisatie nodig hebben."</p>
+            <p>"Jorrit is voor mij een onmisbare sparringpartner in de snel veranderende wereld van AI. Hij verbindt strategie, innovatie en praktische toepasbaarheid. Dankzij die combinatie boeken we telkens concrete vooruitgang. Thanx Jorrit!"</p>
             <footer>
-              <strong>Peter L.</strong>
-              <span>CEO, E-commerce Scale-up</span>
+              <strong>Olaf Keur</strong>
+              <span>CEO, KIS Group</span>
             </footer>
           </blockquote>
         </div>
@@ -666,12 +708,7 @@ const schemaGraph = [
   }
 
   .ai-tools-marquee {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    width: 100%;
     overflow: hidden;
     mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
@@ -691,7 +728,7 @@ const schemaGraph = [
 
   @keyframes scroll-ai-tools {
     from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    to { transform: translateX(-25%); }
   }
 
   .ai-tool {
@@ -938,8 +975,8 @@ const schemaGraph = [
 
   .testimonial p {
     font-size: 0.9375rem;
-    color: #888;
-    line-height: 1.6;
+    color: #bbb;
+    line-height: 1.75;
     flex: 1;
   }
 
@@ -947,17 +984,19 @@ const schemaGraph = [
     display: flex;
     flex-direction: column;
     gap: 0.125rem;
+    border-top: 1px solid #1e1e1e;
+    padding-top: 1rem;
   }
 
   .testimonial strong {
-    font-size: 0.8125rem;
-    font-weight: 500;
-    color: #888;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #e0e0e0;
   }
 
   .testimonial span {
-    font-size: 0.75rem;
-    color: #555;
+    font-size: 0.8125rem;
+    color: #666;
   }
 
   /* ── Blog ── */
