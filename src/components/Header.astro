@@ -28,7 +28,7 @@ const contactHref = `${prefix}/contact/`;
       <span class="logo-text">MS618</span>
     </a>
 
-    <nav class="main-nav" aria-label="Hoofdnavigatie">
+    <nav class="main-nav" aria-label={lang === 'en' ? 'Main navigation' : 'Hoofdnavigatie'}>
       <ul>
         {navItems.map((item) => (
           <li>
@@ -46,7 +46,7 @@ const contactHref = `${prefix}/contact/`;
       <a href={contactHref} class="btn-primary header-cta">{t('nav.cta')}</a>
     </div>
 
-    <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Menu openen" aria-expanded="false">
+    <button class="mobile-menu-toggle" id="mobile-toggle" aria-label={lang === 'en' ? 'Open menu' : 'Menu openen'} aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>

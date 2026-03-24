@@ -1,4 +1,6 @@
 ---
+import { getLangFromUrl } from '@/i18n';
+
 interface BreadcrumbItem {
   name: string;
   item?: string;
@@ -9,9 +11,10 @@ interface Props {
 }
 
 const { items } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
 ---
 
-<nav class="breadcrumbs" aria-label="Broodkruimels">
+<nav class="breadcrumbs" aria-label={lang === 'en' ? 'Breadcrumbs' : 'Broodkruimels'}>
   <ol>
     {items.map((crumb, i) => (
       <li>

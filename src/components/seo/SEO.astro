@@ -97,6 +97,6 @@ const enHref = site.url + getAlternatePath(Astro.url, 'en');
     rel="alternate"
     type="application/rss+xml"
     title={`${site.name} — Blog`}
-    href="/rss.xml"
+    href={lang === 'en' ? '/en/rss.xml' : '/rss.xml'}
   />
 )}

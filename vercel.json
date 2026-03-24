@@ -4,7 +4,8 @@
   "redirects": [
     { "source": "/home", "destination": "/", "permanent": true },
     { "source": "/en/home", "destination": "/en/", "permanent": true },
-    { "source": "/nl/(.*)", "destination": "/$1", "permanent": true }
+    { "source": "/nl/(.*)", "destination": "/$1", "permanent": true },
+    { "source": "/en/voorwaarden", "destination": "/en/terms/", "permanent": true }
   ],
   "headers": [
     {

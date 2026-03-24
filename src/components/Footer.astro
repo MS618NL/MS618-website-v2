@@ -57,8 +57,8 @@ const p = lang === 'en' ? '/en' : '';
       <span>© {new Date().getFullYear()} {site.organization.legalName}. {t('footer.rights')}</span>
       <nav aria-label="Legal navigation">
         <a href={`${p}/privacy/`}>{t('footer.privacy')}</a>
-        <a href={`${p}/voorwaarden/`}>{lang === 'en' ? 'Terms & Conditions' : 'Algemene Voorwaarden'}</a>
-        <a href="/rss.xml">RSS</a>
+        <a href={lang === 'en' ? '/en/terms/' : '/voorwaarden/'}>{lang === 'en' ? 'Terms & Conditions' : 'Algemene Voorwaarden'}</a>
+        <a href={`${p ? p : ''}/rss.xml`}>RSS</a>
         <a href="/sitemap-index.xml">{t('footer.sitemap')}</a>
       </nav>
     </div>
