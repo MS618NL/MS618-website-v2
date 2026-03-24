@@ -17,57 +17,55 @@ const breadcrumbs = [
 <Page
   title="Services"
   seoTitle="Digitale Marketing Services voor B2B — MS618"
-  description="Van SEO-strategie tot performance advertising: MS618 biedt een volledig spectrum aan digitale groeisservices voor ambitieuze B2B-organisaties."
+  description="Strategie, technologie en uitvoering. Alles wat je nodig hebt om te groeien, niets wat je niet nodig hebt."
   breadcrumbs={breadcrumbs}
 >
   <div class="services-listing">
     <div class="container">
       <header class="page-header">
         <h1>Services</h1>
-        <p class="lead">Wij bieden een volledig spectrum aan digitale groeisservices — altijd vertrekkend vanuit strategie, altijd gemeten op zakelijk resultaat.</p>
+        <p class="lead">Strategie, technologie en uitvoering. Alles wat je nodig hebt om te groeien, niets wat je niet nodig hebt.</p>
       </header>
 
       <section class="services-intro">
-        <div class="intro-grid">
-          <div>
-            <h2>De ALANO-methodiek</h2>
-            <p>Al onze services zijn gebouwd rondom onze ALANO-methodiek: Attract, Lead, Activate, Nurture, Optimize. Elke fase is gekoppeld aan meetbare doelstellingen en sluit aan op de volgende. Zo werken alle onderdelen samen aan één doel: duurzame, schaalbare groei.</p>
-            <p>Wij werken niet met losse tactieken. Elk project start met een strategische basis — en elke actie is terug te leiden naar een zakelijk resultaat.</p>
-          </div>
-          <div class="intro-principles">
-            <div class="principle">
-              <span class="p-icon">A</span>
+        <div class="intro-content">
+          <h2>Onze aanpak</h2>
+          <p class="intro-lead">Elk project begint met één vraag: wat heeft jouw bedrijf nodig om te groeien? Van daaruit bouwen we een systeem dat past bij jouw situatie. Geen standaardpakket. Geen overbodige lagen.</p>
+          
+          <div class="approach-grid">
+            <div class="approach-item">
+              <span class="approach-number">01</span>
               <div>
-                <strong>Attract</strong>
-                <span>Zichtbaarheid bij de juiste doelgroep via SEO, content en advertising</span>
+                <strong>Strategie & AI-implementatie</strong>
+                <p>We analyseren je markt, je concurrenten en je kansen. Bepalen waar AI je bedrijf sterker maakt en implementeren het. Van marketing tot werkprocessen, van content tot klantcommunicatie.</p>
               </div>
             </div>
-            <div class="principle">
-              <span class="p-icon">L</span>
+            <div class="approach-item">
+              <span class="approach-number">02</span>
               <div>
-                <strong>Lead</strong>
-                <span>Bezoekers omzetten naar gekwalificeerde leads</span>
+                <strong>Zichtbaarheid & vindbaarheid</strong>
+                <p>Gevonden worden waar het ertoe doet. SEO, Google Ads, AI-vindbaarheid, LinkedIn. Niet overal aanwezig zijn, maar op de juiste plekken.</p>
               </div>
             </div>
-            <div class="principle">
-              <span class="p-icon">A</span>
+            <div class="approach-item">
+              <span class="approach-number">03</span>
               <div>
-                <strong>Activate</strong>
-                <span>Leads activeren naar klanten via nurturing en sales enablement</span>
+                <strong>Websites, design & merkbeleving</strong>
+                <p>Heldere websites die vertrouwen wekken. Visuele identiteit die klopt. Offline en online consistent, van visitekaartje tot campagne.</p>
               </div>
             </div>
-            <div class="principle">
-              <span class="p-icon">N</span>
+            <div class="approach-item">
+              <span class="approach-number">04</span>
               <div>
-                <strong>Nurture</strong>
-                <span>Klanten behouden en uitbouwen via loyaliteitsstrategieën</span>
+                <strong>Content & communicatie</strong>
+                <p>Teksten, beelden en campagnes die jouw expertise tonen. Geen volume, maar content die werkt. Geschreven door mensen, versterkt door AI.</p>
               </div>
             </div>
-            <div class="principle">
-              <span class="p-icon">O</span>
+            <div class="approach-item">
+              <span class="approach-number">05</span>
               <div>
-                <strong>Optimize</strong>
-                <span>Continu verbeteren op basis van data en resultaten</span>
+                <strong>Groei & optimalisatie</strong>
+                <p>Leads binnenhalen, klanten behouden, continu verbeteren op basis van data. Wat niet werkt, stoppen we. Wat werkt, verdubbelen we.</p>
               </div>
             </div>
           </div>
@@ -109,7 +107,7 @@ const breadcrumbs = [
 
   .page-header h1 {
     font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.03em;
     color: oklch(0.98 0 0);
     margin-bottom: 0.75rem;
@@ -128,68 +126,60 @@ const breadcrumbs = [
     border-bottom: 1px solid oklch(0.15 0 0);
   }
 
-  .intro-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-  }
-
-  .intro-grid h2 {
+  .intro-content h2 {
     font-size: 1.75rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.03em;
     color: oklch(0.98 0 0);
     margin-bottom: 1rem;
   }
 
-  .intro-grid p {
-    color: oklch(0.5 0 0);
+  .intro-lead {
+    font-size: 1.0625rem;
+    color: oklch(0.55 0 0);
     line-height: 1.75;
-    margin-bottom: 1rem;
+    max-width: 720px;
+    margin-bottom: 2.5rem;
   }
 
-  .intro-principles {
+  .approach-grid {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
   }
 
-  .principle {
+  .approach-item {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: flex-start;
   }
 
-  .p-icon {
+  .approach-number {
     flex-shrink: 0;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid oklch(0.25 0 0);
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: oklch(0.65 0.2 250);
-  }
-
-  .principle strong {
-    display: block;
-    font-size: 0.9375rem;
-    font-weight: 600;
-    color: oklch(0.82 0 0);
-    margin-bottom: 0.15rem;
-  }
-
-  .principle span {
     font-size: 0.875rem;
-    color: oklch(0.45 0 0);
-    line-height: 1.5;
+    font-weight: 600;
+    color: oklch(0.65 0.15 250);
+    padding-top: 0.15rem;
+  }
+
+  .approach-item strong {
+    display: block;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: oklch(0.92 0 0);
+    margin-bottom: 0.5rem;
+  }
+
+  .approach-item p {
+    font-size: 0.9375rem;
+    color: oklch(0.5 0 0);
+    line-height: 1.7;
+    max-width: 640px;
   }
 
   .services-grid-section h2 {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.03em;
     color: oklch(0.98 0 0);
     margin-bottom: 1.5rem;
@@ -203,11 +193,6 @@ const breadcrumbs = [
   }
 
   @media (max-width: 1024px) {
-    .intro-grid {
-      grid-template-columns: 1fr;
-      gap: 2.5rem;
-    }
-
     .services-grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -216,6 +201,10 @@ const breadcrumbs = [
   @media (max-width: 640px) {
     .services-grid {
       grid-template-columns: 1fr;
+    }
+
+    .approach-item {
+      gap: 1rem;
     }
   }
 </style>
