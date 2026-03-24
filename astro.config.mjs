@@ -3,7 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://ms618.nl',
+  site: 'https://www.ms618.nl',
   output: 'static',
   trailingSlash: 'always',
   i18n: {
@@ -21,7 +21,7 @@ export default defineConfig({
       serialize(item) {
         const url = item.url;
         const lastmod = new Date().toISOString();
-        if (url === 'https://ms618.nl/' || url === 'https://ms618.nl') {
+        if (url === 'https://www.ms618.nl/' || url === 'https://www.ms618.nl') {
           return { ...item, priority: 1.0, changefreq: 'weekly', lastmod };
         }
         if (url.includes('/contact')) {
