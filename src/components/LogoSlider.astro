@@ -29,7 +29,7 @@ const doubled = [...logos, ...logos];
 
 <style>
   .logo-slider-wrap {
-    padding: 4rem 0;
+    padding: 5rem 0;
     border-top: 1px solid oklch(0.15 0 0);
     border-bottom: 1px solid oklch(0.15 0 0);
     text-align: center;
@@ -41,22 +41,23 @@ const doubled = [...logos, ...logos];
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: oklch(0.38 0 0);
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   .slider-track-outer {
     overflow: hidden;
-    mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
     margin-bottom: 1.5rem;
   }
 
   .slider-track {
     display: flex;
     align-items: center;
-    gap: 5rem;
+    justify-content: center;
+    gap: 1rem;
     width: max-content;
-    animation: scroll-logos 36s linear infinite;
+    animation: scroll-logos 40s linear infinite;
   }
 
   .slider-track:hover {
@@ -70,16 +71,22 @@ const doubled = [...logos, ...logos];
 
   .logo-item {
     flex-shrink: 0;
-    font-size: 1.375rem;
-    font-weight: 600;
-    color: oklch(0.48 0 0);
-    letter-spacing: -0.01em;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: oklch(0.7 0 0);
+    letter-spacing: 0.01em;
     white-space: nowrap;
-    transition: color 0.2s ease;
+    padding: 0.75rem 1.5rem;
+    background: oklch(0.15 0 0);
+    border: 1px solid oklch(0.22 0 0);
+    border-radius: 9999px;
+    transition: all 0.25s ease;
   }
 
   .logo-item:hover {
-    color: oklch(0.7 0 0);
+    color: oklch(0.95 0 0);
+    background: oklch(0.18 0 0);
+    border-color: oklch(0.3 0 0);
   }
 
   .slider-cta {
