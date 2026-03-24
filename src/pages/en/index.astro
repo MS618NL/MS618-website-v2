@@ -79,11 +79,11 @@ const schemaGraph = [
     <div class="award-bar">
       <div class="container">
         <div class="award-inner">
-          <img src="/images/google-logo.svg" alt="Google" class="award-google-logo" width="60" height="20" />
+          <span class="award-google-text">Google</span>
           <span class="award-divider"></span>
-          <span class="award-text">Google AI Innovation Award 2025</span>
+          <span class="award-text">Ads Impact Awards 2026</span>
           <span class="award-dot">·</span>
-          <span class="award-sub">Recognised as most innovative AI Ads partner</span>
+          <span class="award-sub">Nominated for AI innovation in advertising</span>
         </div>
       </div>
     </div>
@@ -423,45 +423,46 @@ const schemaGraph = [
 
   /* Award bar */
   .award-bar {
-    border-bottom: 1px solid oklch(0.15 0 0);
-    background: oklch(0.11 0 0);
-    padding: 0.875rem 0;
+    border-bottom: 1px solid #1a1a1a;
+    background: #0d0d0d;
+    padding: 0.75rem 0;
   }
 
   .award-inner {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.875rem;
     flex-wrap: wrap;
   }
 
-  .award-google-logo {
-    height: 18px;
-    width: auto;
-    opacity: 0.85;
-    flex-shrink: 0;
+  .award-google-text {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #888;
+    letter-spacing: -0.01em;
   }
 
   .award-divider {
     width: 1px;
-    height: 1.25rem;
-    background: oklch(0.25 0 0);
+    height: 1rem;
+    background: #333;
   }
 
   .award-text {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: oklch(0.8 0 0);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #888;
     letter-spacing: 0.01em;
   }
 
   .award-dot {
-    color: oklch(0.3 0 0);
+    color: #333;
+    font-size: 0.875rem;
   }
 
   .award-sub {
     font-size: 0.8125rem;
-    color: oklch(0.5 0 0);
+    color: #555;
   }
 
   /* Sections */
