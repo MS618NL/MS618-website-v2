@@ -65,4 +65,21 @@ const servicesEn = defineCollection({
   }),
 });
 
-export const collections = { blog, cases, services, 'services-en': servicesEn };
+const blogEn = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog-en' }),
+  schema: z.object({
+    title: z.string(),
+    seoTitle: z.string().optional(),
+    description: z.string().max(160),
+    ogImage: z.string().optional(),
+    ogType: z.literal('article').default('article'),
+    noindex: z.boolean().default(false),
+    publishDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    author: z.string().default('MS618'),
+    category: z.string(),
+    relatedPosts: z.array(z.string()).default([]),
+  }),
+});
+
+export const collections = { blog, cases, services, 'services-en': servicesEn, 'blog-en': blogEn };
