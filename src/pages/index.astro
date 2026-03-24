@@ -210,6 +210,21 @@ const schemaGraph = [
       </div>
     </section>
 
+    <!-- Client Logos -->
+    <section class="clients-section">
+      <div class="container">
+        <div class="section-label">Vertrouwd door</div>
+        <div class="clients-grid">
+          <span class="client-logo">Acme Corp</span>
+          <span class="client-logo">TechVision</span>
+          <span class="client-logo">Industrial Co</span>
+          <span class="client-logo">Global B2B</span>
+          <span class="client-logo">Dutch Makers</span>
+          <span class="client-logo">Scale Group</span>
+        </div>
+      </div>
+    </section>
+
     <!-- Team -->
     <section class="team-section" id="team">
       <div class="container">
@@ -532,6 +547,43 @@ const schemaGraph = [
     .why-grid {
       grid-template-columns: 1fr;
       gap: 2rem;
+    }
+  }
+
+  /* ── Clients ── */
+  .clients-section {
+    background: #0a0a0a;
+    border-top: 1px solid #1a1a1a;
+    padding: 4rem 0;
+  }
+
+  .clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem 3rem;
+    margin-top: 1.5rem;
+  }
+
+  .client-logo {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #444;
+    letter-spacing: -0.01em;
+    transition: color 0.2s ease;
+  }
+
+  .client-logo:hover {
+    color: #666;
+  }
+
+  @media (max-width: 768px) {
+    .clients-grid {
+      gap: 1.5rem 2rem;
+    }
+    
+    .client-logo {
+      font-size: 1rem;
     }
   }
 
