@@ -15,8 +15,8 @@
   --color-green: oklch(0.72 0.18 145);
 
   /* Typography - SpaceX/X.AI inspired */
-  --font-sans: 'Geist', system-ui, -apple-system, sans-serif;
-  --font-serif: 'Georgia', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
   --font-mono: 'Geist Mono', 'JetBrains Mono', monospace;
   
   /* Type Scale - Tight & Technical */

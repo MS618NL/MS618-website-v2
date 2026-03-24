@@ -38,7 +38,7 @@ export const translations = {
     'footer.rights': 'Alle rechten voorbehouden.',
     'footer.privacy': 'Privacybeleid',
     'footer.sitemap': 'Sitemap',
-    'footer.desc': 'Digitaal bureau gespecialiseerd in strategische SEO, content marketing en digitale performance.',
+    'footer.desc': 'Wij regelen je digitale groei. Strategie, AI en uitvoering in één.',
 
     // CTA block
     'cta.headline': 'Klaar voor richting?',
@@ -78,7 +78,7 @@ export const translations = {
     'footer.rights': 'All rights reserved.',
     'footer.privacy': 'Privacy policy',
     'footer.sitemap': 'Sitemap',
-    'footer.desc': 'Digital agency specialised in strategic SEO, content marketing and digital performance.',
+    'footer.desc': 'We handle your digital growth. Strategy, AI and execution in one.',
 
     // CTA block
     'cta.headline': 'Ready for direction?',
