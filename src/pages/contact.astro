@@ -71,24 +71,6 @@ const extraSchema = [buildContactPiece()];
 
         <aside class="contact-info-col">
           <div class="contact-info-block">
-            <h2>Directe contactgegevens</h2>
-            <div class="contact-detail">
-              <span class="cd-label">Email</span>
-              <a href={`mailto:${site.organization.email}`}>{site.organization.email}</a>
-            </div>
-            <div class="contact-detail">
-              <span class="cd-label">Locatie</span>
-              <span>{site.organization.address.addressLocality}, Nederland</span>
-            </div>
-            {site.social.linkedin && (
-              <div class="contact-detail">
-                <span class="cd-label">LinkedIn</span>
-                <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer">MS618 op LinkedIn</a>
-              </div>
-            )}
-          </div>
-
-          <div class="contact-info-block">
             <h2>Wat verwacht je?</h2>
             <ul class="expect-list">
               <li>
@@ -125,7 +107,12 @@ const extraSchema = [buildContactPiece()];
             8501 XC Joure<br />
             Nederland
           </address>
-          <a href={`mailto:${site.organization.email}`} class="office-email">{site.organization.email}</a>
+          <div class="office-links">
+            <a href={`mailto:${site.organization.email}`} class="office-email">{site.organization.email}</a>
+            {site.social.linkedin && (
+              <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer" class="office-linkedin">LinkedIn</a>
+            )}
+          </div>
           <a href="https://maps.google.com/?q=Slachtedyk+4a+Joure" target="_blank" rel="noopener noreferrer" class="btn-secondary">
             Plan route →
           </a>
@@ -351,20 +338,27 @@ const extraSchema = [buildContactPiece()];
     line-height: 1.6;
   }
 
-  .office-email {
+  .office-links {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0.25rem 0 0.75rem;
+  }
+
+  .office-email,
+  .office-linkedin {
     font-size: 0.9375rem;
     color: oklch(0.5 0 0);
     text-decoration: none;
     transition: color 0.2s ease;
-    margin-bottom: 0.5rem;
   }
 
-  .office-email:hover {
+  .office-email:hover,
+  .office-linkedin:hover {
     color: oklch(0.98 0 0);
   }
 
   .office-info .btn-secondary {
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
     width: fit-content;
   }
 
