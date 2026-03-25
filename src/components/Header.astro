@@ -23,69 +23,77 @@ const contactHref = `${prefix}/contact/`;
 ---
 
 <header class="site-header" id="site-header">
-  <div class="container header-inner">
-    <a href={homeHref} class="logo" aria-label="MS618 — Home">
-      <span class="logo-text">MS618</span>
-    </a>
+  <div class="header-bar">
+    <div class="container header-inner">
+      <a href={homeHref} class="logo" aria-label="MS618 — Home">
+        <span class="logo-text">MS618</span>
+      </a>
 
-    <nav class="main-nav" aria-label={lang === 'en' ? 'Main navigation' : 'Hoofdnavigatie'}>
+      <nav class="main-nav" aria-label={lang === 'en' ? 'Main navigation' : 'Hoofdnavigatie'}>
+        <ul>
+          {navItems.map((item) => (
+            <li>
+              <a href={item.href} class="nav-link">{item.label}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href={altPath} class="lang-toggle" aria-label={`Switch to ${altLang.toUpperCase()}`}>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          {altLang.toUpperCase()}
+        </a>
+        <a href={contactHref} class="btn-primary header-cta">{t('nav.cta')}</a>
+      </div>
+
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label={lang === 'en' ? 'Open menu' : 'Menu openen'} aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <nav aria-label={lang === 'en' ? 'Mobile navigation' : 'Mobiele navigatie'}>
       <ul>
         {navItems.map((item) => (
           <li>
-            <a href={item.href} class="nav-link">{item.label}</a>
+            <a href={item.href} class="mobile-nav-link">{item.label}</a>
           </li>
         ))}
+        <li><a href={contactHref} class="mobile-nav-link mobile-cta">{t('nav.cta')} →</a></li>
+        <li>
+          <a href={altPath} class="mobile-nav-link lang-mobile">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            {altLang.toUpperCase()}
+          </a>
+        </li>
       </ul>
     </nav>
-
-    <div class="header-actions">
-      <a href={altPath} class="lang-toggle" aria-label={`Switch to ${altLang.toUpperCase()}`}>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        {altLang.toUpperCase()}
-      </a>
-      <a href={contactHref} class="btn-primary header-cta">{t('nav.cta')}</a>
-    </div>
-
-    <button class="mobile-menu-toggle" id="mobile-toggle" aria-label={lang === 'en' ? 'Open menu' : 'Menu openen'} aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
   </div>
-
-  <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
-    <ul>
-      {navItems.map((item) => (
-        <li>
-          <a href={item.href} class="mobile-nav-link">{item.label}</a>
-        </li>
-      ))}
-      <li><a href={contactHref} class="mobile-nav-link mobile-cta">{t('nav.cta')} →</a></li>
-      <li>
-        <a href={altPath} class="mobile-nav-link lang-mobile">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          {altLang.toUpperCase()}
-        </a>
-      </li>
-    </ul>
-  </nav>
 </header>
 
 <style>
+  /* ── Fixed header shell ── */
   .site-header {
     position: fixed;
-    top: 2.5rem;
+    top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     z-index: 100;
-    background: transparent;
-    border-bottom: none;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    transition: background 0.5s ease, border-color 0.5s ease, backdrop-filter 0.5s ease;
   }
 
-  .site-header.scrolled {
+  /* ── Top bar (always visible) ── */
+  .header-bar {
+    background: transparent;
+    border-bottom: none;
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+
+  .site-header.scrolled .header-bar {
     background: rgba(10, 10, 10, 0.95);
     border-bottom: 1px solid #222;
     backdrop-filter: blur(20px);
@@ -96,7 +104,7 @@ const contactHref = `${prefix}/contact/`;
     display: flex;
     align-items: center;
     gap: 2rem;
-    height: 5rem;
+    height: 4rem;
   }
 
   .logo {
@@ -178,6 +186,7 @@ const contactHref = `${prefix}/contact/`;
     color: #0a0a0a !important;
   }
 
+  /* ── Hamburger (hidden on desktop) ── */
   .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -191,64 +200,97 @@ const contactHref = `${prefix}/contact/`;
     margin-left: auto;
     min-width: 44px;
     min-height: 44px;
+    -webkit-tap-highlight-color: transparent;
   }
 
-  .mobile-menu-toggle span {
+  .mobile-menu-toggle .bar {
     display: block;
-    width: 22px;
-    height: 1.5px;
-    background: oklch(0.98 0 0);
-    transition: all 0.2s ease;
+    width: 20px;
+    height: 2px;
+    background: #fafafa;
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
+  /* Animate to X when open */
+  .mobile-menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .mobile-menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .mobile-menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* ── Mobile nav panel (hidden on desktop) ── */
   .mobile-nav {
     display: none;
-    border-top: 1px solid oklch(0.22 0 0);
-    background: oklch(0.09 0 0);
-    position: relative;
-    z-index: 99;
+    background: rgba(10, 10, 10, 0.98);
+    border-top: 1px solid #222;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .mobile-nav.open {
+    display: block;
+    max-height: 100vh;
   }
 
   .mobile-nav ul {
     list-style: none;
     margin: 0;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0;
   }
 
   .mobile-nav-link {
     display: block;
-    padding: 0.6rem 0;
+    padding: 0.875rem 0;
     font-size: 1rem;
     font-weight: 500;
-    color: oklch(0.65 0 0);
+    color: #999;
     text-decoration: none;
-    border-bottom: 1px solid oklch(0.15 0 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     transition: color 0.2s ease;
   }
 
   .mobile-nav-link:hover,
   .mobile-cta {
-    color: oklch(0.98 0 0);
+    color: #fafafa;
   }
 
   .lang-mobile {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    color: oklch(0.5 0 0) !important;
+    color: #666 !important;
     font-size: 0.875rem;
+    border-bottom: none;
   }
 
-  @media (max-width: 768px) {
+  /* ── Desktop: top offset for floating effect ── */
+  @media (min-width: 769px) {
     .site-header {
-      top: 0;
+      top: 2rem;
     }
 
+    .mobile-menu-toggle,
+    .mobile-nav {
+      display: none !important;
+    }
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
     .header-inner {
       height: 3.5rem;
+    }
+
+    .logo-text {
+      font-size: 1.25rem;
     }
 
     .main-nav,
@@ -260,12 +302,15 @@ const contactHref = `${prefix}/contact/`;
       display: flex;
     }
 
-    .mobile-nav.open {
-      display: block;
+    /* Always show background on mobile for readability */
+    .header-bar {
+      background: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
     }
 
     .mobile-nav ul {
-      padding: 0.75rem 1rem;
+      padding: 0.75rem 1rem 1rem;
     }
   }
 </style>
@@ -275,12 +320,37 @@ const contactHref = `${prefix}/contact/`;
   const mobileNav = document.getElementById('mobile-nav');
   const header = document.getElementById('site-header');
 
-  toggle?.addEventListener('click', () => {
-    const isOpen = mobileNav?.classList.contains('open');
-    mobileNav?.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', String(!isOpen));
-    mobileNav?.setAttribute('aria-hidden', String(isOpen));
-  });
+  if (toggle && mobileNav) {
+    toggle.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.contains('open');
+
+      if (isOpen) {
+        // Close
+        mobileNav.classList.remove('open');
+        toggle.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      } else {
+        // Open
+        mobileNav.classList.add('open');
+        toggle.classList.add('active');
+        toggle.setAttribute('aria-expanded', 'true');
+        mobileNav.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+
+    // Close on link click
+    mobileNav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        toggle.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
 
   // Scroll detection for transparent → blur nav
   function handleScroll() {
