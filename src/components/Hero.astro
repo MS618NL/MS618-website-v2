@@ -271,12 +271,43 @@ const firstWord = rotatingWords[0];
   }
 
   @media (max-width: 768px) {
+    .hero-content {
+      padding-top: 3rem;
+    }
+
+    .hero-badge {
+      margin-bottom: 1.5rem;
+    }
+
     .hero-headline {
-      font-size: clamp(2.25rem, 10vw, 4rem);
+      font-size: clamp(2rem, 9vw, 3.5rem);
+    }
+
+    .hero-sub {
+      font-size: 0.9375rem;
     }
 
     .hero-scroll {
       display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-headline {
+      font-size: clamp(1.75rem, 8vw, 2.5rem);
+    }
+
+    .hero-sub {
+      font-size: 0.875rem;
+      max-width: 100%;
+    }
+
+    .hero-badge {
+      padding: 0.5rem 1rem;
+    }
+
+    .badge-text {
+      font-size: 0.75rem;
     }
   }
 </style>
@@ -343,7 +374,7 @@ const firstWord = rotatingWords[0];
     window.addEventListener('resize', resize, { passive: true });
 
     const particles: { x: number; y: number; vx: number; vy: number; size: number; opacity: number }[] = [];
-    const COUNT = 50;
+    const COUNT = window.innerWidth < 768 ? 20 : 50;
 
     for (let i = 0; i < COUNT; i++) {
       particles.push({

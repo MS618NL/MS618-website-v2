@@ -121,15 +121,16 @@ const lang = getLangFromUrl(Astro.url);
     return shadows.join(',');
   }
 
-  const SPREAD = 2200;
+  const isMobile = window.innerWidth < 768;
+  const SPREAD = isMobile ? 1200 : 2200;
   const sm = document.getElementById('stars-sm') as HTMLElement;
   const md = document.getElementById('stars-md') as HTMLElement;
   const lg = document.getElementById('stars-lg') as HTMLElement;
   const parallax = document.getElementById('stars-parallax') as HTMLElement;
 
-  sm.style.boxShadow = randomStars(700, SPREAD);
-  md.style.boxShadow = randomStars(200, SPREAD);
-  lg.style.boxShadow = randomStars(60, SPREAD);
+  sm.style.boxShadow = randomStars(isMobile ? 200 : 700, SPREAD);
+  md.style.boxShadow = randomStars(isMobile ? 60 : 200, SPREAD);
+  lg.style.boxShadow = randomStars(isMobile ? 20 : 60, SPREAD);
 
   let targetX = 0;
   let targetY = 0;
