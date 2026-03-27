@@ -95,94 +95,49 @@ const schemaGraph = [
         <p class="ai-tools-label">De AI-modellen die wij inzetten voor jouw bedrijf</p>
         <p class="ai-tools-subtitle">Wij selecteren, combineren en implementeren de beste AI voor jouw situatie. Jij krijgt het resultaat, wij regelen de techniek.</p>
       </div>
-      <div class="ai-tools-marquee">
-        <div class="ai-tools-track">
-          <span class="ai-tool">ChatGPT</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Claude</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Gemini</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Grok</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Perplexity</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">DeepSeek</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Midjourney</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Nano Banana</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Seedance</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Antigravity</span>
-          <span class="ai-tool-dot"></span>
-          <!-- Duplicate 2 -->
-          <span class="ai-tool">ChatGPT</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Claude</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Gemini</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Grok</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Perplexity</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">DeepSeek</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Midjourney</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Nano Banana</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Seedance</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Antigravity</span>
-          <span class="ai-tool-dot"></span>
-          <!-- Duplicate 3 -->
-          <span class="ai-tool">ChatGPT</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Claude</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Gemini</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Grok</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Perplexity</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">DeepSeek</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Midjourney</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Nano Banana</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Seedance</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Antigravity</span>
-          <span class="ai-tool-dot"></span>
-          <!-- Duplicate 4 -->
-          <span class="ai-tool">ChatGPT</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Claude</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Gemini</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Grok</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Perplexity</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">DeepSeek</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Midjourney</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Nano Banana</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Seedance</span>
-          <span class="ai-tool-dot"></span>
-          <span class="ai-tool">Antigravity</span>
-          <span class="ai-tool-dot"></span>
-        </div>
+      <div class="ai-tools-static">
+        <span class="ai-tool">Gemini</span>
+        <span class="ai-tool">Grok</span>
+        <span class="ai-tool">Perplexity</span>
+        <span class="ai-tool">DeepSeek</span>
+        <span class="ai-tool">Midjourney</span>
+        <span class="ai-tool">Nano Banana</span>
+        <span class="ai-tool ai-tool-claude" data-claude>Claude</span>
+        <span class="ai-tool">ChatGPT</span>
+        <span class="ai-tool">Antigravity</span>
+        <span class="ai-tool">Seedance</span>
+        <span class="claude-streak"></span>
       </div>
     </div>
+
+    <script>
+      function initStreak(container) {
+        const streak = container.querySelector('.claude-streak');
+        const claude = container.querySelector('[data-claude]');
+        const tools = container.querySelectorAll('.ai-tool');
+        if (!streak || !claude) return;
+
+        function moveTo(el) {
+          const parentRect = container.getBoundingClientRect();
+          const elRect = el.getBoundingClientRect();
+          streak.style.left = (elRect.left - parentRect.left + elRect.width / 2) + 'px';
+          streak.style.top = (elRect.bottom - parentRect.top + 4) + 'px';
+          streak.style.width = (elRect.width * 1) + 'px';
+        }
+
+        moveTo(claude);
+
+        tools.forEach(tool => {
+          tool.addEventListener('mouseenter', () => moveTo(tool));
+        });
+
+        container.addEventListener('mouseleave', () => moveTo(claude));
+
+        window.addEventListener('resize', () => moveTo(claude));
+      }
+
+      document.querySelectorAll('.ai-tools-static').forEach(initStreak);
+    </script>
 
     <!-- Raptor -->
     <section class="raptor-section">
@@ -707,52 +662,57 @@ const schemaGraph = [
     line-height: 1.5;
   }
 
-  .ai-tools-marquee {
-    width: 100%;
-    overflow: hidden;
-    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
-  }
-
-  .ai-tools-track {
+  .ai-tools-static {
     display: flex;
     align-items: center;
-    gap: 0;
-    width: max-content;
-    animation: scroll-ai-tools 120s linear infinite;
-  }
-
-  .ai-tools-track:hover {
-    animation-play-state: paused;
-  }
-
-  @keyframes scroll-ai-tools {
-    from { transform: translateX(0); }
-    to { transform: translateX(-25%); }
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
   }
 
   .ai-tool {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #444;
-    letter-spacing: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #555;
+    letter-spacing: -0.01em;
     white-space: nowrap;
-    padding: 0 0.25rem;
-    transition: color 0.3s ease;
     cursor: default;
+    transition: color 0.3s ease;
   }
 
   .ai-tool:hover {
-    color: #666;
+    color: #888;
   }
 
-  .ai-tool-dot {
-    width: 3px;
+  .ai-tool-claude {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ddd;
+  }
+
+  .ai-tool-claude:hover {
+    color: #fff;
+  }
+
+  .claude-streak {
+    position: absolute;
     height: 3px;
-    background: #333;
-    border-radius: 50%;
-    flex-shrink: 0;
-    margin: 0 1.25rem;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #a78bfa, #60a5fa, #34d399);
+    background-size: 200% 100%;
+    animation: gradient-shift-streak 6s ease infinite;
+    transition: left 0.4s ease, top 0.4s ease, width 0.4s ease;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  @keyframes gradient-shift-streak {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
   }
 
   /* ── Raptor ── */
@@ -1072,8 +1032,16 @@ const schemaGraph = [
       padding: 1.5rem 0 2rem;
     }
 
+    .ai-tools-static {
+      gap: 1.25rem 1.5rem;
+    }
+
     .ai-tool {
-      font-size: 0.875rem;
+      font-size: 1rem;
+    }
+
+    .ai-tool-claude {
+      font-size: 1.25rem;
     }
 
     .award-dot,
