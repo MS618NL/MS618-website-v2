@@ -47,7 +47,7 @@ const schemaGraph = [
     <Hero />
 
     <!-- Google Award Badge -->
-    <div class="award-bar">
+    <a href="/blog/google-ads-impact-awards-2026/" target="_blank" rel="noopener" class="award-bar">
       <div class="container">
         <div class="award-inner">
           <span class="award-google-text">Google</span>
@@ -57,7 +57,7 @@ const schemaGraph = [
           <span class="award-sub">Genomineerd voor AI-innovatie in advertising</span>
         </div>
       </div>
-    </div>
+    </a>
 
     <!-- Problem -->
     <section class="problem-section" id="aanpak">
@@ -101,11 +101,11 @@ const schemaGraph = [
         <span class="ai-tool">Perplexity</span>
         <span class="ai-tool">DeepSeek</span>
         <span class="ai-tool">Midjourney</span>
+        <span class="ai-tool">Seedance</span>
         <span class="ai-tool">Nano Banana</span>
-        <span class="ai-tool ai-tool-claude" data-claude>Claude</span>
         <span class="ai-tool">ChatGPT</span>
         <span class="ai-tool">Antigravity</span>
-        <span class="ai-tool">Seedance</span>
+        <span class="ai-tool ai-tool-claude" data-claude>Claude</span>
         <span class="claude-streak"></span>
       </div>
     </div>
@@ -132,7 +132,6 @@ const schemaGraph = [
         });
 
         container.addEventListener('mouseleave', () => moveTo(claude));
-
         window.addEventListener('resize', () => moveTo(claude));
       }
 
@@ -393,9 +392,12 @@ const schemaGraph = [
 
   /* ── Award bar ── */
   .award-bar {
+    display: block;
     border-bottom: 1px solid #1a1a1a;
     background: #0d0d0d;
     padding: 0.75rem 0;
+    text-decoration: none;
+    color: inherit;
   }
 
   .award-inner {
@@ -666,9 +668,9 @@ const schemaGraph = [
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 2rem;
     flex-wrap: wrap;
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 1.5rem;
     position: relative;

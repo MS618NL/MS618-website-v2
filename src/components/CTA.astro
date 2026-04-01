@@ -83,10 +83,17 @@ const {
     padding: 1.25rem 2.5rem;
     font-size: 1.125rem;
     font-weight: 500;
-    background: #fafafa;
+    background: linear-gradient(90deg, #a78bfa, #60a5fa, #34d399);
+    background-size: 200% 100%;
+    animation: gradient-shift 6s ease infinite;
     color: #0a0a0a;
     text-decoration: none;
     transition: opacity 0.2s ease;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
   }
 
   .cta-btn:hover {
@@ -107,3 +114,4 @@ const {
     color: #666;
   }
 </style>
+</script>
