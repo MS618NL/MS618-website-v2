@@ -24,10 +24,10 @@ const relatedCases = allCases
   .filter((c) => c.data.service.toLowerCase().includes(service.data.title.toLowerCase().split(' ')[0]))
   .slice(0, 3);
 
-const pageUrl = canonicalUrl(`/services/${service.id}/`);
+const pageUrl = canonicalUrl(`/diensten/${service.id}/`);
 const breadcrumbs = [
   { name: 'Home', item: site.url },
-  { name: 'Services', item: `${site.url}/services/` },
+  { name: 'Diensten', item: `${site.url}/diensten/` },
   { name: service.data.title },
 ];
 

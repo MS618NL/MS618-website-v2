@@ -1,4 +1,6 @@
 ---
+import { getLangFromUrl } from '@/i18n';
+
 interface Props {
   title: string;
   description: string;
@@ -9,15 +11,17 @@ interface Props {
 }
 
 const { title, description, slug, icon = '→', prefix = '', moreLabel = 'Meer over' } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const svcPath = lang === 'en' ? '/en/services' : '/diensten';
 ---
 
 <article class="service-card">
   <div class="card-icon" aria-hidden="true">{icon}</div>
   <h3 class="card-title">
-    <a href={`${prefix}/services/${slug}/`}>{title}</a>
+    <a href={`${svcPath}/${slug}/`}>{title}</a>
   </h3>
   <p class="card-desc">{description}</p>
-  <a href={`${prefix}/services/${slug}/`} class="card-link">{moreLabel} {title} →</a>
+  <a href={`${svcPath}/${slug}/`} class="card-link">{moreLabel} {title} →</a>
 </article>
 
 <style>

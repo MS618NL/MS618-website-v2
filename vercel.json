@@ -5,7 +5,9 @@
     { "source": "/home", "destination": "/", "permanent": true },
     { "source": "/en/home", "destination": "/en/", "permanent": true },
     { "source": "/nl/(.*)", "destination": "/$1", "permanent": true },
-    { "source": "/en/voorwaarden", "destination": "/en/terms/", "permanent": true }
+    { "source": "/en/voorwaarden", "destination": "/en/terms/", "permanent": true },
+    { "source": "/services", "destination": "/diensten/", "permanent": true },
+    { "source": "/services/(.*)", "destination": "/diensten/$1", "permanent": true }
   ],
   "headers": [
     {

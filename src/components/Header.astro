@@ -14,10 +14,11 @@ const prefix = lang === 'en' ? '/en' : '';
 const homeHref = lang === 'en' ? '/en/' : '/';
 
 const navItems = [
-  { label: t('nav.services'), href: `${prefix}/services/` },
+  { label: t('nav.services'), href: lang === 'en' ? '/en/services/' : '/diensten/' },
   { label: t('nav.cases'), href: `${prefix}/cases/` },
   { label: t('nav.blog'), href: `${prefix}/blog/` },
   { label: t('nav.about'), href: `${prefix}/about/` },
+  { label: 'Contact', href: `${prefix}/contact/` },
 ];
 const contactHref = `${prefix}/contact/`;
 ---

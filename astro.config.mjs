@@ -27,7 +27,7 @@ export default defineConfig({
         if (url.includes('/contact')) {
           return { ...item, priority: 0.9, changefreq: 'monthly', lastmod };
         }
-        if (url.includes('/services')) {
+        if (url.includes('/services') || url.includes('/diensten')) {
           return { ...item, priority: 0.8, changefreq: 'monthly', lastmod };
         }
         if (url.includes('/about')) {

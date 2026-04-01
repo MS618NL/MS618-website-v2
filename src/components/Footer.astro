@@ -5,6 +5,7 @@ import { getLangFromUrl, useTranslations } from '@/i18n';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const p = lang === 'en' ? '/en' : '';
+const svc = lang === 'en' ? '/en/services' : '/diensten';
 const homeHref = lang === 'en' ? '/en/' : '/';
 ---
 
@@ -24,18 +25,18 @@ const homeHref = lang === 'en' ? '/en/' : '/';
     <div class="footer-col">
       <h3 class="footer-heading">{t('footer.services')}</h3>
       <ul>
-        <li><a href={`${p}/services/seo-strategie/`}>SEO {lang === 'en' ? 'Strategy' : 'Strategie'}</a></li>
-        <li><a href={`${p}/services/digital-advertising/`}>Google Ads</a></li>
-        <li><a href={`${p}/services/seo-strategie/`}>AI {lang === 'en' ? 'Visibility' : 'Vindbaarheid'}</a></li>
-        <li><a href={`${p}/services/website-optimalisatie/`}>{lang === 'en' ? 'Websites & Design' : 'Websites & Design'}</a></li>
-        <li><a href={`${p}/services/digital-advertising/`}>LinkedIn</a></li>
+        <li><a href={`${svc}/seo-strategie/`}>SEO {lang === 'en' ? 'Strategy' : 'Strategie'}</a></li>
+        <li><a href={`${svc}/digital-advertising/`}>Google Ads</a></li>
+        <li><a href={`${svc}/seo-strategie/`}>AI {lang === 'en' ? 'Visibility' : 'Vindbaarheid'}</a></li>
+        <li><a href={`${svc}/website-optimalisatie/`}>{lang === 'en' ? 'Websites & Design' : 'Websites & Design'}</a></li>
+        <li><a href={`${svc}/digital-advertising/`}>LinkedIn</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h3 class="footer-heading">{t('footer.nav')}</h3>
       <ul>
-        <li><a href={`${p}/services/`}>{lang === 'en' ? 'Approach' : 'Aanpak'}</a></li>
+        <li><a href={`${svc}/`}>{lang === 'en' ? 'Approach' : 'Aanpak'}</a></li>
         <li><a href={`${p}/about/`}>{t('nav.about')}</a></li>
         <li><a href={`${p}/blog/`}>{lang === 'en' ? 'News' : 'Nieuws'}</a></li>
         <li><a href={`${p}/contact/`}>{t('nav.contact')}</a></li>

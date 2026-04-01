@@ -8,7 +8,7 @@ export type Lang = keyof typeof languages;
 export const translations = {
   nl: {
     // Nav
-    'nav.services': 'Services',
+    'nav.services': 'Diensten',
     'nav.cases': 'Cases',
     'nav.blog': 'Blog',
     'nav.about': 'Over ons',
@@ -32,7 +32,7 @@ export const translations = {
     'common.allcases': 'Alle cases →',
 
     // Footer
-    'footer.services': 'Services',
+    'footer.services': 'Diensten',
     'footer.nav': 'Navigatie',
     'footer.contact': 'Contact',
     'footer.rights': 'Alle rechten voorbehouden.',
