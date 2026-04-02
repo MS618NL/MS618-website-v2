@@ -32,27 +32,29 @@ const firstWord = rotatingWords[0];
   <div class="hero-fade" aria-hidden="true"></div>
 
   <div class="container hero-content">
-    <!-- Badge -->
-    <div class="hero-badge">
-      <span class="badge-dot-wrap">
-        <span class="badge-dot-ping"></span>
-        <span class="badge-dot"></span>
-      </span>
-      <span class="badge-text">{badgeText}</span>
+    <div class="hero-center">
+      <!-- Badge -->
+      <div class="hero-badge">
+        <span class="badge-dot-wrap">
+          <span class="badge-dot-ping"></span>
+          <span class="badge-dot"></span>
+        </span>
+        <span class="badge-text">{badgeText}</span>
+      </div>
+
+      <h1 class="hero-headline">
+        <span class="headline-ai">AI</span>{headlinePrefix.replace(/^AI/, '')}<br>
+        <span class="rotating-text-wrapper"><span id="rotating-text" class="rotating-text" data-words={rotatingWordsJson}>{firstWord}</span><span class="cursor"></span></span><br>
+        <span class="headline-accent">{headlineAccent}</span>
+      </h1>
+
+      <p class="hero-sub">{subheadline}</p>
+
+      <a href={cta.href} class="hero-cta">
+        {cta.label}
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
     </div>
-
-    <h1 class="hero-headline">
-      <span class="headline-ai">AI</span>{headlinePrefix.replace(/^AI/, '')}<br>
-      <span class="rotating-text-wrapper"><span id="rotating-text" class="rotating-text" data-words={rotatingWordsJson}>{firstWord}</span><span class="cursor"></span></span><br>
-      <span class="headline-accent">{headlineAccent}</span>
-    </h1>
-
-    <p class="hero-sub">{subheadline}</p>
-
-    <a href={cta.href} class="hero-cta">
-      {cta.label}
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-    </a>
 
     <div class="hero-scroll" aria-hidden="true">
       <span class="scroll-line-h"></span>
@@ -106,14 +108,21 @@ const firstWord = rotatingWords[0];
     position: relative;
     z-index: 3;
     text-align: center;
-    padding-top: 7rem;
-    padding-bottom: 3.5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
     max-width: 1152px;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     box-sizing: border-box;
+  }
+
+  .hero-center {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   /* Badge */
@@ -170,7 +179,7 @@ const firstWord = rotatingWords[0];
 
   /* Headline */
   .hero-headline {
-    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-size: clamp(3rem, 5vw, 5rem);
     font-weight: 600;
     line-height: 1.05;
     letter-spacing: -0.04em;
@@ -280,7 +289,7 @@ const firstWord = rotatingWords[0];
 
   @media (max-width: 768px) {
     .hero-content {
-      padding-top: 3rem;
+      padding-top: 5rem;
     }
 
     .hero-badge {
