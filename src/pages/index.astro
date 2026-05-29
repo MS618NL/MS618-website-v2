@@ -216,7 +216,7 @@ const schemaGraph = [
           <div class="client-logo"><img src="/images/clients/ndo-nederland.png" alt="NDO Nederland" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/kis-group.png" alt="KIS Group" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/fugro.png" alt="Fugro" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/christmas-brothers.svg" alt="Christmas Brothers" loading="lazy" /></div>
+          <div class="client-logo client-logo--bright"><img src="/images/clients/christmas-brothers.svg" alt="Christmas Brothers" loading="lazy" /></div>
           <div class="client-logo client-logo--bright"><img src="/images/clients/step2.svg" alt="STEP2" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/swoop.png" alt="Swoop" loading="lazy" /></div>
           <div class="client-logo"><img src="/images/clients/moovs.png" alt="Moovs" loading="lazy" /></div>
@@ -582,29 +582,35 @@ const schemaGraph = [
   }
 
   .client-logo img {
-    max-width: 130px;
-    max-height: 32px;
+    max-width: 140px;
+    max-height: 36px;
     width: auto;
     height: auto;
     object-fit: contain;
-    filter: grayscale(100%) invert(1) brightness(0.7);
-    opacity: 0.6;
-    transition: filter 0.3s ease, opacity 0.3s ease;
+    /* grayscale+invert handles both transparent-bg and white-bg PNGs:
+       white bg gets inverted to black → blends into dark page;
+       dark artwork gets inverted to light → readable */
+    filter: grayscale(100%) invert(1) brightness(0.95) contrast(1.05);
+    opacity: 0.85;
+    transition: opacity 0.4s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)),
+                filter 0.4s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1));
   }
 
   .client-logo:hover img {
-    filter: grayscale(100%) invert(1) brightness(0.9);
+    filter: grayscale(100%) invert(1) brightness(1) contrast(1.05);
+    opacity: 1;
+  }
+
+  /* For logos that are originally light/white on transparent bg —
+     inverting would make them disappear, so use a softer treatment */
+  .client-logo--bright img {
+    filter: grayscale(100%) brightness(1.4) contrast(0.95);
     opacity: 0.9;
   }
 
-  .client-logo--bright img {
-    filter: grayscale(100%) invert(1) brightness(1);
-    opacity: 0.75;
-  }
-
   .client-logo--bright:hover img {
-    filter: grayscale(100%) invert(1) brightness(1);
-    opacity: 0.95;
+    filter: grayscale(100%) brightness(1.6) contrast(0.95);
+    opacity: 1;
   }
 
   @media (max-width: 1024px) {
