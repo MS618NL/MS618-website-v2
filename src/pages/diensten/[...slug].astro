@@ -3,7 +3,7 @@ import Post from '@/layouts/Post.astro';
 import CTA from '@/components/CTA.astro';
 import CaseCard from '@/components/CaseCard.astro';
 import { getCollection, render } from 'astro:content';
-import { buildServicePiece } from '@/utils/schema';
+import { buildServicePiece, buildFaqPiece } from '@/utils/schema';
 import { canonicalUrl } from '@/utils/seo';
 import site from '@/data/site.json';
 
@@ -31,7 +31,11 @@ const breadcrumbs = [
   { name: service.data.title },
 ];
 
-const extraSchema = [buildServicePiece(pageUrl, service.data.title, service.data.description)];
+const faqs = service.data.faq ?? [];
+const extraSchema = [
+  buildServicePiece(pageUrl, service.data.title, service.data.description),
+  ...(faqs.length > 0 ? [buildFaqPiece(pageUrl, faqs)] : []),
+];
 ---
 
 <Post
@@ -64,6 +68,20 @@ const extraSchema = [buildServicePiece(pageUrl, service.data.title, service.data
           <Content />
         </div>
       </div>
+
+      {faqs.length > 0 && (
+        <section class="service-faq">
+          <h2>Veelgestelde vragen</h2>
+          <div class="faq-list">
+            {faqs.map((f) => (
+              <details class="faq-item">
+                <summary>{f.question}</summary>
+                <p>{f.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
 
       {relatedCases.length > 0 && (
         <aside class="related-cases">
@@ -134,6 +152,77 @@ const extraSchema = [buildServicePiece(pageUrl, service.data.title, service.data
   .service-body {
     padding-bottom: 4rem;
     border-bottom: 1px solid oklch(0.15 0 0);
+  }
+
+  .service-faq {
+    padding: 4rem 0;
+    border-bottom: 1px solid oklch(0.15 0 0);
+    max-width: 760px;
+  }
+
+  .service-faq h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: oklch(0.98 0 0);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-item {
+    border-top: 1px solid oklch(0.18 0 0);
+    padding: 0;
+  }
+
+  .faq-item:last-child {
+    border-bottom: 1px solid oklch(0.18 0 0);
+  }
+
+  .faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 1.25rem 2rem 1.25rem 0;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: oklch(0.95 0 0);
+    position: relative;
+    transition: color 0.2s ease;
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: oklch(0.6 0 0);
+    transition: transform 0.2s ease;
+  }
+
+  .faq-item[open] summary::after {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .faq-item summary:hover {
+    color: oklch(0.65 0.2 250);
+  }
+
+  .faq-item p {
+    margin: 0;
+    padding: 0 0 1.5rem;
+    color: oklch(0.68 0 0);
+    line-height: 1.7;
+    font-size: 0.9688rem;
   }
 
   .related-cases {

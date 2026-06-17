@@ -46,6 +46,7 @@ const services = defineCollection({
     order: z.number().default(99),
     icon: z.string().default('→'),
     category: z.string().default('service'),
+    faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
     updatedDate: z.coerce.date().optional(),
   }),
 });
@@ -61,6 +62,7 @@ const servicesEn = defineCollection({
     order: z.number().default(99),
     icon: z.string().default('→'),
     category: z.string().default('service'),
+    faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
     updatedDate: z.coerce.date().optional(),
   }),
 });
@@ -99,4 +101,21 @@ const blogEn = defineCollection({
   }),
 });
 
-export const collections = { blog, cases, services, 'services-en': servicesEn, 'blog-en': blogEn, 'cases-en': casesEn };
+// Local landing pages (NL-only; region/city pages for local search)
+const local = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/local' }),
+  schema: z.object({
+    title: z.string(),
+    seoTitle: z.string().optional(),
+    description: z.string().max(160),
+    ogImage: z.string().optional(),
+    noindex: z.boolean().default(false),
+    order: z.number().default(99),
+    region: z.string().default('Friesland'),
+    navLabel: z.string().optional(),
+    faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
+    updatedDate: z.coerce.date().optional(),
+  }),
+});
+
+export const collections = { blog, cases, services, 'services-en': servicesEn, 'blog-en': blogEn, 'cases-en': casesEn, local };

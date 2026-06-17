@@ -1,11 +1,20 @@
 ---
 title: "Digital Advertising"
-seoTitle: "B2B Digital Advertising — Google & LinkedIn Ads That Convert | MS618"
+seoTitle: "B2B digital advertising: Google & LinkedIn Ads that convert | MS618"
 description: "Paid campaigns that fill your pipeline, not just generate clicks. MS618 runs Google and LinkedIn ads for B2B with a focus on cost per lead and ROI."
-order: 3
+order: 4
 icon: "◈"
 category: "visibility"
-updatedDate: 2026-03-01
+updatedDate: 2026-06-17
+faq:
+  - question: "What is the difference between Google Ads and LinkedIn Ads for B2B?"
+    answer: "Google Ads captures active demand: people searching for what you offer right now. LinkedIn Ads creates demand among exactly the right job titles and companies, even when they are not searching yet. In B2B they reinforce each other; we set the mix based on your sales cycle."
+  - question: "Do you manage the ad budget, or do I pay that myself?"
+    answer: "You pay the ad budget directly to Google or LinkedIn, which is transparent and stays yours. We manage the campaigns, the optimization and the reporting. Our fee is separate from your media budget."
+  - question: "How quickly will I see results from ads?"
+    answer: "Faster than SEO. Campaigns deliver the first data and leads within days to weeks. The first weeks are about learning and optimizing, after which the campaign steers on cost per lead and return."
+  - question: "Do you optimize for clicks or for leads?"
+    answer: "For leads and pipeline, not clicks. A cheap click that delivers nothing is expensive. We optimize for cost per qualified lead and ultimately for return."
 ---
 
 ## Paid traffic that actually converts

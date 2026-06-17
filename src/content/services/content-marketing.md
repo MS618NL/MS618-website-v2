@@ -1,11 +1,20 @@
 ---
 title: "Content Marketing"
-seoTitle: "Content Marketing voor B2B — Autoriteit die Deals Sluit | MS618"
+seoTitle: "Content marketing voor B2B: autoriteit die deals sluit | MS618"
 description: "Content die niet alleen gelezen wordt, maar ook verkoopt. MS618 bouwt een contentmachine die autoriteit, organisch verkeer en gekwalificeerde leads oplevert."
-order: 2
-icon: "✦"
+order: 3
+icon: "❖"
 category: "zichtbaarheid"
-updatedDate: 2026-03-01
+updatedDate: 2026-06-17
+faq:
+  - question: "Wat levert content marketing op voor een B2B-bedrijf?"
+    answer: "Goede B2B-content trekt de juiste mensen aan op het juiste moment in hun beslisproces, bouwt autoriteit op en levert organisch verkeer en gekwalificeerde leads. Het werkt cumulatief: content die je vandaag publiceert, blijft jaren leads opleveren."
+  - question: "Schrijven jullie de content zelf?"
+    answer: "Ja. Onze specialisten schrijven en optimaliseren de content, met AI als versneller en niet als vervanger. Jij reviewt en houdt de regie over je eigen verhaal."
+  - question: "Hoeveel content is er nodig om resultaat te zien?"
+    answer: "Niet zoveel mogelijk, maar de juiste content. Wij werken met een pillar-cluster-model: een sterke hoofdpagina per onderwerp, ondersteund door gerichte artikelen die specifieke vragen beantwoorden. Consistentie weegt zwaarder dan volume."
+  - question: "Hoe meten jullie of content werkt?"
+    answer: "We volgen organisch verkeer en posities op commercieel waardevolle termen, en belangrijker, of de content gekwalificeerde leads oplevert. Geen vanity-cijfers, maar bijdrage aan de pijplijn."
 ---
 
 ## Content die werkt — niet alleen content die bestaat
@@ -20,7 +29,7 @@ Wij bouwen contentprogramma's die een doel dienen: autoriteit vestigen in jouw m
 
 Alles begint met een scherpe strategie. Welke doelgroepen spreek je aan? In welke fase van hun beslisproces? Welke vragen beantwoorden we, welke percepties doorbreken we?
 
-Wij ontwikkelen een editorial plan dat naadloos aansluit op je SEO-strategie, je sales funnel en je bedrijfsdoelstellingen.
+Wij ontwikkelen een contentplan dat naadloos aansluit op je SEO-strategie, je verkoopproces en je bedrijfsdoelen.
 
 ### Thought leadership content
 
@@ -45,7 +54,7 @@ Goede content heeft distributie nodig. Wij helpen met:
 
 - Organisch verkeer via content: gemiddeld +240% in jaar 1
 - Tijd op pagina en engagement als indicator van contentkwaliteit
-- Content-attributie aan leads en pipeline
+- Koppeling van content aan leads en omzet
 - Share of voice in jouw markt
 
 ---

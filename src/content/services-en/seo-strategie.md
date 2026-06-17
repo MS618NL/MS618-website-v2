@@ -1,11 +1,20 @@
 ---
 title: "SEO Strategy"
-seoTitle: "B2B SEO Strategy — From Invisible to the Top | MS618"
-description: "No shortcuts. MS618 builds SEO strategies that deliver organic growth on terms that actually matter — for B2B companies ready to invest in the long game."
+seoTitle: "B2B SEO strategy: from invisible to the top | MS618"
+description: "No shortcuts. MS618 builds SEO strategies that deliver organic growth on terms that actually matter, for B2B companies ready to invest in the long game."
 order: 1
 icon: "↗"
 category: "visibility"
-updatedDate: 2026-03-01
+updatedDate: 2026-06-17
+faq:
+  - question: "How long before SEO delivers results?"
+    answer: "SEO is a growth strategy, not a switch. You usually see the first movement in visibility within a few months, with structural results building over 6 to 12 months. The upside: that growth stays when you pause your ad budget."
+  - question: "What is the difference between SEO and GEO?"
+    answer: "SEO makes you findable in the search results. GEO makes you cited in AI answers like ChatGPT and Google AI Overviews. We handle both in one track, see also our GEO optimization."
+  - question: "Do you also handle technical SEO and link building?"
+    answer: "Yes. An SEO track at MS618 covers technical SEO (crawlability, Core Web Vitals, schema), content architecture and authority building through quality, topically relevant links. No isolated tricks, but a coherent system."
+  - question: "Which businesses benefit most from B2B SEO?"
+    answer: "SEO pays off most for B2B companies with a complex proposition and a longer sales cycle, that want to stop depending entirely on paid advertising."
 ---
 
 ## SEO is a growth strategy. Not a technical to-do list.

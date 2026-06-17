@@ -1,11 +1,20 @@
 ---
 title: "Analytics & Reporting"
-seoTitle: "Marketing Analytics & Dashboards — Inzicht dat Leidt tot Actie | MS618"
-description: "Weet eindelijk wat werkt. MS618 bouwt marketing analytics, attribution-modellen en dashboards die directie en CMO’s directe grip geven op performance."
-order: 5
+seoTitle: "Marketing analytics & dashboards: inzicht dat leidt tot actie | MS618"
+description: "Weet eindelijk wat werkt. MS618 bouwt marketing analytics, attributie-modellen en dashboards die directie en CMO's directe grip geven op performance."
+order: 6
 icon: "≡"
 category: "conversie"
-updatedDate: 2026-03-01
+updatedDate: 2026-06-17
+faq:
+  - question: "Welke tools gebruiken jullie voor analytics?"
+    answer: "Onder andere GA4, Google Search Console, server-side tracking en dashboards in tools als Looker Studio. We kiezen de tools op basis van jouw situatie, niet andersom."
+  - question: "Wat is attributie en waarom is het belangrijk?"
+    answer: "Attributie laat zien welke kanalen en stappen écht bijdragen aan een lead of deal. Zonder attributie stuur je blind: je weet niet welke euro werkt. Met goede attributie verschuif je budget naar wat oplevert."
+  - question: "Krijg ik een dashboard dat ik zelf kan lezen?"
+    answer: "Ja. We bouwen dashboards die directie en marketing direct begrijpen: geen datadump, maar de cijfers die ertoe doen, met context en een conclusie. Inzicht dat leidt tot actie."
+  - question: "Hoe vaak rapporteren jullie?"
+    answer: "Standaard maandelijks, met een heldere conclusie en vervolgstappen. De dashboards staan daarnaast live, zodat je op elk moment kunt meekijken."
 ---
 
 ## Data zonder inzicht is ruis
@@ -27,7 +36,7 @@ Wij beginnen met het fundament: correcte tracking, betrouwbare data, één bron 
 
 ### Attribution en ROI-meting
 
-Welk kanaal draagt bij aan je pipeline? Welke content genereert de meest waardevolle leads? Wij bouwen attribution-modellen die de werkelijkheid benaderen.
+Welk kanaal draagt bij aan je omzet? Welke content levert de meest waardevolle leads op? Wij bouwen attributie-modellen die de werkelijkheid benaderen.
 
 ### Management dashboards
 

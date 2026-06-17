@@ -1,12 +1,18 @@
 ---
 import site from '@/data/site.json';
 import { getLangFromUrl, useTranslations } from '@/i18n';
+import { getCollection } from 'astro:content';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const p = lang === 'en' ? '/en' : '';
 const svc = lang === 'en' ? '/en/services' : '/diensten';
 const homeHref = lang === 'en' ? '/en/' : '/';
+
+// Local landing pages are NL-only; auto-listed in the sub-footer so new ones appear automatically.
+const localPages = lang === 'en'
+  ? []
+  : (await getCollection('local')).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <footer class="site-footer">
@@ -25,11 +31,12 @@ const homeHref = lang === 'en' ? '/en/' : '/';
     <div class="footer-col">
       <h3 class="footer-heading">{t('footer.services')}</h3>
       <ul>
+        <li><a href={`${svc}/ai-strategie/`}>{lang === 'en' ? 'AI Strategy' : 'AI-strategie'}</a></li>
         <li><a href={`${svc}/seo-strategie/`}>SEO {lang === 'en' ? 'Strategy' : 'Strategie'}</a></li>
+        <li><a href={`${svc}/geo-optimalisatie/`}>{lang === 'en' ? 'GEO & AI Visibility' : 'GEO & AI-vindbaarheid'}</a></li>
         <li><a href={`${svc}/digital-advertising/`}>Google Ads</a></li>
-        <li><a href={`${svc}/seo-strategie/`}>AI {lang === 'en' ? 'Visibility' : 'Vindbaarheid'}</a></li>
-        <li><a href={`${svc}/website-optimalisatie/`}>{lang === 'en' ? 'Websites & Design' : 'Websites & Design'}</a></li>
-        <li><a href={`${svc}/digital-advertising/`}>LinkedIn</a></li>
+        <li><a href={`${svc}/website-laten-maken/`}>{lang === 'en' ? 'Website Development' : 'Website laten maken'}</a></li>
+        <li><a href={`${svc}/social-media/`}>{lang === 'en' ? 'Social & LinkedIn' : 'Social & LinkedIn'}</a></li>
       </ul>
     </div>
 
@@ -53,6 +60,19 @@ const homeHref = lang === 'en' ? '/en/' : '/';
       </ul>
     </div>
   </div>
+
+  {localPages.length > 0 && (
+    <div class="footer-regio">
+      <div class="container">
+        <span class="footer-regio-label">Regio</span>
+        <nav class="footer-regio-links" aria-label="Regio">
+          {localPages.map((page) => (
+            <a href={`/${page.id}/`}>{page.data.navLabel ?? page.data.title}</a>
+          ))}
+        </nav>
+      </div>
+    </div>
+  )}
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
@@ -146,6 +166,50 @@ const homeHref = lang === 'en' ? '/en/' : '/';
 
   .footer-col a:hover {
     color: oklch(0.98 0 0);
+  }
+
+  .footer-regio {
+    border-top: 1px solid oklch(0.15 0 0);
+    padding: 0.875rem 0;
+  }
+
+  .footer-regio .container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    row-gap: 0.4rem;
+  }
+
+  .footer-regio-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: oklch(0.45 0 0);
+    margin-right: 1.25rem;
+  }
+
+  /* links become direct flex items so wrapped lines align to the left edge, not under the label */
+  .footer-regio-links {
+    display: contents;
+  }
+
+  .footer-regio-links a {
+    font-size: 0.8125rem;
+    color: oklch(0.6 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .footer-regio-links a:not(:last-child)::after {
+    content: '·';
+    margin: 0 0.75rem;
+    color: oklch(0.32 0 0);
+  }
+
+  .footer-regio-links a:hover {
+    color: oklch(0.92 0 0);
   }
 
   .footer-bottom {
