@@ -1,5 +1,15 @@
 @import "tailwindcss";
-@import "@fontsource-variable/inter";
+
+/* Self-hosted Inter (latin variable) instead of the render-blocking @import chain.
+   Preloaded in Base.astro so it loads in parallel from the start; font-display: swap
+   paints the headline in the fallback immediately (helps LCP). */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('/fonts/inter-latin-var.woff2') format('woff2-variations');
+}
 
 @theme {
   /* Colors — depth via subtler oklch steps */
@@ -9,8 +19,8 @@
   --color-border: oklch(0.22 0 0);
   --color-border-light: oklch(0.30 0 0);
   --color-text: oklch(0.98 0 0);
-  --color-text-muted: oklch(0.62 0 0);
-  --color-text-dim: oklch(0.45 0 0);
+  --color-text-muted: oklch(0.72 0 0);
+  --color-text-dim: oklch(0.60 0 0);
   --color-accent: oklch(0.65 0.2 250);
   --color-accent-hover: oklch(0.72 0.2 250);
   --color-green: oklch(0.72 0.18 145);
