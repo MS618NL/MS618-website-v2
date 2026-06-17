@@ -17,6 +17,8 @@ interface Props {
   updatedDate?: string;
   author?: string;
   schemaGraph?: object[];
+  lcpImage?: { href: string; type?: string; imagesrcset?: string; imagesizes?: string };
+  enAlternate?: boolean;
 }
 
 const {
@@ -32,6 +34,8 @@ const {
   updatedDate,
   author,
   schemaGraph = [],
+  lcpImage,
+  enAlternate = true,
 } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
@@ -52,14 +56,25 @@ const lang = getLangFromUrl(Astro.url);
       publishDate={publishDate}
       updatedDate={updatedDate}
       author={author}
+      enAlternate={enAlternate}
     />
-    {schemaGraph.length > 0 && <Schema graph={schemaGraph} />}
+    <Schema graph={schemaGraph} includeDefaults={false} />
+    {lcpImage && (
+      <link
+        rel="preload"
+        as="image"
+        href={lcpImage.href}
+        type={lcpImage.type ?? 'image/webp'}
+        imagesrcset={lcpImage.imagesrcset}
+        imagesizes={lcpImage.imagesizes}
+      />
+    )}
     <!-- Google Tag Manager preconnect -->
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://www.google-analytics.com" />
-    <!-- Google Tag Manager (deferred after load) -->
-    <script is:inline>
+    <!-- Google Tag Manager (deferred after load; bundled by Astro so CSP needs no script 'unsafe-inline') -->
+    <script>
     window.addEventListener('load', function() {
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -73,7 +88,7 @@ const lang = getLangFromUrl(Astro.url);
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3PJBX8"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    height="0" width="0" class="gtm-noscript"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div id="stars-parallax" aria-hidden="true">
       <div class="star-layer" id="stars-sm"></div>
@@ -85,6 +100,11 @@ const lang = getLangFromUrl(Astro.url);
 </html>
 
 <style>
+  .gtm-noscript {
+    display: none;
+    visibility: hidden;
+  }
+
   #stars-parallax {
     position: fixed;
     inset: -100px;

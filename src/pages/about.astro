@@ -2,6 +2,7 @@
 import Page from '@/layouts/Page.astro';
 import CTA from '@/components/CTA.astro';
 import site from '@/data/site.json';
+import { buildTeamPieces } from '@/utils/schema';
 
 const breadcrumbs = [
   { name: 'Home', item: site.url },
@@ -14,6 +15,7 @@ const breadcrumbs = [
   seoTitle="Over MS618 — Vijf Senior Specialisten. Geen Juniors. Geen Ruis."
   description="Vijf specialisten met elk meer dan 10 jaar ervaring. Geen stageprogramma's, geen junior teams — alleen mensen die het vak beheersen en de toekomst ervan kennen."
   breadcrumbs={breadcrumbs}
+  extraSchema={buildTeamPieces()}
 >
   <article class="about-page">
     <div class="container">
@@ -175,7 +177,7 @@ const breadcrumbs = [
             <p>MS618 werkt vanuit FJ08: het achtste fabriekspand van Douwe Egberts, aan de haven van Joure. Gerestaureerd met eiken, noten en rauw staal. Een plek waar wordt gewerkt, gekookt, muziek gemaakt en samengewerkt. Dit is hoe werken eruitziet als AI het routinewerk overneemt. Wat overblijft is denken, maken en samenkomen. Geen kantoorflat. Het kantoor van de toekomst.</p>
           </div>
           <div class="location-image">
-            <img src="/images/pand.jpg" alt="MS618 kantoor FJ08 in Joure" loading="lazy" />
+            <img src="/images/pand.jpg" alt="MS618 kantoor FJ08 in Joure" width="1276" height="865" loading="lazy" />
           </div>
         </div>
       </section>

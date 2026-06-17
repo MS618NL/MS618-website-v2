@@ -1,13 +1,15 @@
 ---
-title: "180% more qualified B2B leads through LinkedIn and SEO"
-seoTitle: "Case: B2B Lead Generation — 180% More Leads via LinkedIn & SEO | MS618"
-description: "180% more qualified leads in 12 months. How a technical consultancy stopped cold outreach and started growing through SEO and LinkedIn."
+title: "From cold outreach to a predictable stream of B2B leads"
+seoTitle: "Example case: B2B lead generation via LinkedIn & SEO | MS618"
+description: "How a B2B service provider used SEO and LinkedIn to stop cold outreach and build a predictable lead flow. Illustrative example case."
 publishDate: 2025-12-01
-client: "Technical consultancy (anonymised)"
+client: "Example case"
 service: "Content Marketing & SEO"
-result: "+180% qualified leads in 12 months"
+result: "A predictable stream of qualified leads"
 category: "case-study"
 ---
+
+> **Example case.** An illustrative scenario based on real project patterns, not a specific client. Named client cases will follow.
 
 ## The challenge
 

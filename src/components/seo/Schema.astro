@@ -1,13 +1,60 @@
 ---
+import site from '@/data/site.json';
+
 interface Props {
-  graph: object[];
+  graph?: object[];
+  includeDefaults?: boolean;
 }
 
-const { graph } = Astro.props;
+const { graph = [], includeDefaults = true } = Astro.props;
+
+const orgId = `${site.url}#organization`;
+const websiteId = `${site.url}#website`;
+
+const defaults = includeDefaults
+  ? [
+      {
+        '@type': 'Organization',
+        '@id': orgId,
+        name: site.organization?.legalName ?? site.name,
+        alternateName: site.name,
+        url: site.url,
+        logo: site.url + (site.logo ?? '/logo.svg'),
+        ...(site.organization?.email && { email: site.organization.email }),
+        ...(site.organization?.address && {
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: site.organization.address.streetAddress,
+            postalCode: site.organization.address.postalCode,
+            addressLocality: site.organization.address.addressLocality,
+            addressCountry: site.organization.address.addressCountry,
+          },
+        }),
+        ...(site.social?.linkedin && { sameAs: [site.social.linkedin].filter(Boolean) }),
+      },
+      {
+        '@type': 'WebSite',
+        '@id': websiteId,
+        url: site.url,
+        name: site.name,
+        description: site.description,
+        inLanguage: site.language ?? 'nl',
+        publisher: { '@id': orgId },
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: `${site.url}/zoeken/?q={search_term_string}`,
+          },
+          'query-input': 'required name=search_term_string',
+        },
+      },
+    ]
+  : [];
 
 const schema = {
   '@context': 'https://schema.org',
-  '@graph': graph,
+  '@graph': [...defaults, ...graph],
 };
 ---
 

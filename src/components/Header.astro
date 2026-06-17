@@ -3,13 +3,15 @@ import { getLangFromUrl, getAlternatePath, useTranslations } from '@/i18n';
 
 interface Props {
   url?: URL;
+  /** Override for the language-toggle target (e.g. when no translation of this page exists). */
+  altPath?: string;
 }
 
 const url = Astro.props.url ?? Astro.url;
 const lang = getLangFromUrl(url);
 const t = useTranslations(lang);
 const altLang = lang === 'nl' ? 'en' : 'nl';
-const altPath = getAlternatePath(url, altLang);
+const altPath = Astro.props.altPath ?? getAlternatePath(url, altLang);
 const prefix = lang === 'en' ? '/en' : '';
 const homeHref = lang === 'en' ? '/en/' : '/';
 

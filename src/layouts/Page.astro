@@ -27,6 +27,8 @@ interface Props {
   rss?: boolean;
   breadcrumbs?: BreadcrumbItem[];
   extraSchema?: object[];
+  /** Override for the language-toggle target (when no translation of this page exists). */
+  altPath?: string;
 }
 
 const {
@@ -39,6 +41,7 @@ const {
   rss = false,
   breadcrumbs = [],
   extraSchema = [],
+  altPath,
 } = Astro.props;
 
 const pageUrl = canonicalUrl(Astro.url.pathname);
@@ -68,7 +71,7 @@ const schemaGraph = [
   rss={rss}
   schemaGraph={schemaGraph}
 >
-  <Header />
+  <Header altPath={altPath} />
   <main id="main-content">
     {breadcrumbs.length > 0 && (
       <div class="container breadcrumb-bar">

@@ -15,6 +15,9 @@ interface Props {
   publishDate?: string;
   updatedDate?: string;
   author?: string;
+  themeColor?: string;
+  /** Whether an English alternate of this page exists. False suppresses the en hreflang. */
+  enAlternate?: boolean;
 }
 
 const {
@@ -29,6 +32,8 @@ const {
   publishDate,
   updatedDate,
   author,
+  themeColor = '#0A0A0A',
+  enAlternate = true,
 } = Astro.props;
 
 const pageTitle = seoTitle ?? `${title} — ${site.name}`;
@@ -48,13 +53,19 @@ const enHref = site.url + getAlternatePath(Astro.url, 'en');
 <title>{pageTitle}</title>
 <meta name="description" content={description} />
 <meta name="robots" content={robots} />
+<meta name="theme-color" content={themeColor} />
 <link rel="canonical" href={canonicalHref} />
+
+<!-- Apple PWA -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content={site.name} />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 <!-- Hreflang -->
 {!noindex && (
   <>
     <link rel="alternate" hreflang="nl" href={nlHref} />
-    <link rel="alternate" hreflang="en" href={enHref} />
+    {enAlternate && <link rel="alternate" hreflang="en" href={enHref} />}
     <link rel="alternate" hreflang="x-default" href={nlHref} />
   </>
 )}

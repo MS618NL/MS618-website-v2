@@ -1,6 +1,6 @@
 ---
 import Page from '@/layouts/Page.astro';
-import { buildContactPiece } from '@/utils/schema';
+import { buildContactPiece, buildLocalBusinessPiece } from '@/utils/schema';
 import site from '@/data/site.json';
 
 const breadcrumbs = [
@@ -8,7 +8,7 @@ const breadcrumbs = [
   { name: 'Contact' },
 ];
 
-const extraSchema = [buildContactPiece()];
+const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
 ---
 
 <Page
@@ -132,7 +132,7 @@ const extraSchema = [buildContactPiece()];
       <!-- Kantoor foto full width -->
       <section class="office-section">
         <div class="office-image-full">
-          <img src="/images/pand.jpg" alt="MS618 kantoor FJ08 aan de haven van Joure" loading="lazy" />
+          <img src="/images/pand.jpg" alt="MS618 kantoor FJ08 aan de haven van Joure" width="1276" height="865" loading="lazy" />
         </div>
       </section>
     </div>
