@@ -24,9 +24,9 @@ Geen losse acties of rapporten die in een la verdwijnen, maar één partner die 
 
 ## Wat wij voor Friese ondernemers doen
 
-- **[SEO-strategie](/diensten/seo-strategie/)**: beter gevonden worden in Google op de termen die klanten opleveren
+- **[SEO Friesland](/seo-friesland/)**: beter gevonden worden in Google op de termen die klanten opleveren
 - **[GEO en AI-vindbaarheid](/diensten/geo-optimalisatie/)**: geciteerd worden in ChatGPT, Perplexity en Google AI Overviews
-- **[Website laten maken](/diensten/website-laten-maken/)**: een snelle, moderne site die scoort en converteert
+- **[Webdesign Friesland](/webdesign-friesland/)**: een snelle, moderne site die scoort en converteert
 - **[Digital advertising](/diensten/digital-advertising/)**: Google- en LinkedIn-campagnes die leads opleveren
 - **[AI-strategie](/diensten/ai-strategie/)**: AI concreet inzetten in je marketing en processen
 
