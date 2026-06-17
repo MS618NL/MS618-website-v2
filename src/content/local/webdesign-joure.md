@@ -11,7 +11,7 @@ faq:
   - question: "Wat kost een website laten maken in Joure?"
     answer: "Dat hangt af van de omvang en of we nieuw bouwen of een bestaande site migreren. We werken met een heldere eenmalige bouwprijs plus een vast bedrag per maand voor hosting en onderhoud. In een gesprek bepalen we de scope en krijg je een concrete prijs."
   - question: "Met welk systeem bouwen jullie websites?"
-    answer: "We bouwen op Astro, een moderne, razendsnelle basis die uitstekend scoort op snelheid en SEO. Geen trage, zware WordPress-stack, maar schone code die goed gevonden wordt en makkelijk meegroeit."
+    answer: "We bouwen op een moderne, razendsnelle techniek die uitstekend scoort op snelheid en vindbaarheid. Geen trage, zware standaardoplossing, maar schone techniek die goed gevonden wordt en makkelijk meegroeit."
   - question: "Een webdesigner in de buurt, wat is het voordeel?"
     answer: "Korte lijnen en een persoonlijk aanspreekpunt. Je kunt langskomen, we kennen de lokale markt, en we denken mee als partner. Tegelijk krijg je de techniek en vindbaarheid van een landelijk B2B-bureau."
 ---
@@ -22,7 +22,7 @@ Een mooie website die niemand vindt of die traag laadt, levert niets op. Wij bou
 
 ## Snel, modern en vindbaar
 
-We bouwen op Astro, een moderne basis die razendsnel laadt en uitstekend scoort op Core Web Vitals en SEO. Snelheid is geen detail: het bepaalt mee hoe je in Google staat. Bij ons zit goede vindbaarheid standaard onder elke site.
+We bouwen op een moderne techniek die razendsnel laadt en uitstekend scoort op snelheid en vindbaarheid. Snelheid is geen detail: het bepaalt mee hoe je in Google staat. Bij ons zit goede vindbaarheid standaard onder elke site.
 
 Wil je meer weten over onze werkwijze, lees dan de pagina over [website laten maken](/diensten/website-laten-maken/).
 

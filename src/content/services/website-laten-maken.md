@@ -1,7 +1,7 @@
 ---
 title: "Website laten maken"
 seoTitle: "Website laten maken: snel, modern en goed vindbaar | MS618"
-description: "Een website die snel laadt, scoort in Google en meegroeit. MS618 bouwt moderne websites op een razendsnelle Astro-basis, voor MKB in Friesland en daarbuiten."
+description: "Een website die snel laadt, scoort in Google en meegroeit. MS618 bouwt moderne, razendsnelle websites voor MKB in Friesland en heel Nederland."
 order: 4.5
 icon: "▣"
 category: "website"
@@ -10,7 +10,7 @@ faq:
   - question: "Wat kost het om een website te laten maken?"
     answer: "Dat hangt af van de omvang: aantal pagina's, functionaliteit en of we vanaf nul bouwen of een bestaande site migreren. Wij werken met een heldere eenmalige bouwprijs plus een vast bedrag per maand voor hosting, onderhoud en doorontwikkeling. In een kennismakingsgesprek bepalen we de scope en krijg je een concrete prijs, geen verrassingen achteraf."
   - question: "Met welk systeem bouwen jullie websites?"
-    answer: "We bouwen op Astro, een moderne, razendsnelle basis die uitstekend scoort op Core Web Vitals en SEO. Geen zware, trage WordPress-stack die je later opbreekt, maar schone code die snel laadt en makkelijk meegroeit. Die techniek is onderdeel van waarom onze sites goed vindbaar zijn."
+    answer: "We bouwen op een moderne, razendsnelle techniek die uitstekend scoort op snelheid en vindbaarheid. Geen zware, trage standaardoplossing die je later opbreekt, maar schone techniek die snel laadt en makkelijk meegroeit. Die basis is onderdeel van waarom onze sites goed gevonden worden."
   - question: "Wat is het verschil tussen een nieuwe website en website-optimalisatie?"
     answer: "Een website laten maken gaat over nieuw bouwen of een verouderde site vervangen. Website-optimalisatie gaat over meer halen uit een site die je al hebt: UX, conversie en techniek. Weet je niet zeker wat je nodig hebt, dan kijken we daar in het kennismakingsgesprek samen naar."
   - question: "Bouwen jullie ook websites voor bedrijven in Friesland?"
@@ -25,7 +25,7 @@ Een mooie website die niemand vindt of die traag laadt, levert niets op. Wij bou
 
 ## Snel, modern en vindbaar
 
-We bouwen op Astro, een moderne basis die razendsnel laadt en uitstekend scoort op Core Web Vitals en SEO. Snelheid is geen detail: het bepaalt mee hoe je in Google staat en of bezoekers blijven. Die techniek zit standaard onder elke site die we maken.
+We bouwen op een moderne techniek die razendsnel laadt en uitstekend scoort op snelheid en vindbaarheid. Snelheid is geen detail: het bepaalt mee hoe je in Google staat en of bezoekers blijven. Die basis zit standaard onder elke site die we maken.
 
 - **Snel**: schone code, geen trage plugin-stapeling
 - **Vindbaar**: SEO en techniek vanaf de eerste regel meegebouwd

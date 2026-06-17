@@ -1,7 +1,7 @@
 ---
 title: "GEO-optimalisatie & AI-vindbaarheid"
 seoTitle: "GEO-optimalisatie: gevonden worden in AI-zoekmachines | MS618"
-description: "Klassieke SEO maakt je vindbaar. GEO maakt je geciteerd. MS618 zorgt dat jouw bedrijf wordt aangehaald in ChatGPT, Perplexity, Gemini en Google AI Overviews."
+description: "Steeds meer klanten zoeken via ChatGPT en AI. MS618 zorgt dat jouw bedrijf genoemd wordt in die antwoorden. Dit heet GEO, of AI-vindbaarheid."
 order: 2
 icon: "✦"
 category: "vindbaarheid"

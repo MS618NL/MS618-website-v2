@@ -36,7 +36,7 @@ Op basis van data bouwen wij hypotheses en testen we systematisch. Welke call-to
 - Landingspagina optimalisatie
 - A/B en multivariate testing
 - Formulieroptimalisatie
-- Funnel analyse en -verbetering
+- Analyse en verbetering van het beslisproces van de bezoeker
 
 ### Core Web Vitals en technische performance
 

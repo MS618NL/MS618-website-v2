@@ -8,7 +8,7 @@ category: "conversie"
 updatedDate: 2026-06-17
 faq:
   - question: "Welke tools gebruiken jullie voor analytics?"
-    answer: "Onder andere GA4, Google Search Console, server-side tracking en dashboards in tools als Looker Studio. We kiezen de stack op basis van jouw situatie, niet andersom."
+    answer: "Onder andere GA4, Google Search Console, server-side tracking en dashboards in tools als Looker Studio. We kiezen de tools op basis van jouw situatie, niet andersom."
   - question: "Wat is attributie en waarom is het belangrijk?"
     answer: "Attributie laat zien welke kanalen en stappen écht bijdragen aan een lead of deal. Zonder attributie stuur je blind: je weet niet welke euro werkt. Met goede attributie verschuif je budget naar wat oplevert."
   - question: "Krijg ik een dashboard dat ik zelf kan lezen?"
@@ -36,7 +36,7 @@ Wij beginnen met het fundament: correcte tracking, betrouwbare data, één bron 
 
 ### Attribution en ROI-meting
 
-Welk kanaal draagt bij aan je pipeline? Welke content genereert de meest waardevolle leads? Wij bouwen attribution-modellen die de werkelijkheid benaderen.
+Welk kanaal draagt bij aan je omzet? Welke content levert de meest waardevolle leads op? Wij bouwen attributie-modellen die de werkelijkheid benaderen.
 
 ### Management dashboards
 

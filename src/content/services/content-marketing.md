@@ -29,7 +29,7 @@ Wij bouwen contentprogramma's die een doel dienen: autoriteit vestigen in jouw m
 
 Alles begint met een scherpe strategie. Welke doelgroepen spreek je aan? In welke fase van hun beslisproces? Welke vragen beantwoorden we, welke percepties doorbreken we?
 
-Wij ontwikkelen een editorial plan dat naadloos aansluit op je SEO-strategie, je sales funnel en je bedrijfsdoelstellingen.
+Wij ontwikkelen een contentplan dat naadloos aansluit op je SEO-strategie, je verkoopproces en je bedrijfsdoelen.
 
 ### Thought leadership content
 
@@ -54,7 +54,7 @@ Goede content heeft distributie nodig. Wij helpen met:
 
 - Organisch verkeer via content: gemiddeld +240% in jaar 1
 - Tijd op pagina en engagement als indicator van contentkwaliteit
-- Content-attributie aan leads en pipeline
+- Koppeling van content aan leads en omzet
 - Share of voice in jouw markt
 
 ---

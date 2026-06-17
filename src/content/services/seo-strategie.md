@@ -1,7 +1,7 @@
 ---
 title: "SEO Strategie"
 seoTitle: "SEO-strategie voor B2B: van onzichtbaar naar de top | MS618"
-description: "Geen trucjes, geen shortcuts. MS618 bouwt SEO-strategieën op termen die er écht toe doen, voor B2B-bedrijven die serieus willen groeien."
+description: "Geen trucjes, geen omwegen. MS618 zorgt dat B2B-bedrijven beter gevonden worden in Google op de zoektermen die er écht toe doen. Dat is SEO."
 order: 1
 icon: "↗"
 category: "zichtbaarheid"
@@ -29,7 +29,7 @@ Bij MS618 behandelen wij SEO als wat het is: een groeimotor. Een systematische a
 
 Voordat we ook maar één teken schrijven of één technisch probleem oplossen, begrijpen we de markt. Wat zoeken jouw ideale klanten? Op welk moment in hun beslisproces? Met welke intentie?
 
-Wij kartograferen het volledige zoeklandschap in jouw markt: van top-of-funnel oriëntatie tot bottom-of-funnel aankoopintentie. Dit wordt de basis van alles wat volgt.
+Wij brengen het volledige zoeklandschap in jouw markt in kaart: van de eerste, oriënterende vraag tot het moment dat iemand klaar is om te kopen. Dit wordt de basis van alles wat volgt.
 
 ### 2. Technische SEO-audit
 

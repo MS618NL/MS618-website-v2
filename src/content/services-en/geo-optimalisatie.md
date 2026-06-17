@@ -1,7 +1,7 @@
 ---
 title: "GEO Optimization & AI Visibility"
 seoTitle: "GEO Optimization: Get Cited by AI Search Engines | MS618"
-description: "Classic SEO makes you findable. GEO makes you cited. MS618 gets your business referenced in ChatGPT, Perplexity, Gemini and Google AI Overviews."
+description: "More and more customers search via ChatGPT and AI. MS618 makes sure your business gets named in those answers. This is called GEO, or AI visibility."
 order: 2
 icon: "✦"
 category: "visibility"

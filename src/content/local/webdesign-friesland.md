@@ -11,7 +11,7 @@ faq:
   - question: "Bouwen jullie ook websites voor bedrijven buiten Joure?"
     answer: "Ja. We zitten in Joure en bouwen websites voor ondernemers in heel Friesland, van Leeuwarden tot Sneek, Drachten en Heerenveen. Dichtbij als je dat wilt, met een persoonlijk aanspreekpunt."
   - question: "Met welk systeem bouwen jullie?"
-    answer: "We bouwen op Astro, een moderne en razendsnelle basis die uitstekend scoort op snelheid en SEO. Geen trage, zware WordPress-stack, maar schone code die goed gevonden wordt en makkelijk meegroeit."
+    answer: "We bouwen op een moderne en razendsnelle techniek die uitstekend scoort op snelheid en vindbaarheid. Geen trage, zware standaardoplossing, maar schone techniek die goed gevonden wordt en makkelijk meegroeit."
   - question: "Is een snelle website echt belangrijk voor vindbaarheid?"
     answer: "Ja. Snelheid is een directe rankingfactor in Google en bepaalt of bezoekers blijven of wegklikken. Daarom bouwen we elke site snel vanaf de eerste regel code, in plaats van het achteraf te proberen repareren."
 ---
@@ -22,7 +22,7 @@ Een mooie website die niemand vindt of die traag laadt, levert niets op. Wij bou
 
 ## Snel, modern en vindbaar
 
-We bouwen op Astro, een moderne basis die razendsnel laadt en uitstekend scoort op Core Web Vitals en SEO. Die techniek is geen detail, het bepaalt mee hoe je in Google staat. Bij ons zit goede vindbaarheid standaard onder elke site.
+We bouwen op een moderne techniek die razendsnel laadt en uitstekend scoort op snelheid en vindbaarheid. Snelheid is geen detail, het bepaalt mee hoe je in Google staat. Bij ons zit goede vindbaarheid standaard onder elke site.
 
 Wil je meer weten over hoe we websites bouwen en migreren, lees dan onze pagina over [website laten maken](/diensten/website-laten-maken/).
 
