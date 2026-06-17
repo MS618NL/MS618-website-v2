@@ -8,7 +8,7 @@ navLabel: "Marketingbureau Joure"
 updatedDate: 2026-06-17
 faq:
   - question: "Waar in Joure zit MS618?"
-    answer: "Ons kantoor staat aan de Slachtedyk 4a in Joure, aan de haven. Je bent welkom voor een kop koffie en een gesprek over je groei. We werken voor ondernemers in Joure en de directe omgeving, van Sint Nicolaasga en Lemmer tot Heerenveen en Sneek."
+    answer: "Ons kantoor staat aan de Slachtedyk 24a in Joure, aan de haven. Je bent welkom voor een kop koffie en een gesprek over je groei. We werken voor ondernemers in Joure en de directe omgeving, van Sint Nicolaasga en Lemmer tot Heerenveen en Sneek."
   - question: "Wat doet een online marketingbureau in Joure?"
     answer: "Wij zorgen dat je gevonden wordt door de juiste klanten en dat die ook contact opnemen. Dat doen we met SEO, AI-vindbaarheid, advertenties en je website, als één systeem. Lokaal als je dat wilt, met dezelfde aanpak die we voor landelijke B2B-klanten inzetten."
   - question: "Werken jullie alleen voor bedrijven uit Joure?"

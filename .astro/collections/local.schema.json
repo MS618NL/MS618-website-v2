@@ -1,7 +1,7 @@
 {
-  "$ref": "#/definitions/services",
+  "$ref": "#/definitions/local",
   "definitions": {
-    "services": {
+    "local": {
       "type": "object",
       "properties": {
         "title": {
@@ -25,13 +25,12 @@
           "type": "number",
           "default": 99
         },
-        "icon": {
+        "region": {
           "type": "string",
-          "default": "→"
+          "default": "Friesland"
         },
-        "category": {
-          "type": "string",
-          "default": "service"
+        "navLabel": {
+          "type": "string"
         },
         "faq": {
           "type": "array",

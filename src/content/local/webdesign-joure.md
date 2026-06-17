@@ -7,7 +7,7 @@ region: "Joure"
 updatedDate: 2026-06-17
 faq:
   - question: "Zit MS618 echt in Joure?"
-    answer: "Ja, ons kantoor staat aan de Slachtedyk 4a in Joure, aan de haven. Je kunt langskomen om je website te bespreken. We bouwen voor ondernemers in Joure en de omgeving, van Sint Nicolaasga en Lemmer tot Heerenveen."
+    answer: "Ja, ons kantoor staat aan de Slachtedyk 24a in Joure, aan de haven. Je kunt langskomen om je website te bespreken. We bouwen voor ondernemers in Joure en de omgeving, van Sint Nicolaasga en Lemmer tot Heerenveen."
   - question: "Wat kost een website laten maken in Joure?"
     answer: "Dat hangt af van de omvang en of we nieuw bouwen of een bestaande site migreren. We werken met een heldere eenmalige bouwprijs plus een vast bedrag per maand voor hosting en onderhoud. In een gesprek bepalen we de scope en krijg je een concrete prijs."
   - question: "Met welk systeem bouwen jullie websites?"
