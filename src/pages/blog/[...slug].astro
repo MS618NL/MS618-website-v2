@@ -17,9 +17,11 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
-// Only emit an en hreflang when an English translation of this post actually exists
+// Only emit an en hreflang when an English translation of this post actually exists.
+// When it doesn't, point the language toggle at the EN blog index instead of a 404.
 const enPosts = await getCollection('blog-en');
 const hasEnAlternate = enPosts.some((p) => p.id === post.id);
+const altPath = hasEnAlternate ? undefined : '/en/blog/';
 
 const allPosts = await getCollection('blog');
 const relatedPosts = allPosts
@@ -49,6 +51,7 @@ const breadcrumbs = [
   author={post.data.author}
   breadcrumbs={breadcrumbs}
   enAlternate={hasEnAlternate}
+  altPath={altPath}
 >
   <article class="blog-post">
     <div class="container">

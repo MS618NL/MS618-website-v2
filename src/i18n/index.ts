@@ -18,6 +18,7 @@ export function useTranslations(lang: Lang) {
 /** Paths that differ between NL and EN (NL path → EN path) */
 const pathMap: Record<string, string> = {
   '/voorwaarden/': '/en/terms/',
+  '/contact/bedankt/': '/en/contact/thank-you/',
 };
 const reversePathMap: Record<string, string> = Object.fromEntries(
   Object.entries(pathMap).map(([nl, en]) => [en, nl]),
