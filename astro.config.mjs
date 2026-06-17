@@ -51,6 +51,30 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
+  // Content-Security-Policy via per-page <meta>. Astro auto-hashes its own inline
+  // scripts/styles (incl. the GTM bootstrap, which is no longer is:inline). 'strict-dynamic'
+  // lets the trusted GTM bootstrap load gtm.js and any tags it injects, so script-src needs
+  // no 'unsafe-inline'. NOTE: the static CSP header in vercel.json is removed to avoid
+  // double enforcement. Verify GTM/GA4 still fire in Vercel Preview (GTM Preview mode).
+  experimental: {
+    csp: {
+      algorithm: 'SHA-256',
+      directives: [
+        "default-src 'self'",
+        "img-src 'self' data: https://*.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com",
+        "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://formspree.io",
+        "frame-src https://*.googletagmanager.com",
+        "font-src 'self'",
+      ],
+      scriptDirective: {
+        resources: ["'self'", 'https://*.googletagmanager.com', 'https://*.google-analytics.com'],
+        strictDynamic: true,
+      },
+      styleDirective: {
+        resources: ["'self'", "'unsafe-inline'"],
+      },
+    },
+  },
   integrations: [
     sitemap({
       filter: (page) =>
