@@ -67,7 +67,7 @@ const localPages = lang === 'en'
         <span class="footer-regio-label">Regio</span>
         <nav class="footer-regio-links" aria-label="Regio">
           {localPages.map((page) => (
-            <a href={`/${page.id}/`}>{page.data.title}</a>
+            <a href={`/${page.id}/`}>{page.data.navLabel ?? page.data.title}</a>
           ))}
         </nav>
       </div>
@@ -170,28 +170,28 @@ const localPages = lang === 'en'
 
   .footer-regio {
     border-top: 1px solid oklch(0.15 0 0);
-    padding: 1rem 0;
+    padding: 0.875rem 0;
   }
 
   .footer-regio .container {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 0.5rem 1rem;
+    gap: 0.5rem 0.875rem;
   }
 
   .footer-regio-label {
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     font-weight: 600;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: oklch(0.55 0 0);
+    color: oklch(0.45 0 0);
   }
 
   .footer-regio-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem 1rem;
+    align-items: center;
   }
 
   .footer-regio-links a {
@@ -199,10 +199,17 @@ const localPages = lang === 'en'
     color: oklch(0.6 0 0);
     text-decoration: none;
     transition: color 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .footer-regio-links a:not(:last-child)::after {
+    content: '·';
+    margin: 0 0.75rem;
+    color: oklch(0.3 0 0);
   }
 
   .footer-regio-links a:hover {
-    color: oklch(0.9 0 0);
+    color: oklch(0.92 0 0);
   }
 
   .footer-bottom {

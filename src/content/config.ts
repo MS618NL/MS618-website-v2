@@ -112,6 +112,7 @@ const local = defineCollection({
     noindex: z.boolean().default(false),
     order: z.number().default(99),
     region: z.string().default('Friesland'),
+    navLabel: z.string().optional(),
     faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
     updatedDate: z.coerce.date().optional(),
   }),

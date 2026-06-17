@@ -4,6 +4,7 @@ seoTitle: "Online marketing Joure: marketingbureau voor MKB | MS618"
 description: "Online marketingbureau in Joure. Wij helpen ondernemers in Joure en omgeving groeien met SEO, AI, advertenties en websites. Lokaal en resultaatgericht."
 order: 4
 region: "Joure"
+navLabel: "Marketingbureau Joure"
 updatedDate: 2026-06-17
 faq:
   - question: "Waar in Joure zit MS618?"
