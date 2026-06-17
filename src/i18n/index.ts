@@ -23,9 +23,28 @@ const reversePathMap: Record<string, string> = Object.fromEntries(
   Object.entries(pathMap).map(([nl, en]) => [en, nl]),
 );
 
+/**
+ * Slug segments that differ between NL and EN within a shared section.
+ * NL `/diensten/...` maps to EN `/en/services/...` (not `/en/diensten/...`).
+ */
+function translateSection(path: string, targetLang: Lang): string {
+  if (targetLang === 'en') {
+    if (path === '/diensten/' || path === '/diensten') return '/en/services/';
+    if (path.startsWith('/diensten/')) return `/en/services/${path.slice('/diensten/'.length)}`;
+  } else {
+    if (path === '/en/services/' || path === '/en/services') return '/diensten/';
+    if (path.startsWith('/en/services/')) return `/diensten/${path.slice('/en/services/'.length)}`;
+  }
+  return '';
+}
+
 /** Given the current path, return the equivalent path in the other language */
 export function getAlternatePath(url: URL, targetLang: Lang): string {
   const path = url.pathname;
+
+  // Section slug differences (e.g. diensten <-> services) take precedence
+  const sectionMapped = translateSection(path, targetLang);
+  if (sectionMapped) return sectionMapped;
 
   if (targetLang === 'en') {
     // Check for known path mappings first

@@ -18,12 +18,24 @@ export function buildSchemaGraph(pieces: SchemaGraphPiece[]) {
   };
 }
 
+const org = site.organization;
+
+function buildPostalAddress() {
+  return {
+    '@type': 'PostalAddress',
+    ...(org.address.streetAddress && { streetAddress: org.address.streetAddress }),
+    ...(org.address.postalCode && { postalCode: org.address.postalCode }),
+    addressLocality: org.address.addressLocality,
+    addressCountry: org.address.addressCountry,
+  };
+}
+
 export function buildOrganizationPiece(): SchemaGraphPiece {
   return {
     '@type': 'Organization',
     '@id': `${site.url}/#organization`,
-    name: site.organization.name,
-    legalName: site.organization.legalName,
+    name: org.name,
+    legalName: org.legalName,
     url: site.url,
     logo: {
       '@type': 'ImageObject',
@@ -31,18 +43,27 @@ export function buildOrganizationPiece(): SchemaGraphPiece {
       url: `${site.url}${site.logo}`,
       caption: site.name,
     },
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: site.organization.address.addressLocality,
-      addressCountry: site.organization.address.addressCountry,
-    },
+    address: buildPostalAddress(),
+    ...(org.phone && { telephone: org.phone }),
+    ...(org.vatID && { vatID: org.vatID }),
+    ...(org.kvk && {
+      identifier: {
+        '@type': 'PropertyValue',
+        propertyID: 'KvK',
+        value: org.kvk,
+      },
+    }),
     contactPoint: {
       '@type': 'ContactPoint',
-      email: site.organization.email,
+      email: org.email,
+      ...(org.phone && { telephone: org.phone }),
       contactType: 'customer service',
       areaServed: 'NL',
       availableLanguage: ['Dutch', 'English'],
     },
+    founder: site.team
+      .filter((m) => m.slug === 'jorrit-miedema' || m.slug === 'jurjan-groothuis')
+      .map((m) => ({ '@id': `${site.url}/about/#${m.slug}` })),
     sameAs: [site.social.linkedin].filter(Boolean),
   };
 }
@@ -98,6 +119,28 @@ export function buildBreadcrumbPiece(
   };
 }
 
+/**
+ * Resolve an author name to a proper Person author node.
+ * If the name matches a team member, reference that Person entity (@id on /about);
+ * otherwise emit a standalone Person linked to the organisation.
+ */
+function resolveAuthor(author: string) {
+  const member = site.team.find((m) => m.name === author);
+  if (member) {
+    return {
+      '@type': 'Person',
+      '@id': `${site.url}/about/#${member.slug}`,
+      name: member.name,
+      url: `${site.url}/about/`,
+    };
+  }
+  return {
+    '@type': 'Person',
+    name: author,
+    worksFor: { '@id': `${site.url}/#organization` },
+  };
+}
+
 export function buildArticlePiece(
   pageUrl: string,
   title: string,
@@ -115,11 +158,7 @@ export function buildArticlePiece(
     url: pageUrl,
     datePublished,
     dateModified,
-    author: {
-      '@type': 'Organization',
-      '@id': `${site.url}/#organization`,
-      name: author,
-    },
+    author: resolveAuthor(author),
     publisher: { '@id': `${site.url}/#organization` },
     mainEntityOfPage: { '@id': `${pageUrl}#webpage` },
     isPartOf: { '@id': `${site.url}/#website` },
@@ -130,6 +169,58 @@ export function buildArticlePiece(
         url: image.startsWith('http') ? image : `${site.url}${image}`,
       },
     }),
+  };
+}
+
+export interface TeamMember {
+  slug: string;
+  name: string;
+  jobTitle: string;
+  education?: string;
+  linkedin?: string;
+  knowsAbout?: string[];
+}
+
+/** Person node for a team member (used on /about). @id resolves to /about/#slug. */
+export function buildPersonPiece(member: TeamMember): SchemaGraphPiece {
+  return {
+    '@type': 'Person',
+    '@id': `${site.url}/about/#${member.slug}`,
+    name: member.name,
+    jobTitle: member.jobTitle,
+    ...(member.education && { alumniOf: member.education }),
+    ...(member.knowsAbout && { knowsAbout: member.knowsAbout }),
+    worksFor: { '@id': `${site.url}/#organization` },
+    ...(member.linkedin && { sameAs: [member.linkedin] }),
+  };
+}
+
+/** All team Person nodes, for the /about page graph. */
+export function buildTeamPieces(): SchemaGraphPiece[] {
+  return site.team.map((m) => buildPersonPiece(m as TeamMember));
+}
+
+/** LocalBusiness node for the contact page (physical office in Joure). */
+export function buildLocalBusinessPiece(): SchemaGraphPiece {
+  return {
+    '@type': 'ProfessionalService',
+    '@id': `${site.url}/#localbusiness`,
+    name: org.legalName,
+    image: `${site.url}${site.logo}`,
+    url: site.url,
+    ...(org.phone && { telephone: org.phone }),
+    email: org.email,
+    address: buildPostalAddress(),
+    ...(org.geo && {
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: org.geo.latitude,
+        longitude: org.geo.longitude,
+      },
+    }),
+    areaServed: { '@type': 'Country', name: 'Netherlands' },
+    parentOrganization: { '@id': `${site.url}/#organization` },
+    sameAs: [site.social.linkedin].filter(Boolean),
   };
 }
 

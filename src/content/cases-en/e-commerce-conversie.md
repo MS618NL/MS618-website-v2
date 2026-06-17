@@ -1,13 +1,15 @@
 ---
-title: "Conversion rate from 1.2% to 3.8% for e-commerce retailer"
-seoTitle: "Case: E-commerce CRO — Conversion Rate Tripled | MS618"
-description: "From 1.2% to 3.8% conversion rate — a threefold increase. How systematic CRO and UX improvements drove more revenue from the same traffic."
+title: "More revenue from existing traffic through systematic CRO"
+seoTitle: "Example case: E-commerce CRO & conversion optimisation | MS618"
+description: "How systematic CRO and UX improvements drive more revenue from the same traffic, without extra ad spend. Illustrative example case."
 publishDate: 2026-01-10
-client: "E-commerce Retailer (anonymised)"
+client: "Example case"
 service: "Website Optimisation"
-result: "Conversion rate from 1.2% to 3.8% (+217%)"
+result: "Higher conversion from existing traffic"
 category: "case-study"
 ---
+
+> **Example case.** An illustrative scenario based on real project patterns, not a specific client. Named client cases will follow.
 
 ## The challenge
 

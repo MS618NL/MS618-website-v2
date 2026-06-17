@@ -59,10 +59,10 @@ Links remain one of the strongest ranking signals. But irrelevant links don't mo
 
 ## What you can expect
 
-- Average 180% increase in organic traffic within 12 months
-- Top-3 rankings for commercially valuable search terms
-- A consistent pipeline of B2B leads through organic search
-- Growth that doesn't evaporate when you pause a budget
+- Structurally more organic traffic on search terms with real buying intent
+- Better rankings for commercially valuable search terms, not vanity keywords
+- A consistent pipeline of qualified B2B leads through organic search
+- Growth that doesn't evaporate when you pause an ad budget
 
 ## Who this is for
 

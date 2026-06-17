@@ -12,18 +12,65 @@
     "legalName": "MS618 B.V.",
     "address": {
       "streetAddress": "Slachtedyk 4a",
-      "postalCode": "",
+      "postalCode": "8501 XC",
       "addressLocality": "Joure",
       "addressCountry": "NL"
     },
+    "geo": {
+      "latitude": 52.9651,
+      "longitude": 5.8016
+    },
     "email": "info@ms618.nl",
-    "phone": "",
-    "kvk": ""
+    "phone": "+31633106702",
+    "kvk": "91896185",
+    "vatID": "NL865808545B01"
   },
   "social": {
     "linkedin": "https://linkedin.com/company/ms618",
     "twitter": ""
   },
+  "team": [
+    {
+      "slug": "jorrit-miedema",
+      "name": "Jorrit Miedema",
+      "jobTitle": "Strategie, SEO & AI",
+      "education": "BSc Information Technology",
+      "linkedin": "https://linkedin.com/in/jorrit-miedema",
+      "knowsAbout": ["SEO", "GEO", "AI Marketing", "Contentstrategie"]
+    },
+    {
+      "slug": "jurjan-groothuis",
+      "name": "Jurjan Groothuis",
+      "jobTitle": "Ads-expert",
+      "education": "MSc International Management",
+      "linkedin": "https://linkedin.com/in/jurjan-groothuis",
+      "knowsAbout": ["Google Ads", "Meta Ads", "Digital Advertising", "Performance Marketing"]
+    },
+    {
+      "slug": "peter-ydel",
+      "name": "Peter Ydel",
+      "jobTitle": "Lead designer",
+      "education": "BSc UX & Design",
+      "linkedin": "https://linkedin.com/in/peter-ydel",
+      "knowsAbout": ["UX Design", "Webdesign", "Conversie-optimalisatie"]
+    },
+    {
+      "slug": "ramin-schultz",
+      "name": "Ramin Schultz",
+      "jobTitle": "Growth hacker",
+      "education": "BSc Information Management",
+      "linkedin": "https://linkedin.com/in/ramin-schultz",
+      "knowsAbout": ["Growth Hacking", "Conversie-optimalisatie", "Experimentatie"]
+    },
+    {
+      "slug": "wouter-van-haaften",
+      "name": "Wouter van Haaften",
+      "jobTitle": "AI-strategie",
+      "education": "MSc Information Management",
+      "linkedin": "https://linkedin.com/in/wouter-van-haaften",
+      "knowsAbout": ["AI-strategie", "Automatisering", "Marketing Technology"]
+    }
+  ],
   "nav": [
     { "label": "Diensten", "href": "/diensten/" },
     { "label": "Cases", "href": "/cases/" },

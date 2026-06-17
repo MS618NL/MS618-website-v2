@@ -22,12 +22,17 @@ interface Props {
   seoTitle?: string;
   description: string;
   ogImage?: string;
+  ogType?: 'website' | 'article';
   noindex?: boolean;
   publishDate: Date;
   updatedDate?: Date;
   author?: string;
   breadcrumbs: BreadcrumbItem[];
   extraSchema?: object[];
+  /** Emit BlogPosting article schema. True for blog posts, false for service/static pages. */
+  includeArticleSchema?: boolean;
+  /** Whether an English alternate exists (suppresses en hreflang when false). */
+  enAlternate?: boolean;
 }
 
 const {
@@ -35,12 +40,15 @@ const {
   seoTitle,
   description,
   ogImage,
+  ogType = 'article',
   noindex = false,
   publishDate,
   updatedDate,
   author = 'MS618',
   breadcrumbs,
   extraSchema = [],
+  includeArticleSchema = true,
+  enAlternate = true,
 } = Astro.props;
 
 const pageUrl = canonicalUrl(Astro.url.pathname);
@@ -53,7 +61,9 @@ const schemaGraph = [
   buildWebsitePiece(lang),
   buildWebpagePiece(pageUrl, title, description, breadcrumbs, publishISO, modifiedISO),
   buildBreadcrumbPiece(pageUrl, breadcrumbs),
-  buildArticlePiece(pageUrl, title, description, author, publishISO, modifiedISO, ogImage),
+  ...(includeArticleSchema
+    ? [buildArticlePiece(pageUrl, title, description, author, publishISO, modifiedISO, ogImage)]
+    : []),
   ...extraSchema,
 ];
 ---
@@ -63,12 +73,13 @@ const schemaGraph = [
   seoTitle={seoTitle}
   description={description}
   ogImage={ogImage}
-  ogType="article"
+  ogType={ogType}
   noindex={noindex}
   publishDate={publishISO}
   updatedDate={modifiedISO}
   author={author}
   schemaGraph={schemaGraph}
+  enAlternate={enAlternate}
 >
   <Header />
   <main id="main-content">

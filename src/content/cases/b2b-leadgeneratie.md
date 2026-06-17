@@ -1,13 +1,15 @@
 ---
-title: "180% meer gekwalificeerde B2B-leads via LinkedIn en SEO"
-seoTitle: "Case: B2B Leadgeneratie — 180% Meer Leads via LinkedIn & SEO | MS618"
-description: "180% meer gekwalificeerde leads in 12 maanden. Hoe een technisch adviesbureau stopte met koude acquisitie en begon te groeien via SEO en LinkedIn."
+title: "Van koude acquisitie naar een voorspelbare stroom B2B-leads"
+seoTitle: "Voorbeeldcase: B2B-leadgeneratie via LinkedIn & SEO | MS618"
+description: "Hoe een B2B-dienstverlener met SEO en LinkedIn stopte met koude acquisitie en een voorspelbare leadstroom opbouwde. Illustratieve voorbeeldcase."
 publishDate: 2025-12-01
-client: "Technisch adviesbureau (anoniem)"
+client: "Voorbeeldcase"
 service: "Content Marketing & SEO"
-result: "+180% gekwalificeerde leads in 12 maanden"
+result: "Voorspelbare instroom gekwalificeerde leads"
 category: "case-study"
 ---
+
+> **Voorbeeldcase.** Illustratief scenario op basis van werkelijke projectpatronen, geen specifieke klant. Echte cases met klantnaam volgen.
 
 ## De uitdaging
 

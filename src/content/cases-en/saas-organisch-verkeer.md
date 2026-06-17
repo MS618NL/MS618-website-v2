@@ -1,13 +1,15 @@
 ---
-title: "From 8,000 to 42,000 organic visitors in 14 months"
-seoTitle: "Case: SaaS Scale-up — 425% Organic Growth in 14 Months | MS618"
-description: "From 8,000 to 42,000 organic visitors in 14 months. How a SaaS scale-up broke its dependency on paid traffic with an SEO strategy."
+title: "From paid-traffic dependency to structural organic growth"
+seoTitle: "Example case: SaaS organic growth via SEO strategy | MS618"
+description: "How a SaaS company used an SEO strategy to break its dependency on paid traffic and grow organically. Illustrative example case."
 publishDate: 2026-02-01
-client: "SaaS Scale-up (anonymised)"
+client: "Example case"
 service: "SEO Strategy"
-result: "+425% organic traffic in 14 months"
+result: "Structural growth in organic traffic"
 category: "case-study"
 ---
+
+> **Example case.** An illustrative scenario based on real project patterns, not a specific client. Named client cases will follow.
 
 ## The challenge
 

@@ -59,10 +59,10 @@ Links zijn nog altijd een van de sterkste rankingfactoren. Maar niet alle links 
 
 ## Resultaten die wij realiseren
 
-- Gemiddeld 180% stijging in organisch verkeer binnen 12 maanden
-- Top-3 posities voor commercieel waardevolle zoektermen
-- Structureel meer B2B-leads via organisch kanaal
-- Duurzame groei die blijft staan als je budget stopt
+- Structureel meer organisch verkeer op zoektermen met echte koopintentie
+- Betere posities voor commercieel waardevolle zoektermen, niet voor ijdele vanity-keywords
+- Structureel meer gekwalificeerde B2B-leads via het organische kanaal
+- Duurzame groei die blijft staan als je advertentiebudget stopt
 
 ## Voor wie
 

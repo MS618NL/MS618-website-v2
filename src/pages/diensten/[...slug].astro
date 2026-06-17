@@ -39,6 +39,8 @@ const extraSchema = [buildServicePiece(pageUrl, service.data.title, service.data
   seoTitle={service.data.seoTitle}
   description={service.data.description}
   ogImage={service.data.ogImage}
+  ogType="website"
+  includeArticleSchema={false}
   noindex={service.data.noindex}
   publishDate={service.data.updatedDate ?? new Date()}
   updatedDate={service.data.updatedDate}
@@ -84,7 +86,7 @@ const extraSchema = [buildServicePiece(pageUrl, service.data.title, service.data
 
     <CTA
       headline={`Klaar om te starten met ${service.data.title}?`}
-      body="Plan een vrijblijvend kennismakingsgesprek. Wij bespreken jouw situatie en vertellen eerlijk wat ${service.data.title} voor jou kan betekenen."
+      body={`Plan een vrijblijvend kennismakingsgesprek. Wij bespreken jouw situatie en vertellen eerlijk wat ${service.data.title} voor jou kan betekenen.`}
     />
   </article>
 </Post>
