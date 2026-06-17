@@ -1,11 +1,20 @@
 ---
 title: "Analytics & Reporting"
-seoTitle: "Marketing Analytics & Dashboards — Insight That Drives Action | MS618"
+seoTitle: "Marketing analytics & dashboards: insight that drives action | MS618"
 description: "Finally know what works. MS618 builds marketing analytics, attribution models and dashboards that give leadership direct grip on marketing performance."
-order: 5
+order: 6
 icon: "≡"
 category: "conversion"
-updatedDate: 2026-03-01
+updatedDate: 2026-06-17
+faq:
+  - question: "Which tools do you use for analytics?"
+    answer: "Among others GA4, Google Search Console, server-side tracking and dashboards in tools like Looker Studio. We choose the stack based on your situation, not the other way around."
+  - question: "What is attribution and why does it matter?"
+    answer: "Attribution shows which channels and steps actually contribute to a lead or deal. Without attribution you steer blind: you do not know which euro works. With good attribution you shift budget toward what delivers."
+  - question: "Do I get a dashboard I can read myself?"
+    answer: "Yes. We build dashboards that leadership and marketing understand at a glance: no data dump, but the numbers that matter, with context and a conclusion. Insight that drives action."
+  - question: "How often do you report?"
+    answer: "Monthly by default, with a clear conclusion and next steps. The dashboards are also live, so you can check in at any moment."
 ---
 
 ## More data doesn't mean better decisions

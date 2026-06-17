@@ -1,11 +1,20 @@
 ---
 title: "Content Marketing"
-seoTitle: "B2B Content Marketing — Authority That Closes Deals | MS618"
-description: "Content that doesn’t just get read — it sells. MS618 builds a content engine that delivers qualified leads, organic traffic and lasting authority."
-order: 2
-icon: "✦"
+seoTitle: "B2B content marketing: authority that closes deals | MS618"
+description: "Content that doesn’t just get read, it sells. MS618 builds a content engine that delivers qualified leads, organic traffic and lasting authority."
+order: 3
+icon: "❖"
 category: "visibility"
-updatedDate: 2026-03-01
+updatedDate: 2026-06-17
+faq:
+  - question: "What does content marketing deliver for a B2B company?"
+    answer: "Good B2B content attracts the right people at the right moment in their decision process, builds authority and delivers organic traffic and qualified leads. It compounds: content you publish today keeps generating leads for years."
+  - question: "Do you write the content yourselves?"
+    answer: "Yes. Our specialists write and optimize the content, with AI as an accelerator and not a replacement. You review and keep control of your own story."
+  - question: "How much content is needed to see results?"
+    answer: "Not as much as possible, but the right content. We work with a pillar-cluster model: a strong main page per topic, supported by focused articles that answer specific questions. Consistency matters more than volume."
+  - question: "How do you measure whether content works?"
+    answer: "We track organic traffic and positions on commercially valuable terms, and more importantly, whether the content delivers qualified leads. No vanity metrics, but contribution to the pipeline."
 ---
 
 ## Content that earns its place — not content for content's sake

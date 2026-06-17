@@ -1,11 +1,20 @@
 ---
 title: "SEO Strategie"
-seoTitle: "SEO Strategie voor B2B — Van Onzichtbaar naar de Top | MS618"
-description: "Geen trucjes, geen shortcuts. MS618 bouwt SEO-strategieën op termen die er écht toe doen — voor B2B-bedrijven die serieus willen groeien."
+seoTitle: "SEO-strategie voor B2B: van onzichtbaar naar de top | MS618"
+description: "Geen trucjes, geen shortcuts. MS618 bouwt SEO-strategieën op termen die er écht toe doen, voor B2B-bedrijven die serieus willen groeien."
 order: 1
 icon: "↗"
 category: "zichtbaarheid"
-updatedDate: 2026-03-01
+updatedDate: 2026-06-17
+faq:
+  - question: "Hoe lang duurt het voordat SEO resultaat geeft?"
+    answer: "SEO is een groeistrategie, geen knop. De eerste bewegingen in zichtbaarheid zie je doorgaans binnen enkele maanden, structureel resultaat bouwt op over 6 tot 12 maanden. Het voordeel: die groei blijft staan als je advertentiebudget stopt."
+  - question: "Wat is het verschil tussen SEO en GEO?"
+    answer: "SEO maakt je vindbaar in de zoekresultaten. GEO maakt je geciteerd in AI-antwoorden zoals ChatGPT en Google AI Overviews. Wij pakken beide in één traject aan, zie ook onze GEO-optimalisatie."
+  - question: "Doen jullie ook technische SEO en linkbuilding?"
+    answer: "Ja. Een SEO-traject bij MS618 omvat technische SEO (crawlbaarheid, Core Web Vitals, schema), contentarchitectuur en autoriteitsopbouw via kwalitatieve, thematisch relevante links. Geen losse trucjes, maar een samenhangend systeem."
+  - question: "Voor welke bedrijven werkt B2B-SEO het best?"
+    answer: "SEO loont het meest voor B2B-bedrijven met een complexe propositie en een langere salescyclus, die willen stoppen met volledige afhankelijkheid van betaalde advertenties."
 ---
 
 ## SEO als groeistrategie, niet als technische oefening

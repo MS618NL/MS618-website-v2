@@ -1,11 +1,20 @@
 ---
 title: "Website Optimalisatie"
-seoTitle: "Website Optimalisatie & CRO — Meer Leads uit Bestaand Verkeer | MS618"
+seoTitle: "Website-optimalisatie & CRO: meer leads uit bestaand verkeer | MS618"
 description: "Je website heeft al bezoekers. Waarom worden ze geen klant? MS618 optimaliseert UX, conversie en technische performance voor meetbaar resultaat."
-order: 4
+order: 5
 icon: "⬡"
 category: "conversie"
-updatedDate: 2026-03-01
+updatedDate: 2026-06-17
+faq:
+  - question: "Wat is CRO (conversie-optimalisatie)?"
+    answer: "CRO is het systematisch verbeteren van je website zodat meer bezoekers klant worden, zonder dat je meer verkeer nodig hebt. Denk aan UX, laadsnelheid, een heldere boodschap en het wegnemen van drempels in het beslisproces."
+  - question: "Moet ik mijn hele website opnieuw bouwen?"
+    answer: "Meestal niet. We halen eerst meer uit wat er al staat: UX, conversie en technische performance. Pas als de basis structureel tekortschiet, adviseren we een (deel)herbouw, en dan onderbouwd, niet als standaardantwoord."
+  - question: "Hoe weten jullie wat er beter kan?"
+    answer: "Met data, niet met onderbuik. We combineren analytics, het gedrag van bezoekers en technische metingen om te zien waar bezoekers afhaken, en testen verbeteringen voordat we ze als waarheid presenteren."
+  - question: "Wat levert website-optimalisatie op?"
+    answer: "Meer leads en omzet uit het verkeer dat je nu al hebt. Dat is vaak de snelste winst: je betaalt niets extra voor bezoekers, je haalt er alleen meer uit."
 ---
 
 ## Je website: je beste verkoper of je zwakste schakel
