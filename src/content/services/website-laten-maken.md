@@ -32,6 +32,10 @@ We bouwen op een moderne techniek die razendsnel laadt en uitstekend scoort op s
 - **Schaalbaar**: een basis die meegroeit, geen herbouw over twee jaar
 - **Onderhouden**: hosting, updates en doorontwikkeling, zodat je er geen omkijken naar hebt
 
+## Ontwerp door Peter Ydel
+
+Je website wordt vormgegeven door Peter Ydel, onze lead designer met ruim 15 jaar ervaring in merkidentiteit. Ook bekend van zijn studio Ydel Design, waar hij de huisstijl verzorgt van merken als Doppio Espresso, Barista Café en CHCO. Geen template, maar een ontwerp dat past bij jouw merk, van logo en huisstijl tot de complete site.
+
 ## Nieuw bouwen of bestaande verbeteren
 
 Heb je nog geen site of is je huidige site verouderd, dan bouwen we nieuw of migreren we je bestaande site. Heb je al een site die bezoekers trekt maar te weinig oplevert, kijk dan naar [website-optimalisatie](/diensten/website-optimalisatie/): meer halen uit wat er al staat.

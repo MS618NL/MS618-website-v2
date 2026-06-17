@@ -26,6 +26,10 @@ We bouwen op een moderne techniek die razendsnel laadt en uitstekend scoort op s
 
 Wil je meer weten over onze werkwijze, lees dan de pagina over [website laten maken](/diensten/website-laten-maken/).
 
+## Ontwerp door Peter Ydel
+
+Het ontwerp is in handen van Peter Ydel, onze lead designer met ruim 15 jaar ervaring in merkidentiteit, ook bekend van zijn studio Ydel Design in Joure (huisstijl voor onder andere Doppio Espresso, Barista Café en CHCO). Geen template, maar een ontwerp dat past bij jouw merk.
+
 ## Een webdesigner om de hoek
 
 Korte lijnen, een persoonlijk aanspreekpunt en kennis van de lokale markt. We werken in Joure en de directe omgeving: Sint Nicolaasga, Lemmer, Heerenveen, Sneek en omstreken. Zoek je breder in de provincie, kijk dan op [webdesign Friesland](/webdesign-friesland/).

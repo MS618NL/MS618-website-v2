@@ -26,6 +26,10 @@ We bouwen op een moderne techniek die razendsnel laadt en uitstekend scoort op s
 
 Wil je meer weten over hoe we websites bouwen en migreren, lees dan onze pagina over [website laten maken](/diensten/website-laten-maken/).
 
+## Ontwerp door Peter Ydel
+
+Het ontwerp is in handen van Peter Ydel, onze lead designer met ruim 15 jaar ervaring in merkidentiteit en ook bekend van zijn studio Ydel Design (huisstijl voor onder andere Doppio Espresso, Barista Café en CHCO). Geen template, maar een ontwerp dat past bij jouw merk, van logo en huisstijl tot de complete site.
+
 ## Dichtbij in Friesland
 
 Vanuit Joure werken we voor ondernemers in heel de provincie: Leeuwarden, Drachten, Sneek, Heerenveen, Lemmer, Bolsward en omstreken. Je krijgt een betrokken partner in de buurt, met de techniek en vindbaarheid van een landelijk bureau.

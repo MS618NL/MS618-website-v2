@@ -178,11 +178,13 @@ export interface TeamMember {
   jobTitle: string;
   education?: string;
   linkedin?: string;
+  website?: string;
   knowsAbout?: string[];
 }
 
 /** Person node for a team member (used on /about). @id resolves to /about/#slug. */
 export function buildPersonPiece(member: TeamMember): SchemaGraphPiece {
+  const sameAs = [member.linkedin, member.website].filter(Boolean);
   return {
     '@type': 'Person',
     '@id': `${site.url}/about/#${member.slug}`,
@@ -191,7 +193,7 @@ export function buildPersonPiece(member: TeamMember): SchemaGraphPiece {
     ...(member.education && { alumniOf: member.education }),
     ...(member.knowsAbout && { knowsAbout: member.knowsAbout }),
     worksFor: { '@id': `${site.url}/#organization` },
-    ...(member.linkedin && { sameAs: [member.linkedin] }),
+    ...(sameAs.length > 0 && { sameAs }),
   };
 }
 

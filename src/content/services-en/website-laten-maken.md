@@ -32,6 +32,10 @@ We build on a modern foundation that loads lightning-fast and scores excellently
 - **Scalable**: a foundation that grows, not a rebuild in two years
 - **Maintained**: hosting, updates and ongoing development, so you do not have to worry about it
 
+## Designed by Peter Ydel
+
+Your website is designed by Peter Ydel, our lead designer with more than 15 years in brand identity. He is also the founder of design studio Ydel Design, where he shapes the identity of brands such as Doppio Espresso, Barista Café and CHCO. Not a template, but a design built around your brand, from logo and identity to the complete site.
+
 ## Build new or improve what you have
 
 No site yet, or an outdated one? We build new or migrate your existing site. Already have a site that draws visitors but delivers too little? Then look at [website optimisation](/en/services/website-optimalisatie/): getting more out of what is already there.
