@@ -2,3 +2,9 @@ node_modules/
 dist/
 .env
 .DS_Store
+
+# build cache & local config (niet tracken)
+.astro/
+.dev-server.log
+.claude/
+.vscode/
