@@ -1,0 +1,50 @@
+
+> ms618-website@2.0.1 dev
+> astro dev
+
+[2m10:03:57[22m [34m[types][39m Generated [2m2ms[22m
+
+[43m[30m update [39m[49m [33m▶ New version of Astro available: 6.4.2[39m
+  Run [36mnpx @astrojs/upgrade[39m to update
+
+[2m10:04:00[22m [34m[content][39m Syncing content
+[2m10:04:00[22m [34m[content][39m Synced content
+[2m10:04:00[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+[2m10:04:00[22m [34m[vite][39m Port 4321 is in use, trying another one...
+[2m10:04:00[22m [34m[vite][39m Port 4322 is in use, trying another one...
+
+[42m[1m astro [22m[49m [32mv5.18.1[39m [2mready in[22m 6646 [2mms[22m
+
+[2m┃[22m Local    [36mhttp://localhost:4323/[39m
+[2m┃[22m Network  [2muse --host to expose[22m
+
+[2m10:04:00[22m [32mwatching for file changes...[39m
+[2m10:04:20[22m [34m[200][39m / [2m183ms[22m
+[2m10:06:11[22m [34m[watch][39m /src/styles/global.css
+[2m10:06:12[22m [34m[200][39m / [2m185ms[22m
+[2m10:06:21[22m [34m[watch][39m /src/styles/global.css
+[2m10:06:23[22m [34m[200][39m / [2m144ms[22m
+[2m10:06:36[22m [34m[watch][39m /src/styles/global.css
+[2m10:06:36[22m [34m[200][39m / [2m173ms[22m
+[2m10:06:47[22m [34m[watch][39m /src/styles/global.css
+[2m10:06:48[22m [34m[200][39m / [2m125ms[22m
+[2m10:09:38[22m [34m[watch][39m /src/pages/index.astro?astro&type=style&index=0&lang.css
+[2m10:09:38[22m [34m[watch][39m src/pages/index.astro
+[2m10:12:50[22m [34m[watch][39m /src/pages/index.astro?astro&type=style&index=0&lang.css
+[2m10:12:50[22m [34m[watch][39m src/pages/index.astro
+[2m10:29:09[22m [34m[watch][39m src/pages/index.astro
+[2m10:29:10[22m [34m[200][39m / [2m93ms[22m
+[2m10:29:22[22m [34m[200][39m /cases/ [2m31ms[22m
+[2m10:29:23[22m [34m[200][39m /blog/ [2m18ms[22m
+[2m10:29:24[22m [34m[200][39m /about/ [2m15ms[22m
+[2m10:29:25[22m [34m[200][39m /contact/ [2m15ms[22m
+[2m10:29:25[22m [34m[200][39m / [2m9ms[22m
+[2m10:36:30[22m [34m[200][39m / [2m160ms[22m
+[2m14:19:53[22m [34m[200][39m /contact/ [2m97ms[22m
+[2m14:19:58[22m [34m[200][39m / [2m67ms[22m
+[2m14:20:02[22m [33m[404][39m /sitemap-index.xml [2m28ms[22m
+[2m14:20:05[22m [34m[200][39m / [2m16ms[22m
+[2m14:20:08[22m [34m[200][39m /rss.xml [2m34ms[22m
+[2m14:20:12[22m [34m[200][39m /voorwaarden/ [2m23ms[22m
+[2m14:20:17[22m [34m[200][39m /privacy/ [2m13ms[22m
+[2m14:20:41[22m [34m[200][39m /diensten/ [2m33ms[22m

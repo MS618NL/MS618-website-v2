@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(start \"\" \"http://localhost:4321/#figmacapture=7cbaff27-7bcf-4ff2-aa34-06980a33f4a8&figmaendpoint=https%3A%2F%2Fmcp.figma.com%2Fmcp%2Fcapture%2F7cbaff27-7bcf-4ff2-aa34-06980a33f4a8%2Fsubmit&figmadelay=3000\")",
+      "Bash(netstat -ano)",
+      "Bash(curl -s http://localhost:4321/)",
+      "Bash(npx astro dev --port 4322)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4322/)",
+      "Bash(start \"\" \"http://localhost:4322/\")",
+      "Bash(curl -s http://localhost:4322/)",
+      "Bash(start \"\" \"http://localhost:4327/\")",
+      "Bash(curl -s http://localhost:4325/)",
+      "Bash(start \"\" \"http://localhost:4325/#figmacapture=5695d16e-5eb0-4a46-883a-1e32da2485b5&figmaendpoint=https%3A%2F%2Fmcp.figma.com%2Fmcp%2Fcapture%2F5695d16e-5eb0-4a46-883a-1e32da2485b5%2Fsubmit&figmadelay=3000\")",
+      "Bash(start \"\" \"http://localhost:4325/services/#figmacapture=0535ca3e-f5bc-41b4-b2b5-4221fd3a7a80&figmaendpoint=https%3A%2F%2Fmcp.figma.com%2Fmcp%2Fcapture%2F0535ca3e-f5bc-41b4-b2b5-4221fd3a7a80%2Fsubmit&figmadelay=3000\")",
+      "Bash(start \"\" \"http://localhost:4325/cases/#figmacapture=92a174cb-2222-4c72-bf62-4b001ab642e8&figmaendpoint=https%3A%2F%2Fmcp.figma.com%2Fmcp%2Fcapture%2F92a174cb-2222-4c72-bf62-4b001ab642e8%2Fsubmit&figmadelay=3000\")",
+      "Bash(start \"\" \"http://localhost:4325/blog/#figmacapture=73727eed-57d4-422b-a5ef-7d129531d2c0&figmaendpoint=https%3A%2F%2Fmcp.figma.com%2Fmcp%2Fcapture%2F73727eed-57d4-422b-a5ef-7d129531d2c0%2Fsubmit&figmadelay=3000\")",
+      "Bash(start \"\" \"http://localhost:4325/about/#figmacapture=624672df-a9a1-4739-8ffb-186fc0f23eb0&figmaendpoint=https%3A%2F%2Fmcp.figma.com%2Fmcp%2Fcapture%2F624672df-a9a1-4739-8ffb-186fc0f23eb0%2Fsubmit&figmadelay=3000\")",
+      "Bash(start \"\" \"http://localhost:4325/contact/#figmacapture=39bc712c-6424-457b-a68c-5e844ead8f57&figmaendpoint=https%3A%2F%2Fmcp.figma.com%2Fmcp%2Fcapture%2F39bc712c-6424-457b-a68c-5e844ead8f57%2Fsubmit&figmadelay=3000\")",
+      "Bash(curl -s http://localhost:4325/services/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4325/cases/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4325/blog/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4325/about/)",
+      "Bash(xargs grep -l \"<img\")",
+      "Bash(ls -la /c/Users/jnjro/MS618/MS618/website-live-v2/dist/sitemap*.xml)",
+      "Bash(xargs grep -l \"googleapis\\\\|google-fonts\\\\|Google Fonts\")",
+      "Bash(/tmp/check_seo.txt:*)",
+      "Read(//tmp/**)",
+      "WebFetch(domain:status.anthropic.com)",
+      "WebFetch(domain:status.claude.com)",
+      "Bash(xargs grep -l \"gemini\\\\|grok\\\\|perplexity\\\\|deepseek\\\\|midjourney\")",
+      "Bash(git add src/pages/index.astro src/pages/en/index.astro .astro/data-store.json)",
+      "Bash(git commit:*)",
+      "Bash(git push origin main)",
+      "Bash(xargs grep:*)",
+      "Bash(git add:*)",
+      "Bash(git reset:*)"
+    ]
+  }
+}
