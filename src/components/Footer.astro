@@ -1,12 +1,18 @@
 ---
 import site from '@/data/site.json';
 import { getLangFromUrl, useTranslations } from '@/i18n';
+import { getCollection } from 'astro:content';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const p = lang === 'en' ? '/en' : '';
 const svc = lang === 'en' ? '/en/services' : '/diensten';
 const homeHref = lang === 'en' ? '/en/' : '/';
+
+// Local landing pages are NL-only; auto-listed in the sub-footer so new ones appear automatically.
+const localPages = lang === 'en'
+  ? []
+  : (await getCollection('local')).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <footer class="site-footer">
@@ -41,12 +47,6 @@ const homeHref = lang === 'en' ? '/en/' : '/';
         <li><a href={`${p}/about/`}>{t('nav.about')}</a></li>
         <li><a href={`${p}/blog/`}>{lang === 'en' ? 'News' : 'Nieuws'}</a></li>
         <li><a href={`${p}/contact/`}>{t('nav.contact')}</a></li>
-        {lang !== 'en' && (
-          <>
-            <li><a href="/marketingbureau-friesland/">Marketingbureau Friesland</a></li>
-            <li><a href="/marketingbureau-joure/">Marketingbureau Joure</a></li>
-          </>
-        )}
       </ul>
     </div>
 
@@ -60,6 +60,19 @@ const homeHref = lang === 'en' ? '/en/' : '/';
       </ul>
     </div>
   </div>
+
+  {localPages.length > 0 && (
+    <div class="footer-regio">
+      <div class="container">
+        <span class="footer-regio-label">Regio</span>
+        <nav class="footer-regio-links" aria-label="Regio">
+          {localPages.map((page) => (
+            <a href={`/${page.id}/`}>{page.data.title}</a>
+          ))}
+        </nav>
+      </div>
+    </div>
+  )}
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
@@ -153,6 +166,43 @@ const homeHref = lang === 'en' ? '/en/' : '/';
 
   .footer-col a:hover {
     color: oklch(0.98 0 0);
+  }
+
+  .footer-regio {
+    border-top: 1px solid oklch(0.15 0 0);
+    padding: 1rem 0;
+  }
+
+  .footer-regio .container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+
+  .footer-regio-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: oklch(0.55 0 0);
+  }
+
+  .footer-regio-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+  }
+
+  .footer-regio-links a {
+    font-size: 0.8125rem;
+    color: oklch(0.6 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .footer-regio-links a:hover {
+    color: oklch(0.9 0 0);
   }
 
   .footer-bottom {
