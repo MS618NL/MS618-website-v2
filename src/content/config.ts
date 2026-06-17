@@ -46,6 +46,7 @@ const services = defineCollection({
     order: z.number().default(99),
     icon: z.string().default('→'),
     category: z.string().default('service'),
+    faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
     updatedDate: z.coerce.date().optional(),
   }),
 });
@@ -61,6 +62,7 @@ const servicesEn = defineCollection({
     order: z.number().default(99),
     icon: z.string().default('→'),
     category: z.string().default('service'),
+    faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
     updatedDate: z.coerce.date().optional(),
   }),
 });

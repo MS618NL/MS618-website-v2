@@ -243,6 +243,24 @@ export function buildServicePiece(
   };
 }
 
+export function buildFaqPiece(
+  pageUrl: string,
+  faqs: { question: string; answer: string }[],
+): SchemaGraphPiece {
+  return {
+    '@type': 'FAQPage',
+    '@id': `${pageUrl}#faq`,
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.answer,
+      },
+    })),
+  };
+}
+
 export function buildContactPiece(): SchemaGraphPiece {
   return {
     '@type': 'ContactPage',
