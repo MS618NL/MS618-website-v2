@@ -41,6 +41,13 @@ const homeHref = lang === 'en' ? '/en/' : '/';
         <li><a href={`${p}/about/`}>{t('nav.about')}</a></li>
         <li><a href={`${p}/blog/`}>{lang === 'en' ? 'News' : 'Nieuws'}</a></li>
         <li><a href={`${p}/contact/`}>{t('nav.contact')}</a></li>
+        {lang !== 'en' && (
+          <>
+            <li><a href="/marketingbureau-friesland/">Marketingbureau Friesland</a></li>
+            <li><a href="/webdesign-friesland/">Webdesign Friesland</a></li>
+            <li><a href="/seo-friesland/">SEO Friesland</a></li>
+          </>
+        )}
       </ul>
     </div>
 

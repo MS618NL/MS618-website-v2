@@ -29,6 +29,8 @@ interface Props {
   extraSchema?: object[];
   /** Override for the language-toggle target (when no translation of this page exists). */
   altPath?: string;
+  /** Whether an English alternate exists (suppresses en hreflang when false). */
+  enAlternate?: boolean;
 }
 
 const {
@@ -42,6 +44,7 @@ const {
   breadcrumbs = [],
   extraSchema = [],
   altPath,
+  enAlternate = true,
 } = Astro.props;
 
 const pageUrl = canonicalUrl(Astro.url.pathname);
@@ -69,6 +72,7 @@ const schemaGraph = [
   ogType={ogType}
   noindex={noindex}
   rss={rss}
+  enAlternate={enAlternate}
   schemaGraph={schemaGraph}
 >
   <Header altPath={altPath} />
