@@ -14,7 +14,8 @@
     { "source": "/en/voorwaarden", "destination": "/en/terms/", "permanent": true },
     { "source": "/services", "destination": "/diensten/", "permanent": true },
     { "source": "/services/(.*)", "destination": "/diensten/$1", "permanent": true },
-    { "source": "/about", "destination": "/over-ons/", "permanent": true }
+    { "source": "/about", "destination": "/over-ons/", "permanent": true },
+    { "source": "/about/(.*)", "destination": "/over-ons/$1", "permanent": true }
   ],
   "headers": [
     {
