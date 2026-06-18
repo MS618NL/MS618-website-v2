@@ -1,0 +1,910 @@
+---
+import Page from '@/layouts/Page.astro';
+import CTA from '@/components/CTA.astro';
+import site from '@/data/site.json';
+import { buildArticlePiece, buildFaqPiece } from '@/utils/schema';
+import { canonicalUrl } from '@/utils/seo';
+
+const pageUrl = canonicalUrl('/en/fibonacci/');
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url + '/en/' },
+  { name: 'Fibonacci' },
+];
+
+const faqs = [
+  {
+    question: 'What is the Fibonacci sequence?',
+    answer:
+      'The Fibonacci sequence is a row of numbers where each number is the sum of the two before it: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, and so on. It became known in Europe around 1202 through the mathematician Leonardo of Pisa, nicknamed Fibonacci.',
+  },
+  {
+    question: 'What is the golden ratio?',
+    answer:
+      'The golden ratio is the proportion 1 to 1.618 (the number phi). Two parts are in golden proportion when the larger part relates to the whole as the smaller part relates to the larger. The ratio is often experienced as especially balanced and appears throughout nature.',
+  },
+  {
+    question: 'How are Fibonacci and the golden ratio connected?',
+    answer:
+      'If you divide each number in the Fibonacci sequence by the one before it, the result creeps ever closer to 1.618, the golden ratio. The further you go, the more precisely it is approached.',
+  },
+  {
+    question: 'Where does the name MS618 come from?',
+    answer:
+      'MS618 brings together two stories. The MS is the set of initials behind the agency: Miedema Strategy, and at the same time Marketing Strategy, with a nod to MediaSoep, the company that founder Jorrit Miedema built and sold earlier. The 618 comes from 0.618, the golden ratio (1 divided by 1.618). Together they capture how we see growth: the right proportion, not doing more but exactly the right thing.',
+  },
+  {
+    question: 'Is the golden ratio really everywhere in art and architecture?',
+    answer:
+      'In nature the link is well supported, for example in the arrangement of seeds and leaves. But many famous claims about art and architecture, such as the Parthenon or the Mona Lisa, were only invented in the nineteenth century and do not hold up mathematically. The maths is real, part of the myth is not.',
+  },
+];
+
+const extraSchema = [
+  buildArticlePiece(
+    pageUrl,
+    'Fibonacci and the golden ratio: the code of nature',
+    'The story of .618: the Fibonacci sequence, the golden ratio and why that proportion shows up everywhere in nature. A longread by MS618.',
+    'Jorrit Miedema',
+    '2026-06-18',
+    '2026-06-18',
+    `${site.url}/images/fibonacci/galaxy.jpg`,
+  ),
+  buildFaqPiece(pageUrl, faqs),
+];
+---
+
+<Page
+  title="Fibonacci and the golden ratio"
+  seoTitle="Fibonacci and the golden ratio: the code of nature | MS618"
+  description="The story of .618: the Fibonacci sequence, the golden ratio and why that proportion shows up everywhere in nature. A nerdy longread, with video and plenty of imagery."
+  ogType="article"
+  ogImage="/images/fibonacci/galaxy.jpg"
+  breadcrumbs={breadcrumbs}
+  extraSchema={extraSchema}
+>
+  <article class="fib">
+    <div class="container">
+
+      <!-- Hero -->
+      <header class="fib-hero">
+        <div class="fib-kicker">.618</div>
+        <h1>The code of nature</h1>
+        <p class="fib-lead">
+          Our agency is named after a number. Behind that number sits one of the most
+          beautiful stories in mathematics: a sequence you start seeing everywhere once
+          you know where to look. This is an ode to Fibonacci, to the golden ratio, and
+          to the idea that beauty and function can be the same thing.
+        </p>
+      </header>
+
+      <!-- Intro -->
+      <section class="fib-intro">
+        <p>
+          Start with two. Two rabbits, two numbers, two simple rules. What follows
+          describes the spirals in a sunflower, the shell of a nautilus and the arms of
+          a galaxy millions of light years across.
+        </p>
+        <p>
+          It links a counting puzzle from the thirteenth century to the way a pinecone
+          grows. And it ends at a single number: <span class="golden">0.618</span>. That
+          is where MS618 comes from.
+        </p>
+      </section>
+
+      <!-- The man -->
+      <section class="fib-section">
+        <div class="fib-text">
+          <div class="fib-label">Pisa, around 1202</div>
+          <h2>A merchant's son teaches Europe to count</h2>
+          <p>
+            Leonardo of Pisa grew up among the traders of the Mediterranean. On his
+            travels through North Africa he learned the Hindu-Arabic numeral system: the
+            digits 0 to 9 we still use today. Back in Italy he wrote Liber Abaci, the book
+            that brought those numerals to the West and slowly pushed out the clumsy Roman
+            numerals.
+          </p>
+          <p>
+            Only centuries later did he earn the nickname Fibonacci, a contraction of
+            filius Bonacci, son of Bonacci.
+          </p>
+          <p>
+            That same book held an innocent looking puzzle about a pair of rabbits
+            breeding every month. How many pairs after a year? The answer was a sequence
+            that Indian mathematicians like Pingala and Hemachandra had described centuries
+            earlier, but which has carried the name of Fibonacci ever since.
+          </p>
+        </div>
+        <div class="fib-figure-col">
+          <figure class="fib-figure is-portrait">
+            <img src="/images/fibonacci/fibonacci-portrait.png" alt="Historical portrait of Leonardo of Pisa, nicknamed Fibonacci" loading="lazy" decoding="async" />
+            <figcaption>Leonardo of Pisa, nicknamed Fibonacci.</figcaption>
+          </figure>
+          <figure class="fib-figure is-manuscript">
+            <img src="/images/fibonacci/liber-abaci.jpg" alt="A page from Fibonacci's Liber Abaci, 1202" loading="lazy" decoding="async" />
+            <figcaption>A page from Liber Abaci, 1202.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- The sequence -->
+      <section class="fib-band">
+        <div class="fib-label">The sequence</div>
+        <h2>Each number is the sum of the two before it</h2>
+        <p class="fib-sequence">0&nbsp;&middot;&nbsp;1&nbsp;&middot;&nbsp;1&nbsp;&middot;&nbsp;2&nbsp;&middot;&nbsp;3&nbsp;&middot;&nbsp;5&nbsp;&middot;&nbsp;8&nbsp;&middot;&nbsp;13&nbsp;&middot;&nbsp;21&nbsp;&middot;&nbsp;34&nbsp;&middot;&nbsp;55&nbsp;&middot;&nbsp;89&nbsp;&middot;&nbsp;144&nbsp;&hellip;</p>
+        <p class="fib-band-text">
+          The rule is almost too simple. Start with 0 and 1. Add them and you get 1. Add
+          the last two again: 1 and 1 is 2. Then 1 and 2 is 3. Next 2 and 3 is 5, 3 and 5
+          is 8, 5 and 8 is 13. You can go on forever. Out of that one rule rolls a
+          sequence that, strangely enough, shows up all over the living world.
+        </p>
+        <figure class="fib-figure is-diagram fib-spiral">
+          <img src="/images/fibonacci/fibonacci-spiral.svg" alt="The Fibonacci numbers drawn as squares, with the golden spiral through them" loading="lazy" decoding="async" />
+          <figcaption>The same numbers, drawn as squares, form the golden spiral.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Feature: galaxy -->
+      <figure class="fib-feature">
+        <img src="/images/fibonacci/galaxy.jpg" alt="Barred spiral galaxy NGC 1300, with arms turning in a spiral" loading="lazy" decoding="async" />
+        <figcaption>A galaxy millions of light years across. The same spiral.</figcaption>
+      </figure>
+
+      <!-- The golden ratio -->
+      <section class="fib-section reverse">
+        <div class="fib-text">
+          <div class="fib-label">1.618</div>
+          <h2>Where the sequence is heading</h2>
+          <p>
+            Now the beautiful part. Divide each number in the sequence by the one before
+            it and watch. 8 divided by 5 is 1.6. 13 divided by 8 is 1.625. 21 divided by
+            13 is 1.615. The result dances around one fixed number and creeps ever closer
+            to it: <span class="golden">1.6180339887</span>, and on it goes, forever,
+            never repeating.
+          </p>
+          <p>
+            This is phi, written as the Greek letter <span class="golden">&phi;</span>,
+            the golden ratio. And its mirror, 1 divided by 1.618, is
+            <span class="golden">0.618</span>. That is where the 618 in our name comes
+            from.
+          </p>
+          <p>
+            The definition is elegant. Two parts are in golden proportion when the larger
+            part relates to the whole as the smaller part relates to the larger. It is the
+            ratio that, to many people, simply looks in balance.
+          </p>
+        </div>
+        <figure class="fib-figure is-diagram">
+          <img src="/images/fibonacci/golden-rectangle.svg" alt="The golden rectangle, divided into ever smaller squares in the golden ratio" loading="lazy" decoding="async" />
+          <figcaption>The golden rectangle, endlessly divisible into the same proportion.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Video 1: Nature by Numbers -->
+      <section class="fib-band">
+        <div class="fib-label">See it move</div>
+        <h2>Nature by Numbers</h2>
+        <p class="fib-band-text">
+          The animation below, made by Cristóbal Vila, brings it together: from the
+          sequence to the spiral, to the sunflower, to the wing of a dragonfly. Three
+          minutes, no words needed.
+        </p>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/kkGeOWYOFoA"
+            title="Nature by Numbers, Cristóbal Vila"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Golden angle / phyllotaxis -->
+      <section class="fib-section">
+        <div class="fib-text">
+          <div class="fib-label">137.5 degrees</div>
+          <h2>Why a plant can count without counting</h2>
+          <p>
+            A plant growing leaf after leaf has a problem. Place each new leaf right above
+            the last and the top leaf robs the bottom one of light. The solution is to
+            turn each leaf a fixed angle from the one before. And the very best angle, the
+            one that makes leaves overlap as little as possible, is about 137.5 degrees:
+            the golden angle, derived straight from &phi;.
+          </p>
+          <p>
+            That is why the heart of a sunflower holds two sets of spirals, one clockwise,
+            the other against it. Count them, and they are almost always two consecutive
+            Fibonacci numbers: 34 and 55, or 55 and 89. Not because the flower calculates,
+            but because this is the most economical way to pack seeds.
+          </p>
+        </div>
+        <div class="fib-figure-col">
+          <figure class="fib-figure">
+            <img src="/images/fibonacci/sunflower.jpg" alt="The heart of a sunflower, with seeds arranged in two sets of spirals" loading="lazy" decoding="async" />
+            <figcaption>Two sets of spirals, each a Fibonacci number.</figcaption>
+          </figure>
+          <figure class="fib-figure is-diagram">
+            <img src="/images/fibonacci/golden-angle.png" alt="Diagram of the 137.5 degree golden angle in the arrangement of leaves" loading="lazy" decoding="async" />
+            <figcaption>The golden angle: 137.5 degrees between each new leaf.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Video 2: Numberphile -->
+      <section class="fib-band">
+        <div class="fib-label">For the true enthusiast</div>
+        <h2>The most impossible number</h2>
+        <p class="fib-band-text">
+          Why does a plant pick exactly this angle? Because &phi; is, in a sense, the most
+          irrational number there is: it resists being approximated by fractions. And that
+          is precisely what makes it the most efficient way to leave nothing overlapping.
+          Numberphile explains it with a sublime simulation.
+        </p>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/sj8Sg8qnjOg"
+            title="The Golden Ratio (why it is so irrational), Numberphile"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Nature gallery -->
+      <section class="fib-band">
+        <div class="fib-label">Everywhere, once you look</div>
+        <h2>The same spiral, at every scale</h2>
+        <p class="fib-band-text">
+          Once you see the spiral, you see it everywhere. To be honest: not every spiral
+          in nature is exactly the golden spiral. Many are logarithmic spirals, relatives
+          of it, but not identical. What they share is the principle: growing by repeating
+          the same shape at every scale.
+        </p>
+        <div class="fib-gallery">
+          <figure>
+            <img src="/images/fibonacci/nautilus.jpg" alt="Cross-section of a nautilus shell with a logarithmic spiral" loading="lazy" decoding="async" />
+            <figcaption>Nautilus, chamber after chamber.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/wave.jpg" alt="A breaking ocean wave curling into a spiral" loading="lazy" decoding="async" />
+            <figcaption>A breaking wave, the same logarithmic curl.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/aloe.jpg" alt="A spiral aloe seen from above" loading="lazy" decoding="async" />
+            <figcaption>Spiral aloe, from above.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/pinecone.jpg" alt="A pinecone with scales in spirals" loading="lazy" decoding="async" />
+            <figcaption>Pinecone, spiralling both ways.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/romanesco.jpg" alt="Romanesco with self-similar spiralling florets" loading="lazy" decoding="async" />
+            <figcaption>Romanesco, spirals within spirals.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/fern.jpg" alt="A young curled fern frond" loading="lazy" decoding="async" />
+            <figcaption>A fern still waiting to unfurl.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/succulent.jpg" alt="A succulent with leaves in a spiral rosette" loading="lazy" decoding="async" />
+            <figcaption>A succulent, leaf turned after leaf.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/hurricane.jpg" alt="A hurricane seen from space, in a spiral shape" loading="lazy" decoding="async" />
+            <figcaption>A hurricane, the same law at weather scale.</figcaption>
+          </figure>
+        </div>
+        <p class="fib-band-note">
+          Plants pick the golden angle because it is the most efficient way to stack leaf
+          and seed without robbing each other of light. Function leads, and the beauty
+          comes for free.
+        </p>
+      </section>
+
+      <!-- Nerd corner -->
+      <section class="fib-band">
+        <div class="fib-label">Nerd corner</div>
+        <h2>Six things to bring up at a party</h2>
+        <div class="nerd-grid">
+          <div class="nerd-card">
+            <h3>Bees have a Fibonacci family tree</h3>
+            <p>
+              A male bee hatches from an unfertilised egg and has just one parent. A female
+              has two. Count the ancestors of a single drone back through the generations:
+              1, 1, 2, 3, 5, 8. Fibonacci, hidden in a family tree.
+            </p>
+          </div>
+          <div class="nerd-card">
+            <h3>Convert miles to kilometres</h3>
+            <p>
+              Just take the next Fibonacci number. 5 miles is about 8 kilometres, 8 miles is
+              about 13. A rule of thumb, not a law, but it works because the miles-to-
+              kilometres factor (1.609) happens to sit right next to &phi; (1.618).
+            </p>
+          </div>
+          <div class="nerd-card">
+            <h3>It hides in Pascal's triangle</h3>
+            <p>
+              Lay out Pascal's triangle and add up the shallow diagonals. The results are
+              exactly the Fibonacci numbers. The sequence turns up in other maths too.
+            </p>
+          </div>
+          <div class="nerd-card">
+            <h3>The band Tool wrote a song with it</h3>
+            <p>
+              In Lateralus the syllables of the first verse go 1, 1, 2, 3, 5, 8, 5, 3, and
+              the time signatures shift between 9, 8 and 7. The track was first simply called
+              987: the sixteenth Fibonacci number.
+            </p>
+          </div>
+          <div class="nerd-card">
+            <h3>Kepler called it a jewel</h3>
+            <p>
+              The astronomer Johannes Kepler said geometry holds two treasures: the theorem
+              of Pythagoras and the golden ratio. The first, he said, was gold, the second a
+              precious jewel.
+            </p>
+          </div>
+          <div class="nerd-card">
+            <h3>It lives in a five-pointed star</h3>
+            <p>
+              Draw a pentagram. Every line cuts the next exactly in the golden ratio. &phi;
+              is baked into the pentagon, and with it into countless five-petalled flowers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Myths -->
+      <section class="fib-section">
+        <div class="fib-text wide">
+          <div class="fib-label">In fairness</div>
+          <h2>Where the maths ends and the myth begins</h2>
+          <p>
+            The golden ratio has a shadow side: it gets dragged in everywhere it does not
+            belong. The claim that the Parthenon was designed on the golden ratio is an idea
+            from the nineteenth century, not from ancient Greece. There is no Greek text that
+            mentions it. The Mona Lisa and the pyramids of Giza get pulled in after the fact
+            too.
+          </p>
+          <p>
+            Lay enough rectangles over a famous work and you will always find a proportion
+            that comes close. The spirals in a sunflower are real. The numbers are real. But
+            much of the art and architecture myth is wishful thinking, beautifully retold. We
+            find that distinction the most interesting part: do not believe everything, check
+            it.
+          </p>
+        </div>
+      </section>
+
+      <!-- Why MS618 -->
+      <section class="fib-section closing">
+        <div class="fib-text wide">
+          <div class="fib-label">That is why .618</div>
+          <h2>Not everything, but exactly the right thing</h2>
+          <p>
+            Why would a marketing agency name itself after a number? The MS stands for Miedema
+            Strategy and Marketing Strategy, the 618 for 0.618, the golden ratio. And that
+            number captures exactly how we see growth. The golden ratio is not about more. Not
+            more channels, more tools, more noise. It is about the right proportion: just enough
+            of the right thing, in the right place.
+          </p>
+          <p>
+            A sunflower does not grow extra seeds to impress anyone. It grows in the most
+            efficient shape there is, and becomes beautiful along the way. That is exactly
+            what good marketing does. Not doing everything, but the right thing, in the right
+            proportion.
+          </p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="fib-faq">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-list">
+          {faqs.map((f) => (
+            <details class="faq-item">
+              <summary>{f.question}</summary>
+              <p>{f.answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <!-- Image credits -->
+      <section class="fib-credits">
+        <h2>Image credits</h2>
+        <p>
+          Imagery via Wikimedia Commons. Sunflower: Rifat R (CC BY 4.0). Nautilus: Chris 73
+          (CC BY-SA 3.0). Succulent: Julesvernex2 (CC BY-SA 4.0). Romanesco: Leon Brocard
+          (CC BY 2.0). Pinecone: Didier Descouens (CC BY-SA 4.0). Fern: Albarubescens
+          (CC BY 4.0). Spiral aloe: Pseudopanax (public domain). Wave: NOAA. Hurricane: NASA.
+          Galaxy NGC 1300: NASA, ESA and the Hubble Heritage Team. Golden rectangle and the
+          portrait of Fibonacci: public domain.
+        </p>
+      </section>
+
+    </div>
+
+    <CTA
+      headline="Curious what the right proportion is for you?"
+      body="Schedule a no-obligation introductory call. We look at your situation and tell you honestly what is and is not worth doing."
+      cta={{ label: 'Schedule a call', href: '/en/contact/' }}
+    />
+  </article>
+</Page>
+
+<style>
+  .fib {
+    padding-bottom: 2rem;
+    overflow: hidden;
+  }
+
+  .fib :global(.container) {
+    max-width: 1080px;
+  }
+
+  .fib-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: oklch(0.65 0.2 250);
+    margin-bottom: 0.75rem;
+  }
+
+  .fib-hero {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 1.5rem 0 2.5rem;
+    text-align: center;
+  }
+
+  .fib-kicker {
+    font-family: Georgia, serif;
+    font-size: clamp(3.5rem, 11vw, 7rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .fib-hero h1 {
+    font-size: clamp(2.1rem, 5vw, 3.25rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin: 0 0 1.25rem;
+  }
+
+  .fib-lead {
+    font-size: 1.1875rem;
+    line-height: 1.75;
+    color: oklch(0.74 0 0);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .fib-kicker,
+  .golden {
+    background: linear-gradient(
+      100deg,
+      oklch(0.6 0.03 85) 0%,
+      oklch(0.72 0.05 88) 25%,
+      oklch(0.98 0.05 96) 50%,
+      oklch(0.72 0.05 88) 75%,
+      oklch(0.6 0.03 85) 100%
+    );
+    background-size: 200% auto;
+    background-position: 0 center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: fib-sheen 6.5s linear infinite;
+  }
+
+  .fib-kicker {
+    filter: drop-shadow(0 3px 24px oklch(0.85 0.08 90 / 0.16));
+  }
+
+  .golden {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  @keyframes fib-sheen {
+    to {
+      background-position: -200% center;
+    }
+  }
+
+  .fib-intro {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 0 1rem;
+    text-align: center;
+  }
+
+  .fib-intro p {
+    font-size: 1.1875rem;
+    line-height: 1.8;
+    color: oklch(0.8 0 0);
+    margin: 0 0 1.25rem;
+  }
+
+  .fib-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+    padding: 4.5rem 0;
+    border-top: 1px solid oklch(0.16 0 0);
+  }
+
+  .fib-section.reverse .fib-figure {
+    order: -1;
+  }
+
+  .fib-text h2 {
+    font-size: clamp(1.6rem, 3vw, 2.15rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: oklch(0.98 0 0);
+    margin: 0 0 1.25rem;
+    line-height: 1.2;
+  }
+
+  .fib-text p {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: oklch(0.74 0 0);
+    margin: 0 0 1.1rem;
+  }
+
+  .fib-text.wide {
+    grid-column: 1 / -1;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .fib-figure {
+    margin: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid oklch(0.17 0 0);
+    background: oklch(0.1 0 0);
+  }
+
+  .fib-figure img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .fib-figure figcaption {
+    padding: 0.85rem 1.1rem;
+    font-size: 0.8438rem;
+    color: oklch(0.62 0 0);
+    border-top: 1px solid oklch(0.15 0 0);
+  }
+
+  .fib-figure.is-portrait img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .fib-figure.is-diagram {
+    background: oklch(0.97 0 0);
+  }
+
+  .fib-figure.is-diagram img {
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    padding: 2rem;
+  }
+
+  .fib-figure.is-diagram figcaption {
+    color: oklch(0.45 0 0);
+    border-top-color: oklch(0.88 0 0);
+    background: oklch(0.97 0 0);
+  }
+
+  .fib-figure-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .fib-figure.is-manuscript img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .fib-spiral {
+    max-width: 540px;
+    margin: 2.5rem auto 0;
+    text-align: left;
+  }
+
+  .fib-feature {
+    margin: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid oklch(0.17 0 0);
+  }
+
+  .fib-feature img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+  }
+
+  .fib-feature figcaption {
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+    color: oklch(0.66 0 0);
+    background: oklch(0.1 0 0);
+    text-align: center;
+  }
+
+  .fib-band {
+    padding: 4.5rem 0;
+    border-top: 1px solid oklch(0.16 0 0);
+    text-align: center;
+  }
+
+  .fib-band h2 {
+    font-size: clamp(1.6rem, 3vw, 2.15rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: oklch(0.98 0 0);
+    margin: 0 auto 1.25rem;
+    max-width: 720px;
+    line-height: 1.2;
+  }
+
+  .fib-band-text,
+  .fib-band-note {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: oklch(0.74 0 0);
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .fib-band-note {
+    margin-top: 2.5rem;
+    font-style: italic;
+    color: oklch(0.68 0 0);
+  }
+
+  .fib-sequence {
+    font-family: Georgia, serif;
+    font-size: clamp(1.35rem, 3.5vw, 2.1rem);
+    color: oklch(0.86 0.03 88);
+    margin: 0 auto 1.75rem;
+    line-height: 1.5;
+    max-width: 820px;
+  }
+
+  .video-wrap {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    max-width: 820px;
+    margin: 2.5rem auto 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid oklch(0.18 0 0);
+    background: oklch(0.06 0 0);
+  }
+
+  .video-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .fib-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin: 2.5rem 0 0;
+    text-align: left;
+  }
+
+  .fib-gallery figure {
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid oklch(0.17 0 0);
+    background: oklch(0.1 0 0);
+  }
+
+  .fib-gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .fib-gallery figcaption {
+    padding: 0.7rem 0.85rem;
+    font-size: 0.8125rem;
+    color: oklch(0.62 0 0);
+    border-top: 1px solid oklch(0.15 0 0);
+  }
+
+  .nerd-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+    text-align: left;
+  }
+
+  .nerd-card {
+    border: 1px solid oklch(0.17 0 0);
+    border-radius: 14px;
+    padding: 1.5rem;
+    background: oklch(0.1 0 0);
+  }
+
+  .nerd-card h3 {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: oklch(0.96 0 0);
+    margin: 0 0 0.6rem;
+    line-height: 1.3;
+  }
+
+  .nerd-card p {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: oklch(0.7 0 0);
+    margin: 0;
+  }
+
+  .fib-faq {
+    padding: 4.5rem 0 3rem;
+    border-top: 1px solid oklch(0.16 0 0);
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .fib-faq h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: oklch(0.98 0 0);
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-item {
+    border-top: 1px solid oklch(0.18 0 0);
+  }
+
+  .faq-item:last-child {
+    border-bottom: 1px solid oklch(0.18 0 0);
+  }
+
+  .faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 1.25rem 2rem 1.25rem 0;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: oklch(0.95 0 0);
+    position: relative;
+    transition: color 0.2s ease;
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: oklch(0.6 0 0);
+    transition: transform 0.2s ease;
+  }
+
+  .faq-item[open] summary::after {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .faq-item summary:hover {
+    color: oklch(0.65 0.2 250);
+  }
+
+  .faq-item p {
+    margin: 0;
+    padding: 0 0 1.5rem;
+    color: oklch(0.72 0 0);
+    line-height: 1.75;
+    font-size: 0.9688rem;
+  }
+
+  .fib-credits {
+    padding: 2.5rem 0;
+    border-top: 1px solid oklch(0.14 0 0);
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .fib-credits h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: oklch(0.55 0 0);
+    margin: 0 0 0.6rem;
+  }
+
+  .fib-credits p {
+    font-size: 0.8125rem;
+    line-height: 1.7;
+    color: oklch(0.55 0 0);
+    margin: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fib-kicker,
+    .golden {
+      animation: none;
+      background: none;
+      -webkit-text-fill-color: oklch(0.78 0.05 88);
+      color: oklch(0.78 0.05 88);
+    }
+  }
+
+  @media (max-width: 860px) {
+    .nerd-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .fib-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 680px) {
+    .fib-section {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 3rem 0;
+    }
+    .fib-section.reverse .fib-figure {
+      order: 0;
+    }
+    .fib-band {
+      padding: 3rem 0;
+    }
+    .nerd-grid {
+      grid-template-columns: 1fr;
+    }
+    .fib-feature img {
+      aspect-ratio: 4 / 3;
+    }
+  }
+</style>
