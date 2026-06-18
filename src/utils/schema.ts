@@ -63,7 +63,7 @@ export function buildOrganizationPiece(): SchemaGraphPiece {
     },
     founder: site.team
       .filter((m) => m.slug === 'jorrit-miedema' || m.slug === 'jurjan-groothuis')
-      .map((m) => ({ '@id': `${site.url}/about/#${m.slug}` })),
+      .map((m) => ({ '@id': `${site.url}/over-ons/#${m.slug}` })),
     sameAs: [site.social.linkedin].filter(Boolean),
   };
 }
@@ -121,7 +121,7 @@ export function buildBreadcrumbPiece(
 
 /**
  * Resolve an author name to a proper Person author node.
- * If the name matches a team member, reference that Person entity (@id on /about);
+ * If the name matches a team member, reference that Person entity (@id on /over-ons);
  * otherwise emit a standalone Person linked to the organisation.
  */
 function resolveAuthor(author: string) {
@@ -129,9 +129,9 @@ function resolveAuthor(author: string) {
   if (member) {
     return {
       '@type': 'Person',
-      '@id': `${site.url}/about/#${member.slug}`,
+      '@id': `${site.url}/over-ons/#${member.slug}`,
       name: member.name,
-      url: `${site.url}/about/`,
+      url: `${site.url}/over-ons/`,
     };
   }
   return {
@@ -182,12 +182,12 @@ export interface TeamMember {
   knowsAbout?: string[];
 }
 
-/** Person node for a team member (used on /about). @id resolves to /about/#slug. */
+/** Person node for a team member (used on /over-ons). @id resolves to /over-ons/#slug. */
 export function buildPersonPiece(member: TeamMember): SchemaGraphPiece {
   const sameAs = [member.linkedin, member.website].filter(Boolean);
   return {
     '@type': 'Person',
-    '@id': `${site.url}/about/#${member.slug}`,
+    '@id': `${site.url}/over-ons/#${member.slug}`,
     name: member.name,
     jobTitle: member.jobTitle,
     ...(member.education && { alumniOf: member.education }),
@@ -197,7 +197,7 @@ export function buildPersonPiece(member: TeamMember): SchemaGraphPiece {
   };
 }
 
-/** All team Person nodes, for the /about page graph. */
+/** All team Person nodes, for the /over-ons page graph. */
 export function buildTeamPieces(): SchemaGraphPiece[] {
   return site.team.map((m) => buildPersonPiece(m as TeamMember));
 }

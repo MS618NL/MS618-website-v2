@@ -44,7 +44,7 @@ const localPages = lang === 'en'
       <h3 class="footer-heading">{t('footer.nav')}</h3>
       <ul>
         <li><a href={`${svc}/`}>{lang === 'en' ? 'Approach' : 'Aanpak'}</a></li>
-        <li><a href={`${p}/about/`}>{t('nav.about')}</a></li>
+        <li><a href={lang === 'en' ? '/en/about/' : '/over-ons/'}>{t('nav.about')}</a></li>
         <li><a href={`${p}/fibonacci/`}>Fibonacci</a></li>
         <li><a href={`${p}/blog/`}>{lang === 'en' ? 'News' : 'Nieuws'}</a></li>
         <li><a href={`${p}/contact/`}>{t('nav.contact')}</a></li>

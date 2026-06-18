@@ -94,7 +94,7 @@ export default defineConfig({
         if (url.includes('/services') || url.includes('/diensten')) {
           return { ...item, priority: 0.8, changefreq: 'monthly', lastmod };
         }
-        if (url.includes('/about')) {
+        if (url.includes('/over-ons') || url.includes('/about')) {
           return { ...item, priority: 0.8, changefreq: 'monthly', lastmod };
         }
         if (url.includes('/cases')) {
