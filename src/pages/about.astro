@@ -37,8 +37,9 @@ const breadcrumbs = [
           </div>
           <div class="name-col">
             <div class="section-label-inline">De naam</div>
-            <p class="name-number">.618</p>
+            <a href="/fibonacci/" class="name-number" aria-label=".618, lees het verhaal achter de gulden snede">.618</a>
             <p>MS618 komt van .618, de gulden snede. Een wiskundig principe, ontdekt door Fibonacci, dat overal in de natuur terugkomt: de perfecte verhouding tussen meer en minder. Het is hoe wij denken over marketing. Niet alles doen, maar precies het juiste.</p>
+            <p class="name-link"><a href="/fibonacci/">Het verhaal achter de gulden snede →</a></p>
           </div>
         </div>
       </section>
@@ -77,13 +78,13 @@ const breadcrumbs = [
             </div>
           </div>
           <div class="value-item value-award">
-            <div class="award-badge">
+            <a class="award-badge" href="/blog/google-ads-impact-awards-2026/" target="_blank" rel="noopener">
               <img src="/images/google-logo.svg" alt="Google" class="award-logo" width="52" height="18" />
               <div class="award-badge-text">
                 <strong>Google Ads Impact Awards 2026</strong>
                 <span>Genomineerd voor AI-innovatie in advertising</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -266,13 +267,67 @@ const breadcrumbs = [
   }
 
   .name-number {
+    display: inline-block;
     font-size: 4rem;
     font-weight: 700;
     letter-spacing: -0.05em;
-    color: oklch(0.62 0 0);
     line-height: 1;
     margin-bottom: 1.25rem !important;
     font-family: Georgia, serif;
+    text-decoration: none;
+    /* champagne-gold metallic sheen with a moving highlight, a nod to the golden ratio */
+    background: linear-gradient(
+      100deg,
+      oklch(0.60 0.03 85) 0%,
+      oklch(0.72 0.05 88) 25%,
+      oklch(0.98 0.05 96) 50%,
+      oklch(0.72 0.05 88) 75%,
+      oklch(0.60 0.03 85) 100%
+    );
+    background-size: 200% auto;
+    background-position: 0 center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    filter: drop-shadow(0 2px 14px oklch(0.85 0.08 90 / 0.12));
+    animation: name-sheen 6.5s linear infinite;
+    transition: filter 0.3s ease;
+  }
+
+  .name-number:hover {
+    filter: drop-shadow(0 2px 22px oklch(0.9 0.1 92 / 0.3));
+  }
+
+  @keyframes name-sheen {
+    to { background-position: -200% center; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .name-number {
+      animation: none;
+      background: none;
+      -webkit-text-fill-color: oklch(0.72 0.04 88);
+      color: oklch(0.72 0.04 88);
+    }
+  }
+
+  .name-link {
+    margin-top: -0.25rem;
+  }
+
+  .name-link a {
+    color: oklch(0.65 0.2 250);
+    text-decoration: none;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+  }
+
+  .name-link a:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
   /* Values */
@@ -324,6 +379,13 @@ const breadcrumbs = [
     display: flex;
     align-items: center;
     gap: 1.25rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .award-badge:hover .award-badge-text strong {
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
   .award-logo {

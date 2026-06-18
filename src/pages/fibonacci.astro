@@ -1,0 +1,930 @@
+---
+import Page from '@/layouts/Page.astro';
+import CTA from '@/components/CTA.astro';
+import site from '@/data/site.json';
+import { buildArticlePiece, buildFaqPiece } from '@/utils/schema';
+import { canonicalUrl } from '@/utils/seo';
+
+const pageUrl = canonicalUrl('/fibonacci/');
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url },
+  { name: 'Fibonacci' },
+];
+
+const faqs = [
+  {
+    question: 'Wat is de reeks van Fibonacci?',
+    answer:
+      'De reeks van Fibonacci is een rij getallen waarbij elk getal de som is van de twee voorgaande: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, en zo verder. De reeks werd rond 1202 in Europa bekend door de wiskundige Leonardo van Pisa, bijgenaamd Fibonacci.',
+  },
+  {
+    question: 'Wat is de gulden snede?',
+    answer:
+      'De gulden snede is de verhouding 1 staat tot 1,618 (het getal phi). Twee delen staan in gulden verhouding als het grootste deel zich tot het geheel verhoudt zoals het kleinste deel zich tot het grootste. De verhouding wordt vaak als bijzonder evenwichtig ervaren en komt veel voor in de natuur.',
+  },
+  {
+    question: 'Wat is het verband tussen Fibonacci en de gulden snede?',
+    answer:
+      'Als je in de reeks van Fibonacci elk getal deelt door zijn voorganger, kruipt de uitkomst steeds dichter naar 1,618, de gulden snede. Hoe verder je in de reeks komt, hoe nauwkeuriger die verhouding wordt benaderd.',
+  },
+  {
+    question: 'Waar komt de naam MS618 vandaan?',
+    answer:
+      'MS618 combineert twee verhalen. De MS zijn de initialen achter het bureau: Miedema Strategy, en tegelijk Marketing Strategy, met een knipoog naar MediaSoep, het bedrijf dat oprichter Jorrit Miedema eerder opbouwde en verkocht. De 618 komt van 0,618, de gulden snede (1 gedeeld door 1,618). Samen vatten ze onze kijk op groei: de juiste verhouding, niet meer doen maar precies het juiste.',
+  },
+  {
+    question: 'Zit de gulden snede echt overal in kunst en architectuur?',
+    answer:
+      'In de natuur is het verband goed onderbouwd, bijvoorbeeld in de stand van zaden en bladeren. Veel beroemde claims over kunst en architectuur, zoals het Parthenon of de Mona Lisa, zijn echter pas in de negentiende eeuw bedacht en wiskundig niet hard te maken. De wiskunde is echt, een deel van de mythe niet.',
+  },
+];
+
+const extraSchema = [
+  buildArticlePiece(
+    pageUrl,
+    'Fibonacci en de gulden snede: de code van de natuur',
+    'Het verhaal van .618, de reeks van Fibonacci en de gulden snede, en waarom die verhouding overal in de natuur opduikt. Een longread van MS618.',
+    'Jorrit Miedema',
+    '2026-06-18',
+    '2026-06-18',
+    `${site.url}/images/fibonacci/galaxy.jpg`,
+  ),
+  buildFaqPiece(pageUrl, faqs),
+];
+---
+
+<Page
+  title="Fibonacci en de gulden snede"
+  seoTitle="Fibonacci en de gulden snede: de code van de natuur | MS618"
+  description="Het verhaal van .618: de reeks van Fibonacci, de gulden snede en waarom die verhouding overal in de natuur opduikt. Een nerdy longread, met video en veel beeld."
+  ogType="article"
+  ogImage="/images/fibonacci/galaxy.jpg"
+  breadcrumbs={breadcrumbs}
+  extraSchema={extraSchema}
+>
+  <article class="fib">
+    <div class="container">
+
+      <!-- Hero -->
+      <header class="fib-hero">
+        <div class="fib-kicker">.618</div>
+        <h1>De code van de natuur</h1>
+        <p class="fib-lead">
+          Ons bureau is vernoemd naar een getal. Achter dat getal zit een van de
+          mooiste verhalen uit de wiskunde: een reeks die je overal terugziet zodra
+          je weet waar je moet kijken. Dit is een ode aan Fibonacci, aan de gulden
+          snede, en aan het idee dat schoonheid en functie hetzelfde kunnen zijn.
+        </p>
+      </header>
+
+      <!-- Intro -->
+      <section class="fib-intro">
+        <p>
+          Begin met twee. Twee konijnen, twee getallen, twee simpele regels. Wat
+          daaruit volgt, beschrijft de spiralen in een zonnebloem, de schelp van een
+          nautilus en de armen van een sterrenstelsel dat miljoenen lichtjaren breed
+          is.
+        </p>
+        <p>
+          Het verbindt een rekenpuzzel uit de dertiende eeuw met de manier waarop een
+          dennenappel groeit. En het eindigt bij één getal: <span class="golden">0,618</span>.
+          Daar komt MS618 vandaan.
+        </p>
+      </section>
+
+      <!-- De man -->
+      <section class="fib-section">
+        <div class="fib-text">
+          <div class="fib-label">Pisa, rond 1202</div>
+          <h2>Een koopmanszoon leert Europa rekenen</h2>
+          <p>
+            Leonardo van Pisa groeide op tussen de handelaren van de Middellandse Zee.
+            Op zijn reizen door Noord-Afrika leerde hij het Hindoe-Arabische
+            cijfersysteem kennen: de cijfers 0 tot en met 9 die wij vandaag nog
+            gebruiken. Terug in Italië schreef hij Liber Abaci, het boek dat die
+            cijfers naar het Westen bracht en de logge Romeinse cijfers langzaam
+            verdrong.
+          </p>
+          <p>
+            Pas eeuwen later kreeg hij de bijnaam Fibonacci, een samentrekking van
+            filius Bonacci, oftewel zoon van Bonacci.
+          </p>
+          <p>
+            In datzelfde boek stond een onschuldig ogend puzzeltje over een koppel
+            konijnen dat zich elke maand voortplant. Hoeveel paren heb je na een jaar?
+            Het antwoord was een reeks die Indiase wiskundigen als Pingala en
+            Hemachandra al eeuwen eerder hadden beschreven, maar die sindsdien de naam
+            van Fibonacci draagt.
+          </p>
+        </div>
+        <div class="fib-figure-col">
+          <figure class="fib-figure is-portrait">
+            <img src="/images/fibonacci/fibonacci-portrait.png" alt="Historisch portret van Leonardo van Pisa, bijgenaamd Fibonacci" loading="lazy" decoding="async" />
+            <figcaption>Leonardo van Pisa, bijgenaamd Fibonacci.</figcaption>
+          </figure>
+          <figure class="fib-figure is-manuscript">
+            <img src="/images/fibonacci/liber-abaci.jpg" alt="Een pagina uit Fibonacci's Liber Abaci uit 1202" loading="lazy" decoding="async" />
+            <figcaption>Een pagina uit Liber Abaci, 1202.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- De reeks -->
+      <section class="fib-band">
+        <div class="fib-label">De reeks</div>
+        <h2>Elk getal is de som van de twee ervoor</h2>
+        <p class="fib-sequence">0&nbsp;&middot;&nbsp;1&nbsp;&middot;&nbsp;1&nbsp;&middot;&nbsp;2&nbsp;&middot;&nbsp;3&nbsp;&middot;&nbsp;5&nbsp;&middot;&nbsp;8&nbsp;&middot;&nbsp;13&nbsp;&middot;&nbsp;21&nbsp;&middot;&nbsp;34&nbsp;&middot;&nbsp;55&nbsp;&middot;&nbsp;89&nbsp;&middot;&nbsp;144&nbsp;&hellip;</p>
+        <p class="fib-band-text">
+          De regel is bijna te simpel. Begin met 0 en 1. Tel ze op en je krijgt 1. Tel
+          de laatste twee weer op: 1 en 1 is 2. Dan 1 en 2 is 3. Daarna 2 en 3 is 5, 3
+          en 5 is 8, 5 en 8 is 13. Je kunt eindeloos doorgaan. Uit die ene regel rolt
+          een reeks die zich, vreemd genoeg, overal in de levende wereld laat zien.
+        </p>
+        <figure class="fib-figure is-diagram fib-spiral">
+          <img src="/images/fibonacci/fibonacci-spiral.svg" alt="De Fibonacci-getallen als vierkanten getekend, met de gulden spiraal erdoorheen" loading="lazy" decoding="async" />
+          <figcaption>Diezelfde getallen, getekend als vierkanten, vormen de gulden spiraal.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Feature: galaxy -->
+      <figure class="fib-feature">
+        <img src="/images/fibonacci/galaxy.jpg" alt="Balkspiraalstelsel NGC 1300, met armen die in een spiraal draaien" loading="lazy" decoding="async" />
+        <figcaption>Een sterrenstelsel van miljoenen lichtjaren breed. Dezelfde spiraal.</figcaption>
+      </figure>
+
+      <!-- De gulden snede -->
+      <section class="fib-section reverse">
+        <div class="fib-text">
+          <div class="fib-label">1,618</div>
+          <h2>Waar de reeks naartoe kruipt</h2>
+          <p>
+            Nu komt het mooie. Deel elk getal in de reeks door zijn voorganger en kijk
+            wat er gebeurt. 8 gedeeld door 5 is 1,6. 13 gedeeld door 8 is 1,625. 21
+            gedeeld door 13 is 1,615. De uitkomst danst rond één vast getal en kruipt
+            er steeds dichter naartoe: <span class="golden">1,6180339887</span>, en zo
+            door, oneindig, zonder ooit te herhalen.
+          </p>
+          <p>
+            Dit is phi, geschreven als de Griekse letter <span class="golden">&phi;</span>,
+            de gulden snede. En de spiegeling ervan, 1 gedeeld door 1,618, is
+            <span class="golden">0,618</span>. Daar komt de 618 in onze naam vandaan.
+          </p>
+          <p>
+            De definitie is elegant. Twee delen staan in gulden verhouding als het grote
+            deel zich tot het geheel verhoudt zoals het kleine deel zich tot het grote.
+            Het is de verhouding die voor veel mensen vanzelf in balans oogt.
+          </p>
+        </div>
+        <figure class="fib-figure is-diagram">
+          <img src="/images/fibonacci/golden-rectangle.svg" alt="De gulden rechthoek, opgedeeld in steeds kleinere vierkanten volgens de gulden snede" loading="lazy" decoding="async" />
+          <figcaption>De gulden rechthoek, eindeloos opdeelbaar in dezelfde verhouding.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Video 1: Nature by Numbers -->
+      <section class="fib-band">
+        <div class="fib-label">Zie het bewegen</div>
+        <h2>Nature by Numbers</h2>
+        <p class="fib-band-text">
+          De animatie hieronder, gemaakt door Cristóbal Vila, brengt het samen: van de
+          reeks naar de spiraal, naar de zonnebloem, naar de vleugel van een libel.
+          Drie minuten, geen woorden nodig.
+        </p>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/kkGeOWYOFoA"
+            title="Nature by Numbers, Cristóbal Vila"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Gulden hoek / phyllotaxis -->
+      <section class="fib-section">
+        <div class="fib-text">
+          <div class="fib-label">137,5 graden</div>
+          <h2>Waarom een plant kan rekenen zonder te tellen</h2>
+          <p>
+            Een plant die blad na blad maakt, heeft een probleem. Zet je elk nieuw blad
+            recht boven het vorige, dan ontneemt het bovenste blad het onderste het
+            licht. De oplossing is om elk blad een vaste hoek te draaien ten opzichte
+            van het vorige. En de allerbeste hoek, die zorgt dat bladeren elkaar zo min
+            mogelijk overlappen, is ongeveer 137,5 graden: de gulden hoek, rechtstreeks
+            afgeleid van &phi;.
+          </p>
+          <p>
+            Daarom zie je in het hart van een zonnebloem twee sets spiralen, de ene met
+            de klok mee, de andere ertegenin. Tel ze, en het zijn vrijwel altijd twee
+            opeenvolgende Fibonacci-getallen: 34 en 55, of 55 en 89. Niet omdat de bloem
+            rekent, maar omdat dit de zuinigste manier is om zaden te stapelen.
+          </p>
+        </div>
+        <div class="fib-figure-col">
+          <figure class="fib-figure">
+            <img src="/images/fibonacci/sunflower.jpg" alt="Het hart van een zonnebloem, met zaden gerangschikt in twee sets spiralen" loading="lazy" decoding="async" />
+            <figcaption>Twee sets spiralen, allebei een Fibonacci-getal.</figcaption>
+          </figure>
+          <figure class="fib-figure is-diagram">
+            <img src="/images/fibonacci/golden-angle.png" alt="Diagram van de gulden hoek van 137,5 graden in de stand van bladeren" loading="lazy" decoding="async" />
+            <figcaption>De gulden hoek: 137,5 graden tussen elk nieuw blad.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Video 2: Numberphile -->
+      <section class="fib-band">
+        <div class="fib-label">Voor de echte liefhebber</div>
+        <h2>Het meest onmogelijke getal</h2>
+        <p class="fib-band-text">
+          Waarom kiest een plant uitgerekend deze hoek? Omdat &phi; in zekere zin het
+          meest irrationele getal is dat bestaat: het laat zich het slechtst benaderen
+          met breuken. En juist dat maakt het de meest efficiënte manier om niets te
+          laten overlappen. Numberphile legt het uit met een sublieme simulatie.
+        </p>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/sj8Sg8qnjOg"
+            title="The Golden Ratio (why it is so irrational), Numberphile"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Natuur-galerij -->
+      <section class="fib-band">
+        <div class="fib-label">Overal, als je kijkt</div>
+        <h2>Dezelfde spiraal, op elke schaal</h2>
+        <p class="fib-band-text">
+          Zodra je de spiraal eenmaal ziet, zie je hem overal. Eerlijk is eerlijk: niet
+          elke spiraal in de natuur is precies de gulden spiraal. Veel ervan zijn
+          logaritmische spiralen, familie van elkaar, maar niet identiek. Wat ze delen
+          is het principe: groeien door op elke schaal dezelfde vorm te herhalen.
+        </p>
+        <div class="fib-gallery">
+          <figure>
+            <img src="/images/fibonacci/nautilus.jpg" alt="Doorsnede van een nautilusschelp met een logaritmische spiraal" loading="lazy" decoding="async" />
+            <figcaption>Nautilus, kamer na kamer.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/wave.jpg" alt="Een brekende golf die in een spiraal omkrult" loading="lazy" decoding="async" />
+            <figcaption>Een brekende golf, dezelfde logaritmische krul.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/aloe.jpg" alt="Een spiraalaloë van bovenaf gezien" loading="lazy" decoding="async" />
+            <figcaption>Spiraalaloë, van bovenaf.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/pinecone.jpg" alt="Een dennenappel met schubben in spiralen" loading="lazy" decoding="async" />
+            <figcaption>Dennenappel, twee kanten op gespiraald.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/romanesco.jpg" alt="Romanesco met zelfgelijkende spiralende roosjes" loading="lazy" decoding="async" />
+            <figcaption>Romanesco, spiralen binnen spiralen.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/fern.jpg" alt="Een jong opgerold varenblad" loading="lazy" decoding="async" />
+            <figcaption>Een varen die zich nog moet ontvouwen.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/succulent.jpg" alt="Een vetplant met bladeren in een spiraalrozet" loading="lazy" decoding="async" />
+            <figcaption>Een vetplant, blad voor blad gedraaid.</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/fibonacci/hurricane.jpg" alt="Een orkaan vanuit de ruimte gezien, met een spiraalvorm" loading="lazy" decoding="async" />
+            <figcaption>Een orkaan, dezelfde wet op weerschaal.</figcaption>
+          </figure>
+        </div>
+        <p class="fib-band-note">
+          Planten kiezen de gulden hoek omdat het de meest efficiënte manier is om blad
+          en zaad te stapelen, zonder dat ze elkaar het licht ontnemen. De vorm volgt
+          de functie. De schoonheid komt er gratis bij.
+        </p>
+      </section>
+
+      <!-- Nerd-hoek -->
+      <section class="fib-band">
+        <div class="fib-label">Nerd-hoek</div>
+        <h2>Zes dingen om op een feestje te vertellen</h2>
+        <div class="nerd-grid">
+          <div class="nerd-card">
+            <h3>Bijen hebben een Fibonacci-stamboom</h3>
+            <p>
+              Een mannelijke bij komt uit een onbevrucht ei en heeft maar één ouder. Een
+              vrouwtje heeft er twee. Tel de voorouders van één dar terug door de
+              generaties: 1, 1, 2, 3, 5, 8. Fibonacci, verstopt in een stamboom.
+            </p>
+          </div>
+          <div class="nerd-card">
+            <h3>Reken mijlen om naar kilometers</h3>
+            <p>
+              Pak gewoon het volgende Fibonacci-getal. 5 mijl is ongeveer 8 kilometer, 8
+              mijl is ongeveer 13. Een vuistregel, geen wet, maar hij werkt omdat de
+              factor mijl op kilometer (1,609) toevallig vlak bij &phi; (1,618) ligt.
+            </p>
+          </div>
+          <div class="nerd-card">
+            <h3>Hij zit in de driehoek van Pascal</h3>
+            <p>
+              Leg de driehoek van Pascal voor je en tel de schuine diagonalen op. De
+              uitkomsten zijn precies de getallen van Fibonacci. De reeks blijkt zich
+              ook in andere wiskunde te verstoppen.
+            </p>
+          </div>
+          <div class="nerd-card">
+            <h3>De band Tool schreef er een nummer mee</h3>
+            <p>
+              In Lateralus gaan de lettergrepen van het eerste couplet 1, 1, 2, 3, 5, 8,
+              5, 3, en de maatsoorten wisselen tussen 9, 8 en 7. Het nummer heette eerst
+              gewoon 987: het zestiende getal van Fibonacci.
+            </p>
+          </div>
+          <div class="nerd-card">
+            <h3>Kepler noemde het een juweel</h3>
+            <p>
+              Astronoom Johannes Kepler zei dat de meetkunde twee schatten kent: de
+              stelling van Pythagoras en de gulden snede. De eerste was voor hem goud, de
+              tweede een kostbaar juweel.
+            </p>
+          </div>
+          <div class="nerd-card">
+            <h3>Hij zit in een vijfpuntige ster</h3>
+            <p>
+              Teken een pentagram. Elke lijn snijdt de volgende precies in de gulden
+              verhouding. &phi; zit ingebakken in de vijfhoek, en daarmee in talloze
+              bloemen met vijf bladeren.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mythes -->
+      <section class="fib-section">
+        <div class="fib-text wide">
+          <div class="fib-label">Eerlijk is eerlijk</div>
+          <h2>Waar de wiskunde stopt en de mythe begint</h2>
+          <p>
+            De gulden snede heeft ook een schaduwkant: hij wordt overal bijgesleept waar
+            hij niet hoort. Dat het Parthenon op de gulden snede ontworpen zou zijn, is
+            een idee uit de negentiende eeuw, niet uit het oude Griekenland. Er is geen
+            enkel Grieks geschrift dat het noemt. Ook de Mona Lisa en de piramides van
+            Gizeh worden er met terugwerkende kracht bijgehaald.
+          </p>
+          <p>
+            Leg genoeg rechthoeken over een beroemd werk en je vindt altijd wel een
+            verhouding die in de buurt komt. De spiralen in een zonnebloem zijn echt. De
+            getallen zijn echt. Maar een groot deel van de kunst-en-architectuur-mythe is
+            wishful thinking, mooi rondverteld. Wij vinden dat onderscheid juist het
+            interessantst: geloof niet alles, controleer het.
+          </p>
+        </div>
+      </section>
+
+      <!-- Daarom MS618 -->
+      <section class="fib-section closing">
+        <div class="fib-text wide">
+          <div class="fib-label">Daarom .618</div>
+          <h2>Niet alles, maar precies het juiste</h2>
+          <p>
+            Waarom noemt een marketingbureau zich naar een getal? De MS staat voor Miedema
+            Strategy en Marketing Strategy, de 618 voor 0,618, de gulden snede. En dat getal
+            drukt precies uit hoe wij naar groei kijken. De gulden snede gaat niet over meer.
+            Niet over meer kanalen, meer tools, meer ruis. Het gaat over de juiste
+            verhouding: precies genoeg van het juiste, op de juiste plek.
+          </p>
+          <p>
+            Een zonnebloem maakt geen extra zaden om indruk te maken. Ze groeit in de
+            meest efficiënte vorm die er is, en wordt en passant prachtig. Dat is precies
+            wat goede marketing ook doet. Niet alles doen, maar het juiste, in de juiste
+            verhouding.
+          </p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="fib-faq">
+        <h2>Veelgestelde vragen</h2>
+        <div class="faq-list">
+          {faqs.map((f) => (
+            <details class="faq-item">
+              <summary>{f.question}</summary>
+              <p>{f.answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <!-- Beeldverantwoording -->
+      <section class="fib-credits">
+        <h2>Beeldverantwoording</h2>
+        <p>
+          Beeld via Wikimedia Commons. Zonnebloem: Rifat R (CC BY 4.0). Nautilus: Chris 73
+          (CC BY-SA 3.0). Vetplant: Julesvernex2 (CC BY-SA 4.0). Romanesco: Leon Brocard
+          (CC BY 2.0). Dennenappel: Didier Descouens (CC BY-SA 4.0). Varen: Albarubescens
+          (CC BY 4.0). Spiraalaloë: Pseudopanax (publiek domein). Golf: NOAA. Orkaan: NASA.
+          Sterrenstelsel NGC 1300: NASA, ESA en het Hubble Heritage Team. Gulden rechthoek
+          en het portret van Fibonacci: publiek domein.
+        </p>
+      </section>
+
+    </div>
+
+    <CTA
+      headline="Benieuwd wat de juiste verhouding voor jou is?"
+      body="Plan een vrijblijvend kennismakingsgesprek. We kijken naar je situatie en vertellen eerlijk wat wél en niet de moeite waard is."
+      cta={{ label: 'Plan een gesprek', href: '/contact/' }}
+    />
+  </article>
+</Page>
+
+<style>
+  .fib {
+    padding-bottom: 2rem;
+    overflow: hidden;
+  }
+
+  .fib :global(.container) {
+    max-width: 1080px;
+  }
+
+  /* Section label */
+  .fib-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: oklch(0.65 0.2 250);
+    margin-bottom: 0.75rem;
+  }
+
+  /* Hero */
+  .fib-hero {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 1.5rem 0 2.5rem;
+    text-align: center;
+  }
+
+  .fib-kicker {
+    font-family: Georgia, serif;
+    font-size: clamp(3.5rem, 11vw, 7rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .fib-hero h1 {
+    font-size: clamp(2.1rem, 5vw, 3.25rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin: 0 0 1.25rem;
+  }
+
+  .fib-lead {
+    font-size: 1.1875rem;
+    line-height: 1.75;
+    color: oklch(0.74 0 0);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  /* Gold sheen, the golden ratio nod */
+  .fib-kicker,
+  .golden {
+    background: linear-gradient(
+      100deg,
+      oklch(0.6 0.03 85) 0%,
+      oklch(0.72 0.05 88) 25%,
+      oklch(0.98 0.05 96) 50%,
+      oklch(0.72 0.05 88) 75%,
+      oklch(0.6 0.03 85) 100%
+    );
+    background-size: 200% auto;
+    background-position: 0 center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: fib-sheen 6.5s linear infinite;
+  }
+
+  .fib-kicker {
+    filter: drop-shadow(0 3px 24px oklch(0.85 0.08 90 / 0.16));
+  }
+
+  .golden {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  @keyframes fib-sheen {
+    to {
+      background-position: -200% center;
+    }
+  }
+
+  /* Intro */
+  .fib-intro {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 0 1rem;
+    text-align: center;
+  }
+
+  .fib-intro p {
+    font-size: 1.1875rem;
+    line-height: 1.8;
+    color: oklch(0.8 0 0);
+    margin: 0 0 1.25rem;
+  }
+
+  /* Two-column section */
+  .fib-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+    padding: 4.5rem 0;
+    border-top: 1px solid oklch(0.16 0 0);
+  }
+
+  .fib-section.reverse .fib-figure {
+    order: -1;
+  }
+
+  .fib-text h2 {
+    font-size: clamp(1.6rem, 3vw, 2.15rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: oklch(0.98 0 0);
+    margin: 0 0 1.25rem;
+    line-height: 1.2;
+  }
+
+  .fib-text p {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: oklch(0.74 0 0);
+    margin: 0 0 1.1rem;
+  }
+
+  .fib-text.wide {
+    grid-column: 1 / -1;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Figures */
+  .fib-figure {
+    margin: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid oklch(0.17 0 0);
+    background: oklch(0.1 0 0);
+  }
+
+  .fib-figure img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .fib-figure figcaption {
+    padding: 0.85rem 1.1rem;
+    font-size: 0.8438rem;
+    color: oklch(0.62 0 0);
+    border-top: 1px solid oklch(0.15 0 0);
+  }
+
+  .fib-figure.is-portrait img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  /* Diagrams need a light backdrop so dark strokes stay visible */
+  .fib-figure.is-diagram {
+    background: oklch(0.97 0 0);
+  }
+
+  .fib-figure.is-diagram img {
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    padding: 2rem;
+  }
+
+  .fib-figure.is-diagram figcaption {
+    color: oklch(0.45 0 0);
+    border-top-color: oklch(0.88 0 0);
+    background: oklch(0.97 0 0);
+  }
+
+  .fib-figure-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .fib-figure.is-manuscript img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .fib-spiral {
+    max-width: 540px;
+    margin: 2.5rem auto 0;
+    text-align: left;
+  }
+
+  /* Large feature image */
+  .fib-feature {
+    margin: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid oklch(0.17 0 0);
+  }
+
+  .fib-feature img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+  }
+
+  .fib-feature figcaption {
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+    color: oklch(0.66 0 0);
+    background: oklch(0.1 0 0);
+    text-align: center;
+  }
+
+  /* Centered band */
+  .fib-band {
+    padding: 4.5rem 0;
+    border-top: 1px solid oklch(0.16 0 0);
+    text-align: center;
+  }
+
+  .fib-band h2 {
+    font-size: clamp(1.6rem, 3vw, 2.15rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: oklch(0.98 0 0);
+    margin: 0 auto 1.25rem;
+    max-width: 720px;
+    line-height: 1.2;
+  }
+
+  .fib-band-text,
+  .fib-band-note {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: oklch(0.74 0 0);
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .fib-band-note {
+    margin-top: 2.5rem;
+    font-style: italic;
+    color: oklch(0.68 0 0);
+  }
+
+  /* The sequence */
+  .fib-sequence {
+    font-family: Georgia, serif;
+    font-size: clamp(1.35rem, 3.5vw, 2.1rem);
+    color: oklch(0.86 0.03 88);
+    margin: 0 auto 1.75rem;
+    line-height: 1.5;
+    max-width: 820px;
+  }
+
+  /* Video */
+  .video-wrap {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    max-width: 820px;
+    margin: 2.5rem auto 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid oklch(0.18 0 0);
+    background: oklch(0.06 0 0);
+  }
+
+  .video-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* Nature gallery */
+  .fib-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin: 2.5rem 0 0;
+    text-align: left;
+  }
+
+  .fib-gallery figure {
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid oklch(0.17 0 0);
+    background: oklch(0.1 0 0);
+  }
+
+  .fib-gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .fib-gallery figcaption {
+    padding: 0.7rem 0.85rem;
+    font-size: 0.8125rem;
+    color: oklch(0.62 0 0);
+    border-top: 1px solid oklch(0.15 0 0);
+  }
+
+  /* Nerd cards */
+  .nerd-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+    text-align: left;
+  }
+
+  .nerd-card {
+    border: 1px solid oklch(0.17 0 0);
+    border-radius: 14px;
+    padding: 1.5rem;
+    background: oklch(0.1 0 0);
+  }
+
+  .nerd-card h3 {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: oklch(0.96 0 0);
+    margin: 0 0 0.6rem;
+    line-height: 1.3;
+  }
+
+  .nerd-card p {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: oklch(0.7 0 0);
+    margin: 0;
+  }
+
+  /* FAQ */
+  .fib-faq {
+    padding: 4.5rem 0 3rem;
+    border-top: 1px solid oklch(0.16 0 0);
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .fib-faq h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: oklch(0.98 0 0);
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-item {
+    border-top: 1px solid oklch(0.18 0 0);
+  }
+
+  .faq-item:last-child {
+    border-bottom: 1px solid oklch(0.18 0 0);
+  }
+
+  .faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 1.25rem 2rem 1.25rem 0;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: oklch(0.95 0 0);
+    position: relative;
+    transition: color 0.2s ease;
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: oklch(0.6 0 0);
+    transition: transform 0.2s ease;
+  }
+
+  .faq-item[open] summary::after {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .faq-item summary:hover {
+    color: oklch(0.65 0.2 250);
+  }
+
+  .faq-item p {
+    margin: 0;
+    padding: 0 0 1.5rem;
+    color: oklch(0.72 0 0);
+    line-height: 1.75;
+    font-size: 0.9688rem;
+  }
+
+  /* Credits */
+  .fib-credits {
+    padding: 2.5rem 0;
+    border-top: 1px solid oklch(0.14 0 0);
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .fib-credits h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: oklch(0.55 0 0);
+    margin: 0 0 0.6rem;
+  }
+
+  .fib-credits p {
+    font-size: 0.8125rem;
+    line-height: 1.7;
+    color: oklch(0.55 0 0);
+    margin: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fib-kicker,
+    .golden {
+      animation: none;
+      background: none;
+      -webkit-text-fill-color: oklch(0.78 0.05 88);
+      color: oklch(0.78 0.05 88);
+    }
+  }
+
+  @media (max-width: 860px) {
+    .nerd-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .fib-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 680px) {
+    .fib-section {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 3rem 0;
+    }
+    .fib-section.reverse .fib-figure {
+      order: 0;
+    }
+    .fib-band {
+      padding: 3rem 0;
+    }
+    .nerd-grid {
+      grid-template-columns: 1fr;
+    }
+    .fib-feature img {
+      aspect-ratio: 4 / 3;
+    }
+  }
+</style>
