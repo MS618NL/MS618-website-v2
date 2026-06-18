@@ -76,7 +76,7 @@
     { "label": "Diensten", "href": "/diensten/" },
     { "label": "Cases", "href": "/cases/" },
     { "label": "Blog", "href": "/blog/" },
-    { "label": "Over ons", "href": "/about/" },
+    { "label": "Over ons", "href": "/over-ons/" },
     { "label": "Contact", "href": "/contact/" }
   ]
 }
