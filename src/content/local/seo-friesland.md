@@ -1,10 +1,10 @@
 ---
 title: "SEO Friesland"
-seoTitle: "SEO Friesland: beter gevonden in Google | MS618"
-description: "SEO in Friesland. MS618 zorgt vanuit Joure dat MKB-bedrijven in heel Friesland beter gevonden worden in Google en in AI-zoekmachines."
+seoTitle: "SEO Friesland: meer klanten uit Google en AI | MS618"
+description: "SEO-bureau in Friesland. Senior specialisten uit Joure halen voor MKB meer klanten uit Google en AI-zoekmachines. Plan een vrijblijvend gesprek."
 order: 3
 region: "Friesland"
-updatedDate: 2026-06-17
+updatedDate: 2026-07-10
 faq:
   - question: "Wat is SEO en wat heb ik eraan?"
     answer: "SEO, zoekmachineoptimalisatie, zorgt dat je bedrijf gevonden wordt door mensen die in Google zoeken naar wat jij biedt. Goede SEO levert structureel verkeer en leads op, zonder dat je per klik betaalt zoals bij advertenties."
@@ -30,7 +30,7 @@ Zoeken verandert. Je klant stelt steeds vaker een vraag aan ChatGPT of Perplexit
 
 ## Lokaal en landelijk
 
-Vanuit Joure werken we voor ondernemers door heel Friesland: Leeuwarden, Drachten, Sneek, Heerenveen, Lemmer en omstreken. Lokale vindbaarheid waar dat telt, landelijke slagkracht waar dat nodig is.
+Vanuit Joure werken we voor ondernemers door heel Friesland: Leeuwarden, Drachten, Sneek, Heerenveen, Lemmer en omstreken. Lokale vindbaarheid waar dat telt, landelijke slagkracht waar dat nodig is. Zit je bedrijf in de hoofdstad? Voor [SEO in Leeuwarden](/seo-leeuwarden/) hebben we een eigen pagina met de aanpak voor de stad.
 
 ## Voor wie
 
