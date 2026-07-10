@@ -1,10 +1,10 @@
 ---
 title: "Marketingbureau Friesland"
-seoTitle: "Marketingbureau Friesland: online groei voor MKB | MS618"
-description: "Online marketingbureau in Friesland. Vanuit Joure helpen wij MKB-ondernemers groeien met SEO, AI, advertenties en websites. Lokaal betrokken, landelijk sterk."
+seoTitle: "Online marketingbureau Friesland: groei voor MKB | MS618"
+description: "Online marketingbureau in Friesland. Eén senior team voor SEO, AI, advertenties en je website. Lokaal betrokken, landelijk sterk. Plan een gesprek."
 order: 1
 region: "Friesland"
-updatedDate: 2026-06-17
+updatedDate: 2026-07-10
 faq:
   - question: "Waar is MS618 gevestigd?"
     answer: "MS618 zit in Joure, centraal in Friesland aan de A6. Vanuit daar werken we voor ondernemers in heel de provincie, van Leeuwarden en Drachten tot Sneek, Heerenveen en Lemmer, en daarbuiten."
@@ -33,6 +33,8 @@ Geen losse acties of rapporten die in een la verdwijnen, maar één partner die 
 ## Lokaal verankerd, landelijk sterk
 
 Wij zitten in Joure en werken voor ondernemers door heel Friesland: Leeuwarden, Drachten, Sneek, Heerenveen, Lemmer, Bolsward en alles daartussenin. Je hebt een aanspreekpunt in de buurt, met de aanpak en tooling die we ook voor landelijke B2B-klanten inzetten.
+
+Zit je om de hoek? Bekijk dan onze pagina's over [online marketing in Joure](/marketingbureau-joure/) en [webdesign in Joure](/webdesign-joure/). Voor bedrijven in de hoofdstad is er [SEO Leeuwarden](/seo-leeuwarden/).
 
 ## Voor wie
 
