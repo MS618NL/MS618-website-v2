@@ -7,13 +7,13 @@ region: "Joure"
 updatedDate: 2026-06-17
 faq:
   - question: "Wat is SEO en wat heb ik eraan?"
-    answer: "SEO, zoekmachineoptimalisatie, zorgt dat je bedrijf gevonden wordt door mensen die in Google zoeken naar wat jij biedt. Goede SEO levert structureel verkeer en leads op, zonder dat je per klik betaalt zoals bij advertenties."
+    answer: "Zoekmachineoptimalisatie zorgt dat je gevonden wordt door mensen die zoeken naar wat jij biedt, van lokale termen rond Joure tot landelijke vaktermen. Anders dan bij advertenties betaal je niet per klik: goede posities blijven aanvragen opleveren."
   - question: "Zoeken jullie SEO-specialist in Joure, kan dat lokaal?"
     answer: "Ja. Ons kantoor staat in Joure aan de haven. Je hebt een SEO-specialist om de hoek met een persoonlijk aanspreekpunt, en de aanpak en tooling van een landelijk B2B-bureau. We werken in Joure en de omgeving, van Sint Nicolaasga tot Heerenveen en Sneek."
   - question: "Hoe lang duurt het voordat SEO werkt?"
-    answer: "SEO is een groeistrategie, geen knop. De eerste beweging zie je doorgaans binnen enkele maanden, structureel resultaat bouwt op over 6 tot 12 maanden. Het voordeel: die groei blijft staan, ook als je advertentiebudget stopt."
+    answer: "Voor lokale zoektermen in en rond Joure zie je vaak binnen enkele maanden beweging, omdat de concurrentie kleiner is dan landelijk. Structureel resultaat bouwt op over 6 tot 12 maanden, en dat blijft staan zonder advertentiebudget."
   - question: "Houden jullie ook rekening met AI-zoekmachines?"
-    answer: "Ja. Steeds vaker zoeken mensen via ChatGPT, Perplexity of Google AI Overviews. Wij combineren klassieke SEO met GEO, zodat je niet alleen hoog rankt maar ook geciteerd wordt in AI-antwoorden."
+    answer: "Ja. Ook in Friesland vragen steeds meer mensen ChatGPT of Perplexity om een aanbeveling in plaats van te googelen. Wij zorgen dat je daar genoemd wordt, naast je posities in Google. Die combinatie van SEO en GEO zit standaard in onze aanpak."
 ---
 
 ## Beter gevonden worden in Joure

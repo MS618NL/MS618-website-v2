@@ -11,7 +11,7 @@ faq:
   - question: "Doen jullie SEO voor heel Friesland?"
     answer: "Ja. We zitten in Joure en werken voor ondernemers in heel Friesland, van Leeuwarden en Drachten tot Sneek en Heerenveen. We optimaliseren zowel voor lokale zoekopdrachten als voor landelijke, afhankelijk van waar jouw klanten vandaan komen."
   - question: "Hoe lang duurt het voordat SEO werkt?"
-    answer: "SEO is een groeistrategie, geen knop. De eerste beweging zie je doorgaans binnen enkele maanden, structureel resultaat bouwt op over 6 tot 12 maanden. Het voordeel: die groei blijft staan, ook als je advertentiebudget stopt."
+    answer: "Reken op eerste beweging binnen enkele maanden en structurele groei over 6 tot 12 maanden. In Friesland ligt de concurrentie op veel termen lager dan landelijk, dus lokale posities komen vaak sneller. En die groei blijft staan, ook als je stopt met adverteren."
   - question: "Houden jullie ook rekening met AI-zoekmachines?"
     answer: "Ja. Steeds vaker zoeken mensen via ChatGPT, Perplexity of Google AI Overviews. Wij combineren klassieke SEO met GEO, zodat je niet alleen hoog rankt maar ook geciteerd wordt in AI-antwoorden."
 ---
