@@ -6,6 +6,10 @@ publishDate: 2026-07-15
 client: "KIS Group"
 service: "AI Strategy"
 result: "Concrete progress in applying AI, time after time"
+quote: "For me, Jorrit is an indispensable sparring partner in the fast-changing world of AI. He connects strategy, innovation and practical applicability. Thanks to that combination we make concrete progress every time. Thanx Jorrit!"
+quoteName: "Olaf Keur"
+quoteRole: "CEO, KIS Group"
+quotePhoto: "/images/cases/olaf-keur.jpg"
 category: "case-study"
 ---
 
@@ -29,10 +33,6 @@ An ongoing sparring track at board level: connecting strategic choices to concre
 ## The result
 
 Concrete progress, time after time: AI that actually lands in the business instead of staying an intention.
-
-> "For me, Jorrit is an indispensable sparring partner in the fast-changing world of AI. He connects strategy, innovation and practical applicability. Thanks to that combination we make concrete progress every time. Thanx Jorrit!"
-
-**Olaf Keur**, CEO, KIS Group
 
 ---
 

@@ -57,6 +57,19 @@ const breadcrumbs = [
           <Content />
         </div>
       </div>
+
+      {caseStudy.data.quote && (
+        <figure class="case-quote">
+          {caseStudy.data.quotePhoto && (
+            <img class="case-quote-photo" src={caseStudy.data.quotePhoto} alt={caseStudy.data.quoteName} width="72" height="72" loading="lazy" />
+          )}
+          <blockquote>{caseStudy.data.quote}</blockquote>
+          <figcaption>
+            <strong>{caseStudy.data.quoteName}</strong>
+            {caseStudy.data.quoteRole && <span>{caseStudy.data.quoteRole}</span>}
+          </figcaption>
+        </figure>
+      )}
     </div>
 
     <CTA
@@ -136,6 +149,60 @@ const breadcrumbs = [
   }
 
   .case-body {
-    padding-bottom: 4rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .case-quote {
+    max-width: 760px;
+    margin: 0 0 4rem;
+    padding: 2rem;
+    border: 1px solid oklch(0.18 0 0);
+    border-radius: 14px;
+    background: oklch(0.1 0 0);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "photo quote" "photo caption";
+    gap: 0.75rem 1.5rem;
+    align-items: start;
+  }
+
+  .case-quote-photo {
+    grid-area: photo;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .case-quote blockquote {
+    grid-area: quote;
+    margin: 0;
+    font-size: 1.1875rem;
+    line-height: 1.6;
+    color: oklch(0.9 0 0);
+  }
+
+  .case-quote figcaption {
+    grid-area: caption;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .case-quote figcaption strong {
+    color: oklch(0.98 0 0);
+    font-size: 0.9375rem;
+  }
+
+  .case-quote figcaption span {
+    color: oklch(0.62 0 0);
+    font-size: 0.8438rem;
+  }
+
+  @media (max-width: 560px) {
+    .case-quote {
+      grid-template-columns: 1fr;
+      grid-template-areas: "photo" "quote" "caption";
+    }
   }
 </style>

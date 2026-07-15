@@ -6,6 +6,10 @@ publishDate: 2026-07-15
 client: "Fugro"
 service: "GEO / AI Visibility"
 result: "Quickly visible in ChatGPT and other AI search engines"
+quote: "Jorrit and the MS618 team have helped us tremendously with a strong digital marketing strategy, implementing the latest AI insights along the way. We were visible in ChatGPT and other LLMs remarkably fast. Jorrit thinks and acts quickly, is creative and commercial. Highly recommended for anyone who wants to give their business a boost."
+quoteName: "Suzanne Legtenberg"
+quoteRole: "then Marketing Manager at Fugro"
+quotePhoto: "/images/cases/suzanne-legtenberg.jpg"
 category: "case-study"
 ---
 
@@ -29,10 +33,6 @@ A complete digital renewal, with the latest AI insights built in from the start:
 ## The result
 
 Fast visibility in ChatGPT and other AI search engines, while the classic channels kept running. Exactly what GEO is about: being mentioned at the moment an AI writes the answer.
-
-> "Jorrit and the MS618 team have helped us tremendously with a strong digital marketing strategy, implementing the latest AI insights along the way. We were visible in ChatGPT and other LLMs remarkably fast. Jorrit thinks and acts quickly, is creative and commercial. Highly recommended for anyone who wants to give their business a boost."
-
-**Suzanne Legtenberg**, then Marketing Manager at Fugro
 
 ---
 

@@ -6,6 +6,10 @@ publishDate: 2026-07-15
 client: "KIS Group"
 service: "AI-strategie"
 result: "Telkens concrete vooruitgang in de toepassing van AI"
+quote: "Jorrit is voor mij een onmisbare sparringpartner in de snel veranderende wereld van AI. Hij verbindt strategie, innovatie en praktische toepasbaarheid. Dankzij die combinatie boeken we telkens concrete vooruitgang. Thanx Jorrit!"
+quoteName: "Olaf Keur"
+quoteRole: "CEO, KIS Group"
+quotePhoto: "/images/cases/olaf-keur.jpg"
 category: "case-study"
 ---
 
@@ -29,10 +33,6 @@ Een doorlopend sparringtraject op directieniveau: strategische keuzes verbinden 
 ## Het resultaat
 
 Telkens concrete vooruitgang: AI die daadwerkelijk in het bedrijf landt in plaats van bij intenties blijft.
-
-> "Jorrit is voor mij een onmisbare sparringpartner in de snel veranderende wereld van AI. Hij verbindt strategie, innovatie en praktische toepasbaarheid. Dankzij die combinatie boeken we telkens concrete vooruitgang. Thanx Jorrit!"
-
-**Olaf Keur**, CEO, KIS Group
 
 ---
 

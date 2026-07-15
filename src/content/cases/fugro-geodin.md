@@ -6,6 +6,10 @@ publishDate: 2026-07-15
 client: "Fugro"
 service: "GEO / AI-vindbaarheid"
 result: "Snel zichtbaar in ChatGPT en andere AI-zoekmachines"
+quote: "Jorrit en het team van MS618 hebben ons geweldig geholpen met een sterke digitale marketingstrategie, waarbij ze ook de laatste AI-inzichten hebben geïmplementeerd. We waren heel snel zichtbaar in ChatGPT en andere LLMs. Jorrit denkt en handelt snel, is creatief en commercieel. Een aanrader voor iedereen die zijn bedrijf een boost wil geven."
+quoteName: "Suzanne Legtenberg"
+quoteRole: "destijds Marketing Manager bij Fugro"
+quotePhoto: "/images/cases/suzanne-legtenberg.jpg"
 category: "case-study"
 ---
 
@@ -29,10 +33,6 @@ Een complete digitale slag, met de nieuwste AI-inzichten er vanaf het begin in v
 ## Het resultaat
 
 Snelle zichtbaarheid in ChatGPT en andere AI-zoekmachines, terwijl de klassieke kanalen gewoon doorliepen. Precies waar GEO om draait: genoemd worden op het moment dat een AI het antwoord schrijft.
-
-> "Jorrit en het team van MS618 hebben ons geweldig geholpen met een sterke digitale marketingstrategie, waarbij ze ook de laatste AI-inzichten hebben geïmplementeerd. We waren heel snel zichtbaar in ChatGPT en andere LLMs. Jorrit denkt en handelt snel, is creatief en commercieel. Een aanrader voor iedereen die zijn bedrijf een boost wil geven."
-
-**Suzanne Legtenberg**, destijds Marketing Manager bij Fugro
 
 ---
 

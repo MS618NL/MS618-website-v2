@@ -6,6 +6,10 @@ publishDate: 2026-07-15
 client: "Swoop"
 service: "SEO Strategy"
 result: "Significantly better rankings, year after year"
+quote: "We've been working with Jorrit and the MS618 team consistently for over three years. Their SEO expertise has been instrumental in helping Swoop significantly improve our search rankings. They are proactive, responsive, and truly understand our business goals. Highly recommend MS618."
+quoteName: "Peter Evenson"
+quoteRole: "CEO, Swoop"
+quotePhoto: "/images/cases/peter-evenson.jpg"
 category: "case-study"
 ---
 
@@ -28,10 +32,6 @@ Not a one-off project, but an ongoing partnership of more than three years now:
 ## The result
 
 Structurally better positions on the core terms, year after year. For Swoop, SEO has become a predictable channel instead of a gamble.
-
-> "We've been working with Jorrit and the MS618 team consistently for over three years. Their SEO expertise has been instrumental in helping Swoop significantly improve our search rankings. They are proactive, responsive, and truly understand our business goals. Highly recommend MS618."
-
-**Peter Evenson**, CEO, Swoop
 
 ---
 
