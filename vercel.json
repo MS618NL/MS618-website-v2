@@ -15,7 +15,11 @@
     { "source": "/services", "destination": "/diensten/", "permanent": true },
     { "source": "/services/(.*)", "destination": "/diensten/$1", "permanent": true },
     { "source": "/about", "destination": "/over-ons/", "permanent": true },
-    { "source": "/about/(.*)", "destination": "/over-ons/$1", "permanent": true }
+    { "source": "/about/(.*)", "destination": "/over-ons/$1", "permanent": true },
+    { "source": "/cases/(b2b-leadgeneratie|saas-organisch-verkeer|e-commerce-conversie)", "destination": "/cases/", "permanent": true },
+    { "source": "/cases/(b2b-leadgeneratie|saas-organisch-verkeer|e-commerce-conversie)/(.*)", "destination": "/cases/", "permanent": true },
+    { "source": "/en/cases/(b2b-leadgeneratie|saas-organisch-verkeer|e-commerce-conversie)", "destination": "/en/cases/", "permanent": true },
+    { "source": "/en/cases/(b2b-leadgeneratie|saas-organisch-verkeer|e-commerce-conversie)/(.*)", "destination": "/en/cases/", "permanent": true }
   ],
   "headers": [
     {

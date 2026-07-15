@@ -31,6 +31,10 @@ const cases = defineCollection({
     client: z.string(),
     service: z.string(),
     result: z.string(),
+    quote: z.string().optional(),
+    quoteName: z.string().optional(),
+    quoteRole: z.string().optional(),
+    quotePhoto: z.string().optional(),
     category: z.string().default('case-study'),
   }),
 });
@@ -80,6 +84,10 @@ const casesEn = defineCollection({
     client: z.string(),
     service: z.string(),
     result: z.string(),
+    quote: z.string().optional(),
+    quoteName: z.string().optional(),
+    quoteRole: z.string().optional(),
+    quotePhoto: z.string().optional(),
     category: z.string().default('case-study'),
   }),
 });
