@@ -19,9 +19,9 @@ const { service } = Astro.props;
 const { Content } = await render(service);
 
 // Get related cases for this service
-const allCases = await getCollection('cases');
+const allCases = await getCollection('cases-en');
 const relatedCases = allCases
-  .filter((c) => c.data.service.toLowerCase().includes(service.data.title.toLowerCase().split(' ')[0]))
+  .filter((c) => c.data.relatedService === service.id)
   .slice(0, 3);
 
 const pageUrl = canonicalUrl(`/en/services/${service.id}/`);
@@ -95,6 +95,7 @@ const extraSchema = [
                 client={c.data.client}
                 service={c.data.service}
                 result={c.data.result}
+                basePath="/en/cases"
               />
             ))}
           </div>

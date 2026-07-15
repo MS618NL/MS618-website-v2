@@ -35,6 +35,7 @@ const cases = defineCollection({
     quoteName: z.string().optional(),
     quoteRole: z.string().optional(),
     quotePhoto: z.string().optional(),
+    relatedService: z.string().optional(),
     category: z.string().default('case-study'),
   }),
 });
@@ -88,6 +89,7 @@ const casesEn = defineCollection({
     quoteName: z.string().optional(),
     quoteRole: z.string().optional(),
     quotePhoto: z.string().optional(),
+    relatedService: z.string().optional(),
     category: z.string().default('case-study'),
   }),
 });

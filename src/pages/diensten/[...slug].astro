@@ -21,7 +21,7 @@ const { Content } = await render(service);
 // Get related cases for this service
 const allCases = await getCollection('cases');
 const relatedCases = allCases
-  .filter((c) => c.data.service.toLowerCase().includes(service.data.title.toLowerCase().split(' ')[0]))
+  .filter((c) => c.data.relatedService === service.id)
   .slice(0, 3);
 
 const pageUrl = canonicalUrl(`/diensten/${service.id}/`);
