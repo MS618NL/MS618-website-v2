@@ -48,6 +48,11 @@ const extraSchema = [
         <h1>{entry.data.title}</h1>
         <p class="local-description">{entry.data.description}</p>
         <a href="/contact/" class="btn-primary">Plan een gesprek →</a>
+        <p class="local-trust">
+          <span class="trust-item"><span class="trust-star" aria-hidden="true">★</span> 5,0 op Google · 20 reviews</span>
+          <span class="trust-sep" aria-hidden="true">·</span>
+          <a class="trust-item trust-link" href="/blog/google-ads-impact-awards-2026/">Genomineerd voor de Google Ads Impact Awards 2026</a>
+        </p>
       </header>
 
       <div class="local-body">
@@ -109,6 +114,36 @@ const extraSchema = [
     line-height: 1.7;
     margin-bottom: 1.75rem;
     max-width: 620px;
+  }
+
+  .local-trust {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 0.75rem;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: oklch(0.68 0 0);
+  }
+
+  .trust-star {
+    color: oklch(0.8 0.09 90);
+  }
+
+  .trust-sep {
+    color: oklch(0.4 0 0);
+  }
+
+  .trust-link {
+    color: oklch(0.68 0 0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .trust-link:hover {
+    color: oklch(0.92 0 0);
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
   .local-body {
