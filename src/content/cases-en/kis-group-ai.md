@@ -10,6 +10,7 @@ quote: "For me, Jorrit is an indispensable sparring partner in the fast-changing
 quoteName: "Olaf Keur"
 quoteRole: "CEO, KIS Group"
 quotePhoto: "/images/cases/olaf-keur.jpg"
+relatedService: "ai-strategie"
 category: "case-study"
 ---
 

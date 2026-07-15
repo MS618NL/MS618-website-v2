@@ -36,7 +36,9 @@
       "jobTitle": "Strategie, SEO & AI",
       "education": "BSc Information Technology",
       "linkedin": "https://linkedin.com/in/jorrit-miedema",
-      "knowsAbout": ["SEO", "GEO", "AI Marketing", "Contentstrategie"]
+      "knowsAbout": ["SEO", "GEO", "AI Marketing", "Contentstrategie"],
+      "bio": "Mede-oprichter van MS618. Werkt aan de kruising van SEO, AI-vindbaarheid (GEO) en groeistrategie voor MKB- en B2B-bedrijven.",
+      "bioEn": "Co-founder of MS618. Works at the intersection of SEO, AI visibility (GEO) and growth strategy for SMEs and B2B companies."
     },
     {
       "slug": "jurjan-groothuis",

@@ -10,6 +10,7 @@ quote: "Jorrit and the MS618 team have helped us tremendously with a strong digi
 quoteName: "Suzanne Legtenberg"
 quoteRole: "then Marketing Manager at Fugro"
 quotePhoto: "/images/cases/suzanne-legtenberg.jpg"
+relatedService: "geo-optimalisatie"
 category: "case-study"
 ---
 

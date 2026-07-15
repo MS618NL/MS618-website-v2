@@ -10,6 +10,7 @@ quote: "Jorrit is voor mij een onmisbare sparringpartner in de snel veranderende
 quoteName: "Olaf Keur"
 quoteRole: "CEO, KIS Group"
 quotePhoto: "/images/cases/olaf-keur.jpg"
+relatedService: "ai-strategie"
 category: "case-study"
 ---
 
