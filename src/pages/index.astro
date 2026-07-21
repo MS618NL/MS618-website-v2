@@ -21,6 +21,17 @@ const recentPosts = (await getCollection('blog'))
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
   .slice(0, 3);
 
+// Homepage services strip (core services, by curated order)
+const homeServices = (await getCollection('services'))
+  .filter((s) => !s.data.noindex)
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99))
+  .slice(0, 6);
+
+// Real cases with quote + photo for the proof section
+const homeCases = (await getCollection('cases'))
+  .filter((c) => !c.data.noindex && c.data.quote)
+  .slice(0, 3);
+
 const pageUrl = site.url + '/';
 const breadcrumbs = [{ name: 'Home' }];
 
@@ -44,20 +55,36 @@ const schemaGraph = [
   <main id="main-content">
 
     <!-- Hero -->
-    <Hero />
+    <Hero ctaSecondary={{ label: 'Bekijk cases', href: '/cases/' }} />
 
-    <!-- Google Award Badge -->
-    <a href="/blog/google-ads-impact-awards-2026/" target="_blank" rel="noopener" class="award-bar">
+    <!-- Proof band: logos + reviews + award in one quiet strip -->
+    <section class="clients-section proof-band" aria-label="Vertrouwd door klanten">
       <div class="container">
-        <div class="award-inner">
-          <span class="award-google-text">Google</span>
-          <span class="award-divider"></span>
-          <span class="award-text">Ads Impact Awards 2026</span>
-          <span class="award-dot">·</span>
-          <span class="award-sub">Genomineerd voor AI-innovatie in advertising</span>
+        <div class="section-label">Vertrouwd door</div>
+        <div class="clients-grid">
+          <div class="client-logo"><img src="/images/clients/inspecto-visio.png" alt="Inspecto Visio" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/ndo-nederland.png" alt="NDO Nederland" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/kis-group.png" alt="KIS Group" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/fugro.png" alt="Fugro" loading="lazy" /></div>
+          <div class="client-logo client-logo--bright"><img src="/images/clients/christmas-brothers.svg" alt="Christmas Brothers" loading="lazy" /></div>
+          <div class="client-logo client-logo--bright"><img src="/images/clients/step2.svg" alt="STEP2" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/swoop.png" alt="Swoop" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/moovs.png" alt="Moovs" loading="lazy" /></div>
+          <div class="client-logo client-logo--bright"><img src="/images/clients/bedrijfskleding-online.webp" alt="Bedrijfskleding Online" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/zonklaar.svg" alt="ZONklaar" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/hoekstra-partners.png" alt="Hoekstra & Partners" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/friesland-boating.jpg" alt="Friesland Boating" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/holtara.svg" alt="Holtara" loading="lazy" /></div>
+          <div class="client-logo"><img src="/images/clients/houtmethistorie.svg" alt="Hout Met Historie" loading="lazy" /></div>
+          <div class="client-logo client-logo--bright"><img src="/images/clients/dvm.svg" alt="DVM" loading="lazy" /></div>
         </div>
+        <p class="proof-trust">
+          <span class="proof-item"><span class="proof-star" aria-hidden="true">★</span> 5,0 op Google · 21 reviews</span>
+          <span class="proof-sep" aria-hidden="true">·</span>
+          <a class="proof-item proof-link" href="/blog/google-ads-impact-awards-2026/">Genomineerd: Google Ads Impact Awards 2026</a>
+        </p>
       </div>
-    </a>
+    </section>
 
     <!-- Problem -->
     <section class="problem-section" id="aanpak">
@@ -69,7 +96,7 @@ const schemaGraph = [
             <p>AI is overal. Je concurrent maakt er al websites mee, advertenties, content. Ondertussen vraag je je af: moet ik een nieuwe website? Wat kan ik eigenlijk met ChatGPT? En waarom levert mijn marketing geen klanten meer op?</p>
             <p>Het probleem is niet dat je te weinig doet. Het probleem is dat niemand je vertelt wat je wél moet doen — en wat je gerust kunt laten.</p>
             <p class="problem-manifesto">Je zoekt klanten. Niet meer tools.<br>Je zoekt groei. Niet meer kanalen.<br>Je zoekt iemand die het regelt. Niet iemand die een rapport stuurt.</p>
-            <p class="problem-conclusion">Dat is precies wat wij doen.</p>
+            <p class="problem-conclusion"><span class="gold-sheen">Dat is precies wat wij doen.</span></p>
           </div>
           <div class="problem-col problem-col-right">
             <div class="problem-stat">
@@ -137,6 +164,27 @@ const schemaGraph = [
 
       document.querySelectorAll('.ai-tools-static').forEach(initStreak);
     </script>
+
+    <!-- Diensten -->
+    <section class="services-strip">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-label">Diensten</div>
+            <h2 class="section-title">Wat wij voor je regelen</h2>
+          </div>
+          <a href="/diensten/" class="btn-secondary">Alle diensten →</a>
+        </div>
+        <div class="svc-grid">
+          {homeServices.map((s) => (
+            <a class="svc-card" href={`/diensten/${s.id}/`}>
+              <span class="svc-title">{s.data.title}</span>
+              <span class="svc-arrow" aria-hidden="true">→</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
 
     <!-- Raptor -->
     <section class="raptor-section">
@@ -209,26 +257,35 @@ const schemaGraph = [
       </div>
     </section>
 
-    <!-- Client Logos -->
-    <section class="clients-section">
+    <!-- Echte cases (quote + foto + link) -->
+    <section class="testimonials-section cases-home">
       <div class="container">
-        <div class="section-label">Vertrouwd door</div>
-        <div class="clients-grid">
-          <div class="client-logo"><img src="/images/clients/inspecto-visio.png" alt="Inspecto Visio" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/ndo-nederland.png" alt="NDO Nederland" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/kis-group.png" alt="KIS Group" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/fugro.png" alt="Fugro" loading="lazy" /></div>
-          <div class="client-logo client-logo--bright"><img src="/images/clients/christmas-brothers.svg" alt="Christmas Brothers" loading="lazy" /></div>
-          <div class="client-logo client-logo--bright"><img src="/images/clients/step2.svg" alt="STEP2" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/swoop.png" alt="Swoop" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/moovs.png" alt="Moovs" loading="lazy" /></div>
-          <div class="client-logo client-logo--bright"><img src="/images/clients/bedrijfskleding-online.webp" alt="Bedrijfskleding Online" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/zonklaar.svg" alt="ZONklaar" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/hoekstra-partners.png" alt="Hoekstra & Partners" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/friesland-boating.jpg" alt="Friesland Boating" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/holtara.svg" alt="Holtara" loading="lazy" /></div>
-          <div class="client-logo"><img src="/images/clients/houtmethistorie.svg" alt="Hout Met Historie" loading="lazy" /></div>
-          <div class="client-logo client-logo--bright"><img src="/images/clients/dvm.svg" alt="DVM" loading="lazy" /></div>
+        <div class="section-header">
+          <div>
+            <div class="section-label">Echte cases</div>
+            <h2 class="section-title">Echte klanten, in hun eigen woorden</h2>
+          </div>
+          <a href="/cases/" class="btn-secondary">Alle cases →</a>
+        </div>
+        <div class="testimonials-grid">
+          {homeCases.map((c) => (
+            <a class="testimonial case-tile" href={`/cases/${c.id}/`}>
+              <div class="case-tile-head">
+                {c.data.quotePhoto && (
+                  <img src={c.data.quotePhoto} alt={c.data.quoteName} width="44" height="44" loading="lazy" />
+                )}
+                <div class="case-tile-who">
+                  <strong>{c.data.quoteName}</strong>
+                  <span>{c.data.quoteRole}</span>
+                </div>
+              </div>
+              <p class="case-tile-quote">"{c.data.quote}"</p>
+              <div class="case-tile-foot">
+                <span class="case-tile-result">{c.data.result}</span>
+                <span class="case-tile-link">Lees de case →</span>
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </section>
@@ -291,35 +348,6 @@ const schemaGraph = [
 
 
 
-    <!-- Testimonials -->
-    <section class="testimonials-section">
-      <div class="container">
-        <div class="section-label">Wat klanten zeggen</div>
-        <div class="testimonials-grid">
-          <blockquote class="testimonial">
-            <p>"Jorrit en het team van MS618 hebben ons geweldig geholpen met een sterke digitale marketingstrategie, waarbij ze ook de laatste AI-inzichten hebben geïmplementeerd. We waren heel snel zichtbaar in ChatGPT en andere LLMs. Jorrit denkt en handelt snel, is creatief en commercieel. Een aanrader voor iedereen die zijn bedrijf een boost wil geven."</p>
-            <footer>
-              <strong>Suzanne Legtenberg</strong>
-              <span>Marketing Manager, Waimakers / Fugro</span>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial">
-            <p>"We've been working with Jorrit and the MS618 team consistently for over three years. Their SEO expertise has been instrumental in helping Swoop significantly improve our search rankings. They are proactive, responsive, and truly understand our business goals. Highly recommend MS618."</p>
-            <footer>
-              <strong>Peter Evenson</strong>
-              <span>CEO, Swoop</span>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial">
-            <p>"Jorrit is voor mij een onmisbare sparringpartner in de snel veranderende wereld van AI. Hij verbindt strategie, innovatie en praktische toepasbaarheid. Dankzij die combinatie boeken we telkens concrete vooruitgang. Thanx Jorrit!"</p>
-            <footer>
-              <strong>Olaf Keur</strong>
-              <span>CEO, KIS Group</span>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </section>
 
     <!-- Latest Blog Posts -->
     {recentPosts.length > 0 && (
@@ -351,7 +379,34 @@ const schemaGraph = [
     <!-- CTA -->
     <CTA />
 
+    <!-- .618 signatuur -->
+    <div class="sig-618">
+      <a href="/fibonacci/">
+        <span class="sig-num gold-sheen">.618</span>
+        <span class="sig-text">De gulden snede achter onze naam →</span>
+      </a>
+    </div>
+
   </main>
+
+  <script>
+    // Restrained scroll-reveal; skipped entirely for reduced-motion users.
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+      const targets = document.querySelectorAll('main > section:not(.hero), main > .ai-tools-bar, main > .sig-618');
+      const io = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        }
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+      targets.forEach((el) => {
+        el.classList.add('reveal');
+        io.observe(el);
+      });
+    }
+  </script>
   <Footer />
 </Base>
 
@@ -496,19 +551,22 @@ const schemaGraph = [
     line-height: 1.5;
   }
 
+  /* Editorial display moment: the manifesto carries the page's voice */
   .problem-manifesto {
-    color: #a3a3a3 !important;
-    font-size: 0.9375rem !important;
-    line-height: 1.7 !important;
+    color: #d4d4d4 !important;
+    font-size: clamp(1.125rem, 1.8vw, 1.375rem) !important;
+    font-weight: 500;
+    line-height: 1.55 !important;
+    letter-spacing: -0.01em;
     border-left: 2px solid #2a2a2a;
-    padding-left: 1rem;
-    margin-top: 1.5rem;
+    padding-left: 1.25rem;
+    margin-top: 2rem;
   }
 
   .problem-conclusion {
     color: #fafafa !important;
-    font-size: 1rem !important;
-    font-weight: 500;
+    font-size: 1.0625rem !important;
+    font-weight: 600;
     margin-top: 1.5rem;
   }
 
@@ -741,7 +799,17 @@ const schemaGraph = [
     overflow: hidden;
   }
 
+  /* Dark treatment so the bright photo sits inside the palette */
+  .raptor-image-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(to top, rgba(5, 5, 8, 0.55), rgba(5, 5, 8, 0.12) 45%, rgba(5, 5, 8, 0.28));
+  }
+
   .raptor-image-wrap img {
+    filter: saturate(0.75) brightness(0.85) contrast(1.05);
     width: 100%;
     height: auto;
     display: block;
@@ -1062,6 +1130,245 @@ const schemaGraph = [
 
   @media (max-width: 480px) {
     .team-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* ── Homepage upgrade v2 ── */
+
+  /* Gold sheen: the .618 signature color, used at exactly one narrative moment */
+  .gold-sheen {
+    background: linear-gradient(
+      100deg,
+      oklch(0.6 0.03 85) 0%,
+      oklch(0.72 0.05 88) 25%,
+      oklch(0.98 0.05 96) 50%,
+      oklch(0.72 0.05 88) 75%,
+      oklch(0.6 0.03 85) 100%
+    );
+    background-size: 200% auto;
+    background-position: 0 center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: gold-sheen-move 6.5s linear infinite;
+  }
+
+  @keyframes gold-sheen-move {
+    to { background-position: -200% center; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .gold-sheen {
+      animation: none;
+      background: none;
+      -webkit-text-fill-color: oklch(0.78 0.05 88);
+      color: oklch(0.78 0.05 88);
+    }
+  }
+
+  /* Proof band (direct onder de hero) */
+  .proof-band {
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .proof-trust {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.35rem 0.75rem;
+    margin: 2.5rem 0 0;
+    font-size: 0.875rem;
+    color: #9e9e9e;
+  }
+
+  .proof-star {
+    color: oklch(0.8 0.09 90);
+  }
+
+  .proof-sep {
+    color: #444;
+  }
+
+  .proof-link {
+    color: #9e9e9e;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .proof-link:hover {
+    color: #fafafa;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  /* Diensten-strip */
+  .services-strip {
+    background: #0a0a0a;
+    border-top: 1px solid #1a1a1a;
+    padding: 4.5rem 0;
+  }
+
+  .svc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .svc-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: #0f0f0f;
+    border: 1px solid #1a1a1a;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+
+  .svc-card:hover {
+    border-color: #333;
+    background: #121212;
+  }
+
+  .svc-title {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #e5e5e5;
+    letter-spacing: -0.01em;
+  }
+
+  .svc-arrow {
+    color: #555;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+
+  .svc-card:hover .svc-arrow {
+    color: #fafafa;
+    transform: translateX(3px);
+  }
+
+  /* Cases-home tiles (op testimonial-basis) */
+  .case-tile {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .case-tile:hover {
+    border-color: #333;
+  }
+
+  .case-tile-head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .case-tile-head img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .case-tile-who {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .case-tile-who strong {
+    font-size: 0.875rem;
+    color: #fafafa;
+  }
+
+  .case-tile-who span {
+    font-size: 0.78rem;
+    color: #8a8a8a;
+  }
+
+  .case-tile-quote {
+    margin: 0;
+    font-size: 0.9063rem;
+    line-height: 1.65;
+    color: #b3b3b3;
+    flex-grow: 1;
+  }
+
+  .case-tile-foot {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 1rem;
+  }
+
+  .case-tile-result {
+    font-size: 0.8438rem;
+    font-weight: 600;
+    color: oklch(0.72 0.18 145);
+  }
+
+  .case-tile-link {
+    font-size: 0.8438rem;
+    color: #8a8a8a;
+    transition: color 0.2s ease;
+  }
+
+  .case-tile:hover .case-tile-link {
+    color: #fafafa;
+  }
+
+  /* .618 signatuur onder de CTA */
+  .sig-618 {
+    margin-top: -7rem;
+    padding: 0 0 4rem;
+    text-align: center;
+    background: #0a0a0a;
+  }
+
+  .sig-618 a {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    text-decoration: none;
+  }
+
+  .sig-num {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  .sig-text {
+    font-size: 0.8438rem;
+    color: #777;
+    transition: color 0.2s ease;
+  }
+
+  .sig-618 a:hover .sig-text {
+    color: #d4d4d4;
+  }
+
+  /* Scroll-reveal (class wordt alleen via JS gezet, dus no-JS blijft alles zichtbaar) */
+  :global(.reveal) {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  :global(.reveal.in) {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (max-width: 860px) {
+    .svc-grid {
       grid-template-columns: 1fr;
     }
   }

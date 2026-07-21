@@ -16,6 +16,7 @@ const {
   rotatingWords = ['marketing', 'jouw bedrijf', 'de wereld'],
   subheadline = 'Meer content, meer kanalen, meer tools. Maar beperkt resultaat. AI verandert alles, maar de meeste bedrijven weten niet waar te beginnen. MS618 brengt richting: de juiste strategie, de juiste tools, en een systeem dat werkt. Ook zonder marketingafdeling of AI-kennis.',
   cta = { label: 'Plan een gesprek', href: '/contact/' },
+  ctaSecondary,
 } = Astro.props;
 
 const rotatingWordsJson = JSON.stringify(rotatingWords);
@@ -50,10 +51,15 @@ const firstWord = rotatingWords[0];
 
       <p class="hero-sub">{subheadline}</p>
 
-      <a href={cta.href} class="hero-cta">
-        {cta.label}
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
+      <div class="hero-actions">
+        <a href={cta.href} class="hero-cta">
+          {cta.label}
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        {ctaSecondary && (
+          <a href={ctaSecondary.href} class="hero-cta-ghost">{ctaSecondary.label} →</a>
+        )}
+      </div>
     </div>
 
     <div class="hero-scroll" aria-hidden="true">
@@ -236,6 +242,15 @@ const firstWord = rotatingWords[0];
   }
 
   /* CTA */
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
   .hero-cta {
     display: inline-flex;
     align-items: center;
@@ -246,9 +261,21 @@ const firstWord = rotatingWords[0];
     background: #fafafa;
     color: #0a0a0a;
     text-decoration: none;
-    margin-bottom: 2rem;
     letter-spacing: 0.01em;
     transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .hero-cta-ghost {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #9e9e9e;
+    text-decoration: none;
+    padding: 0.75rem 0.25rem;
+    transition: color 0.2s ease;
+  }
+
+  .hero-cta-ghost:hover {
+    color: #fafafa;
   }
 
   .hero-cta:hover {
