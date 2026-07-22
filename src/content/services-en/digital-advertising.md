@@ -27,7 +27,7 @@ We run campaigns built on solid strategy: the right offer, to the right audience
 
 ### Google Ads for B2B
 
-Search campaigns built around keywords with real purchase intent. We build structures that convert — and keep optimising based on what the data tells us.
+Search campaigns built around keywords with real purchase intent. We build structures that convert — and keep optimizing based on what the data tells us.
 
 - Search & Shopping campaigns
 - Performance Max with a B2B focus

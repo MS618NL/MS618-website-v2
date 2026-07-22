@@ -6,7 +6,7 @@ publishDate: 2026-03-10
 updatedDate: 2026-03-10
 author: "Jorrit Miedema"
 category: "SEO"
-relatedPosts: ["zoekintentie-begrijpen", "content-strategie-b2b"]
+relatedPosts: ["understanding-search-intent", "b2b-content-strategy"]
 ---
 
 ## The panic is understandable — but misplaced
@@ -65,7 +65,7 @@ Despite all the shifts, fundamentals remain:
 
 ## The right strategy for 2026
 
-Our recommendation for organisations that want to grow in the AI era:
+Our recommendation for organizations that want to grow in the AI era:
 
 1. **Invest in E-E-A-T**. Make expertise visible. Publish with clear authors. Earn external validation.
 

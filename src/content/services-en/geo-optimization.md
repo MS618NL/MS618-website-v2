@@ -55,7 +55,7 @@ We make sure AI crawlers are allowed to and able to read your content: a correct
 
 ## Part of your visibility, not a side trick
 
-GEO works best on top of a healthy SEO foundation. That is why AI visibility sits in the same track as our [SEO strategy](/en/services/seo-strategie/): one approach, one team, one report. No isolated actions, but a system that works for you in both Google and the AI answers.
+GEO works best on top of a healthy SEO foundation. That is why AI visibility sits in the same track as our [SEO strategy](/en/services/seo-strategy/): one approach, one team, one report. No isolated actions, but a system that works for you in both Google and the AI answers.
 
 ## Who it is for
 
