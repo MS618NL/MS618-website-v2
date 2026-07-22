@@ -1,7 +1,7 @@
 ---
-title: "Website Optimisation"
-seoTitle: "Website optimisation & CRO: more leads from existing traffic | MS618"
-description: "Your website already has visitors. The question is: why aren’t they converting? MS618 optimises UX, conversion and technical performance for real results."
+title: "Website Optimization"
+seoTitle: "Website optimization & CRO: more leads from existing traffic | MS618"
+description: "Your website already has visitors. The question is: why aren’t they converting? MS618 optimizes UX, conversion and technical performance for real results."
 order: 5
 icon: "⬡"
 category: "conversion"
@@ -21,7 +21,7 @@ faq:
 
 A website that doesn't convert is a leaking bucket. You pour money in through SEO and ads — and it drains straight out the bottom. We fix the leak.
 
-Website optimisation at MS618 combines UX, conversion rate optimisation (CRO) and technical performance. Three disciplines that together determine whether your site drives growth or quietly kills it.
+Website optimization at MS618 combines UX, conversion rate optimization (CRO) and technical performance. Three disciplines that together determine whether your site drives growth or quietly kills it.
 
 ## Our approach
 
@@ -29,13 +29,13 @@ Website optimisation at MS618 combines UX, conversion rate optimisation (CRO) an
 
 We start by understanding how visitors actually experience your site. Through heatmaps, session recordings, user testing and analytics, we find exactly where people drop off — and why.
 
-### Conversion optimisation
+### Conversion optimization
 
 We turn those findings into hypotheses and test them systematically. Which CTA gets clicked? Which layout drives more enquiries? Which message lands with your audience?
 
-- Landing page optimisation
+- Landing page optimization
 - A/B and multivariate testing
-- Form optimisation
+- Form optimization
 - Funnel analysis and improvement
 
 ### Core Web Vitals and technical performance
@@ -45,7 +45,7 @@ Google rewards fast, user-friendly sites. Visitors abandon slow ones. We make su
 - LCP < 2.5 seconds
 - CLS < 0.1 (no layout shifts)
 - INP < 200ms (snappy interactions)
-- Mobile-first optimisation
+- Mobile-first optimization
 
 ---
 

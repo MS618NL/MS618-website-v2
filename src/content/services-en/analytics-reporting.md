@@ -19,7 +19,7 @@ faq:
 
 ## More data doesn't mean better decisions
 
-Most organisations are drowning in data. GA4, CRM exports, ad platform dashboards, social stats. And most of them still can't tell you what's actually working.
+Most organizations are drowning in data. GA4, CRM exports, ad platform dashboards, social stats. And most of them still can't tell you what's actually working.
 
 The problem isn't too little data. It's no structure, no interpretation and no connection to what the business actually cares about.
 
@@ -44,7 +44,7 @@ Clear, visual, actionable. We build dashboards in Looker Studio or your BI tool 
 
 ### Monthly analysis and recommendations
 
-Data only matters when someone acts on it. Every month, we analyse your performance and translate it into concrete priorities for the period ahead.
+Data only matters when someone acts on it. Every month, we analyze your performance and translate it into concrete priorities for the period ahead.
 
 ---
 

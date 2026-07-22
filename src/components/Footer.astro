@@ -7,6 +7,10 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const p = lang === 'en' ? '/en' : '';
 const svc = lang === 'en' ? '/en/services' : '/diensten';
+// Service leaf slugs are localized: EN pages use English slugs, NL uses Dutch.
+const svcSlug = lang === 'en'
+  ? { ai: 'ai-strategy', seo: 'seo-strategy', geo: 'geo-optimization', web: 'website-development' }
+  : { ai: 'ai-strategie', seo: 'seo-strategie', geo: 'geo-optimalisatie', web: 'website-laten-maken' };
 const homeHref = lang === 'en' ? '/en/' : '/';
 
 // Local landing pages are NL-only; auto-listed in the sub-footer so new ones appear automatically.
@@ -31,11 +35,11 @@ const localPages = lang === 'en'
     <div class="footer-col">
       <h3 class="footer-heading">{t('footer.services')}</h3>
       <ul>
-        <li><a href={`${svc}/ai-strategie/`}>{lang === 'en' ? 'AI Strategy' : 'AI-strategie'}</a></li>
-        <li><a href={`${svc}/seo-strategie/`}>SEO {lang === 'en' ? 'Strategy' : 'Strategie'}</a></li>
-        <li><a href={`${svc}/geo-optimalisatie/`}>{lang === 'en' ? 'GEO & AI Visibility' : 'GEO & AI-vindbaarheid'}</a></li>
+        <li><a href={`${svc}/${svcSlug.ai}/`}>{lang === 'en' ? 'AI Strategy' : 'AI-strategie'}</a></li>
+        <li><a href={`${svc}/${svcSlug.seo}/`}>SEO {lang === 'en' ? 'Strategy' : 'Strategie'}</a></li>
+        <li><a href={`${svc}/${svcSlug.geo}/`}>{lang === 'en' ? 'GEO & AI Visibility' : 'GEO & AI-vindbaarheid'}</a></li>
         <li><a href={`${svc}/digital-advertising/`}>Google Ads</a></li>
-        <li><a href={`${svc}/website-laten-maken/`}>{lang === 'en' ? 'Website Development' : 'Website laten maken'}</a></li>
+        <li><a href={`${svc}/${svcSlug.web}/`}>{lang === 'en' ? 'Website Development' : 'Website laten maken'}</a></li>
         <li><a href={`${svc}/social-media/`}>{lang === 'en' ? 'Social & LinkedIn' : 'Social & LinkedIn'}</a></li>
       </ul>
     </div>

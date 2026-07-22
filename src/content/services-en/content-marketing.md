@@ -21,7 +21,7 @@ faq:
 
 Most companies are already producing content. Blog posts, social updates, whitepapers, videos. Most of it delivers nothing measurable. Not because content doesn't work — but because content without strategy is just noise.
 
-We build content programmes with a clear purpose: establish your authority, attract the right buyers and move them toward a conversation with you.
+We build content programs with a clear purpose: establish your authority, attract the right buyers and move them toward a conversation with you.
 
 ## What we do
 

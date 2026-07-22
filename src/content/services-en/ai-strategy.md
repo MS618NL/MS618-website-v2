@@ -47,7 +47,7 @@ A strategy that does not get built is an opinion. We implement AI in your market
 
 ## AI in visibility and growth
 
-AI also changes how customers find you. More and more, your buyer asks ChatGPT or Perplexity a question instead of scrolling through Google. That is why AI strategy ties directly to [GEO optimization](/en/services/geo-optimalisatie/): making sure AI models reference your business in their answers.
+AI also changes how customers find you. More and more, your buyer asks ChatGPT or Perplexity a question instead of scrolling through Google. That is why AI strategy ties directly to [GEO optimization](/en/services/geo-optimization/): making sure AI models reference your business in their answers.
 
 ## Who it is for
 

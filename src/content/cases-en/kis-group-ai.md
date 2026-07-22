@@ -10,7 +10,7 @@ quote: "For me, Jorrit is an indispensable sparring partner in the fast-changing
 quoteName: "Olaf Keur"
 quoteRole: "CEO, KIS Group"
 quotePhoto: "/images/cases/olaf-keur.jpg"
-relatedService: "ai-strategie"
+relatedService: "ai-strategy"
 category: "case-study"
 ---
 
@@ -28,8 +28,8 @@ An ongoing sparring track at board level: connecting strategic choices to concre
 
 - **Website**: strengthening the group's online foundation
 - **LinkedIn**: building visibility and the employer brand where the audience is
-- **AI strategy and implementation**: from setting direction to actually embedding it in the organisation
-- **Presentations**: taking the organisation along in what AI will and will not mean
+- **AI strategy and implementation**: from setting direction to actually embedding it in the organization
+- **Presentations**: taking the organization along in what AI will and will not mean
 
 ## The result
 
@@ -37,4 +37,4 @@ Concrete progress, time after time: AI that actually lands in the business inste
 
 ---
 
-*Want to spar about what AI could mean for your organisation? Schedule a no-obligation call.*
+*Want to spar about what AI could mean for your organization? Schedule a no-obligation call.*
