@@ -38,7 +38,7 @@ No strategy succeeds on a broken foundation. We dig into:
 - Crawlability and indexation (nothing valuable getting missed)
 - Core Web Vitals (LCP, CLS, INP — with direct ranking impact)
 - Site structure and internal linking (how Google moves through your site)
-- Duplicate content and canonicalisation
+- Duplicate content and canonicalization
 - Structured data / Schema.org implementation
 - Mobile-first indexing
 
@@ -48,9 +48,9 @@ We design the content structure your site needs to own its topic area. Which pag
 
 We use a pillar-cluster model: authoritative pillar pages covering each core topic, backed by targeted cluster content that answers the specific questions your buyers are asking.
 
-### 4. Content creation and optimisation
+### 4. Content creation and optimization
 
-Content ranks when it fully satisfies search intent — not before. We write and optimise:
+Content ranks when it fully satisfies search intent — not before. We write and optimize:
 
 - Service pages that build credibility and drive enquiries
 - Blog and knowledge articles that establish authority
@@ -78,7 +78,7 @@ Links remain one of the strongest ranking signals. But irrelevant links don't mo
 MS618's SEO work is built for:
 
 - B2B companies with long or complex sales cycles
-- Organisations that are too dependent on paid and want to change that
+- Organizations that are too dependent on paid and want to change that
 - Scale-ups that need organic growth to be a reliable channel
 - Companies burned by SEO agencies that promised results and disappeared
 

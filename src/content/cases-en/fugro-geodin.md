@@ -10,7 +10,7 @@ quote: "Jorrit and the MS618 team have helped us tremendously with a strong digi
 quoteName: "Suzanne Legtenberg"
 quoteRole: "then Marketing Manager at Fugro"
 quotePhoto: "/images/cases/suzanne-legtenberg.jpg"
-relatedService: "geo-optimalisatie"
+relatedService: "geo-optimization"
 category: "case-study"
 ---
 
@@ -20,16 +20,16 @@ GEODIN is a sub-brand of Fugro, the world's leading geo-data specialist. The bra
 
 ## The challenge
 
-At the same time as the rebrand, the audience's search behaviour was shifting. A growing share asks ChatGPT or Perplexity for advice instead of googling, and whoever is not mentioned there does not exist for that group. The ambition: make the renewed brand findable from day one, including in AI answers.
+At the same time as the rebrand, the audience's search behavior was shifting. A growing share asks ChatGPT or Perplexity for advice instead of googling, and whoever is not mentioned there does not exist for that group. The ambition: make the renewed brand findable from day one, including in AI answers.
 
 ## The approach
 
 A complete digital renewal, with the latest AI insights built in from the start:
 
 - **Rebranding**: a sharp, consistent brand identity
-- **Realisation of a new website**, built for findability: clear structure, citable content and the right technical signals
+- **Realization of a new website**, built for findability: clear structure, citable content and the right technical signals
 - **Advertising** to put the renewed proposition in front of the audience immediately
-- **AI findability (GEO)**: making sure the brand is recognised and mentioned as an unambiguous entity by AI search engines
+- **AI findability (GEO)**: making sure the brand is recognized and mentioned as an unambiguous entity by AI search engines
 
 ## The result
 

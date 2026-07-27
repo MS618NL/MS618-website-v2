@@ -10,7 +10,7 @@ quote: "We've been working with Jorrit and the MS618 team consistently for over 
 quoteName: "Peter Evenson"
 quoteRole: "CEO, Swoop"
 quotePhoto: "/images/cases/peter-evenson.jpg"
-relatedService: "seo-strategie"
+relatedService: "seo-strategy"
 category: "case-study"
 ---
 

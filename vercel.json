@@ -19,7 +19,23 @@
     { "source": "/cases/(b2b-leadgeneratie|saas-organisch-verkeer|e-commerce-conversie)", "destination": "/cases/", "permanent": true },
     { "source": "/cases/(b2b-leadgeneratie|saas-organisch-verkeer|e-commerce-conversie)/(.*)", "destination": "/cases/", "permanent": true },
     { "source": "/en/cases/(b2b-leadgeneratie|saas-organisch-verkeer|e-commerce-conversie)", "destination": "/en/cases/", "permanent": true },
-    { "source": "/en/cases/(b2b-leadgeneratie|saas-organisch-verkeer|e-commerce-conversie)/(.*)", "destination": "/en/cases/", "permanent": true }
+    { "source": "/en/cases/(b2b-leadgeneratie|saas-organisch-verkeer|e-commerce-conversie)/(.*)", "destination": "/en/cases/", "permanent": true },
+    { "source": "/en/services/website-laten-maken", "destination": "/en/services/website-development/", "permanent": true },
+    { "source": "/en/services/website-laten-maken/(.*)", "destination": "/en/services/website-development/$1", "permanent": true },
+    { "source": "/en/services/website-optimalisatie", "destination": "/en/services/website-optimization/", "permanent": true },
+    { "source": "/en/services/website-optimalisatie/(.*)", "destination": "/en/services/website-optimization/$1", "permanent": true },
+    { "source": "/en/services/seo-strategie", "destination": "/en/services/seo-strategy/", "permanent": true },
+    { "source": "/en/services/seo-strategie/(.*)", "destination": "/en/services/seo-strategy/$1", "permanent": true },
+    { "source": "/en/services/ai-strategie", "destination": "/en/services/ai-strategy/", "permanent": true },
+    { "source": "/en/services/ai-strategie/(.*)", "destination": "/en/services/ai-strategy/$1", "permanent": true },
+    { "source": "/en/services/geo-optimalisatie", "destination": "/en/services/geo-optimization/", "permanent": true },
+    { "source": "/en/services/geo-optimalisatie/(.*)", "destination": "/en/services/geo-optimization/$1", "permanent": true },
+    { "source": "/en/blog/zoekintentie-begrijpen", "destination": "/en/blog/understanding-search-intent/", "permanent": true },
+    { "source": "/en/blog/zoekintentie-begrijpen/(.*)", "destination": "/en/blog/understanding-search-intent/$1", "permanent": true },
+    { "source": "/en/blog/ai-en-seo-2026", "destination": "/en/blog/ai-and-seo-2026/", "permanent": true },
+    { "source": "/en/blog/ai-en-seo-2026/(.*)", "destination": "/en/blog/ai-and-seo-2026/$1", "permanent": true },
+    { "source": "/en/blog/content-strategie-b2b", "destination": "/en/blog/b2b-content-strategy/", "permanent": true },
+    { "source": "/en/blog/content-strategie-b2b/(.*)", "destination": "/en/blog/b2b-content-strategy/$1", "permanent": true }
   ],
   "headers": [
     {

@@ -6,7 +6,7 @@ publishDate: 2026-01-15
 updatedDate: 2026-01-15
 author: "Jorrit Miedema"
 category: "Content Marketing"
-relatedPosts: ["ai-en-seo-2026", "zoekintentie-begrijpen"]
+relatedPosts: ["ai-and-seo-2026", "understanding-search-intent"]
 ---
 
 ## Why most B2B content strategies fail
@@ -24,7 +24,7 @@ Before you write a single word, you need to understand the customer journey. Wha
 The classic three stages:
 
 ### Awareness
-The potential client recognises a problem or challenge, but isn't yet actively looking for solutions.
+The potential client recognizes a problem or challenge, but isn't yet actively looking for solutions.
 
 **Content that works**: thought leadership, trend articles, research, market analyses. Content that shows you understand the market.
 
@@ -69,7 +69,7 @@ Bringing in external expertise strengthens your E-E-A-T and expands your reach t
 
 Great content without distribution reaches no one. We work with a distribution hierarchy:
 
-1. **Organic (SEO)**: the primary engine. Content optimised for search intent.
+1. **Organic (SEO)**: the primary engine. Content optimized for search intent.
 2. **Email**: your most valuable channel. A direct line to those who are already interested.
 3. **LinkedIn**: the B2B distribution channel par excellence. Organic reach for thought leadership.
 4. **Syndication and guest placements**: repurposing content or placing it in external publications.
@@ -90,7 +90,7 @@ The last-touch model systematically underestimates content. Multi-touch attribut
 
 ## Getting started
 
-Building an effective B2B content strategy takes time and requires discipline. But organisations that do it well build a growth engine that compounds year after year.
+Building an effective B2B content strategy takes time and requires discipline. But organizations that do it well build a growth engine that compounds year after year.
 
 The first step is always the same: understand who your audience is and what questions they have. Build from there.
 

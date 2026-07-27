@@ -4,6 +4,7 @@ import CTA from '@/components/CTA.astro';
 import BlogCard from '@/components/BlogCard.astro';
 import { getCollection, render } from 'astro:content';
 import { formatDate } from '@/utils/seo';
+import { blogSlugNlToEn } from '@/i18n';
 import site from '@/data/site.json';
 
 export async function getStaticPaths() {
@@ -21,7 +22,8 @@ const author = site.team.find((m) => m.name === post.data.author) as any;
 // Only emit an en hreflang when an English translation of this post actually exists.
 // When it doesn't, point the language toggle at the EN blog index instead of a 404.
 const enPosts = await getCollection('blog-en');
-const hasEnAlternate = enPosts.some((p) => p.id === post.id);
+const enId = blogSlugNlToEn[post.id] ?? post.id;
+const hasEnAlternate = enPosts.some((p) => p.id === enId);
 const altPath = hasEnAlternate ? undefined : '/en/blog/';
 
 const allPosts = await getCollection('blog');

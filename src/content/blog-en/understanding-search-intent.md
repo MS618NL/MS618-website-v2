@@ -1,12 +1,12 @@
 ---
 title: "Understanding Search Intent: The Key to SEO That Actually Works"
 seoTitle: "Understanding Search Intent — The Foundation of Effective SEO | MS618"
-description: "Why isn't your content ranking, even though it's well-written? Nine times out of ten, it comes down to search intent. Learn how to analyse and leverage it."
+description: "Why isn't your content ranking, even though it's well-written? Nine times out of ten, it comes down to search intent. Learn how to analyze and leverage it."
 publishDate: 2026-02-20
 updatedDate: 2026-02-20
 author: "Jorrit Miedema"
 category: "SEO"
-relatedPosts: ["ai-en-seo-2026", "content-strategie-b2b"]
+relatedPosts: ["ai-and-seo-2026", "b2b-content-strategy"]
 ---
 
 ## Why keywords alone aren't enough
@@ -49,13 +49,13 @@ The searcher is ready to take action.
 
 **What works**: a clear call-to-action, a simple contact form, a direct value proposition. No distractions.
 
-## How to analyse search intent
+## How to analyze search intent
 
 ### Step 1: Look at the SERP
 
-The easiest way to understand search intent: Google the term and analyse what appears at the top. Google has already determined which type of content best matches that intent. Lots of blog posts? Google wants informational content. Product pages? Transactional content.
+The easiest way to understand search intent: Google the term and analyze what appears at the top. Google has already determined which type of content best matches that intent. Lots of blog posts? Google wants informational content. Product pages? Transactional content.
 
-### Step 2: Analyse the top 10 pages
+### Step 2: Analyze the top 10 pages
 
 What format do the ranking pages use? How long are they? Which sub-questions do they answer? Which words keep appearing?
 
@@ -75,7 +75,7 @@ The solution: create separate pages for each intent. The blog for informational 
 
 ## Intent-matching in practice
 
-At MS618, we begin every SEO project with an intent analysis of the 50 most valuable search terms in the client's market. We categorise them by intent, map them to existing or new pages, and build a content architecture that serves every stage of the buyer journey.
+At MS618, we begin every SEO project with an intent analysis of the 50 most valuable search terms in the client's market. We categorize them by intent, map them to existing or new pages, and build a content architecture that serves every stage of the buyer journey.
 
 The result: content that doesn't just rank, but converts — because it precisely matches what the searcher needs at that specific moment.
 

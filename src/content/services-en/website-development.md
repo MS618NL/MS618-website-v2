@@ -11,8 +11,8 @@ faq:
     answer: "It depends on the scope: number of pages, functionality and whether we build from scratch or migrate an existing site. We work with a clear one-off build price plus a fixed monthly amount for hosting, maintenance and ongoing development. In an introductory call we define the scope and you get a concrete price, no surprises afterwards."
   - question: "Which system do you build websites on?"
     answer: "We build on a modern, lightning-fast foundation that scores excellently on speed and findability. Not a heavy, slow standard setup that breaks down later, but clean code that loads fast and grows easily. That foundation is part of why our sites are easy to find."
-  - question: "What is the difference between a new website and website optimisation?"
-    answer: "Website development is about building new or replacing an outdated site. Website optimisation is about getting more out of a site you already have: UX, conversion and technical performance. Not sure what you need? We look at that together in the introductory call."
+  - question: "What is the difference between a new website and website optimization?"
+    answer: "Website development is about building new or replacing an outdated site. Website optimization is about getting more out of a site you already have: UX, conversion and technical performance. Not sure what you need? We look at that together in the introductory call."
   - question: "How long does it take to build a website?"
     answer: "A well-considered website is usually live within a few weeks to a couple of months, depending on the scope and how quickly content and feedback come together. We work in clear steps, so you always see where we stand."
   - question: "Do you also rebuild or migrate existing websites?"
@@ -38,7 +38,7 @@ Your website is designed by Peter Ydel, our lead designer with more than 15 year
 
 ## Build new or improve what you have
 
-No site yet, or an outdated one? We build new or migrate your existing site. Already have a site that draws visitors but delivers too little? Then look at [website optimisation](/en/services/website-optimalisatie/): getting more out of what is already there.
+No site yet, or an outdated one? We build new or migrate your existing site. Already have a site that draws visitors but delivers too little? Then look at [website optimization](/en/services/website-optimization/): getting more out of what is already there.
 
 ## Who it is for
 

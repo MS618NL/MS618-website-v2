@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "postbuild": "node scripts/indexnow-ping.mjs",
+    "postbuild": "node scripts/verify-en-slugs.mjs && node scripts/indexnow-ping.mjs",
+    "verify:slugs": "node scripts/verify-en-slugs.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
