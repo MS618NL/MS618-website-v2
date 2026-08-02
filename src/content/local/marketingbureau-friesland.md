@@ -7,7 +7,7 @@ region: "Friesland"
 updatedDate: 2026-07-10
 faq:
   - question: "Waar is MS618 gevestigd?"
-    answer: "MS618 zit in Joure, centraal in Friesland aan de A6. Vanuit daar werken we voor ondernemers in heel de provincie, van Leeuwarden en Drachten tot Sneek, Heerenveen en Lemmer, en daarbuiten."
+    answer: "MS618 zit in Joure, centraal in Friesland aan de A6. Vanuit daar werken we voor ondernemers in heel de provincie, van Drachten en Sneek tot Heerenveen, Lemmer en Bolsward, en daarbuiten."
   - question: "Werken jullie in heel Friesland?"
     answer: "Ja. We zijn lokaal verankerd in Joure, maar werken voor MKB-bedrijven in heel Friesland. Een persoonlijk aanspreekpunt in de buurt, met de techniek en aanpak van een landelijk B2B-bureau."
   - question: "Wat doet een online marketingbureau precies?"
@@ -32,9 +32,9 @@ Geen losse acties of rapporten die in een la verdwijnen, maar één partner die 
 
 ## Lokaal verankerd, landelijk sterk
 
-Wij zitten in Joure en werken voor ondernemers door heel Friesland: Leeuwarden, Drachten, Sneek, Heerenveen, Lemmer, Bolsward en alles daartussenin. Je hebt een aanspreekpunt in de buurt, met de aanpak en tooling die we ook voor landelijke B2B-klanten inzetten.
+Wij zitten in Joure en werken voor ondernemers door heel Friesland: Drachten, Sneek, Heerenveen, Lemmer, Bolsward en alles daartussenin. Je hebt een aanspreekpunt in de buurt, met de aanpak en tooling die we ook voor landelijke B2B-klanten inzetten.
 
-Zit je om de hoek? Bekijk dan onze pagina's over [online marketing in Joure](/marketingbureau-joure/) en [webdesign in Joure](/webdesign-joure/). Voor bedrijven in de hoofdstad is er [SEO Leeuwarden](/seo-leeuwarden/).
+Zit je om de hoek? Bekijk dan onze pagina's over [online marketing in Joure](/marketingbureau-joure/) en [webdesign in Joure](/webdesign-joure/). Voor bedrijven in de hoofdstad is er [SEO-bureau Leeuwarden](/seo-leeuwarden/).
 
 ## Voor wie
 

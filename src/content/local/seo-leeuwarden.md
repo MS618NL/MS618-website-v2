@@ -1,6 +1,6 @@
 ---
 title: "SEO Leeuwarden"
-seoTitle: "SEO-bureau voor Leeuwarden: meer klanten uit Google | MS618"
+seoTitle: "SEO-bureau Leeuwarden: meer klanten uit Google | MS618"
 description: "SEO-bureau voor bedrijven in Leeuwarden. Senior specialisten op 25 minuten van de stad. Meer klanten uit Google en AI-zoekmachines."
 order: 3.5
 region: "Leeuwarden"
