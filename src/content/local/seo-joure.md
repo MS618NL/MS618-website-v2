@@ -9,7 +9,7 @@ faq:
   - question: "Wat is SEO en wat heb ik eraan?"
     answer: "Zoekmachineoptimalisatie zorgt dat je gevonden wordt door mensen die zoeken naar wat jij biedt, van lokale termen rond Joure tot landelijke vaktermen. Anders dan bij advertenties betaal je niet per klik: goede posities blijven aanvragen opleveren."
   - question: "Zoeken jullie SEO-specialist in Joure, kan dat lokaal?"
-    answer: "Ja. Ons kantoor staat in Joure aan de haven. Je hebt een SEO-specialist om de hoek met een persoonlijk aanspreekpunt, en de aanpak en tooling van een landelijk B2B-bureau. We werken in Joure en de omgeving, van Sint Nicolaasga tot Heerenveen en Sneek."
+    answer: "Ja. Ons kantoor staat in Joure aan de haven. Je hebt een SEO-specialist om de hoek met een persoonlijk aanspreekpunt, en de aanpak en tooling van een landelijk B2B-bureau. We werken in Joure en de directe omgeving, van Sint Nicolaasga tot Oudehaske en Echtenerbrug."
   - question: "Hoe lang duurt het voordat SEO werkt?"
     answer: "Voor lokale zoektermen in en rond Joure zie je vaak binnen enkele maanden beweging, omdat de concurrentie kleiner is dan landelijk. Structureel resultaat bouwt op over 6 tot 12 maanden, en dat blijft staan zonder advertentiebudget."
   - question: "Houden jullie ook rekening met AI-zoekmachines?"
@@ -30,7 +30,7 @@ Zoeken verandert. Je klant stelt steeds vaker een vraag aan ChatGPT of Perplexit
 
 ## Lokaal in Joure, breder in Friesland
 
-We werken in Joure en de directe omgeving: Sint Nicolaasga, Lemmer, Heerenveen, Sneek en omstreken. Zoek je breder in de provincie, kijk dan op [SEO Friesland](/seo-friesland/).
+We werken in Joure en de directe omgeving: Sint Nicolaasga, Oudehaske, Echtenerbrug en omstreken. Voor de omliggende plaatsen hebben we eigen pagina's: [SEO Lemmer](/seo-lemmer/), [SEO Heerenveen](/seo-heerenveen/) en [SEO Sneek](/seo-sneek/). Zoek je breder in de provincie, kijk dan op [SEO Friesland](/seo-friesland/).
 
 ## Voor wie
 

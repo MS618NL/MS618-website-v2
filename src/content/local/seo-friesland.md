@@ -9,7 +9,7 @@ faq:
   - question: "Wat is SEO en wat heb ik eraan?"
     answer: "SEO, zoekmachineoptimalisatie, zorgt dat je bedrijf gevonden wordt door mensen die in Google zoeken naar wat jij biedt. Goede SEO levert structureel verkeer en leads op, zonder dat je per klik betaalt zoals bij advertenties."
   - question: "Doen jullie SEO voor heel Friesland?"
-    answer: "Ja. We zitten in Joure en werken voor ondernemers in heel Friesland, van Drachten en Sneek tot Heerenveen, Lemmer en Bolsward. We optimaliseren zowel voor lokale zoekopdrachten als voor landelijke, afhankelijk van waar jouw klanten vandaan komen."
+    answer: "Ja. We zitten in Joure en werken voor ondernemers in heel Friesland, van Drachten en Dokkum tot Bolsward en de Zuidwesthoek. We optimaliseren zowel voor lokale zoekopdrachten als voor landelijke, afhankelijk van waar jouw klanten vandaan komen."
   - question: "Hoe lang duurt het voordat SEO werkt?"
     answer: "Reken op eerste beweging binnen enkele maanden en structurele groei over 6 tot 12 maanden. In Friesland ligt de concurrentie op veel termen lager dan landelijk, dus lokale posities komen vaak sneller. En die groei blijft staan, ook als je stopt met adverteren."
   - question: "Houden jullie ook rekening met AI-zoekmachines?"
@@ -30,7 +30,9 @@ Zoeken verandert. Je klant stelt steeds vaker een vraag aan ChatGPT of Perplexit
 
 ## Lokaal en landelijk
 
-Vanuit Joure werken we voor ondernemers door heel Friesland: Drachten, Sneek, Heerenveen, Lemmer, Bolsward en omstreken. Lokale vindbaarheid waar dat telt, landelijke slagkracht waar dat nodig is. Zit je bedrijf in de hoofdstad? Dan is [SEO-bureau Leeuwarden](/seo-leeuwarden/) de pagina met onze aanpak voor die stad.
+Vanuit Joure werken we voor ondernemers door heel Friesland: Drachten, Bolsward, Dokkum en omstreken. Lokale vindbaarheid waar dat telt, landelijke slagkracht waar dat nodig is.
+
+Voor de plaatsen waar we het meest werken hebben we een eigen pagina met de aanpak voor die markt: [SEO-bureau Leeuwarden](/seo-leeuwarden/), [SEO Sneek](/seo-sneek/), [SEO Heerenveen](/seo-heerenveen/), [SEO Lemmer](/seo-lemmer/) en [SEO Joure](/seo-joure/).
 
 ## Voor wie
 
