@@ -20,6 +20,10 @@ faq:
 
 Als ondernemer in Joure wil je gevonden worden door klanten in de buurt en daarbuiten. SEO maakt dat mogelijk: structurele zichtbaarheid in Google op de zoektermen die er voor jouw bedrijf toe doen. Ons kantoor staat in Joure, dus je hebt een SEO-specialist om de hoek.
 
+## Bekend in het dorp is niet hetzelfde als vindbaar
+
+In Joure kent men elkaar, dus je naam valt vanzelf. Alleen: de ondernemer uit de regio die je nog niet kent, of de klant die net is verhuisd, kent die naam niet. Die pakt zijn telefoon en zoekt. Daar begint het elke keer opnieuw.
+
 ## Geen trucjes, maar een systeem
 
 We behandelen SEO als groeimotor, niet als technische checklist: begrijpen wat jouw klanten zoeken, een sterke contentarchitectuur, een technisch gezonde site en autoriteit die je positie vasthoudt. De volledige aanpak staat op onze pagina over [SEO-strategie](/diensten/seo-strategie/).

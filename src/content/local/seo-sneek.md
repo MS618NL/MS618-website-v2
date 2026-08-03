@@ -23,6 +23,10 @@ Sneek is de grootste plaats van de Zuidwesthoek en daarmee de drukste zakelijke 
 
 MS618 zit in Joure, twintig minuten rijden. Onze senior specialisten werken voor ondernemers in en rond Sneek, van dienstverleners en retail tot bedrijven die vanuit de regio landelijk leveren.
 
+## Meer aanbieders dan plekken op pagina een
+
+Sneek is de drukste markt van de Zuidwesthoek, en dat merk je in Google. Op de meeste zoektermen staan meer bedrijven te dringen dan er plekken zijn. Wie daar niet tussen staat, bestaat voor de klant die zoekt eenvoudigweg niet.
+
 ## Wat vindbaarheid in Sneek vraagt
 
 In een markt met meer aanbieders werkt breed mikken niet. Wat wel werkt:

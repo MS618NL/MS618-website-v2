@@ -23,6 +23,10 @@ Leeuwarden is de hoofdstad en veruit de grootste zakelijke markt van de provinci
 
 MS618 is een SEO-bureau op 25 minuten van Leeuwarden. Vanuit Joure werken onze senior specialisten voor bedrijven in en rond de stad, van dienstverleners tot B2B-bedrijven die vanuit Leeuwarden landelijk werken.
 
+## De klant kiest uit wat hij vindt
+
+In Leeuwarden zijn er van vrijwel elk vak meerdere aanbieders. Je weet dat jouw werk beter is dan dat van de partij die bovenaan staat, maar de klant die zoekt weet dat niet. Die kiest uit wat hij vindt, en dat is de eerste pagina.
+
 ## Wat vindbaarheid in Leeuwarden vraagt
 
 Lokaal ranken in een stad werkt anders dan landelijk ranken. Voor Leeuwarden betekent dat:

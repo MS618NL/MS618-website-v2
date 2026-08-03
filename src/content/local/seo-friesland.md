@@ -20,6 +20,10 @@ faq:
 
 Als Friese ondernemer wil je gevonden worden door klanten in de buurt en daarbuiten. SEO maakt dat mogelijk: structurele zichtbaarheid in Google op de zoektermen die er voor jouw bedrijf toe doen. MS618 zit in Joure en verzorgt SEO voor MKB-bedrijven in heel Friesland.
 
+## Via-via werkt, tot het stilvalt
+
+De meeste Friese bedrijven draaien voor een flink deel op mond-tot-mondreclame. Dat werkt goed, tot een vaste opdrachtgever wegvalt of het netwerk een keer stil is. Dan blijkt er online niets achter de hand te staan: wie op dat moment in Google zoekt naar wat jij doet, komt bij een ander uit.
+
 ## Geen trucjes, maar een systeem
 
 We behandelen SEO als groeimotor, niet als technische checklist. Dat betekent: begrijpen wat jouw klanten zoeken, een sterke contentarchitectuur, een technisch gezonde site en autoriteit die je positie vasthoudt. De volledige aanpak staat op onze pagina over [SEO-strategie](/diensten/seo-strategie/).

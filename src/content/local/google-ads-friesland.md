@@ -25,6 +25,10 @@ SEO is de lange lijn. Google Ads is de korte. Wie vandaag aanvragen nodig heeft,
 
 MS618 zit in Joure en beheert Google Ads-campagnes voor bedrijven door heel Friesland. Niet op zoveel mogelijk klikken, maar op aanvragen die je verkoop ook echt verder helpen.
 
+## Je hebt nu klanten nodig, niet over een half jaar
+
+Een lege agenda over twee maanden los je niet op met een traject dat pas over een half jaar rendeert. Soms moet de kraan gewoon open en moet je vandaag zichtbaar zijn bij de mensen die vandaag zoeken.
+
 ## Genomineerd door Google
 
 In 2026 nomineerde Google ons voor de **Google Ads Impact Awards**, een onderscheiding voor marketeers die AI met precisie inzetten om uitzonderlijke campagneresultaten te halen. Die nominatie kwam rechtstreeks van het Google Ads-team. Meer daarover lees je in [ons bericht over de nominatie](/blog/google-ads-impact-awards-2026/).
