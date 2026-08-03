@@ -170,6 +170,20 @@ const breadcrumbs = [
       </section>
 
       <!-- Location -->
+      <!-- The head start -->
+      <section class="about-section usa-section">
+        <div class="usa-grid">
+          <div class="usa-head">
+            <div class="section-label-inline">The head start</div>
+            <h2 class="section-h2">America runs ahead. Our clients don't have to wait.</h2>
+          </div>
+          <div class="usa-body">
+            <p>Part of our client base is in the United States, including <a href="/en/cases/swoop-seo/">tech startups in Los Angeles</a>. California is where the tools of two years from now are being built today. Working there means we see early what actually works and what stays hype.</p>
+            <p>We bring that head start back to every client: what we learn for a tech startup in Los Angeles, we apply for businesses in the Netherlands the same month. No waiting for trends to cross the ocean.</p>
+          </div>
+        </div>
+      </section>
+
       <section class="about-section location-section">
         <div class="location-grid">
           <div class="location-content">
@@ -181,14 +195,6 @@ const breadcrumbs = [
             <img src="/images/pand.jpg" alt="MS618 office FJ08 in Joure" width="1276" height="865" loading="lazy" />
           </div>
         </div>
-      </section>
-
-      <!-- The head start -->
-      <section class="about-section usa-section">
-        <div class="section-label-inline">The head start</div>
-        <h2 class="section-h2">America runs ahead. Our clients don't have to wait.</h2>
-        <p>Part of our client base is in the United States, including <a href="/en/cases/swoop-seo/">tech startups in Los Angeles</a>. California is where the tools of two years from now are being built today. Working there means we see early what actually works and what stays hype.</p>
-        <p>We bring that head start back to every client: what we learn for a tech startup in Los Angeles, we apply for businesses in the Netherlands the same month. No waiting for trends to cross the ocean.</p>
       </section>
 
     </div>
@@ -521,11 +527,28 @@ const breadcrumbs = [
     line-height: 1.75;
   }
 
+  .usa-grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .usa-head .section-h2 {
+    margin-bottom: 0;
+  }
+
   .usa-section p {
-    max-width: 680px;
     color: oklch(0.65 0 0);
     line-height: 1.75;
     margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .usa-grid {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
   }
 
   .usa-section p:last-child {
