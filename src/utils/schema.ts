@@ -64,7 +64,7 @@ export function buildOrganizationPiece(): SchemaGraphPiece {
     founder: site.team
       .filter((m) => m.slug === 'jorrit-miedema' || m.slug === 'jurjan-groothuis')
       .map((m) => ({ '@id': `${site.url}/over-ons/#${m.slug}` })),
-    sameAs: [site.social.linkedin].filter(Boolean),
+    sameAs: [site.social.linkedin, site.social.googleBusiness].filter(Boolean),
   };
 }
 
@@ -222,7 +222,7 @@ export function buildLocalBusinessPiece(): SchemaGraphPiece {
     }),
     areaServed: { '@type': 'Country', name: 'Netherlands' },
     parentOrganization: { '@id': `${site.url}/#organization` },
-    sameAs: [site.social.linkedin].filter(Boolean),
+    sameAs: [site.social.linkedin, site.social.googleBusiness].filter(Boolean),
   };
 }
 
