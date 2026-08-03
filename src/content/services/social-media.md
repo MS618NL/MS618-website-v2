@@ -37,6 +37,10 @@ Geen losse posts, maar een systeem. We bepalen de strategie, schrijven de conten
 
 Organische autoriteit en betaalde campagnes werken het sterkst samen. Wie je al kent op LinkedIn, klikt eerder op je advertentie en gelooft je boodschap sneller. Daarom stemmen we social media af op [digital advertising](/diensten/digital-advertising/): één verhaal, twee kanalen die elkaar versterken.
 
+## Ook Facebook en Instagram
+
+Voor de meeste B2B-bedrijven ligt het zwaartepunt op LinkedIn, maar niet altijd. Verkoop je ook aan consumenten, of wil je zichtbaar zijn bij een breder publiek in de regio, dan zetten we Facebook en Instagram in, organisch of met advertenties. We kijken eerst waar jouw klant werkelijk zit, in plaats van standaard overal aanwezig te willen zijn.
+
 ## Voor wie
 
 Social media van MS618 is geschikt voor:

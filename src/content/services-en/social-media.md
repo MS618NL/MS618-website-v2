@@ -37,6 +37,10 @@ Not isolated posts, but a system. We set the strategy, write the content and han
 
 Organic authority and paid campaigns work best together. People who already know you on LinkedIn are more likely to click your ad and believe your message. That is why we align social media with [digital advertising](/en/services/digital-advertising/): one story, two channels that strengthen each other.
 
+## Facebook and Instagram too
+
+For most B2B companies LinkedIn is where it matters most, but not always. If you also sell to consumers, or want to be visible to a wider regional audience, we run Facebook and Instagram as well, organic or paid. We start from where your customer actually is, instead of defaulting to being everywhere.
+
 ## Who it is for
 
 Social media from MS618 is a fit for:
