@@ -175,7 +175,8 @@ const megaSteps = lang === 'en'
     flex: 1;
   }
 
-  .main-nav ul {
+  /* Alleen de directe navigatielijst is horizontaal; lijsten in de megamenu niet. */
+  .main-nav > ul {
     display: flex;
     align-items: center;
     gap: 0.25rem;
@@ -242,14 +243,19 @@ const megaSteps = lang === 'en'
 
   .mega-inner {
     display: grid;
-    grid-template-columns: 1.15fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
     gap: 2rem;
-    width: 580px;
+    width: 660px;
     padding: 1.75rem;
     background: rgba(10, 10, 10, 0.98);
     border: 1px solid #222;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+  }
+
+  /* voorkomt dat lange dienstnamen de kolombreedte oprekken */
+  .mega-col {
+    min-width: 0;
   }
 
   .mega-label {
@@ -263,6 +269,7 @@ const megaSteps = lang === 'en'
   }
 
   .mega-services {
+    display: block;
     list-style: none;
     margin: 0;
     padding: 0;
