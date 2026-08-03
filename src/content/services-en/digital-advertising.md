@@ -3,7 +3,7 @@ title: "Digital Advertising"
 seoTitle: "B2B digital advertising: Google & LinkedIn Ads that convert | MS618"
 description: "Paid campaigns that fill your pipeline, not just generate clicks. MS618 runs Google and LinkedIn ads for B2B with a focus on cost per lead and ROI."
 order: 4
-navLabel: "Advertising"
+navLabel: "Google Ads & LinkedIn"
 icon: "◈"
 category: "visibility"
 updatedDate: 2026-06-17
