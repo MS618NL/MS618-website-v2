@@ -183,6 +183,14 @@ const breadcrumbs = [
         </div>
       </section>
 
+      <!-- De voorsprong -->
+      <section class="about-section usa-section">
+        <div class="section-label-inline">De voorsprong</div>
+        <h2 class="section-h2">Amerika loopt voor. Friesland hoeft niet te wachten.</h2>
+        <p>Een deel van onze klanten zit in de Verenigde Staten, waaronder <a href="/cases/swoop-seo/">tech-startups in Los Angeles</a>. Californië is de bakermat van de tech-industrie: wat daar vandaag wordt gebouwd, komt hier pas over maanden aan. Door daar te werken zien we vroeg wat echt werkt en wat hype blijft.</p>
+        <p>Die voorsprong nemen we mee terug naar het Noorden. Wat we voor een tech-startup in Los Angeles leren, passen we hier toe voor de ondernemer in Friesland. Wat ons betreft hoeft niemand hier te wachten tot iets via de Randstad eindelijk aankomt.</p>
+      </section>
+
     </div>
 
     <CTA
@@ -511,6 +519,30 @@ const breadcrumbs = [
   .location-content p {
     color: oklch(0.65 0 0);
     line-height: 1.75;
+  }
+
+  .usa-section p {
+    max-width: 680px;
+    color: oklch(0.65 0 0);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+
+  .usa-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .usa-section a {
+    color: oklch(0.85 0 0);
+    text-decoration: none;
+    border-bottom: 1px solid oklch(0.35 0 0);
+    padding-bottom: 1px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .usa-section a:hover {
+    color: oklch(0.98 0 0);
+    border-color: oklch(0.7 0 0);
   }
 
   .location-image {
