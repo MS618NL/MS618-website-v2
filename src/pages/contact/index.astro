@@ -45,22 +45,13 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
             </div>
 
             <div class="form-group">
-              <label for="challenge">Wat is jouw voornaamste uitdaging? <span aria-hidden="true">*</span></label>
-              <textarea id="challenge" name="challenge" rows="5" required placeholder="Vertel ons kort over je situatie en wat je wil bereiken..."></textarea>
+              <label for="phone">Telefoonnummer <span>(optioneel)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" />
             </div>
 
             <div class="form-group">
-              <label for="budget">Maandelijks marketingbudget</label>
-              <select id="budget" name="budget">
-                <option value="">— Selecteer een range</option>
-                <option value="0-500">€0 – €500 / maand</option>
-                <option value="500-1000">€500 – €1.000 / maand</option>
-                <option value="1000-2500">€1.000 – €2.500 / maand</option>
-                <option value="2500-5000">€2.500 – €5.000 / maand</option>
-                <option value="5000-10000">€5.000 – €10.000 / maand</option>
-                <option value="10000+">€10.000+ / maand</option>
-                <option value="unknown">Nog onbekend / te bespreken</option>
-              </select>
+              <label for="challenge">Wat is jouw voornaamste uitdaging? <span aria-hidden="true">*</span></label>
+              <textarea id="challenge" name="challenge" rows="5" required placeholder="Vertel ons kort over je situatie en wat je wil bereiken..."></textarea>
             </div>
 
             <button type="submit" class="btn-primary form-submit">
