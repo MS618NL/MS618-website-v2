@@ -70,7 +70,8 @@ const extraSchema = [
         </div>
         <div class="about-text">
           <h2>Even voorstellen</h2>
-          <p>MS618 is een digitaal marketing- en AI-bureau in Joure, aan de haven in een oud fabriekspand van Douwe Egberts. Vijf senior specialisten, geen junioren, voor ondernemers in heel Friesland en daarbuiten.</p>
+          <p>MS618 is een digitaal marketing- en AI-bureau in Joure, aan de haven in een oud fabriekspand van Douwe Egberts. Vijf senior specialisten, geen junioren, voor ondernemers in heel Friesland, en voor <a href="/cases/swoop-seo/">tech-startups tot in Los Angeles</a>.</p>
+          <p>Amerika loopt in AI en marketing maanden voor. Wat daar nu werkt, nemen we mee terug naar hier.</p>
           <p>En denken we dat het voor jouw markt niet uitkan, dan zeggen we dat gewoon. Liever een eerlijk gesprek dan een traject waar niemand blij van wordt.</p>
           <p class="about-trust">
             <a href={site.social.googleBusiness} target="_blank" rel="noopener noreferrer"><span aria-hidden="true">★</span> 5,0 op Google · {REVIEWS} reviews</a>
@@ -204,6 +205,19 @@ const extraSchema = [
     color: oklch(0.68 0 0);
     line-height: 1.7;
     margin-bottom: 0.85rem;
+  }
+
+  .about-text p a {
+    color: oklch(0.85 0 0);
+    text-decoration: none;
+    border-bottom: 1px solid oklch(0.35 0 0);
+    padding-bottom: 1px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .about-text p a:hover {
+    color: oklch(0.98 0 0);
+    border-color: oklch(0.7 0 0);
   }
 
   .about-trust {
