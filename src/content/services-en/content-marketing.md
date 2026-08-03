@@ -2,7 +2,8 @@
 title: "Content Marketing"
 seoTitle: "B2B content marketing: authority that closes deals | MS618"
 description: "Content that doesn’t just get read, it sells. MS618 builds a content engine that delivers qualified leads, organic traffic and lasting authority."
-order: 3
+order: 7
+navLabel: "Content & copy"
 icon: "❖"
 category: "visibility"
 updatedDate: 2026-06-17

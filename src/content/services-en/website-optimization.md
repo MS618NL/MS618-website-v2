@@ -2,7 +2,8 @@
 title: "Website Optimization"
 seoTitle: "Website optimization & CRO: more leads from existing traffic | MS618"
 description: "Your website already has visitors. The question is: why aren’t they converting? MS618 optimizes UX, conversion and technical performance for real results."
-order: 5
+order: 6
+navLabel: "Website improvement"
 icon: "⬡"
 category: "conversion"
 updatedDate: 2026-06-17

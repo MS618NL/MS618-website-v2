@@ -2,7 +2,8 @@
 title: "Content Marketing"
 seoTitle: "Content marketing voor B2B: autoriteit die deals sluit | MS618"
 description: "Content die niet alleen gelezen wordt, maar ook verkoopt. MS618 bouwt een contentmachine die autoriteit, organisch verkeer en gekwalificeerde leads oplevert."
-order: 3
+order: 7
+navLabel: "Content & teksten"
 icon: "❖"
 category: "zichtbaarheid"
 updatedDate: 2026-06-17

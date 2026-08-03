@@ -2,7 +2,8 @@
 title: "GEO-optimalisatie & AI-vindbaarheid"
 seoTitle: "GEO-optimalisatie: gevonden worden in AI-zoekmachines | MS618"
 description: "Steeds meer klanten zoeken via ChatGPT en AI. MS618 zorgt dat jouw bedrijf genoemd wordt in die antwoorden. Dit heet GEO, of AI-vindbaarheid."
-order: 2
+order: 3
+navLabel: "AI-vindbaarheid"
 icon: "✦"
 category: "vindbaarheid"
 updatedDate: 2026-06-17

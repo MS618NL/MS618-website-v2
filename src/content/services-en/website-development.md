@@ -2,7 +2,8 @@
 title: "Website Development"
 seoTitle: "Website development: fast, modern and easy to find | MS618"
 description: "A website that loads fast, ranks in Google and grows with you. MS618 builds modern, lightning-fast websites for SMEs in the Netherlands."
-order: 4.5
+order: 5
+navLabel: "Website development"
 icon: "▣"
 category: "website"
 updatedDate: 2026-06-17

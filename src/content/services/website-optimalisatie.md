@@ -2,7 +2,8 @@
 title: "Website Optimalisatie"
 seoTitle: "Website-optimalisatie & CRO: meer leads uit bestaand verkeer | MS618"
 description: "Je website heeft al bezoekers. Waarom worden ze geen klant? MS618 optimaliseert UX, conversie en technische performance voor meetbaar resultaat."
-order: 5
+order: 6
+navLabel: "Website verbeteren"
 icon: "⬡"
 category: "conversie"
 updatedDate: 2026-06-17

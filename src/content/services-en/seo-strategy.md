@@ -2,7 +2,8 @@
 title: "SEO Strategy"
 seoTitle: "B2B SEO strategy: from invisible to the top | MS618"
 description: "No shortcuts. MS618 builds SEO strategies that deliver organic growth on terms that actually matter, for B2B companies ready to invest in the long game."
-order: 1
+order: 2
+navLabel: "SEO"
 icon: "↗"
 category: "visibility"
 updatedDate: 2026-06-17

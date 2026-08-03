@@ -3,6 +3,7 @@ title: "Digital Advertising"
 seoTitle: "Google & LinkedIn Ads voor B2B die converteren | MS618"
 description: "Betaalde advertenties die meer aanvragen opleveren, niet alleen klikken. MS618 beheert je Google- en LinkedIn-campagnes voor B2B, gericht op rendement."
 order: 4
+navLabel: "Google Ads & LinkedIn"
 icon: "◈"
 category: "zichtbaarheid"
 updatedDate: 2026-06-17

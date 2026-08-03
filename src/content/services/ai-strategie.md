@@ -2,7 +2,8 @@
 title: "AI-strategie & implementatie"
 seoTitle: "AI-consultancy voor het MKB: van strategie tot uitvoering | MS618"
 description: "Weten dat AI je bedrijf verandert is niet genoeg. MS618 vertaalt AI naar een concrete strategie en bouwt het in je marketing, vindbaarheid en processen."
-order: 0
+order: 1
+navLabel: "AI-strategie"
 icon: "◇"
 category: "strategie"
 updatedDate: 2026-06-17
