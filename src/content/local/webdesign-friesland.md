@@ -20,6 +20,10 @@ faq:
 
 Een mooie website die niemand vindt of die traag laadt, levert niets op. Wij bouwen websites die er scherp uitzien, snel laden en goed gevonden worden. MS618 is gevestigd in Joure en verzorgt webdesign voor ondernemers in heel Friesland.
 
+## De site doet het nog, maar levert niets op
+
+Hij is jaren geleden gemaakt en sindsdien nauwelijks aangeraakt. Op de telefoon laadt hij traag, er komen zelden aanvragen uit, en eigenlijk stuur je er liever geen klant naartoe. Zonde, want je bedrijf is beter dan de indruk die hij achterlaat.
+
 ## Snel, modern en vindbaar
 
 We bouwen op een moderne techniek die razendsnel laadt en uitstekend scoort op snelheid en vindbaarheid. Snelheid is geen detail, het bepaalt mee hoe je in Google staat. Bij ons zit goede vindbaarheid standaard onder elke site.
@@ -42,6 +46,3 @@ Webdesign bij MS618 is geschikt voor:
 - Bedrijven die een nieuwe site willen die meteen goed scoort
 - Ondernemers die webdesign en vindbaarheid in één hand willen
 
----
-
-*Klaar voor een website die snel laadt en gevonden wordt? Plan een kennismakingsgesprek.*

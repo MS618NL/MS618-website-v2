@@ -22,6 +22,10 @@ Veel Friese MKB-ondernemers weten dat er meer uit hun online marketing te halen 
 
 Geen losse acties of rapporten die in een la verdwijnen, maar één partner die je complete online groei oppakt: vindbaarheid, advertenties, content en je website.
 
+## Je weet dat er meer in zit. Alleen: wie doet het?
+
+Er is geen tijd, geen marketeer in dienst, en de vorige poging bestond uit losse acties die nergens op uitkwamen. Misschien heb je al eens met een bureau gewerkt: een jaarcontract, rapporten die je niet las, en achteraf geen idee wat het nu eigenlijk had opgeleverd. Dat gevoel snappen we, en het is precies waarom we het anders doen.
+
 ## Wat wij voor Friese ondernemers doen
 
 - **[SEO Friesland](/seo-friesland/)**: beter gevonden worden in Google op de termen die klanten opleveren
@@ -44,6 +48,3 @@ Ons marketingbureau is geschikt voor:
 - Bedrijven die geen eigen marketingafdeling willen optuigen
 - Ondernemers die één partner zoeken in plaats van vier losse leveranciers
 
----
-
-*Benieuwd wat er voor jouw bedrijf in Friesland mogelijk is? Plan een vrijblijvend kennismakingsgesprek.*

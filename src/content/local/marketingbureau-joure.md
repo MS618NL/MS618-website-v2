@@ -23,6 +23,10 @@ Wij zitten in Joure, aan de haven, en helpen ondernemers in Joure en omgeving gr
 
 Veel ondernemers in en rond Joure weten dat er meer uit hun marketing te halen valt, maar missen de tijd of het team. Dat nemen wij over.
 
+## Alles er zelf bij doen houdt een keer op
+
+Je regelt de marketing tussen het werk door. Een bericht als je eraan denkt, de website als er tijd over is. Het loopt wel, maar het groeit niet, en je weet dat er meer in zit dan waar je nu aan toekomt.
+
 ## Wat wij voor ondernemers in Joure doen
 
 - **[SEO Joure](/seo-joure/)**: beter gevonden worden in Google, lokaal en landelijk
@@ -43,6 +47,3 @@ Ons marketingbureau in Joure is geschikt voor:
 - Bedrijven die geen eigen marketingafdeling willen optuigen
 - Ondernemers die één partner zoeken in plaats van losse leveranciers
 
----
-
-*Benieuwd wat er voor jouw bedrijf mogelijk is? Loop binnen in Joure of plan een vrijblijvend kennismakingsgesprek.*

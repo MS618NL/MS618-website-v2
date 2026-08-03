@@ -17,6 +17,9 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
+// Eén plek voor de reviewteller (header-trustregel + voorstelblok).
+const REVIEWS = 24;
+
 const pageUrl = canonicalUrl(`/${entry.id}/`);
 const breadcrumbs = [
   { name: 'Home', item: site.url },
@@ -49,7 +52,7 @@ const extraSchema = [
         <p class="local-description">{entry.data.description}</p>
         <a href="/contact/" class="btn-primary">Plan een gesprek →</a>
         <p class="local-trust">
-          <a class="trust-item trust-link" href={site.social.googleBusiness} target="_blank" rel="noopener noreferrer"><span class="trust-star" aria-hidden="true">★</span> 5,0 op Google · 24 reviews</a>
+          <a class="trust-item trust-link" href={site.social.googleBusiness} target="_blank" rel="noopener noreferrer"><span class="trust-star" aria-hidden="true">★</span> 5,0 op Google · {REVIEWS} reviews</a>
           <span class="trust-sep" aria-hidden="true">·</span>
           <a class="trust-item trust-link" href="/blog/google-ads-impact-awards-2026/">Genomineerd voor de Google Ads Impact Awards 2026</a>
         </p>
@@ -60,6 +63,23 @@ const extraSchema = [
           <Content />
         </div>
       </div>
+
+      <section class="local-about">
+        <div class="about-photo">
+          <img src="/images/pand.jpg" alt="Het kantoor van MS618 aan de haven van Joure" width="1276" height="865" loading="lazy" />
+        </div>
+        <div class="about-text">
+          <h2>Even voorstellen</h2>
+          <p>MS618 is een digitaal marketing- en AI-bureau in Joure, aan de haven in een oud fabriekspand van Douwe Egberts. Vijf senior specialisten, geen junioren, voor ondernemers in heel Friesland en daarbuiten.</p>
+          <p>En denken we dat het voor jouw markt niet uitkan, dan zeggen we dat gewoon. Liever een eerlijk gesprek dan een traject waar niemand blij van wordt.</p>
+          <p class="about-trust">
+            <a href={site.social.googleBusiness} target="_blank" rel="noopener noreferrer"><span aria-hidden="true">★</span> 5,0 op Google · {REVIEWS} reviews</a>
+            <span class="about-sep" aria-hidden="true">·</span>
+            <a href="/blog/google-ads-impact-awards-2026/">Genomineerd: Google Ads Impact Awards 2026</a>
+          </p>
+          <a href="/contact/" class="btn-primary about-cta">Plan een gesprek →</a>
+        </div>
+      </section>
 
       {faqs.length > 0 && (
         <section class="local-faq">
@@ -149,6 +169,85 @@ const extraSchema = [
   .local-body {
     padding-bottom: 4rem;
     border-bottom: 1px solid oklch(0.15 0 0);
+  }
+
+  /* ── Even voorstellen: menselijk bewijs op elke regiopagina ── */
+  .local-about {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 2.5rem;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    border: 1px solid oklch(0.18 0 0);
+    background: oklch(0.11 0 0);
+  }
+
+  .about-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    filter: brightness(0.95);
+  }
+
+  .about-text h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: oklch(0.98 0 0);
+    margin-bottom: 0.85rem;
+  }
+
+  .about-text p {
+    font-size: 0.9375rem;
+    color: oklch(0.68 0 0);
+    line-height: 1.7;
+    margin-bottom: 0.85rem;
+  }
+
+  .about-trust {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0 !important;
+    font-size: 0.8125rem;
+  }
+
+  .about-trust a {
+    color: oklch(0.72 0 0);
+    text-decoration: none;
+    border-bottom: 1px solid oklch(0.28 0 0);
+    padding-bottom: 1px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .about-trust a:hover {
+    color: oklch(0.98 0 0);
+    border-color: oklch(0.6 0 0);
+  }
+
+  .about-sep {
+    color: oklch(0.35 0 0);
+  }
+
+  .about-cta {
+    display: inline-block;
+    margin-top: 1.4rem;
+  }
+
+  @media (max-width: 768px) {
+    .local-about {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+
+    .about-photo img {
+      max-height: 180px;
+    }
   }
 
   .local-faq {

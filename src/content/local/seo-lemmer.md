@@ -21,6 +21,10 @@ faq:
 
 Als ondernemer in Lemmer wil je gevonden worden door klanten in de buurt en door mensen die van verder komen. SEO maakt dat mogelijk: structurele zichtbaarheid in Google op de zoektermen die er voor jouw bedrijf toe doen. Ons kantoor staat in Joure, een kwartier rijden, dus je zit niet vast aan een bureau in de Randstad dat je nooit ziet.
 
+## Als het seizoen begint, ben je te laat
+
+In een havenplaats valt de drukte in een paar maanden. Word je pas zichtbaar wanneer die drukte al is losgebarsten, dan zijn de opdrachten en boekingen allang verdeeld. Wie in het voorjaar bovenaan staat, heeft dat in de winter opgebouwd.
+
 ## Een havenplaats met twee soorten klanten
 
 Lemmer heeft een markt die je in de rest van Friesland zo niet vindt. Aan de ene kant ondernemers die het hele jaar door van de regio leven: installateurs, bouw, zorg, dienstverleners. Aan de andere kant bedrijven rond de haven en het water, waar de omzet zich in een paar maanden opstapelt en de zoekvraag met het seizoen meebeweegt.
@@ -45,6 +49,3 @@ SEO bij MS618 in Lemmer is geschikt voor:
 
 Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/).
 
----
-
-*Benieuwd waar jouw bedrijf in Google en in AI-zoekmachines staat? Plan een vrijblijvend kennismakingsgesprek, we komen graag naar Lemmer.*

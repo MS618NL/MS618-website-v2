@@ -20,6 +20,10 @@ faq:
 
 Een mooie website die niemand vindt of die traag laadt, levert niets op. Wij bouwen websites die er scherp uitzien, snel laden en goed gevonden worden. Ons kantoor staat in Joure, aan de haven, en we bouwen voor ondernemers in Joure en omgeving.
 
+## Je bedrijf is beter dan je website laat zien
+
+Veel ondernemers in Joure hebben een site die ooit prima was en daarna is blijven staan. Traag op mobiel, lastig zelf aan te passen, en zelden goed voor een aanvraag. De klant die hem opent ziet niet wat jij werkelijk levert.
+
 ## Snel, modern en vindbaar
 
 We bouwen op een moderne techniek die razendsnel laadt en uitstekend scoort op snelheid en vindbaarheid. Snelheid is geen detail: het bepaalt mee hoe je in Google staat. Bij ons zit goede vindbaarheid standaard onder elke site.
@@ -42,6 +46,3 @@ Webdesign bij MS618 in Joure is geschikt voor:
 - Bedrijven die een nieuwe site willen die meteen goed scoort
 - Ondernemers die een webdesigner in de buurt willen met landelijke kwaliteit
 
----
-
-*Klaar voor een website die snel laadt en gevonden wordt? Loop binnen in Joure of plan een kennismakingsgesprek.*

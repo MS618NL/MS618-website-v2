@@ -23,6 +23,10 @@ Heerenveen is een van de sterkste economische kernen van Friesland, met bedrijve
 
 MS618 zit in Joure, een kwartier rijden. We werken voor bedrijven in Heerenveen die zowel lokaal zichtbaar willen zijn als landelijk gevonden willen worden door de juiste inkoper.
 
+## De inkoper zoekt op zijn probleem, niet op jouw naam
+
+Je levert iets waar maar een handvol bedrijven in Nederland verstand van heeft. Juist daarom vindt de inkoper die je zoekt je niet: hij kent je bedrijfsnaam niet en typt die dus ook niet in. Hij zoekt op het probleem dat hij moet oplossen. Sta je daar niet, dan kom je niet op de shortlist.
+
 ## B2B-vindbaarheid werkt anders
 
 In techniek en maakindustrie zoekt je koper niet op je bedrijfsnaam. Hij zoekt op een probleem dat hij moet oplossen, een toepassing of een specificatie, vaak lang voordat hij contact opneemt. Wie op dat moment een goed antwoord geeft, staat op de shortlist.
@@ -48,6 +52,3 @@ Ook zakelijke kopers gebruiken inmiddels ChatGPT en Perplexity om leveranciers t
 
 Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/).
 
----
-
-*Benieuwd waar jouw bedrijf in Google en in AI-zoekmachines staat? Plan een vrijblijvend kennismakingsgesprek.*
