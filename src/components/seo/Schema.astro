@@ -30,7 +30,7 @@ const defaults = includeDefaults
             addressCountry: site.organization.address.addressCountry,
           },
         }),
-        ...(site.social?.linkedin && { sameAs: [site.social.linkedin].filter(Boolean) }),
+        ...(site.social?.linkedin && { sameAs: [site.social.linkedin, site.social.googleBusiness].filter(Boolean) }),
       },
       {
         '@type': 'WebSite',
