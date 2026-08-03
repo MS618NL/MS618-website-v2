@@ -52,6 +52,3 @@ Ook zakelijke kopers gebruiken inmiddels ChatGPT en Perplexity om leveranciers t
 
 Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/).
 
----
-
-*Benieuwd waar jouw bedrijf in Google en in AI-zoekmachines staat? Plan een vrijblijvend kennismakingsgesprek.*

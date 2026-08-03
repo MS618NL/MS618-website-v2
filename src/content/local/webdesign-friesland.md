@@ -46,6 +46,3 @@ Webdesign bij MS618 is geschikt voor:
 - Bedrijven die een nieuwe site willen die meteen goed scoort
 - Ondernemers die webdesign en vindbaarheid in één hand willen
 
----
-
-*Klaar voor een website die snel laadt en gevonden wordt? Plan een kennismakingsgesprek.*

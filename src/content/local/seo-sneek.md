@@ -50,6 +50,3 @@ Je klant googelt niet meer alleen. Steeds vaker vraagt hij ChatGPT of Perplexity
 
 Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/).
 
----
-
-*Benieuwd waar jouw bedrijf in Sneek staat in Google en in AI-zoekmachines? Plan een vrijblijvend kennismakingsgesprek.*

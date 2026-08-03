@@ -50,6 +50,3 @@ Je klant googelt niet meer alleen. Steeds vaker vraagt hij ChatGPT of Perplexity
 
 Werk je buiten de stad? Bekijk dan [SEO Friesland](/seo-friesland/), onze aanpak voor de hele provincie.
 
----
-
-*Benieuwd waar jouw bedrijf in Leeuwarden staat in Google en in AI-zoekmachines? Plan een vrijblijvend kennismakingsgesprek.*

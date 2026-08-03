@@ -46,6 +46,3 @@ Webdesign bij MS618 in Joure is geschikt voor:
 - Bedrijven die een nieuwe site willen die meteen goed scoort
 - Ondernemers die een webdesigner in de buurt willen met landelijke kwaliteit
 
----
-
-*Klaar voor een website die snel laadt en gevonden wordt? Loop binnen in Joure of plan een kennismakingsgesprek.*

@@ -56,6 +56,3 @@ De volledige aanpak voor betaalde campagnes staat op onze pagina over [Google Ad
 - Ondernemers die adverteren maar niet weten wat het oplevert
 - B2B-bedrijven die naast Google ook de juiste beslissers op LinkedIn willen bereiken
 
----
-
-*Benieuwd wat Google Ads voor jouw bedrijf kan opleveren? Plan een vrijblijvend gesprek, dan rekenen we samen door of het in jouw markt uitkan.*

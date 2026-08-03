@@ -48,6 +48,3 @@ Ons marketingbureau is geschikt voor:
 - Bedrijven die geen eigen marketingafdeling willen optuigen
 - Ondernemers die één partner zoeken in plaats van vier losse leveranciers
 
----
-
-*Benieuwd wat er voor jouw bedrijf in Friesland mogelijk is? Plan een vrijblijvend kennismakingsgesprek.*

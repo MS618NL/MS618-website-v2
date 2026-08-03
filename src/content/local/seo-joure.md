@@ -44,6 +44,3 @@ SEO bij MS618 in Joure is geschikt voor:
 - Bedrijven die minder afhankelijk willen zijn van betaalde advertenties
 - Ondernemers die nu al willen anticiperen op zoeken via AI
 
----
-
-*Benieuwd waar jouw bedrijf in Google staat? Loop binnen in Joure of plan een kennismakingsgesprek.*

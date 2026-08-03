@@ -46,6 +46,3 @@ SEO bij MS618 is geschikt voor:
 - Ondernemers die minder afhankelijk willen zijn van betaalde advertenties
 - Bedrijven die nu al willen anticiperen op zoeken via AI
 
----
-
-*Benieuwd waar jouw bedrijf in Google en in AI-zoekmachines staat? Plan een kennismakingsgesprek, dan kijken we samen.*

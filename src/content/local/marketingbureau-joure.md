@@ -47,6 +47,3 @@ Ons marketingbureau in Joure is geschikt voor:
 - Bedrijven die geen eigen marketingafdeling willen optuigen
 - Ondernemers die één partner zoeken in plaats van losse leveranciers
 
----
-
-*Benieuwd wat er voor jouw bedrijf mogelijk is? Loop binnen in Joure of plan een vrijblijvend kennismakingsgesprek.*
