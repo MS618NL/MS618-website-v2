@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl, getAlternatePath, useTranslations } from '@/i18n';
+import { getCollection } from 'astro:content';
 
 interface Props {
   url?: URL;
@@ -15,14 +16,25 @@ const altPath = Astro.props.altPath ?? getAlternatePath(url, altLang);
 const prefix = lang === 'en' ? '/en' : '';
 const homeHref = lang === 'en' ? '/en/' : '/';
 
-const navItems = [
-  { label: t('nav.services'), href: lang === 'en' ? '/en/services/' : '/diensten/' },
+const servicesHref = lang === 'en' ? '/en/services/' : '/diensten/';
+
+const navItems: { label: string; href: string; mega?: boolean }[] = [
+  { label: t('nav.services'), href: servicesHref, mega: true },
   { label: t('nav.cases'), href: `${prefix}/cases/` },
   { label: t('nav.blog'), href: `${prefix}/blog/` },
   { label: t('nav.about'), href: lang === 'en' ? '/en/about/' : '/over-ons/' },
   { label: 'Contact', href: `${prefix}/contact/` },
 ];
 const contactHref = `${prefix}/contact/`;
+
+// Megamenu: de diensten zelf plus het proces, één bron met de dienstenpagina.
+const megaServices = (await getCollection(lang === 'en' ? 'services-en' : 'services'))
+  .sort((a, b) => a.data.order - b.data.order)
+  .map((s) => ({ title: s.data.title, icon: s.data.icon, href: `${servicesHref}${s.id}/` }));
+
+const megaSteps = lang === 'en'
+  ? ['Strategy & AI implementation', 'Visibility & findability', 'Websites, design & brand experience', 'Content & communication', 'Growth & optimization']
+  : ['Strategie & AI-implementatie', 'Zichtbaarheid & vindbaarheid', 'Websites, design & merkbeleving', 'Content & communicatie', 'Groei & optimalisatie'];
 ---
 
 <header class="site-header" id="site-header">
@@ -35,9 +47,46 @@ const contactHref = `${prefix}/contact/`;
       <nav class="main-nav" aria-label={lang === 'en' ? 'Main navigation' : 'Hoofdnavigatie'}>
         <ul>
           {navItems.map((item) => (
-            <li>
-              <a href={item.href} class="nav-link">{item.label}</a>
-            </li>
+            item.mega ? (
+              <li class="has-mega">
+                <a href={item.href} class="nav-link nav-link-mega">
+                  {item.label}
+                  <svg class="mega-chevron" width="10" height="10" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <div class="mega-panel">
+                  <div class="mega-inner">
+                    <div class="mega-col">
+                      <span class="mega-label">{lang === 'en' ? 'Services' : 'Diensten'}</span>
+                      <ul class="mega-services">
+                        {megaServices.map((s) => (
+                          <li>
+                            <a href={s.href}>
+                              <span class="mega-icon" aria-hidden="true">{s.icon}</span>
+                              <span>{s.title}</span>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="mega-col mega-col-process">
+                      <span class="mega-label">{lang === 'en' ? 'Our approach' : 'Onze aanpak'}</span>
+                      <ol class="mega-steps">
+                        {megaSteps.map((step, i) => (
+                          <li><span class="mega-num">{String(i + 1).padStart(2, '0')}</span>{step}</li>
+                        ))}
+                      </ol>
+                      <a href={item.href} class="mega-all">
+                        {lang === 'en' ? 'All services' : 'Alle diensten'} →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ) : (
+              <li>
+                <a href={item.href} class="nav-link">{item.label}</a>
+              </li>
+            )
           ))}
         </ul>
       </nav>
@@ -147,6 +196,146 @@ const contactHref = `${prefix}/contact/`;
 
   .nav-link:hover {
     opacity: 0.7;
+  }
+
+  /* ── Megamenu onder Diensten ── */
+  .has-mega {
+    position: relative;
+  }
+
+  .nav-link-mega {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .mega-chevron {
+    opacity: 0.55;
+    transition: transform 0.2s ease;
+  }
+
+  .mega-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* transparante brug, zodat de muis van link naar paneel kan zonder te sluiten */
+    padding-top: 0.75rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    pointer-events: none;
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+  }
+
+  .has-mega:hover .mega-panel,
+  .has-mega:focus-within .mega-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .has-mega:hover .mega-chevron,
+  .has-mega:focus-within .mega-chevron {
+    transform: rotate(180deg);
+  }
+
+  .mega-inner {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 2rem;
+    width: 580px;
+    padding: 1.75rem;
+    background: rgba(10, 10, 10, 0.98);
+    border: 1px solid #222;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .mega-label {
+    display: block;
+    margin-bottom: 0.9rem;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #666;
+  }
+
+  .mega-services {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mega-services a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.32rem 0;
+    font-size: 0.8125rem;
+    color: #a3a3a3;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .mega-services a:hover {
+    color: #fafafa;
+  }
+
+  .mega-icon {
+    flex-shrink: 0;
+    width: 0.9rem;
+    color: oklch(0.65 0.2 250);
+  }
+
+  .mega-col-process {
+    border-left: 1px solid #1c1c1c;
+    padding-left: 2rem;
+  }
+
+  .mega-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mega-steps li {
+    display: flex;
+    align-items: baseline;
+    padding: 0.32rem 0;
+    font-size: 0.8125rem;
+    color: #a3a3a3;
+  }
+
+  .mega-num {
+    flex-shrink: 0;
+    margin-right: 0.6rem;
+    font-size: 0.6875rem;
+    color: #555;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .mega-all {
+    display: inline-block;
+    margin-top: 1.1rem;
+    padding-bottom: 2px;
+    font-size: 0.8125rem;
+    color: #fafafa;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    transition: border-color 0.2s ease;
+  }
+
+  .mega-all:hover {
+    border-color: #fafafa;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mega-panel,
+    .mega-chevron {
+      transition: none;
+    }
   }
 
   .header-actions {
@@ -297,7 +486,8 @@ const contactHref = `${prefix}/contact/`;
     }
 
     .main-nav,
-    .header-actions {
+    .header-actions,
+    .mega-panel {
       display: none;
     }
 
