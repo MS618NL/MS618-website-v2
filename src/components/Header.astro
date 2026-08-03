@@ -30,7 +30,7 @@ const contactHref = `${prefix}/contact/`;
 // Megamenu: de diensten zelf plus het proces, één bron met de dienstenpagina.
 const megaServices = (await getCollection(lang === 'en' ? 'services-en' : 'services'))
   .sort((a, b) => a.data.order - b.data.order)
-  .map((s) => ({ title: s.data.title, icon: s.data.icon, href: `${servicesHref}${s.id}/` }));
+  .map((s) => ({ label: s.data.navLabel ?? s.data.title, href: `${servicesHref}${s.id}/` }));
 
 const megaSteps = lang === 'en'
   ? ['Strategy & AI implementation', 'Visibility & findability', 'Websites, design & brand experience', 'Content & communication', 'Growth & optimization']
@@ -59,12 +59,7 @@ const megaSteps = lang === 'en'
                       <span class="mega-label">{lang === 'en' ? 'Services' : 'Diensten'}</span>
                       <ul class="mega-services">
                         {megaServices.map((s) => (
-                          <li>
-                            <a href={s.href}>
-                              <span class="mega-icon" aria-hidden="true">{s.icon}</span>
-                              <span>{s.title}</span>
-                            </a>
-                          </li>
+                          <li><a href={s.href}>{s.label}</a></li>
                         ))}
                       </ul>
                     </div>
@@ -243,9 +238,9 @@ const megaSteps = lang === 'en'
 
   .mega-inner {
     display: grid;
-    grid-template-columns: 1.1fr 1fr;
+    grid-template-columns: 0.85fr 1fr;
     gap: 2rem;
-    width: 660px;
+    width: 600px;
     padding: 1.75rem;
     background: rgba(10, 10, 10, 0.98);
     border: 1px solid #222;
@@ -276,9 +271,7 @@ const megaSteps = lang === 'en'
   }
 
   .mega-services a {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
+    display: block;
     padding: 0.32rem 0;
     font-size: 0.8125rem;
     color: #a3a3a3;
@@ -288,12 +281,6 @@ const megaSteps = lang === 'en'
 
   .mega-services a:hover {
     color: #fafafa;
-  }
-
-  .mega-icon {
-    flex-shrink: 0;
-    width: 0.9rem;
-    color: oklch(0.65 0.2 250);
   }
 
   .mega-col-process {

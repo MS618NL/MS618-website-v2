@@ -49,6 +49,8 @@ const services = defineCollection({
     ogImage: z.string().optional(),
     noindex: z.boolean().default(false),
     order: z.number().default(99),
+    /** Korte, klanttaal-variant voor de navigatie; de title blijft de SEO-term. */
+    navLabel: z.string().optional(),
     icon: z.string().default('→'),
     category: z.string().default('service'),
     faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
@@ -65,6 +67,8 @@ const servicesEn = defineCollection({
     ogImage: z.string().optional(),
     noindex: z.boolean().default(false),
     order: z.number().default(99),
+    /** Korte, klanttaal-variant voor de navigatie; de title blijft de SEO-term. */
+    navLabel: z.string().optional(),
     icon: z.string().default('→'),
     category: z.string().default('service'),
     faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),

@@ -2,7 +2,8 @@
 title: "GEO Optimization & AI Visibility"
 seoTitle: "GEO Optimization: Get Cited by AI Search Engines | MS618"
 description: "More and more customers search via ChatGPT and AI. MS618 makes sure your business gets named in those answers. This is called GEO, or AI visibility."
-order: 2
+order: 3
+navLabel: "AI visibility"
 icon: "✦"
 category: "visibility"
 updatedDate: 2026-06-17

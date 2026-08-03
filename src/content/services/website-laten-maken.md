@@ -2,7 +2,8 @@
 title: "Website laten maken"
 seoTitle: "Website laten maken: snel, modern en goed vindbaar | MS618"
 description: "Een website die snel laadt, scoort in Google en meegroeit. MS618 bouwt moderne, razendsnelle websites voor MKB in Friesland en heel Nederland."
-order: 4.5
+order: 5
+navLabel: "Website laten maken"
 icon: "▣"
 category: "website"
 updatedDate: 2026-06-17

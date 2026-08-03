@@ -2,7 +2,8 @@
 title: "Analytics & Reporting"
 seoTitle: "Marketing analytics & dashboards: insight that drives action | MS618"
 description: "Finally know what works. MS618 builds marketing analytics, attribution models and dashboards that give leadership direct grip on marketing performance."
-order: 6
+order: 9
+navLabel: "Measurement & reporting"
 icon: "≡"
 category: "conversion"
 updatedDate: 2026-06-17

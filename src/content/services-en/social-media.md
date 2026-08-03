@@ -2,7 +2,8 @@
 title: "Social Media & LinkedIn"
 seoTitle: "B2B social media & LinkedIn marketing | MS618"
 description: "LinkedIn is where your B2B customer spends their time. MS618 builds visibility and authority with consistent, deliberate content, run by specialists."
-order: 7
+order: 8
+navLabel: "LinkedIn & social"
 icon: "◆"
 category: "visibility"
 updatedDate: 2026-06-17

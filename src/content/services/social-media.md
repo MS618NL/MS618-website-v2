@@ -2,7 +2,8 @@
 title: "Social Media & LinkedIn"
 seoTitle: "B2B social media & LinkedIn-marketing | MS618"
 description: "LinkedIn is waar je B2B-klant rondloopt. MS618 bouwt zichtbaarheid en autoriteit op met consistente, doordachte content, uitgevoerd door specialisten."
-order: 7
+order: 8
+navLabel: "LinkedIn & social media"
 icon: "◆"
 category: "zichtbaarheid"
 updatedDate: 2026-06-17

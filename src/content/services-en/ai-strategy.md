@@ -2,7 +2,8 @@
 title: "AI Strategy & Implementation"
 seoTitle: "AI Consultancy for SMEs: from strategy to execution | MS618"
 description: "Knowing AI is changing your business is not enough. MS618 turns AI into a concrete strategy and builds it into your marketing, visibility and processes."
-order: 0
+order: 1
+navLabel: "AI strategy"
 icon: "◇"
 category: "strategy"
 updatedDate: 2026-06-17

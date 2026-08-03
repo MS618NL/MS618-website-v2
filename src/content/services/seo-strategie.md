@@ -2,7 +2,8 @@
 title: "SEO Strategie"
 seoTitle: "SEO-strategie voor B2B: van onzichtbaar naar de top | MS618"
 description: "Geen trucjes, geen omwegen. MS618 zorgt dat B2B-bedrijven beter gevonden worden in Google op de zoektermen die er écht toe doen. Dat is SEO."
-order: 1
+order: 2
+navLabel: "SEO"
 icon: "↗"
 category: "zichtbaarheid"
 updatedDate: 2026-06-17
