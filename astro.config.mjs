@@ -44,6 +44,12 @@ export default defineConfig({
   site: 'https://www.ms618.nl',
   output: 'static',
   trailingSlash: 'always',
+  // All page CSS is ~12 KB compressed; inlining it removes every render-blocking
+  // request from the critical path (PSI: 460 ms). The CSP feature hashes these
+  // inline styles automatically.
+  build: {
+    inlineStylesheets: 'always',
+  },
   i18n: {
     defaultLocale: 'nl',
     locales: ['nl', 'en'],
