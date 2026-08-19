@@ -86,6 +86,7 @@ const localPages = lang === 'en'
       <nav aria-label="Legal navigation">
         <a href={`${p}/privacy/`}>{t('footer.privacy')}</a>
         <a href={lang === 'en' ? '/en/terms/' : '/voorwaarden/'}>{lang === 'en' ? 'Terms & Conditions' : 'Algemene Voorwaarden'}</a>
+        {lang !== 'en' && <a href="/colofon/">Colofon</a>}
         <a href={`${p ? p : ''}/rss.xml`}>RSS</a>
         <a href="/sitemap-index.xml">{t('footer.sitemap')}</a>
       </nav>
