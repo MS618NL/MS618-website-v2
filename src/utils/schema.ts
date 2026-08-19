@@ -36,6 +36,7 @@ export function buildOrganizationPiece(): SchemaGraphPiece {
     '@id': `${site.url}/#organization`,
     name: org.name,
     legalName: org.legalName,
+    foundingDate: '2022',
     url: site.url,
     logo: {
       '@type': 'ImageObject',
