@@ -1,0 +1,124 @@
+---
+import Page from '@/layouts/Page.astro';
+import site from '@/data/site.json';
+
+const breadcrumbs = [
+  { name: 'Home', item: site.url },
+  { name: 'Colofon' },
+];
+---
+
+<Page
+  title="Colofon"
+  seoTitle="Colofon | MS618, digitaal marketing- en AI-bureau"
+  description="Over deze website en de makers: MS618, digitaal marketing- en AI-bureau. Vragen over de site, content hergebruiken of iets melden? Hier vind je alles."
+  breadcrumbs={breadcrumbs}
+  enAlternate={false}
+  altPath="/en/"
+>
+  <div class="legal-page">
+    <div class="container">
+      <div class="legal-content">
+        <h1>Colofon</h1>
+        <p class="legal-updated">Laatst bijgewerkt: augustus 2026</p>
+
+        <p>Op deze pagina lees je wie deze website maakt en onderhoudt, hoe hij is gebouwd, en waar je terechtkunt met vragen, opmerkingen of verzoeken om content te hergebruiken.</p>
+
+        <h2>Over deze website</h2>
+        <p>ms618.nl is de website van MS618, een digitaal marketing- en AI-bureau. Je vindt hier onze aanpak voor zoekmachineoptimalisatie (SEO), AI-vindbaarheid (GEO: genoemd worden in AI-zoekmachines zoals ChatGPT en Perplexity), Google Ads en LinkedIn Ads, contentmarketing, webdesign en analytics, naast klantcases en artikelen over marketing en AI voor B2B- en MKB-bedrijven.</p>
+
+        <h2>Wie deze website maakt</h2>
+        <p>MS618 B.V. is een digitaal marketing- en AI-bureau, opgericht in 2022 en gevestigd aan de Slachtedyk 24a in Joure (Friesland). Het team bestaat uit vijf senior specialisten in strategie, SEO, advertising, design en AI. In 2026 werd MS618 door Google genomineerd voor de Google Ads Impact Awards.</p>
+        <p>KvK: 91896185 · BTW: NL865808545B01</p>
+
+        <h2>Ontwerp en techniek</h2>
+        <p>Het ontwerp van deze website is gemaakt in samenwerking met Peter Ydel (Ydel Design). De site is door ons eigen team gebouwd, met dezelfde aanpak die we gebruiken als klanten een <a href="/diensten/website-laten-maken/">website laten maken</a>: moderne, razendsnelle techniek, gebouwd op snelheid en op vindbaarheid in Google én in AI-zoekmachines. Deze site is daarmee ons eigen visitekaartje.</p>
+
+        <h2>Fotografie</h2>
+        <p>De foto's van ons kantoor zijn gemaakt bij FJ08, het achtste fabriekspand van Douwe Egberts aan de haven van Joure. Overig beeldmateriaal is eigen werk of wordt gebruikt met bronvermelding op de betreffende pagina.</p>
+
+        <h2>Iets gevonden dat beter kan?</h2>
+        <p>Een typefout, een link die niet werkt, een pagina die niet goed leesbaar is: we horen het graag. Mail ons op <a href="mailto:info@ms618.nl">info@ms618.nl</a>, dan pakken we het op. Je krijgt binnen één werkdag reactie.</p>
+        <p>Vragen over een artikel, onze diensten of een mogelijke samenwerking? <a href="/contact/">Plan een gesprek</a> of loop binnen in Joure.</p>
+
+        <h2>Content citeren en hergebruiken</h2>
+        <p>Citeren uit onze artikelen en pagina's mag, met bronvermelding en een link naar ms618.nl. Dat geldt ook voor zoekmachines en AI-systemen: deze website mag worden gelezen en geciteerd met bronvermelding. Volledige artikelen of pagina's overnemen mag niet zonder schriftelijke toestemming; zie onze <a href="/voorwaarden/">algemene voorwaarden</a>.</p>
+
+        <div class="legal-contact">
+          <p><strong>MS618 B.V.</strong></p>
+          <p>Slachtedyk 24a, 8501 ZA Joure</p>
+          <p>KvK: 91896185 · BTW: NL865808545B01</p>
+          <p>E-mail: <a href="mailto:info@ms618.nl">info@ms618.nl</a></p>
+          <p><a href="/privacy/">Privacybeleid</a> · <a href="/voorwaarden/">Algemene voorwaarden</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Page>
+
+<style>
+  .legal-page {
+    padding: 6rem 0;
+    background: #080808;
+  }
+
+  .legal-content {
+    max-width: 720px;
+  }
+
+  .legal-content h1 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: oklch(0.98 0 0);
+    margin-bottom: 0.5rem;
+  }
+
+  .legal-updated {
+    font-size: 0.8125rem;
+    color: oklch(0.63 0 0);
+    margin-bottom: 3rem;
+  }
+
+  .legal-content h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: oklch(0.9 0 0);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-top: 2rem;
+    border-top: 1px solid oklch(0.15 0 0);
+  }
+
+  .legal-content p {
+    font-size: 0.9375rem;
+    color: oklch(0.68 0 0);
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+  }
+
+  .legal-content a {
+    color: oklch(0.75 0 0);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .legal-content a:hover {
+    color: oklch(0.95 0 0);
+  }
+
+  .legal-content strong {
+    color: oklch(0.8 0 0);
+  }
+
+  .legal-contact {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    border: 1px solid oklch(0.15 0 0);
+    background: oklch(0.1 0 0);
+  }
+
+  .legal-contact p {
+    margin-bottom: 0.25rem;
+  }
+</style>
