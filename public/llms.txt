@@ -1,35 +1,66 @@
 # MS618
 
-> MS618 is een AI-first digitaal marketingbureau gevestigd in Joure, Nederland. Wij combineren senior expertise met de nieuwste AI-modellen om B2B-bedrijven meetbare groei te geven — van SEO en Google Ads tot content en analytics. Geen juniorkoppels, geen losse acties. Één systeem dat werkt.
+> MS618 is een digitaal marketing- en AI-bureau in Joure (Friesland, Nederland). Vijf senior specialisten, geen junioren, voor MKB-bedrijven in Friesland en B2B-bedrijven daarbuiten, tot aan tech-startups in Los Angeles. Diensten: SEO, GEO/AI-vindbaarheid, AI-strategie, Google Ads en LinkedIn Ads, content, websites en analytics. Eén systeem in plaats van losse acties.
 
-MS618 werkt met bedrijven die willen groeien maar geen grote marketingafdeling hebben. Wij brengen strategie, uitvoering en AI samen in één partnership. Ons team opereert vanuit Nederland én Silicon Valley.
+Bedrijfsgegevens: MS618 B.V., Slachtedyk 24a, 8501 ZA Joure, Nederland. KvK 91896185. Genomineerd voor de Google Ads Impact Awards 2026 (nominatie door het Google Ads-team). Beoordeeld met 5,0 op Google (24 reviews).
 
-## Services
+## Diensten
 
-- [SEO Strategie](https://www.ms618.nl/services/seo-strategie/): Technische SEO, zoekwoordstrategie en AI-vindbaarheid (AEO/GEO) voor duurzame organische groei.
-- [Digital Advertising](https://www.ms618.nl/services/digital-advertising/): Google Ads en LinkedIn-campagnes met AI-optimalisatie voor maximale ROI.
-- [Content Marketing](https://www.ms618.nl/services/content-marketing/): AI-versterkte contentproductie afgestemd op zoekintentie en conversie.
-- [Website Optimalisatie](https://www.ms618.nl/services/website-optimalisatie/): CRO, technische performance en UX gericht op meer leads.
-- [Analytics & Reporting](https://www.ms618.nl/services/analytics-reporting/): Meetbare inzichten zonder ruis — alleen wat relevant is voor groei.
+- [AI-strategie & implementatie](https://www.ms618.nl/diensten/ai-strategie/): AI concreet inzetten in marketing en processen, van plan tot uitvoering.
+- [SEO Strategie](https://www.ms618.nl/diensten/seo-strategie/): technische SEO, contentarchitectuur en autoriteit voor duurzame organische groei.
+- [GEO-optimalisatie & AI-vindbaarheid](https://www.ms618.nl/diensten/geo-optimalisatie/): genoemd worden in ChatGPT, Perplexity en Google AI Overviews; citeerbare content, entiteit-opbouw en technische toegang voor AI-crawlers.
+- [Content Marketing](https://www.ms618.nl/diensten/content-marketing/): content afgestemd op zoekintentie en conversie, geschreven door mensen en versterkt met AI.
+- [Google Ads & LinkedIn Ads](https://www.ms618.nl/diensten/digital-advertising/): betaalde campagnes gericht op aanvragen en rendement, niet op klikken.
+- [Website laten maken](https://www.ms618.nl/diensten/website-laten-maken/): snelle, moderne websites die scoren op snelheid en vindbaarheid.
+- [Website Optimalisatie](https://www.ms618.nl/diensten/website-optimalisatie/): UX, conversie-optimalisatie en technische performance van bestaande sites.
+- [Analytics & Reporting](https://www.ms618.nl/diensten/analytics-reporting/): meetbare inzichten die tot actie leiden, zonder ruis.
+- [Social Media & LinkedIn](https://www.ms618.nl/diensten/social-media/): organische autoriteit opbouwen waar de B2B-klant zit.
 
-## Over ons
+## Lokaal (Friesland)
 
-- [Over MS618](https://www.ms618.nl/over-ons/): Ons team, onze aanpak en waarom wij anders werken dan traditionele bureaus.
+- [Marketingbureau Friesland](https://www.ms618.nl/marketingbureau-friesland/): één senior team voor de complete online groei van Fries MKB.
+- [SEO Friesland](https://www.ms618.nl/seo-friesland/): beter gevonden worden in Google en AI-zoekmachines, voor heel Friesland.
+- [SEO Leeuwarden](https://www.ms618.nl/seo-leeuwarden/)
+- [SEO Sneek](https://www.ms618.nl/seo-sneek/)
+- [SEO Heerenveen](https://www.ms618.nl/seo-heerenveen/)
+- [SEO Lemmer](https://www.ms618.nl/seo-lemmer/)
+- [SEO Joure](https://www.ms618.nl/seo-joure/)
+- [Google Ads Friesland](https://www.ms618.nl/google-ads-friesland/)
+- [Marketingbureau Joure](https://www.ms618.nl/marketingbureau-joure/)
+- [Webdesign Friesland](https://www.ms618.nl/webdesign-friesland/)
+- [Webdesign Joure](https://www.ms618.nl/webdesign-joure/)
+
+## Cases
+
+- [Swoop: drie jaar structurele SEO-groei (Los Angeles, VS)](https://www.ms618.nl/cases/swoop-seo/)
+- [Fugro GEODIN: rebranding en AI-vindbaarheid vanaf dag één](https://www.ms618.nl/cases/fugro-geodin/)
+- [KIS Group: AI-strategie en implementatie op directieniveau](https://www.ms618.nl/cases/kis-group-ai/)
 
 ## Kennis & blog
 
+- [In AI Overviews geciteerd worden in 2026](https://www.ms618.nl/blog/ai-overviews-2026-geciteerd-worden/)
+- [AI-soevereiniteit: voorsprong in eigen huis](https://www.ms618.nl/blog/ai-soevereiniteit-voorsprong-in-eigen-huis/)
 - [AI en SEO in 2026: wat verandert er echt?](https://www.ms618.nl/blog/ai-en-seo-2026/)
 - [Zoekintentie begrijpen: de sleutel tot SEO die werkt](https://www.ms618.nl/blog/zoekintentie-begrijpen/)
-- [Content strategie voor B2B](https://www.ms618.nl/blog/content-strategie-b2b/)
+- [Contentstrategie voor B2B](https://www.ms618.nl/blog/content-strategie-b2b/)
 - [Genomineerd voor de Google Ads Impact Awards 2026](https://www.ms618.nl/blog/google-ads-impact-awards-2026/)
 
-## Contact
+## Over ons & contact
 
-- Website: https://www.ms618.nl
+- [Over MS618](https://www.ms618.nl/over-ons/): het team (vijf senior specialisten), de aanpak en de missie: wat in Amerika al werkt hier laten landen.
+- [Contact](https://www.ms618.nl/contact/)
 - E-mail: info@ms618.nl
-- LinkedIn: https://linkedin.com/company/ms618
-- Adres: Slachtedyk 4a, Joure, Nederland
+- Telefoon: +31 6 33 10 67 02
+- LinkedIn: https://www.linkedin.com/company/ms618
+- Google Bedrijfsprofiel: https://www.google.com/maps?cid=6877882959993793291
+
+## English
+
+- [Home (English)](https://www.ms618.nl/en/)
+- [Services](https://www.ms618.nl/en/services/) — including [SEO Strategy](https://www.ms618.nl/en/services/seo-strategy/), [GEO Optimization & AI Visibility](https://www.ms618.nl/en/services/geo-optimization/) and [AI Strategy](https://www.ms618.nl/en/services/ai-strategy/)
+- [About MS618](https://www.ms618.nl/en/about/)
+- [Cases](https://www.ms618.nl/en/cases/)
 
 ## Talen
 
-Deze website is beschikbaar in het Nederlands (https://www.ms618.nl) en Engels (https://www.ms618.nl/en/).
+Deze website is beschikbaar in het Nederlands (https://www.ms618.nl/) en Engels (https://www.ms618.nl/en/).
