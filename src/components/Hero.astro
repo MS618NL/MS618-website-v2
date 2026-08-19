@@ -13,7 +13,10 @@ const {
   badgeText = 'Richting in versnelling',
   headlinePrefix = 'AI verandert ',
   headlineAccent = 'elke dag.',
-  rotatingWords = ['marketing', 'jouw bedrijf', 'de wereld'],
+  // LCP-regel: het BREEDSTE woord moet vooraan staan. De typewriter herschildert de
+  // H1; wordt een later woord breder dan het eerste, dan telt Chrome dat als nieuwe
+  // (grotere) LCP-kandidaat en schuift de gemeten LCP naar ~4,5s.
+  rotatingWords = ['jouw bedrijf', 'marketing', 'de wereld'],
   subheadline = 'Meer content, meer kanalen, meer tools. Maar beperkt resultaat. AI verandert alles, maar de meeste bedrijven weten niet waar te beginnen. MS618 brengt richting: de juiste strategie, de juiste tools, en een systeem dat werkt. Ook zonder marketingafdeling of AI-kennis.',
   cta = { label: 'Plan een gesprek', href: '/contact/' },
 } = Astro.props;
