@@ -65,6 +65,12 @@
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=2592000, stale-while-revalidate=604800" }
       ]
+    },
+    {
+      "source": "/(llms|robots)\\.txt",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
+      ]
     }
   ]
 }
