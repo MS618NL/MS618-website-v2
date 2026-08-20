@@ -13,7 +13,7 @@ relatedPosts: ["ai-soevereiniteit-voorsprong-in-eigen-huis", "ai-en-seo-2026"]
 
 Dertig tot veertig miljard dollar aan AI-projecten.
 
-MIT mat het resultaat: [95% van de pilots leverde niets meetbaars op](https://nanda.media.mit.edu/ai_report_2025.pdf).
+MIT onderzocht ze: [95% van de pilots leverde niets meetbaars op](https://nanda.media.mit.edu/ai_report_2025.pdf).
 
 Iedereen citeert dat cijfer.
 
