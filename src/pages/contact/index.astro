@@ -29,6 +29,14 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
         <div class="contact-form-col">
           <form class="contact-form" id="contact-form">
 
+            <!-- Honeypot: onzichtbaar voor mensen, bots vullen hem in; Formspree negeert
+                 submissions met _gotcha gevuld, en client-side gaan we dan niet naar de bedankpagina
+                 zodat generate_lead niet vuurt -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="_gotcha">Laat dit veld leeg</label>
+              <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off" />
+            </div>
+
             <div class="form-group">
               <label for="name">Naam <span aria-hidden="true">*</span></label>
               <input type="text" id="name" name="name" required autocomplete="name" />
@@ -416,6 +424,15 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
       gap: 2rem;
     }
   }
+
+  /* honeypot-veld buiten beeld, wel in de DOM zodat bots hem zien */
+  .hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
 </style>
 
 <script>
@@ -431,6 +448,7 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
   }
 
   // Form submit
+  const formLoadedAt = Date.now();
   const form = document.getElementById('contact-form') as HTMLFormElement;
 
   form?.addEventListener('submit', async (e) => {
@@ -438,6 +456,14 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
 
     const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
     const originalText = btn.textContent;
+
+    // Spamfilter: honeypot gevuld of binnen 3 s na laden verstuurd = bot.
+    // Doe alsof het gelukt is, maar zonder redirect naar de bedankpagina (= geen generate_lead).
+    const hp = form.querySelector('input[name="_gotcha"]') as HTMLInputElement | null;
+    if ((hp && hp.value) || Date.now() - formLoadedAt < 3000) {
+      btn.textContent = 'Verstuurd';
+      return;
+    }
     btn.textContent = 'Versturen...';
     btn.disabled = true;
 

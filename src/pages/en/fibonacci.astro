@@ -399,6 +399,10 @@ const extraSchema = [
             what good marketing does. Not doing everything, but the right thing, in the right
             proportion.
           </p>
+          <p>
+            That is how we work for our clients too: <a href="/en/services/">one system instead
+            of loose actions</a>, built by <a href="/en/about/">a small senior team in Joure</a>.
+          </p>
         </div>
       </section>
 
@@ -906,5 +910,17 @@ const extraSchema = [
     .fib-feature img {
       aspect-ratio: 4 / 3;
     }
+  }
+
+  /* brug van de Fibonacci-pagina naar de commerciele pagina's */
+  .closing .fib-text a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(255, 255, 255, 0.35);
+    transition: text-decoration-color 0.2s ease;
+  }
+  .closing .fib-text a:hover {
+    text-decoration-color: currentColor;
   }
 </style>
