@@ -1,10 +1,10 @@
 ---
 title: "SEO Friesland"
-seoTitle: "SEO Friesland: meer klanten uit Google en AI | MS618"
-description: "SEO-bureau in Friesland. Senior specialisten uit Joure halen voor MKB meer klanten uit Google en AI-zoekmachines. Plan een vrijblijvend gesprek."
+seoTitle: "SEO-bureau Friesland: beter gevonden in Google en AI | MS618"
+description: "SEO-bureau voor heel Friesland. Senior specialisten uit Joure zorgen dat MKB-bedrijven beter gevonden worden in Google en in AI-zoekmachines."
 order: 3
 region: "Friesland"
-updatedDate: 2026-07-10
+updatedDate: 2026-08-26
 faq:
   - question: "Wat is SEO en wat heb ik eraan?"
     answer: "SEO, zoekmachineoptimalisatie, zorgt dat je bedrijf gevonden wordt door mensen die in Google zoeken naar wat jij biedt. Goede SEO levert structureel verkeer en leads op, zonder dat je per klik betaalt zoals bij advertenties."
@@ -18,7 +18,7 @@ faq:
 
 ## Beter gevonden worden in Friesland
 
-Als Friese ondernemer wil je gevonden worden door klanten in de buurt en daarbuiten. SEO maakt dat mogelijk: structurele zichtbaarheid in Google op de zoektermen die er voor jouw bedrijf toe doen. MS618 zit in Joure en verzorgt SEO voor MKB-bedrijven in heel Friesland.
+Als Friese ondernemer wil je gevonden worden door klanten in de buurt en daarbuiten. SEO maakt dat mogelijk: structurele zichtbaarheid in Google op de zoektermen die er voor jouw bedrijf toe doen. MS618 is een SEO-bureau in Friesland, gevestigd in Joure, en werkt voor MKB-bedrijven in de hele provincie.
 
 ## Via-via werkt, tot het stilvalt
 
@@ -36,7 +36,7 @@ Zoeken verandert. Je klant stelt steeds vaker een vraag aan ChatGPT of Perplexit
 
 Vanuit Joure werken we voor ondernemers door heel Friesland: Drachten, Bolsward, Dokkum en omstreken. Lokale vindbaarheid waar dat telt, landelijke slagkracht waar dat nodig is.
 
-Voor de plaatsen waar we het meest werken hebben we een eigen pagina met de aanpak voor die markt: [SEO-bureau Leeuwarden](/seo-leeuwarden/), [SEO Sneek](/seo-sneek/), [SEO Heerenveen](/seo-heerenveen/), [SEO Lemmer](/seo-lemmer/) en [SEO Joure](/seo-joure/).
+Voor de plaatsen waar we het meest werken hebben we een eigen pagina met de aanpak voor die markt: [SEO Leeuwarden](/seo-leeuwarden/), [SEO Sneek](/seo-sneek/), [SEO Heerenveen](/seo-heerenveen/), [SEO Lemmer](/seo-lemmer/) en [SEO Joure](/seo-joure/).
 
 ## Voor wie
 

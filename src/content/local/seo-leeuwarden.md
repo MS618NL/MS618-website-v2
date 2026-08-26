@@ -1,11 +1,11 @@
 ---
 title: "SEO Leeuwarden"
-seoTitle: "SEO-bureau Leeuwarden: meer klanten uit Google | MS618"
-description: "SEO-bureau voor bedrijven in Leeuwarden. Senior specialisten op 25 minuten van de stad. Meer klanten uit Google en AI-zoekmachines."
+seoTitle: "SEO-bureau Leeuwarden: senior specialisten, geen juniors | MS618"
+description: "SEO voor bedrijven in Leeuwarden, vanuit Joure op 25 minuten. Vijf senior specialisten, geen juniorkoppels. 5,0 op Google. Plan een vrijblijvend gesprek."
 order: 3.5
 region: "Leeuwarden"
 navLabel: "SEO Leeuwarden"
-updatedDate: 2026-07-10
+updatedDate: 2026-08-26
 faq:
   - question: "Werken jullie voor bedrijven in Leeuwarden?"
     answer: "Ja. Ons kantoor staat in Joure, 25 minuten van Leeuwarden, en een flink deel van ons werk zit in en rond de stad. We komen graag bij je langs, of je schuift aan bij ons aan de haven."
@@ -17,11 +17,11 @@ faq:
     answer: "Ja. Steeds meer mensen vragen ChatGPT of Perplexity om een aanbeveling in plaats van te googelen. Wij zorgen dat je bedrijf ook in die antwoorden genoemd wordt. Dat heet GEO en zit standaard in onze aanpak."
 ---
 
-## SEO in Leeuwarden: de grootste markt van Friesland
+## SEO in Leeuwarden: de grootste zakelijke markt van het noorden
 
-Leeuwarden is de hoofdstad en veruit de grootste zakelijke markt van de provincie. Dat maakt de stad aantrekkelijk én competitief: op vrijwel elke commerciële zoekterm strijden meer bedrijven om dezelfde plekken dan waar ook in Friesland. Wie hier op pagina één staat, wint klanten. Wie op pagina twee staat, bestaat niet.
+Leeuwarden is veruit de grootste zakelijke markt van de regio. Dat maakt de stad aantrekkelijk én competitief: op vrijwel elke commerciële zoekterm strijden hier meer bedrijven om dezelfde plekken. Wie op pagina één staat, wint klanten. Wie op pagina twee staat, bestaat niet.
 
-MS618 is een SEO-bureau op 25 minuten van Leeuwarden. Vanuit Joure werken onze senior specialisten voor bedrijven in en rond de stad, van dienstverleners tot B2B-bedrijven die vanuit Leeuwarden landelijk werken.
+MS618 werkt voor bedrijven in en rond Leeuwarden, vanuit Joure op 25 minuten rijden. Onze senior specialisten bedienen dienstverleners in de stad en B2B-bedrijven die vanuit Leeuwarden landelijk werken.
 
 ## De klant kiest uit wat hij vindt
 
@@ -48,5 +48,5 @@ Je klant googelt niet meer alleen. Steeds vaker vraagt hij ChatGPT of Perplexity
 - Dienstverleners die de lokale concurrentie voor willen blijven
 - B2B-bedrijven in de stad met landelijke ambitie
 
-Werk je buiten de stad? Bekijk dan [SEO Friesland](/seo-friesland/), onze aanpak voor de hele provincie.
+Werk je buiten de stad? Bekijk dan ons [SEO-bureau Friesland](/seo-friesland/), met de aanpak voor de hele provincie.
 
