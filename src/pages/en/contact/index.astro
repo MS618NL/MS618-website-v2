@@ -193,12 +193,18 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
       const p1 = phoneLink.dataset.p1;
       const p2 = phoneLink.dataset.p2;
       const p3 = phoneLink.dataset.p3;
+      (window as any).dataLayer = (window as any).dataLayer || [];
+      (window as any).dataLayer.push({ event: 'phone_click' });
       window.location.href = p1 + p2 + p3;
     });
   }
 
   const formLoadedAt = Date.now();
+  let formInteracted = false;
+  const markInteracted = () => { formInteracted = true; };
   const form = document.getElementById('contact-form') as HTMLFormElement;
+  form?.addEventListener('pointerdown', markInteracted, { once: true });
+  form?.addEventListener('keydown', markInteracted, { once: true });
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
@@ -207,7 +213,7 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
     // Spamfilter: honeypot gevuld of binnen 3 s na laden verstuurd = bot.
     // Doe alsof het gelukt is, maar zonder redirect naar de bedankpagina (= geen generate_lead).
     const hp = form.querySelector('input[name="_gotcha"]') as HTMLInputElement | null;
-    if ((hp && hp.value) || Date.now() - formLoadedAt < 3000) {
+    if ((hp && hp.value) || !formInteracted || Date.now() - formLoadedAt < 3000) {
       btn.textContent = 'Sent';
       return;
     }

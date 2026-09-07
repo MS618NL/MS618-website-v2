@@ -107,6 +107,8 @@ const breadcrumbs = [
       const p1 = callBtn.dataset.p1;
       const p2 = callBtn.dataset.p2;
       const p3 = callBtn.dataset.p3;
+      (window as any).dataLayer = (window as any).dataLayer || [];
+      (window as any).dataLayer.push({ event: 'phone_click' });
       window.location.href = p1 + p2 + p3;
     });
   }
