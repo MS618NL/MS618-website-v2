@@ -35,4 +35,4 @@ Nothing changes. We keep doing what we do. But it's good to know that the way we
 
 ---
 
-*Want to know how we use AI for Google Ads? [Schedule a call](/en/contact/)*
+*Want to know how we use AI for [Google Ads and paid advertising](/en/services/digital-advertising/)? [Schedule a call](/en/contact/)*

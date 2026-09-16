@@ -65,7 +65,7 @@ export function buildOrganizationPiece(): SchemaGraphPiece {
     founder: site.team
       .filter((m) => m.slug === 'jorrit-miedema' || m.slug === 'jurjan-groothuis')
       .map((m) => ({ '@id': `${site.url}/over-ons/#${m.slug}` })),
-    sameAs: [site.social.linkedin, site.social.googleBusiness].filter(Boolean),
+    sameAs: [site.social.linkedin, site.social.googleBusiness, site.social.sortlist].filter(Boolean),
   };
 }
 
@@ -223,7 +223,7 @@ export function buildLocalBusinessPiece(): SchemaGraphPiece {
     }),
     areaServed: { '@type': 'Country', name: 'Netherlands' },
     parentOrganization: { '@id': `${site.url}/#organization` },
-    sameAs: [site.social.linkedin, site.social.googleBusiness].filter(Boolean),
+    sameAs: [site.social.linkedin, site.social.googleBusiness, site.social.sortlist].filter(Boolean),
   };
 }
 
@@ -264,12 +264,14 @@ export function buildFaqPiece(
   };
 }
 
-export function buildContactPiece(): SchemaGraphPiece {
+export function buildContactPiece(lang: 'nl' | 'en' = 'nl'): SchemaGraphPiece {
+  const path = lang === 'en' ? '/en/contact/' : '/contact/';
   return {
     '@type': 'ContactPage',
-    '@id': `${site.url}/contact/#webpage`,
-    url: `${site.url}/contact/`,
-    name: 'Contact — MS618',
+    '@id': `${site.url}${path}#contactpage`,
+    url: `${site.url}${path}`,
+    name: 'Contact | MS618',
+    inLanguage: lang === 'en' ? 'en' : 'nl-NL',
     mainEntity: {
       '@type': 'ContactPoint',
       email: site.organization.email,

@@ -37,4 +37,4 @@ Concrete progress, time after time: AI that actually lands in the business inste
 
 ---
 
-*Want to spar about what AI could mean for your organization? Schedule a no-obligation call.*
+*Want to spar about what AI could mean for your organization? Read about our [AI strategy](/en/services/ai-strategy/) or [schedule a no-obligation call](/en/contact/).*

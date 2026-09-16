@@ -104,4 +104,4 @@ We bouwen onze eigen content-cluster nu op met deze principes. Geen aparte SEO e
 
 Het effect dat we verwachten en gaan meten: meer citaties in AI-systemen op evaluation-intent keywords, waar B2B-prospects voor staan vlak voordat ze een bureau-keuze maken. Niet awareness-traffic dat AI Overviews toch al opvreten, maar de plek waar koopbeslissingen worden voorbereid.
 
-Wil je weten hoe jouw site er voor staat in dit nieuwe veld? [Plan een gesprek](/contact/). We doen een gratis citability-scan op 5 van je belangrijkste pagina's en laten zien waar de winst voor jou ligt.
+Wil je weten hoe jouw site er voor staat in dit nieuwe veld? Lees onze aanpak voor [GEO en AI-vindbaarheid](/diensten/geo-optimalisatie/) of [plan een gesprek](/contact/). We doen een gratis citability-scan op 5 van je belangrijkste pagina's en laten zien waar de winst voor jou ligt.

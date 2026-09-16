@@ -79,4 +79,4 @@ Onze aanbeveling voor organisaties die willen groeien in het AI-tijdperk:
 
 ---
 
-*Wil je weten hoe jouw SEO-strategie er optimaal uitziet voor 2026? Plan een strategiegesprek met ons team.*
+*Wil je weten hoe jouw [SEO-strategie](/diensten/seo-strategie/) er optimaal uitziet voor 2026? [Plan een strategiegesprek](/contact/) met ons team.*

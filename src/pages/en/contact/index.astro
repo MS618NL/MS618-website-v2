@@ -8,7 +8,7 @@ const breadcrumbs = [
   { name: 'Contact' },
 ];
 
-const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
+const extraSchema = [buildContactPiece('en'), buildLocalBusinessPiece()];
 ---
 
 <Page
@@ -194,8 +194,12 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
       const p2 = phoneLink.dataset.p2;
       const p3 = phoneLink.dataset.p3;
       (window as any).dataLayer = (window as any).dataLayer || [];
-      (window as any).dataLayer.push({ event: 'phone_click' });
-      window.location.href = p1 + p2 + p3;
+      // Eerst het event laten versturen, dan pas bellen; 300 ms vangnet als GTM niet terugmeldt.
+      const tel = p1 + p2 + p3;
+      let navigated = false;
+      const go = () => { if (!navigated) { navigated = true; window.location.href = tel; } };
+      (window as any).dataLayer.push({ event: 'phone_click', eventCallback: go, eventTimeout: 300 });
+      setTimeout(go, 300);
     });
   }
 

@@ -81,4 +81,4 @@ Het resultaat: content die niet alleen rankt, maar ook converteert — omdat het
 
 ---
 
-*Wil je weten welke zoekintentie jouw doelgroep heeft en hoe je die het beste bedient? Plan een kennismakingsgesprek.*
+*Wil je weten welke zoekintentie jouw doelgroep heeft en hoe je die het beste bedient? Dat is de kern van onze [SEO-strategie](/diensten/seo-strategie/). [Plan een kennismakingsgesprek](/contact/).*

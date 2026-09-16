@@ -1,11 +1,11 @@
 ---
 title: "SEO Leeuwarden"
-seoTitle: "SEO-bureau Leeuwarden: senior specialisten, geen juniors | MS618"
-description: "SEO voor bedrijven in Leeuwarden, vanuit Joure op 25 minuten. Vijf senior specialisten, geen juniorkoppels. 5,0 op Google. Plan een vrijblijvend gesprek."
+seoTitle: "SEO-bureau Leeuwarden: meer klanten uit Google | MS618"
+description: "SEO-bureau voor bedrijven in Leeuwarden. Senior specialisten op 25 minuten van de stad. Meer klanten uit Google en AI-zoekmachines."
 order: 3.5
 region: "Leeuwarden"
 navLabel: "SEO Leeuwarden"
-updatedDate: 2026-08-26
+updatedDate: 2026-09-16
 faq:
   - question: "Werken jullie voor bedrijven in Leeuwarden?"
     answer: "Ja. Ons kantoor staat in Joure, 25 minuten van Leeuwarden, en een flink deel van ons werk zit in en rond de stad. We komen graag bij je langs, of je schuift aan bij ons aan de haven."

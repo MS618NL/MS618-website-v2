@@ -81,4 +81,4 @@ The result: content that doesn't just rank, but converts — because it precisel
 
 ---
 
-*Want to know what search intent your target audience has and how to best serve it? Schedule an introductory call.*
+*Want to know what search intent your target audience has and how to best serve it? That is the core of our [SEO strategy](/en/services/seo-strategy/). [Schedule an introductory call](/en/contact/).*

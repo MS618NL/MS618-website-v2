@@ -35,4 +35,4 @@ Niks verandert. We blijven doen wat we doen. Maar het is goed om te weten dat de
 
 ---
 
-*Wil je weten hoe wij AI inzetten voor Google Ads? [Plan een gesprek](/contact/)*
+*Wil je weten hoe wij AI inzetten voor [Google Ads en betaald adverteren](/diensten/digital-advertising/)? [Plan een gesprek](/contact/)*

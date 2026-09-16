@@ -37,4 +37,4 @@ Fast visibility in ChatGPT and other AI search engines, while the classic channe
 
 ---
 
-*Want to be mentioned in AI answers too? See our GEO and AI visibility approach or schedule a call.*
+*Want to be mentioned in AI answers too? [See our GEO and AI visibility approach](/en/services/geo-optimization/) or [schedule a call](/en/contact/).*

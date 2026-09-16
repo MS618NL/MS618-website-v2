@@ -36,4 +36,4 @@ Structurally better positions on the core terms, year after year. For Swoop, SEO
 
 ---
 
-*Curious what structural SEO could mean for your business? Schedule a no-obligation call.*
+*Curious what a structural [SEO strategy](/en/services/seo-strategy/) could mean for your business? [Schedule a no-obligation call](/en/contact/).*
