@@ -79,4 +79,4 @@ Our recommendation for organizations that want to grow in the AI era:
 
 ---
 
-*Want to know what an optimal SEO strategy looks like for your business in 2026? Schedule a strategy session with our team.*
+*Want to know what an optimal [SEO strategy](/en/services/seo-strategy/) looks like for your business in 2026? [Schedule a strategy session](/en/contact/) with our team.*

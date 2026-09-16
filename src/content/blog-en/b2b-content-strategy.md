@@ -96,4 +96,4 @@ The first step is always the same: understand who your audience is and what ques
 
 ---
 
-*Ready to build a content strategy that systematically contributes to your growth objectives? Get in touch with our content team.*
+*Ready to build a [content strategy](/en/services/content-marketing/) that systematically contributes to your growth objectives? [Get in touch](/en/contact/) with our content team.*

@@ -38,6 +38,7 @@ Bedrijfsgegevens: MS618 B.V., opgericht in 2022, Slachtedyk 24a, 8501 ZA Joure, 
 
 ## Kennis & blog
 
+- [AI-adoptie is niet mislukt. Ze is verhuisd.](https://www.ms618.nl/blog/ai-adoptie-mkb/): MIT- en McKinsey-data over waarom 95% van de bedrijfsbrede AI-pilots niets oplevert en waarom het MKB structureel voordeel heeft.
 - [In AI Overviews geciteerd worden in 2026](https://www.ms618.nl/blog/ai-overviews-2026-geciteerd-worden/)
 - [AI-soevereiniteit: voorsprong in eigen huis](https://www.ms618.nl/blog/ai-soevereiniteit-voorsprong-in-eigen-huis/)
 - [AI en SEO in 2026: wat verandert er echt?](https://www.ms618.nl/blog/ai-en-seo-2026/)

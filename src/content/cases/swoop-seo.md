@@ -36,4 +36,4 @@ Structureel betere posities op de kerntermen, jaar na jaar. SEO is voor Swoop ee
 
 ---
 
-*Benieuwd wat structurele SEO voor jouw bedrijf kan betekenen? Plan een vrijblijvend gesprek.*
+*Benieuwd wat een structurele [SEO-strategie](/diensten/seo-strategie/) voor jouw bedrijf kan betekenen? [Plan een vrijblijvend gesprek](/contact/).*

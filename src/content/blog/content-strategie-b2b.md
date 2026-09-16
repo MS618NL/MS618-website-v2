@@ -96,4 +96,4 @@ De eerste stap is altijd dezelfde: begrijp wie je doelgroep is en welke vragen z
 
 ---
 
-*Klaar om een contentstrategie te bouwen die structureel bijdraagt aan je groeidoelstellingen? Neem contact op met ons contentteam.*
+*Klaar om een [contentstrategie](/diensten/content-marketing/) te bouwen die structureel bijdraagt aan je groeidoelstellingen? [Neem contact op](/contact/) met ons contentteam.*

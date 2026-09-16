@@ -85,6 +85,7 @@ export default defineConfig({
     sitemap({
       filter: (page) =>
         !page.includes('/voorwaarden') &&
+        !page.includes('/en/terms') &&
         !page.includes('/privacy') &&
         !page.includes('/bedankt') &&
         !page.includes('/thank-you'),
