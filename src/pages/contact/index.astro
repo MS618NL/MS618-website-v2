@@ -453,6 +453,16 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
     });
   }
 
+  // Gratis vindbaarheidsscan (?scan=1 vanaf de regiopagina's): vul de vraag alvast in.
+  try {
+    if (new URLSearchParams(window.location.search).get('scan') === '1') {
+      const challenge = document.getElementById('challenge') as HTMLTextAreaElement | null;
+      if (challenge && !challenge.value) {
+        challenge.value = 'Ik wil graag de gratis vindbaarheidsscan. Mijn website: ';
+      }
+    }
+  } catch { /* geen URL-toegang, geen prefill */ }
+
   // Form submit
   const formLoadedAt = Date.now();
   let formInteracted = false;
