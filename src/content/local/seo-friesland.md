@@ -36,7 +36,7 @@ Zoeken verandert. Je klant stelt steeds vaker een vraag aan ChatGPT of Perplexit
 
 Vanuit Joure werken we voor ondernemers door heel Friesland: Drachten, Bolsward, Dokkum en omstreken. Lokale vindbaarheid waar dat telt, landelijke slagkracht waar dat nodig is.
 
-Voor de plaatsen waar we het meest werken hebben we een eigen pagina met de aanpak voor die markt: [SEO Leeuwarden](/seo-leeuwarden/), [SEO Sneek](/seo-sneek/), [SEO Heerenveen](/seo-heerenveen/), [SEO Lemmer](/seo-lemmer/) en [SEO Joure](/seo-joure/).
+Voor de plaatsen waar we het meest werken hebben we een eigen pagina met de aanpak voor die markt: [SEO Leeuwarden](/seo-leeuwarden/), [SEO Sneek](/seo-sneek/), [SEO Heerenveen](/seo-heerenveen/), [SEO Lemmer](/seo-lemmer/) en [SEO Joure](/seo-joure/). Wil je meer dan SEO alleen, bekijk dan wat we als [online marketingbureau in Friesland](/marketingbureau-friesland/) doen, of hoe we een [website laten maken in Friesland](/webdesign-friesland/) aanpakken.
 
 ## Voor wie
 

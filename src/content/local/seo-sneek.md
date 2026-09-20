@@ -48,5 +48,5 @@ Je klant googelt niet meer alleen. Steeds vaker vraagt hij ChatGPT of Perplexity
 - Ondernemers die de lokale concurrentie voor willen blijven
 - Bedrijven in de Zuidwesthoek met landelijke ambitie
 
-Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/).
+Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/), of ons complete aanbod als [online marketingbureau in Friesland](/marketingbureau-friesland/).
 

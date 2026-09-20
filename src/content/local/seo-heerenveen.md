@@ -50,5 +50,5 @@ Ook zakelijke kopers gebruiken inmiddels ChatGPT en Perplexity om leveranciers t
 - Ondernemers die lokaal zichtbaar willen zijn en landelijk willen leveren
 - Bedrijven met een verkoopteam dat betere, beter voorbereide gesprekken wil
 
-Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/).
+Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/), of ons complete aanbod als [online marketingbureau in Friesland](/marketingbureau-friesland/).
 

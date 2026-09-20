@@ -1,6 +1,6 @@
 ---
 title: "Website laten maken in Friesland"
-seoTitle: "Website laten maken Friesland: snel, vindbaar, eigen ontwerp | MS618"
+seoTitle: "Website laten maken Friesland: webdesign dat scoort | MS618"
 description: "Website laten maken in Friesland? MS618 in Joure bouwt snelle websites met eigen ontwerp die scoren in Google en aanvragen opleveren. Bekijk hoe we werken."
 order: 2
 region: "Friesland"
@@ -23,7 +23,7 @@ faq:
 
 ## Een website laten maken die aanvragen oplevert, niet alleen mooi is
 
-Een mooie website die niemand vindt of die traag laadt, levert niets op. Wij bouwen websites die drie dingen tegelijk doen: er scherp uitzien, snel laden en goed gevonden worden. MS618 zit in Joure en maakt websites voor ondernemers in heel Friesland.
+Een mooie website die niemand vindt of die traag laadt, levert niets op. Wij bouwen websites die drie dingen tegelijk doen: er scherp uitzien, snel laden en goed gevonden worden. MS618 zit in Joure en verzorgt webdesign, bouw, teksten en vindbaarheid voor ondernemers in heel Friesland, in één hand.
 
 ## Herken je dit?
 
@@ -31,7 +31,7 @@ Je site is jaren geleden gemaakt en sindsdien nauwelijks aangeraakt. Op de telef
 
 Of je hebt een offerte gekregen van een bouwer die alleen bouwt. Daarna moet je zelf maar zien hoe je gevonden wordt.
 
-## Wat je bij ons krijgt
+## Webdesign in Friesland: wat je bij ons krijgt
 
 - **Eigen ontwerp, geen template.** Elke site wordt ontworpen door Peter Ydel, onze lead designer met ruim 15 jaar ervaring in merkidentiteit. Van zijn studio Ydel Design komen de huisstijlen van onder andere Doppio Espresso, Barista Café en CHCO.
 - **Snelheid als standaard.** We bouwen op schone, moderne techniek zonder plugin-stapeling. Onze eigen site scoort 100 op 100 op mobiele snelheid in Google PageSpeed. Dat is de lat die we voor jouw site ook leggen.
@@ -60,7 +60,7 @@ Een bedrijfswebsite van vijf tot tien pagina's staat doorgaans binnen vier tot z
 
 ## Website laten maken in Joure, Leeuwarden, Sneek of Drachten
 
-Vanuit Joure werken we voor ondernemers in heel de provincie: Leeuwarden, Drachten, Sneek, Heerenveen, Lemmer, Bolsward en de dorpen daartussen. Je krijgt een betrokken partner in de buurt die je kunt bellen, met de techniek en vindbaarheid van een landelijk bureau. Kom langs aan de haven in Joure, of we komen naar jou.
+Zoek je een webdesigner in Joure, Leeuwarden of Sneek? Vanuit Joure werken we voor ondernemers in heel de provincie: Leeuwarden, Drachten, Sneek, Heerenveen, Lemmer, Bolsward en de dorpen daartussen. Je krijgt een betrokken partner in de buurt die je kunt bellen, met de techniek en vindbaarheid van een landelijk bureau. Kom langs aan de haven in Joure, of we komen naar jou.
 
 Zit je om de hoek? Dan is ons [marketingbureau in Joure](/marketingbureau-joure/) je aanspreekpunt. Zoek je eerst uitleg over hoe we websites bouwen en migreren, lees dan [website laten maken](/diensten/website-laten-maken/).
 

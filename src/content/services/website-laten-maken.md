@@ -43,7 +43,7 @@ Heb je nog geen site of is je huidige site verouderd, dan bouwen we nieuw of mig
 
 ## Lokaal in Joure, landelijk actief
 
-We zitten in Joure en werken voor ondernemers in heel Friesland en daarbuiten. Zoek je een webdesigner in de buurt met een persoonlijk aanspreekpunt, dan zit je goed. Je krijgt lokale betrokkenheid met de techniek en vindbaarheid van een landelijk B2B-bureau.
+We zitten in Joure en werken voor ondernemers in heel Friesland en daarbuiten. Zoek je een webdesigner in de buurt met een persoonlijk aanspreekpunt, dan zit je goed: lees hoe we een [website laten maken in Friesland](/webdesign-friesland/) aanpakken, met portfolio, proces en veelgestelde vragen. Je krijgt lokale betrokkenheid met de techniek en vindbaarheid van een landelijk B2B-bureau.
 
 ## Voor wie
 

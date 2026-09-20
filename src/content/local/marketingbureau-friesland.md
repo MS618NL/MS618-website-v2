@@ -20,9 +20,9 @@ faq:
     answer: "Een bureau in de buurt kent je markt, is makkelijk te bereiken en denkt mee als partner. Bij MS618 krijg je die lokale betrokkenheid zonder in te leveren op kwaliteit: senior specialisten en AI-tooling die je elders alleen bij grote landelijke bureaus vindt."
 ---
 
-## Een sterk marketingbureau in Friesland
+## Online marketing in Friesland: één partner voor je groei
 
-Veel Friese MKB-ondernemers weten dat er meer uit hun online marketing te halen valt, maar missen de tijd, het team of de richting. Daar komen wij in beeld. MS618 is een digitaal marketing- en AI-bureau in Joure dat ondernemers in heel Friesland helpt groeien.
+Veel Friese MKB-ondernemers weten dat er meer uit hun online marketing te halen valt, maar missen de tijd, het team of de richting. Daar komen wij in beeld. MS618 is een online marketing bureau en AI-bureau in Joure dat ondernemers in heel Friesland helpt groeien.
 
 Geen losse acties of rapporten die in een la verdwijnen, maar één partner die je complete online groei oppakt: vindbaarheid, advertenties, content en je website.
 

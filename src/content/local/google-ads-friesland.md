@@ -48,7 +48,7 @@ Daarom werken we hier scherper dan een landelijk bureau zou doen:
 
 Betaald en organisch zijn geen concurrenten. Ads laten zien welke zoektermen daadwerkelijk klanten opleveren, en die kennis gebruiken we om je [SEO in Friesland](/seo-friesland/) op de juiste termen te richten. Andersom verlaagt een sterke organische positie je afhankelijkheid van het advertentiebudget.
 
-De volledige aanpak voor betaalde campagnes staat op onze pagina over [Google Ads en LinkedIn Ads](/diensten/digital-advertising/).
+De volledige aanpak voor betaalde campagnes staat op onze pagina over [Google Ads en LinkedIn Ads](/diensten/digital-advertising/). Wil je advertenties, SEO en je website als één geheel laten oppakken, kijk dan bij ons [online marketingbureau in Friesland](/marketingbureau-friesland/).
 
 ## Voor wie
 

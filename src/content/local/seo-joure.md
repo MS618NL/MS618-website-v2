@@ -34,7 +34,7 @@ Zoeken verandert. Je klant stelt steeds vaker een vraag aan ChatGPT of Perplexit
 
 ## Lokaal in Joure, breder in Friesland
 
-We werken in Joure en de directe omgeving: Sint Nicolaasga, Oudehaske, Echtenerbrug en omstreken. Voor de omliggende plaatsen hebben we eigen pagina's: [SEO Lemmer](/seo-lemmer/), [SEO Heerenveen](/seo-heerenveen/) en [SEO Sneek](/seo-sneek/). Zoek je breder in de provincie, kijk dan op [SEO Friesland](/seo-friesland/).
+We werken in Joure en de directe omgeving: Sint Nicolaasga, Oudehaske, Echtenerbrug en omstreken. Voor de omliggende plaatsen hebben we eigen pagina's: [SEO Lemmer](/seo-lemmer/), [SEO Heerenveen](/seo-heerenveen/) en [SEO Sneek](/seo-sneek/). Zoek je breder in de provincie, kijk dan op [SEO Friesland](/seo-friesland/). Toe aan een nieuwe site? Zo pakken we een [website laten maken in Friesland](/webdesign-friesland/) aan.
 
 ## Voor wie
 
