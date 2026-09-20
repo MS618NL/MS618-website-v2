@@ -23,7 +23,7 @@ Voor B2B-zoekers met commerciële intent zijn deze twee mechanismen straks even 
 
 ## Hoe AI Overviews bronnen kiezen
 
-Onderzoek naar AI-citaties (zie de openbare studies van seoClarity, Search Engine Land en Ahrefs uit 2025) wijst op vier consistente patronen. Geen van deze patronen is identiek aan klassieke rankingfactoren.
+Onderzoek naar AI-citaties (zie de openbare studies van seoClarity, Search Engine Land en Ahrefs uit 2025) wijst op vier consistente patronen. Google zelf beschrijft in de [documentatie over AI-functies in Search](https://developers.google.com/search/docs/appearance/ai-features) dat er geen aparte optimalisatie nodig is en dat dezelfde signalen tellen als voor gewone zoekresultaten. Geen van deze patronen is identiek aan klassieke rankingfactoren.
 
 ### 1. Passage-kwaliteit boven page-kwaliteit
 

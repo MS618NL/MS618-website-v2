@@ -49,3 +49,15 @@ Ons marketingbureau in Joure is geschikt voor:
 - Bedrijven die geen eigen marketingafdeling willen optuigen
 - Ondernemers die één partner zoeken in plaats van losse leveranciers
 
+## Wat je mag verwachten, en wanneer
+
+- Gratis vindbaarheidsscan binnen twee werkdagen in je mail, zonder verplichting.
+- Eén plan, één vaste maandprijs, één aanspreekpunt. Na drie maanden maandelijks opzegbaar.
+- Elke maand een rapport dat je in twee minuten leest: aanvragen, telefoontjes, posities, en wat we volgende maand doen.
+- Vijf senior specialisten, geen junior-koppels. Je spreekt de mensen die het werk doen.
+
+## Niet voor jou als
+
+- Je een losse actie zoekt zonder vervolg. Eén campagne of één blog lost structureel niets op.
+- Je het goedkoopste bureau zoekt. Wij zijn niet de duurste, maar zeker niet de goedkoopste.
+- Je liever een jaarcontract tekent voor de zekerheid. Wij verdienen elke maand opnieuw je vertrouwen, of niet.

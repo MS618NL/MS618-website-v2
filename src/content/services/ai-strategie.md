@@ -61,3 +61,15 @@ AI-strategie en implementatie van MS618 is geschikt voor:
 ---
 
 *Benieuwd waar AI in jouw bedrijf het snelst rendeert? Plan een kennismakingsgesprek, dan brengen we de kansen samen in kaart.*
+
+## Wat je mag verwachten, en wanneer
+
+- Een vaste doorlooptijd en scope, vooraf afgesproken, zodat je weet wanneer wat klaar is.
+- Geen tooladvies zonder businesscase: elke toepassing krijgt een verwachte opbrengst en een eigenaar in jouw organisatie.
+- Wat we bouwen, blijft van jou: data, prompts en werkwijze zijn overdraagbaar.
+
+## Niet voor jou als
+
+- Je een tool wilt kopen en verwacht dat AI het daarna zelf doet. AI zonder proces en eigenaar levert niets op.
+- Je team geen tijd heeft voor een paar werksessies. Zonder de mensen die het werk kennen, is elke AI-strategie een verzinsel.
+- Je op zoek bent naar een AI-verhaal voor de buitenwereld in plaats van een werkende toepassing binnen.

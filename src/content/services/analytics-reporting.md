@@ -71,3 +71,15 @@ Marketing analytics van MS618 past bij:
 ---
 
 *Klaar om data om te zetten in betere beslissingen? [Plan een gesprek](/contact/) over je meting en rapportage.*
+
+## Wat je mag verwachten, en wanneer
+
+- Een meetaudit als eerste stap: binnen twee weken weet je wat klopt, wat ontbreekt en wat dubbel telt.
+- Conversies gedefinieerd op wat een lead voor jou is, met spam en intern verkeer eruit gefilterd.
+- Maandelijks één rapport met cijfers, conclusie en vervolgstap, in gewone taal.
+
+## Niet voor jou als
+
+- Je alleen een dashboard wilt zonder de meting eronder te laten controleren. Een mooi dashboard op foute data is gevaarlijker dan geen dashboard.
+- We geen toegang krijgen tot GA4, Search Console en je advertentieaccounts. Zonder toegang kunnen we niets repareren.
+- Je rapportage ziet als een formaliteit. Wij maken cijfers waar iemand een beslissing op neemt.

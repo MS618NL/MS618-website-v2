@@ -56,3 +56,15 @@ Een website laten maken bij MS618 is geschikt voor:
 ---
 
 *Klaar voor een website die snel laadt en gevonden wordt? Plan een kennismakingsgesprek, dan bespreken we wat jij nodig hebt.*
+
+## Wat je mag verwachten, en wanneer
+
+- Een bedrijfswebsite van vijf tot tien pagina's staat doorgaans binnen vier tot zes weken live, gerekend vanaf het moment dat teksten en beeld rond zijn.
+- Vaste prijs vooraf, geen uurtje-factuurtje en geen verrassingen achteraf.
+- Hosting, updates, beveiliging en kleine aanpassingen in een vast maandbedrag.
+
+## Niet voor jou als
+
+- Je een template wilt dat morgen online staat. Dat kan goedkoper elders, en het is niet wat wij maken.
+- Je geen tijd hebt voor teksten en feedback. Een site zonder jouw kennis erin is een lege huls.
+- Je alleen een mooie site wilt en vindbaarheid niet belangrijk vindt.

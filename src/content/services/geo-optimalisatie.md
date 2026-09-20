@@ -71,3 +71,15 @@ GEO-optimalisatie van MS618 is geschikt voor:
 ---
 
 *Wil je weten of jouw bedrijf nu al genoemd wordt in AI-antwoorden? Plan een kennismakingsgesprek, dan checken we het samen.*
+
+## Wat je mag verwachten, en wanneer
+
+- Een nulmeting vooraf: welke vragen stelt je klant aan ChatGPT en Perplexity, en wie wordt daar nu genoemd.
+- GEO bouwt op een gezonde SEO-basis; zonder die basis beginnen we daar.
+- Elke maand zie je welke vragen je merk nu wel noemen, naast je posities in Google.
+
+## Niet voor jou als
+
+- Je verwacht dat je met een knop in ChatGPT komt. AI-modellen halen bedrijven aan die aantoonbaar bestaan, iets vinden en genoemd worden.
+- Je website nog geen basis heeft (geen duidelijke diensten, geen bewijs, geen contact). Dan is dat eerst.
+- Je alleen in AI wilt scoren en Google niet belangrijk vindt. Beide lopen op dezelfde signalen.

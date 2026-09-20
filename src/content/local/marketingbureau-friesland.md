@@ -65,6 +65,16 @@ We werken voor Friese bedrijven als [KIS Group](/cases/kis-group-ai/), Hoekstra 
 
 [Vraag de gratis vindbaarheidsscan aan](/contact/?scan=1)
 
+## Wat het kost
+
+| Traject | Vanaf | Wat erin zit |
+|---|---|---|
+| SEO- of advertentietraject | 650 euro per maand | strategie, uitvoering, maandrapport, vast aanspreekpunt |
+| Complete online marketing (SEO, ads, content, LinkedIn) | op maat | alle kanalen als één systeem, één prijs |
+| Website | 2.000 euro eenmalig | ontwerp, bouw, teksten, vindbaarheid; plus vast maandbedrag voor onderhoud |
+
+Vaste maandprijs vooraf, na drie maanden maandelijks opzegbaar. Wat het precies wordt, hangt af van het aantal kanalen en hoe hard je wilt groeien.
+
 ## Lokaal verankerd, landelijk sterk
 
 Wij zitten in Joure en werken voor ondernemers door heel Friesland: Drachten, Sneek, Heerenveen, Lemmer, Bolsward en alles daartussenin. Je hebt een aanspreekpunt in de buurt, met de aanpak en tooling die we ook voor landelijke B2B-klanten en klanten in de Verenigde Staten inzetten.
@@ -80,3 +90,16 @@ Ons marketingbureau is geschikt voor:
 - Ondernemers die één partner zoeken in plaats van vier losse leveranciers
 
 Past het niet, dan zeggen we dat in het eerste gesprek. Liever een eerlijk nee dan een jaarcontract waar niemand blij van wordt.
+
+## Wat je mag verwachten, en wanneer
+
+- Gratis vindbaarheidsscan binnen twee werkdagen in je mail, zonder verplichting.
+- Eén plan, één vaste maandprijs, één aanspreekpunt. Na drie maanden maandelijks opzegbaar.
+- Elke maand een rapport dat je in twee minuten leest: aanvragen, telefoontjes, posities, en wat we volgende maand doen.
+- Vijf senior specialisten, geen junior-koppels. Je spreekt de mensen die het werk doen.
+
+## Niet voor jou als
+
+- Je een losse actie zoekt zonder vervolg. Eén campagne of één blog lost structureel niets op.
+- Je het goedkoopste bureau zoekt. Wij zijn niet de duurste, maar zeker niet de goedkoopste.
+- Je liever een jaarcontract tekent voor de zekerheid. Wij verdienen elke maand opnieuw je vertrouwen, of niet.

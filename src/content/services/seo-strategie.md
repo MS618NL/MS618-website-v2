@@ -88,3 +88,15 @@ SEO-strategie van MS618 is geschikt voor:
 ---
 
 *Klaar om je organische groei structureel aan te pakken? Plan een kennismakingsgesprek met ons SEO-team.*
+
+## Wat je mag verwachten, en wanneer
+
+- Binnen de eerste maand: zoekwoordkeuze, technische basis op orde en de eerste pagina's aangepast.
+- Maandelijks een rapport op de termen die klanten opleveren, niet op vertoningen.
+- Eerste beweging binnen zes tot twaalf weken; structurele posities in drie tot zes maanden. Na drie maanden maandelijks opzegbaar.
+
+## Niet voor jou als
+
+- Je binnen een maand bovenaan wilt staan of linkbuilding wilt kopen. Beide kosten je op termijn meer dan ze opleveren.
+- Je een lijst met zoekwoorden wilt zonder iets aan je site te veranderen.
+- Je liever op vertoningen stuurt dan op aanvragen.

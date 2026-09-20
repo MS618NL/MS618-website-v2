@@ -55,3 +55,16 @@ Advertenties laten binnen weken zien welke zoektermen en boodschappen aanvragen 
 ---
 
 *Klaar voor campagnes die echt converteren? [Plan een gesprek](/contact/) over je advertentiestrategie.*
+
+## Wat je mag verwachten, en wanneer
+
+- Binnen twee weken na livegang de eerste data en meestal de eerste aanvragen.
+- Wekelijkse optimalisatie op zoektermen, advertenties en biedingen; maandelijks een rapport op kosten per aanvraag, niet op klikken.
+- Je advertentiebudget betaal je rechtstreeks aan Google en blijft van jou. Onze fee staat er los van.
+- Na drie maanden maandelijks opzegbaar.
+
+## Niet voor jou als
+
+- Je geen drie maanden wilt testen. De eerste weken zijn leren; wie na twee weken stopt, betaalt alleen leergeld.
+- Je op klikken en vertoningen wilt sturen. Een goedkope klik die niets oplevert is de duurste klik die er is.
+- Je website of telefoon niet klaar is voor aanvragen. Dan lossen we dat eerst op, anders adverteren we voor niets.

@@ -49,3 +49,15 @@ SEO bij MS618 in Lemmer is geschikt voor:
 
 Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/), of ons complete aanbod als [online marketingbureau in Friesland](/marketingbureau-friesland/). Dichtbij hebben we ook eigen pagina's voor [SEO Joure](/seo-joure/), [SEO Sneek](/seo-sneek/) en [SEO Heerenveen](/seo-heerenveen/).
 
+## Wat je mag verwachten, en wanneer
+
+- Binnen twee werkdagen na de gratis vindbaarheidsscan weet je waar je staat en wat de eerste stap is.
+- Na de eerste maand krijg je het eerste rapport: posities op de termen die ertoe doen, aanvragen en wat we hebben gedaan.
+- De eerste beweging zie je meestal binnen zes tot twaalf weken; structurele posities vragen drie tot zes maanden.
+- Vaste maandprijs, na drie maanden maandelijks opzegbaar. Geen jaarcontract.
+
+## Niet voor jou als
+
+- Je binnen een maand bovenaan wilt staan. Dat belooft alleen wie het niet gaat waarmaken.
+- Je een lijst met zoekwoorden wilt en verder niets aan je site wilt veranderen. SEO zonder aanpassingen aan de site bestaat niet.
+- Je liever op vertoningen en bereik stuurt dan op aanvragen. Wij rapporteren op wat klanten oplevert.
