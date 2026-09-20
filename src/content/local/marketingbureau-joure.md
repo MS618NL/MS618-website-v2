@@ -1,5 +1,5 @@
 ---
-title: "Online marketing & marketingbureau Joure"
+title: "Online marketing Joure"
 seoTitle: "Online marketing Joure: marketingbureau voor MKB | MS618"
 description: "Online marketingbureau in Joure. Wij helpen ondernemers in Joure en omgeving groeien met SEO, AI, advertenties en websites. Lokaal en resultaatgericht."
 order: 4
@@ -17,7 +17,9 @@ faq:
     answer: "Een bureau om de hoek kent je markt, is makkelijk te bereiken en denkt mee als partner in plaats van als leverancier op afstand. Bij MS618 krijg je die nabijheid plus senior specialisten en AI-tooling die je elders alleen bij grote landelijke bureaus vindt."
 ---
 
-## Een sterk marketingbureau in Joure
+## Online marketing in Joure: een bureau om de hoek
+
+Zoek je een online marketing bureau in Joure, of hulp bij internet marketing in Joure en omgeving? Wij zitten aan de haven, in het oude Douwe Egberts-pand, en werken voor ondernemers uit Joure, Sint Nicolaasga, Oudehaske en de rest van De Fryske Marren.
 
 Wij zitten in Joure, aan de haven, en helpen ondernemers in Joure en omgeving groeien. Geen bureau op afstand, maar een partner om de hoek die je complete online groei oppakt: vindbaarheid, advertenties, content en je website.
 

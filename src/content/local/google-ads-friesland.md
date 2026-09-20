@@ -33,7 +33,7 @@ Een lege agenda over twee maanden los je niet op met een traject dat pas over ee
 
 In 2026 nomineerde Google ons voor de **Google Ads Impact Awards**, een onderscheiding voor marketeers die AI met precisie inzetten om uitzonderlijke campagneresultaten te halen. Die nominatie kwam rechtstreeks van het Google Ads-team. Meer daarover lees je in [ons bericht over de nominatie](/blog/google-ads-impact-awards-2026/).
 
-## Adverteren in Friesland werkt anders dan landelijk
+## Google Ads in Friesland werkt anders dan landelijk
 
 De Friese markt is kleiner, en dat snijdt twee kanten op. Op veel zoektermen liggen de klikprijzen lager dan in de Randstad, dus je budget gaat verder. Tegelijk is het zoekvolume beperkter, waardoor breed mikken je budget opmaakt aan klikken die nooit iets worden.
 
@@ -48,7 +48,7 @@ Daarom werken we hier scherper dan een landelijk bureau zou doen:
 
 Betaald en organisch zijn geen concurrenten. Ads laten zien welke zoektermen daadwerkelijk klanten opleveren, en die kennis gebruiken we om je [SEO in Friesland](/seo-friesland/) op de juiste termen te richten. Andersom verlaagt een sterke organische positie je afhankelijkheid van het advertentiebudget.
 
-De volledige aanpak voor betaalde campagnes staat op onze pagina over [Google Ads en LinkedIn Ads](/diensten/digital-advertising/). Wil je advertenties, SEO en je website als één geheel laten oppakken, kijk dan bij ons [online marketingbureau in Friesland](/marketingbureau-friesland/).
+Google Ads uitbesteden aan een bureau in de buurt betekent bij ons: een vast aanspreekpunt, campagnes die op aanvragen sturen en een maandelijks rapport dat je in twee minuten leest. De volledige aanpak voor betaalde campagnes staat op onze pagina over [Google Ads en LinkedIn Ads](/diensten/digital-advertising/). Wil je advertenties, SEO en je website als één geheel laten oppakken, kijk dan bij ons [online marketingbureau in Friesland](/marketingbureau-friesland/).
 
 ## Voor wie
 

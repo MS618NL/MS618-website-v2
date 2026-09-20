@@ -74,6 +74,8 @@ Links zijn nog altijd een van de sterkste rankingfactoren. Maar niet alle links 
 - Structureel meer gekwalificeerde B2B-leads via het organische kanaal
 - Duurzame groei die blijft staan als je advertentiebudget stopt
 
+Wil je zien hoe dat in de praktijk uitpakt? Lees de case over [ruim drie jaar SEO voor Swoop](/cases/swoop-seo/), bekijk onze aanpak voor [SEO in Friesland](/seo-friesland/), of hoe we SEO combineren met [GEO en AI-vindbaarheid](/diensten/geo-optimalisatie/). Voor een site die zelf al bezoekers trekt maar te weinig oplevert, is [website-optimalisatie](/diensten/website-optimalisatie/) vaak de snellere winst.
+
 ## Voor wie
 
 SEO-strategie van MS618 is geschikt voor:

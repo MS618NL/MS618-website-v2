@@ -1,6 +1,6 @@
 ---
 title: "AI-strategie & implementatie"
-seoTitle: "AI-consultancy voor het MKB: van strategie tot uitvoering | MS618"
+seoTitle: "AI-strategie voor het MKB: van strategie tot uitvoering | MS618"
 description: "Weten dat AI je bedrijf verandert is niet genoeg. MS618 vertaalt AI naar een concrete strategie en bouwt het in je marketing, vindbaarheid en processen."
 order: 1
 navLabel: "AI-strategie"
@@ -26,7 +26,7 @@ Negen van de tien MKB-bedrijven weten dat AI hun markt verandert. Bijna niemand 
 
 Daar brengen wij richting in. Niet door meer te doen, maar door precies te kiezen waar AI echt verschil maakt voor jouw bedrijf.
 
-## Wat een AI-strategie is
+## Wat een AI-strategie voor MKB-bedrijven is
 
 Een AI-strategie is een concreet plan voor waar en hoe je AI inzet om te groeien, in plaats van losse tools uit te proberen. Het begint bij je doelen en processen, niet bij de techniek. De vraag is niet "welke tool is het nieuwst", maar "waar lekt tijd of omzet weg, en kan AI dat oplossen".
 

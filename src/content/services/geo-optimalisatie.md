@@ -30,6 +30,8 @@ Dat verandert de spelregels. Hoog ranken is niet meer genoeg. De vraag is: wordt
 
 ## Wat is GEO?
 
+GEO optimaliseren, soms ChatGPT-optimalisatie of AI-SEO genoemd, is het inrichten van je site en je merk zodat AI-modellen jouw bedrijf kennen, begrijpen en aanhalen.
+
 GEO, Generative Engine Optimization, is het optimaliseren van je content zodat AI-systemen jouw bedrijf aanhalen in hun antwoorden. Klassieke SEO maakt je vindbaar in de zoekresultaten. GEO maakt je geciteerd in het antwoord zelf.
 
 Het verschil in één zin: ranken betekent gevonden worden door de zoekmachine, geciteerd worden betekent gekozen worden door het AI-model dat een antwoord samenstelt.

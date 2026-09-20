@@ -31,6 +31,8 @@ Je site is jaren geleden gemaakt en sindsdien nauwelijks aangeraakt. Op de telef
 
 Of je hebt een offerte gekregen van een bouwer die alleen bouwt. Daarna moet je zelf maar zien hoe je gevonden wordt.
 
+Is je site eigenlijk nog prima, maar levert hij te weinig op? Dan is [website-optimalisatie](/diensten/website-optimalisatie/) vaak de snellere en goedkopere route dan nieuw bouwen.
+
 ## Webdesign in Friesland: wat je bij ons krijgt
 
 - **Eigen ontwerp, geen template.** Elke site wordt ontworpen door Peter Ydel, onze lead designer met ruim 15 jaar ervaring in merkidentiteit. Van zijn studio Ydel Design komen de huisstijlen van onder andere Doppio Espresso, Barista Café en CHCO.

@@ -17,7 +17,7 @@ faq:
     answer: "Op lokale zoektermen rond Heerenveen zie je vaak binnen enkele maanden beweging. Voor technische en landelijke termen duurt het langer, reken op 6 tot 12 maanden, omdat je daar autoriteit moet opbouwen. Die groei blijft wel staan zonder advertentiebudget."
 ---
 
-## Beter gevonden worden in Heerenveen
+## SEO in Heerenveen: beter gevonden worden
 
 Heerenveen is een van de sterkste economische kernen van Friesland, met bedrijventerreinen waar techniek, industrie en logistiek de toon zetten. Dat maakt de markt hier anders dan in de rest van de regio: veel bedrijven verkopen niet aan consumenten om de hoek, maar aan zakelijke klanten door heel Nederland.
 
@@ -50,5 +50,5 @@ Ook zakelijke kopers gebruiken inmiddels ChatGPT en Perplexity om leveranciers t
 - Ondernemers die lokaal zichtbaar willen zijn en landelijk willen leveren
 - Bedrijven met een verkoopteam dat betere, beter voorbereide gesprekken wil
 
-Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/), of ons complete aanbod als [online marketingbureau in Friesland](/marketingbureau-friesland/).
+Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/), of ons complete aanbod als [online marketingbureau in Friesland](/marketingbureau-friesland/). Dichtbij hebben we ook eigen pagina's voor [SEO Joure](/seo-joure/), [SEO Sneek](/seo-sneek/) en [SEO Lemmer](/seo-lemmer/).
 

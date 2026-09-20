@@ -1,6 +1,6 @@
 ---
-title: "Digital Advertising"
-seoTitle: "Google & LinkedIn Ads voor B2B die converteren | MS618"
+title: "Google Ads & LinkedIn Ads"
+seoTitle: "Google Ads & LinkedIn Ads voor B2B die converteren | MS618"
 description: "Betaalde advertenties die meer aanvragen opleveren, niet alleen klikken. MS618 beheert je Google- en LinkedIn-campagnes voor B2B, gericht op rendement."
 order: 4
 navLabel: "Betaald adverteren"
@@ -24,7 +24,7 @@ Betaald adverteren heeft een slechte reputatie in B2B. Te duur, te weinig contro
 
 Wij runnen campagnes die bouwen op een solide strategie: het juiste aanbod, voor het juiste publiek, op het juiste moment. Met rapportage die laat zien wat het werkelijk oplevert.
 
-## Onze specialiteiten
+## Google Ads en LinkedIn Ads: onze specialiteiten
 
 ### Google Ads voor B2B
 
@@ -46,8 +46,12 @@ Het meest effectieve betaalde B2B-kanaal voor account-based marketing. Wij richt
 
 ### Performance reporting
 
-Transparante rapportage op wat ertoe doet: kosten per aanvraag, de kwaliteit van de leads en de bijdrage aan je omzet. Geen vanity-cijfers.
+Transparante rapportage op wat ertoe doet: kosten per aanvraag, de kwaliteit van de leads en de bijdrage aan je omzet. Geen vanity-cijfers. Hoe we dat meten lees je bij [marketing analytics en rapportage](/diensten/analytics-reporting/).
+
+## Betaald en organisch in één hand
+
+Advertenties laten binnen weken zien welke zoektermen en boodschappen aanvragen opleveren. Die kennis gebruiken we voor je [SEO-strategie](/diensten/seo-strategie/) en je [LinkedIn-marketing](/diensten/social-media/), zodat betaald en organisch elkaar versterken in plaats van elkaar te beconcurreren. Zit je in Friesland? Dan is er een eigen pagina over [Google Ads in Friesland](/google-ads-friesland/).
 
 ---
 
-*Klaar voor campagnes die écht converteren? Plan een gesprek over je advertentiestrategie.*
+*Klaar voor campagnes die echt converteren? [Plan een gesprek](/contact/) over je advertentiestrategie.*

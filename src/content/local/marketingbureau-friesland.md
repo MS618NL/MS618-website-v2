@@ -22,7 +22,7 @@ faq:
 
 ## Online marketing in Friesland: één partner voor je groei
 
-Veel Friese MKB-ondernemers weten dat er meer uit hun online marketing te halen valt, maar missen de tijd, het team of de richting. Daar komen wij in beeld. MS618 is een online marketing bureau en AI-bureau in Joure dat ondernemers in heel Friesland helpt groeien.
+Veel Friese MKB-ondernemers weten dat er meer uit hun online marketing te halen valt, maar missen de tijd, het team of de richting. Daar komen wij in beeld. MS618 is een online marketing bureau en AI-bureau in Joure, of internet marketing bureau in Friesland zo je wilt, dat ondernemers in de hele provincie helpt groeien.
 
 Geen losse acties of rapporten die in een la verdwijnen, maar één partner die je complete online groei oppakt: vindbaarheid, advertenties, content en je website.
 
@@ -51,6 +51,7 @@ We werken voor Friese bedrijven als [KIS Group](/cases/kis-group-ai/), Hoekstra 
 - **[SEO-bureau Friesland](/seo-friesland/)**: beter gevonden worden in Google op de termen die klanten opleveren
 - **[GEO en AI-vindbaarheid](/diensten/geo-optimalisatie/)**: geciteerd worden in ChatGPT, Perplexity en Google AI Overviews
 - **[Google Ads in Friesland](/google-ads-friesland/)** en [LinkedIn-advertenties](/diensten/digital-advertising/): campagnes die aanvragen opleveren, niet alleen kliks
+- **[LinkedIn-marketing en content](/diensten/social-media/)**: zichtbaar en geloofwaardig bij de beslissers in jouw markt
 - **[Website laten maken in Friesland](/webdesign-friesland/)**: een snelle, moderne site die scoort en converteert
 - **[AI-strategie](/diensten/ai-strategie/)**: AI concreet inzetten in je marketing en processen
 - **[Analytics en rapportage](/diensten/analytics-reporting/)**: elke maand zien wat het oplevert

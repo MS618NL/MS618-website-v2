@@ -18,19 +18,19 @@ faq:
     answer: "We volgen organisch verkeer en posities op commercieel waardevolle termen, en belangrijker, of de content gekwalificeerde leads oplevert. Geen vanity-cijfers, maar bijdrage aan de pijplijn."
 ---
 
-## Content die werkt — niet alleen content die bestaat
+## Content die werkt, niet alleen content die bestaat
 
-De meeste bedrijven produceren content. Blogs, social posts, whitepapers, video's. Maar weinig van die content levert meetbaar iets op. Niet omdat content niet werkt — maar omdat content zonder strategie ruis is.
+De meeste bedrijven produceren content. Blogs, social posts, whitepapers, video's. Maar weinig van die content levert meetbaar iets op. Niet omdat content marketing niet werkt, maar omdat content zonder strategie ruis is.
 
 Wij bouwen contentprogramma's die een doel dienen: autoriteit vestigen in jouw markt, ideale klanten aantrekken en hen begeleiden naar een gesprek met jou.
 
-## Wat wij doen
+## Content marketing voor B2B: wat wij doen
 
 ### Contentstrategie en editorial planning
 
 Alles begint met een scherpe strategie. Welke doelgroepen spreek je aan? In welke fase van hun beslisproces? Welke vragen beantwoorden we, welke percepties doorbreken we?
 
-Wij ontwikkelen een contentplan dat naadloos aansluit op je SEO-strategie, je verkoopproces en je bedrijfsdoelen.
+Wij ontwikkelen een contentplan dat naadloos aansluit op je [SEO-strategie](/diensten/seo-strategie/), je verkoopproces en je bedrijfsdoelen. Hoe zo'n plan eruitziet, lees je in [content strategie voor B2B: van ruis naar resultaat](/blog/content-strategie-b2b/).
 
 ### Thought leadership content
 
@@ -40,24 +40,24 @@ Wij schrijven thought leadership content die jouw expertise zichtbaar maakt: die
 
 ### SEO-content op schaal
 
-Op basis van je zoeklandschap produceren wij systematisch content die rankt. Van informatieve blogartikelen tot uitgebreide gidsen — elke pagina heeft een zoekdoel, een doelgroep en een conversiedoel.
+Op basis van je zoeklandschap produceren wij systematisch content die rankt. Van informatieve blogartikelen tot uitgebreide gidsen: elke pagina heeft een zoekdoel, een doelgroep en een conversiedoel. En steeds vaker ook een tweede doel: geciteerd worden in AI-antwoorden, zie [GEO en AI-vindbaarheid](/diensten/geo-optimalisatie/).
 
 ### Contentdistributie en amplificatie
 
 Goede content heeft distributie nodig. Wij helpen met:
 
-- LinkedIn content strategie voor B2B-bereik
-- Email nieuwsbrief voor nurturing van leads
+- [LinkedIn-marketing](/diensten/social-media/) voor B2B-bereik
+- E-mailnieuwsbrief voor het opvolgen van leads
 - Hergebruik van content in meerdere formaten
-- Placement in vakpublicaties en media
+- Plaatsing in vakpublicaties en media
 
 ## Meetbare impact
 
-- Organisch verkeer via content: gemiddeld +240% in jaar 1
+- Organisch verkeer en posities op de termen die klanten opleveren
 - Tijd op pagina en engagement als indicator van contentkwaliteit
-- Koppeling van content aan leads en omzet
+- Koppeling van content aan leads en omzet in je [rapportage](/diensten/analytics-reporting/)
 - Share of voice in jouw markt
 
 ---
 
-*Klaar om content te bouwen die werkt? Neem contact op voor een strategiegesprek.*
+*Klaar om content te bouwen die werkt? [Neem contact op](/contact/) voor een strategiegesprek.*

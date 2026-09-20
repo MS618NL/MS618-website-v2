@@ -39,7 +39,7 @@ Je website wordt vormgegeven door Peter Ydel, onze lead designer met ruim 15 jaa
 
 ## Nieuw bouwen of bestaande verbeteren
 
-Heb je nog geen site of is je huidige site verouderd, dan bouwen we nieuw of migreren we je bestaande site. Heb je al een site die bezoekers trekt maar te weinig oplevert, kijk dan naar [website-optimalisatie](/diensten/website-optimalisatie/): meer halen uit wat er al staat.
+Heb je nog geen site of is je huidige site verouderd, dan bouwen we nieuw of migreren we je bestaande site. Een website laten bouwen bij ons betekent dat ontwerp, techniek, teksten en vindbaarheid uit één hand komen. Heb je al een site die bezoekers trekt maar te weinig oplevert, kijk dan naar [website-optimalisatie](/diensten/website-optimalisatie/): meer halen uit wat er al staat.
 
 ## Lokaal in Joure, landelijk actief
 
