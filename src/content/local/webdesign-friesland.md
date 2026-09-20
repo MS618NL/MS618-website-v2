@@ -28,7 +28,7 @@ Omdat hij gebouwd is om er goed uit te zien, niet om gevonden te worden en te ov
 
 Wij zien het bij bijna elke Friese ondernemer die bij ons aanklopt. De site is jaren geleden gemaakt en sindsdien nauwelijks aangeraakt. Op de telefoon laadt hij traag. Er komen zelden aanvragen uit. En eigenlijk stuur je er liever geen klant naartoe. Zonde, want je bedrijf is beter dan de indruk die de site achterlaat.
 
-De andere variant: je hebt een offerte gekregen van een bouwer die alleen bouwt. Daarna moet je zelf maar zien hoe je gevonden wordt. Bij MS618 zit in Joure een team dat webdesign, bouw, teksten en vindbaarheid uit één hand doet, voor ondernemers in heel Friesland. Dat is geen extra dienst; het is de reden dat een site bij ons wél aanvragen oplevert.
+De andere variant: je hebt een offerte gekregen van een bouwer die alleen bouwt. Daarna moet je zelf maar zien hoe je gevonden wordt. Bij MS618 zit in Joure een team dat webdesign in Friesland, bouw, teksten en vindbaarheid uit één hand doet, voor ondernemers in de hele provincie. Dat is geen extra dienst; het is de reden dat een site bij ons wél aanvragen oplevert.
 
 Is je site eigenlijk nog prima, maar levert hij te weinig op? Dan is [website-optimalisatie](/diensten/website-optimalisatie/) vaak de snellere en goedkopere route dan nieuw bouwen. We zeggen dat eerlijk in het eerste gesprek.
 
