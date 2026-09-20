@@ -58,7 +58,7 @@ Een bedrijfswebsite van vijf tot tien pagina's staat doorgaans binnen vier tot z
 >
 > Suzanne Legtenberg, destijds Marketing Manager bij Fugro
 
-## Website laten maken in Joure, Leeuwarden, Sneek of Drachten
+## Website laten maken in Friesland: Joure, Leeuwarden, Sneek of Drachten
 
 Zoek je een webdesigner in Joure, Leeuwarden of Sneek? Vanuit Joure werken we voor ondernemers in heel de provincie: Leeuwarden, Drachten, Sneek, Heerenveen, Lemmer, Bolsward en de dorpen daartussen. Je krijgt een betrokken partner in de buurt die je kunt bellen, met de techniek en vindbaarheid van een landelijk bureau. Kom langs aan de haven in Joure, of we komen naar jou.
 

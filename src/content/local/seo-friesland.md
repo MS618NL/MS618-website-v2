@@ -26,7 +26,7 @@ De meeste Friese bedrijven draaien voor een flink deel op mond-tot-mondreclame. 
 
 ## Geen trucjes, maar een systeem
 
-We behandelen SEO als groeimotor, niet als technische checklist. Dat betekent: begrijpen wat jouw klanten zoeken, een sterke contentarchitectuur, een technisch gezonde site en autoriteit die je positie vasthoudt. De volledige aanpak staat op onze pagina over [SEO-strategie](/diensten/seo-strategie/).
+We behandelen SEO als groeimotor, niet als technische checklist. SEO-optimalisatie in Friesland betekent bij ons: begrijpen wat jouw klanten zoeken, een sterke contentarchitectuur, een technisch gezonde site en autoriteit die je positie vasthoudt. De volledige aanpak staat op onze pagina over [SEO-strategie](/diensten/seo-strategie/).
 
 ## SEO en AI-vindbaarheid
 

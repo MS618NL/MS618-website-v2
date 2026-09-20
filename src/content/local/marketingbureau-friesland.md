@@ -1,5 +1,5 @@
 ---
-title: "Marketingbureau Friesland"
+title: "Online marketingbureau Friesland"
 seoTitle: "Online marketingbureau Friesland: groei voor MKB | MS618"
 description: "Online marketingbureau in Friesland. Eén senior team voor SEO, AI, advertenties en je website. Lokaal betrokken, landelijk sterk. Plan een gesprek."
 order: 1
@@ -46,7 +46,7 @@ We werken voor Friese bedrijven als [KIS Group](/cases/kis-group-ai/), Hoekstra 
 >
 > Peter Evenson, CEO Swoop
 
-## Wat wij voor Friese ondernemers doen
+## Wat ons online marketingbureau in Friesland voor je doet
 
 - **[SEO-bureau Friesland](/seo-friesland/)**: beter gevonden worden in Google op de termen die klanten opleveren
 - **[GEO en AI-vindbaarheid](/diensten/geo-optimalisatie/)**: geciteerd worden in ChatGPT, Perplexity en Google AI Overviews
