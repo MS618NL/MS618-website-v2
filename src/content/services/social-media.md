@@ -49,10 +49,6 @@ Social media van MS618 is geschikt voor:
 - Organisaties die autoriteit willen opbouwen in plaats van alleen te adverteren
 - Bedrijven die het consistent willen doen, zonder er zelf wekelijks tijd in te steken
 
----
-
-*Benieuwd wat een consistente LinkedIn-aanwezigheid voor jouw bedrijf kan betekenen? [Plan een kennismakingsgesprek](/contact/).*
-
 ## Wat je mag verwachten, en wanneer
 
 - Een vaste cadans, doorgaans meerdere posts per week, met strategie, schrijven en plaatsing uit één hand.
@@ -64,3 +60,7 @@ Social media van MS618 is geschikt voor:
 - Je één post per maand wilt plaatsen. Dan bouwt niets op.
 - Je gekochte volgers, engagement-pods of automatische berichten verwacht. Doen we niet.
 - Je zelf geen tien minuten per week wilt besteden aan reageren en goedkeuren. Zonder de ondernemer erin werkt LinkedIn niet.
+
+---
+
+*Benieuwd wat een consistente LinkedIn-aanwezigheid voor jouw bedrijf kan betekenen? [Plan een kennismakingsgesprek](/contact/).*

@@ -58,10 +58,6 @@ AI-strategie en implementatie van MS618 is geschikt voor:
 - Organisaties die geen eigen AI- of marketingteam willen optuigen
 - Bedrijven die AI willen inzetten met richting, niet met FOMO
 
----
-
-*Benieuwd waar AI in jouw bedrijf het snelst rendeert? Plan een kennismakingsgesprek, dan brengen we de kansen samen in kaart.*
-
 ## Wat je mag verwachten, en wanneer
 
 - Een vaste doorlooptijd en scope, vooraf afgesproken, zodat je weet wanneer wat klaar is.
@@ -73,3 +69,7 @@ AI-strategie en implementatie van MS618 is geschikt voor:
 - Je een tool wilt kopen en verwacht dat AI het daarna zelf doet. AI zonder proces en eigenaar levert niets op.
 - Je team geen tijd heeft voor een paar werksessies. Zonder de mensen die het werk kennen, is elke AI-strategie een verzinsel.
 - Je op zoek bent naar een AI-verhaal voor de buitenwereld in plaats van een werkende toepassing binnen.
+
+---
+
+*Benieuwd waar AI in jouw bedrijf het snelst rendeert? Plan een kennismakingsgesprek, dan brengen we de kansen samen in kaart.*

@@ -52,10 +52,6 @@ Transparante rapportage op wat ertoe doet: kosten per aanvraag, de kwaliteit van
 
 Advertenties laten binnen weken zien welke zoektermen en boodschappen aanvragen opleveren. Die kennis gebruiken we voor je [SEO-strategie](/diensten/seo-strategie/) en je [LinkedIn-marketing](/diensten/social-media/), zodat betaald en organisch elkaar versterken in plaats van elkaar te beconcurreren. Zit je in Friesland? Dan is er een eigen pagina over [Google Ads in Friesland](/google-ads-friesland/).
 
----
-
-*Klaar voor campagnes die echt converteren? [Plan een gesprek](/contact/) over je advertentiestrategie.*
-
 ## Wat je mag verwachten, en wanneer
 
 - Binnen twee weken na livegang de eerste data en meestal de eerste aanvragen.
@@ -68,3 +64,7 @@ Advertenties laten binnen weken zien welke zoektermen en boodschappen aanvragen 
 - Je geen drie maanden wilt testen. De eerste weken zijn leren; wie na twee weken stopt, betaalt alleen leergeld.
 - Je op klikken en vertoningen wilt sturen. Een goedkope klik die niets oplevert is de duurste klik die er is.
 - Je website of telefoon niet klaar is voor aanvragen. Dan lossen we dat eerst op, anders adverteren we voor niets.
+
+---
+
+*Klaar voor campagnes die echt converteren? [Plan een gesprek](/contact/) over je advertentiestrategie.*

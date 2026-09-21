@@ -58,10 +58,6 @@ Goede content heeft distributie nodig. Wij helpen met:
 - Koppeling van content aan leads en omzet in je [rapportage](/diensten/analytics-reporting/)
 - Share of voice in jouw markt
 
----
-
-*Klaar om content te bouwen die werkt? [Neem contact op](/contact/) voor een strategiegesprek.*
-
 ## Wat je mag verwachten, en wanneer
 
 - Een contentplan binnen de eerste maand: onderwerpen, zoekvragen, formats en een vaste cadans.
@@ -73,3 +69,7 @@ Goede content heeft distributie nodig. Wij helpen met:
 - Je één blog per kwartaal wilt. Consistentie is de hele werking; zonder ritme bouwt niets op.
 - Je teksten door AI wilt laten schrijven zonder dat iemand ze leest. Dat herkent je klant, en Google ook.
 - Je zelf geen input wilt geven. De beste content komt uit jullie kennis; wij maken hem vindbaar en leesbaar.
+
+---
+
+*Klaar om content te bouwen die werkt? [Neem contact op](/contact/) voor een strategiegesprek.*

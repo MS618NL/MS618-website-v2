@@ -85,10 +85,6 @@ SEO-strategie van MS618 is geschikt voor:
 - Scale-ups die duurzaam organisch willen groeien
 - Bedrijven die eerder teleurgesteld zijn geraakt door SEO-bureaus die beloofden maar niet leverden
 
----
-
-*Klaar om je organische groei structureel aan te pakken? Plan een kennismakingsgesprek met ons SEO-team.*
-
 ## Wat je mag verwachten, en wanneer
 
 - Binnen de eerste maand: zoekwoordkeuze, technische basis op orde en de eerste pagina's aangepast.
@@ -100,3 +96,7 @@ SEO-strategie van MS618 is geschikt voor:
 - Je binnen een maand bovenaan wilt staan of linkbuilding wilt kopen. Beide kosten je op termijn meer dan ze opleveren.
 - Je een lijst met zoekwoorden wilt zonder iets aan je site te veranderen.
 - Je liever op vertoningen stuurt dan op aanvragen.
+
+---
+
+*Klaar om je organische groei structureel aan te pakken? Plan een kennismakingsgesprek met ons SEO-team.*

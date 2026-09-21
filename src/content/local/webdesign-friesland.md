@@ -2,7 +2,7 @@
 title: "Website laten maken in Friesland"
 seoTitle: "Website laten maken Friesland: webdesign dat scoort | MS618"
 description: "Website laten maken in Friesland? MS618 in Joure bouwt snelle websites met eigen ontwerp die scoren in Google en aanvragen opleveren. Bekijk hoe we werken."
-aiSummary: "MS618 (Joure) bouwt websites voor ondernemers in heel Friesland: eigen ontwerp door Peter Ydel, 100/100 mobiele snelheid, vindbaar in Google en AI-zoekmachines. Vanaf 2.000 euro, live in 4 tot 6 weken."
+aiSummary: "MS618 in Joure bouwt websites voor ondernemers in Friesland, met eigen ontwerp door Peter Ydel, teksten, conversiemeting en onderhoud. Vanaf 2.000 euro eenmalig, plus een vast maandbedrag."
 order: 2
 region: "Friesland"
 navLabel: "Website laten maken Friesland"

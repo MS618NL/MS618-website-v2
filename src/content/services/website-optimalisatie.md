@@ -2,7 +2,7 @@
 title: "Website-optimalisatie"
 seoTitle: "Website-optimalisatie & CRO: meer leads uit verkeer | MS618"
 description: "Je website heeft al bezoekers. Waarom worden ze geen klant? MS618 optimaliseert UX, conversie en technische performance voor meetbaar meer aanvragen."
-aiSummary: "Website-optimalisatie (CRO) bij MS618: meer aanvragen uit bestaand verkeer zonder herbouw. Conversie-audit in 2 tot 4 weken, daarna maandelijkse testrondes op UX, boodschap en snelheid (LCP onder 2,5 s)."
+aiSummary: "MS618 onderzoekt waar bezoekers afhaken en verbetert UX, boodschap en snelheid. We beoordelen eerst wat beter kan aan je bestaande website; de aanpak hangt af van de techniek en beschikbare bezoekersdata."
 order: 6
 navLabel: "Website verbeteren"
 icon: "⬡"
@@ -31,42 +31,42 @@ Het verschil met een herbouw: je houdt wat werkt. Je posities in Google, je best
 
 ## Hoe vinden jullie wat er misgaat?
 
-Met data over echte bezoekers, niet met een mening over de kleur van een knop. We kijken eerst waar bezoekers binnenkomen, waar ze afhaken en wat dat per maand aan aanvragen kost. Daarna pas naar oplossingen.
+Met data over echte bezoekers, niet met een mening over de kleur van een knop. We kijken eerst waar bezoekers binnenkomen, waar ze afhaken en hoeveel aanvragen binnenkomen. Daarna pas naar oplossingen.
 
 - **UX-analyse en gebruikersonderzoek.** Via heatmaps, sessieopnames, gebruikerstesten en analytics zien we waar bezoekers vastlopen en waarom. Vaak is dat één formulier, één onduidelijke pagina of één menu.
 - **Boodschap en beslisproces.** Wat ziet een bezoeker in de eerste drie seconden? Snapt hij wat je doet, voor wie, en wat de volgende stap is? Hier zit meestal de grootste winst, en hij kost het minst.
-- **Technische performance.** Google rankt snelle, gebruiksvriendelijke sites hoger en bezoekers verlaten trage sites sneller. We meten op de Core Web Vitals: LCP onder 2,5 seconden, CLS onder 0,1, INP onder 200 milliseconden, en mobile-first, want daar zit het grootste deel van je bezoek.
+- **Technische performance.** We onderzoeken of laadtijd en interactie bezoekers hinderen, op mobiel en desktop. Daarbij meten we de Core Web Vitals: LCP, CLS en INP. De bezoekersdata bepalen welke apparaten en pagina's voor jouw site prioriteit krijgen.
 
-Uit de audit komt een lijst met verbeteringen, gerangschikt op verwachte opbrengst. Je ziet dus niet alleen wat er mis is, maar wat het oplevert om het te repareren.
+Uit de audit komt een lijst met verbeteringen, gerangschikt op verwachte opbrengst. Je ziet welke problemen we vinden en welke verbeteringen naar verwachting het meeste kunnen opleveren.
 
 ## Hoe verloopt een traject, en wanneer zie je resultaat?
 
 De eerste analyse en de snelle verbeteringen staan binnen twee tot vier weken. Daarna loopt het in maandelijkse rondes, zolang de verbeteringen meetbaar blijven opleveren.
 
-1. **Conversie-audit (week 1 tot 2).** We meten waar bezoekers binnenkomen, waar ze afhaken en wat dat per maand aan aanvragen kost. Je krijgt een lijst met verbeteringen, gerangschikt op verwachte opbrengst.
-2. **Snelle winst (week 2 tot 4).** De verbeteringen die zonder test zeker opleveren voeren we direct door: snelheid, formulieren, dode knoppen, een onduidelijke boodschap boven de vouw.
-3. **Testen (maandelijks).** Grotere aanpassingen testen we tegen de huidige versie, zodat we weten dat het werkt in plaats van het te geloven. Landingspagina's, A/B- en multivariate testen, formulieren, het beslisproces van de bezoeker.
+1. **Conversie-audit (week 1 tot 2).** We meten waar bezoekers binnenkomen, waar ze afhaken en hoeveel aanvragen binnenkomen. Je krijgt een lijst met verbeteringen, gerangschikt op verwachte opbrengst.
+2. **Snelle winst (week 2 tot 4).** Aantoonbare problemen, zoals foutmeldingen in formulieren en dode knoppen, lossen we direct op. Daarna volgen we wat er verandert in gebruik en aanvragen.
+3. **Testen (maandelijks).** Grotere aanpassingen testen we tegen de huidige versie als er voldoende verkeer is om een verschil te beoordelen. Landingspagina's, A/B- en multivariate testen, formulieren, het beslisproces van de bezoeker.
 4. **Doorontwikkelen.** Elke maand een nieuwe ronde op basis van de cijfers uit je [rapportage](/diensten/analytics-reporting/): wat opschalen, wat stoppen, wat als volgende testen.
 
 ## Welke verbeteringen leveren het meeste op?
 
 Bijna altijd de saaie: snelheid op mobiel, de eerste zin boven de vouw, en het formulier. Niet het herontwerp, niet de nieuwe kleuren, niet de video op de homepage.
 
-Wat we in de praktijk het vaakst repareren, in volgorde van opbrengst:
+Dit zijn punten die we onderzoeken; de prioriteit hangt af van jouw site:
 
 - **De boodschap boven de vouw.** Een bezoeker beslist in seconden of hij op de juiste plek is. Staat er "welkom op onze website" in plaats van wat je doet, voor wie en waarom bij jou, dan is hij weg voordat hij je aanbod ziet.
 - **Het contactformulier.** Acht velden waar er drie nodig zijn, geen telefoonnummer in beeld, geen bevestiging na verzenden. Elk overbodig veld kost aanvragen, en dat is meetbaar.
-- **Mobiele snelheid.** Meer dan de helft van je bezoek komt via een telefoon. Een pagina die daar drie seconden laadt, verliest een deel van de bezoekers voordat er iets te zien is. Beeldformaten, scripts en hosting zijn hier meestal de boosdoeners.
+- **Mobiele snelheid.** We bekijken hoeveel bezoekers via een telefoon komen en waar de site op dat apparaat traag reageert. Beeldformaten, scripts en hosting zijn onderdelen die we daarbij onderzoeken.
 - **Bewijs op de juiste plek.** Reviews, klantnamen en cases staan vaak op een aparte pagina die niemand bezoekt. Naast de knop waar de beslissing valt, doen ze hun werk.
 - **De route naar contact.** Een dienstpagina zonder duidelijke volgende stap laat de bezoeker zoeken. Elke pagina heeft één logische vervolgstap nodig, niet vijf.
 
-Elk van deze punten is te meten voor en na, en dat doen we ook. Zo weet je per verbetering wat hij heeft opgeleverd, en stapelt het resultaat zich op in plaats van te verdampen in een gevoel dat de site "beter" is.
+We volgen de metingen voor en na een aanpassing. Een verschil in aanvragen kan ook door ander verkeer of het seizoen komen. Daarom toetsen we het effect waar mogelijk met een gelijktijdige test.
 
 ## Hoe meten we of het werkt?
 
 Met dezelfde meting die je aanvragen telt, voor en na elke aanpassing. Geen mening achteraf, maar een verschil in het aantal aanvragen per honderd bezoekers.
 
-Daarvoor moet de meting kloppen: formulieren, telefoonkliks en bedankpagina's moeten geteld worden, spam en intern verkeer niet. Dat controleren we in de eerste week, want een test op een foute meting bewijst niets. Grotere aanpassingen draaien we naast de huidige versie, zodat seizoen en toeval geen rol spelen. Kleine, zekere verbeteringen voeren we direct door en volgen we in het maandrapport. Zie ook [marketing analytics en rapportage](/diensten/analytics-reporting/) voor hoe die meting eruitziet.
+Daarvoor moet de meting kloppen. We controleren in de eerste week of formulieren, telefoonkliks en bedankpagina's worden gemeten en of we spam en intern verkeer kunnen uitsluiten. We tellen werkelijk ontvangen aanvragen apart: een klik op een telefoonnummer is nog geen aanvraag. Bij voldoende verkeer testen we grotere aanpassingen naast de huidige versie. Zo beperken we de invloed van seizoensverschillen. We beoordelen ook of er voldoende gegevens zijn om een verschil van toeval te onderscheiden. Directe reparaties volgen we in het maandrapport; een verandering daarin bewijst op zichzelf geen oorzaak. Zie ook [marketing analytics en rapportage](/diensten/analytics-reporting/) voor hoe die meting eruitziet.
 
 ## Optimaliseren of toch een nieuwe site?
 
@@ -87,7 +87,7 @@ Een audit die iets kost aan tijd, geen dure herbouw als standaardantwoord, en ci
 
 - Binnen twee tot vier weken de eerste analyse en de snelle verbeteringen live.
 - Elke verbetering met een verwachte opbrengst erbij, zodat jij de volgorde kunt bepalen.
-- Testen tegen de huidige versie, geen "wij denken dat dit beter is".
+- Waar het verkeer dat toelaat, testen tegen de huidige versie; bij te weinig gegevens benoemen we die beperking.
 - Maandelijks een rapport in gewone taal: wat we deden, wat het opleverde, wat de volgende stap is.
 
 ## Voor wie is dit wel, en voor wie niet?

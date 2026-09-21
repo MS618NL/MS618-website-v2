@@ -53,10 +53,6 @@ Een website laten maken bij MS618 is geschikt voor:
 - Bedrijven die een nieuwe site willen die meteen goed vindbaar is
 - Ondernemers in Friesland die een betrokken partner in de buurt zoeken
 
----
-
-*Klaar voor een website die snel laadt en gevonden wordt? Plan een kennismakingsgesprek, dan bespreken we wat jij nodig hebt.*
-
 ## Wat je mag verwachten, en wanneer
 
 - Een bedrijfswebsite van vijf tot tien pagina's staat doorgaans binnen vier tot zes weken live, gerekend vanaf het moment dat teksten en beeld rond zijn.
@@ -68,3 +64,7 @@ Een website laten maken bij MS618 is geschikt voor:
 - Je een template wilt dat morgen online staat. Dat kan goedkoper elders, en het is niet wat wij maken.
 - Je geen tijd hebt voor teksten en feedback. Een site zonder jouw kennis erin is een lege huls.
 - Je alleen een mooie site wilt en vindbaarheid niet belangrijk vindt.
+
+---
+
+*Klaar voor een website die snel laadt en gevonden wordt? Plan een kennismakingsgesprek, dan bespreken we wat jij nodig hebt.*
