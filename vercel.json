@@ -10,6 +10,8 @@
     },
     { "source": "/home", "destination": "/", "permanent": true },
     { "source": "/webdesign-joure", "destination": "/webdesign-friesland/", "permanent": true },
+    { "source": "/algemene-voorwaarden", "destination": "/voorwaarden/", "permanent": true },
+    { "source": "/algemene-voorwaarden/(.*)", "destination": "/voorwaarden/", "permanent": true },
     { "source": "/webdesign-joure/(.*)", "destination": "/webdesign-friesland/", "permanent": true },
     { "source": "/en/home", "destination": "/en/", "permanent": true },
     { "source": "/nl/(.*)", "destination": "/$1", "permanent": true },
