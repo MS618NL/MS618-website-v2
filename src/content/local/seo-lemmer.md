@@ -17,7 +17,7 @@ faq:
     answer: "Dat hangt af van je markt en je ambitie. Lokaal gevonden worden in de Zuidwesthoek vraagt een andere aanpak dan landelijk ranken. In een vrijblijvend gesprek bepalen we de scope en krijg je een concrete prijs, zonder verrassingen achteraf."
 ---
 
-## Beter gevonden worden in Lemmer
+## SEO in Lemmer: beter gevonden worden
 
 Als ondernemer in Lemmer wil je gevonden worden door klanten in de buurt en door mensen die van verder komen. SEO maakt dat mogelijk: structurele zichtbaarheid in Google op de zoektermen die er voor jouw bedrijf toe doen. Ons kantoor staat in Joure, een kwartier rijden, dus je zit niet vast aan een bureau in de Randstad dat je nooit ziet.
 
@@ -47,5 +47,17 @@ SEO bij MS618 in Lemmer is geschikt voor:
 - Bedrijven met een seizoenspiek die eerder in beeld willen zijn dan de concurrent
 - Ondernemers die minder afhankelijk willen zijn van betaalde advertenties
 
-Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/).
+Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/), of ons complete aanbod als [online marketingbureau in Friesland](/marketingbureau-friesland/). Dichtbij hebben we ook eigen pagina's voor [SEO Joure](/seo-joure/), [SEO Sneek](/seo-sneek/) en [SEO Heerenveen](/seo-heerenveen/).
 
+## Wat je mag verwachten, en wanneer
+
+- Binnen twee werkdagen na de gratis vindbaarheidsscan weet je waar je staat en wat de eerste stap is.
+- Na de eerste maand krijg je het eerste rapport: posities op de termen die ertoe doen, aanvragen en wat we hebben gedaan.
+- De eerste beweging zie je meestal binnen zes tot twaalf weken; structurele posities vragen drie tot zes maanden.
+- Vaste maandprijs, na drie maanden maandelijks opzegbaar. Geen jaarcontract.
+
+## Niet voor jou als
+
+- Je binnen een maand bovenaan wilt staan. Dat belooft alleen wie het niet gaat waarmaken.
+- Je een lijst met zoekwoorden wilt en verder niets aan je site wilt veranderen. SEO zonder aanpassingen aan de site bestaat niet.
+- Je liever op vertoningen en bereik stuurt dan op aanvragen. Wij rapporteren op wat klanten oplevert.

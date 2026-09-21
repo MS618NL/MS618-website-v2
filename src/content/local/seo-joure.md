@@ -16,7 +16,7 @@ faq:
     answer: "Ja. Ook in Friesland vragen steeds meer mensen ChatGPT of Perplexity om een aanbeveling in plaats van te googelen. Wij zorgen dat je daar genoemd wordt, naast je posities in Google. Die combinatie van SEO en GEO zit standaard in onze aanpak."
 ---
 
-## Beter gevonden worden in Joure
+## SEO in Joure: beter gevonden worden
 
 Als ondernemer in Joure wil je gevonden worden door klanten in de buurt en daarbuiten. SEO maakt dat mogelijk: structurele zichtbaarheid in Google op de zoektermen die er voor jouw bedrijf toe doen. Ons kantoor staat in Joure, dus je hebt een SEO-specialist om de hoek.
 
@@ -34,7 +34,7 @@ Zoeken verandert. Je klant stelt steeds vaker een vraag aan ChatGPT of Perplexit
 
 ## Lokaal in Joure, breder in Friesland
 
-We werken in Joure en de directe omgeving: Sint Nicolaasga, Oudehaske, Echtenerbrug en omstreken. Voor de omliggende plaatsen hebben we eigen pagina's: [SEO Lemmer](/seo-lemmer/), [SEO Heerenveen](/seo-heerenveen/) en [SEO Sneek](/seo-sneek/). Zoek je breder in de provincie, kijk dan op [SEO Friesland](/seo-friesland/).
+We werken in Joure en de directe omgeving: Sint Nicolaasga, Oudehaske, Echtenerbrug en omstreken. Voor de omliggende plaatsen hebben we eigen pagina's: [SEO Lemmer](/seo-lemmer/), [SEO Heerenveen](/seo-heerenveen/) en [SEO Sneek](/seo-sneek/). Zoek je breder in de provincie, kijk dan op [SEO Friesland](/seo-friesland/). Toe aan een nieuwe site? Zo pakken we een [website laten maken in Friesland](/webdesign-friesland/) aan. Meer dan SEO alleen? Bekijk wat we als [marketingbureau in Joure](/marketingbureau-joure/) doen.
 
 ## Voor wie
 
@@ -44,3 +44,15 @@ SEO bij MS618 in Joure is geschikt voor:
 - Bedrijven die minder afhankelijk willen zijn van betaalde advertenties
 - Ondernemers die nu al willen anticiperen op zoeken via AI
 
+## Wat je mag verwachten, en wanneer
+
+- Binnen twee werkdagen na de gratis vindbaarheidsscan weet je waar je staat en wat de eerste stap is.
+- Na de eerste maand krijg je het eerste rapport: posities op de termen die ertoe doen, aanvragen en wat we hebben gedaan.
+- De eerste beweging zie je meestal binnen zes tot twaalf weken; structurele posities vragen drie tot zes maanden.
+- Vaste maandprijs, na drie maanden maandelijks opzegbaar. Geen jaarcontract.
+
+## Niet voor jou als
+
+- Je binnen een maand bovenaan wilt staan. Dat belooft alleen wie het niet gaat waarmaken.
+- Je een lijst met zoekwoorden wilt en verder niets aan je site wilt veranderen. SEO zonder aanpassingen aan de site bestaat niet.
+- Je liever op vertoningen en bereik stuurt dan op aanvragen. Wij rapporteren op wat klanten oplevert.

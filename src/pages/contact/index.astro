@@ -13,7 +13,7 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
 
 <Page
   title="Contact"
-  seoTitle="Plan een Strategiegesprek — MS618 | 45 Minuten, Geen Verplichtingen"
+  seoTitle="Plan een strategiegesprek: 45 minuten, vrijblijvend | MS618"
   description="45 minuten. Geen verkoopgesprek. Eerlijk inzicht in waar je staat en wat je nodig hebt om te groeien. Boek een intakegesprek met MS618."
   breadcrumbs={breadcrumbs}
   extraSchema={extraSchema}
@@ -452,6 +452,16 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
       setTimeout(go, 300);
     });
   }
+
+  // Gratis vindbaarheidsscan (?scan=1 vanaf de regiopagina's): vul de vraag alvast in.
+  try {
+    if (new URLSearchParams(window.location.search).get('scan') === '1') {
+      const challenge = document.getElementById('challenge') as HTMLTextAreaElement | null;
+      if (challenge && !challenge.value) {
+        challenge.value = 'Ik wil graag de gratis vindbaarheidsscan. Mijn website: ';
+      }
+    }
+  } catch { /* geen URL-toegang, geen prefill */ }
 
   // Form submit
   const formLoadedAt = Date.now();

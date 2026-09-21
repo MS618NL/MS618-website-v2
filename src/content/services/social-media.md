@@ -1,5 +1,5 @@
 ---
-title: "Social Media & LinkedIn"
+title: "LinkedIn-marketing & social media"
 seoTitle: "B2B social media & LinkedIn-marketing | MS618"
 description: "LinkedIn is waar je B2B-klant rondloopt. MS618 bouwt zichtbaarheid en autoriteit op met consistente, doordachte content, uitgevoerd door specialisten."
 order: 8
@@ -22,9 +22,9 @@ faq:
 
 In B2B valt de beslissing zelden bij de eerste klik. Je koper oriënteert zich, vergelijkt en bouwt vertrouwen op, vaak maandenlang. LinkedIn is het kanaal waar dat gebeurt: waar de juiste mensen rondlopen en waar inhoudelijke content blijft hangen.
 
-De meeste bedrijven doen er weinig mee, of plaatsen af en toe iets zonder lijn. Daar zit precies de kans. Consistente, scherpe content maakt jouw bedrijf het bekende gezicht in jouw markt, lang voordat iemand contact opneemt.
+De meeste bedrijven doen er weinig mee, of plaatsen af en toe iets zonder lijn. Daar zit precies de kans van B2B social media.  Consistente, scherpe content maakt jouw bedrijf het bekende gezicht in jouw markt, lang voordat iemand contact opneemt.
 
-## Wat wij doen
+## LinkedIn-marketing voor B2B: wat wij doen
 
 Geen losse posts, maar een systeem. We bepalen de strategie, schrijven de content en verzorgen de plaatsing en de betrokkenheid.
 
@@ -35,7 +35,7 @@ Geen losse posts, maar een systeem. We bepalen de strategie, schrijven de conten
 
 ## Organisch versterkt betaald
 
-Organische autoriteit en betaalde campagnes werken het sterkst samen. Wie je al kent op LinkedIn, klikt eerder op je advertentie en gelooft je boodschap sneller. Daarom stemmen we social media af op [digital advertising](/diensten/digital-advertising/): één verhaal, twee kanalen die elkaar versterken.
+Organische autoriteit en betaalde campagnes werken het sterkst samen. Wie je al kent op LinkedIn, klikt eerder op je advertentie en gelooft je boodschap sneller. Daarom stemmen we social media af op [Google Ads en LinkedIn Ads](/diensten/digital-advertising/) en op je [content marketing](/diensten/content-marketing/): één verhaal, meerdere kanalen die elkaar versterken.
 
 ## Ook Facebook en Instagram
 
@@ -49,6 +49,18 @@ Social media van MS618 is geschikt voor:
 - Organisaties die autoriteit willen opbouwen in plaats van alleen te adverteren
 - Bedrijven die het consistent willen doen, zonder er zelf wekelijks tijd in te steken
 
+## Wat je mag verwachten, en wanneer
+
+- Een vaste cadans, doorgaans meerdere posts per week, met strategie, schrijven en plaatsing uit één hand.
+- Elke maand zicht op bereik bij de juiste functietitels en op wat het oplevert aan gesprekken.
+- Wij schrijven in jouw stem, jij keurt goed. Je hoeft niet zelf elke week iets te bedenken.
+
+## Niet voor jou als
+
+- Je één post per maand wilt plaatsen. Dan bouwt niets op.
+- Je gekochte volgers, engagement-pods of automatische berichten verwacht. Doen we niet.
+- Je zelf geen tien minuten per week wilt besteden aan reageren en goedkeuren. Zonder de ondernemer erin werkt LinkedIn niet.
+
 ---
 
-*Benieuwd wat een consistente LinkedIn-aanwezigheid voor jouw bedrijf kan betekenen? Plan een kennismakingsgesprek.*
+*Benieuwd wat een consistente LinkedIn-aanwezigheid voor jouw bedrijf kan betekenen? [Plan een kennismakingsgesprek](/contact/).*

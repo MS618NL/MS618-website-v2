@@ -39,11 +39,11 @@ Je website wordt vormgegeven door Peter Ydel, onze lead designer met ruim 15 jaa
 
 ## Nieuw bouwen of bestaande verbeteren
 
-Heb je nog geen site of is je huidige site verouderd, dan bouwen we nieuw of migreren we je bestaande site. Heb je al een site die bezoekers trekt maar te weinig oplevert, kijk dan naar [website-optimalisatie](/diensten/website-optimalisatie/): meer halen uit wat er al staat.
+Heb je nog geen site of is je huidige site verouderd, dan bouwen we nieuw of migreren we je bestaande site. Een website laten bouwen bij ons betekent dat ontwerp, techniek, teksten en vindbaarheid uit één hand komen. Heb je al een site die bezoekers trekt maar te weinig oplevert, kijk dan naar [website-optimalisatie](/diensten/website-optimalisatie/): meer halen uit wat er al staat.
 
 ## Lokaal in Joure, landelijk actief
 
-We zitten in Joure en werken voor ondernemers in heel Friesland en daarbuiten. Zoek je een webdesigner in de buurt met een persoonlijk aanspreekpunt, dan zit je goed. Je krijgt lokale betrokkenheid met de techniek en vindbaarheid van een landelijk B2B-bureau.
+We zitten in Joure en werken voor ondernemers in heel Friesland en daarbuiten. Zoek je een webdesigner in de buurt met een persoonlijk aanspreekpunt, dan zit je goed: lees hoe we een [website laten maken in Friesland](/webdesign-friesland/) aanpakken, met portfolio, proces en veelgestelde vragen. Je krijgt lokale betrokkenheid met de techniek en vindbaarheid van een landelijk B2B-bureau.
 
 ## Voor wie
 
@@ -52,6 +52,18 @@ Een website laten maken bij MS618 is geschikt voor:
 - MKB-ondernemers die een verouderde of trage website willen vervangen
 - Bedrijven die een nieuwe site willen die meteen goed vindbaar is
 - Ondernemers in Friesland die een betrokken partner in de buurt zoeken
+
+## Wat je mag verwachten, en wanneer
+
+- Een bedrijfswebsite van vijf tot tien pagina's staat doorgaans binnen vier tot zes weken live, gerekend vanaf het moment dat teksten en beeld rond zijn.
+- Vaste prijs vooraf, geen uurtje-factuurtje en geen verrassingen achteraf.
+- Hosting, updates, beveiliging en kleine aanpassingen in een vast maandbedrag.
+
+## Niet voor jou als
+
+- Je een template wilt dat morgen online staat. Dat kan goedkoper elders, en het is niet wat wij maken.
+- Je geen tijd hebt voor teksten en feedback. Een site zonder jouw kennis erin is een lege huls.
+- Je alleen een mooie site wilt en vindbaarheid niet belangrijk vindt.
 
 ---
 

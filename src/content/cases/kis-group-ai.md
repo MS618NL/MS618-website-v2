@@ -37,4 +37,4 @@ Telkens concrete vooruitgang: AI die daadwerkelijk in het bedrijf landt in plaat
 
 ---
 
-*Ook sparren over wat AI voor jouw organisatie kan betekenen? Lees meer over onze [AI-strategie](/diensten/ai-strategie/) of [plan een vrijblijvend gesprek](/contact/).*
+*Ook sparren over wat AI voor jouw organisatie kan betekenen? Lees meer over onze [AI-strategie](/diensten/ai-strategie/), bekijk wat we als [marketingbureau in Friesland](/marketingbureau-friesland/) doen, of [plan een vrijblijvend gesprek](/contact/).*

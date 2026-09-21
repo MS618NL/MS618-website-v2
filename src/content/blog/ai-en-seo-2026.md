@@ -49,7 +49,7 @@ Wat dit betekent in de praktijk:
 
 ### 4. Structured data wordt kritisch voor AI-citaties
 
-Als je content geciteerd wil worden door AI-systemen — in Perplexity, ChatGPT Search of Google AI Overviews — dan moet die content machine-leesbaar zijn.
+Als je content geciteerd wil worden door AI-systemen — in Perplexity, ChatGPT Search of Google AI Overviews — dan moet die content machine-leesbaar zijn. Google zegt in zijn [documentatie over AI-functies](https://developers.google.com/search/docs/appearance/ai-features) letterlijk dat daarvoor geen aparte trucs nodig zijn: dezelfde basis als voor gewone zoekresultaten, goed gestructureerd en toegankelijk.
 
 Schema.org structured data helpt AI-systemen begrijpen wie je bent, wat je doet en waarom je betrouwbaar bent. De sites die nu investeren in uitgebreide structured data-implementatie hebben over twee jaar een significant voordeel.
 

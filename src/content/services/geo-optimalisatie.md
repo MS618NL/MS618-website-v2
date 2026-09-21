@@ -30,6 +30,8 @@ Dat verandert de spelregels. Hoog ranken is niet meer genoeg. De vraag is: wordt
 
 ## Wat is GEO?
 
+GEO optimaliseren, soms ChatGPT-optimalisatie of AI-SEO genoemd, is het inrichten van je site en je merk zodat AI-modellen jouw bedrijf kennen, begrijpen en aanhalen.
+
 GEO, Generative Engine Optimization, is het optimaliseren van je content zodat AI-systemen jouw bedrijf aanhalen in hun antwoorden. Klassieke SEO maakt je vindbaar in de zoekresultaten. GEO maakt je geciteerd in het antwoord zelf.
 
 Het verschil in één zin: ranken betekent gevonden worden door de zoekmachine, geciteerd worden betekent gekozen worden door het AI-model dat een antwoord samenstelt.
@@ -65,6 +67,18 @@ GEO-optimalisatie van MS618 is geschikt voor:
 - B2B-bedrijven met een complexe propositie en een langere salescyclus
 - Organisaties waarvan de klanten zich oriënteren via AI voordat ze contact opnemen
 - Bedrijven die nu een voorsprong willen pakken in een kanaal dat de meeste concurrenten nog negeren
+
+## Wat je mag verwachten, en wanneer
+
+- Een nulmeting vooraf: welke vragen stelt je klant aan ChatGPT en Perplexity, en wie wordt daar nu genoemd.
+- GEO bouwt op een gezonde SEO-basis; zonder die basis beginnen we daar.
+- Elke maand zie je welke vragen je merk nu wel noemen, naast je posities in Google.
+
+## Niet voor jou als
+
+- Je verwacht dat je met een knop in ChatGPT komt. AI-modellen halen bedrijven aan die aantoonbaar bestaan, iets vinden en genoemd worden.
+- Je website nog geen basis heeft (geen duidelijke diensten, geen bewijs, geen contact). Dan is dat eerst.
+- Je alleen in AI wilt scoren en Google niet belangrijk vindt. Beide lopen op dezelfde signalen.
 
 ---
 

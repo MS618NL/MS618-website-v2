@@ -17,7 +17,7 @@ faq:
     answer: "Ja. Steeds meer mensen vragen ChatGPT of Perplexity om een aanbeveling in plaats van te googelen, en zo'n antwoord noemt maar een paar namen. Wij zorgen dat je bedrijf daar genoemd wordt. Dat heet GEO en zit standaard in onze aanpak."
 ---
 
-## Beter gevonden worden in Sneek
+## SEO in Sneek: beter gevonden worden
 
 Sneek is de grootste plaats van de Zuidwesthoek en daarmee de drukste zakelijke markt van de regio. Meer bedrijven betekent ook meer concurrentie op dezelfde zoektermen. Wie hier op pagina één staat, krijgt de aanvragen. Wie op pagina twee staat, wordt niet gezien.
 
@@ -48,5 +48,17 @@ Je klant googelt niet meer alleen. Steeds vaker vraagt hij ChatGPT of Perplexity
 - Ondernemers die de lokale concurrentie voor willen blijven
 - Bedrijven in de Zuidwesthoek met landelijke ambitie
 
-Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/).
+Werk je breder in de provincie? Bekijk dan [SEO Friesland](/seo-friesland/), of ons complete aanbod als [online marketingbureau in Friesland](/marketingbureau-friesland/). Als SEO-specialist in Sneek en omgeving hebben we ook eigen pagina's voor [SEO Joure](/seo-joure/), [SEO Heerenveen](/seo-heerenveen/) en [SEO Lemmer](/seo-lemmer/).
 
+## Wat je mag verwachten, en wanneer
+
+- Binnen twee werkdagen na de gratis vindbaarheidsscan weet je waar je staat en wat de eerste stap is.
+- Na de eerste maand krijg je het eerste rapport: posities op de termen die ertoe doen, aanvragen en wat we hebben gedaan.
+- De eerste beweging zie je meestal binnen zes tot twaalf weken; structurele posities vragen drie tot zes maanden.
+- Vaste maandprijs, na drie maanden maandelijks opzegbaar. Geen jaarcontract.
+
+## Niet voor jou als
+
+- Je binnen een maand bovenaan wilt staan. Dat belooft alleen wie het niet gaat waarmaken.
+- Je een lijst met zoekwoorden wilt en verder niets aan je site wilt veranderen. SEO zonder aanpassingen aan de site bestaat niet.
+- Je liever op vertoningen en bereik stuurt dan op aanvragen. Wij rapporteren op wat klanten oplevert.

@@ -16,9 +16,9 @@ faq:
     answer: "Ja. Steeds vaker zoeken mensen via ChatGPT, Perplexity of Google AI Overviews. Wij combineren klassieke SEO met GEO, zodat je niet alleen hoog rankt maar ook geciteerd wordt in AI-antwoorden."
 ---
 
-## Beter gevonden worden in Friesland
+## SEO-bureau in Friesland: beter gevonden worden
 
-Als Friese ondernemer wil je gevonden worden door klanten in de buurt en daarbuiten. SEO maakt dat mogelijk: structurele zichtbaarheid in Google op de zoektermen die er voor jouw bedrijf toe doen. MS618 is een SEO-bureau in Friesland, gevestigd in Joure, en werkt voor MKB-bedrijven in de hele provincie.
+Als Friese ondernemer wil je gevonden worden door klanten in de buurt en daarbuiten. SEO, ofwel zoekmachine marketing in Friesland en daarbuiten, maakt dat mogelijk: structurele zichtbaarheid in Google op de zoektermen die er voor jouw bedrijf toe doen. MS618 is een SEO-bureau in Friesland, gevestigd in Joure, en werkt voor MKB-bedrijven in de hele provincie.
 
 ## Via-via werkt, tot het stilvalt
 
@@ -26,7 +26,7 @@ De meeste Friese bedrijven draaien voor een flink deel op mond-tot-mondreclame. 
 
 ## Geen trucjes, maar een systeem
 
-We behandelen SEO als groeimotor, niet als technische checklist. Dat betekent: begrijpen wat jouw klanten zoeken, een sterke contentarchitectuur, een technisch gezonde site en autoriteit die je positie vasthoudt. De volledige aanpak staat op onze pagina over [SEO-strategie](/diensten/seo-strategie/).
+We behandelen SEO als groeimotor, niet als technische checklist. SEO-optimalisatie in Friesland betekent bij ons: begrijpen wat jouw klanten zoeken, een sterke contentarchitectuur, een technisch gezonde site en autoriteit die je positie vasthoudt, met linkbuilding in Friesland en landelijk waar dat iets toevoegt. De volledige aanpak staat op onze pagina over [SEO-strategie](/diensten/seo-strategie/).
 
 ## SEO en AI-vindbaarheid
 
@@ -36,7 +36,7 @@ Zoeken verandert. Je klant stelt steeds vaker een vraag aan ChatGPT of Perplexit
 
 Vanuit Joure werken we voor ondernemers door heel Friesland: Drachten, Bolsward, Dokkum en omstreken. Lokale vindbaarheid waar dat telt, landelijke slagkracht waar dat nodig is.
 
-Voor de plaatsen waar we het meest werken hebben we een eigen pagina met de aanpak voor die markt: [SEO Leeuwarden](/seo-leeuwarden/), [SEO Sneek](/seo-sneek/), [SEO Heerenveen](/seo-heerenveen/), [SEO Lemmer](/seo-lemmer/) en [SEO Joure](/seo-joure/).
+Voor de plaatsen waar we het meest werken hebben we een eigen pagina met de aanpak voor die markt: [SEO Leeuwarden](/seo-leeuwarden/), [SEO Sneek](/seo-sneek/), [SEO Heerenveen](/seo-heerenveen/), [SEO Lemmer](/seo-lemmer/) en [SEO Joure](/seo-joure/). Wil je meer dan SEO alleen, bekijk dan wat we als [online marketingbureau in Friesland](/marketingbureau-friesland/) doen, of hoe we een [website laten maken in Friesland](/webdesign-friesland/) aanpakken. Snel resultaat nodig naast SEO? Dan is [Google Ads in Friesland](/google-ads-friesland/) de aanvulling.
 
 ## Voor wie
 
@@ -46,3 +46,15 @@ SEO bij MS618 is geschikt voor:
 - Ondernemers die minder afhankelijk willen zijn van betaalde advertenties
 - Bedrijven die nu al willen anticiperen op zoeken via AI
 
+## Wat je mag verwachten, en wanneer
+
+- Binnen twee werkdagen na de gratis vindbaarheidsscan weet je waar je staat en wat de eerste stap is.
+- Na de eerste maand krijg je het eerste rapport: posities op de termen die ertoe doen, aanvragen en wat we hebben gedaan.
+- De eerste beweging zie je meestal binnen zes tot twaalf weken; structurele posities vragen drie tot zes maanden.
+- Vaste maandprijs, na drie maanden maandelijks opzegbaar. Geen jaarcontract.
+
+## Niet voor jou als
+
+- Je binnen een maand bovenaan wilt staan. Dat belooft alleen wie het niet gaat waarmaken.
+- Je een lijst met zoekwoorden wilt en verder niets aan je site wilt veranderen. SEO zonder aanpassingen aan de site bestaat niet.
+- Je liever op vertoningen en bereik stuurt dan op aanvragen. Wij rapporteren op wat klanten oplevert.

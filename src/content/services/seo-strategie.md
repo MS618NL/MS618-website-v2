@@ -74,6 +74,8 @@ Links zijn nog altijd een van de sterkste rankingfactoren. Maar niet alle links 
 - Structureel meer gekwalificeerde B2B-leads via het organische kanaal
 - Duurzame groei die blijft staan als je advertentiebudget stopt
 
+Wil je zien hoe dat in de praktijk uitpakt? Lees de case over [ruim drie jaar SEO voor Swoop](/cases/swoop-seo/), bekijk onze aanpak voor [SEO in Friesland](/seo-friesland/), of hoe we SEO combineren met [GEO en AI-vindbaarheid](/diensten/geo-optimalisatie/). Voor een site die zelf al bezoekers trekt maar te weinig oplevert, is [website-optimalisatie](/diensten/website-optimalisatie/) vaak de snellere winst.
+
 ## Voor wie
 
 SEO-strategie van MS618 is geschikt voor:
@@ -82,6 +84,18 @@ SEO-strategie van MS618 is geschikt voor:
 - Organisaties die willen stoppen met volledig afhankelijk zijn van betaalde advertenties
 - Scale-ups die duurzaam organisch willen groeien
 - Bedrijven die eerder teleurgesteld zijn geraakt door SEO-bureaus die beloofden maar niet leverden
+
+## Wat je mag verwachten, en wanneer
+
+- Binnen de eerste maand: zoekwoordkeuze, technische basis op orde en de eerste pagina's aangepast.
+- Maandelijks een rapport op de termen die klanten opleveren, niet op vertoningen.
+- Eerste beweging binnen zes tot twaalf weken; structurele posities in drie tot zes maanden. Na drie maanden maandelijks opzegbaar.
+
+## Niet voor jou als
+
+- Je binnen een maand bovenaan wilt staan of linkbuilding wilt kopen. Beide kosten je op termijn meer dan ze opleveren.
+- Je een lijst met zoekwoorden wilt zonder iets aan je site te veranderen.
+- Je liever op vertoningen stuurt dan op aanvragen.
 
 ---
 

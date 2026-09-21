@@ -51,6 +51,8 @@ const services = defineCollection({
     order: z.number().default(99),
     /** Korte, klanttaal-variant voor de navigatie; de title blijft de SEO-term. */
     navLabel: z.string().optional(),
+    /** Experiment 20-09: feitenblok van max 220 tekens boven de H1 (AI-summary-test). */
+    aiSummary: z.string().max(220).optional(),
     icon: z.string().default('→'),
     category: z.string().default('service'),
     faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
@@ -69,6 +71,8 @@ const servicesEn = defineCollection({
     order: z.number().default(99),
     /** Korte, klanttaal-variant voor de navigatie; de title blijft de SEO-term. */
     navLabel: z.string().optional(),
+    /** Experiment 20-09: feitenblok van max 220 tekens boven de H1 (AI-summary-test). */
+    aiSummary: z.string().max(220).optional(),
     icon: z.string().default('→'),
     category: z.string().default('service'),
     faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
@@ -127,6 +131,8 @@ const local = defineCollection({
     order: z.number().default(99),
     region: z.string().default('Friesland'),
     navLabel: z.string().optional(),
+    /** Experiment 20-09: feitenblok van max 220 tekens boven de H1 (AI-summary-test). */
+    aiSummary: z.string().max(220).optional(),
     faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
     updatedDate: z.coerce.date().optional(),
   }),

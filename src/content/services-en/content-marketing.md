@@ -53,7 +53,7 @@ Great content that no one sees is wasted effort. We help you build reach through
 
 ## What it delivers
 
-- Organic traffic through content: average +240% in year one
+- Organic traffic and rankings on the terms that bring in customers
 - Stronger time-on-page and engagement — proof the content actually resonates
 - Clear attribution from content to leads and pipeline
 - Growing share of voice in your market
