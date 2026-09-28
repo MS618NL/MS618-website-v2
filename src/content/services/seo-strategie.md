@@ -89,7 +89,7 @@ SEO-strategie van MS618 is geschikt voor:
 
 - Binnen de eerste maand: zoekwoordkeuze, technische basis op orde en de eerste pagina's aangepast.
 - Maandelijks een rapport op de termen die klanten opleveren, niet op vertoningen.
-- Eerste beweging binnen zes tot twaalf weken; structurele posities in drie tot zes maanden. Na drie maanden maandelijks opzegbaar.
+- Eerste beweging meestal binnen enkele maanden; structureel resultaat bouwt op over zes tot twaalf maanden. Na drie maanden maandelijks opzegbaar.
 
 ## Niet voor jou als
 

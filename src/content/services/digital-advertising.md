@@ -54,8 +54,8 @@ Advertenties laten binnen weken zien welke zoektermen en boodschappen aanvragen 
 
 ## Wat je mag verwachten, en wanneer
 
-- Binnen twee weken na livegang de eerste data en meestal de eerste aanvragen.
-- Wekelijkse optimalisatie op zoektermen, advertenties en biedingen; maandelijks een rapport op kosten per aanvraag, niet op klikken.
+- Binnen een week na livegang zichtbaar en de eerste data; na vier tot zes weken genoeg data om echt op kosten per aanvraag te sturen.
+- Doorlopende optimalisatie op zoektermen, advertenties en biedingen; maandelijks een rapport op kosten per aanvraag, niet op klikken.
 - Je advertentiebudget betaal je rechtstreeks aan Google en blijft van jou. Onze fee staat er los van.
 - Na drie maanden maandelijks opzegbaar.
 

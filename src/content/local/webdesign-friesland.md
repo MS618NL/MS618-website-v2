@@ -11,7 +11,7 @@ faq:
   - question: "Wat kost een website laten maken in Friesland?"
     answer: "Een website bij MS618 begint bij 2.000 euro eenmalig, plus een vast maandbedrag voor hosting, onderhoud en doorontwikkeling. Wat het precies wordt, hangt af van het aantal pagina's, de functionaliteit en of we nieuw bouwen of een bestaande site overzetten. Na een kennismakingsgesprek krijg je een vaste prijs, geen uurtje-factuurtje en geen verrassingen achteraf."
   - question: "Hoe lang duurt het voordat mijn website live staat?"
-    answer: "Een bedrijfswebsite van vijf tot tien pagina's staat doorgaans binnen vier tot zes weken live, gerekend vanaf het moment dat teksten en beeld rond zijn. Grotere sites of sites met koppelingen duren langer. Je ziet in elke stap waar we staan."
+    answer: "Een bedrijfswebsite van vijf tot tien pagina's staat doorgaans binnen vier tot acht weken live, gerekend vanaf het moment dat teksten en beeld rond zijn. Grotere sites of sites met koppelingen duren langer. Je ziet in elke stap waar we staan."
   - question: "Bouwen jullie ook websites voor bedrijven buiten Joure?"
     answer: "Ja. We zitten in Joure en bouwen websites voor ondernemers in heel Friesland, van Leeuwarden tot Sneek, Drachten, Heerenveen en Lemmer. Dichtbij als je dat wilt, met een persoonlijk aanspreekpunt, en dezelfde techniek die we voor landelijke en internationale klanten inzetten."
   - question: "Met welk systeem bouwen jullie?"
@@ -45,7 +45,7 @@ Zes dingen, allemaal standaard: eigen ontwerp, snelheid, vindbaarheid, teksten, 
 
 ## Hoe verloopt het bouwen, en hoe lang duurt het?
 
-In vier stappen, en een bedrijfswebsite van vijf tot tien pagina's staat doorgaans binnen vier tot zes weken live. Die termijn gaat lopen zodra teksten en beeld rond zijn; dat is meestal het deel dat het langst duurt, en daar helpen we bij.
+In vier stappen, en een bedrijfswebsite van vijf tot tien pagina's staat doorgaans binnen vier tot acht weken live. Die termijn gaat lopen zodra teksten en beeld rond zijn; dat is meestal het deel dat het langst duurt, en daar helpen we bij.
 
 1. **Kennismaking en plan.** We kijken naar je huidige site, je klanten en de zoektermen die ertoe doen. Je krijgt een vaste prijs en een planning.
 2. **Ontwerp.** Peter maakt het ontwerp op basis van je merk. Jij kijkt mee op twee vaste momenten, zodat er geen verrassingen zijn als de bouw begint.
@@ -61,8 +61,8 @@ Een website bij MS618 begint bij 2.000 euro eenmalig, plus een vast maandbedrag 
 | Onderdeel | Wat je krijgt | Wanneer |
 |---|---|---|
 | Ontwerp | eigen ontwerp door Peter Ydel, twee feedbackmomenten | week 1 tot 2 |
-| Bouw en teksten | snelle techniek, teksten op zoekvragen, testadres | week 2 tot 5 |
-| Livegang | aanmelding bij Google, conversiemeting, controle eerste weken | week 4 tot 6 |
+| Bouw en teksten | snelle techniek, teksten op zoekvragen, testadres | week 2 tot 6 |
+| Livegang | aanmelding bij Google, conversiemeting, controle eerste weken | week 4 tot 8 |
 | Onderhoud | hosting, updates, beveiliging, kleine aanpassingen | vast maandbedrag, doorlopend |
 
 Na een kennismakingsgesprek krijg je een vaste prijs. Geen uurtje-factuurtje, geen meerwerk dat je pas op de factuur ontdekt.
@@ -80,7 +80,7 @@ Voor GEODIN, een subbrand van geodata-specialist Fugro, en voor onszelf. Meer si
 
 ## Werken jullie ook in Leeuwarden, Sneek, Drachten of Heerenveen?
 
-Ja, vanuit Joure voor de hele provincie: Leeuwarden, Drachten, Sneek, Heerenveen, Lemmer, Bolsward en de dorpen daartussen. Joure ligt aan de A6 en A7, dus we zijn overal in Friesland binnen drie kwartier.
+Ja, vanuit Joure voor de hele provincie: Leeuwarden, Drachten, Sneek, Heerenveen, Lemmer, Bolsward en de dorpen daartussen. Joure ligt aan de A6 en A7, dus de meeste Friese plaatsen zijn binnen drie kwartier.
 
 Je krijgt een betrokken partner in de buurt die je kunt bellen, met de techniek en vindbaarheid van een landelijk bureau. Kom langs aan de haven in Joure, in het oude fabriekspand van Douwe Egberts, of we komen naar jou. Zit je om de hoek? Dan is ons [marketingbureau in Joure](/marketingbureau-joure/) je aanspreekpunt. Zoek je eerst uitleg over hoe we websites bouwen en migreren, lees dan [website laten maken](/diensten/website-laten-maken/).
 

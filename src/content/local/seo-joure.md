@@ -48,7 +48,7 @@ SEO bij MS618 in Joure is geschikt voor:
 
 - Binnen twee werkdagen na de gratis vindbaarheidsscan weet je waar je staat en wat de eerste stap is.
 - Na de eerste maand krijg je het eerste rapport: posities op de termen die ertoe doen, aanvragen en wat we hebben gedaan.
-- De eerste beweging zie je meestal binnen zes tot twaalf weken; structurele posities vragen drie tot zes maanden.
+- De eerste beweging zie je meestal binnen enkele maanden; structureel resultaat bouwt op over zes tot twaalf maanden, afhankelijk van de concurrentie op jouw termen.
 - Vaste maandprijs, na drie maanden maandelijks opzegbaar. Geen jaarcontract.
 
 ## Niet voor jou als

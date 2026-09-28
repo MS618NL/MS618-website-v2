@@ -15,7 +15,7 @@ faq:
   - question: "Wat doet een online marketingbureau precies?"
     answer: "Een online marketingbureau zorgt dat je gevonden wordt door de juiste klanten en dat die klanten ook daadwerkelijk contact opnemen. Bij MS618 betekent dat: SEO, AI-vindbaarheid, advertenties, content en je website, als één systeem in plaats van losse acties."
   - question: "Hoe snel zie ik resultaat?"
-    answer: "Advertenties leveren binnen weken de eerste aanvragen op. SEO en AI-vindbaarheid hebben drie tot zes maanden nodig voordat de posities structureel omhoog gaan. Daarom rapporteren we maandelijks op de cijfers die ertoe doen, aanvragen en posities, en niet op vertoningen."
+    answer: "Advertenties leveren binnen weken de eerste aanvragen op. Bij SEO en AI-vindbaarheid zie je meestal binnen enkele maanden beweging; structureel resultaat bouwt op over zes tot twaalf maanden. Daarom rapporteren we maandelijks op de cijfers die ertoe doen, aanvragen en posities, en niet op vertoningen."
   - question: "Waarom een marketingbureau in de buurt kiezen?"
     answer: "Een bureau in de buurt kent je markt, is makkelijk te bereiken en denkt mee als partner. Bij MS618 krijg je die lokale betrokkenheid zonder in te leveren op kwaliteit: senior specialisten en AI-tooling die je elders alleen bij grote landelijke bureaus vindt."
 ---

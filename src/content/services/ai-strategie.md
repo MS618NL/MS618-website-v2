@@ -62,7 +62,7 @@ AI-strategie en implementatie van MS618 is geschikt voor:
 
 - Een vaste doorlooptijd en scope, vooraf afgesproken, zodat je weet wanneer wat klaar is.
 - Geen tooladvies zonder businesscase: elke toepassing krijgt een verwachte opbrengst en een eigenaar in jouw organisatie.
-- Wat we bouwen, blijft van jou: data, prompts en werkwijze zijn overdraagbaar.
+- Werksessies met de mensen die het werk doen, niet alleen met de directie.
 
 ## Niet voor jou als
 

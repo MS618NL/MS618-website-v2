@@ -62,7 +62,7 @@ Goede content heeft distributie nodig. Wij helpen met:
 
 - Een contentplan binnen de eerste maand: onderwerpen, zoekvragen, formats en een vaste cadans.
 - Elk artikel heeft een zoekdoel, een doelgroep en een conversiedoel, en wordt geschreven door een mens met AI als versneller.
-- Na drie tot zes maanden zie je content terug in posities en aanvragen; content werkt cumulatief, niet per stuk.
+- Na drie tot zes maanden zie je content meestal terug in posities; aanvragen volgen zodra de juiste pagina's ranken. Content werkt cumulatief, niet per stuk.
 
 ## Niet voor jou als
 

@@ -55,7 +55,7 @@ Een website laten maken bij MS618 is geschikt voor:
 
 ## Wat je mag verwachten, en wanneer
 
-- Een bedrijfswebsite van vijf tot tien pagina's staat doorgaans binnen vier tot zes weken live, gerekend vanaf het moment dat teksten en beeld rond zijn.
+- Een bedrijfswebsite van vijf tot tien pagina's staat doorgaans binnen vier tot acht weken live, gerekend vanaf het moment dat teksten en beeld rond zijn.
 - Vaste prijs vooraf, geen uurtje-factuurtje en geen verrassingen achteraf.
 - Hosting, updates, beveiliging en kleine aanpassingen in een vast maandbedrag.
 

@@ -72,7 +72,7 @@ GEO-optimalisatie van MS618 is geschikt voor:
 
 - Een nulmeting vooraf: welke vragen stelt je klant aan ChatGPT en Perplexity, en wie wordt daar nu genoemd.
 - GEO bouwt op een gezonde SEO-basis; zonder die basis beginnen we daar.
-- Elke maand zie je welke vragen je merk nu wel noemen, naast je posities in Google.
+- Maandelijks meten we opnieuw op de vragen uit de nulmeting, naast je posities in Google. AI-antwoorden wisselen per keer; we rapporteren wat we zien, zonder garantie op een vermelding.
 
 ## Niet voor jou als
 
