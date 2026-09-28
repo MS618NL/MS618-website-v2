@@ -18,7 +18,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 
 // Eén plek voor de reviewteller (header-trustregel + voorstelblok).
-const REVIEWS = 24;
+const REVIEWS = 26;
 
 const pageUrl = canonicalUrl(`/${entry.id}/`);
 const breadcrumbs = [
@@ -48,6 +48,9 @@ const extraSchema = [
     <div class="container">
       <header class="local-header">
         <span class="tag">{entry.data.region}</span>
+        {entry.data.aiSummary && (
+          <aside class="page-summary" aria-label="Samenvatting"><p>{entry.data.aiSummary}</p></aside>
+        )}
         <h1>{entry.data.title}</h1>
         <p class="local-description">{entry.data.description}</p>
         <a href="/contact/" class="btn-primary">Plan een gesprek →</a>
@@ -119,6 +122,20 @@ const extraSchema = [
   .local-header .tag {
     display: inline-block;
     margin-bottom: 1.25rem;
+  }
+
+  .page-summary {
+    margin: 0 0 1.25rem;
+    padding: 0.85rem 1rem;
+    border-left: 2px solid oklch(0.65 0.2 250);
+    background: oklch(0.11 0 0);
+  }
+
+  .page-summary p {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: oklch(0.85 0 0);
   }
 
   .local-header h1 {

@@ -1,5 +1,5 @@
 ---
-title: "Online marketing & marketingbureau Joure"
+title: "Online marketing Joure"
 seoTitle: "Online marketing Joure: marketingbureau voor MKB | MS618"
 description: "Online marketingbureau in Joure. Wij helpen ondernemers in Joure en omgeving groeien met SEO, AI, advertenties en websites. Lokaal en resultaatgericht."
 order: 4
@@ -17,7 +17,9 @@ faq:
     answer: "Een bureau om de hoek kent je markt, is makkelijk te bereiken en denkt mee als partner in plaats van als leverancier op afstand. Bij MS618 krijg je die nabijheid plus senior specialisten en AI-tooling die je elders alleen bij grote landelijke bureaus vindt."
 ---
 
-## Een sterk marketingbureau in Joure
+## Online marketing in Joure: een bureau om de hoek
+
+Zoek je een online marketing bureau in Joure, of hulp bij internet marketing in Joure en omgeving? Wij zitten aan de haven, in het oude Douwe Egberts-pand, en werken voor ondernemers uit Joure, Sint Nicolaasga, Oudehaske en de rest van De Fryske Marren.
 
 Wij zitten in Joure, aan de haven, en helpen ondernemers in Joure en omgeving groeien. Geen bureau op afstand, maar een partner om de hoek die je complete online groei oppakt: vindbaarheid, advertenties, content en je website.
 
@@ -30,7 +32,7 @@ Je regelt de marketing tussen het werk door. Een bericht als je eraan denkt, de 
 ## Wat wij voor ondernemers in Joure doen
 
 - **[SEO Joure](/seo-joure/)**: beter gevonden worden in Google, lokaal en landelijk
-- **[Webdesign Joure](/webdesign-joure/)**: een snelle, moderne site die scoort en converteert
+- **[Website laten maken](/webdesign-friesland/)**: een snelle, moderne site die scoort en converteert, ontworpen en gebouwd vanuit Joure
 - **[GEO en AI-vindbaarheid](/diensten/geo-optimalisatie/)**: genoemd worden in ChatGPT, Perplexity en Google AI Overviews
 - **[Digital advertising](/diensten/digital-advertising/)**: Google- en LinkedIn-campagnes die leads opleveren
 - **[AI-strategie](/diensten/ai-strategie/)**: AI concreet inzetten in je marketing en processen
@@ -47,3 +49,15 @@ Ons marketingbureau in Joure is geschikt voor:
 - Bedrijven die geen eigen marketingafdeling willen optuigen
 - Ondernemers die één partner zoeken in plaats van losse leveranciers
 
+## Wat je mag verwachten, en wanneer
+
+- Gratis vindbaarheidsscan binnen twee werkdagen in je mail, zonder verplichting.
+- Eén plan, één vaste maandprijs, één aanspreekpunt. Na drie maanden maandelijks opzegbaar.
+- Elke maand een rapport dat je in twee minuten leest: aanvragen, telefoontjes, posities, en wat we volgende maand doen.
+- Vijf senior specialisten, geen junior-koppels. Je spreekt de mensen die het werk doen.
+
+## Niet voor jou als
+
+- Je een losse actie zoekt zonder vervolg. Eén campagne of één blog lost structureel niets op.
+- Je het goedkoopste bureau zoekt. Wij zijn niet de duurste, maar zeker niet de goedkoopste.
+- Je liever een jaarcontract tekent voor de zekerheid. Wij verdienen elke maand opnieuw je vertrouwen, of niet.

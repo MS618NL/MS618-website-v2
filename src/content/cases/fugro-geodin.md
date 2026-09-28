@@ -37,4 +37,4 @@ Snelle zichtbaarheid in ChatGPT en andere AI-zoekmachines, terwijl de klassieke 
 
 ---
 
-*Wil jij ook genoemd worden in AI-antwoorden? [Bekijk onze aanpak voor GEO en AI-vindbaarheid](/diensten/geo-optimalisatie/) of [plan een gesprek](/contact/).*
+*Wil jij ook genoemd worden in AI-antwoorden? [Bekijk onze aanpak voor GEO en AI-vindbaarheid](/diensten/geo-optimalisatie/), lees hoe we een [website laten maken](/diensten/website-laten-maken/) die daarop is gebouwd, of [plan een gesprek](/contact/).*

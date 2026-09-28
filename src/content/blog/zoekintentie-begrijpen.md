@@ -53,7 +53,7 @@ De zoeker is klaar om actie te ondernemen.
 
 ### Stap 1: Bekijk de SERP
 
-De makkelijkste manier om zoekintentie te begrijpen: Google de zoekterm en analyseer wat er bovenaan staat. Google heeft al bepaald welk type content het beste past bij die intentie. Een pagina vol blogs? Dan wil Google informatieve content zien. Productpagina's? Transactionele content.
+De makkelijkste manier om zoekintentie te begrijpen: Google de zoekterm en analyseer wat er bovenaan staat. Google heeft al bepaald welk type content het beste past bij die intentie. Een pagina vol blogs? Dan wil Google informatieve content zien. Productpagina's? Transactionele content. Google beschrijft dit principe zelf in de [richtlijnen voor nuttige, mensgerichte content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content): maak wat de bezoeker zoekt, niet wat je denkt dat een zoekmachine wil.
 
 ### Stap 2: Analyseer de top-10 pagina's
 
