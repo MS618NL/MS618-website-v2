@@ -5,7 +5,7 @@ description: "SEO-specialist voor bedrijven in Sneek. De grootste zakelijke mark
 order: 6.2
 region: "Sneek"
 navLabel: "SEO Sneek"
-updatedDate: 2026-08-02
+updatedDate: 2026-09-28
 faq:
   - question: "Werken jullie voor bedrijven in Sneek?"
     answer: "Ja. Vanuit Joure zijn we in twintig minuten in Sneek, en een deel van ons werk zit in de Zuidwesthoek. We komen langs wanneer dat nodig is, en de rest doen we digitaal, zodat je niet betaalt voor reistijd."

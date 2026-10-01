@@ -5,7 +5,7 @@ description: "Google Ads voor bedrijven in Friesland. Genomineerd door Google vo
 order: 3.8
 region: "Friesland"
 navLabel: "Google Ads Friesland"
-updatedDate: 2026-08-03
+updatedDate: 2026-09-28
 faq:
   - question: "Wat kost Google Ads voor een bedrijf in Friesland?"
     answer: "Je betaalt twee dingen: het advertentiebudget dat naar Google gaat, en het beheer. In Friesland liggen de klikprijzen op veel zoektermen lager dan in de Randstad, dus je budget gaat verder. Wat je nodig hebt hangt af van je markt en je doel. In een vrijblijvend gesprek rekenen we het door en krijg je een concrete opzet, geen standaardpakket."

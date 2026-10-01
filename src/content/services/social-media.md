@@ -6,7 +6,7 @@ order: 8
 navLabel: "LinkedIn & social media"
 icon: "◆"
 category: "zichtbaarheid"
-updatedDate: 2026-06-17
+updatedDate: 2026-09-21
 faq:
   - question: "Waarom LinkedIn voor B2B?"
     answer: "In B2B zit je koper op LinkedIn, niet op Instagram of TikTok. Het is het kanaal waar je precies de juiste functietitels en bedrijven bereikt met inhoudelijke content. Daarom is LinkedIn de kern van onze B2B-social-aanpak."

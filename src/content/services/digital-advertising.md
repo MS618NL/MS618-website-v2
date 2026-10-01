@@ -6,7 +6,7 @@ order: 4
 navLabel: "Betaald adverteren"
 icon: "◈"
 category: "zichtbaarheid"
-updatedDate: 2026-06-17
+updatedDate: 2026-09-28
 faq:
   - question: "Wat is het verschil tussen Google Ads en LinkedIn Ads voor B2B?"
     answer: "Google Ads vangt actieve vraag: mensen die nu zoeken naar wat jij biedt. LinkedIn Ads creëert vraag bij precies de juiste functietitels en bedrijven, ook als ze nog niet zoeken. In B2B versterken ze elkaar; wij bepalen de mix op basis van jouw salescyclus."

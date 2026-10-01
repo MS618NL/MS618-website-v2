@@ -6,7 +6,7 @@ order: 1
 navLabel: "AI-strategie"
 icon: "◇"
 category: "strategie"
-updatedDate: 2026-06-17
+updatedDate: 2026-09-28
 faq:
   - question: "Wat is een AI-strategie?"
     answer: "Een AI-strategie is een concreet plan voor waar en hoe je AI inzet om je bedrijf te laten groeien, in plaats van losse tools uit te proberen. Het begint bij je doelen en processen, niet bij de techniek: welke taken kan AI versnellen, welke beslissingen kan het verbeteren, en wat levert dat op."

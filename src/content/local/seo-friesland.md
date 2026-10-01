@@ -4,7 +4,7 @@ seoTitle: "SEO-bureau Friesland: beter gevonden in Google en AI | MS618"
 description: "SEO-bureau voor heel Friesland. Senior specialisten uit Joure zorgen dat MKB-bedrijven beter gevonden worden in Google en in AI-zoekmachines."
 order: 3
 region: "Friesland"
-updatedDate: 2026-08-26
+updatedDate: 2026-09-28
 faq:
   - question: "Wat is SEO en wat heb ik eraan?"
     answer: "SEO, zoekmachineoptimalisatie, zorgt dat je bedrijf gevonden wordt door mensen die in Google zoeken naar wat jij biedt. Goede SEO levert structureel verkeer en leads op, zonder dat je per klik betaalt zoals bij advertenties."

@@ -7,7 +7,7 @@ order: 6
 navLabel: "Website verbeteren"
 icon: "⬡"
 category: "conversie"
-updatedDate: 2026-09-20
+updatedDate: 2026-09-21
 faq:
   - question: "Wat is CRO (conversie-optimalisatie)?"
     answer: "CRO is het systematisch verbeteren van je website zodat meer bezoekers klant worden, zonder dat je meer verkeer nodig hebt. Denk aan UX, laadsnelheid, een heldere boodschap en het wegnemen van drempels in het beslisproces."

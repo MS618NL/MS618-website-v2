@@ -6,7 +6,7 @@ order: 9
 navLabel: "Meten & rapportage"
 icon: "≡"
 category: "conversie"
-updatedDate: 2026-09-20
+updatedDate: 2026-09-21
 faq:
   - question: "Welke tools gebruiken jullie voor marketing analytics?"
     answer: "Onder andere GA4, Google Search Console, Google Tag Manager, server-side tracking en dashboards in Looker Studio. We kiezen de tools op basis van jouw situatie, niet andersom."

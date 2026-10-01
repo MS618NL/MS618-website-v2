@@ -6,7 +6,7 @@ order: 2
 navLabel: "SEO"
 icon: "↗"
 category: "zichtbaarheid"
-updatedDate: 2026-06-17
+updatedDate: 2026-09-28
 faq:
   - question: "Hoe lang duurt het voordat SEO resultaat geeft?"
     answer: "SEO is een groeistrategie, geen knop. De eerste bewegingen in zichtbaarheid zie je doorgaans binnen enkele maanden, structureel resultaat bouwt op over 6 tot 12 maanden. Het voordeel: die groei blijft staan als je advertentiebudget stopt."
