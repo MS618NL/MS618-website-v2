@@ -5,7 +5,7 @@ description: "SEO-specialist voor ondernemers in Lemmer. Op 15 minuten afstand, 
 order: 6.1
 region: "Lemmer"
 navLabel: "SEO Lemmer"
-updatedDate: 2026-08-02
+updatedDate: 2026-09-28
 faq:
   - question: "Werken jullie als SEO-specialist in Lemmer?"
     answer: "Ja. Ons kantoor staat in Joure, een kwartier rijden van Lemmer, en we werken voor ondernemers in de hele Zuidwesthoek. Je hebt een aanspreekpunt dat langskomt wanneer dat nodig is, met de aanpak en tooling van een landelijk B2B-bureau."

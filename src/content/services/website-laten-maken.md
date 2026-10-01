@@ -6,7 +6,7 @@ order: 5
 navLabel: "Website laten maken"
 icon: "▣"
 category: "website"
-updatedDate: 2026-06-17
+updatedDate: 2026-09-28
 faq:
   - question: "Wat kost het om een website te laten maken?"
     answer: "Dat hangt af van de omvang: aantal pagina's, functionaliteit en of we vanaf nul bouwen of een bestaande site migreren. Wij werken met een heldere eenmalige bouwprijs plus een vast bedrag per maand voor hosting, onderhoud en doorontwikkeling. In een kennismakingsgesprek bepalen we de scope en krijg je een concrete prijs, geen verrassingen achteraf."

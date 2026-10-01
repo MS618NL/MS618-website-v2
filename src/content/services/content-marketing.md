@@ -6,7 +6,7 @@ order: 7
 navLabel: "Content & teksten"
 icon: "❖"
 category: "zichtbaarheid"
-updatedDate: 2026-06-17
+updatedDate: 2026-09-28
 faq:
   - question: "Wat levert content marketing op voor een B2B-bedrijf?"
     answer: "Goede B2B-content trekt de juiste mensen aan op het juiste moment in hun beslisproces, bouwt autoriteit op en levert organisch verkeer en gekwalificeerde leads. Het werkt cumulatief: content die je vandaag publiceert, blijft jaren leads opleveren."

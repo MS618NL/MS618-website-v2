@@ -6,7 +6,7 @@ aiSummary: "MS618 in Joure bouwt websites voor ondernemers in Friesland, met eig
 order: 2
 region: "Friesland"
 navLabel: "Website laten maken Friesland"
-updatedDate: 2026-09-20
+updatedDate: 2026-09-28
 faq:
   - question: "Wat kost een website laten maken in Friesland?"
     answer: "Een website bij MS618 begint bij 2.000 euro eenmalig, plus een vast maandbedrag voor hosting, onderhoud en doorontwikkeling. Wat het precies wordt, hangt af van het aantal pagina's, de functionaliteit en of we nieuw bouwen of een bestaande site overzetten. Na een kennismakingsgesprek krijg je een vaste prijs, geen uurtje-factuurtje en geen verrassingen achteraf."

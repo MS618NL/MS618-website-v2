@@ -4,7 +4,7 @@ seoTitle: "Online marketingbureau Friesland: groei voor MKB | MS618"
 description: "Online marketingbureau in Friesland. Eén senior team voor SEO, AI, advertenties en je website. Lokaal betrokken, landelijk sterk. Plan een gesprek."
 order: 1
 region: "Friesland"
-updatedDate: 2026-09-20
+updatedDate: 2026-09-28
 faq:
   - question: "Wat kost online marketing uitbesteden in Friesland?"
     answer: "Een SEO- of advertentietraject bij MS618 begint bij 650 euro per maand. Wat het precies wordt, hangt af van hoeveel kanalen we voor je oppakken en hoe hard je wilt groeien. Je krijgt vooraf een vaste maandprijs en na drie maanden ben je maandelijks opzegbaar. Geen jaarcontract, geen uurtje-factuurtje."

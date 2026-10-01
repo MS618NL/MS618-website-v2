@@ -15,6 +15,9 @@ function buildLastmodMap() {
     ['services-en', '/en/services/'],
     ['cases', '/cases/'],
     ['cases-en', '/en/cases/'],
+    // Regiopagina's (/seo-friesland/ e.d.) staan in de root. Zonder deze regel kregen ze bij
+    // elke build de buildtijd als lastmod, ook als de inhoud niet was gewijzigd.
+    ['local', '/'],
   ];
   const map = {};
   for (const [dir, prefix] of sections) {

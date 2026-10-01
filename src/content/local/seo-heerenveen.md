@@ -5,7 +5,7 @@ description: "SEO-specialist voor bedrijven in Heerenveen. Sterk in techniek, in
 order: 6.3
 region: "Heerenveen"
 navLabel: "SEO Heerenveen"
-updatedDate: 2026-08-02
+updatedDate: 2026-09-28
 faq:
   - question: "Werken jullie als SEO-specialist in Heerenveen?"
     answer: "Ja. Ons kantoor staat in Joure, een kwartier rijden van Heerenveen. We werken voor bedrijven op de bedrijventerreinen en in de stad, en komen langs wanneer dat zin heeft. De rest doen we digitaal."

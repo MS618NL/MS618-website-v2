@@ -6,7 +6,7 @@ order: 3
 navLabel: "AI-vindbaarheid"
 icon: "✦"
 category: "vindbaarheid"
-updatedDate: 2026-06-17
+updatedDate: 2026-09-28
 faq:
   - question: "Wat is GEO (Generative Engine Optimization)?"
     answer: "GEO, oftewel Generative Engine Optimization, is het optimaliseren van je content zodat AI-systemen zoals ChatGPT, Perplexity, Google Gemini en Google AI Overviews jouw bedrijf aanhalen in hun antwoorden. Waar klassieke SEO draait om hoog ranken in de zoekresultaten, draait GEO om gekozen worden als bron wanneer een AI-model een antwoord samenstelt."
