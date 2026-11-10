@@ -13,6 +13,7 @@ import {
   buildWebsitePiece,
   buildWebpagePiece,
   buildBreadcrumbPiece,
+  withPrimaryImage,
 } from '@/utils/schema';
 import site from '@/data/site.json';
 
@@ -24,10 +25,22 @@ const recentPosts = (await getCollection('blog'))
 const pageUrl = site.url + '/';
 const breadcrumbs = [{ name: 'Home' }];
 
+// Eigen voorkeursbeeld (og:image + primaryImageOfPage). De klantlogo's en de Raptor-foto
+// krijgen X-Robots-Tag: noindex in vercel.json, zodat Google die nooit als miniatuur kiest.
+const homeImage = {
+  url: '/og/home.jpg',
+  width: 1200,
+  height: 630,
+  caption: 'Het kantoor van MS618 bij FJ08 aan de haven van Joure',
+};
+
 const schemaGraph = [
   buildOrganizationPiece(),
   buildWebsitePiece(),
-  buildWebpagePiece(pageUrl, 'MS618 — AI Marketing Bureau voor B2B | Senior Specialisten', 'Geen juniorkoppels. Geen losse acties. MS618 combineert senior expertise met AI voor meetbare B2B-groei — van SEO en advertenties tot analytics.', breadcrumbs),
+  withPrimaryImage(
+    buildWebpagePiece(pageUrl, 'MS618 — AI Marketing Bureau voor B2B | Senior Specialisten', 'Geen juniorkoppels. Geen losse acties. MS618 combineert senior expertise met AI voor meetbare B2B-groei — van SEO en advertenties tot analytics.', breadcrumbs),
+    homeImage,
+  ),
   buildBreadcrumbPiece(pageUrl, breadcrumbs),
 ];
 ---
@@ -36,6 +49,7 @@ const schemaGraph = [
   title="Richting in versnelling"
   seoTitle="AI-marketingbureau voor B2B-groei | Senior team | MS618"
   description="Wij nemen je complete online groei over: AI, SEO, advertenties en website. Senior specialisten, geen juniors. Eén partner, geen marketingafdeling nodig."
+  ogImage={homeImage.url}
   ogType="website"
   rss={true}
   schemaGraph={schemaGraph}
