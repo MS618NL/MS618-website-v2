@@ -64,6 +64,23 @@ stond de rij met 15 klantlogo's. Opgelost in PR #55; deze regels houden het zo.
   uit de website-skill (`gtm-factory/_skills/website/scripts/`); vervang het daar en kopieer het
   hierheen, nooit hier los aanpassen.
 
+## Taal
+
+Op 11-11-2026 lekten 9 van de 23 Engelse pagina's naar het Nederlands: de Engelse home toonde
+Nederlandse blogposts ("Lees:", links naar `/blog/`), en Engelse pagina's hadden Nederlandse datums
+omdat `formatDate` zonder taal werd aangeroepen. Google zette bij Engelse instellingen Nederlandse en
+Engelse sitelinks door elkaar. Opgelost in PR #57; deze regels houden het zo.
+
+- **Lijsten uit de eigen taal.** Een Engelse pagina haalt posts uit `blog-en` en geeft `BlogCard`
+  `basePath="/en/blog"` mee.
+- **Datums in de taal van de pagina.** `formatDate(datum, 'en-GB')` op Engelse pagina's; `BlogCard`
+  kiest de taal zelf uit `basePath`. Datums staan in `<time>`.
+- **Links in de eigen taal.** Een link in de inhoud naar de andere taal mag alleen als taalknop naar
+  de eigen vertaling, of met `hreflang` op de link.
+- **Controle bij elke build.** `scripts/taallek-check.mjs` draait in de postbuild, na de
+  zoekbeeldcontrole en vóór de IndexNow-ping. Een productiebuild stopt op FOUT. Los:
+  `npm run check:taal`. Kopie uit de website-skill, net als `zoekresultaat-check.mjs`.
+
 ## Tools
 
 - `npm outdated`, `npm audit` -- snelle status.
