@@ -41,7 +41,7 @@ const breadcrumbs = [
           <span class="tag">{caseStudy.data.service}</span>
           <span class="case-client">{caseStudy.data.client}</span>
           <time datetime={caseStudy.data.publishDate.toISOString()}>
-            {formatDate(caseStudy.data.publishDate)}
+            {formatDate(caseStudy.data.publishDate, 'en-GB')}
           </time>
         </div>
         <h1>{caseStudy.data.title}</h1>

@@ -17,7 +17,8 @@ import {
 } from '@/utils/schema';
 import site from '@/data/site.json';
 
-const recentPosts = (await getCollection('blog'))
+// English collection: the Dutch one put Dutch titles, "Lees:" and /blog/ links on the English home (11-11-2026).
+const recentPosts = (await getCollection('blog-en'))
   .filter((p) => !p.data.noindex)
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
   .slice(0, 3);
@@ -362,6 +363,7 @@ const schemaGraph = [
                 publishDate={post.data.publishDate}
                 category={post.data.category}
                 author={post.data.author}
+                basePath="/en/blog"
               />
             ))}
           </div>
