@@ -13,6 +13,7 @@ import {
   buildWebsitePiece,
   buildWebpagePiece,
   buildBreadcrumbPiece,
+  withPrimaryImage,
 } from '@/utils/schema';
 import site from '@/data/site.json';
 
@@ -24,10 +25,22 @@ const recentPosts = (await getCollection('blog'))
 const pageUrl = site.url + '/en/';
 const breadcrumbs = [{ name: 'Home' }];
 
+// Own preferred image (og:image + primaryImageOfPage). Client logos and the Raptor photo
+// get X-Robots-Tag: noindex in vercel.json, so Google never picks them as the thumbnail.
+const homeImage = {
+  url: '/og/home.jpg',
+  width: 1200,
+  height: 630,
+  caption: 'The MS618 office at FJ08 on the harbour of Joure',
+};
+
 const schemaGraph = [
   buildOrganizationPiece(),
   buildWebsitePiece(),
-  buildWebpagePiece(pageUrl, 'MS618 — AI Marketing Agency for B2B | Senior Specialists, Real Growth', 'No junior teams, no scattered tactics. MS618 combines senior expertise with AI for measurable B2B growth — SEO, paid ads, content and analytics. One system.', breadcrumbs),
+  withPrimaryImage(
+    buildWebpagePiece(pageUrl, 'MS618 — AI Marketing Agency for B2B | Senior Specialists, Real Growth', 'No junior teams, no scattered tactics. MS618 combines senior expertise with AI for measurable B2B growth — SEO, paid ads, content and analytics. One system.', breadcrumbs),
+    homeImage,
+  ),
   buildBreadcrumbPiece(pageUrl, breadcrumbs),
 ];
 ---
@@ -36,6 +49,7 @@ const schemaGraph = [
   title="Direction in acceleration"
   seoTitle="AI marketing agency for B2B growth | Senior team | MS618"
   description="We take over your complete online growth: AI, SEO, advertising and website. Senior specialists, no juniors, no scattered tactics. One partner, no marketing department needed."
+  ogImage={homeImage.url}
   ogType="website"
   rss={true}
   schemaGraph={schemaGraph}

@@ -90,6 +90,8 @@ export default defineConfig({
         !page.includes('/voorwaarden') &&
         !page.includes('/en/terms') &&
         !page.includes('/privacy') &&
+        // Colofon staat op noindex (10-11-2026): Google toonde hem als sitelink onder "ms618".
+        !page.includes('/colofon') &&
         !page.includes('/bedankt') &&
         !page.includes('/thank-you'),
       serialize(item) {

@@ -104,6 +104,35 @@ export function buildWebpagePiece(
   };
 }
 
+export interface PrimaryImage {
+  /** Pad vanaf de site-root (/og/home.jpg) of een volledige URL. */
+  url: string;
+  width: number;
+  height: number;
+  caption: string;
+}
+
+/**
+ * Voorkeursbeeld voor de miniatuur in Google (primaryImageOfPage), naast og:image.
+ * Zonder eigen beeld negeert Google een algemeen of tekstbeeld en kiest het zelf een
+ * beeld van de pagina; op de homepage was dat een klantlogo (10-11-2026).
+ */
+export function withPrimaryImage(piece: SchemaGraphPiece, image: PrimaryImage): SchemaGraphPiece {
+  const url = image.url.startsWith('http') ? image.url : `${site.url}${image.url}`;
+  return {
+    ...piece,
+    primaryImageOfPage: {
+      '@type': 'ImageObject',
+      '@id': `${String(piece.url)}#primaryimage`,
+      url,
+      contentUrl: url,
+      width: image.width,
+      height: image.height,
+      caption: image.caption,
+    },
+  };
+}
+
 export function buildBreadcrumbPiece(
   pageUrl: string,
   items: BreadcrumbItem[],
