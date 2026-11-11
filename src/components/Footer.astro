@@ -87,6 +87,8 @@ const localPages = lang === 'en'
         <a href={`${p}/privacy/`}>{t('footer.privacy')}</a>
         <a href={lang === 'en' ? '/en/terms/' : '/voorwaarden/'}>{lang === 'en' ? 'Terms & Conditions' : 'Algemene Voorwaarden'}</a>
         {lang !== 'en' && <a href="/colofon/">Colofon</a>}
+        {/* Opent de voorkeuren van de cookiemelding (CookieBanner.astro). */}
+        <button type="button" class="footer-cookie-btn" data-cc="show-preferencesModal">{lang === 'en' ? 'Cookie settings' : 'Cookie-instellingen'}</button>
         <a href={`${p ? p : ''}/rss.xml`}>RSS</a>
         <a href="/sitemap-index.xml">{t('footer.sitemap')}</a>
       </nav>
@@ -235,7 +237,8 @@ const localPages = lang === 'en'
 
   .footer-bottom-inner nav {
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
   }
 
   .footer-bottom-inner a {
@@ -245,6 +248,21 @@ const localPages = lang === 'en'
   }
 
   .footer-bottom-inner a:hover {
+    color: oklch(0.65 0 0);
+  }
+
+  /* Knop die eruitziet als de links ernaast. */
+  .footer-cookie-btn {
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    color: oklch(0.63 0 0);
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+
+  .footer-cookie-btn:hover {
     color: oklch(0.65 0 0);
   }
 

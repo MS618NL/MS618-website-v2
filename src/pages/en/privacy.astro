@@ -19,7 +19,7 @@ const breadcrumbs = [
     <div class="container">
       <div class="legal-content">
         <h1>Privacy policy</h1>
-        <p class="legal-updated">Last updated: March 2026</p>
+        <p class="legal-updated">Last updated: November 2026</p>
 
         <p>MS618 B.V. ("MS618", "we", "us") respects the privacy of all visitors to the website ms618.nl and of all clients, contact persons and other data subjects. In this privacy policy we explain which personal data we collect, why we do so, how we protect this data and what rights you have.</p>
         <p>This policy has been drawn up in accordance with the General Data Protection Regulation (GDPR) and the Dutch GDPR Implementation Act.</p>
@@ -100,7 +100,7 @@ const breadcrumbs = [
         <h3>4.3 Responsibility</h3>
         <p>The client remains responsible for reviewing and approving delivered work before publishing or otherwise using it. MS618 is not liable for unintended inclusion of personal data in AI-generated output that has been approved by the client.</p>
 
-        <h2>5. Cookies and tracking technologies</h2>
+        <h2 id="cookies">5. Cookies and tracking technologies</h2>
         <h3>5.1 What are cookies</h3>
         <p>Cookies are small text files placed on your device when you visit our website.</p>
 
@@ -108,18 +108,19 @@ const breadcrumbs = [
         <div class="legal-table-wrap">
           <table class="legal-table">
             <thead>
-              <tr><th>Type</th><th>Purpose</th><th>Retention period</th></tr>
+              <tr><th>Cookie</th><th>Type</th><th>Purpose</th><th>Retention period</th></tr>
             </thead>
             <tbody>
-              <tr><td>Necessary cookies</td><td>Website functionality, security, session management</td><td>Duration of session</td></tr>
-              <tr><td>Analytical cookies</td><td>Insight into website usage (anonymized)</td><td>Maximum 26 months</td></tr>
-              <tr><td>Marketing cookies</td><td>Measuring advertising effectiveness (where applicable)</td><td>Maximum 12 months</td></tr>
+              <tr><td>cc_cookie</td><td>Necessary</td><td>Remembers your cookie choice</td><td>6 months</td></tr>
+              <tr><td>_ga</td><td>Analytics (Google Analytics)</td><td>Distinguishes visitors, only with your consent</td><td>2 years</td></tr>
+              <tr><td>_ga_6TS8NZNKRQ</td><td>Analytics (Google Analytics)</td><td>Keeps track of the visit, only with your consent</td><td>2 years</td></tr>
             </tbody>
           </table>
         </div>
+        <p>We do not place marketing or advertising cookies.</p>
 
         <h3>5.3 Consent</h3>
-        <p>On your first visit to our website we ask your consent for placing non-essential cookies. You can change your preferences at any time via the cookie settings on the website or through your browser settings.</p>
+        <p>On your first visit to our website we ask your consent for placing non-essential cookies. You can change your preferences at any time via the <a href="#cookies" data-cc="show-preferencesModal">cookie settings</a> (also at the bottom of every page) or through your browser settings.</p>
 
         <h3>5.4 Google Analytics</h3>
         <p>We may use Google Analytics to analyze website usage. We have taken the following measures:</p>

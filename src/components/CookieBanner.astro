@@ -1,0 +1,16 @@
+---
+// Cookiemelding: CookieConsent v3, MS618-standaard opbouw v2 (zoals op de klantsites). De melding
+// zelf (teksten NL en EN, start, Consent Mode-update) staat in public/cookieconsent-start.js; de
+// Consent Mode-standaard in ConsentDefaults.astro, de huisstijl in global.css (#cc-main).
+//
+// Waarom zo: de CSP van deze site (astro.config.mjs) werkt met hashes en 'strict-dynamic'. Astro hasht
+// alleen scripts die het inline zet. Het meldingsscript is daarvoor te groot: Astro maakte er een los
+// bestand in /_astro/ van zonder hash, en dat blokkeerde de browser (getest 11-11-2026). Dit kleine
+// script blijft inline en krijgt een hash; wat het zelf toevoegt mag mee, net als gtm.js.
+---
+<script>
+  const s = document.createElement('script');
+  s.src = '/cookieconsent-start.js';
+  s.async = true;
+  document.head.append(s);
+</script>

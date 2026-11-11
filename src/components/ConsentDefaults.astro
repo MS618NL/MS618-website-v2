@@ -1,0 +1,53 @@
+---
+// Google Consent Mode v2, vóór de GTM-bootstrap in de head (MS618-standaard, zoals Blue Bay en
+// Distinkt). Standaard alles geweigerd behalve noodzakelijk; Google Analytics laadt wel, maar meet
+// cookieloos tot er toestemming is. Een eerdere keuze uit de cookiemelding (cookie cc_cookie van
+// CookieConsent, zie public/cookieconsent-start.js) gaat meteen als update mee, zodat GTM bij het laden al de
+// juiste toestemming kent.
+//
+// ms618.nl adverteert niet: GTM-K3PJBX8 bevat alleen Google Analytics, en GA4 telde van mei tot
+// november 2026 0 betaalde bezoeken (11-11-2026). De advertentiesignalen blijven daarom altijd
+// denied en de melding vraagt alleen toestemming voor analyse. Komt er Google Ads bij: categorie
+// advertisement terug in public/cookieconsent-start.js, zoals bij Distinkt.
+//
+// Een gewone <script>, geen is:inline: de CSP in astro.config.mjs hasht alleen scripts die Astro zelf
+// verwerkt. De GTM-bootstrap start pas bij window.load, dus deze standaard staat er altijd eerder.
+// CONSENT_REVISION gelijk houden met public/cookieconsent-start.js.
+---
+<script>
+  const CONSENT_REVISION = 0;
+  const w = window as any;
+  w.dataLayer = w.dataLayer || [];
+  // gtag geeft het arguments-object door, geen array: anders negeert GTM het commando.
+  w.gtag =
+    w.gtag ||
+    function gtag() {
+      // eslint-disable-next-line prefer-rest-params
+      w.dataLayer.push(arguments);
+    };
+
+  w.gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    personalization_storage: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500,
+  });
+
+  try {
+    const m = document.cookie.match(/(?:^|;\s*)cc_cookie=([^;]*)/);
+    if (m) {
+      const c = JSON.parse(decodeURIComponent(m[1]));
+      if ((c.revision || 0) === CONSENT_REVISION && Array.isArray(c.categories)) {
+        w.gtag('consent', 'update', {
+          analytics_storage: c.categories.includes('analytics') ? 'granted' : 'denied',
+        });
+      }
+    }
+  } catch {
+    // Onleesbare cookie: dan blijft alles geweigerd en vraagt de melding opnieuw.
+  }
+</script>

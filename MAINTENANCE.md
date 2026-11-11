@@ -81,6 +81,30 @@ Engelse sitelinks door elkaar. Opgelost in PR #57; deze regels houden het zo.
   zoekbeeldcontrole en vóór de IndexNow-ping. Een productiebuild stopt op FOUT. Los:
   `npm run check:taal`. Kopie uit de website-skill, net als `zoekresultaat-check.mjs`.
 
+## Cookiemelding
+
+Sinds 11-11-2026 vraagt de site toestemming met de MS618-standaard: CookieConsent v3 (MIT), zelf
+gehost, opbouw v2 zoals op de klantsites (eerste laag Accepteren + Instellingen, weigeren via
+Instellingen > Alles weigeren). Alleen de categorieën noodzakelijk en analytisch: GTM-K3PJBX8 bevat
+alleen Google Analytics en de site adverteert niet. Komt er Google Ads bij, voeg dan de categorie
+advertisement toe (zie de klantsites, bijvoorbeeld Distinkt) en zet `ad_storage` en `ad_user_data`
+mee in de update.
+
+- **Consent Mode-standaard:** `src/components/ConsentDefaults.astro`, in de head vóór GTM. Alles
+  denied; een eerdere keuze uit de cookie `cc_cookie` gaat direct als update mee.
+- **Melding:** `public/cookieconsent-start.js` (teksten NL en EN, start, update na een keuze), geladen
+  door `src/components/CookieBanner.astro`. Bibliotheek in `public/vendor/cookieconsent/3.1.0/`.
+- **Opmaak:** blok `#cc-main` onderaan `src/styles/global.css`. Knop Cookie-instellingen in de footer
+  en in de privacyverklaring (sectie 5, `#cookies`) met `data-cc="show-preferencesModal"`.
+- **CSP, let op.** De CSP (`astro.config.mjs`) werkt met hashes en `'strict-dynamic'`. Astro hasht alleen
+  scripts die het inline zet; een groter `<script>` wordt een los bestand in `/_astro/` zonder hash,
+  en dat blokkeert de browser stil. Daarom staat de melding in `public/` en laadt een klein inline
+  script haar, net zoals de GTM-bootstrap gtm.js laadt. Zet dus geen grote scripts in componenten, en
+  controleer na elke wijziging in de browser dat er geen CSP-melding in de console staat.
+- **Controle:** `cookiebanner-check.mjs <app>` uit de website-skill (lettertypen, Googlebot) en na
+  livegang `--live https://www.ms618.nl/`. `CONSENT_REVISION` in beide bestanden gelijk houden; ophogen
+  laat iedereen opnieuw kiezen.
+
 ## Tools
 
 - `npm outdated`, `npm audit` -- snelle status.
