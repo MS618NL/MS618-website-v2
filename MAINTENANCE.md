@@ -43,6 +43,27 @@ Niet bundelen met inhoudelijke of SEO-changes. Volgorde:
 Geen acute noodzaak zolang we op een ondersteunde 5.x zitten; doen voordat 5.x uit
 support loopt (zodra 6 de actieve major is, krijgt 5 alleen nog beperkte fixes).
 
+## Beeld in Google
+
+Op 10-11-2026 toonde Google bij "ms618" het logo van klant Hout Met Historie als beeld bij de
+homepage, en de colofon als sitelink. De home had alleen het algemene tekstbeeld
+`/og/default.png`; dat slaat Google over, en dan kiest het zelf een beeld van de pagina. Daar
+stond de rij met 15 klantlogo's. Opgelost in PR #55; deze regels houden het zo.
+
+- **Eigen foto op de home.** `/` en `/en/` geven `/og/home.jpg` (kantoor FJ08, 1200x630) door als
+  og:image én als `primaryImageOfPage` (`withPrimaryImage` in `src/utils/schema.ts`). Geen logo
+  en geen beeld met tekst. Houd dat aan als je de home herbouwt.
+- **Logo's van anderen uit Google.** Klantlogo's staan in `public/images/clients/`; `vercel.json`
+  geeft die map `X-Robots-Tag: noindex`. Nieuwe logo's van klanten of partners horen daar ook.
+  Het eigen logo nooit.
+- **Colofon niet in Google.** `/colofon/` staat op noindex en buiten de sitemap (filter in
+  `astro.config.mjs`), zodat hij niet als sitelink verschijnt.
+- **Controle bij elke build.** `scripts/zoekresultaat-check.mjs` draait in de postbuild, ook op
+  Vercel, vóór de IndexNow-ping. Een productiebuild (een merge naar `main`) stopt op FOUT; een
+  preview meldt het en gaat door. Los draaien: `npm run check:zoekbeeld`. Het script is een kopie
+  uit de website-skill (`gtm-factory/_skills/website/scripts/`); vervang het daar en kopieer het
+  hierheen, nooit hier los aanpassen.
+
 ## Tools
 
 - `npm outdated`, `npm audit` -- snelle status.
