@@ -1,6 +1,8 @@
 ---
 import SEO from '@/components/seo/SEO.astro';
 import Schema from '@/components/seo/Schema.astro';
+import ConsentDefaults from '@/components/ConsentDefaults.astro';
+import CookieBanner from '@/components/CookieBanner.astro';
 import '@/styles/global.css';
 import { getLangFromUrl } from '@/i18n';
 
@@ -75,6 +77,8 @@ const lang = getLangFromUrl(Astro.url);
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://www.google-analytics.com" />
+    <!-- Consent Mode v2: standaard geweigerd, vóór GTM (ConsentDefaults.astro) -->
+    <ConsentDefaults />
     <!-- Google Tag Manager (deferred after load) -->
     <script>
     window.addEventListener('load', function() {
@@ -98,6 +102,7 @@ const lang = getLangFromUrl(Astro.url);
       <div class="star-layer" id="stars-lg"></div>
     </div>
     <slot />
+    <CookieBanner />
   </body>
 </html>
 

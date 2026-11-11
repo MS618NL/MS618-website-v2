@@ -340,3 +340,293 @@ hr {
     scroll-behavior: auto !important;
   }
 }
+
+/* Cookiemelding in de huisstijl (CookieConsent v3, zie CookieBanner.astro). MS618-standaard opbouw v2
+   (6-11-2026, zoals op de klantsites): kopbalk met het merk, gecentreerde titel, tekst links,
+   knoppenbalk onderaan met scheidingslijn. Eerste laag: Accepteren vol (zoals .btn-primary),
+   Instellingen hol (zoals .btn-secondary), geen weigerknop; weigeren via Instellingen > Alles weigeren.
+   Hoekig zoals de rest van de site. Desktop venster in het midden, mobiel paneel onderaan (positie uit
+   CookieBanner.astro). De bibliotheek-CSS laadt na deze file; het voorvoegsel `html #cc-main` weegt
+   zwaarder dan haar regels. Alleen haar mobiele regels hebben !important, de mobiele regels hier dus ook.
+   Het venster zelf heeft geen padding: kopbalk, tekst en knoppenbalk regelen hun eigen ruimte, zodat de
+   lijnen over de volle breedte lopen. --cc-pad = zijruimte. */
+html #cc-main {
+  --cc-font-family: var(--font-sans);
+  --cc-bg: var(--color-bg-alt);
+  --cc-primary-color: var(--color-text);
+  --cc-secondary-color: var(--color-text-muted);
+  --cc-link-color: var(--color-text);
+  --cc-modal-border-radius: var(--radius);
+  --cc-btn-border-radius: var(--radius);
+  --cc-btn-primary-bg: var(--color-text);
+  --cc-btn-primary-color: var(--color-bg);
+  --cc-btn-primary-border-color: var(--color-text);
+  --cc-btn-primary-hover-bg: transparent;
+  --cc-btn-primary-hover-color: var(--color-text);
+  --cc-btn-primary-hover-border-color: var(--color-text);
+  --cc-btn-secondary-bg: transparent;
+  --cc-btn-secondary-color: var(--color-text);
+  --cc-btn-secondary-border-color: var(--color-border-light);
+  --cc-btn-secondary-hover-bg: oklch(0.17 0 0);
+  --cc-btn-secondary-hover-color: var(--color-text);
+  --cc-btn-secondary-hover-border-color: var(--color-text);
+  --cc-toggle-on-bg: var(--color-accent);
+  --cc-toggle-off-bg: oklch(1 0 0 / 0.28);
+  --cc-toggle-on-knob-bg: var(--color-text);
+  --cc-toggle-off-knob-bg: var(--color-text);
+  --cc-toggle-readonly-bg: oklch(1 0 0 / 0.4);
+  --cc-toggle-readonly-knob-bg: var(--color-bg);
+  --cc-toggle-readonly-knob-icon-color: var(--color-text);
+  --cc-separator-border-color: var(--color-border);
+  --cc-section-category-border: var(--color-border);
+  --cc-cookie-category-block-bg: oklch(1 0 0 / 0.04);
+  --cc-cookie-category-block-border: oklch(1 0 0 / 0.08);
+  --cc-cookie-category-block-hover-bg: oklch(1 0 0 / 0.08);
+  --cc-cookie-category-block-hover-border: oklch(1 0 0 / 0.12);
+  --cc-cookie-category-expanded-block-bg: oklch(1 0 0 / 0.03);
+  --cc-cookie-category-expanded-block-hover-bg: oklch(1 0 0 / 0.06);
+  --cc-footer-bg: oklch(0 0 0 / 0.25);
+  --cc-footer-color: var(--color-text-muted);
+  --cc-footer-border-color: var(--color-border);
+  --cc-webkit-scrollbar-bg: oklch(1 0 0 / 0.2);
+  --cc-webkit-scrollbar-hover-bg: oklch(1 0 0 / 0.35);
+  --cc-overlay-bg: oklch(0 0 0 / 0.65);
+}
+html #cc-main .cm__title,
+html #cc-main .pm__title,
+html #cc-main .pm__section-title {
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+html #cc-main .cm__btn,
+html #cc-main .pm__btn {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+html #cc-main .cm__desc a,
+html #cc-main .pm__section-desc a {
+  background: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+html #cc-main .cm__desc a:hover,
+html #cc-main .pm__section-desc a:hover {
+  color: var(--color-accent-hover);
+}
+/* Donker venster op een gedimde, donkere pagina: dunne lichte rand voor de scheiding. */
+html #cc-main .cm,
+html #cc-main .pm {
+  border: 1px solid var(--color-border-light);
+}
+
+html #cc-main .cm--box.cm--wide {
+  --cc-pad: 32px;
+  width: 640px;
+  max-width: calc(100vw - 48px);
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 20px 60px oklch(0 0 0 / 0.5);
+}
+html #cc-main .cm--box.cm--wide .cm__body {
+  padding: 0;
+}
+html #cc-main .cm--box.cm--wide .cm__texts {
+  padding: 0 var(--cc-pad);
+}
+/* Kopbalk met het merk over de volle breedte, als tekst zoals in de header en footer van de site. */
+html #cc-main .cm--box.cm--wide .cm__texts::before {
+  content: 'MS618';
+  display: block;
+  margin: 0 calc(-1 * var(--cc-pad)) 22px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--cc-separator-border-color);
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+}
+html #cc-main .cm--box.cm--wide .cm__title {
+  padding: 0;
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+  white-space: normal;
+  text-wrap: balance;
+}
+html #cc-main .cm--box.cm--wide .cm__title + .cm__desc {
+  margin-top: 0;
+}
+html #cc-main .cm--box.cm--wide .cm__desc {
+  padding: 0;
+  max-height: none;
+  overflow: visible;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* Knoppenbalk: lijn en lichte schaduw erboven, knoppen naast elkaar over de volle breedte. */
+html #cc-main .cm--box.cm--wide .cm__btns {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 20px var(--cc-pad) 20px;
+  border-top: 1px solid var(--cc-separator-border-color);
+  box-shadow: 0 -10px 16px -14px oklch(0 0 0 / 0.6);
+}
+/* Accepteren (vol, links) en Instellingen (hol, rechts), even breed. Zonder weigerknop zet de
+   bibliotheek beide knoppen in één groep (cm__btn-group--uneven). */
+html #cc-main .cm--box.cm--wide .cm__btn-group {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: row;
+  gap: 12px;
+}
+html #cc-main .cm--box.cm--wide .cm__btn + .cm__btn,
+html #cc-main .cm--box.cm--wide .cm__btn-group + .cm__btn-group {
+  margin: 0;
+}
+html #cc-main .cm--box.cm--wide .cm__btn {
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 52px;
+  padding: 14px 20px;
+  border-width: 1px;
+  font-size: 16px;
+  line-height: 22px;
+}
+html #cc-main .cm--box.cm--wide .cm__btn[data-role='all'] {
+  background: var(--cc-btn-primary-bg);
+  border-color: var(--cc-btn-primary-border-color);
+  color: var(--cc-btn-primary-color);
+}
+html #cc-main .cm--box.cm--wide .cm__btn[data-role='all']:hover {
+  background: var(--cc-btn-primary-hover-bg);
+  border-color: var(--cc-btn-primary-hover-border-color);
+  color: var(--cc-btn-primary-hover-color);
+}
+html #cc-main .cm--box.cm--wide .cm__btn[data-role='show'] {
+  background: var(--cc-btn-secondary-bg);
+  border-color: var(--cc-btn-secondary-border-color);
+  color: var(--cc-btn-secondary-color);
+}
+html #cc-main .cm--box.cm--wide .cm__btn[data-role='show']:hover {
+  background: var(--cc-btn-secondary-hover-bg);
+  border-color: var(--cc-btn-secondary-hover-border-color);
+  color: var(--cc-btn-secondary-hover-color);
+}
+
+/* Voorkeuren: Alles accepteren | Alles weigeren hol, Keuze opslaan vol over de hele breedte. */
+html #cc-main .pm__footer {
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 24px 20px;
+  box-shadow: 0 -10px 16px -14px oklch(0 0 0 / 0.6);
+}
+html #cc-main .pm__btn-group {
+  display: flex;
+  gap: 10px;
+}
+html #cc-main .pm__btn + .pm__btn,
+html #cc-main .pm__btn-group + .pm__btn-group {
+  margin: 0;
+}
+html #cc-main .pm .pm__btn {
+  flex: 1 1 0;
+  min-height: 52px;
+  padding: 14px 16px;
+  border-width: 1px;
+  font-size: 16px;
+  line-height: 22px;
+}
+html #cc-main .pm .pm__btn[data-role='all'],
+html #cc-main .pm .pm__btn[data-role='necessary'] {
+  background: var(--cc-btn-secondary-bg);
+  border-color: var(--cc-btn-secondary-border-color);
+  color: var(--cc-btn-secondary-color);
+}
+html #cc-main .pm .pm__btn[data-role='all']:hover,
+html #cc-main .pm .pm__btn[data-role='necessary']:hover {
+  background: var(--cc-btn-secondary-hover-bg);
+  border-color: var(--cc-btn-secondary-hover-border-color);
+  color: var(--cc-btn-secondary-hover-color);
+}
+html #cc-main .pm .pm__btn[data-role='save'] {
+  background: var(--cc-btn-primary-bg);
+  border-color: var(--cc-btn-primary-border-color);
+  color: var(--cc-btn-primary-color);
+}
+html #cc-main .pm .pm__btn[data-role='save']:hover {
+  background: var(--cc-btn-primary-hover-bg);
+  border-color: var(--cc-btn-primary-hover-border-color);
+  color: var(--cc-btn-primary-hover-color);
+}
+
+@media screen and (max-width: 640px) {
+  html #cc-main .cm--box.cm--wide {
+    --cc-pad: 20px;
+    width: auto !important;
+    max-width: none !important;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 0 !important;
+  }
+  html #cc-main .cm--box.cm--wide .cm__texts::before {
+    padding: 14px 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  /* Op een telefoon past de titel niet op één regel: twee gelijke regels. */
+  html #cc-main .cm--box.cm--wide .cm__title {
+    font-size: 19px;
+    line-height: 26px;
+  }
+  html #cc-main .cm--box.cm--wide .cm__desc {
+    font-size: 15.5px;
+    line-height: 23px;
+  }
+  html #cc-main .cm--box.cm--wide .cm__title,
+  html #cc-main .cm--box.cm--wide .cm__desc {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  /* De bibliotheek zet hier alles onder elkaar; terug naar de desktopopbouw. */
+  html #cc-main .cm--box.cm--wide .cm__btns {
+    flex-direction: row !important;
+    margin-top: 18px;
+    padding: 14px var(--cc-pad) 16px !important;
+    border-top: 1px solid var(--cc-separator-border-color) !important;
+  }
+  html #cc-main .cm--box.cm--wide .cm__btn-group {
+    flex-direction: row !important;
+  }
+  html #cc-main .cm--box.cm--wide .cm__btn + .cm__btn,
+  html #cc-main .cm--box.cm--wide .cm__btn-group + .cm__btn-group {
+    margin: 0 !important;
+  }
+  html #cc-main .cm--box.cm--wide .cm__btn {
+    flex: 1 1 0 !important;
+    min-height: 52px;
+    padding: 13px 12px;
+  }
+  /* Voorkeuren: de twee holle knoppen naast elkaar, Keuze opslaan eronder. */
+  html #cc-main .pm__footer {
+    padding: 14px 16px 16px !important;
+  }
+  html #cc-main .pm__btn-group:has([data-role='all']) {
+    flex-direction: row !important;
+  }
+  html #cc-main .pm__btn + .pm__btn,
+  html #cc-main .pm__btn-group + .pm__btn-group {
+    margin: 0 !important;
+  }
+  html #cc-main .pm .pm__btn {
+    min-height: 52px;
+    padding: 13px 10px;
+  }
+}
