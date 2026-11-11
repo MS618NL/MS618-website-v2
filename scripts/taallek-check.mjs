@@ -59,7 +59,8 @@ export function analyseer(html, paginaUrl) {
   const $ = cheerio.load(html);
   const taal = taalVan($('html').attr('lang'));
   const main = $('main').first();
-  const scope = main.length ? main : $('body');
+  // Zonder <main> (sommige WordPress-replica's, Inspecto 11-11): de body zonder header, nav en footer.
+  const scope = main.length ? main : $('body').clone().find('header, nav, footer, [role="banner"], [role="navigation"], [role="contentinfo"]').remove().end();
   // Alleen datums die de site zelf opmaakt (<time>, of een class met date/datum): een bronvermelding in
   // lopende tekst ("Search Engine Land, March 2026") is geen lek.
   const tekst = scope.find('time, [class*="date"], [class*="datum"]').map((_, el) => $(el).text()).get().join(' | ').replace(/\s+/g, ' ');
