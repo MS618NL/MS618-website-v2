@@ -52,11 +52,11 @@ const breadcrumbs = [
         <div class="post-meta">
           <span class="tag">{post.data.category}</span>
           <time datetime={post.data.publishDate.toISOString()}>
-            {formatDate(post.data.publishDate)}
+            {formatDate(post.data.publishDate, 'en-GB')}
           </time>
           {post.data.updatedDate && post.data.updatedDate.getTime() !== post.data.publishDate.getTime() && (
             <span class="updated">
-              Updated {formatDate(post.data.updatedDate)}
+              Updated {formatDate(post.data.updatedDate, 'en-GB')}
             </span>
           )}
         </div>

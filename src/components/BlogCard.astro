@@ -18,7 +18,7 @@ const { title, description, slug, publishDate, category, author = 'MS618', baseP
   <div class="card-meta">
     <span class="tag">{category}</span>
     <time datetime={publishDate.toISOString()} class="card-date">
-      {formatDate(publishDate)}
+      {formatDate(publishDate, basePath.startsWith('/en') ? 'en-GB' : 'nl-NL')}
     </time>
   </div>
   <h3 class="card-title">
