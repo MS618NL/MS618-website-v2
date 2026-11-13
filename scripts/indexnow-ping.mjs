@@ -6,11 +6,18 @@
  */
 import { readFileSync, existsSync } from 'node:fs';
 
-const KEY = 'dac209c86f4e4e6cbc8080e06bbb9d6c';
+// Nieuwe sleutel 13-11-2026: Bing gaf op de oude (dac209c8...) altijd 403 UserForbiddedToAccessSite,
+// ook al stond het sleutelbestand goed live. Het oude bestand blijft staan, het kan geen kwaad.
+const KEY = '3c56e421d0e07a7923f7dfa3f124638a';
 const HOST = 'www.ms618.nl';
 const SITEMAP = './dist/sitemap-0.xml';
 
 async function main() {
+  // Alleen productie pingt: een preview of lokale build mag de live adressen niet aanmelden.
+  if (process.env.VERCEL_ENV !== 'production') {
+    console.log(`[indexnow] overgeslagen (VERCEL_ENV=${process.env.VERCEL_ENV ?? 'niet gezet'})`);
+    return;
+  }
   if (!existsSync(SITEMAP)) {
     console.warn(`[indexnow] ${SITEMAP} not found, skipping ping`);
     return;
@@ -37,7 +44,8 @@ async function main() {
     body: JSON.stringify(body),
     signal: AbortSignal.timeout(10000),
   });
-  console.log(`[indexnow] submitted ${urlList.length} URLs -> HTTP ${res.status}`);
+  const detail = res.ok ? '' : ` ${(await res.text()).slice(0, 200)}`;
+  console.log(`[indexnow] submitted ${urlList.length} URLs -> HTTP ${res.status}${detail}`);
 }
 
 main().catch((err) => {
