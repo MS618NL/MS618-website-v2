@@ -50,7 +50,7 @@ We werken voor Friese bedrijven als [KIS Group](/cases/kis-group-ai/), Hoekstra 
 
 - **[SEO-bureau Friesland](/seo-friesland/)**: beter gevonden worden in Google op de termen die klanten opleveren
 - **[GEO en AI-vindbaarheid](/diensten/geo-optimalisatie/)**: geciteerd worden in ChatGPT, Perplexity en Google AI Overviews
-- **[Google Ads in Friesland](/google-ads-friesland/)** en [LinkedIn-advertenties](/diensten/digital-advertising/): campagnes die aanvragen opleveren, niet alleen kliks
+- **[Google Ads in Friesland](/google-ads-friesland/)** en [LinkedIn-advertenties](/diensten/online-adverteren/): campagnes die aanvragen opleveren, niet alleen kliks
 - **[LinkedIn-marketing en content](/diensten/social-media/)**: zichtbaar en geloofwaardig bij de beslissers in jouw markt
 - **[Website laten maken in Friesland](/webdesign-friesland/)**: een snelle, moderne site die scoort en converteert
 - **[AI-strategie](/diensten/ai-strategie/)**: AI concreet inzetten in je marketing en processen

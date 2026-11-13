@@ -58,7 +58,7 @@ Data heeft pas waarde als je er iets mee doet. Wij analyseren maandelijks je res
 
 ## Meten wat de rest oplevert
 
-Rapportage staat bij ons niet los van de uitvoering. De meting is de basis onder je [SEO-strategie](/diensten/seo-strategie/), je [Google Ads en LinkedIn Ads](/diensten/digital-advertising/) en je [website-optimalisatie](/diensten/website-optimalisatie/): zonder betrouwbare cijfers weet niemand of het werkt.
+Rapportage staat bij ons niet los van de uitvoering. De meting is de basis onder je [SEO-strategie](/diensten/seo-strategie/), je [Google Ads en LinkedIn Ads](/diensten/online-adverteren/) en je [website-optimalisatie](/diensten/website-optimalisatie/): zonder betrouwbare cijfers weet niemand of het werkt.
 
 ## Voor wie
 
