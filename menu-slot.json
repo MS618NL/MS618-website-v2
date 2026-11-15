@@ -52,6 +52,31 @@
         "/diensten/website-optimalisatie",
         "/over-ons"
       ]
+    },
+    {
+      "taal": "nl",
+      "id": "9768338c",
+      "hoofd": false,
+      "paginas": 41,
+      "voorbeeld": "/",
+      "waarom": "Vooraf vastgelegd op 15-11-2026: het menu na de adreswijziging van de advertentiepagina naar /diensten/online-adverteren (tak fix/nl-slug-online-adverteren). Zo maakt de volgorde van mergen niet uit.",
+      "links": [
+        "/",
+        "/blog",
+        "/cases",
+        "/contact",
+        "/diensten",
+        "/diensten/ai-strategie",
+        "/diensten/analytics-reporting",
+        "/diensten/content-marketing",
+        "/diensten/geo-optimalisatie",
+        "/diensten/online-adverteren",
+        "/diensten/seo-strategie",
+        "/diensten/social-media",
+        "/diensten/website-laten-maken",
+        "/diensten/website-optimalisatie",
+        "/over-ons"
+      ]
     }
   ],
   "footers": [
@@ -121,7 +146,52 @@
         "linkedin.com/company/ms618",
         "mailto:info@ms618.nl"
       ]
+    },
+    {
+      "taal": "nl",
+      "id": "8befed6c",
+      "hoofd": false,
+      "paginas": 41,
+      "voorbeeld": "/",
+      "waarom": "Vooraf vastgelegd op 15-11-2026: de footer na de adreswijziging van de advertentiepagina naar /diensten/online-adverteren (tak fix/nl-slug-online-adverteren). Zo maakt de volgorde van mergen niet uit.",
+      "links": [
+        "/",
+        "/blog",
+        "/colofon",
+        "/contact",
+        "/diensten",
+        "/diensten/ai-strategie",
+        "/diensten/geo-optimalisatie",
+        "/diensten/online-adverteren",
+        "/diensten/seo-strategie",
+        "/diensten/social-media",
+        "/diensten/website-laten-maken",
+        "/fibonacci",
+        "/google-ads-friesland",
+        "/marketingbureau-friesland",
+        "/marketingbureau-joure",
+        "/over-ons",
+        "/privacy",
+        "/rss.xml",
+        "/seo-friesland",
+        "/seo-heerenveen",
+        "/seo-joure",
+        "/seo-leeuwarden",
+        "/seo-lemmer",
+        "/seo-sneek",
+        "/sitemap-index.xml",
+        "/voorwaarden",
+        "/webdesign-friesland",
+        "linkedin.com/company/ms618",
+        "mailto:info@ms618.nl"
+      ]
     }
   ],
-  "logboek": []
+  "logboek": [
+    {
+      "datum": "2026-11-15",
+      "akkoord": "Jorrit (15-11): botsing met de openstaande adreswijziging vooraf oplossen",
+      "nieuw": 2
+    }
+  ]
 }

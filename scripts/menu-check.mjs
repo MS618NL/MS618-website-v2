@@ -163,7 +163,7 @@ export function beoordeel(paginas, slot) {
         fouten.push({
           soort, taal, id: g.id, paginas: g.paginas, hoofdGewijzigd,
           tekst: hoofdGewijzigd
-            ? `het ${soort === 'menu' ? 'hoofdmenu' : 'de footer'}${taal ? ` (${taal})` : ''} is gewijzigd op ${g.paginas.length} pagina's${d.extra.length ? `; erbij: ${kort(d.extra)}` : ''}${d.mist.length ? `; eraf: ${kort(d.mist)}` : ''}. Bewust? Leg vast met --vastleggen --akkoord "<wie, waarom>".`
+            ? `${soort === 'menu' ? 'het hoofdmenu' : 'de footer'}${taal ? ` (${taal})` : ''} is gewijzigd op ${g.paginas.length} pagina's${d.extra.length ? `; erbij: ${kort(d.extra)}` : ''}${d.mist.length ? `; eraf: ${kort(d.mist)}` : ''}. Bewust? Leg vast met --vastleggen --akkoord "<wie, waarom>".`
             : `${g.paginas.length === 1 ? g.paginas[0] : `${g.paginas.length} pagina's (${kort(g.paginas, 4)})`}: ${soort === 'menu' ? 'menu' : 'footer'} staat niet in het slot${g.links.length ? '' : ` (de pagina heeft geen ${soort})`}.${d.mist.length ? ` Mist tegenover het hoofd${soort === 'menu' ? 'menu' : 'footer'}: ${kort(d.mist)}.` : ''}${d.extra.length ? ` Extra: ${kort(d.extra)}.` : ''}`,
         });
       }
