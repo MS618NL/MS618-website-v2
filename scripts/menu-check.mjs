@@ -93,16 +93,18 @@ export function menuVan(html) {
   };
   const buitenFooter = (el) => $(el).closest('footer,[role="contentinfo"]').length === 0;
   let menu = [];
+  let menuBlok = ''; // waarin het menu is gevonden: 'header' of 'nav'
   $('header,nav,[role="banner"],[role="navigation"]').each((_, el) => {
     if (!buitenFooter(el)) return undefined;
     const l = links(el);
     if (!l.length) return undefined;
     menu = l;
+    menuBlok = el.tagName === 'header' || $(el).attr('role') === 'banner' ? 'header' : 'nav';
     return false; // de eerste met links is het menu
   });
   const footerEl = $('footer,[role="contentinfo"]').last();
   const footer = footerEl.length ? links(footerEl) : [];
-  return { stub, taal, menu, footer };
+  return { stub, taal, menu, menuBlok, footer };
 }
 
 function walk(dir) {
@@ -120,7 +122,7 @@ export function meet(dist) {
     if (m.stub) continue;
     let pad = `/${path.relative(dist, f).replace(/\\/g, '/')}`.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
     if (pad !== '/') pad = pad.replace(/\/$/, '');
-    paginas.push({ pad, taal: m.taal, menu: m.menu, menuId: hash(m.menu), footer: m.footer, footerId: hash(m.footer) });
+    paginas.push({ pad, taal: m.taal, menu: m.menu, menuId: hash(m.menu), menuBlok: m.menuBlok, footer: m.footer, footerId: hash(m.footer) });
   }
   return paginas.sort((a, b) => a.pad.localeCompare(b.pad));
 }
@@ -130,7 +132,7 @@ export function groepen(paginas, soort) {
   const map = new Map();
   for (const p of paginas) {
     const key = `${p.taal}|${p[`${soort}Id`]}`;
-    if (!map.has(key)) map.set(key, { taal: p.taal, id: p[`${soort}Id`], links: p[soort], paginas: [] });
+    if (!map.has(key)) map.set(key, { taal: p.taal, id: p[`${soort}Id`], links: p[soort], blok: soort === 'menu' ? p.menuBlok : '', paginas: [] });
     map.get(key).paginas.push(p.pad);
   }
   return [...map.values()].sort((a, b) => a.taal.localeCompare(b.taal) || b.paginas.length - a.paginas.length);
@@ -160,11 +162,16 @@ export function beoordeel(paginas, slot) {
         const basis = hoofdVast ? hoofdVast.links : grootsteVast ? grootsteVast.links : hoofdNu.links;
         const d = verschil(basis, g.links);
         const hoofdGewijzigd = hoofdVast && !vanTaal.some((x) => x.id === hoofdVast.id) && g === hoofdNu;
+        // primoteq.com 16-11-2026: de home had de kop nagebouwd zonder <header>. Gemeten werd alleen de eerste
+        // <nav>, en de melding "mist /contact" klopte niet: de knop stond er, buiten die <nav>. Zeg dat erbij.
+        const zonderHeader = soort === 'menu' && g.blok === 'nav' && hoofdNu.blok === 'header' && g !== hoofdNu
+          ? ' Let op: op deze pagina staat het menu niet in een <header>; gemeten is alleen de eerste <nav>. Links daarbuiten (een knop, het mobiele menu) tellen dan niet mee. Staan ze er wel, gebruik dan dezelfde kop als op de andere pagina\'s.'
+          : '';
         fouten.push({
           soort, taal, id: g.id, paginas: g.paginas, hoofdGewijzigd,
           tekst: hoofdGewijzigd
             ? `${soort === 'menu' ? 'het hoofdmenu' : 'de footer'}${taal ? ` (${taal})` : ''} is gewijzigd op ${g.paginas.length} pagina's${d.extra.length ? `; erbij: ${kort(d.extra)}` : ''}${d.mist.length ? `; eraf: ${kort(d.mist)}` : ''}. Bewust? Leg vast met --vastleggen --akkoord "<wie, waarom>".`
-            : `${g.paginas.length === 1 ? g.paginas[0] : `${g.paginas.length} pagina's (${kort(g.paginas, 4)})`}: ${soort === 'menu' ? 'menu' : 'footer'} staat niet in het slot${g.links.length ? '' : ` (de pagina heeft geen ${soort})`}.${d.mist.length ? ` Mist tegenover het hoofd${soort === 'menu' ? 'menu' : 'footer'}: ${kort(d.mist)}.` : ''}${d.extra.length ? ` Extra: ${kort(d.extra)}.` : ''}`,
+            : `${g.paginas.length === 1 ? g.paginas[0] : `${g.paginas.length} pagina's (${kort(g.paginas, 4)})`}: ${soort === 'menu' ? 'menu' : 'footer'} staat niet in het slot${g.links.length ? '' : ` (de pagina heeft geen ${soort})`}.${d.mist.length ? ` Mist tegenover het hoofd${soort === 'menu' ? 'menu' : 'footer'}: ${kort(d.mist)}.` : ''}${d.extra.length ? ` Extra: ${kort(d.extra)}.` : ''}${zonderHeader}`,
         });
       }
     }
