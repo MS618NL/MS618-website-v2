@@ -81,6 +81,23 @@ Engelse sitelinks door elkaar. Opgelost in PR #57; deze regels houden het zo.
   zoekbeeldcontrole en vóór de IndexNow-ping. Een productiebuild stopt op FOUT. Los:
   `npm run check:taal`. Kopie uit de website-skill, net als `zoekresultaat-check.mjs`.
 
+## Menu
+
+Elke pagina draagt het menu en de footer van de site. Aanleiding: op een klantsite ging op
+13-11-2026 een los aangeleverde pagina live met een zelf nagemaakt menu en zonder de footer.
+
+- **Het slot.** `menu-slot.json` legt per taal vast welke links het menu en de footer hebben.
+- **Controle bij elke build.** `scripts/menu-check.mjs` draait in de postbuild, na de taalcontrole
+  en vóór de IndexNow-ping. Een productiebuild stopt als een pagina een menu of footer heeft dat
+  niet in het slot staat; een preview of lokale build meldt het alleen. Los: `npm run check:menu`.
+  Kopie uit de website-skill, net als `taallek-check.mjs`.
+- **Menu of footer bewust gewijzigd** (item erbij of eraf, een landingspagina in de footer, een
+  gewijzigd adres van een pagina die in het menu staat): na `npm run build`
+  `node scripts/menu-check.mjs . --vastleggen --akkoord "<wie, waarom>"` en `menu-slot.json` in
+  dezelfde PR committen. Anders stopt de productiebuild na de merge.
+- **Taalknoppen tellen niet mee.** De controle herkent `.lang-toggle` en `.lang-mobile`. Een nieuwe
+  taalknop krijgt `data-taalwissel`.
+
 ## Cookiemelding
 
 Sinds 11-11-2026 vraagt de site toestemming met de MS618-standaard: CookieConsent v3 (MIT), zelf
