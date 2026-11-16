@@ -1,4 +1,6 @@
-@import "tailwindcss";
+/* Alleen src/ levert klassen aan Tailwind. Zonder deze grens scant Tailwind ook scripts/ en
+   documentatie, en belandt een klassenaam uit een commentaarregel als opmaak op elke pagina. */
+@import "tailwindcss" source("..");
 
 /* Self-hosted Inter (latin variable) instead of the render-blocking @import chain.
    Preloaded in Base.astro so it loads in parallel from the start; font-display: swap
