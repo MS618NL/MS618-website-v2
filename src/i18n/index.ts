@@ -27,6 +27,7 @@ export const serviceSlugNlToEn: Record<string, string> = {
   'geo-optimalisatie': 'geo-optimization',
   'website-laten-maken': 'website-development',
   'website-optimalisatie': 'website-optimization',
+  'online-adverteren': 'digital-advertising',
 };
 export const blogSlugNlToEn: Record<string, string> = {
   'zoekintentie-begrijpen': 'understanding-search-intent',

@@ -35,7 +35,7 @@ Geen losse posts, maar een systeem. We bepalen de strategie, schrijven de conten
 
 ## Organisch versterkt betaald
 
-Organische autoriteit en betaalde campagnes werken het sterkst samen. Wie je al kent op LinkedIn, klikt eerder op je advertentie en gelooft je boodschap sneller. Daarom stemmen we social media af op [Google Ads en LinkedIn Ads](/diensten/digital-advertising/) en op je [content marketing](/diensten/content-marketing/): één verhaal, meerdere kanalen die elkaar versterken.
+Organische autoriteit en betaalde campagnes werken het sterkst samen. Wie je al kent op LinkedIn, klikt eerder op je advertentie en gelooft je boodschap sneller. Daarom stemmen we social media af op [Google Ads en LinkedIn Ads](/diensten/online-adverteren/) en op je [content marketing](/diensten/content-marketing/): één verhaal, meerdere kanalen die elkaar versterken.
 
 ## Ook Facebook en Instagram
 

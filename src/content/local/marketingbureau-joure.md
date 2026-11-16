@@ -34,7 +34,7 @@ Je regelt de marketing tussen het werk door. Een bericht als je eraan denkt, de 
 - **[SEO Joure](/seo-joure/)**: beter gevonden worden in Google, lokaal en landelijk
 - **[Website laten maken](/webdesign-friesland/)**: een snelle, moderne site die scoort en converteert, ontworpen en gebouwd vanuit Joure
 - **[GEO en AI-vindbaarheid](/diensten/geo-optimalisatie/)**: genoemd worden in ChatGPT, Perplexity en Google AI Overviews
-- **[Digital advertising](/diensten/digital-advertising/)**: Google- en LinkedIn-campagnes die leads opleveren
+- **[Digital advertising](/diensten/online-adverteren/)**: Google- en LinkedIn-campagnes die leads opleveren
 - **[AI-strategie](/diensten/ai-strategie/)**: AI concreet inzetten in je marketing en processen
 
 ## Persoonlijk en dichtbij

@@ -19,6 +19,8 @@
     { "source": "/nl/(.*)", "destination": "/$1", "permanent": true },
     { "source": "/en/voorwaarden", "destination": "/en/terms/", "permanent": true },
     { "source": "/en/voorwaarden/", "destination": "/en/terms/", "permanent": true },
+    { "source": "/services/digital-advertising", "destination": "/diensten/online-adverteren/", "permanent": true },
+    { "source": "/services/digital-advertising/(.*)", "destination": "/diensten/online-adverteren/", "permanent": true },
     { "source": "/services", "destination": "/diensten/", "permanent": true },
     { "source": "/services/(.*)", "destination": "/diensten/$1", "permanent": true },
     { "source": "/about", "destination": "/over-ons/", "permanent": true },
@@ -42,7 +44,9 @@
     { "source": "/en/blog/ai-en-seo-2026", "destination": "/en/blog/ai-and-seo-2026/", "permanent": true },
     { "source": "/en/blog/ai-en-seo-2026/(.*)", "destination": "/en/blog/ai-and-seo-2026/$1", "permanent": true },
     { "source": "/en/blog/content-strategie-b2b", "destination": "/en/blog/b2b-content-strategy/", "permanent": true },
-    { "source": "/en/blog/content-strategie-b2b/(.*)", "destination": "/en/blog/b2b-content-strategy/$1", "permanent": true }
+    { "source": "/en/blog/content-strategie-b2b/(.*)", "destination": "/en/blog/b2b-content-strategy/$1", "permanent": true },
+    { "source": "/diensten/digital-advertising", "destination": "/diensten/online-adverteren/", "permanent": true },
+    { "source": "/diensten/digital-advertising/(.*)", "destination": "/diensten/online-adverteren/", "permanent": true }
   ],
   "headers": [
     {
