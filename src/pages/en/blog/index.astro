@@ -47,9 +47,10 @@ const categories = [...new Set(posts.map((p) => p.data.category))];
         <nav class="category-nav" aria-label="Filter options">
           <span>Filter:</span>
           <a href="/en/blog/" class="cat-link cat-link-active">All articles</a>
-          {categories.map((cat) => (
-            <a href={`/en/blog/#${cat.toLowerCase().replace(/\s+/g, '-')}`} class="cat-link">{cat}</a>
-          ))}
+          {categories.map((cat) => {
+            const catSlug = cat.toLowerCase().replace(/\s+/g, '-');
+            return <a href={`/en/blog/#${catSlug}`} id={catSlug} class="cat-link">{cat}</a>;
+          })}
         </nav>
       )}
 
@@ -75,6 +76,29 @@ const categories = [...new Set(posts.map((p) => p.data.category))];
       ctaSecondary={{ label: 'View our services', href: '/en/services/' }}
     />
   </div>
+
+<script>
+  // Category filter: /en/blog/#seo shows only the articles in that category, without # all of them.
+  // Inside the layout, so the script lands in the body and not after the page.
+  const nav = document.querySelector('.category-nav');
+  if (nav) {
+    const links = [...nav.querySelectorAll<HTMLAnchorElement>('a.cat-link')];
+    const kaarten = document.querySelectorAll<HTMLElement>('.posts-grid [data-cat]');
+    const filter = () => {
+      const cat = decodeURIComponent(location.hash.slice(1));
+      const geldig = cat !== '' && links.some((a) => a.id === cat);
+      kaarten.forEach((k) => { k.hidden = geldig && k.dataset.cat !== cat; });
+      links.forEach((a) => {
+        const actief = geldig ? a.id === cat : !a.id;
+        a.classList.toggle('cat-link-active', actief);
+        if (actief) a.setAttribute('aria-current', 'true');
+        else a.removeAttribute('aria-current');
+      });
+    };
+    addEventListener('hashchange', filter);
+    filter();
+  }
+</script>
 </Page>
 
 <style>
@@ -136,6 +160,7 @@ const categories = [...new Set(posts.map((p) => p.data.category))];
   }
 
   .cat-link {
+    scroll-margin-top: 7rem;
     padding: 0.3rem 0.75rem;
     border: 1px solid oklch(0.2 0 0);
     color: oklch(0.65 0 0);

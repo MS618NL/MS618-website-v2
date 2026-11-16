@@ -96,7 +96,7 @@ const breadcrumbs = [
         <p class="team-intro">We get involved when marketing becomes fragmented, tooling takes over, or visibility no longer generates growth. Experience counts when acceleration demands it.</p>
         <div class="team-grid">
 
-          <div class="team-member">
+          <div class="team-member" id="jorrit-miedema">
             <div class="member-avatar">J</div>
             <div class="member-info">
               <h3>Jorrit Miedema</h3>
@@ -110,7 +110,7 @@ const breadcrumbs = [
             </div>
           </div>
 
-          <div class="team-member">
+          <div class="team-member" id="jurjan-groothuis">
             <div class="member-avatar">J</div>
             <div class="member-info">
               <h3>Jurjan Groothuis</h3>
@@ -124,7 +124,7 @@ const breadcrumbs = [
             </div>
           </div>
 
-          <div class="team-member">
+          <div class="team-member" id="peter-ydel">
             <div class="member-avatar">P</div>
             <div class="member-info">
               <h3>Peter Ydel</h3>
@@ -138,7 +138,7 @@ const breadcrumbs = [
             </div>
           </div>
 
-          <div class="team-member">
+          <div class="team-member" id="ramin-schultz">
             <div class="member-avatar">R</div>
             <div class="member-info">
               <h3>Ramin Schultz</h3>
@@ -152,7 +152,7 @@ const breadcrumbs = [
             </div>
           </div>
 
-          <div class="team-member">
+          <div class="team-member" id="wouter-van-haaften">
             <div class="member-avatar">W</div>
             <div class="member-info">
               <h3>Wouter van Haaften</h3>
@@ -449,6 +449,8 @@ const breadcrumbs = [
     flex-direction: column;
     gap: 1rem;
     transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    /* Anker vanaf de auteurslink in een artikel: blijf onder de vaste header vandaan. */
+    scroll-margin-top: 6rem;
   }
 
   .team-member:hover {
