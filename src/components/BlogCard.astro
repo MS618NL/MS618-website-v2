@@ -14,7 +14,7 @@ interface Props {
 const { title, description, slug, publishDate, category, author = 'MS618', basePath = '/blog' } = Astro.props;
 ---
 
-<article class="blog-card">
+<article class="blog-card" data-cat={category.toLowerCase().replace(/\s+/g, '-')}>
   <div class="card-meta">
     <span class="tag">{category}</span>
     <time datetime={publishDate.toISOString()} class="card-date">
@@ -39,6 +39,11 @@ const { title, description, slug, publishDate, category, author = 'MS618', baseP
     transition: border-color 0.2s ease;
     min-width: 0;
     overflow: hidden;
+  }
+
+  /* Het categoriefilter op de blogpagina verbergt kaarten met het hidden-attribuut. */
+  .blog-card[hidden] {
+    display: none;
   }
 
   .blog-card:hover {

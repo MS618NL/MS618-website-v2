@@ -478,7 +478,7 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
     const originalText = btn.textContent;
 
     // Spamfilter: honeypot gevuld of binnen 3 s na laden verstuurd = bot.
-    // Doe alsof het gelukt is, maar zonder redirect naar de bedankpagina (= geen generate_lead).
+    // Doe alsof het gelukt is, maar zonder melding aan de dataLayer (= geen generate_lead).
     const hp = form.querySelector('input[name="_gotcha"]') as HTMLInputElement | null;
     if ((hp && hp.value) || !formInteracted || Date.now() - formLoadedAt < 3000) {
       btn.textContent = 'Verstuurd';
@@ -495,7 +495,23 @@ const extraSchema = [buildContactPiece(), buildLocalBusinessPiece()];
       });
 
       if (response.ok) {
-        window.location.href = '/contact/bedankt/';
+        // Meting volgens de MS618-standaard: pas na een geslaagde verzending gaat lead_form_submit
+        // naar de dataLayer (GTM: GA4 generate_lead). De bedankpagina zelf telt niet als aanvraag.
+        // Laadt GTM niet (adblocker), dan volgt de doorverwijzing na 1,5 seconde toch.
+        let weg = false;
+        const naarBedankt = () => {
+          if (weg) return;
+          weg = true;
+          window.location.href = '/contact/bedankt/';
+        };
+        const w = window as unknown as { dataLayer?: object[] };
+        (w.dataLayer = w.dataLayer || []).push({
+          event: 'lead_form_submit',
+          form_name: 'contact',
+          eventCallback: naarBedankt,
+          eventTimeout: 1200,
+        });
+        setTimeout(naarBedankt, 1500);
       } else {
         btn.textContent = 'Er ging iets mis — probeer opnieuw';
         btn.disabled = false;
