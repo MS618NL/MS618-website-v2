@@ -33,7 +33,9 @@ const localPages = lang === 'en'
     </div>
 
     <div class="footer-col">
-      <h3 class="footer-heading">{t('footer.services')}</h3>
+      {/* Kolomtitels als h2: op een pagina met alleen een h1 (de bedankpagina) volgde een h3 anders
+          direct op de h1. De regelhoogte staat vast in .footer-heading, zodat er niets verschuift. */}
+      <h2 class="footer-heading">{t('footer.services')}</h2>
       <ul>
         <li><a href={`${svc}/${svcSlug.ai}/`}>{lang === 'en' ? 'AI Strategy' : 'AI-strategie'}</a></li>
         <li><a href={`${svc}/${svcSlug.seo}/`}>SEO {lang === 'en' ? 'Strategy' : 'Strategie'}</a></li>
@@ -45,7 +47,7 @@ const localPages = lang === 'en'
     </div>
 
     <div class="footer-col">
-      <h3 class="footer-heading">{t('footer.nav')}</h3>
+      <h2 class="footer-heading">{t('footer.nav')}</h2>
       <ul>
         <li><a href={`${svc}/`}>{lang === 'en' ? 'Approach' : 'Aanpak'}</a></li>
         <li><a href={lang === 'en' ? '/en/about/' : '/over-ons/'}>{t('nav.about')}</a></li>
@@ -56,7 +58,7 @@ const localPages = lang === 'en'
     </div>
 
     <div class="footer-col">
-      <h3 class="footer-heading">{t('footer.contact')}</h3>
+      <h2 class="footer-heading">{t('footer.contact')}</h2>
       <ul>
         <li>MS618 B.V.</li>
         <li>Slachtedyk 24a, Joure</li>
@@ -150,6 +152,8 @@ const localPages = lang === 'en'
   .footer-heading {
     font-size: 0.75rem;
     font-weight: 600;
+    /* Vast: de regelhoogte kwam eerst van het kopniveau (h3: 1.08) en zou als h2 1.06 worden. */
+    line-height: 1.08;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: oklch(0.65 0 0);

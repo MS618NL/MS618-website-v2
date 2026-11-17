@@ -15,7 +15,7 @@ Google heeft ons genomineerd voor de Google Ads Impact Awards 2026. Deze awards 
 De nominatie kwam via het Google Ads-team zelf. Dat betekent dat Google de manier waarop wij AI-gestuurde campagnes inzetten voor onze klanten heeft opgemerkt en erkend.
 
 <figure class="post-figure">
-  <img src="/images/Google-Ads-impact-Awards-nominee-ms618.png" alt="Google Ads Impact Awards 2026 — MS618 genomineerd" class="post-image" />
+  <img src="/images/Google-Ads-impact-Awards-nominee-ms618.webp" alt="Google Ads Impact Awards 2026 — MS618 genomineerd" class="post-image" width="611" height="586" loading="lazy" decoding="async" />
   <figcaption>De officiële nominatiemail van Google Ads voor de Impact Awards 2026.</figcaption>
 </figure>
 

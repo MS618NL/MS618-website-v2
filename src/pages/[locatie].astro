@@ -1,4 +1,6 @@
 ---
+import Beeld from '@/components/Beeld.astro';
+import pand from '@/assets/images/pand.jpg';
 import Page from '@/layouts/Page.astro';
 import CTA from '@/components/CTA.astro';
 import { getCollection, render } from 'astro:content';
@@ -69,7 +71,7 @@ const extraSchema = [
 
       <section class="local-about">
         <div class="about-photo">
-          <img src="/images/pand.jpg" alt="Het kantoor van MS618 aan de haven van Joure" width="1276" height="865" loading="lazy" />
+          <Beeld src={pand} alt="Het kantoor van MS618 aan de haven van Joure" sizes="(min-width: 1100px) 436px, (min-width: 700px) 278px, 80vw" />
         </div>
         <div class="about-text">
           <h2>Even voorstellen</h2>

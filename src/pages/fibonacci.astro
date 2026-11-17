@@ -1,4 +1,18 @@
 ---
+import Beeld from '@/components/Beeld.astro';
+import portret from '@/assets/images/fibonacci/fibonacci-portrait.png';
+import liberAbaci from '@/assets/images/fibonacci/liber-abaci.jpg';
+import zonnebloem from '@/assets/images/fibonacci/sunflower.jpg';
+import guldenHoek from '@/assets/images/fibonacci/golden-angle.png';
+import sterrenstelsel from '@/assets/images/fibonacci/galaxy.jpg';
+import nautilus from '@/assets/images/fibonacci/nautilus.jpg';
+import golf from '@/assets/images/fibonacci/wave.jpg';
+import aloe from '@/assets/images/fibonacci/aloe.jpg';
+import dennenappel from '@/assets/images/fibonacci/pinecone.jpg';
+import romanesco from '@/assets/images/fibonacci/romanesco.jpg';
+import varen from '@/assets/images/fibonacci/fern.jpg';
+import vetplant from '@/assets/images/fibonacci/succulent.jpg';
+import orkaan from '@/assets/images/fibonacci/hurricane.jpg';
 import Page from '@/layouts/Page.astro';
 import CTA from '@/components/CTA.astro';
 import site from '@/data/site.json';
@@ -120,11 +134,11 @@ const extraSchema = [
         </div>
         <div class="fib-figure-col">
           <figure class="fib-figure is-portrait">
-            <img src="/images/fibonacci/fibonacci-portrait.png" alt="Historisch portret van Leonardo van Pisa, bijgenaamd Fibonacci" loading="lazy" decoding="async" />
+            <Beeld src={portret} alt="Historisch portret van Leonardo van Pisa, bijgenaamd Fibonacci" sizes="(min-width: 1248px) 486px, (min-width: 681px) 45vw, 92vw" />
             <figcaption>Leonardo van Pisa, bijgenaamd Fibonacci.</figcaption>
           </figure>
           <figure class="fib-figure is-manuscript">
-            <img src="/images/fibonacci/liber-abaci.jpg" alt="Een pagina uit Fibonacci's Liber Abaci uit 1202" loading="lazy" decoding="async" />
+            <Beeld src={liberAbaci} alt="Een pagina uit Fibonacci's Liber Abaci uit 1202" sizes="(min-width: 1248px) 486px, (min-width: 681px) 45vw, 92vw" />
             <figcaption>Een pagina uit Liber Abaci, 1202.</figcaption>
           </figure>
         </div>
@@ -149,7 +163,7 @@ const extraSchema = [
 
       <!-- Feature: galaxy -->
       <figure class="fib-feature">
-        <img src="/images/fibonacci/galaxy.jpg" alt="Balkspiraalstelsel NGC 1300, met armen die in een spiraal draaien" loading="lazy" decoding="async" />
+        <Beeld src={sterrenstelsel} alt="Balkspiraalstelsel NGC 1300, met armen die in een spiraal draaien" sizes="(min-width: 1248px) 1030px, 94vw" />
         <figcaption>Een sterrenstelsel van miljoenen lichtjaren breed. Dezelfde spiraal.</figcaption>
       </figure>
 
@@ -225,11 +239,11 @@ const extraSchema = [
         </div>
         <div class="fib-figure-col">
           <figure class="fib-figure">
-            <img src="/images/fibonacci/sunflower.jpg" alt="Het hart van een zonnebloem, met zaden gerangschikt in twee sets spiralen" loading="lazy" decoding="async" />
+            <Beeld src={zonnebloem} alt="Het hart van een zonnebloem, met zaden gerangschikt in twee sets spiralen" sizes="(min-width: 1248px) 486px, (min-width: 681px) 45vw, 92vw" />
             <figcaption>Twee sets spiralen, allebei een Fibonacci-getal.</figcaption>
           </figure>
           <figure class="fib-figure is-diagram">
-            <img src="/images/fibonacci/golden-angle.png" alt="Diagram van de gulden hoek van 137,5 graden in de stand van bladeren" loading="lazy" decoding="async" />
+            <Beeld src={guldenHoek} alt="Diagram van de gulden hoek van 137,5 graden in de stand van bladeren" sizes="(min-width: 1248px) 486px, (min-width: 681px) 45vw, 92vw" />
             <figcaption>De gulden hoek: 137,5 graden tussen elk nieuw blad.</figcaption>
           </figure>
         </div>
@@ -269,35 +283,35 @@ const extraSchema = [
         </p>
         <div class="fib-gallery">
           <figure>
-            <img src="/images/fibonacci/nautilus.jpg" alt="Doorsnede van een nautilusschelp met een logaritmische spiraal" loading="lazy" decoding="async" />
+            <Beeld src={nautilus} alt="Doorsnede van een nautilusschelp met een logaritmische spiraal" sizes="(min-width: 1248px) 241px, (min-width: 861px) 23vw, 46vw" />
             <figcaption>Nautilus, kamer na kamer.</figcaption>
           </figure>
           <figure>
-            <img src="/images/fibonacci/wave.jpg" alt="Een brekende golf die in een spiraal omkrult" loading="lazy" decoding="async" />
+            <Beeld src={golf} alt="Een brekende golf die in een spiraal omkrult" sizes="(min-width: 1248px) 241px, (min-width: 861px) 23vw, 46vw" />
             <figcaption>Een brekende golf, dezelfde logaritmische krul.</figcaption>
           </figure>
           <figure>
-            <img src="/images/fibonacci/aloe.jpg" alt="Een spiraalaloë van bovenaf gezien" loading="lazy" decoding="async" />
+            <Beeld src={aloe} alt="Een spiraalaloë van bovenaf gezien" sizes="(min-width: 1248px) 241px, (min-width: 861px) 23vw, 46vw" />
             <figcaption>Spiraalaloë, van bovenaf.</figcaption>
           </figure>
           <figure>
-            <img src="/images/fibonacci/pinecone.jpg" alt="Een dennenappel met schubben in spiralen" loading="lazy" decoding="async" />
+            <Beeld src={dennenappel} alt="Een dennenappel met schubben in spiralen" sizes="(min-width: 1248px) 241px, (min-width: 861px) 23vw, 46vw" />
             <figcaption>Dennenappel, twee kanten op gespiraald.</figcaption>
           </figure>
           <figure>
-            <img src="/images/fibonacci/romanesco.jpg" alt="Romanesco met zelfgelijkende spiralende roosjes" loading="lazy" decoding="async" />
+            <Beeld src={romanesco} alt="Romanesco met zelfgelijkende spiralende roosjes" sizes="(min-width: 1248px) 241px, (min-width: 861px) 23vw, 46vw" />
             <figcaption>Romanesco, spiralen binnen spiralen.</figcaption>
           </figure>
           <figure>
-            <img src="/images/fibonacci/fern.jpg" alt="Een jong opgerold varenblad" loading="lazy" decoding="async" />
+            <Beeld src={varen} alt="Een jong opgerold varenblad" sizes="(min-width: 1248px) 241px, (min-width: 861px) 23vw, 46vw" />
             <figcaption>Een varen die zich nog moet ontvouwen.</figcaption>
           </figure>
           <figure>
-            <img src="/images/fibonacci/succulent.jpg" alt="Een vetplant met bladeren in een spiraalrozet" loading="lazy" decoding="async" />
+            <Beeld src={vetplant} alt="Een vetplant met bladeren in een spiraalrozet" sizes="(min-width: 1248px) 241px, (min-width: 861px) 23vw, 46vw" />
             <figcaption>Een vetplant, blad voor blad gedraaid.</figcaption>
           </figure>
           <figure>
-            <img src="/images/fibonacci/hurricane.jpg" alt="Een orkaan vanuit de ruimte gezien, met een spiraalvorm" loading="lazy" decoding="async" />
+            <Beeld src={orkaan} alt="Een orkaan vanuit de ruimte gezien, met een spiraalvorm" sizes="(min-width: 1248px) 241px, (min-width: 861px) 23vw, 46vw" />
             <figcaption>Een orkaan, dezelfde wet op weerschaal.</figcaption>
           </figure>
         </div>

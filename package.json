@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "postbuild": "node scripts/verify-en-slugs.mjs && node scripts/zoekresultaat-check.mjs . --postbuild && node scripts/taallek-check.mjs . --postbuild && node scripts/menu-check.mjs . --postbuild && node scripts/indexnow-ping.mjs",
+    "postbuild": "node scripts/verify-en-slugs.mjs && node scripts/zoekresultaat-check.mjs . --postbuild && node scripts/taallek-check.mjs . --postbuild && node scripts/menu-check.mjs . --postbuild && node scripts/pagina-check.mjs . --postbuild && node scripts/beeld-check.mjs . --postbuild && node scripts/lettertype-check.mjs . --postbuild && node scripts/sitemap-check.mjs . --postbuild && node scripts/antwoordkop-check.mjs . --postbuild && node scripts/indexnow-ping.mjs",
     "verify:slugs": "node scripts/verify-en-slugs.mjs",
     "check:zoekbeeld": "node scripts/zoekresultaat-check.mjs .",
     "check:taal": "node scripts/taallek-check.mjs .",
     "check:menu": "node scripts/menu-check.mjs .",
+    "check:pagina": "node scripts/pagina-check.mjs .",
+    "check:beeld": "node scripts/beeld-check.mjs .",
+    "check:lettertype": "node scripts/lettertype-check.mjs .",
+    "check:sitemap": "node scripts/sitemap-check.mjs .",
+    "check:koppen": "node scripts/antwoordkop-check.mjs .",
     "preview": "astro preview",
     "astro": "astro"
   },

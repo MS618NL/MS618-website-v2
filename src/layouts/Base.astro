@@ -96,6 +96,9 @@ const lang = getLangFromUrl(Astro.url);
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3PJBX8"
     height="0" width="0" class="gtm-noscript"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    {/* Skiplink: het eerste wat een toetsenbordgebruiker tegenkomt. Springt over het menu naar de
+        inhoud (main met id main-content). scripts/pagina-check.mjs stopt de build als hij ontbreekt. */}
+    <a class="skip-link" href="#main-content">{lang === 'en' ? 'Skip to content' : 'Naar de inhoud'}</a>
     <div id="stars-parallax" aria-hidden="true">
       <div class="star-layer" id="stars-sm"></div>
       <div class="star-layer" id="stars-md"></div>
@@ -120,7 +123,9 @@ const lang = getLangFromUrl(Astro.url);
     will-change: transform;
   }
 
-  body > :not(#stars-parallax) {
+  /* De skiplink doet hier niet aan mee: hij staat los boven de pagina (position: absolute in
+     global.css). Zonder deze uitzondering wint deze regel en staat hij als een regel tekst bovenaan. */
+  body > :not(#stars-parallax):not(.skip-link) {
     position: relative;
     z-index: 1;
   }

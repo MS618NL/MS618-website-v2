@@ -84,7 +84,7 @@
       ]
     },
     {
-      "source": "/images/raptor3evolution.jpg",
+      "source": "/_astro/raptor3evolution(.*)",
       "headers": [
         { "key": "X-Robots-Tag", "value": "noindex" }
       ]

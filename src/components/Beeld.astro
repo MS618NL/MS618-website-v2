@@ -1,0 +1,54 @@
+---
+// Beeld.astro: het ene beeldcomponent van de site. Gebruik dit voor elke foto, geen los <img>.
+//
+// Wat je krijgt: AVIF en WebP in meerdere breedtes (de browser kiest de kleinste die past), vaste
+// width en height, en lui laden. Het bestand staat in src/assets/, niet in public/: alleen dan kan
+// Astro het omzetten. scripts/beeld-check.mjs houdt dit bij na elke build.
+//
+//   import pand from '@/assets/images/pand.jpg';
+//   <Beeld src={pand} alt="Het kantoor aan de haven van Joure" sizes="(min-width: 1100px) 602px, 95vw" />
+//
+// sizes: hoe breed het beeld op het scherm staat. Meet het in de browser; een te ruime waarde laat
+//   de bezoeker een groter bestand ophalen dan nodig.
+// priority: alleen voor het bovenste beeld van een pagina. Dat laadt dan direct en met voorrang.
+//
+// Het <picture> eromheen doet niet mee in de opmaak (.beeld in global.css: display: contents). De
+// stijl die voor het <img> geschreven is, blijft dus kloppen.
+//
+// Schaalt het beeld mee (width: 100%, height: auto)? Zet dan in de stijl van de pagina de verhouding
+// van de bron vast: aspect-ratio: 1276 / 865. De kleinere versies wijken door afronding een fractie
+// af; zonder vaste verhouding verschuift de tekst eronder een halve pixel. Niet als style op het
+// element: het inhoudsbeleid (CSP) van deze site blokkeert dat.
+import { Picture } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  src: ImageMetadata;
+  /** Verplicht. Leeg ("") bij een beeld dat alleen versiert. */
+  alt: string;
+  sizes: string;
+  priority?: boolean;
+  widths?: number[];
+  class?: string;
+}
+
+// ...rest: Astro geeft het kenmerk van de pagina (data-astro-cid-...) als eigenschap mee. Dat moet door
+// naar het <img>, anders raakt de stijl uit de <style> van de pagina het beeld niet meer (verhouding,
+// bijsnijden, afgeronde hoeken). Gevonden op 17-11-2026 met de schermvergelijking van deze site.
+const { src, alt, sizes, priority = false, widths = [360, 540, 720, 1080, 1440], class: klasse, ...rest } = Astro.props;
+// Het reservebeeld (voor een browser zonder AVIF en WebP) wordt niet groter dan de grootste breedte.
+const breedste = Math.min(src.width, Math.max(...widths));
+---
+<Picture
+  src={src}
+  alt={alt}
+  formats={['avif', 'webp']}
+  widths={widths}
+  sizes={sizes}
+  width={breedste}
+  height={Math.round((breedste * src.height) / src.width)}
+  priority={priority}
+  class={klasse}
+  pictureAttributes={{ class: 'beeld' }}
+  {...rest}
+/>

@@ -7,9 +7,12 @@ interface Props {
   service: string;
   result: string;
   basePath?: string;
+  /** Kopniveau van de titel. Standaard h3 (de kaart staat onder een h2). Op een lijstpagina volgt de
+      kaart direct op de h1: geef daar kop="h2", anders slaat de pagina een niveau over. */
+  kop?: 'h2' | 'h3';
 }
 
-const { title, description, slug, client, service, result, basePath = '/cases' } = Astro.props;
+const { title, description, slug, client, service, result, basePath = '/cases', kop = 'h3' } = Astro.props;
 ---
 
 <article class="case-card">
@@ -17,9 +20,15 @@ const { title, description, slug, client, service, result, basePath = '/cases' }
     <span class="tag">{service}</span>
     <span class="card-client">{client}</span>
   </div>
-  <h3 class="card-title">
-    <a href={`${basePath}/${slug}/`}>{title}</a>
-  </h3>
+  {kop === 'h2' ? (
+    <h2 class="card-title">
+      <a href={`${basePath}/${slug}/`}>{title}</a>
+    </h2>
+  ) : (
+    <h3 class="card-title">
+      <a href={`${basePath}/${slug}/`}>{title}</a>
+    </h3>
+  )}
   <p class="card-desc">{description}</p>
   <div class="card-result">
     <span class="result-label">{basePath.startsWith('/en') ? 'Result' : 'Resultaat'}</span>

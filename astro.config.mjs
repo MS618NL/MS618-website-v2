@@ -41,7 +41,8 @@ function buildLastmodMap() {
 }
 
 const lastmodMap = buildLastmodMap();
-const buildLastmod = new Date().toISOString();
+// Geen datum bekend uit de inhoud? Dan geen <lastmod>. De buildtijd als terugval verspringt bij elke
+// deploy, en dan leert Google de datum te negeren (scripts/sitemap-check.mjs, regel lastmod-builddatum).
 
 export default defineConfig({
   site: 'https://www.ms618.nl',
@@ -94,28 +95,11 @@ export default defineConfig({
         !page.includes('/colofon') &&
         !page.includes('/bedankt') &&
         !page.includes('/thank-you'),
+      // Alleen het adres, met de datum van de inhoud als die bekend is. <changefreq> en <priority> leest
+      // Google niet: weggelaten.
       serialize(item) {
-        const url = item.url;
-        const lastmod = lastmodMap[url] ?? buildLastmod;
-        if (url === 'https://www.ms618.nl/' || url === 'https://www.ms618.nl') {
-          return { ...item, priority: 1.0, changefreq: 'weekly', lastmod };
-        }
-        if (url.includes('/contact')) {
-          return { ...item, priority: 0.9, changefreq: 'monthly', lastmod };
-        }
-        if (url.includes('/services') || url.includes('/diensten')) {
-          return { ...item, priority: 0.8, changefreq: 'monthly', lastmod };
-        }
-        if (url.includes('/over-ons') || url.includes('/about')) {
-          return { ...item, priority: 0.8, changefreq: 'monthly', lastmod };
-        }
-        if (url.includes('/cases')) {
-          return { ...item, priority: 0.7, changefreq: 'monthly', lastmod };
-        }
-        if (url.includes('/blog')) {
-          return { ...item, priority: 0.6, changefreq: 'weekly', lastmod };
-        }
-        return { ...item, priority: 0.5, changefreq: 'monthly', lastmod };
+        const lastmod = lastmodMap[item.url];
+        return lastmod ? { url: item.url, links: item.links, lastmod } : { url: item.url, links: item.links };
       },
     }),
   ],
