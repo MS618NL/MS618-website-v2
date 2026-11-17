@@ -1,4 +1,6 @@
 ---
+import Beeld from '@/components/Beeld.astro';
+import pand from '@/assets/images/pand.jpg';
 import Page from '@/layouts/Page.astro';
 import CTA from '@/components/CTA.astro';
 import site from '@/data/site.json';
@@ -192,7 +194,7 @@ const breadcrumbs = [
             <p>MS618 is based at FJ08 — the eighth factory building of Douwe Egberts, on the waterfront in Joure. Restored with oak, walnut and raw steel. A place where people work, cook, make music and build things together. When AI handles the routine, this is what's left: thinking, making, collaborating. Not a corporate office. Something better.</p>
           </div>
           <div class="location-image">
-            <img src="/images/pand.jpg" alt="MS618 office FJ08 in Joure" width="1276" height="865" loading="lazy" />
+            <Beeld src={pand} alt="MS618 office FJ08 in Joure" sizes="(min-width: 1100px) 602px, 95vw" />
           </div>
         </div>
       </section>
@@ -577,6 +579,9 @@ const breadcrumbs = [
   .location-image img {
     width: 100%;
     height: auto;
+    /* Vaste verhouding (die van de bron, 1276 x 865). De kleinere versies die Beeld.astro maakt,
+       wijken door afronding een fractie af; zonder deze regel verschuift de tekst eronder een halve pixel. */
+    aspect-ratio: 1276 / 865;
     object-fit: contain;
     filter: brightness(0.95);
   }

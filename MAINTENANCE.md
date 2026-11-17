@@ -122,6 +122,42 @@ mee in de update.
   livegang `--live https://www.ms618.nl/`. `CONSENT_REVISION` in beide bestanden gelijk houden; ophogen
   laat iedereen opnieuw kiezen.
 
+## Opbouw, beelden en sitemap
+
+Sinds 17-11-2026 volgt de site de verplichte punten van specification.website (de checklist van
+Joost de Valk). Deze site is de proeftuin: wat hier werkt, gaat naar de starter en de klantsites.
+Vijf controles draaien in de postbuild, na de menucontrole en vóór de IndexNow-ping. Een
+productiebuild (een merge naar `main`) stopt op FOUT; een preview meldt het en gaat door. De scripts
+zijn kopieën uit de website-skill (`gtm-factory/_skills/website/scripts/`): vervang ze daar en
+kopieer ze hierheen.
+
+- **Skiplink.** `Base.astro` zet als eerste element een link naar `<main id="main-content">`. Hij
+  staat buiten beeld tot hij focus krijgt (`.skip-link` in `global.css`). Let op de regel
+  `body > :not(#stars-parallax)` in `Base.astro`: de skiplink is daar uitgezonderd, anders staat hij
+  als een regel tekst bovenaan elke pagina. Controle: `npm run check:pagina`.
+- **Koppen.** Eén `<h1>` per pagina en geen niveau overslaan. `BlogCard` en `CaseCard` hebben
+  daarvoor `kop`: op een lijstpagina volgt de kaart direct op de `<h1>`, geef daar `kop="h2"`. De
+  kolomtitels in de footer zijn `<h2>`.
+- **Foto's via `Beeld.astro`.** Het bestand staat in `src/assets/images/`, niet in `public/`. Het
+  component levert AVIF en WebP in vijf breedtes, met vaste maten. Geef `sizes` mee: de breedte op
+  het scherm, gemeten in de browser. Schaalt de foto mee (`height: auto`), zet dan in de stijl van
+  de pagina `aspect-ratio` op de verhouding van de bron: de kleinere versies wijken door afronding
+  een fractie af en dan verschuift de tekst eronder. Niet als `style` op het element: de CSP
+  blokkeert dat. Controle: `npm run check:beeld`.
+- **Wat in `public/` blijft.** Klantlogo's (`public/images/clients/`, daar geldt `noindex`): elk
+  rasterlogo heeft `width` en `height`, en is een WebP als het bestand 30 kB of meer zou wegen.
+  Deelbeelden (`/og/`, het awardsbeeld als PNG, `fibonacci/galaxy.jpg`): die hebben een vast adres
+  nodig. De Raptor-foto staat in `src/assets/`; `vercel.json` geeft `/_astro/raptor3evolution(.*)`
+  daarom `noindex`.
+- **Sitemap.** `<lastmod>` komt alleen uit `updatedDate` of `publishDate` in de frontmatter. Een
+  pagina zonder datum krijgt geen `<lastmod>`: de buildtijd verspringt bij elke deploy, en dan leert
+  Google de datum te negeren. Geen `<changefreq>` en `<priority>`; Google leest ze niet. Controle:
+  `npm run check:sitemap`.
+- **Lettertypen en antwoordkoppen.** Stonden al goed (eigen domein, beveiligingskoppen in
+  `vercel.json`); `npm run check:lettertype` en `npm run check:koppen` houden dat zo.
+- **Een bewuste uitzondering** staat met reden in `<naam>-akkoord.json` naast `package.json`
+  (bijvoorbeeld `beeld-check-akkoord.json`). Nooit de controle uit de postbuild halen.
+
 ## Tools
 
 - `npm outdated`, `npm audit` -- snelle status.

@@ -15,7 +15,7 @@ Google has nominated us for the Google Ads Impact Awards 2026. These awards are 
 The nomination came directly from the Google Ads team — which means Google noticed and recognized the way we deploy AI-driven campaigns for our clients.
 
 <figure class="post-figure">
-  <img src="/images/Google-Ads-impact-Awards-nominee-ms618.png" alt="Google Ads Impact Awards 2026 — MS618 nominated" class="post-image" />
+  <img src="/images/Google-Ads-impact-Awards-nominee-ms618.webp" alt="Google Ads Impact Awards 2026 — MS618 nominated" class="post-image" width="611" height="586" loading="lazy" decoding="async" />
   <figcaption>The official nomination email from Google Ads for the Impact Awards 2026.</figcaption>
 </figure>
 

@@ -1,4 +1,6 @@
 ---
+import Beeld from '@/components/Beeld.astro';
+import pand from '@/assets/images/pand.jpg';
 import Page from '@/layouts/Page.astro';
 import { buildContactPiece, buildLocalBusinessPiece } from '@/utils/schema';
 import site from '@/data/site.json';
@@ -131,7 +133,7 @@ const extraSchema = [buildContactPiece('en'), buildLocalBusinessPiece()];
       <!-- Office photo full width -->
       <section class="office-section">
         <div class="office-image-full">
-          <img src="/images/pand.jpg" alt="MS618 office FJ08 at the harbour of Joure" width="1276" height="865" loading="lazy" />
+          <Beeld src={pand} alt="MS618 office FJ08 at the harbour of Joure" sizes="(min-width: 1250px) 1152px, 95vw" />
         </div>
       </section>
     </div>
@@ -164,7 +166,8 @@ const extraSchema = [buildContactPiece('en'), buildLocalBusinessPiece()];
   .expect-icon { color: oklch(0.72 0.18 145); flex-shrink: 0; }
   .office-section { margin-top: 5rem; border-top: 1px solid oklch(0.15 0 0); padding-top: 4rem; }
   .office-image-full { width: 100%; margin-bottom: 2rem; }
-  .office-image-full img { width: 100%; height: auto; object-fit: contain; filter: brightness(0.95); }
+  /* aspect-ratio: de verhouding van de bron (1276 x 865) staat vast; zie de Nederlandse contactpagina. */
+  .office-image-full img { width: 100%; height: auto; aspect-ratio: 1276 / 865; object-fit: contain; filter: brightness(0.95); }
   .office-info-block h2 { font-size: 1rem; font-weight: 600; color: oklch(0.98 0 0); margin-bottom: 0.75rem; padding-bottom: 0.75rem; border-bottom: 1px solid oklch(0.18 0 0); }
   .office-info-block address { font-style: normal; font-size: 0.875rem; color: oklch(0.65 0 0); line-height: 1.7; margin-bottom: 1.25rem; }
   .office-links { display: flex; flex-direction: column; gap: 0.625rem; margin-bottom: 1.25rem; }

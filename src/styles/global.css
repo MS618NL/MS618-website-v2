@@ -290,6 +290,36 @@ hr {
   border-radius: 1px;
 }
 
+/* Skiplink (Base.astro): buiten beeld tot hij focus krijgt, bij de eerste Tab op de pagina. */
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  z-index: 1000;
+  transform: translateY(-200%);
+  padding: 0.75rem 1rem;
+  background: oklch(0.98 0 0);
+  color: oklch(0.15 0 0);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+/* <main> krijgt alleen focus via de skiplink, niet via Tab: een rand om de hele pagina zegt dan niets. */
+main:focus,
+main:focus-visible {
+  outline: none;
+}
+
+/* Beeld.astro: het <picture> om een beeld doet niet mee in de opmaak. De stijl die voor het <img>
+   geschreven is (breedte, verhouding, plek in een raster) blijft zo kloppen. */
+.beeld {
+  display: contents;
+}
+
 /* Selection */
 ::selection {
   background: oklch(0.65 0.2 250 / 0.35);

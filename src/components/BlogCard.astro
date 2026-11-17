@@ -9,9 +9,12 @@ interface Props {
   category: string;
   author?: string;
   basePath?: string;
+  /** Kopniveau van de titel. Standaard h3 (de kaart staat onder een h2). Op een lijstpagina volgt de
+      kaart direct op de h1: geef daar kop="h2", anders slaat de pagina een niveau over. */
+  kop?: 'h2' | 'h3';
 }
 
-const { title, description, slug, publishDate, category, author = 'MS618', basePath = '/blog' } = Astro.props;
+const { title, description, slug, publishDate, category, author = 'MS618', basePath = '/blog', kop = 'h3' } = Astro.props;
 ---
 
 <article class="blog-card" data-cat={category.toLowerCase().replace(/\s+/g, '-')}>
@@ -21,9 +24,15 @@ const { title, description, slug, publishDate, category, author = 'MS618', baseP
       {formatDate(publishDate, basePath.startsWith('/en') ? 'en-GB' : 'nl-NL')}
     </time>
   </div>
-  <h3 class="card-title">
-    <a href={`${basePath}/${slug}/`}>{title}</a>
-  </h3>
+  {kop === 'h2' ? (
+    <h2 class="card-title">
+      <a href={`${basePath}/${slug}/`}>{title}</a>
+    </h2>
+  ) : (
+    <h3 class="card-title">
+      <a href={`${basePath}/${slug}/`}>{title}</a>
+    </h3>
+  )}
   <p class="card-desc">{description}</p>
   <a href={`${basePath}/${slug}/`} class="card-link">{basePath.startsWith('/en') ? `Read: ${title} →` : `Lees: ${title} →`}</a>
 </article>
