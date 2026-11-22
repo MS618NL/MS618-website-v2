@@ -66,7 +66,8 @@ export default defineConfig({
   // lets the trusted GTM bootstrap load gtm.js and any tags it injects, so script-src needs
   // no 'unsafe-inline'. NOTE: the static CSP header in vercel.json is removed to avoid
   // double enforcement. Verify GTM/GA4 still fire in Vercel Preview (GTM Preview mode).
-  experimental: {
+  // Stable since Astro 6 as security.csp (was experimental.csp; same options).
+  security: {
     csp: {
       algorithm: 'SHA-256',
       directives: [
