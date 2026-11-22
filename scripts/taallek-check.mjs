@@ -59,7 +59,7 @@ export function analyseer(html, paginaUrl) {
   const $ = cheerio.load(html);
   const taal = taalVan($('html').attr('lang'));
   const main = $('main').first();
-  // Zonder <main> (sommige WordPress-replica's, Inspecto 11-11): de body zonder header, nav en footer.
+  // Zonder <main> (sommige WordPress-replica's, 11-11-2026): de body zonder header, nav en footer.
   const scope = main.length ? main : $('body').clone().find('header, nav, footer, [role="banner"], [role="navigation"], [role="contentinfo"]').remove().end();
   // Alleen datums die de site zelf opmaakt (<time>, of een class met date/datum): een bronvermelding in
   // lopende tekst ("Search Engine Land, March 2026") is geen lek.
@@ -76,7 +76,7 @@ export function analyseer(html, paginaUrl) {
   const eigen = new Set([new URL(paginaUrl).origin]);
   try { const c = $('link[rel="canonical"]').attr('href'); if (c) eigen.add(new URL(c, paginaUrl).origin); } catch { /* geen geldige canonical */ }
   // De eigen vertalingen (hreflang in de head): een link daarheen is per definitie de taalknop, ook
-  // zonder hreflang op de link zelf (Inspecto-replica 11-11: WordPress-taalknop binnen <main>).
+  // zonder hreflang op de link zelf (een WordPress-replica, 11-11-2026: de taalknop stond binnen <main>).
   const vertalingen = new Set($('link[rel="alternate"][hreflang]').map((_, el) => {
     try { const u = new URL($(el).attr('href'), paginaUrl); return eigen.has(u.origin) ? normPad(u.pathname) : null; } catch { return null; }
   }).get().filter(Boolean));
@@ -88,7 +88,7 @@ export function analyseer(html, paginaUrl) {
     const pad = normPad(u.pathname);
     links.push({ pad, toegestaan: Boolean($a.attr('hreflang')) || $a.closest(TAALKNOP).length > 0 || vertalingen.has(pad) });
   });
-  // Een redirect-stub (meta refresh, zonder taal) is geen pagina om te controleren (BBR 11-11).
+  // Een redirect-stub (meta refresh, zonder taal) is geen pagina om te controleren (11-11-2026).
   const redirect = $('meta[http-equiv]').filter((_, el) => /refresh/i.test($(el).attr('http-equiv'))).length > 0;
   return { taal, datums: [...new Set(datums)], links, redirect };
 }

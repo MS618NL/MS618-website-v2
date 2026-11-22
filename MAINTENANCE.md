@@ -45,12 +45,12 @@ support loopt (zodra 6 de actieve major is, krijgt 5 alleen nog beperkte fixes).
 
 ## Beeld in Google
 
-Op 10-11-2026 toonde Google bij "ms618" het logo van klant Hout Met Historie als beeld bij de
+Op 10-11-2026 toonde Google bij "ms618" het logo van een klant als beeld bij de
 homepage, en de colofon als sitelink. De home had alleen het algemene tekstbeeld
 `/og/default.png`; dat slaat Google over, en dan kiest het zelf een beeld van de pagina. Daar
 stond de rij met 15 klantlogo's. Opgelost in PR #55; deze regels houden het zo.
 
-- **Eigen foto op de home.** `/` en `/en/` geven `/og/home.jpg` (kantoor FJ08, 1200x630) door als
+- **Eigen foto op de home.** `/` en `/en/` geven `/og/home.jpg` (het kantoor, 1200x630) door als
   og:image én als `primaryImageOfPage` (`withPrimaryImage` in `src/utils/schema.ts`). Geen logo
   en geen beeld met tekst. Houd dat aan als je de home herbouwt.
 - **Logo's van anderen uit Google.** Klantlogo's staan in `public/images/clients/`; `vercel.json`
@@ -104,7 +104,7 @@ Sinds 11-11-2026 vraagt de site toestemming met de MS618-standaard: CookieConsen
 gehost, opbouw v2 zoals op de klantsites (eerste laag Accepteren + Instellingen, weigeren via
 Instellingen > Alles weigeren). Alleen de categorieën noodzakelijk en analytisch: GTM-K3PJBX8 bevat
 alleen Google Analytics en de site adverteert niet. Komt er Google Ads bij, voeg dan de categorie
-advertisement toe (zie de klantsites, bijvoorbeeld Distinkt) en zet `ad_storage` en `ad_user_data`
+advertisement toe (zoals op de klantsites die adverteren) en zet `ad_storage` en `ad_user_data`
 mee in de update.
 
 - **Consent Mode-standaard:** `src/components/ConsentDefaults.astro`, in de head vóór GTM. Alles
