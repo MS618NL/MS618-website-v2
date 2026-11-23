@@ -2,6 +2,9 @@
   "name": "ms618-website",
   "type": "module",
   "version": "2.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -19,16 +22,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.3.0",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.6",
     "@fontsource-variable/inter": "^5.2.8",
-    "astro": "^5.18.1",
-    "sharp": "^0.33.5"
+    "astro": "^7.4.13",
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.1.4",
+    "@tailwindcss/vite": "^4.3.5",
     "@vercel/routing-utils": "6.6.1",
     "cheerio": "1.2.0",
-    "tailwindcss": "^4.1.4"
+    "tailwindcss": "^4.3.5"
   }
 }

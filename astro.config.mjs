@@ -48,6 +48,9 @@ export default defineConfig({
   site: 'https://www.ms618.nl',
   output: 'static',
   trailingSlash: 'always',
+  // Astro 7 changed the default to 'jsx' (JSX whitespace rules: a line break between two inline
+  // elements no longer becomes a space). true keeps the whitespace handling of Astro 5 and 6.
+  compressHTML: true,
   // All page CSS is ~12 KB compressed; inlining it removes every render-blocking
   // request from the critical path (PSI: 460 ms). The CSP feature hashes these
   // inline styles automatically.
@@ -66,7 +69,8 @@ export default defineConfig({
   // lets the trusted GTM bootstrap load gtm.js and any tags it injects, so script-src needs
   // no 'unsafe-inline'. NOTE: the static CSP header in vercel.json is removed to avoid
   // double enforcement. Verify GTM/GA4 still fire in Vercel Preview (GTM Preview mode).
-  experimental: {
+  // Stable since Astro 6 as security.csp (was experimental.csp; same options).
+  security: {
     csp: {
       algorithm: 'SHA-256',
       directives: [
@@ -80,8 +84,12 @@ export default defineConfig({
         resources: ["'self'", 'https://*.googletagmanager.com', 'https://*.google-analytics.com'],
         strictDynamic: true,
       },
+      // No 'unsafe-inline' here any more. Up to Astro 6 the style hashes were emitted next to it, and
+      // browsers ignore 'unsafe-inline' when a hash is present. Astro 7 drops the hashes when
+      // 'unsafe-inline' is listed, which would allow every inline style. Without it the policy stays
+      // what browsers enforced before: 'self' plus the hashes of Astro's own styles.
       styleDirective: {
-        resources: ["'self'", "'unsafe-inline'"],
+        resources: ["'self'"],
       },
     },
   },
@@ -107,7 +115,8 @@ export default defineConfig({
     plugins: [tailwindcss()],
     build: {
       cssMinify: true,
-      minify: 'esbuild',
+      // No minify: 'esbuild' any more: it was the default up to Vite 7; Vite 8 minifies with Oxc
+      // and only uses esbuild when it is installed separately.
       rollupOptions: {
         output: {
           manualChunks: undefined,
