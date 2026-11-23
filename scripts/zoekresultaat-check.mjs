@@ -2,8 +2,8 @@
 // zoekresultaat-check.mjs: toont Google bij het merkresultaat een eigen beeld, en blijven bijzaak-
 // pagina's (colofon, bedankt) uit de sitelinks?
 //
-// Waarom (10-11-2026, ms618.nl): bij de zoekopdracht "ms618" toonde Google het logo van klant Hout Met
-// Historie als beeld bij de homepage, en de colofon als sitelink. De homepage had alleen een algemeen
+// Waarom (10-11-2026, ms618.nl): bij de zoekopdracht "ms618" toonde Google het logo van een klant
+// als beeld bij de homepage, en de colofon als sitelink. De homepage had alleen een algemeen
 // tekstbeeld als og:image, op elke pagina hetzelfde. Google slaat zo'n beeld over ("avoid using a
 // generic image (for example, your site logo) or an image with text") en kiest dan zelf een beeld van
 // de pagina; daar stond een raster met 15 klantlogo's. Sitelinks kiest Google zelf; om er een pagina
@@ -47,7 +47,7 @@ try { await import('./lib/msys-guard.mjs'); } catch (e) { if (e.code !== 'ERR_MO
 const require = createRequire(import.meta.url);
 
 // Enkelvoud /logo/ en /brand/ ontbreken bewust: daar staat meestal het eigen merkmateriaal (ronde 10-11:
-// Distinkt /images/brand/cta-golven.webp, Finez /images/brand/finez-logo-light.svg).
+// op twee sites stond daar eigen beeld, zoals /images/brand/cta-golven.webp en het eigen logo).
 const LOGO_MAP = /\/(clients?|klanten|klant|logos|partners?|merken|brands|referenties)\//i;
 const LOGO_BLOK = /logo|client|klant|partner/i;
 // De colofon staat er bewust niet in: bij klantsites hoort hij met de MS618-credit in footer én sitemap
@@ -99,9 +99,9 @@ export function analyseer(html, paginaUrl, { robotsHeader = '' } = {}) {
     ...knopen.map((n) => abs(beeldUrl(n.logo, perId))),
     ...$('header img, footer img, nav img').map((_, el) => abs(srcVan($(el)))).get(),
   ].filter(Boolean));
-  // Eigen naam: og:site_name en de domeinnaam, zonder leestekens (werkenbij.kisgroup.nl -> werkenbij,
-  // kisgroup). Alleen voor beelden in een logomap; in een logostrook telt de naam niet (Moovs noemt de
-  // klantlogo's moovs_companylogo_1 ... _14).
+  // Eigen naam: og:site_name en de domeinnaam, zonder leestekens (werkenbij.voorbeeld.nl -> werkenbij,
+  // voorbeeld). Alleen voor beelden in een logomap; in een logostrook telt de naam niet (één site noemt de
+  // klantlogo's <eigennaam>_companylogo_1 ... _14).
   const host = new URL(paginaUrl).hostname.toLowerCase().split('.').filter((d) => d !== 'www');
   const eigenNamen = [...new Set([$('meta[property="og:site_name"]').attr('content') || '', ...host.slice(0, -1)]
     .map((w) => w.toLowerCase().replace(/[^a-z0-9]/g, '')))].filter((w) => w.length >= 4);

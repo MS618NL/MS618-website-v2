@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // menu-check.mjs: draagt elke pagina het menu en de footer van de site?
 //
-// Waarom (15-11-2026, moovsapp.com): de klant had een nieuwe pagina buiten de site gebouwd, met een
+// Waarom (15-11-2026, een klantsite): de klant had een nieuwe pagina buiten de site gebouwd, met een
 // zelf nagemaakt menu erin. Die pagina ging één op één live. Het menu "Solutions" was daar een kale
 // lijst links in plaats van het echte uitklapmenu, en de footer van de site ontbrak. Niets merkte het
 // op: de pagina was pixelgelijk aan het aangeleverde bestand, en dat was de enige toets. Jorrit:
@@ -49,7 +49,7 @@ const TAALKNOP = ['[data-taalwissel]', '[data-lang-switch]', '.taalwissel', '[cl
   '[class*="mega-translate"]', '[class*="wpml-ls"]', '.lang-item', '[class*="pll-"]',
   // een class die met lang-, language- of taal- begint of op -lang eindigt (ms618 mobiel: .lang-mobile)
   '[class^="lang-"]', '[class*=" lang-"]', '[class^="language-"]', '[class*=" language-"]', '[class^="taal-"]', '[class*=" taal-"]', '[class$="-lang"]', '[class*="-lang "]'].join(',');
-// De link zelf: een vlaggetje of het TranslatePress-kenmerk erin (De Oorsprong: geen class op het menu-item).
+// De link zelf: een vlaggetje of het TranslatePress-kenmerk erin (bij één site: geen class op het menu-item).
 const TAALLINK = 'img[class*="flag"],[data-no-translation]';
 
 const hash = (links) => crypto.createHash('sha1').update(links.join('\n')).digest('hex').slice(0, 8);
@@ -219,7 +219,7 @@ export function vindBuild(app, opgegeven) {
   if (opgegeven) return path.resolve(opgegeven);
   const dist = path.join(app, 'dist');
   if (fs.existsSync(path.join(dist, 'index.html'))) return dist;
-  // De home zelf kan in dist/client ontbreken (Distinkt rendert die op de server), dus de map is het kenmerk.
+  // De home zelf kan in dist/client ontbreken (één site rendert die op de server), dus de map is het kenmerk.
   if (fs.existsSync(path.join(dist, 'client'))) return path.join(dist, 'client');
   if (fs.existsSync(dist)) return dist;
   const vercel = path.join(app, '.vercel', 'output', 'static');

@@ -1,6 +1,6 @@
 ---
-// Google Consent Mode v2, vóór de GTM-bootstrap in de head (MS618-standaard, zoals Blue Bay en
-// Distinkt). Standaard alles geweigerd behalve noodzakelijk; Google Analytics laadt wel, maar meet
+// Google Consent Mode v2, vóór de GTM-bootstrap in de head (MS618-standaard, zoals op de
+// klantsites). Standaard alles geweigerd behalve noodzakelijk; Google Analytics laadt wel, maar meet
 // cookieloos tot er toestemming is. Een eerdere keuze uit de cookiemelding (cookie cc_cookie van
 // CookieConsent, zie public/cookieconsent-start.js) gaat meteen als update mee, zodat GTM bij het laden al de
 // juiste toestemming kent.
@@ -8,7 +8,7 @@
 // ms618.nl adverteert niet: GTM-K3PJBX8 bevat alleen Google Analytics, en GA4 telde van mei tot
 // november 2026 0 betaalde bezoeken (11-11-2026). De advertentiesignalen blijven daarom altijd
 // denied en de melding vraagt alleen toestemming voor analyse. Komt er Google Ads bij: categorie
-// advertisement terug in public/cookieconsent-start.js, zoals bij Distinkt.
+// advertisement terug in public/cookieconsent-start.js, zoals op de klantsites die adverteren.
 //
 // Een gewone <script>, geen is:inline: de CSP in astro.config.mjs hasht alleen scripts die Astro zelf
 // verwerkt. De GTM-bootstrap start pas bij window.load, dus deze standaard staat er altijd eerder.
