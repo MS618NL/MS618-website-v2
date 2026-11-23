@@ -2,6 +2,9 @@
   "name": "ms618-website",
   "type": "module",
   "version": "2.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
