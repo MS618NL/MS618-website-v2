@@ -7,6 +7,7 @@ updatedDate: 2026-11-24
 author: "Jorrit Miedema"
 category: "Social media"
 relatedPosts: ["content-strategie-b2b", "zoekintentie-begrijpen"]
+hideFromHome: true
 ---
 
 **Kort antwoord**: LinkedIn is een online sociaal netwerk voor werk en zaken. Je maakt een profiel aan met je werkervaring, opleiding en vaardigheden, legt contact met collega's, klanten en vakgenoten, zoekt vacatures en deelt kennis over je vak. Een account is gratis. Het platform is sinds 2016 van Microsoft.

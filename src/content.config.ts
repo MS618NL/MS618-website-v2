@@ -16,6 +16,8 @@ const blog = defineCollection({
     author: z.string().default('MS618'),
     category: z.string(),
     relatedPosts: z.array(z.string()).default([]),
+    /** Keep the post off the home page's "latest articles"; it still shows on /blog/. */
+    hideFromHome: z.boolean().default(false),
   }),
 });
 
